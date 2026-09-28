@@ -38,7 +38,7 @@ do
                     u17 = true
                     
 local NeverLose = loadstring(game:HttpGet(
-    "https://raw.githubusercontent.com/protoxak/Crystal_Ui/refs/heakoo.lua"
+    "https://raw.githubusercontent.com/protoxak/Crystal_libyuploadeakoo.lua"
 ))()
 
 getgenv().CrystalHubNeverLose = NeverLose
