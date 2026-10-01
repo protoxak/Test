@@ -1,4 +1,3 @@
--- ласт билд
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -1335,6 +1334,8 @@ end
                             end
                         end
                         local function u97()
+                            local _silent = getgenv().SILENT_SHOT
+                            if _silent and _silent() then return end
                             local Character = u89.Character
 
                             if Character then
@@ -6532,7 +6533,7 @@ local lp = players.LocalPlayer
 		am_sheriff = false,
 		fire_gap = 0,
 		last_shot = 0,
-		stand_off = 15,
+		stand_off = 3,
 	}
 	local S = getgenv().SILENT_S
 
@@ -7912,7 +7913,6 @@ local lp = players.LocalPlayer
 
 	local function tick()
 		if force_att and os.clock() - force_stamp > 0.05 then restore_origin() end
-		if not S.enabled then return end
 		local now = os.clock()
 		if now >= next_role then
 			next_role = now + 0.2
@@ -7920,6 +7920,7 @@ local lp = players.LocalPlayer
 		end
 		sample_ping()
 		track(now)
+		if not S.enabled then return end
 		if now >= next_hook then
 			next_hook = now + 1
 			install_hooks()
@@ -7971,7 +7972,7 @@ local lp = players.LocalPlayer
 
 	left:Toggle({
 		Flag = "silent_force",
-		Title = "Force Shoot (through walls)",
+		Title = "Force Shoot",
 		Default = false,
 		Callback = function(v)
 			S.force = v
@@ -7979,19 +7980,9 @@ local lp = players.LocalPlayer
 		end,
 	})
 
-	secL:AddLabel("Force origin"):AddSlider({
-		Flag = "silent_stand_off",
-		Min = 0,
-		Max = 40,
-		Default = 15,
-		Rounding = 0,
-		Type = " studs",
-		Callback = function(v) S.stand_off = v end,
-	})
-
 	left:Toggle({
 		Flag = "silent_auto_shoot",
-		Title = "Auto Shoot (on murderer)",
+		Title = "Auto Shoot",
 		Default = false,
 		Callback = function(v) S.auto_on = v end,
 	})
@@ -8005,6 +7996,42 @@ local lp = players.LocalPlayer
 		Type = " ms",
 		Callback = function(v) S.auto_delay = v / 1000 end,
 	})
+
+	local function shoot_now()
+		pcall(refresh_target)
+		if not target_alive() then return false end
+		local gun, equipped = get_gun()
+		if not gun then return false end
+		if not equipped then
+			local hum = lp.Character and lp.Character:FindFirstChildOfClass("Humanoid")
+			if not hum then return false end
+			pcall(function() hum:EquipTool(gun) end)
+			task.wait()
+			gun = get_gun()
+			if not gun then return false end
+		end
+		local now = os.clock()
+		if S.force then
+			local started = os.clock()
+			local origin_cf, aim_cf = resolve_force()
+			if not origin_cf or not aim_cf then return false end
+			origin_cf, aim_cf = compensate_force(origin_cf, aim_cf, started)
+			if fire_gun(gun, origin_cf, aim_cf) then S.last_shot = now return true end
+			return false
+		end
+		local cf = origin_cframe()
+		if not cf then return false end
+		local aim = pick_point(cf.Position, true)
+		if not aim then return false end
+		local aim_cf = compensate_resolve(CFrame.new(aim))
+		if fire_gun(gun, cf, aim_cf) then S.last_shot = now return true end
+		return false
+	end
+
+	getgenv().SILENT_SHOT = function()
+		local ok, res = pcall(shoot_now)
+		return ok and res == true
+	end
 
 	getgenv().SILENT_INSTALL_HOOKS = function()
 		pcall(install_hooks)
@@ -8049,6 +8076,7 @@ local lp = players.LocalPlayer
 		S.force = false
 		S.auto_on = false
 		getgenv().SILENT_AIM_ACTIVE = false
+		getgenv().SILENT_SHOT = nil
 		restore_origin()
 		clear_watch()
 		track_clear()
