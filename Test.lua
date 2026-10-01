@@ -1,4 +1,3 @@
--- matb ebal
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -166,6 +165,7 @@ function v18:CreateWindow(cfg)
         ["Main"]           = { "COMBAT",       "PLAYER"        },
         ["Fling/Teleport"] = { "FLING",        "TELEPORT"      },
         ["Visuals"]        = { "VISUALS",       "COMBAT VISUAL" },
+        ["Rage"]           = { "RAGE",          "RAGE 2"        },
     }
 
     function adapter:Tab(cfg2)
@@ -4525,307 +4525,410 @@ end
         })
     end
 
-    -- ══════════════════════════════════════════════
-    --  MAP VOTE DUPE  (Rage → правая колонка)
-    -- ══════════════════════════════════════════════
-    do
-        local players  = game:GetService("Players")
-        local run      = game:GetService("RunService")
-        local lp       = players.LocalPlayer
+do
+	local players = game:GetService("Players")
+	local run = game:GetService("RunService")
+	local lp = players.LocalPlayer
 
-        local vote_on   = false
-        local dupe_on   = false
-        local dupe_cap  = 3
-        local dupe_used = 0
-        local running   = false
-        local alive_mv  = true
-        local session   = 0
-        local origin    = nil
-        local spot      = nil
-        local pending   = false
 
-        local pads, pad_conns = {}, {}
-        local hold_conn, tally_conn, spawn_conn = nil, nil, nil
-        local root, lobby_conn, ws_conn = nil, nil, nil
 
-        local function tally_of(entry)
-            return tonumber(string.match(entry.tally.Text, "%d+")) or 0
-        end
+	local map_defs, map_rows, picked = {}, {}, {}
+	local mapDropdown
+	local pads, pad_conns = {}, {}
+	local root, lobby_conn, ws_conn = nil, nil, nil
+	local hold_conn, tally_conn, spawn_conn = nil, nil, nil
+	local vote_on, dupe_on, alive = false, false, true
+	local dupe_cap, dupe_used = 3, 0
+	local grid, spot, mark = nil, nil, 0
+	local session, running, pending = 0, false, false
+	local origin = nil
 
-        local function ready(entry)
-            local name = entry.title.Text
-            return entry.info.Enabled and name ~= "" and name ~= "MAP NAME"
-        end
+	local function sort_rows()
+		table.sort(map_rows, function(a, b)
+			return string.lower(a.name) < string.lower(b.name)
+		end)
+	end
 
-        local function window_open()
-            for i = 1, #pads do
-                if pads[i].info.Enabled then return true end
-            end
-            return false
-        end
+	local function learn(name, image)
+		if type(name) ~= "string" or name == "" or name == "MAP NAME" then return false end
+		if type(image) ~= "string" or image == "" then return false end
+		if map_defs[name] then return false end
+		map_defs[name] = image
+		map_rows[#map_rows + 1] = { name = name, label = name, image = image }
+		return true
+	end
 
-        local function drop_conns()
-            for _, c in ipairs({ hold_conn, tally_conn, spawn_conn }) do
-                if c then pcall(function() c:Disconnect() end) end
-            end
-            hold_conn, tally_conn, spawn_conn = nil, nil, nil
-        end
+	local function sync_picked()
+		if not mapDropdown then return end
+		local v = mapDropdown:GetValue()
+		table.clear(picked)
+		if type(v) == "table" then
+			for _, name in ipairs(v) do
+				if type(name) == "string" and name ~= "" then picked[name] = true end
+			end
+		elseif type(v) == "string" and v ~= "" then
+			picked[v] = true
+		end
+	end
 
-        local function finish()
-            drop_conns()
-            running   = false
-            spot      = nil
-            dupe_used = 0
-            origin    = nil
-        end
+	local function refresh_map_list()
+		if not mapDropdown then return end
+		local names = {}
+		for i = 1, #map_rows do names[#names + 1] = map_rows[i].name end
+		table.sort(names, function(a, b) return string.lower(a) < string.lower(b) end)
+		pcall(function() mapDropdown:Refresh(names) end)
+		sync_picked()
+	end
 
-        local function stand_point(pad)
-            local params = RaycastParams.new()
-            params.FilterType = Enum.RaycastFilterType.Exclude
-            params.FilterDescendantsInstances = { lp.Character, root }
-            local hit = workspace:Raycast(pad.Position + Vector3.new(0, 8, 0), Vector3.new(0, -40, 0), params)
-            local y   = hit and (hit.Position.Y + 3.2) or pad.Position.Y
-            return Vector3.new(pad.Position.X, y, pad.Position.Z)
-        end
+	local function soak()
+		if not root then return end
+		local grew = false
+		for i = 1, #pads do
+			local entry = pads[i]
+			if entry.info.Enabled and learn(entry.title.Text, entry.icon.Image) then grew = true end
+		end
+		if grew then
+			sort_rows()
+			refresh_map_list()
+		end
+	end
 
-        local function plant(point)
-            local char = lp.Character
-            local hrp  = char and char:FindFirstChild("HumanoidRootPart")
-            if not hrp then return false end
-            hrp.CFrame = CFrame.new(point)
-            return true
-        end
+	local function tally_of(entry)
+		return tonumber(string.match(entry.tally.Text, "%d+")) or 0
+	end
 
-        local function kill_self()
-            local char = lp.Character
-            local hum  = char and char:FindFirstChildWhichIsA("Humanoid")
-            if hum then
-                hum:ChangeState(Enum.HumanoidStateType.Dead)
-                pcall(function() hum.Health = 0 end)
-            elseif char then
-                pcall(function() char:BreakJoints() end)
-            end
-        end
+	local function ready(entry)
+		local name = entry.title.Text
+		return entry.info.Enabled and name ~= "" and name ~= "MAP NAME"
+	end
 
-        local function choices()
-            local out = {}
-            for i = 1, #pads do
-                local entry = pads[i]
-                if ready(entry) then out[#out + 1] = entry end
-            end
-            return out
-        end
+	local function window_open()
+		for i = 1, #pads do
+			if pads[i].info.Enabled then return true end
+		end
+		return false
+	end
 
-        local function begin_mv(id)
-            local list = choices()
-            if #list == 0 then finish() return end
+	local function drop_conns()
+		for _, c in ipairs({ hold_conn, tally_conn, spawn_conn }) do
+			if c then pcall(function() c:Disconnect() end) end
+		end
+		hold_conn, tally_conn, spawn_conn = nil, nil, nil
+	end
 
-            local entry = list[math.random(1, #list)]
-            spot      = stand_point(entry.pad)
-            dupe_used = 0
-            local mark = tally_of(entry)
+	local function finish()
+		drop_conns()
+		running = false
+		spot = nil
+		dupe_used = 0
+		origin = nil
+	end
 
-            local char = lp.Character
-            local hrp  = char and char:FindFirstChild("HumanoidRootPart")
-            if not hrp then finish() return end
+	local function stand_point(pad)
+		local params = RaycastParams.new()
+		params.FilterType = Enum.RaycastFilterType.Exclude
+		params.FilterDescendantsInstances = { lp.Character, root }
 
-            origin = hrp.CFrame
-            if not plant(spot) then finish() return end
+		local hit = workspace:Raycast(pad.Position + Vector3.new(0, 8, 0), Vector3.new(0, -40, 0), params)
+		local y = hit and (hit.Position.Y + 3.2) or pad.Position.Y
 
-            if not dupe_on then
-                task.delay(0.15, function()
-                    if session ~= id then return end
-                    local c2  = lp.Character
-                    local h2  = c2 and c2:FindFirstChild("HumanoidRootPart")
-                    if h2 then
-                        local hum2 = c2:FindFirstChildWhichIsA("Humanoid")
-                        if hum2 then pcall(function() hum2:ChangeState(Enum.HumanoidStateType.Physics) end) end
-                        h2.CFrame = origin
-                        task.delay(0.05, function()
-                            local c3 = lp.Character
-                            local h3 = c3 and c3:FindFirstChildWhichIsA("Humanoid")
-                            if h3 then pcall(function() h3:ChangeState(Enum.HumanoidStateType.Running) end) end
-                        end)
-                    end
-                    finish()
-                end)
-                return
-            end
+		return Vector3.new(pad.Position.X, y, pad.Position.Z)
+	end
 
-            hold_conn = run.Heartbeat:Connect(function()
-                if not alive_mv or session ~= id or not spot then return end
-                local c2  = lp.Character
-                local h2  = c2 and c2:FindFirstChild("HumanoidRootPart")
-                if not h2 then return end
-                local flat = Vector3.new(h2.Position.X - spot.X, 0, h2.Position.Z - spot.Z)
-                if flat.Magnitude > 2.5 then h2.CFrame = CFrame.new(spot) end
-            end)
+	local function plant(point)
+		local char = lp.Character
+		local hrp = char and char:FindFirstChild("HumanoidRootPart")
+		if not hrp then return false end
+		hrp.CFrame = CFrame.new(point)
+		return true
+	end
 
-            tally_conn = entry.tally:GetPropertyChangedSignal("Text"):Connect(function()
-                if session ~= id or not dupe_on or not entry.info.Enabled then return end
-                local now = tally_of(entry)
-                if now <= mark then mark = now return end
-                mark = now
-                if dupe_used >= dupe_cap then
-                    drop_conns()
-                    task.defer(function()
-                        if session ~= id then return end
-                        local c2  = lp.Character
-                        local h2  = c2 and c2:FindFirstChild("HumanoidRootPart")
-                        if h2 and origin then
-                            local hum2 = c2:FindFirstChildWhichIsA("Humanoid")
-                            if hum2 then pcall(function() hum2:ChangeState(Enum.HumanoidStateType.Physics) end) end
-                            h2.CFrame = origin
-                            task.delay(0.05, function()
-                                local c3 = lp.Character
-                                local h3 = c3 and c3:FindFirstChildWhichIsA("Humanoid")
-                                if h3 then pcall(function() h3:ChangeState(Enum.HumanoidStateType.Running) end) end
-                            end)
-                        end
-                        finish()
-                    end)
-                    return
-                end
-                dupe_used = dupe_used + 1
-                kill_self()
-            end)
+	local function kill_self()
+		local char = lp.Character
+		local hum = char and char:FindFirstChildWhichIsA("Humanoid")
+		if hum then
+			hum:ChangeState(Enum.HumanoidStateType.Dead)
+			pcall(function() hum.Health = 0 end)
+		elseif char then
+			pcall(function() char:BreakJoints() end)
+		end
+	end
 
-            spawn_conn = lp.CharacterAdded:Connect(function(char)
-                if session ~= id or not dupe_on then return end
-                local h2 = char:WaitForChild("HumanoidRootPart", 6)
-                if not h2 or session ~= id or not entry.info.Enabled or not spot then return end
-                if dupe_used >= dupe_cap then
-                    if origin then
-                        local hum2 = char:FindFirstChildWhichIsA("Humanoid")
-                        if hum2 then pcall(function() hum2:ChangeState(Enum.HumanoidStateType.Physics) end) end
-                        h2.CFrame = origin
-                        task.delay(0.05, function()
-                            local c3 = lp.Character
-                            local h3 = c3 and c3:FindFirstChildWhichIsA("Humanoid")
-                            if h3 then pcall(function() h3:ChangeState(Enum.HumanoidStateType.Running) end) end
-                        end)
-                    end
-                    return
-                end
-                h2.CFrame = CFrame.new(spot)
-            end)
-        end
+	local function choices()
+		local out = {}
+		for i = 1, #pads do
+			local entry = pads[i]
+			if ready(entry) and picked[entry.title.Text] then out[#out + 1] = entry end
+		end
+		return out
+	end
 
-        local function settle_mv()
-            pending = false
-            if not alive_mv then return end
-            if not window_open() then
-                if running then finish() end
-                return
-            end
-            if not vote_on or running then return end
-            running = true
-            session = session + 1
-            begin_mv(session)
-        end
+	local function begin(id)
+		local list = choices()
+		if #list == 0 then
+			finish()
+			return
+		end
 
-        local function schedule_mv()
-            if pending or not alive_mv then return end
-            pending = true
-            task.delay(0.25, settle_mv)
-        end
+		local entry = list[math.random(1, #list)]
+		spot = stand_point(entry.pad)
+		dupe_used = 0
+		mark = tally_of(entry)
 
-        local function shape_mv(model)
-            local pad   = model:FindFirstChild("Pad")
-            local info  = model:FindFirstChild("MapInfoGui")
-            local vote  = model:FindFirstChild("VoteInfoGui")
-            local icon  = info  and info:FindFirstChild("MapIcon")
-            local box   = vote  and vote:FindFirstChild("Container")
-            local title = box   and box:FindFirstChild("MapName")
-            local tally = box   and box:FindFirstChild("Votes")
-            if not (pad and info and icon and title and tally) then return nil end
-            return { pad = pad, info = info, icon = icon, title = title, tally = tally }
-        end
+		local char = lp.Character
+		local hrp = char and char:FindFirstChild("HumanoidRootPart")
+		if not hrp then finish() return end
 
-        local function bind_mv(model_root)
-            for _, c in ipairs(pad_conns) do pcall(function() c:Disconnect() end) end
-            table.clear(pad_conns)
-            table.clear(pads)
-            root = model_root
-            if not root then return end
-            for _, model in ipairs(root:GetChildren()) do
-                local entry = shape_mv(model)
-                if entry then
-                    pads[#pads + 1] = entry
-                    pad_conns[#pad_conns + 1] = entry.info:GetPropertyChangedSignal("Enabled"):Connect(schedule_mv)
-                    pad_conns[#pad_conns + 1] = entry.title:GetPropertyChangedSignal("Text"):Connect(schedule_mv)
-                    pad_conns[#pad_conns + 1] = entry.icon:GetPropertyChangedSignal("Image"):Connect(schedule_mv)
-                end
-            end
-            schedule_mv()
-        end
+		origin = hrp.CFrame
 
-        local function watch_lobby_mv(lobby)
-            if lobby_conn then pcall(function() lobby_conn:Disconnect() end) lobby_conn = nil end
-            if not lobby then bind_mv(nil) return end
-            lobby_conn = lobby.ChildAdded:Connect(function(child)
-                if child.Name == "VotePads" then task.defer(function() bind_mv(child) end) end
-            end)
-            bind_mv(lobby:FindFirstChild("VotePads"))
-        end
+		if not plant(spot) then
+			finish()
+			return
+		end
 
-        -- UI во 2-й колонке вкладки Rage
-        v304._right:Paragraph({ Title = "Map Vote Dupe" })
+		if not dupe_on then
+			task.delay(0.15, function()
+				if session ~= id then return end
+				local c2 = lp.Character
+				local h2 = c2 and c2:FindFirstChild("HumanoidRootPart")
+				if h2 then
+					local hum = c2:FindFirstChildWhichIsA("Humanoid")
+					if hum then pcall(function() hum:ChangeState(Enum.HumanoidStateType.Physics) end) end
+					h2.CFrame = origin
+					task.delay(0.05, function()
+						local c3 = lp.Character
+						local h3 = c3 and c3:FindFirstChildWhichIsA("Humanoid")
+						if h3 then pcall(function() h3:ChangeState(Enum.HumanoidStateType.Running) end) end
+					end)
+				end
+				finish()
+			end)
+			return
+		end
 
-        v304._right:Toggle({
-            Flag    = "mapvote_auto_rage",
-            Title   = "Auto Vote",
-            Default = false,
-            Callback = function(v)
-                vote_on = v
-                if v then schedule_mv() else finish() end
-            end,
-        })
+		hold_conn = run.Heartbeat:Connect(function()
+			if not alive or session ~= id or not spot then return end
+			local c2 = lp.Character
+			local h2 = c2 and c2:FindFirstChild("HumanoidRootPart")
+			if not h2 then return end
+			local flat = Vector3.new(h2.Position.X - spot.X, 0, h2.Position.Z - spot.Z)
+			if flat.Magnitude > 2.5 then h2.CFrame = CFrame.new(spot) end
+		end)
 
-        v304._right:Toggle({
-            Flag    = "mapvote_dupe_rage",
-            Title   = "Dupe Vote",
-            Default = false,
-            Callback = function(v)
-                dupe_on = v
-                if not v then
-                    for _, c in ipairs({ tally_conn, spawn_conn }) do
-                        if c then pcall(function() c:Disconnect() end) end
-                    end
-                    tally_conn, spawn_conn = nil, nil
-                end
-            end,
-        })
+		tally_conn = entry.tally:GetPropertyChangedSignal("Text"):Connect(function()
+			if session ~= id or not dupe_on or not entry.info.Enabled then return end
+			local now = tally_of(entry)
+			if now <= mark then
+				mark = now
+				return
+			end
+			mark = now
+			if dupe_used >= dupe_cap then
+				drop_conns()
+				task.defer(function()
+					if session ~= id then return end
+					local c2 = lp.Character
+					local h2 = c2 and c2:FindFirstChild("HumanoidRootPart")
+					if h2 and origin then
+						local hum = c2:FindFirstChildWhichIsA("Humanoid")
+						if hum then pcall(function() hum:ChangeState(Enum.HumanoidStateType.Physics) end) end
+						h2.CFrame = origin
+						task.delay(0.05, function()
+							local c3 = lp.Character
+							local h3 = c3 and c3:FindFirstChildWhichIsA("Humanoid")
+							if h3 then pcall(function() h3:ChangeState(Enum.HumanoidStateType.Running) end) end
+						end)
+					end
+					finish()
+				end)
+				return
+			end
+			dupe_used = dupe_used + 1
+			kill_self()
+		end)
 
-        v304._right:Slider({
-            Flag     = "mapvote_dupe_cap_rage",
-            Title    = "Dupe Count",
-            IsTooltip = true,
-            IsTextbox = true,
-            Value    = { Min = 1, Max = 11, Default = 3 },
-            Callback = function(v)
-                dupe_cap = math.clamp(math.floor(tonumber(v) or 3), 1, 10)
-            end,
-        })
+		spawn_conn = lp.CharacterAdded:Connect(function(char)
+			if session ~= id or not dupe_on then return end
+			local h2 = char:WaitForChild("HumanoidRootPart", 6)
+			if not h2 or session ~= id or not entry.info.Enabled or not spot then return end
+			if dupe_used >= dupe_cap then
+				if origin then
+					local hum = char:FindFirstChildWhichIsA("Humanoid")
+					if hum then pcall(function() hum:ChangeState(Enum.HumanoidStateType.Physics) end) end
+					h2.CFrame = origin
+					task.delay(0.05, function()
+						local c3 = lp.Character
+						local h3 = c3 and c3:FindFirstChildWhichIsA("Humanoid")
+						if h3 then pcall(function() h3:ChangeState(Enum.HumanoidStateType.Running) end) end
+					end)
+				end
+				return
+			end
+			h2.CFrame = CFrame.new(spot)
+		end)
+	end
 
-        -- Подключение к лобби
-        watch_lobby_mv(workspace:FindFirstChild("SummerLobby"))
-        ws_conn = workspace.ChildAdded:Connect(function(child)
-            if child.Name == "Lobby" then task.defer(function() watch_lobby_mv(child) end) end
-        end)
+	local function settle()
+		pending = false
+		if not alive then return end
 
-        getgenv().MAPVOTE_RAGE_UNLOAD = function()
-            alive_mv = false
-            vote_on, dupe_on = false, false
-            finish()
-            for _, c in ipairs(pad_conns) do pcall(function() c:Disconnect() end) end
-            table.clear(pad_conns); table.clear(pads)
-            for _, c in ipairs({ lobby_conn, ws_conn }) do
-                if c then pcall(function() c:Disconnect() end) end
-            end
-        end
-    end
-    -- ══════════════════════════════════════════════
+		local grew = false
+		for i = 1, #pads do
+			local entry = pads[i]
+			if entry.info.Enabled and learn(entry.title.Text, entry.icon.Image) then grew = true end
+		end
+
+		if grew then
+			sort_rows()
+			refresh_map_list()
+		end
+
+		if not window_open() then
+			if running then finish() end
+			return
+		end
+
+		if not vote_on or running then return end
+
+		running = true
+		session = session + 1
+		begin(session)
+	end
+
+	local function schedule()
+		if pending or not alive then return end
+		pending = true
+		task.delay(0.25, settle)
+	end
+
+	local function shape(model)
+		local pad = model:FindFirstChild("Pad")
+		local info = model:FindFirstChild("MapInfoGui")
+		local vote = model:FindFirstChild("VoteInfoGui")
+		local icon = info and info:FindFirstChild("MapIcon")
+		local box = vote and vote:FindFirstChild("Container")
+		local title = box and box:FindFirstChild("MapName")
+		local tally = box and box:FindFirstChild("Votes")
+
+		if not (pad and info and icon and title and tally) then return nil end
+
+		return { pad = pad, info = info, icon = icon, title = title, tally = tally }
+	end
+
+	local function bind(model_root)
+		for _, c in ipairs(pad_conns) do pcall(function() c:Disconnect() end) end
+		table.clear(pad_conns)
+		table.clear(pads)
+
+		root = model_root
+		if not root then return end
+
+		for _, model in ipairs(root:GetChildren()) do
+			local entry = shape(model)
+			if entry then
+				pads[#pads + 1] = entry
+				pad_conns[#pad_conns + 1] = entry.info:GetPropertyChangedSignal("Enabled"):Connect(schedule)
+				pad_conns[#pad_conns + 1] = entry.title:GetPropertyChangedSignal("Text"):Connect(schedule)
+				pad_conns[#pad_conns + 1] = entry.icon:GetPropertyChangedSignal("Image"):Connect(schedule)
+			end
+		end
+
+		schedule()
+	end
+
+	local function watch_lobby(lobby)
+		if lobby_conn then
+			pcall(function() lobby_conn:Disconnect() end)
+			lobby_conn = nil
+		end
+
+		if not lobby then
+			bind(nil)
+			return
+		end
+
+		lobby_conn = lobby.ChildAdded:Connect(function(child)
+			if child.Name == "VotePads" then
+				task.defer(function() bind(child) end)
+			end
+		end)
+
+		bind(lobby:FindFirstChild("VotePads"))
+	end
+
+	local right = v304._right
+
+	right:Paragraph({ Title = "Map Vote Dupe" })
+
+	right:Toggle({
+		Title = "Auto Vote",
+		Default = false,
+		Flag = "map_vote_auto",
+		Callback = function(v)
+			vote_on = v
+			if v then schedule() else finish() end
+		end
+	})
+
+	right:Toggle({
+		Title = "Dupe",
+		Default = false,
+		Flag = "map_vote_dupe",
+		Callback = function(v)
+			dupe_on = v
+			if not v then drop_conns() end
+		end
+	})
+
+	right:Slider({
+		Title = "Dupe Count",
+		Value = { Min = 1, Max = 10, Default = 3 },
+		Flag = "map_vote_dupe_cap",
+		Callback = function(v)
+			dupe_cap = math.clamp(math.floor(tonumber(v) or 3), 1, 10)
+		end
+	})
+
+	mapDropdown = right:Dropdown({
+		Title = "Maps",
+		Values = {},
+		Multi = true,
+		Flag = "map_vote_priority",
+		Callback = function(v)
+			table.clear(picked)
+			if type(v) == "table" then
+				for _, name in ipairs(v) do
+					if type(name) == "string" and name ~= "" then picked[name] = true end
+				end
+			elseif type(v) == "string" and v ~= "" then
+				picked[v] = true
+			end
+		end
+	})
+
+	watch_lobby(workspace:FindFirstChild("SummerLobby"))
+
+	ws_conn = workspace.ChildAdded:Connect(function(child)
+		if child.Name == "Lobby" or child.Name == "SummerLobby" then
+			task.defer(function() watch_lobby(child) end)
+		end
+	end)
+
+	task.spawn(soak)
+
+	getgenv().MAPVOTE_UNLOAD = function()
+		alive = false
+		vote_on, dupe_on = false, false
+		finish()
+
+		for _, c in ipairs(pad_conns) do pcall(function() c:Disconnect() end) end
+		table.clear(pad_conns)
+		table.clear(pads)
+
+		for _, c in ipairs({ lobby_conn, ws_conn }) do
+			if c then pcall(function() c:Disconnect() end) end
+		end
+end
 
     v303._left:Paragraph({ Title = 'Fling Players' })
 
