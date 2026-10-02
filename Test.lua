@@ -1,3 +1,4 @@
+-- макее
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -66,6 +67,22 @@ do
 			end;]], [[if false then
 				writefile(Window.ConfigFolder..'/Default',ConfigLib:GetData());
 			end;]])
+
+    -- Explicit config serialization for button positions.
+    _uiSource = _replaceOnce(_uiSource, [[			return NeverLose.Base64Encode(Encryption.new(HttpService:JSONEncode(ikc)));
+		end;
+		function ConfigLib:LoadData(data)]], [[			local buttonPositions = getgenv().CrystalHubButtonPositions
+			if buttonPositions then
+				for name,pos in next, buttonPositions do
+					if pos then
+						table.insert(ikc,{Idx = "CrystalHubButtonPos_"..tostring(name), Value = tostring(pos.XScale or 0)..";"..tostring(pos.XOffset or 0)..";"..tostring(pos.YScale or 0)..";"..tostring(pos.YOffset or 0)})
+					end
+				end
+			end
+
+			return NeverLose.Base64Encode(Encryption.new(HttpService:JSONEncode(ikc)));
+		end;
+		function ConfigLib:LoadData(data)]])
 
     -- Reset custom button positions before loading a config.
     -- This prevents positions from the previously selected config
@@ -2723,6 +2740,7 @@ end
             end
 
             local _buttonConfigPositions = {}
+            getgenv().CrystalHubButtonPositions = _buttonConfigPositions
 
             -- Every config starts loading from these defaults. Saved values
             -- from the selected config are then applied on top.
