@@ -1,3 +1,4 @@
+--щцщцщ
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -37,42 +38,9 @@ do
                     u16 = false
                     u17 = true
                     
--- Load Crystal UI. Keep the library config system intact; only disable autosave
--- and make the existing Save button create/update the selected config.
-do
-    local _uiSource = game:HttpGet("https://raw.githubusercontent.com/protoxak/Crystal_Ui/refs/heads/main/Ui.lua")
-
-    local function _replaceOnce(src, old, new)
-        local a, b = string.find(src, old, 1, true)
-        if not a then return src end
-        return src:sub(1, a - 1) .. new .. src:sub(b + 1)
-    end
-
-    -- Disable only the periodic Default autosave.
-    _uiSource = _replaceOnce(_uiSource, [[task.spawn(function()
-					while true do task.wait(5.75);
-						if isfile(path) and ConfigLib.SelectedConfig == "Default" then
-							writefile(Window.ConfigFolder..'/Default',ConfigLib:GetData(true));
-						end;
-					end;
-				end);]], "")
-
-    -- Do not auto-create Default. The normal Save button below can create it.
-    _uiSource = _replaceOnce(_uiSource, [[if not isfile(Window.ConfigFolder..'/Default') then
-				writefile(Window.ConfigFolder..'/Default',ConfigLib:GetData());
-			end;]], "")
-
-    -- Keep the original ConfigLib:GetData and LoadData implementation untouched.
-    -- Only make the existing Save button write the selected config even if it does not exist yet.
-    _uiSource = _replaceOnce(_uiSource, [[			if isfile(path) then
-				writefile(Window.ConfigFolder..'/'..(ConfigLib.SelectedConfig or "Default"),ConfigLib:GetData());
-
-				Logging.new("folder",'Saved '..tostring(ConfigLib.SelectedConfig),3.5)
-			end;]], [[			writefile(Window.ConfigFolder..'/'..(ConfigLib.SelectedConfig or "Default"),ConfigLib:GetData());
-			Logging.new("folder",'Saved '..tostring(ConfigLib.SelectedConfig or "Default"),3.5)]])
-
-    NeverLose = loadstring(_uiSource)()
-end
+local NeverLose = loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/protoxak/Crystal_Ui/refs/heads/main/Ui.lua"
+))()
 
 getgenv().CrystalHubNeverLose = NeverLose
 
@@ -127,8 +95,8 @@ local function makeControlAdapter(section)
         cfg = cfg or {}
         local item = section:AddLabel(tostring(cfg.Title or "Dropdown"))
         local control = item:AddDropdown({
-            Default = cfg.Value ~= nil and cfg.Value or cfg.Default,
-            Values = cfg.Values or cfg.Options or {},
+            Default = cfg.Value,
+            Values = cfg.Values or {},
             Multi = cfg.Multi == true,
             Flag = cfg.Flag,
             Callback = cfg.Callback,
@@ -149,11 +117,12 @@ local function makeControlAdapter(section)
         cfg = cfg or {}
         local value = cfg.Value or {}
         return section:AddLabel(tostring(cfg.Title or "Slider")):AddSlider({
-            Flag = cfg.Flag,Min = value.Min or 0,
-            Max = value.Max or 100,
-            Default = value.Default or value.Min or 0,
+            Flag = cfg.Flag,
+            Min = value.Min or cfg.Min or 0,
+            Max = value.Max or cfg.Max or 100,
+            Default = value.Default or value.Min or cfg.Default or 0,
             Rounding = cfg.Rounding or 0,
-            Type = cfg.Suffix or "",
+            Type = cfg.Suffix or cfg.Type or "",
             Callback = cfg.Callback,
         })
     end
@@ -2632,40 +2601,193 @@ end
 
             t25 = {}
 
-            local _buttonConfigPositions = {}
-            -- Every config starts loading from these defaults. Saved values
-            -- from the selected config are then applied on top.
-            local _buttonDefaultPositions = {
-                GoldBomb = UDim2.new(0.5, -278, 0.78, 16),
-                NormalBomb = UDim2.new(0.5, -214, 0.78, 16),
-                Shoot = UDim2.new(0.5, -150, 0.78, 16),
-                ESP = UDim2.new(0.5, -86, 0.78, 16),
-                Flick = UDim2.new(0.5, -22, 0.78, 16),
-                Speed = UDim2.new(0.5, -278, 0.78, 16),
-                Stretch = UDim2.new(0.5, -214, 0.78, 16),
-                GrabGun = UDim2.new(0.5, 90, 0.68, 16),
-                WallHop = UDim2.new(0.5, 154, 0.68, 16),
-                FlingMurderer = UDim2.new(0.5, -278, 0.68, 16),
-                FlingSheriff = UDim2.new(0.5, -214, 0.68, 16),
-            }
+            -- Button positions are stored separately for EACH config.
+            -- Example: CrystalHub/Default.btnpos, CrystalHub/MyConfig.btnpos.
+            -- Dragging only changes memory; config Save/Load controls disk persistence.
+            local _BTN_POS_SUFFIX = ".btnpos"
 
-            local function _resetButtonPositions()
-                for name, pos in pairs(_buttonDefaultPositions) do
+            local function _serializePos(tbl)
+                local lines = {}
+                for name, v in pairs(tbl) do
+                    lines[#lines + 1] = name .. "=" ..
+                        tostring(v.xs or 0) .. "," .. tostring(v.xo or 0) .. "," ..
+                        tostring(v.ys or 0) .. "," .. tostring(v.yo or 0)
+                end
+                table.sort(lines)
+                return table.concat(lines, "\n")
+            end
+
+            local function _deserializePos(raw)
+                local out = {}
+                if type(raw) ~= "string" then
+                    return out
+                end
+                for line in (raw .. "\n"):gmatch("([^\n]*)\n") do
+                    local name, xs, xo, ys, yo = line:match("^(.-)=([^,]+),([^,]+),([^,]+),([^,]+)$")
+                    if name and name ~= "" then
+                        out[name] = {
+                            xs = tonumber(xs) or 0,
+                            xo = tonumber(xo) or 0,
+                            ys = tonumber(ys) or 0,
+                            yo = tonumber(yo) or 0,
+                        }
+                    end
+                end
+                return out
+            end
+
+            local _writefile = (typeof(writefile) == "function" and writefile)
+                or (syn and syn.write_file)
+                or (typeof(savefile) == "function" and savefile)
+            local _readfile = (typeof(readfile) == "function" and readfile)
+                or (syn and syn.read_file)
+            local _isfile = (typeof(isfile) == "function" and isfile)
+                or (syn and syn.is_file)
+                or function(path)
+                    if not _readfile then return false end
+                    local ok = pcall(_readfile, path)
+                    return ok
+                end
+
+            local _buttonConfigPositions = {}
+            local _activeButtonConfig = "Default"
+
+            local function _configNameFromPath(path)
+                local pathStr = tostring(path or ""):gsub("\\", "/")
+                local name = pathStr:match("^CrystalHub/([^/]+)$")
+                if not name or name == "" or name:sub(-#_BTN_POS_SUFFIX) == _BTN_POS_SUFFIX then
+                    return nil
+                end
+                return name
+            end
+
+            local function _buttonPosPath(configName)
+                return "CrystalHub/" .. tostring(configName or "Default") .. _BTN_POS_SUFFIX
+            end
+
+            local function _collectBtnPositions()
+                local data = {}
+                for name, entry in pairs(t25) do
+                    if entry and entry.btn and entry.btn.Parent then
+                        local pos = entry.btn.Position
+                        data[name] = {
+                            xs = pos.X.Scale,
+                            xo = math.round(pos.X.Offset),
+                            ys = pos.Y.Scale,
+                            yo = math.round(pos.Y.Offset),
+                        }
+                    end
+                end
+                return data
+            end
+
+            local function _applyBtnPositions(data)
+                if type(data) ~= "table" then
+                    return
+                end
+
+                _buttonConfigPositions = {}
+                for name, pos in pairs(data) do
                     _buttonConfigPositions[name] = {
-                        XScale = pos.X.Scale,
-                        XOffset = pos.X.Offset,
-                        YScale = pos.Y.Scale,
-                        YOffset = pos.Y.Offset,
+                        XScale = pos.xs or 0,
+                        XOffset = pos.xo or 0,
+                        YScale = pos.ys or 0,
+                        YOffset = pos.yo or 0,
                     }
 
-                    local entry = t25 and t25[name]
+                    local entry = t25[name]
                     if entry and entry.btn and entry.btn.Parent then
-                        entry.btn.Position = pos
+                        entry.btn.Position = UDim2.new(
+                            pos.xs or 0, pos.xo or 0,
+                            pos.ys or 0, pos.yo or 0
+                        )
                     end
                 end
             end
 
-            getgenv().CrystalHubResetButtonPositions = _resetButtonPositions
+            local function _saveBtnPositions(configName)
+                if not _writefile or not configName or configName == "" then
+                    return false
+                end
+
+                local data = _collectBtnPositions()
+                local ok = pcall(_writefile, _buttonPosPath(configName), _serializePos(data))
+                return ok
+            end
+
+            local function _loadBtnPositions(configName)
+                if not _readfile or not configName or configName == "" then
+                    _buttonConfigPositions = {}
+                    return false
+                end
+
+                local path = _buttonPosPath(configName)
+                local data = {}
+                local ok = false
+
+                pcall(function()
+                    if _isfile(path) then
+                        data = _deserializePos(_readfile(path))
+                        ok = true
+                    end
+                end)
+
+                _activeButtonConfig = configName
+                _applyBtnPositions(data)
+                return ok
+            end
+
+            local function _loadBtnPos(name, default)
+                local saved = _buttonConfigPositions[name]
+                if saved then
+                    return UDim2.new(
+                        saved.XScale or 0, saved.XOffset or 0,
+                        saved.YScale or 0, saved.YOffset or 0
+                    )
+                end
+                return default
+            end
+
+            -- The config library writes CrystalHub/<configName>. We attach the
+            -- button layout to that exact config instead of using one global file.
+            local _originalWriteFile = _writefile
+            if _originalWriteFile and typeof(writefile) == "function" then
+                local _wrappedWriteFile = function(path, content)
+                    local result = _originalWriteFile(path, content)
+                    local configName = _configNameFromPath(path)
+                    if configName then
+                        task.defer(function()
+                            _saveBtnPositions(configName)
+                        end)
+                    end
+                    return result
+                end
+                writefile = _wrappedWriteFile
+                if getgenv then
+                    getgenv().writefile = _wrappedWriteFile
+                end
+            end
+
+            -- When the config library reads CrystalHub/<configName>, load the
+            -- matching button-position sidecar before the config finishes loading.
+            local _originalReadFile = _readfile
+            if _originalReadFile and typeof(readfile) == "function" then
+                local _wrappedReadFile = function(path)
+                    local result = _originalReadFile(path)
+                    local configName = _configNameFromPath(path)
+                    if configName then
+                        _loadBtnPositions(configName)
+                    end
+                    return result
+                end
+                readfile = _wrappedReadFile
+                if getgenv then
+                    getgenv().readfile = _wrappedReadFile
+                end
+            end
+
+            -- Initial config is Default until the config library selects another one.
+            _loadBtnPositions("Default")
 
             local u217 = UserInputService
 
@@ -2676,6 +2798,7 @@ end
                     if _dragActive then
                         _dragActive = false
 
+                        -- Update only the current config's in-memory positions.
                         for name, entry in pairs(t25) do
                             if entry and entry.btn and entry.btn.Parent then
                                 local pos = entry.btn.Position
@@ -2687,11 +2810,6 @@ end
                                 }
                             end
                         end
-
-                        -- Do not write button positions automatically.
-                        -- They are included in the config data and are persisted
-                        -- only when the user presses the config Save button.
-                        -- task.defer(_saveBtnPositions)
                     end
                 end
             end)
@@ -2747,16 +2865,10 @@ end
                 TextButton.Name = 'RuzBtn_' .. p38
                 TextButton.Size = p40
                 local _cfgPos = _buttonConfigPositions[p38]
-                if _cfgPos then
-                    TextButton.Position = UDim2.new(
-                        _cfgPos.XScale,
-                        _cfgPos.XOffset,
-                        _cfgPos.YScale,
-                        _cfgPos.YOffset
-                    )
-                else
-                    TextButton.Position = _loadBtnPos(p38, p39)
-                end
+                TextButton.Position = _cfgPos and UDim2.new(
+                    _cfgPos.XScale, _cfgPos.XOffset,
+                    _cfgPos.YScale, _cfgPos.YOffset
+                ) or _loadBtnPos(p38, p39)
                 TextButton.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
                 TextButton.BackgroundTransparency = 0.08
                 TextButton.Text = ''
@@ -2848,78 +2960,7 @@ end
                 FlingSheriff = UDim2.new(0.5, -214, 0.68, 16),
             }
 
-            local _buttonPositionFlags = {
-                GoldBomb = "crystalhub_pos_GoldBomb",
-                NormalBomb = "crystalhub_pos_NormalBomb",
-                Shoot = "crystalhub_pos_Shoot",
-                ESP = "crystalhub_pos_ESP",
-                Flick = "crystalhub_pos_Flick",
-                Speed = "crystalhub_pos_Speed",
-                Stretch = "crystalhub_pos_Stretch",
-                GrabGun = "crystalhub_pos_GrabGun",
-                WallHop = "crystalhub_pos_WallHop",
-                FlingMurderer = "crystalhub_pos_FlingMurderer",
-                FlingSheriff = "crystalhub_pos_FlingSheriff",
-            }
-
-            local function _encodeButtonPos(pos)
-                if not pos then return "" end
-                return tostring(pos.XScale or 0) .. ";" ..
-                       tostring(pos.XOffset or 0) .. ";" ..
-                       tostring(pos.YScale or 0) .. ";" ..
-                       tostring(pos.YOffset or 0)
-            end
-
-            local function _decodeButtonPos(value)
-                if type(value) ~= "string" then return nil end
-                local xs, xo, ys, yo = value:match("^([^;]+);([^;]+);([^;]+);([^;]+)$")
-                if not xs then return nil end
-                return {
-                    XScale = tonumber(xs) or 0,
-                    XOffset = tonumber(xo) or 0,
-                    YScale = tonumber(ys) or 0,
-                    YOffset = tonumber(yo) or 0,
-                }
-            end
-
-            local _NL = NeverLose
-            if _NL and _NL.Flags then
-                for name, flagName in pairs(_buttonPositionFlags) do
-                    local buttonName = name
-                    local configFlagName = flagName
-                    _NL.Flags[configFlagName] = {
-                    GetValue = function()
-                        local entry = t25[buttonName]
-                        if entry and entry.btn and entry.btn.Parent then
-                            local pos = entry.btn.Position
-                            return _encodeButtonPos({
-                                XScale = pos.X.Scale,
-                                XOffset = pos.X.Offset,
-                                YScale = pos.Y.Scale,
-                                YOffset = pos.Y.Offset,
-                            })
-                        end
-
-                        return _encodeButtonPos(_buttonConfigPositions[buttonName])
-                    end,
-
-                    SetValue = function(value)
-                        local saved = _decodeButtonPos(value)
-                        if not saved then return end
-
-                        _buttonConfigPositions[buttonName] = saved
-
-                        local entry = t25[buttonName]
-                        if entry and entry.btn and entry.btn.Parent then
-                            entry.btn.Position = UDim2.new(
-                                saved.XScale, saved.XOffset,
-                                saved.YScale, saved.YOffset
-                            )
-                        end
-                    end,
-                    }
-                end
-            end
+            -- Button positions are loaded from the currently selected config.
 
             local u226 = t25
             local u227 = v220
@@ -8625,8 +8666,6 @@ function t50.Callback(p88)
 end
 
 v302:ColorPicker(t50)
-
-
 task.wait(0.4)
 v232(false)
 v239(false)
@@ -8637,4 +8676,4 @@ v18:Notify({
     Duration = 3,
     Icon = 'bell',
 })
-print('Lunar make detka')
+print('[CrystalHub] v1.0 loaded.')
