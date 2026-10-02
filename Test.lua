@@ -1,4 +1,3 @@
--- макее
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -68,36 +67,36 @@ do
 				writefile(Window.ConfigFolder..'/Default',ConfigLib:GetData());
 			end;]])
 
-    -- Explicit config serialization for button positions.
-    _uiSource = _replaceOnce(_uiSource, [[			return NeverLose.Base64Encode(Encryption.new(HttpService:JSONEncode(ikc)));
-		end;
-		function ConfigLib:LoadData(data)]], [[			local buttonPositions = getgenv().CrystalHubButtonPositions
-			if buttonPositions then
-				for name,pos in next, buttonPositions do
-					if pos then
-						table.insert(ikc,{Idx = "CrystalHubButtonPos_"..tostring(name), Value = tostring(pos.XScale or 0)..";"..tostring(pos.XOffset or 0)..";"..tostring(pos.YScale or 0)..";"..tostring(pos.YOffset or 0)})
-					end
-				end
-			end
-
-			return NeverLose.Base64Encode(Encryption.new(HttpService:JSONEncode(ikc)));
-		end;
-		function ConfigLib:LoadData(data)]])
-
-    -- Reset custom button positions before loading a config.
-    -- This prevents positions from the previously selected config
-    -- from leaking into the newly loaded config.
+    -- Apply saved flags synchronously so button positions are restored before the
+    -- config UI refreshes. Also reset button positions first so a config that
+    -- does not contain an old position flag cannot inherit another config's position.
     _uiSource = _replaceOnce(_uiSource, [[function ConfigLib:LoadData(data)
 			local coded = HttpService:JSONDecode(Encryption.reverse(NeverLose.Base64Decode(data)));
 
-			for i,v in next , coded do]], [[function ConfigLib:LoadData(data)
+			for i,v in next , coded do
+				if v.Idx then
+					if NeverLose.Flags[v.Idx] then
+						task.spawn(function()
+							NeverLose.Flags[v.Idx]:SetValue(v.Value)
+						end)
+					end;
+				end;
+			end;
+		end;]], [[function ConfigLib:LoadData(data)
 			local coded = HttpService:JSONDecode(Encryption.reverse(NeverLose.Base64Decode(data)));
 
 			if getgenv().CrystalHubResetButtonPositions then
 				pcall(getgenv().CrystalHubResetButtonPositions)
 			end
 
-			for i,v in next , coded do]])
+			for i,v in next , coded do
+				if v.Idx then
+					if NeverLose.Flags[v.Idx] then
+						NeverLose.Flags[v.Idx]:SetValue(v.Value)
+					end;
+				end;
+			end;
+		end;]])
 
     -- The Save icon always writes the currently selected config.
     _uiSource = _replaceOnce(_uiSource, [[if isfile(path) then
@@ -2669,79 +2668,7 @@ end
 
             t25 = {}
 
-            local _BTN_POS_FILE = "CrystalHub_btnpos.txt"
-
-            local function _serializePos(tbl)
-                local lines = {}
-                for name, v in pairs(tbl) do
-                    lines[#lines+1] = name.."="..v.xs..","..v.xo..","..v.ys..","..v.yo
-                end
-                return table.concat(lines, "\n")
-            end
-
-            local function _deserializePos(raw)
-                local out = {}
-                for line in (raw.."\n"):gmatch("([^\n]*)\n") do
-                    local name, xs, xo, ys, yo = line:match("^(.-)=([^,]+),([^,]+),([^,]+),([^,]+)$")
-                    if name then
-                        out[name] = {
-                            xs = tonumber(xs) or 0,
-                            xo = tonumber(xo) or 0,
-                            ys = tonumber(ys) or 0,
-                            yo = tonumber(yo) or 0,
-                        }
-                    end
-                end
-                return out
-            end
-
-            local _writefile = (typeof(writefile) == "function" and writefile)
-                            or (syn and syn.write_file)
-                            or (typeof(savefile) == "function" and savefile)
-                            or nil
-            local _readfile  = (typeof(readfile)  == "function" and readfile)
-                            or (syn and syn.read_file)
-                            or nil
-            local _isfile    = (typeof(isfile)    == "function" and isfile)
-                            or (syn and syn.is_file)
-                            or function(p)
-                                if not _readfile then return false end
-                                local ok = pcall(_readfile, p)
-                                return ok
-                            end
-
-            local function _saveBtnPositions()
-                if not _writefile then
-                    return
-                end
-                local tbl = {}
-                for name, entry in pairs(t25) do
-                    if entry and entry.btn and entry.btn.Parent then
-                        local pos = entry.btn.Position
-                        tbl[name] = {
-                            xs = pos.X.Scale,
-                            xo = math.round(pos.X.Offset),
-                            ys = pos.Y.Scale,
-                            yo = math.round(pos.Y.Offset),
-                        }
-                    end
-                end
-                local ok, err = pcall(_writefile, _BTN_POS_FILE, _serializePos(tbl))
-                if ok then
-                else
-                end
-            end
-
-            local _btnSavedPos = {}
-            -- Button positions are stored in the selected config only.
-
-            local function _loadBtnPos(name, default)
-                return default
-            end
-
             local _buttonConfigPositions = {}
-            getgenv().CrystalHubButtonPositions = _buttonConfigPositions
-
             -- Every config starts loading from these defaults. Saved values
             -- from the selected config are then applied on top.
             local _buttonDefaultPositions = {
@@ -2994,9 +2921,11 @@ end
             local _NL = NeverLose
             if _NL and _NL.Flags then
                 for name, flagName in pairs(_buttonPositionFlags) do
-                    _NL.Flags[flagName] = {
+                    local buttonName = name
+                    local configFlagName = flagName
+                    _NL.Flags[configFlagName] = {
                     GetValue = function()
-                        local entry = t25[name]
+                        local entry = t25[buttonName]
                         if entry and entry.btn and entry.btn.Parent then
                             local pos = entry.btn.Position
                             return _encodeButtonPos({
@@ -3007,16 +2936,16 @@ end
                             })
                         end
 
-                        return _encodeButtonPos(_buttonConfigPositions[name])
+                        return _encodeButtonPos(_buttonConfigPositions[buttonName])
                     end,
 
                     SetValue = function(value)
                         local saved = _decodeButtonPos(value)
                         if not saved then return end
 
-                        _buttonConfigPositions[name] = saved
+                        _buttonConfigPositions[buttonName] = saved
 
-                        local entry = t25[name]
+                        local entry = t25[buttonName]
                         if entry and entry.btn and entry.btn.Parent then
                             entry.btn.Position = UDim2.new(
                                 saved.XScale, saved.XOffset,
