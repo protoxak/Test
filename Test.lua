@@ -1,4 +1,3 @@
--- ска
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -38,7 +37,8 @@ do
                     u16 = false
                     u17 = true
                     
--- Load Crystal UI with manual-only config saving.
+-- Load Crystal UI. Keep the library config system intact; only disable autosave
+-- and make the existing Save button create/update the selected config.
 do
     local _uiSource = game:HttpGet("https://raw.githubusercontent.com/protoxak/Crystal_Ui/refs/heads/main/Ui.lua")
 
@@ -48,7 +48,7 @@ do
         return src:sub(1, a - 1) .. new .. src:sub(b + 1)
     end
 
-    -- Disable periodic autosave.
+    -- Disable only the periodic Default autosave.
     _uiSource = _replaceOnce(_uiSource, [[task.spawn(function()
 					while true do task.wait(5.75);
 						if isfile(path) and ConfigLib.SelectedConfig == "Default" then
@@ -57,130 +57,19 @@ do
 					end;
 				end);]], "")
 
-    -- Never create Default automatically.
+    -- Do not auto-create Default. The normal Save button below can create it.
     _uiSource = _replaceOnce(_uiSource, [[if not isfile(Window.ConfigFolder..'/Default') then
 				writefile(Window.ConfigFolder..'/Default',ConfigLib:GetData());
-			end;]], [[if false then
-				writefile(Window.ConfigFolder..'/Default',ConfigLib:GetData());
-			end;]])
+			end;]], "")
 
-    -- Replace GetData with a fault-tolerant version and expose ConfigLib.
-    _uiSource = _replaceOnce(_uiSource, [[function ConfigLib:GetData(performance)
-			local ikc = {};
-			
-			local cd = 0;
-			for Flag,v in next , NeverLose.Flags do
-				if v and v.GetValue then
-					local data = v:GetValue();
-
-					if typeof(data) == 'Color3' then
-						table.insert(ikc,{
-							Idx = Flag,
-							Value = data:ToHex(),
-						});
-					else
-						table.insert(ikc,{
-							Idx = Flag,
-							Value = data
-						});
-					end;
-				end;
-				
-				if performance then
-					if cd % 35 == 1 then
-						task.wait()
-					end
-				end;
-				
-				cd += 1;
-			end;
-
-			return NeverLose.Base64Encode(Encryption.new(HttpService:JSONEncode(ikc)));
-		end;]], [[function ConfigLib:GetData(performance)
-			local ikc = {};
-			local cd = 0;
-			for Flag,v in next, NeverLose.Flags do
-				if v and v.GetValue then
-					local ok, data = pcall(v.GetValue, v)
-					if ok and data ~= nil then
-						if typeof(data) == 'Color3' then
-							table.insert(ikc,{Idx = Flag, Value = data:ToHex()})
-						else
-							table.insert(ikc,{Idx = Flag, Value = data})
-						end
-					end
-				end
-				if performance and cd % 35 == 1 then task.wait() end
-				cd += 1
-			end
-			return NeverLose.Base64Encode(Encryption.new(HttpService:JSONEncode(ikc)))
-		end;
-		NeverLose.ConfigLib = ConfigLib;]])
-
-    -- Load synchronously. This prevents config values from racing button/control creation.
-    _uiSource = _replaceOnce(_uiSource, [[function ConfigLib:LoadData(data)
-			local coded = HttpService:JSONDecode(Encryption.reverse(NeverLose.Base64Decode(data)));
-
-			for i,v in next , coded do
-				if v.Idx then
-					if NeverLose.Flags[v.Idx] then
-						task.spawn(function()
-							NeverLose.Flags[v.Idx]:SetValue(v.Value)
-						end)
-					end;
-				end;
-			end;
-		end;]], [[function ConfigLib:LoadData(data)
-			local coded = HttpService:JSONDecode(Encryption.reverse(NeverLose.Base64Decode(data)));
-			if getgenv().CrystalHubResetButtonPositions then pcall(getgenv().CrystalHubResetButtonPositions) end
-			for i,v in next, coded do
-				if v.Idx then
-					local flag = NeverLose.Flags[v.Idx]
-					if flag and flag.SetValue then pcall(flag.SetValue, flag, v.Value) end
-				end
-			end
-		end;]])
-
-    -- Disable the library's 1-second Default load; the main script loads it after every control exists.
-    _uiSource = _replaceOnce(_uiSource, [[		task.delay(1,function()
-			if ConfigLib.SelectedConfig == "Default" then
-				local path = Window.ConfigFolder..'/Default';
-				local ConfigNameStr = "Default";
-				
-				if isfile(path) then
-					local data = readfile(path);
-
-					ConfigLib:LoadData(data);
-
-					ConfigLib.SelectedConfig = ConfigNameStr;
-					ConfigName.Text = ConfigNameStr;
-
-					UpdateSize();
-
-					ConfigLib:RefreshConfig();
-
-					Logging.new("folder","Loaded Default Config",3.5);
-					
-					task.spawn(function()
-						while true do task.wait(5.75);
-							if isfile(path) and ConfigLib.SelectedConfig == "Default" then
-								writefile(Window.ConfigFolder..'/Default',ConfigLib:GetData(true));
-							end;
-						end;
-					end);
-				end;
-			end;
-		end);]], [[		-- Default is loaded by CrystalHub after all controls are registered.
-]])
-
-    -- Save is explicit only. No save print/logging.
-    _uiSource = _replaceOnce(_uiSource, [[if isfile(path) then
+    -- Keep the original ConfigLib:GetData and LoadData implementation untouched.
+    -- Only make the existing Save button write the selected config even if it does not exist yet.
+    _uiSource = _replaceOnce(_uiSource, [[			if isfile(path) then
 				writefile(Window.ConfigFolder..'/'..(ConfigLib.SelectedConfig or "Default"),ConfigLib:GetData());
 
 				Logging.new("folder",'Saved '..tostring(ConfigLib.SelectedConfig),3.5)
-			end;]], [[local savePath = Window.ConfigFolder..'/'..(ConfigLib.SelectedConfig or "Default");
-			local saveData = ConfigLib:GetData();
-			pcall(writefile, savePath, saveData);]])
+			end;]], [[			writefile(Window.ConfigFolder..'/'..(ConfigLib.SelectedConfig or "Default"),ConfigLib:GetData());
+			Logging.new("folder",'Saved '..tostring(ConfigLib.SelectedConfig or "Default"),3.5)]])
 
     NeverLose = loadstring(_uiSource)()
 end
@@ -8736,16 +8625,7 @@ function t50.Callback(p88)
 end
 
 v302:ColorPicker(t50)
--- Load Default only after all toggles/settings/button flags have been registered.
-do
-    local defaultPath = "CrystalHub/Default"
-    if NeverLose.ConfigLib and isfile(defaultPath) then
-        pcall(function()
-            NeverLose.ConfigLib:LoadData(readfile(defaultPath))
-            NeverLose.ConfigLib.SelectedConfig = "Default"
-        end)
-    end
-end
+
 
 task.wait(0.4)
 v232(false)
