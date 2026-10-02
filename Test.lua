@@ -1,3 +1,4 @@
+--bro 
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -2600,11 +2601,6 @@ end
 
             t25 = {}
 
-            -- Button positions are stored separately for EACH config.
-            -- Example: CrystalHub/Default.btnpos, CrystalHub/MyConfig.btnpos.
-            -- Dragging only changes memory; config Save/Load controls disk persistence.
-            local _BTN_POS_SUFFIX = ".btnpos"
-
             local function _serializePos(tbl)
                 local lines = {}
                 for name, v in pairs(tbl) do
@@ -2651,17 +2647,17 @@ end
             local _buttonConfigPositions = {}
             local _activeButtonConfig = "Default"
 
+            -- Button positions are embedded into the SAME config file.
+            -- No extra .btnpos files are created.
+            local _BTN_POS_MARKER = "\n__CRYSTALHUB_BUTTON_POSITIONS__\n"
+
             local function _configNameFromPath(path)
                 local pathStr = tostring(path or ""):gsub("\\", "/")
                 local name = pathStr:match("^CrystalHub/([^/]+)$")
-                if not name or name == "" or name:sub(-#_BTN_POS_SUFFIX) == _BTN_POS_SUFFIX then
+                if not name or name == "" then
                     return nil
                 end
                 return name
-            end
-
-            local function _buttonPosPath(configName)
-                return "CrystalHub/" .. tostring(configName or "Default") .. _BTN_POS_SUFFIX
             end
 
             local function _collectBtnPositions()
@@ -2704,81 +2700,73 @@ end
                 end
             end
 
-            local function _saveBtnPositions(configName)
-                if not _writefile or not configName or configName == "" then
-                    return false
-                end
-
-                local data = _collectBtnPositions()
-                local ok = pcall(_writefile, _buttonPosPath(configName), _serializePos(data))
-                return ok
+            local function _encodeBtnPositions(data)
+                return _serializePos(data or {})
             end
 
-            local function _loadBtnPositions(configName)
-                if not _readfile or not configName or configName == "" then
+            local function _decodeBtnPositions(content)
+                if type(content) ~= "string" then
+                    return content, nil
+                end
+
+                local markerPos = content:find(_BTN_POS_MARKER, 1, true)
+                if not markerPos then
+                    return content, nil
+                end
+
+                local configContent = content:sub(1, markerPos - 1)
+                local posText = content:sub(markerPos + #_BTN_POS_MARKER)
+                return configContent, _deserializePos(posText)
+            end
+
+            local function _loadBtnPositionsFromConfig(configName, content)
+                if not configName or configName == "" then
                     _buttonConfigPositions = {}
-                    return false
+                    return content
                 end
 
-                local path = _buttonPosPath(configName)
-                local data = {}
-                local ok = false
-
-                pcall(function()
-                    if _isfile(path) then
-                        data = _deserializePos(_readfile(path))
-                        ok = true
-                    end
-                end)
-
+                local configContent, data = _decodeBtnPositions(content)
                 _activeButtonConfig = configName
-                _applyBtnPositions(data)
-                return ok
+                _applyBtnPositions(data or {})
+                return configContent
             end
 
-            local function _loadBtnPos(name, default)
-                local saved = _buttonConfigPositions[name]
-                if saved then
-                    return UDim2.new(
-                        saved.XScale or 0, saved.XOffset or 0,
-                        saved.YScale or 0, saved.YOffset or 0
-                    )
-                end
-                return default
-            end
-
-            -- The config library writes CrystalHub/<configName>. We attach the
-            -- button layout to that exact config instead of using one global file.
             local _originalWriteFile = _writefile
             if _originalWriteFile and typeof(writefile) == "function" then
                 local _wrappedWriteFile = function(path, content)
-                    local result = _originalWriteFile(path, content)
                     local configName = _configNameFromPath(path)
+
                     if configName then
-                        task.defer(function()
-                            _saveBtnPositions(configName)
-                        end)
+                        -- Store button positions inside this exact config file.
+                        local positions = _encodeBtnPositions(_collectBtnPositions())
+                        content = tostring(content or "") .. _BTN_POS_MARKER .. positions
+                        _activeButtonConfig = configName
                     end
-                    return result
+
+                    return _originalWriteFile(path, content)
                 end
+
                 writefile = _wrappedWriteFile
                 if getgenv then
                     getgenv().writefile = _wrappedWriteFile
                 end
             end
 
-            -- When the config library reads CrystalHub/<configName>, load the
-            -- matching button-position sidecar before the config finishes loading.
             local _originalReadFile = _readfile
             if _originalReadFile and typeof(readfile) == "function" then
                 local _wrappedReadFile = function(path)
                     local result = _originalReadFile(path)
                     local configName = _configNameFromPath(path)
+
                     if configName then
-                        _loadBtnPositions(configName)
+                        -- Extract button positions and give the config library
+                        -- only its original config data.
+                        result = _loadBtnPositionsFromConfig(configName, result)
                     end
+
                     return result
                 end
+
                 readfile = _wrappedReadFile
                 if getgenv then
                     getgenv().readfile = _wrappedReadFile
@@ -2786,7 +2774,8 @@ end
             end
 
             -- Initial config is Default until the config library selects another one.
-            _loadBtnPositions("Default")
+            _activeButtonConfig = "Default"
+            _buttonConfigPositions = {}
 
             local u217 = UserInputService
 
