@@ -1,4 +1,3 @@
--- test
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -6528,6 +6527,124 @@ v301._left:Toggle({
     Default = false,
     Callback = function(p61) u276(p61) end,
 })
+
+do
+local lp = game:GetService("Players").LocalPlayer
+
+local autograb_on = false
+
+local grab_rs = game:GetService("ReplicatedStorage")
+local grab_round_mod = nil
+
+local function grab_has_role()
+    if not grab_round_mod then
+        local ok, m = pcall(function()
+            return require(
+                grab_rs:WaitForChild("Modules"):WaitForChild("CurrentRoundClient")
+            )
+        end)
+
+        if ok and type(m) == "table" then
+            grab_round_mod = m
+        end
+    end
+
+    local d = grab_round_mod and grab_round_mod.PlayerData
+    if type(d) ~= "table" then
+        return false
+    end
+
+    local me = d[lp.Name]
+    return me ~= nil and me.Role ~= nil and not me.Dead
+end
+
+local function has_knife()
+    local char = lp.Character
+
+    if char and char:FindFirstChild("Knife") then
+        return true
+    end
+
+    local backpack = lp:FindFirstChildOfClass("Backpack")
+
+    if backpack and backpack:FindFirstChild("Knife") then
+        return true
+    end
+
+    return false
+end
+
+local function grab_gun(obj)
+    if not autograb_on or has_knife() then
+        return
+    end
+
+    if not grab_has_role() then
+        return
+    end
+
+    local char = lp.Character
+    local root = char and char:FindFirstChild("HumanoidRootPart")
+
+    if not root then
+        return
+    end
+
+    pcall(function()
+        obj.CFrame = root.CFrame
+    end)
+
+    local prompt = obj:FindFirstChildOfClass("ProximityPrompt")
+
+    if prompt then
+        pcall(function()
+            fireproximityprompt(prompt)
+        end)
+    end
+end
+
+local function scan_guns()
+    for _, obj in pairs(workspace:GetDescendants()) do
+        if obj.Name == "GunDrop" and obj:IsA("BasePart") then
+            grab_gun(obj)
+        end
+    end
+end
+
+local grab_desc_conn = nil
+
+local function grab_desc_added(obj)
+    if obj.Name == "GunDrop" and obj:IsA("BasePart") then
+        task.wait(0.1)
+        grab_gun(obj)
+    end
+end
+
+local function grab_desc_stop()
+    if grab_desc_conn then
+        pcall(function()
+            grab_desc_conn:Disconnect()
+        end)
+
+        grab_desc_conn = nil
+    end
+end
+
+v301._left:Toggle({
+    Flag = "auto_grab_gun",
+    Title = 'Auto Grab Gun',
+    Default = false,
+    Callback = function(v)
+        autograb_on = v
+        grab_desc_stop()
+        if v then
+            task.spawn(scan_guns)
+            grab_desc_conn = workspace.DescendantAdded:Connect(grab_desc_added)
+        end
+        v18:Notify({ Title = 'Lunar', Content = v and 'Auto Grab Gun ON' or 'Auto Grab Gun OFF', Duration = 3, Icon = 'bell' })
+    end,
+})
+end
 
 v301._left:Toggle({
     Flag = "auto_ping_prediction",
