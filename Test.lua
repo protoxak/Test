@@ -1,3 +1,4 @@
+--bilddd
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -3189,60 +3190,11 @@ end
     local u274 = uDim2
 
     local function u275()
-        local GunDrop = u129:FindFirstChild('GunDrop', true)
+        local grab = getgenv().LunarGrabGun
 
-        if GunDrop then
-            local Character = u131.Character
-            local v611 = Character and Character:FindFirstChild('HumanoidRootPart')
-
-            if v611 then
-                local v613
-
-                if not GunDrop:IsA('BasePart') then
-                    local v612 = GunDrop:FindFirstChild('Handle') or (GunDrop:FindFirstChildWhichIsA('BasePart') or GunDrop.PrimaryPart)
-
-                    v613 = v612 and v612.Position or GunDrop:GetModelCFrame().Position
-                else
-                    v613 = GunDrop.Position
-                end
-                if v613 then
-                    local CFrame5 = v611.CFrame
-
-                    v611.CFrame = CFrame.new(v613 + Vector3.new(0, 2, 0))
-
-                    task.wait(0.2)
-
-                    v611.CFrame = CFrame5
-
-                    u130:Notify({
-                        Title = 'Lunar',
-                        Content = tostring('Teleported to gun!'),
-                        Duration = 3,
-                        Icon = 'bell',
-                    })
-
-                    return
-                end
-
-                u130:Notify({
-                    Title = 'Lunar',
-                    Content = tostring('Gun position not found!'),
-                    Duration = 3,
-                    Icon = 'bell',
-                })
-
-                return
-            end
-
-            return
+        if grab then
+            grab()
         end
-
-        u130:Notify({
-            Title = 'Lunar',
-            Content = tostring('No gun on map!'),
-            Duration = 3,
-            Icon = 'bell',
-        })
     end
 
     function u276(p52)
@@ -6574,8 +6526,8 @@ local function has_knife()
     return false
 end
 
-local function grab_gun(obj)
-    if not autograb_on or has_knife() then
+local function grab_gun(obj, force)
+    if (not force and not autograb_on) or has_knife() then
         return
     end
 
@@ -6609,6 +6561,24 @@ local function scan_guns()
             grab_gun(obj)
         end
     end
+end
+
+getgenv().LunarGrabGun = function()
+    local found = false
+
+    for _, obj in pairs(workspace:GetDescendants()) do
+        if obj.Name == "GunDrop" and obj:IsA("BasePart") then
+            found = true
+            grab_gun(obj, true)
+        end
+    end
+
+    v18:Notify({
+        Title = 'Lunar',
+        Content = found and 'Grabbing gun...' or 'No gun on map!',
+        Duration = 3,
+        Icon = 'bell',
+    })
 end
 
 local grab_desc_conn = nil
@@ -6645,20 +6615,6 @@ v301._left:Toggle({
     end,
 })
 end
-
-v301._left:Toggle({
-    Flag = "auto_ping_prediction",
-    Title = 'Auto Ping Prediction',
-    Default = false,
-    Callback = function(p75)
-        u13 = p75
-        v18:Notify({
-            Title = 'Lunar',
-            Content = p75 and 'Ping Prediction ON' or 'Ping Prediction OFF',
-            Duration = 3, Icon = 'bell',
-        })
-    end,
-})
 
 do
 local function __silent_aim_block()
