@@ -1,2 +1,8751 @@
--- This script was generated using MoonVeil 2.0.26 [https://moonveil.cc]
-return({function(m,b)return function(c,o)local n,e,h,q,p,i,f,r,k,d,g,a,l i=0b10101000 while true do if i<=0x9c then if i<=0x6c then if i>=0x52 then if i>0x67 then i=q>0 and 0b10010000 or i+-0b110011 elseif i<=0x52 then i=q~=q and 0b100000011-i or 0x128-i else i,d=0x8d,m.h(d(a,m.i(p)))end elseif i<=0b110011 then k=k+q i=q>0 and 0b11001010 or 0x2112/i else i=q~=q and 0b10111101 or 0b10100101 end elseif i>0x90 then i=k<g and 0x6bdc/i or 0x31f8/i elseif i<=0x8d then if i>0b1111011 then i,r=0x1c17/i,r(m.i(d))h=h..r else i,p=0x67,m.h(p(l,n))end else i=k>g and 0xb1 or 0x2010/i end elseif i<0xbd then if i<0xa8 then if i<=0b10100101 then i=q<=0 and 0b101100010-i or 0b11010110 else i=q<=0 and 0b10011100 or 0b1010010 end elseif i<=0xa8 then k,d,r,h=0,1,#c,""g,q=r-d,d i=g~=g and 0b10110001 or 0x6c else return h end elseif i>=0b11010110 then if i<=0xd6 then p,a,d,l,r=c,b[0b11][1][b[0b11][0b11]],b[0b10][1][b[0b10][0b11]],1,b[1][1][b[1][0b11]]i,l=0b111010101-i,k+l else a=a(p,l)n,p,l,e=#o,b[0b11][1][b[0b11][0b11]],o,#o i,f=0b101111010-i,k%e n=n-f end elseif i>0xbd then i=k>g and 0xb1 or 0x170-i else i=k<g and i+-0b1100 or 0x9dfe/i end end end end,function(a,b,c,d,e)a.T[e]=a.c(b,0x5f3e)*(d*c)+c+-a.a(c,4294967295)return a.T[e]end,function(e)local a,f,c,g,h h=string f,c=h.gsub,h.char c={[0b11]=0b10,[0b10]=c}c[1]=c f={[0b11]=0b10,[0b10]=f}f[1]=f g=bit32 h,a=g.rshift,g.band h={[0b11]=0b10,[0b10]=h}h[1]=h a={[0b11]=0b10,[0b10]=a}a[1]=a g=e:r{f,c,h,a}return g end,function(l)local c,_,f,k,h,d,g,j d=string c,d,h,f=d.unpack,bit32,d.byte,d.sub g,k,d=d.band,d.rshift,table j,d=d.concat,{}_=d c={[0b11]=0b10,[0b10]=c}c[1]=c f={[0b11]=0b10,[0b10]=f}f[1]=f h={[0b11]=0b10,[0b10]=h}h[1]=h k={[0b11]=0b10,[0b10]=k}k[1]=k g={[0b11]=0b10,[0b10]=g}g[1]=g j={[0b11]=0b10,[0b10]=j}j[1]=j _={[0b11]=0b10,[0b10]=_}_[1]=_ d=l:u{k,h,g,f,j,_,c}return d end,function(m)local u,a,B,z,t,j,p,f,o,h,q,b,l,y,d,s,c,e,x,g,n,_,w,A y=m y={[0b11]=0b10,[0b10]=y}y[1]=y w=m._[m.N[-0x44a1]or m:O(m.q"2rLXR",m.q"ReS",-0x44a1)]w={[0b11]=0b10,[0b10]=w}w[1]=w x=m._[m.N[0x703b]or m:O(m.q"RaQh<Nd",m.q"H6;",0x703b)]x={[0b11]=0b10,[0b10]=x}x[1]=x A=m._[m.N[-0x13ef]or m:O(m.q"VJ~(vb^",m.q"T?7",-0x13ef)]A={[0b11]=0b10,[0b10]=A}A[1]=A g=m._[m.N[0x4dfa]or m:O(m.q"mGLPejQk=c",m.q"S4W=V",0x4dfa)]g={[0b11]=0b10,[0b10]=g}g[1]=g q=m._[m.N[-0x7e0c]or m:O(m.q"eJ^A@eg",m.q"P7M",-0x7e0c)]q={[0b11]=0b10,[0b10]=q}q[1]=q B=m._[m.N[-0x72da]or m:O(m.q"MSn<Bc~A",m.q"BpNm",-0x72da)]B={[0b11]=0b10,[0b10]=B}B[1]=B d=m._[m.N[0x67db]or m:O(m.q"sv2(Nz!ta*d+f;v",m.q"Vx^86f7t",0x67db)]d={[0b11]=0b10,[0b10]=d}d[1]=d a=m._[m.N[-0x3ced]or m:O(m.q"%5e$4P0h?;9I-^)",m.q"xhT_p6s-",-0x3ced)]a={[0b11]=0b10,[0b10]=a}a[1]=a l,n={},m.N[0x68df]or m:O(m.q"XJP",m.q"5d",0x68df)l[m.N[-0x6978]or m:O(m.q"Z?k=0h;;",m.q"5bQ7",-0x6978)]=n u=l u={[0b11]=0b10,[0b10]=u}u[1]=u n=m._[m.N[-0x605d]or m:O(m.q"J>YC7`gs",m.q"9+XZ",-0x605d)]l=n[m.N[0x12d9]or m:O(m.q"4zRl#y`T",m.q"%ien",0x12d9)]l={[0b11]=0b10,[0b10]=l}l[1]=l f=n n=f[m.N[0b111111100]or m:O(m.q"c9&p_",m.q"?i2",0x1fc)]n={[0b11]=0b10,[0b10]=n}n[1]=n e=f f,t=e[m.N[0x742a]or m:O(m.q"v8A)W",m.q"&C&",0x742a)],e e=t[m.N[-0x38c9]or m:O(m.q"1>^n}?e_",m.q"pN?V",-0x38c9)]e={[0b11]=0b10,[0b10]=e}e[1]=e s=m._[m.N[0x1c0f]or m:O(m.q"(16B`!2",m.q";iL",0x1c0f)]t=s[m.N[-0x1775]or m:O(m.q"HdrlE",m.q"H(L",-0x1775)]t={[0b11]=0b10,[0b10]=t}t[1]=t z=s s=z[m.N[0x59ce]or m:O(m.q"$0gJ+",m.q"M7I",0x59ce)]s={[0b11]=0b10,[0b10]=s}s[1]=s j=z z=j[m.N[0x3736]or m:O(m.q"eIeU_C))",m.q"zEd6",0x3736)]z={[0b11]=0b10,[0b10]=z}z[1]=z p=j j=p[m.N[-0x29c1]or m:O(m.q"6Y@nL?m_",m.q"Hk^6",-0x29c1)]j={[0b11]=0b10,[0b10]=j}j[1]=j b=m._[m.N[-0x24d9]or m:O(m.q"EoeJ3eE",m.q"0Z#",-0x24d9)]p=b[m.N[0x31e0]or m:O(m.q"GCv{",m.q"Py",0x31e0)]p={[0b11]=0b10,[0b10]=p}p[1]=p o=b h,b=o,o[m.N[0x112f]or m:O(m.q"d$D%A",m.q"$r%",0x112f)]o=h[m.N[-0x775c]or m:O(m.q"<TdCp",m.q"RE7",-0x775c)]o={[0b11]=0b10,[0b10]=o}o[1]=o c=h h=c[m.N[-0x1627]or m:O(m.q"QgT&wL;",m.q"1~3",-0x1627)]h={[0b11]=0b10,[0b10]=h}h[1]=h _=c c=_[m.N[0x4a09]or m:O(m.q"kop&u?+X",m.q"e~J7",0x4a09)]c={[0b11]=0b10,[0b10]=c}c[1]=c _=m:G{A,B,c,x,u,l,s,y,q,g,a,p,e,o,h,d,j,n,w,z,t}return _ end,function(a,b,c)a.T[c]=b return a.T[c]end,bit32.bnot,function(m,b)return function(c)local a,i,p,n,d,j,o,f,h,g,k,_,l i=0b101010 repeat if i<0x2a then if i>0b10101 then g,h,k,j=o,b[1][1][b[1][0b11]],b[0b10][1][b[0b10][0b11]],0b11000 k=k(g,j)_,j,d,g=o,b[0b10][1][b[0b10][0b11]],0x10,b[0b11][1][b[0b11][0b11]]j=j(_,d)_=0b11111111 g=g(j,_)a,j,d,_=0b1000,b[0b11][1][b[0b11][0b11]],o,b[0b10][1][b[0b10][0b11]]_=_(d,a)d=0b11111111 j=j(_,d)d,a,_=o,0xff,b[0b11][1][b[0b11][0b11]]_=m.h(_(d,a))h=m.h(h(k,g,j,m.i(_)))return m.i(h)else d=0b1010101 l,d,p,_,f,n=c,"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+-;<=>?@^_`{|}~",c.sub,o*d,h,h p=p(l,n,f)l,a,d,n=1,d,d.find,true i,d=0x1125/i,d(a,p,l,n)_,j=1,_+d o=j-_ end elseif i<=0x2a then k,h,o=0b101,1,0 g=h i=(k~=k or(g>0 and h>k or(g<=0 or g~=g)and h<k))and 0x21 or 0x15 else h=h+g i=(g>0 and h>k or g<=0 and h<k or g~=g)and 0xf2-i or i+-0xbc end until false end end,function(a,...)a.m,a.q,a.t,a.o=a:m(),a:q(),a:t(),a:o()a.F=a:F()return a:k()(...)end,bit32.band,h=function(...)return{[1]={...},[0b10]=select("#",...)}end,function(a,b,c,d)a.N[d]=0b100*a.b(a.b(c,c),a.b(c,a.c(b,0x3471)))+(a.d(a.c(c,4294967295))+-c+(a.a(a.d(a.a(a.c(b,0x3471),0xffff)),a.a(c,0xffff))*a.a(a.a(a.c(b,0x3471),0xffff),a.d(a.a(c,0xffff)))+a.b(a.a(0xffff,a.c(b,0x3471)),a.a(c,0xffff))*a.a(a.a(a.c(b,0x3471),0xffff),a.a(c,0xffff))-a.a(0xffff,a.c(b,0x3471))*a.a(c,0xffff)))+-a.c(a.d(a.c(b,0x3471)),a.d(c))+-0b10*a.d(a.d(c))+a.c(b,0x3471)*-0b10 return a.N[d]end,function(e,b)return function(...)local _,c,a,h,f _=e._a[-0x7ef]or e:ca(0x2c05,-0x7ef)while true do if _<0b11000110 then f=e.h(f(h,e.i(a)))return c,e.i(f)else a,_,h=e.h(...),e._a[0x5234]or e:aa(0b10010100,1,0x5234),{}e.j(h,1,e.i(a))h,c,f,a="#",h,b[1][1][b[1][0b11]],e.h(...)end end end end,function(a,b)return a.F(a.t(a.q"|E~lHAaiAOApdl4AP-Y?a%J~)V`u^83r%5o|3qnXbYX5|W&a9Nb#7B-a(4e|V`T_KWo&H!Q)zl-1w>_I|6y!CM{jIoApb&dZDK4SPH*pWZDDKyf*@gT|70LjXm4+HFaK0%a&LDaVRHXvAZ2c0Vr*sqWFTUBAY^4`|6z4(bS@K6Y5#6#AW(8;WNH6nbZKvHAWugBMhrn>b8l>Q`*dXtp$AZ5WMuvXU<V*(Z*^{D{~;M5;((MOZvSr}c42I3WFY%yYzN_RVRCdX^9n`*VFf@sAO}SMX?AI3WpWc!yKrR<;74p}8sSs!1^{Jp4+3gWP6zizQ&0|}2}y2r|7C7-X>@rWP5*CVX>4UJW^(^&Wo~3_c_4HC2%>XkY-M9~Z}V~sB;^%A4@OT`_aJg*C?q#922cNRWo~6;3TATOZ*5OzW-A~DbN_U5Z);@=LuvnVV{Bz0L~nHa2SguZ4mmh9IsY&;GBGnZG&BD;FavI7cLP-CVPXp_;U0tqR7n3)PgetMVr&WjO<`wlX>@gD_hk}P5a4ica&-JD05+g!b#5UDbpLN|b!}p0as~fmZ)|UJ1Z`ozbZ8S#b#x)%W#3eCVQzCH;AL*VV|fNbb#w(l1K(3=bQME10C`&fZ*FBEO>K4{{XsRLO>Hs<Qf2>bZ**mI2P0&EV=^`}HZMa7;r}3Ta%FaDWq0!+Y(bze!eeY{W8G^;VPSA^Bj9On{zRd4Y<UYyZfW~wWj+FK0#8m4PeFBbZw_M#0uDj||92osZf<X5W&dt;a|L5;VQu?x2PI)hWq1W<`)qF)U`S<QWDoyRb$UZ}a&vF{a!?H5WpW5ZZ~ty|a$$3H2~_`Ocyvr*Vr6Xc3K!rCU^*cdNp5C+X(M1|AX#Z;QDFaUZ((F*WFZm1P;6miWoT2NW&LswqB9qAVt8Twb6ucmWI8V|IsY~}H8wRhG%^1+22M{3M^#S!1PZ`x1#og{Zo702Amc`LZc>5+-%f8J1yVer2SxvKa&K}vAOUcDVM8EeXk{Q`Dx%RK5};h*GC*%YU?6nf0|0hub9G_hb8EkOVsCgLa2aAQ6ADvE;#R?7D<N;8D8YYeWpf~DbRa2a|1J<zZ$))%W&d(PZf9&|b6NjbS`0yCZE0@*Aai4KX>fEB=1n0WQwu{R!vtex_i1bgCtyN!ZeRTdRl_VuX=i9`>HuJLaw2ReVIX&C-(_wfVIW69AZhb+AZ~yafo)-M2mfbfbZ2F5b_f4Qb#6p*Z*UOYM29}YAPYt;Ax~zlRzaW-Of29aXMt4vZ)X%B1ye{*PybXFLSbWTXL9^?K~E_KRYYlRGW`s6B2#E(a%pChW)lbEH){xqfr()VcSdq$gdl8e2RNYrd1Z2Q6h~!r@<KpzM&JS?L}7Gc{{};Eb8Ts39sCr{BB}~FGdDFd{ye}iG73p;VQ2kiN8%1RFgP$bZ!tMCGy@?y2xLM1Yb?M9MsH_DZvSKmQ&2@kL<)aTP6K*ja0*VL-e*KQARrD<fmlJdDu8ZnSilEXf}%625h3D>i3t{9beBL?Z*UDocvs*cQ#T_2a|%;obairJ)SbZzVp$1h5jCM8M}Kl*aA;{`bCRL|2UAp1MN~sb`xiy0Vjx3xb9Dc2Z6HH(Z*z11Xklq`4oPQj|8H_-M|EjQZoatS3Px#iWwiliyK)D)!~s|qSHNrNa{)_$06=zcU~h7H;~^D4ft}zKK`bD1|7&S*aAjmJ3;#@Ed2e-ePjd37zzj)XK|oDma%)Fravl#vS)^7&WJ2QKNklpz3y8=BPXA$TWd%)dWM$iI4YGnwbqT>`a{mlMZ)AB^Wo&zIW30doRY^?C!2S*63o$V_H!wKAIWRFfHwapzM(cC~tRY3Np>k<s{~%Cxa&T;A3hZ9tnBx*fm4YBgRqIJ0euNEDf>&W|zic2#Z*T+?0TTR+;b{vLQ)P5ea=&S9VRCs;#~?%dMsgM43PwyxPJc%VO;u7v36$dhNM&+w5J+`xKVfcfX=GB_AO&I72Unyf#BFAeVsB>YAf+P3We5s_E-o(48e~LnBxR$gf@Ea(Aa8QVz-@1KW%(eW!Fyq4Wo|A7uIC~RQ*GzqXqe!0=X7af5`%|;W(zU*FgP>DpgA)$HQ^F)qTeFzz-s~oQg2^uWeGuPM5GBJpnYrJViiVdZe&CN|8sOhXlZO@PnTvxY@xsmR^$I;1@5>43PN&*A#P=J|8pTRFeM;8Ais8Ha(N(k>OderATJ;wF)#vxPXO}$z!L0Z;D$0VFa+;(VRLJ(t2Hq-|2a7^G%+(W4sLlML}hcpAY@^{fc*)+0CIF<WnpyQLEuMnX=Fj;1XurIX><xqZ)0nnLsh_KauAB=xq}EkIABz0Wo>1M;~*n;OyvY}AV3~cWo*Fs@t`eX*g|i0b0BbiZ~Q=MZ*DFP(n9Z3WpQ=mKxGS3G^Am9Lj~1>7)-gKaYp|rMo?2ALT_)sb95;NX>e}<bGX@qmH`6bZDIwBVg$8C@c;+x!*dDB;8VXyMN&yd5Xb;@+hKC6z#wL$K`scdLSb`dPhkeA0Z;!<2}e&%L<&m(RZUO?P-$*!{@bB;VRKVydS(7Sfj2lZF*q|Y>o@}|U<@MxMsITRI6@5S0;&WeR%vrjX<}?;x&ZQEcRWCyWkNt{W^^c_y#oZFXLEI823}x*Kn-%aVjxx^xuFGAZ|&gq1YThh5FlqDP;&QWWNF``AWu#N)n{Y?4tS*?`GN-{-Z}tcF=7R$KzDA97sfy!WX52KV9F>V;S`XhT%g?n<DfM#C65?RZ*oT<CgKHwV|{P*pl^3>E(H7G{|Hq{LvM0!WutN|oTd;!&;n(kgHyR^8l~-^b7f`b;31y_GcYg}LqZ3Da$K@NJYYp;W&r>sISSKHPT4{^!D2bVAYl&tKz3ydQbFqBLqO<3|3*+mNC`n>WAtD^rC<hBfNXSV3jaxNaCLM-WoO4>ZVS=jXra;|1WsRNZ*B@zr@(S3qJ0IP;9+?WLT{dd{y1S!X?SI92vW;$biQH;$-x4_2UCA=X>LhvX9vsS?{#uz4s+`cIW_+<FfcbZIXE)EFgY+a4NX_TW${ggK+d5x;B{kY2`>GBOh;2oKn2zV#iah%00c&FZgc}BpK~h(LTvIt+Td*Vx*!HqZ2)Ct2}7>1Kx<TKw4g`r0B-LILTq(KfN*7FR|!;Tc_3&p-~|f7zjRD?H!d@)r3yatL31EsZe&XUlR&>9VRdwGEw4i^>azkM6JT|lVPkJ@w`OT)8h{{WhhcP`XyD*32uy5&;vf+I-0V&YGB!3jIsY^`H8L;(ZVG(;VE)7oNp5a$g+Rr0PGbhOL%gHpz+xcWPQdU4G95z`0C`%EZ*FBEMS|sET0nB|AW&&z*T4!jF#j_)GB7nZI5+7Ba^Sqd4^v=oYi0FR?O<!2VFgrabmwek5KgBv;W{7$Ic{Hp_h4^qY!_g~g836K0Pto+X>)LFe_?qCR$+2!nn0fiS3yZszCb#{Li2BU8Nu>FX=7y$pFwVPX)U#*+h7crPjz$(KxJv;fglRr0)P#2VtBH^Wpw{(WI8V|1R&ynoRbPqZftqZ1NjU<qKpGE4O4Y)&r)G|b6n$7qeX6?WMyO&K{Eg!0B-(x=?p??Y;0n0|6y`uM|EikL%nq)fjS@uMQUPX{{v@rZUjVWW&LFFAu=#DH#IOPHZu>yV(iBWAfVIW_6Oh%L*_toVN-S6Vrpza1Zd@84qE+54`6sgWoTh`A8BuL4@7~agCU%t-4ZAxLSb?)1_*TGso-)!;C?_cV-`Vk|8r$+Vr+R#X}@k|VRBYwRN!g*ba}>MPGxj=Z~Jm<lYs<GWpZ$T3rBBsXkl$zqW=X!aBysS18MhdX9gc2Xm4^0_d#rTBLGisRB!)q3t@6{Z+9)0+Cm3YgChvgfM&pStz~kcZ*=<s4n2V&>OW=&se}lgg%DF~KY3zrcpza7AS9rtIv@=wAb)^#Ap;Y-E+H-HL1knhzvKgVVsvi)<W+DGexlQKa!vr)0}PylQei)2X?1fANb6v8VApbEXe0m(jN(IR|6y)tWn=?PV&`lLS05m(;A3SH-du)XLUeBBU}bW@L}+w$aC1dqa{pm>E@x?UXmwv=b#rBMa3FNN!2d2|Z*4C{WM|)HNm(yxa$s(0|8!+}X=Q9=FaK>}b97~LFLS?db#h~629=`>{7N8^q)B84L1S{?d2DH82;ijzP5)tOZUb{^ZU%ovcyw}Ma|v{#{z<?IL}hSvXifibWMv0ta&K*KQb$4y&Y)pz1Ox8);9+DSUch5(1%CEo3qovfZ*8-~{{>TUWo2XrPXBLoX=Zr{Mq!(4WsIQ*LzlqRpbW23bzy8kAWVqBY<~<!Oi4~h3hHCcNZrh3Zr!W8<1Px$I^u6|bh`lHfoX32b1gt1bZBKDaL$7QE)7*Bpe`a*d4F(a2SIIOY2(2C2BbiBWOD*(Wd9LJb!}m8Z)xddMgjz322Vo<RBwN0XKZB%Lt$#*s;ppJ%>X*x0By8jbKf9zWq5SDfO9PGAZ=lAs331^bAKRaY+-aPAkO03b0E+_E()OmIw1BT!Ym+p#4I3XZt6c^V@V)vrUWhpaNl8Ra&r(RVjxHEA|PXEAccSsQ)u^ZcOdD=7EW&<&ueaJW*eZAKxK0OAZBlMZe$@1`~>3o1qNAVY;14;cM3stZEtgM{&!$yHA8iCbZ<v(AY+1}T!rp^3C|(@Lks|P2SajcZQpZmZVgcHKxuQ{En!4&bO<LU0b2hEM^ZsT3P)AnP6tYLZQj6V4*xhZIXE~tGc|uWHaIXiHwJp(Z)+ej3r~Spa%_NqWn?2kWMp$RfPR>OZ)Rq5Wpv8nvvX+9;?N*;XnLRs*2Co%N7g_f)8Qa*?`|MtZ`c5DcW(DC15(|9MR9d$yKqzjKoe4B9H4UlWgtXlW?^+~YjhxbU=LJ4V`bg}+huZJAsAb1CS4$Jb}=q6--Ip+!sh!0aw=g9PES%z|3OR&N>xoz3*`G?m1Pm~U?8AmX=Ch8L5o2IN#URX5mLKlaA|;HbY)2ZZ+~)OXJrOKZb!iLa|z*rJput=1XKTIY-TA;X>DoGbaNnfpQP#GaB{xr;BIsvVrA#RApdM(b#7y5Wn{+zSr4Bgr-N_8L1aH~a&Bd15(<WMCaoE%r65C604UK%DgO>PH#jjiGC2P-G&VOkH!%dIbmkxnkHe&b3I%5h{X>SJQ)ppiZ+E>8*Pvu?Z*pb?5c5N9wjhUrPi{tU?_+gy3FKf;Y-FEMZ*vDolpy+m4*b>N9$<BBVRBPx$9iQC1OTd|^g|d%wrK!mZYDu<L^U9CFK>BBWncjn$G~dhzjS3FZf|s2WE3P_K-PdD?_pgA3#)?uLwg5MQh;G{c?b|d^=UDI2+8FHZFO=tWDQMp;6!Ow00Ut^19D+x2u(Af_+a;J3qdQuZ*ov?Piby+2-x8rz;2R2`*LOHKnz1@X>8YIQe}L>WV_^2bi8pRY`|}HFH}=O1o>61K<R-uFg7_c-!U{X2Xk#8X=eLoOtt?vd1N;)|44OWFLGsObN?@BWnpA<FGBlrVG@8ZM^#Bv{V(z(E^KvS1$6&mVr*ptNpnHP7R(1!1wh51)1YH{{}4f9b8l>QbiHLDhDmO7bO}IZ?y{h7YgYH5Z*mUkDMV*Lm4G2DC24LT_i1i+$bfHhc_F;;VN4-xLq>A{U<LnEV_|G%2~K6c24F*ZVQvInAt(MGV0LA4b75>CUvpz}X>eG8VRb;KVPs@4;sU^Qb0BleE(Hie3&W#)z-44E`aouM20^0=ECK?;`3lj2<>LcKb#4s)Xl7Jzc?McZZvSLuco0TuY;0;CDF;Vn32$IwXNh3HXb41ga$&#$5dOVJQ)O~?X=7zQ5FY?^VRC1SfTaVk26b+5xj+gHfFOQOp-)Z>Lvm$yfY(=PZeCypKEZTly3?U<Cm;z_Xvko0uVr&{3Rz)n%OG-lUj`N90yQuX5g>nKWo~3)Zgd%<cL5^>;DQTNbjv`MPnv=d#(*H~1-d~J%TI9GKtr(uV*?3Cdvaw0U`T0n5`7@UWpuw_nIJl$+JFP%N0@~hXv1V+o8n}pA^l{WV=fR)Z*_CcWspHdZbe~Sp?F5kZ~kBiLe_vCp$Sv}Z*p``a%5$44<<!!bZKCBpuwRKgzrg2EFh2Ib8{g61EMZ2E(0+&FntYzhagW*1a#+Me+)@(c5iECD`9tKatkO%Mn($MBhItI2|;zu05PCr3G_DsJ7NjDfM#%WV_RWx)Zk@uWMCjZV&xEE;UH}Qe&BFnZuezu3|lD$P;YRTb#N24#$VWDiXaAkNKT+^WeRL>X8_xDa;6{$OsBwXFwHT3U~g`eVe=qKWM2nUX<}>xpahYj{|Hw>OiT($PdiWsji3roP9aMy1ll1_5XHtIQgq;XA^!?TZ**v3Z9>M-AO=$=z>2^JgF<Ux5hWlXD9S-Sn85#XZDDLF17&&tWdkuVFa%U(KVfYOL}_!yAWH$^4H~DPU>2Y_Ktg3`zhQQ1Z*mzxZy<3~PeSYAF<>A~K^TC>cHwgrP2lI?c>r*7r*CI+RRA}j2ra;L_9B3D2%N)ZWEMugTcAd1a&vTVLRb1)plFIf25fI{YyUxX3{!ArWn}LlM{H?NAPPoLeO3*`FIH)Db$vkpXL4y|Aa`kWr)VH^`yfwXXWGCZU*dq2AY<MDYuCY^`T%Ts2~uHTJHT%DX9`D%AXIN~V*g=s1#EA3WpaH3E8qidVR#BuWA<-B1ZEOo3o$S_|2Z)=IW#jgIh_vDAaY@2Q{aO_4czhOW}yd9aJZp!7fyEpaBp+H;>Cyw`le40Q)P78qG7~QvET1TZ*O$<;B$3z?Jt1ARY|hxZDDDDZZBkMb965OA^Ngm4IJZBbY*aGS7l@g7RDeVVr6im{~%LnX=ZdxZ~bE<!gFP1AZc`eAp})KX>ANZpnTdvapDR{WpZy}gB=QgMNdux;ozY_IKcl;Zc}h!cWwv$SLYx|Z*T;6VfSft3GbpzZ*z3j2a4cgaKHwQLk&mYY;R&=Z1<yc1<i1{0BjH@<F)`obw6};Z*FrDg~9=Yi!nnt;S1=*ya8zAGUqWFNb=y8$0$N&|6z4>X=Zh7Df<RP#o%Rf1x8HwNkdEHq)cW5HUBU$sQ{4;0I2^lBLJu~B><@ZH75Y5Hz@$9|2ZoFs5>nHsQ*1L0H{AP0I2^#GXSVVH2|ppMK=JbM>znf|4BOls7pNnsQ*nr0H{wv0I2^_Ljb5#MF6P(RYw4*S4jY<|5-}_s9Q|{sQ+D00H|M40I2_AQvj%ARRE~}Wmf>GXITKK|7lwQsB2vSsQ+zW0H|+a0I2_QV*sdgWdNxEb!PymcWD5q|9NWwsC#VysQ-O$1NLG70et@e6J`Jc0JL%c00VFU(o`yE|0V#af^-0=g#UH`sD^j|sEGf10H}(50H}=regLSBfB>kF|AGLhl7s-Ll>deRsFsKTsF?qX0H~Ub0H~b*jsQUb1a<%c|B(Q+j{pOX0Pl_;tpx%=1$O}d0g?c;kN^XZzW^sJe3%mi;RdP#iYx+y2Lg(H1tSRh1uB;Z!LDrp35Wjxu5JJdHUmKac@k<~09!Wz{{R5XA`bvlef|Lebrc~0#Sk?AC>H=m01G;w{SOl040r$mlK|hekpK;l65y``{{W60t_1)mD*ZJH;S+@b4gj?GD*z7^0h%)sj{g8MGACJufdK#DZvg-UBYk210RaMDg^7~@#s7FPD}Mkonkn~WCxZjR;BWx|yWnvIz$Jfd0to{DUWY4_04SIM{}2GKjQ|m&0RN-_0f+z+q5z++jsO#-BVZ4}6aRz&6aXcJ02SYe0MQU~0U;KM*8q^27$7_WfftDP04SLU;f??iq<;Wr02r68qbMM+n3)rg3jrAm1ikhJ;0<^NfE<<p#eaLBl7aw^Aq#-tC4&GOh6L>nc)$Pu|K64W24Z^l4FCj~1*RK@0FdpN4`3Al2S6N#0Iw5+0388A9tffz))>JcqX!`YDS!X~-`AD^ked}i6aedvAPvJI1pt`<BDNeMBcvXoB%=r6Biah&Dgl8dh8;k00snUZCU=5v0I1)fk^m^196^u({}HAD6NdmN0Pl_-u>}DkC;%n@hX56e04SUQe<=X2kpK~=AVB{rnzE(<t*$KhGK{qY!5WJI(W?=40U;{^AP@l}Ebof|kenF9hX5`8iw!_7Ss!x%ymyeDe{Mo3o&XtOuaf{EsTpH_Ex_0BoB)ua8Dz8t0Dl7{gFyh`3_Ae*bUOeifGq&v393Ax4Lu+Z0AO_h;CA{00fYk*0$z-hnEwF9eSnmN0tf#>n}GmvgLb6<0L6czD~13AA1Z-J0N@D$3IPa!<KTA+hz+0)p#v&~{sf)^UX7HQ0L5>9qjH5NAhZNwq3bWH44|WOz%n~3A2*kZ0N@MZ4B-r6|9Alaw3Yxcng0N`q(7P~04V>R05Jfrk^nOOs0e_7l!XArfd4s_hX4a6hFbFg;2Z%H=(eLioBb;q0|0pdGYgNkdWC^BM<5=zX#uwT2LNi|02hV=0RJKZ`~c0Ga{|9105y+%l?y<E-V@-(fTAl4KqrW?9t%SeKod!{l@h_C{}2!v9<~EJx9>y%Q>|biFMf;v0qd}@BLF3iR{%DW0HHSkqBsF!{W$_6I+6lwdPnb`04Sq6L6`s_^{!LHgJ>Wqp#ZI)wk$G}ya)sYYXJQ<1Yv@q0Fb5tHvj<>SU|Z23}gwB8P^2^b)b$Q1p^Sk3M`ck3L)GMptTOA6oAG58>n%J00Si;k0=1(c|9PB;D!MMdnJbg3Ibk_GdZB|e4Q(UF~EUwh4zl1gfWl8#eqO{|A+!#ETKAFt$zRmFCjw!;6%ZhdQjv$MBsB%V38pYlnjJFL3>r;5LRFh00YA>i3cB@p)&#p2LfLIku;Y8#e70Fzk>n?OPYRIz=HpAh5)W_06VPaWWa_nOoL1S#e;%>lZpTXCyPEEBg&#c;1q!cW`Gd@w3+_^Fq{Ckr$3ywNg#ZJ9O9vLPQr2jhX68!D`A$4;8p_%0Yo7O0UMwLCWyl(02{&zAyXl8VI^>JGAaWcVIg1xC5ZwG{ubbalLJ6|5_JA50C_MYfB-Use=8h-gaF`6FsHlVa<@b$fFuJF#cyq*Y+E0of+8}(`!RDez$aQp0N{a4Du6BlF#&;x0}_FNZT!H(ZJ><+GNS;+?|Ge&fIGl{9{~PAAtx)Gd=iiVrgk7ih7+J1VM;bYNxU||6QBbofK1Dx;C=#!0Zfs12T+;eP6)szf*>P<5kXEpVE+UG0IqNVJgWZyZIpumw3h(uFqX|gwS&NL06qVz0JQ)tngB}o04Sw@ftmm^u!epBife@f8G(L*e}Jw3wJR}|y#PxA??(VApM>F*05aMNA%Y8GJ*)~NO8~z=0gMPNv$CK*|D2FW05UTxHARAsfEA;on*uoD7N|k*hCKk_0}ldTj{k;~0L36WhbR94#UeR!V*thfUO9AS0C9Y8|D6Eoo&Z0d0KX-L06>WV^Z-G=0YO5E04SP$VUO1UAf?!X)!2bDn12ARtt>K%vjxHbLx}=waix|3-xG!aL;%geK#H0HK}7*ULW<3yzo3w}03fE|V(EMBfMhS30Fa*UfXLY(&tU%4KtqZGYjUQSTF}8p%;7+b0YOIrL3u*bBFG?-03fFjLw$Vq08p9$ke~Me^|axjvWY;407Hxa0&8=pm;e)q{{Tn;C5Qk(jG6&KNdZAZjIZGcV3M~0AgB=HKYa&bo2LMfpb_B+V6&0Hi2ndXi~?(PsG0Ww6NxsUC5Zq)?TrCJO8@~tLX80S*(h78*PtPlf&jm*uq-l;w*&!0|BV7`b*Y*F6aR_;OaLW{06;a40YOaxK|+o?;Sb<%lmH;AAmUwrra`Zr0Fa^>WVH|AivIvZjsk0Ts+<1+6N>;&040mp06>ocK~DieLXY<VD4?#vl>i{C`YB_85MaKZ0Fa~V5nwzZ;I;^0ivUC4j{t3zfd64ohu;7tgaA<hpoIY4QUPFw08;`WhXB1)0bqy#RfqLJR{wp8Zv#N55{=!Ai=iU`;KgJoD(|F~5}0JcKQ@fGsYB<5f1xIbM*@z;_amx}k^m$qT>#nOp&^N3B#8ls#U%TyE0JI(Nslc7|4c@02Yvv&n*FDQ;DjqdJdpsa;C!b5eW!qar~rT3sDJ}l!Hr1+5dvQSl|Y&RD3$<MzW~y5D1{~+VOYI~0t1d6tp)R8S^c8|p<0InKz|bdbb<iIcsX)^zHfkjZUEp<v_NkBx5UHX#b7ycX8`}jVuF%s0L5hgIdN+M#b$z%|7`%@09%uStNuwLTZ{m%i2z(xs7j$+0b*SNVqF1Z^<DzvUPmJW2dtR?E&#<Vo0BpCzcPX+T0u62!UOjsfntW@#V(_czcm2GFgcCS0ik=2g)BfVIz)+rN7Ak#A;^Hu0SBJr11bB3LIfJcF{ep5{{Y1^n=3j1#s4*%lRN@z3uOPD0&97po&XcKjsRc!VL*}rL16m(!9w`KuAcxCkN*H+040wAK$H3bL1F<xLX!e(d;hPX027b^V*p<zkN`lG0YPK|LH|OO0&9G*p#c9AkpN`?C6NH@K$QVOW&uG$l>+~3eX*hd6OsVGX8<LV06>ADlKTK?0YO5R0&9N%vZDYKlK^P|?<JD}Kzx9c0BZgLK|+@TYk#w({{Rz|0BZmxl)C^xcVLtNYym++|Cj)6o{0b@jQ;>_ga9Rt0B-I8ppF1<0bq{+aP9&ikN|N4;E@1w|AYd30CRw<sQ&=PIDSw+0IvUt0Cb=LF91S+cVb@vyog=4AzylA0N^t!05B?m{W2>6YykkpJ%RrsL;%G<f{sT20L4K$jz|E-H$$3=wBVNjxxj|t{uw}o0CfPgj{x&_j=A7UK(zoQlK%id0H6L>{x<us0s|p;j{uGy_pSs0vfuzHm;nC}0IrPy5u*VAqyPbk01~1A^{#)wrNLmX1ppKL31M*{6^H=Q5OVf%VHSw0;UWO8kGBALr3FEGq;)}fuZRGUnTr4(cHtNQhyrVHrj`K3w`iau*a3B3(;@@=BYyz{#c`p4fxiF)C2dLo>jH4vMu2F)U?qS83&m+SqH}`a0CFKwMF9i<c>o!8jcEX`*OCAcqGJuBVOX300L6f$mxll+_b!s1Hh?Id02%58Z8!vHj09i-z>NO@8G`_>lK>I*sh^>Gs-XY>|3cpY6N~_RoFfzfca9;nlc0$Je5k@y3P1&=eFdYY1)+WgtyO;ot$?;83I(Bo1+7(r3vGi1qizdfgbQO;BoQWs5iN!Vqpk&^)rSSGh!*XM9HRdIstaL?3vG)Wt&AdLKB@(wjS(%5B5jWr=#Z)rEs+JSk{0Nb7VVU(3vHDa=#~Yomk}+P@D}Lypw*!$Cz_1_#dm9?fSDnWgM~)m|CTF<05Y2`NQ+pD#!GaW;L8D<VM*>(Kq-e%1RBLfssDh90L6rlgNwfa#fFwEjS8U;Az8$r!y&~b(E#AZq0NCkN(!Nk7XaV{7sjCewgAO(j)8ap#s71Wh<X46C`-3a0N`d|;A*Y_YpSk*Wv>8ZuYhR@z$pEB1DC}|n}B-&-^F&1gMG_DkTt)50L6MjD{-JJqfAqAqs#%zfZ&aw;8k(Cz-_uf56*-T6@cq2fCV4m1pviJqWyr^z<rN{ga9&sk}D@%hydUz!PLaT@*#7@KxE}XgfIRB62(cTfQA6Y|ACK#hycZdkX<YEASg~%^dou9z;q~q%|T8yLjx#@1D9{bN~?e}0gr<}0Pl#9hmY5RJYJKh0N{Z42>Ahl`GghrGQp2T1Q`Nemty~i0L5&MfpY-g#cq*;b(%nQ8CL+{RN!D%;NVpofv->;0N@;;;4|T7>NI3$9-(yu6U9uI|A2P@#d42>c|IngQDA)l;5uMD=Gs1CO(vmvSpyQqP5e9OE}&D4fdJr7s`7wX^8i`%fLHVYS{?`CQcD2fJ3&3ku>ki2Cw>DH#ZI7re}DkRdyj*HIl)&Wk%kKcT>c<k{-8Bm{~%ry0aG1F<2&KFJ>f`UXTSp|g98(7|CLbyu5SRFs`hZej&v#jf-rK49{@6eGh%e07h+_@Mc_UmODljrp;94CEdbO(AwVSHbO7Ks;Ix<j05F^b8J;hTRTcMvocDp9_kx}QLH(cj;-CUp0HLY>osIzMumGa4{{SVI0G*ov6PK3&qX9vm0YcjVm;V5zn*akMkY)Y^0j8S(ZJ~?+|3{jxItKu4pZ$snfv1-Mv?~Brs13-e4brL)A*&FAz61iSmjEcJ)8U=}0IjnCy#N3LTgiw3fF`E)V7|@3*OLGm1%eJ1A+DEN@1TJfVXv1Kz_1p<_Y;)>4Iq^OotggtD5?Ol0Ir{R01>qb0RRq)@ZjqJs0jeT2>_J<vihH(s`Ee=040?Gzq6SD(Gi0IA+)LiAP@l}wFpAC2t+9Vs{kJWuAl(7{k9>&xB!kG!3FmKD69g3p#ZnH-vASs0J#Ey!UMMejvNdFx|t!RyUHP=ydk3&FM%PY(Gj{A;=Kd_odCWi!i@d|0F(f~040<Ff1Q{B6O;hJ0YU$tm;kh$0KuLA04FSRrW2e1U+Jv?g{=f<!USwpa|C3=1Zczv;h_lNe`o;3odX%4K;+rRK;#ib$CtDKtzCbO00Se8GXSx{|0R<Erj`J0od1jfv}gdxp9Ak1p)ZX{Ae8{g_$MJP04F5JnE=IzH?Llg2Oy3th$1ThzowV~ZJv$?BB9>{8KW<cPhgh--O5V@(Gi78;m4c50L6;2Uy%nOkl$ti;DP~4!kPg0ZJ>}2Vxs`IuJ=E0D*<84X#*MeYc5z=AYcH@0RJUm0G(t26JT2a%>hB7WCfwc1R-@V1S8G_B+(E~1OfZUWD{UnH~`>3t_&bx0Hy`v$OY)nUIp<$0N_9c^w0(IuUr7&LkslL3-MIf0N_Cp^wJUWU;wM&LIw2GA}7=VLDha904G@(0N@s{U|AQh;J3iw7_i_O4hZ$uCJ5Ii5h(!RMS2tz*ah)40N_R}6g}As@lgQaL<Q=7fUAfEJ+0asXWKoq+<F8j-5;ka0N@+XAXOaCpdHX49?+m4AFlmZqCj5&-T)<E{{Wq10L4;yJAGM2Kv-=6;7S=F|6c&6VgPMuSk_U2)@u`>iW8%21MeAaE?TLeVgTR&03~7oon`<NH(~(b0YRZ=QDOuk`!89o;9&sa044un0G(w36JY?Y;sHU`WtX5&0)fZ>WdJgLE=OoxR{-EP<X|%7;4$T3RW#+`FXmt~=HNBwVE;D(0L4~0B3*v~11MZB0N}i#&;>yQ!Tn+1px_0-C1dVd;caSMZeni(8TWB7UcKOE0OJ7vC1wDfY5)^v`vBwtLDgyi11g_iZvfyq4CD!cII8quIuGP9_24@=;AU3<rfMG|Z!+MHGUKWW;Vuf}<qGHK3gMyZ1%ky7B3*r;WdP^D03~GrooTgzQ}zKN$7$H0FFkBwR{-EA<NzY%fFtDqRR;iIApqbA0bnEn;Qb~7U?l+nGFd3UN^WBS;86rXP`(kPXaH?)Uy4F<-vb$RFJOv5XaIlc03~PuoovD&{Z;`X$7}#HgezYyZ)5=A3jrw$1obKn04w~!CSf)JRp1RFEDs<p0AMcvV80|{8UWx_0svF~SD<MCrfUFgas6VKLUjWfcQ0f9mq2R(=>R2b0Dqlt026Bf>H$Ij)o%dBUWF`W{{Y2cF)L>P1HUF_IRM~R3ZMq+3m{hupjd%mZ2+ckZUAj`LSoi=TfqI8Tf=z+8G9~h{-Qu|0P6rHZ~%XubN~}@0PF!lv!QgEf&?KiX9OT`{{Za(C2s(obKd|HZvgHALDh4=0L5a7D`}cwXzw=w;98DgZvdv>asX|3XjKAx1MeAqFKG*aaRBfC03~q%opk^c_i+I50YTMu0LAZQiz{oPz-l4@``}!az;OVkbO5VudOah3a3Gv;BYock8GkNo6hLzT|M37Na{!%p0B;j>0P+Dr)pt5T{b2zi$9Dk5W{v+VZ2$u#Y&rnz;2<i1UZ6m80H)t|0BwA1zrue5?-_wFZ5?2B0Q3I<C3OIuc>oi)bpZ4MLDhLfU}OFQfya3O#b}Q!eQyZ>Zg2qL1v8-iV5wkr0H$~VZTo(12?Buw8G|qVZ)#w70QCSRcmDvLdjJ!60QUX?LDhQz#cGi(|8W2^J1JX$byoo3VmrVDJV0Zz0RMOZrg{KvfN_2!f`kJZhA(pnfd6{{_X1b|oss*6b|j$rbO88t-X);>b^!VT;r)330Q`6WM}n3*{|o?ahjIWVd%pnwe*kTZ0V2nJf61V9XaL{?y`Zmq0H%K~q5lg4a{d#bdI10cC3*nsoqk^6XaOO|egOZ)ZIm^10L5?rLMwIv11EJmR{-D-Pv8(xU}jL@^<`0DXU8CX0H%Ha0BwVH0JLcU>&S?qfTy8=X#mT=hyxjlE_NRPe*FQ<;C=v|f&kI~5o`b@egMaUzW~K?m@;_wfOl^^0N`l@!lr>1VEuOpf{Ftfj4ycpCP07z0stj|0PCHE2Ow?%A;*LO-^Fv9GJ5^Mc_;S(;A__afB>e0?*MIyc@M&j0~z;@FM2J2f&l{nUnPP7orVV>Z~-Cz$A$pKb(}JMz94{m8vx*K-avxa0H%c_pnDerjsx!*kS}~Rz=Qz=KL90!0G)^jASVF-gaF5g0L6En`!aqfz<nhE;BWrrfP?_1hX8Gj{e2!nkOLW#FMj?9Acg@2040V1>z#@RAansC$BF>o#d)AIfG+@lU-tmuaqPf`0H%rO0Bw&ifF*#E0~z;}FMtkUhyexw|0Re3os0kzh+6>%0YTM_55RT-A^*pW0L6QvD}uf-Ac0l@;0b^r4XS{k4uK#HfuM7YfQWwpri%b=k%2HG^_0=TvoIr+0~wb4E`l0hiU9}!CI5;5osIw~p8)?K0Irk(AgTcWy#N3K41WLs{{SeR0IjktGW(CX1YyUH0L6Xxq%(v?fP+^6;Qe)&V2S{yjR0-?lY=|}0ST4^8TXhkge2gM0SW;BC5!-_kN_y5-U?xs03fUiVE{FKfeK)Pp8$}g3;^E~0FEHHBEXCQ|HqI3#eb$VhQ3gsg%$wdccXxee*mVB0Bx0p3j)8G0~wkxhA;q*{{agCC5`}{lJ@{8qYD9;03fdV6@!Bd0N0@akf!Pk02B)Vxh>$10LOol0L6i*Gl*Nj--lQL;CZf~jsU-=kpOL%hZZ85-vb$(FNixJkOBV;040zBos<B3D5VPlngAfM79#r%g%%*(qX4b9?<_Kvz64>%lmOqwgQ_!%W<ZH&_W<B~xgd}LrjxG#ZJCJ*Vx0b9yZr<R;V}TNngI>}umBU00S*8s|0}0u5}N=t8~*|qq=W%Xqe1Hke*$4=0%ic|tp5P1tN<mG0G<Dr06_r|hXD`Yp#Y8^zDEF)0AHb(0FbCBU>5`6{{az~027k|68;52pO*l%D*+S!4rD<A6@&p4p8o*0r#>kw0QmnBKmY)R0hI#(2E_peSO$jz{|5X52D$<U!T$pW1P1Z}2FL#b2C)JL>H`M<mIMZm0|w**{|2T32CD-G9Nz|+0tTM~009R7c?O>Z2Ac#1|2GCx2JQm}m;VC>QU=rm2F(8f2Fe2l#sUWaxdR5V0S4y*{|55|2HgP$uKxlCvI7SB0tU}!1V7*vpcViIg8u{tI0ohe2EhLT2Dk$T#{&lMo&g5P1wa7?_WuC}wF3sP0tWw!0S3bX2JQm;27nAe1O|`<2K$%<2nX;227v<q1{(&|0tO@of4Bh#;Q<Eg7Qp`k2JHa``~e34=>Y~_23iJ({{sf#0tWN}1j|404+8`rfDl3iKvf6=B@h7x6afVo0ww(%6~s&ijspggzXJx-0S2WXKmp$d(*g#J9H0XR|9%F60S2T42L0tIfB^=U0S1r%1P1N_2A2W`{}~380S3|o20dI4p8x;^Ko6D|X8#7e0tVm#2ENw=2Amwg11W|CKmX|U!jD`i_68MJ0&w635s)GvF+>NaX`U;`0*B5F@yh}ako9pA2;~vs^}`0E)Cx%gg`fhFdk3&o2LGV}1}O&r0S5nH2KoX9@c{<^&H@JT0S2i8{|1%=2803z+5Af&O#lN1lmrHN`v#{!-~k2~2Fd>d2EPIZw*m(Lngj;60tWs8{|1x-28{v+s{a87G6pLK#{vHatN{js0S3k20|pibs$U=i2LECP9R~LU2D0A*1_uVePoMz?{~89^0tVdz2EU>M1`Y<NVL$=@22cjb0tWd3e+Fj;nE?j<FrdCWzySs)2B!=F0sjVs0S31N21Ne`M+Phg@&X3`^#TUb0tRjd|GohR(E|pD1pfxW0tVUw2Ce>SU<3w+1O|)&{|0FWvjYa00{;f(0|r$FMh1V10|tQu29Y~J{{jXN1``H`1OEog0|xj52HXDw2D<?U&jAMiuLK5?1O}c1{|1c&2Hye(z5f9Qi2(*M29o~)2Au*1O9sa00S1+J07Jk82KV;?2BBr3*_oM{|CyPZ2A={3^8Rgr0|q??%mN1gJ_hsxTd4p8{{UVkJ^&>Z0DA!&f}sHc0|9P;`v9q^K(zoPB>?|U0J#7G5D+{60A40R0Inhc{{c7vrvL&WDSs~jt|R~hI-vu750AjAEdY=*w?zL%1ppHp00aQPI};%^CN>7duKytb1vdb$AOODxHUI-95xIZ|?*IVc0RUhH0095ABLD{?0K`K77!)510A46R?gZfhHUJPnCICX#0sue&2fzUb!UZ<=1)&Hcq(Ch#5+VBlR~JAW6#z>B{Xd$)2LTBP2H^bzkc9UF2D1VN`=|tqfxZI)sQ`Zw0P{8~4=D=)_ay*68(|C&Ism^k8Uq(83ZkN#{{}ri023Gh0{;Ld7yttt071V11q=WLCas`D{`9~Y00tZYkS(6AqZj}O90ft-fEfP(2^;{lA^-~gAsAx{0{{gI2BXaaQejshFCfcS;=rsgfmoo-0xTdC9zg*A0B02f0PqJczZU=~D*yo=;R63Q0IfSJG8;nPFF*qf5j^9<7Y)9=Kx8WbQ#QRoG(Q$200Sl#C_pE{^#dqC1SrD;CKng%Dq{kO#78Qi3<UuH3Ihfu2KE95|I-5ksQ?uKko_#ifOr7FITZ!#6&^dlJ}sj@0RC?iBtIA)06_#Qg8%OT0uBHH4*>u5JtZOliU}G2GbKR)=`#QW|1$t38UO?y03SsF1w0r9;Xa@OAm0Wa0FW=y!x{j;2Oa<u8UQ2!8vg(Z9ssl?01EvhBm)ct0S5{OhXMxncETh>df+4K5`O^p00AowF%w{YJvIgY5+pwtF@ViL6JweOHNQ2#3ItF!pwh>P;1UDMHg8^G!G8-7IsnlT20j6Q0wDm7AV38Z!}&ibpjRRTHUMoQ?G7p6FDFvqng%}aKL8UMVc;bh0Q&_UN<aq<00t-e7@$N-Kp6lC9RPcfF8Bi(00|uhL0bv{1wacOV!;ez#`*|A4P^lWBLI#c(?SJaB4hw3UjQ&6_W%wc5#bLe0F2)S7B?*+Ie;W7Qvg8yB5`046@n!P0NxH@wE!h4WuUGe_W%(%6W~PvZ6r+*KY%DIZ9oNJ4p|}f5(Q=*1!1)SC@9+iTX`W7Iu8U)Dz^Y;00>|cIUHa!{&oQrIRGdx02Ka%Ar(3RC@=sPKLD;J02MoggX|&y0xkfpLM$>MKS=<~J2(wE;6`I>6dVTu7Y6|tI)_2!83RECAb|rwng&AeLjV&UC*d6c1$`lMKpGJM1}i|Iy-0FE9RLU+k0Jnn7XT$400|)lLH;M;9RLd<0JJCf01PH_Lk|F&2H!zK023St;T!<_1t19E8xQ~nD*8#FM|(gV00<xedyp|O;~W49AO%702;dw53o9Td01SO42;&X_Z6yyLAet&795|sy1s4G#;yJ$q016xiP4pp{%>;jktpnD9TZaaU{{aTI0S2f82LI^;2A2Z{g9QHusRRc20R|ke24)7Hwxh|mq$0ltlLQ8@1F|3n?*MBA6{15u0NCF+BQz@$JHpsGW&uS40e--`bHf3;V5J<M<4ahBx_Z^RVR-DiV>&>NAi92DDL`nr-?-nn!v(m(qXf9bQRukJ86VS$H5mbd)1QpfhZ!GUDAE7X<QW1~>e0l|80{nPq9On_{{R#qA^>e54ZLar+`zQ}Bq!6r`0Wzj;2r=10xc&1{W}Ap0yh8yClYe!paQ<Yyr|#;0jvSP10w*oE<edYOM3t^uVDlLkT8p2jTr-B1tgV#*uaK>DEj~`>LCU>0L2eKFeDZL11QG<3PG<20RZ3%$p#9*CVm6p0JbwfEGvItza#|#3I+ySz>xmx!sY@7ya5K5RRYRj6HCKD=ivdGV_pv6A^-v+q<}%Bf$t<H07sHSt{(vZ12+INGAs@w;@G4F4&WM0#oz=b0H3xnKPoGj;vv8Vj{ye+1`b8~p!z@--vC}JJ^%^;0X3%p6BqXY@ZbZoz#n?D#XMf1CnW$$>A<rB47Wf7=t}^U;3{;pAQ9jN2f!8p2I~MZ5G$Y{N$h}*AI>BYVEzO^1_syz2D$@$eBpJ#+5rSV>2<?O5#SiaSv~CpApk!bV&AF?1p*uGhnffK#bX1XVFblt1`Pm31;u9v#c9U?!e9xc!PN@IVhb$*ANIm71SbFn3y}la#>v^wCx2ike=k8Ne__NYe*gjN)j%hICx7hbCx5tsCwU6s;`-)*0Z)MfH2{z+^7w!j`oKj%C@BB~ZvX=$4_kwd9!H|zHUR(w1H0n}rey?IKn;Jui6{a#Si!{uSi%JPq1}K_0<IyhfMKp600b!p1SG`&LKqYu3IPBG{{{vs2EzgdyZ-|Q%>oAA0|v!br2r9eV`4yXfIAScA2BC3z+oq>pk8|=KZXR39zq2Af@@wTn&Jd=ATud*BJ6=8b07o&hyo=5zyA>u77PXe{VKl{Is^d+1#x8hsMx@Pp>e<<nm|3w<3svgfIS%D0U-c84}TsqCp7>lE_49@t|I^gIRLIA{{RFy0F5*gH`>ymCK4eBBk!OS6n_B#B^Ce$8h%2*wE!q507eGP25tt#O8_}(z(N2C;Oz$q;s`j7qZ9zirw}|D-GHc|JKkU=_8sCUKlZ>p03{c<00kR~;*c!;pd|hRfI9;K2M7kM{{jZF0S49r2LI^-2A2T_R|c<|0|p_@fJCx_IvNbY0v5spIM~4?pl_hR1px2}F&PvA2L2G_tv)I;9z_8EC@%mA0Innee+fDO6B_^uy8`b#0FEE%;|l;K{~G`d9{?yY0RFyUB>)LK09!o%5ugJk6ad8&H-9D?0FEI>1q6Y80tAXF01gi>O+fuLO+s8HGYb_q_W&P57~ls%N&s(E8W;`-1`i*<L;V#EK@cARqyQ5CAOI0M0IfVK|1u&;0QE#DCjJnC6CVI28UPf18WaH)I{+v#5&^#^00}$*y(6Fw{ShQU051S$02bFVNIeT+M-qS>0NVl}1<zYO7vU%st_5HhF-HYw4+Uit_Z<KjC7?AO04V)3tl+LE02w_1+gm;`U<@Z_z#mB73qTzJ8XyC~8vynLz#KgxU^OZl0H*^a8EF7qVBoPpw)ZwZFu~vxMF9f;4IBou0tW5_{|15s2BZW8KmFmbg9arAGX|^w0|p!hT?XC(e+GF5Qv^TY7~%f_00x%>22uw9ivk9p0tT=F{|2T41|S4K(f{j(9=K8L1V8`h3O#V6*9rvhKfbt80$~P>1h)p=0d^tC0nH#13S@&NTf{#1g3kl}q3Xc@B>+VLstE%E*&OSE^&pTfOduElZ_7F}3R-~z8o$Cy-+?t^;RMvcgF`Re0sjI31q24b0S5ov0S1=@2BQI{ci<NQi6Dl+B8ea;Un?#u6d-rQJ>5fk4#X$wpqd0gK}{jv#~>R31RoIq1wB(48Ihn!!v;a57f%7}2Om;l2vA`O9{|6!B>)N}0Eog3K184e8~_V8M50)r@AW_=A|9YG0RX!Q3zlF8IR?qb&i?`izyk(72Kv7O2FwBmLh&F5w*c(`WFP@Ej)4Q;0JI|j1kwTn0Nain@qolYl>q<%{{#dE>H`MF0lx;k0tSx*lz<bs<|UND_bEvL->85WzdHaW7ytt*U>-DvApu|n0b&I>0^t?Fr>-6Vf<Odd1_I&-;sW9a0b+t60^kT703S#p7(oR$;`ksf0RIREiv$Lk0S5o|0|t%(27d<st^@|50|vAL>ZV{>m?u1h;$9{`e%yfpH2`Y_6`MhuCIABi6BwDGt6&5FA^?m96f-Ry+^b^)gIE&@p5O^7Q$Z-5M1mj%f*}NnLhlAS03ry$6eA^Q=m8dBh5!eK0SG#F<NXwFfC(-|IslHnAckP@2{IaTBM$zSfCMZ6Z6y-`|2+UVH2^69USlai3_%{?#Q+L9k3sbd2_X!YU?KnwJof-A6P6$%01iC<5g`vf0I(?)KJyw5kAV&#B>)gR`c=UZ1E3)Q5j_CU%Ro8|l>kQIIwant06z!-kd46^0Ka`NLmCecso*W`ElvPaIj5jA8YkZXR23NxNP!Y5{1rfWg9jS`UMNPocwrO304e|!13(_VNX&sl0MQXJ<7?hEptS%gEh%6G|L^@l02jRA6*)EC2^m2aH~_0)7XbgF4+R+>K>*I*KP(C?00sjiE&l*C0ICrO2qgCakT$pA830rls~Qgv;wmLTNt56nw*Uts5A%>Rz91Ff0Lwo)4?$wJ0PhYb06QD*3oQWuDg^)z7Y3LF{|1Ty2H*h({QU#NVWa^D_yGq0{Q?9)2_gGb|3obq2CM@HX8Mfaa*!eC0tSQx;*0^K$KZG2{X+yl!>2PdGXOyGzypRtCHEBo0nj1=0RsU`2JTK_O^IlT;y?ER*#hT*OMs3aS75aOFC-=aLQ(@I^ySbZv$P~+pvyo)1>QqF?&m}&Cjf##82|;k2*M)-BTE1}kbpq`;-D`m07(Fv2l|G?27=^400|EOsR%W}hT{r`=?jM94C>cm4Tj<lhUTsy0Q(O(S|CRNARr{-3a}6gzv3VYt{wmpUpN45A`wgCB<H|?Lj(XQEdUc;;ms8Nrj8y0z_3AHC&fba!4>qvNPx3|7CQdyffoR-B>)&Z_S#|%5dOdcE&#3nLM$>MNdU_|>oyJbp%rg|7&-u7#Sk<l7xe>0)FA$-U@|x<4kjA_zu*V~0N?}wU<SVd0JbzfD$sxu-#`Qa3K>Ml*aLS4x&x#~t^)?7tNy!yv;hX@0tWG60z-pI;nF}zVWtGkK=lrxPy@e#C@cU2{&b-PHvrf<Bs2dk6#zR8Au}iaHoW0H7#IMMF|=DE(VzzJKp;i0z#_i@2O|K)KdyibKLY>>2L_O?AXozb90tP!2K503{csKd2LRO#I}!f?M;tIZ1ps;f009FU1pp8L&jKSHLbiaWASD)m00SBT_!B_3;GY8qN(RjbAz3tw{?;KA0LK6UAPluAzrg~(z#c)r!Uz8VkpK<=7Z3url_3K<PrxQBegJX54+1a%&^qLxF24pp0M0xveBiG8A^-#c6C3~p0H3rc00ky7V`88xn*crnAqFSfp^1S%{{Wu=7XS1)0{;U52nGhO0R~(40Wo3w19m~a%R&DF0ICWD0viCU#6izs3vJ*47hvhX0{|#000FvT0`WEJ0VRU*fQ$tbGW#tYydnXC04OWWXCPYO1~%fLb^r%8GWw!8Z6L`&6BjZ7MF8Ij8vxM|j(`^c-w7K4kSzV+QUK0J;0hZ6HbA}LApm;@H@P4SDnK@LL(*5k47I`5K)tKL4Gq5l00A~D0I9(N+tU_wpdmw;U>E@74IEt|1x0-T4gio}FaQ7ldHkUdJ_A=20FDKu5Cx(Uz~S!_H~?F-VGSe^e*mpOEHWKN<l*!w;MKqs=0O!40FX&7yC4CA77W7E03zstzh(dzD?vAG;RPQ6C@ugPX`$616#~}J0Sqi3phOek832<R9TVXP2O0+n5db6C01`QE;_22QCM^E|twAg@9!CIQB^dx49lOCC0YSAL2%s)3;UfSH;ARg19xOpD0SrLpz#o9GBmf3F-s2A+VAM4&cq0)Ppe8RLfa4&aB^m$?9^PREsSW)P8{iBr0L2nE8!8zD<`5nzKxE<ufd3U9023Mj9{}<P;2;O$7GNX*5;}JPTRSo!0wxm{0xKU#1OXug05J97h=9E#<$xprBsv1YBU%aMA_QS29*kio1Hwfo1HvW>!v10yfMz+syFodN11K;66`&>i00xpM94-LG6Nfh{8Wo_gL##jq><+CEAYk4un4=OnAO+1Z1*Q-m`Qa|$B>+_toa4cq;U1jeL!9C&tH2Yt;wimBAO*(|fIC|}LBIqj6ryDXVD%vh;4vOSCIBNmR;QsPJH$aF!Q>$Uf#D?%VjKV&B1d2@L^|wapvNF6F-Ku000y-@HU|ba03SzNU>x@V86dR5Dmwr&-!mr=CmO3lv?yBuE6(5_NW362Zz2090GU8$04y*;)jV!MNKybZCZQ+*YX&|-BNHK@>@m7ytrc0|A~QW8NeloU-vA9F04N2k4HLcuAPO-6Q$GbDTa_FQARz@q5CuXf04U!85<UQ11Hl|B{}%wQMl3QTO#J{lpc5hh6CMCnEdfCw0YWYUp)Ur<R1x3?!UP7vMFzzo3h&i>3hFQq05mKiDFFW?KLD;M05Lv34Z$NK0FW~ope!KI9sngGi=gfR9spr76v9b>AL4Z2F-N@sZ66)LC^Ri$DFCPdT8aV`AwUK)CO}FpU{4<a86zP<2L~Dl34TT3DF6~b09(7@?*LOP7#_kTO#uEoAR8k9t|kC8|2_aRIw=n-9rpm>3*W#2007{B0ssKCD*!8jA@xf&U^S$nDgXvRUYwvPGeJK!U`vO9y*6ASD*y&TccT`nHDNUG;}|ty9HF2g{Y*iCApi{}04Vkas|^-4VKe|!LM8y<gCCAy1w;@9LR^5qD*zHf09ymWEB`GT0If(YGA92|03{&+6D0tz6CnUJ0YM-IZ_BC$VMzsLAp`(7dVwte03$*Gt}6f}eL)7{BP9TkHV@#1AP9ja6JmHk86u;gG_y)TQGgc!C^uXoELQ*qLK=e?E}=D50R2r|AR+)6CIGJQDF7-#Tp%bBE$<)z-~%Th4gmnKv@QTEVBt<&pg7*k;Vl3LL&M=VLDuddA5N~oIfG#?0P6-sp5qx@p*H|qT}L8d127+%fKNK$za#(+C;%u0OAWmlCc!rVQ$;7hrO6_r;RQnw1ww;hE&%TmL;za@!9Oq^zW}XEEHWw8pd_CF6DR<X#zDd$B;x=U1)@zL5MpKkHD@<LLvR2IKqxwv!LKg>21OG?8j-;AZ#V!`Mv}m>BavZ!P)<N401YVs1x!l~8af~c1wlI?s|84J5GeqV|G^aiEkL;y0fZ31B>)x!BpBKQAvOvsTSg&aF&_T_g-ISZGXVVkE=9mhQX>HH8WTb)y?_vdHwHpx02SgtW&k)iPDF^{1Au!dJKF&;00u@;<LMhWL9-!I7oa8pIqxa}C_F;pF#tNhM*yxc06XXaCjS6BDgeg-JTd(b1pppV2LO=(|D^yKAp!ujBL4tAA^^le7!=<h3jioUVSzOOy9P^Pfj&-3mjG6JVSqs<;WhvUOgclYAtvDXKVgF-T|hAPK{}vUCqOI!4KVKjC_w<Yz%~F9?@Rz&O<@2RI3@o8ty3&AF<JosB`g3FFaQ%QUXh_J03a}ffEogUe?Bk(B`E+q2VyvcKn)`KKtEMWryvUedniKrK{o&fO>iUCB7{H)Spirz;4J{t88Hrl2L~Dl2Cg&v06&4CEdU!a0J)HD!8G74038M3Li`;e3L<6z3qVy&?6g1$fG9&mAvgdA{Z1RFB0&JfCQ9o)Emt5}L%=Qo4f`?x1n~$#0249K06+kcT_Odh5HkG$5TQ;0B`yFH&oTgzLz}=<;4T2+76`(kAPvGDz(H3{?8N{KU?@a90XYB$rB99nB%&c}!CF(mFXsRmGY{bh2OdFHSO*94;0Fc{BwPT-d<0b{s=yXVAR!2Y4G4hwL}9@U%Q8X$Q&8rx05vV)AO%DaGXV3DM6!TfU@rg_GddZ;L6x8{03Zlr_F%s`01{6CTL$6P|2rrEtye5EG{0Q{B`*LW1OP?;ltDTGBTxXYIjaC92I3<M1R?}sC9VnpIshgE!Y2d5Cin`%#Xu86W&j>SRoPDHARmAzMHV4C0ILR2i(@4l;X|^cC)UQm4n>Q=TX<kF0Ot)f00peH-~a$J)&-*uCx1Zh1*Z@+^8k>Jp?JVB02MU+IRUCbGXO(U0QLV_Jv#s;FaRL@3IbaoIsg(-09*Z0)SzcPDFCfluPib(UIYOl4j@MUvEe%aBT)dZIu`&jPzK>63q;|7T%f-+0IoX#CIiAJdIQ2H0w6R1Do{*d|3xt^0L3UrIR7sIGD|HEKr@#B;2_pO9oE3sK;YFL0N^3mL?5vLJplhJLIAc+KSL}3080Qu0IC`X{{$-lwmm*BEB^ra5<mc-03QGUXG#JE03<{I2E_pep92Pw{{sf#0S2oB2LBuenF0oR2A}@~2Ac#1v;zizQwHt>1V7;J!2a(b1V5yD;YY6j6nh4j0|v?i{|3ea2BiT6KmV?{QR{^sxCZ}H2HOD!%>f4gngj;60tTQ0>jta?fcOVP2FL^d1~&#<2Fw8l|G5JOu>l6>0sjW`0|wmz24(*SwgU!Z266`fs00Sb0|tfy{|5U42Jr(1^Zx<{ItJGQ295s%2BHK8@&X3`f&vDf0tUGO{|0>q3I^E&2LE*it^o$V0|xgm1|$?F27v+w|Ahet)dB>m0RKM#xFsYFEdcMX9{>UJARa&j{{SWc0tX=r0ROHb00TDwiU|K0G9*9%=`sNS1Tp|682|+x{{Te*20IrQ0QZg_M7>}c00$lG0FbZY7X!fv9RTkW82||ZK?)rJ-?SqD3nJy9K?HuMAPgZ7DFC$A!2Kf!KtclmjvPV$sDTgw7ZCyg6aO6m4gj<#01y2q>wrcD0JQ)$zbgP=00$_2U<Lmb0sti!01zAZ04OY@0U-bqH}>Nq=?sA&CMp1}-#;ue97P0S6B~a3rvMQjCM*}BssyAz1fdTEsT2gFBi00|0SpOYPzh-j8`MC;6Cf57Ar})SBP-tkLjaI5dE*=a-w+@GC^5DHCIH_OJOEoglb};5{}lkOL@Y8PO1}Ul8~_s_OW;3h1dbO3fkOm^6dweF|DXT;|JgbM2X_Dq7c<}numUw<@00`v|4;w|2G0Ki2EYRbJqG%30tU<iI|0`LLVz=<14iLZBdh^UfJcG;O8}Sw0I2{S0Jm)*4Jp7QCaVBm`z1g+!2ve_6BvI00sue;C=?E&`?UZAz)t|UCLq5IE&#3|00aPzeI7P|CIABnAfe#@A^-t60E!72|1u>(0O>OT1b;ICB^m$)9zh}3JQx^3AVvP58UUXM9srOp)!_rd2=5*M6B<Dw8UPCY9zNj<BLF)PANw&T4}>Kc00A649%5~P0|5sMUZGlm^LGXv(-~j`0A3~SJ?-HEA?@P|0RZ^|TcI4_1OV7LBfm5%5&&K%1WN)w1V&B(^EN6_U>%_SCCs4500AHkC|Xou0#slgK~f<=`oaGi03#3r0GbEeJw7DC0{|5u1RVbWK>!8}00k!cUcf^gfEWM=900qJEggdx00=yw7+xKL7yt?!6d?-~Apb%b6dwuzh#2oOB?}i?052*4;YkXxPXG$P3a+jq0Lu+JH)Sg3U;+RRI$r=28~_h!!4MSSxgRos9Y87oJZYdM?<xRH00x7#04S#_05}1J1^^Lm;S&EQ04FRmFB2u61z;#E07L`F3F=Gz0P$cW024d_ki9bSqRA9M9T3DM|0@7H0H6Q+|GU{adEguX6bwNX|2+VT4jwZqM*jfmH~<4U0447q00bjO-~~Y)^&N;HN-01e00$#?0FX2(LmvPL3&8y!M&Ta-3L^ltZz%u^DEeSW1Z;u-767g$02e#}f2t7&1|k5&ECJsU1po{eoMH9>_D2VR1Z7N=0|uDC1P0gx2D-RH=63=Hn4jPQ1`W8N@16k$$Ymh{0IKf_0|FaMBMSimTLS<}z_0;MU_NK#nLSHj0YM}tL4d>|Ui&6KN5KIi0MZ73DHtUH91b&hf*W2Z1|&cL0YRXk1V`x)1Vb!f0&O7!HUO^^7XSpQfI&*26@LH)8vtG?Kbb-G2A#qOu)zp709*e!00033BM<;vtv;P)2^$AN3ZB8A3mX8CEHUDw;0&&$;4J_RJOK_oz#;bl4>za8B^3Y>{~G{o01`4C1KMc86R{v4Lal)#C#FQACnsFMx8M|Pffcp`rYR?$0BZ(VfhuPx07kqaqCg@51SkKCCjd17t{wn;7dKL56(<0qf8p{8BP2K=W}vkIiYVUzt^i&skf0y{{}?#{C@%mR0ROHe00TMzkTCui;${FEE=4*3dyXKAAj>>93~j+eKR_*&pj;qG0L!2oaAf@#(Sax~02~0WZzBK$Il@8>4zIvpf-C@2I<UbP4*<a-)T2$n1waj;1xo}he*mpOEHWNP*MYwt9RSf02LT}uw%TI>Kmx%Z9Wmh%;~fA905*UPVrBp!2P{H3QveH~7@!b97^3aHzkm)8`GG9}#eWhuDH#BcA){mS9UdK_Ilv?U2s-xwTRX&{111vyzpX+nG9O5(!6B-p;vxY-BdFvQ0^ub12LeTaB*JC@B`rhQIbr}K;3zQlK&~a%00TQ8LlDm(1};A5<0TsaCm$=}2M7Hq2LU?}BQz&ET>t~XDIWmkpeg}DRVx8PECE3+27oXvfxZgDW&kcOLouKq(DESMU>u;rAUrJs4iSDFp)UZ%6gVp~0DB=vqJSI#9U$WfYa<|$;V<ApFd$mM)kFayG3B5#Q=umSTQWU)!81Gr0Wt>!RUrkTGzS7T2LU$gg05hoCIATQgahX4H-8`i&Oa^+EZo3f4ggF4&r^mtSH$;A|He)tv?2gG(6^yW07bx0lsZq4O91;n0DYhZ0Sr0@|GonTs{;lc2LJv72806!;sgB#?xTqU1V7eh`(|bUKnA@71}6Uou>l5!0|uyf0tUtQAOQyHj-vZ|2K6Ad0S2iA{|1)>24)05x&N7&nVFfI29o~*22%#^0|w8(0|o;Iv;+7c1p7bP17uPL+W`ju%>f3Q1O~POeFplVtN{c+_)H=50092L2#4ka1~>Nx{sZWtxdR60KLG}$0tVd$U<n2PsRIVJ0tSNw=LW9>4<_c|E&z9LArB2JoFhR1lHj!glHmf9;1~depd;%51mmC|lc2Q#F!?6Pfb79569AeB^FBX;0pVa700tdC<G=_F00$?!U~S`V31}k#7ib|09fo183u%E29qu6wx1<aH0f7!90MZ938LFq@G^gZ0t|2G%fL?zmKLE5O01pI4eGddf{uCuY8S^2V5F8OeKR}IP^1vGR00tiQAQ27#2g=5v9&bYlX~Ypg8UT3;Y{C&h8UPF)3qku0Bgq2{1_1{V{|3bY2A=~4gEs;O;K|6&0m;lj!2kLK2G#=xkp$|*U>w82C7%Gf00Gwv5Ie-6LF=IbIDY`A00JQ?FPtRWgJHpgVKOb}q5%{9oWpRS1OPh|AvF6YHU`A5Apiw8cEh0tHdjL<00$-pzQe(;AOHb2(t|?W#o(#HApijeA_X@7E5QgN04FOgE&mcB09OD38ytBRvVvG*2?z$xR;B-~1O~GL2B-w52FC+i0NsF}-Gi<#9{>S0Y2Xds!#u#r7=j>Y-~&M<Vj;BvZ6n~pUL_BL1UErr`ZYiU#>ONk073xIx+FXT=s+SO1USyZK?VS{i-5vLCMa_NL<9gBWwih-gCPF^FdqO1Appn!00<@xE&#MC`v3_!!AAoCjvQ}B2LO>updc0s#(pgTwE!(B05S;3^2EReJE0M!O8_ST?}!#SE4ZMw04skm07U?62pTrvPb@0{NfX5g;1fsyniI)OtRW}>z~CNZDR(dcO%k^Z038ybpZF6*0ImjN>);Ci0JJRt3oQUA-z+&c6D&mlB{KMBKoKSh;6nheDgfUMLjaID-~!1T`$r_`WG6BJI{-hQ00jTyKhD4qsDCFg08s!FBr<{5EdT?)Ax-#!D>8ckGY>D0A4~-WiN7Z-IyMt6RzN8EGcN!Y00ct-6D7R>C7>_>124y*PUZ<=DKq@w69Gg3kUr@_6adK_NL*oaA^R&cC*Ys|`v2g569WW9023wvI^eG{00S`3;7<{uDCsl^Atzu%W56ym0N*qKZ7mubBrr4o05AZqD*z2g{QymX4M+ek95w!Az%Kv}MF0yRH#iA7Y9KE+GaxA8%|vU!Ff<!P6>m!b^(YBKMF~Pi04^H;Gc5qFEdUNf{{R{P=>QHJJ8uAM2PSktD>ohB&P4z-08TUF7LQ8+e<c9L4?Zmvkf7}tdVnW0SO9G=9=3bnDK`N?(Gde7M*jdB2mk;C3r<Zg4PZ1bHH00&J_O_6JpgSk9ta>j0Gn+w2SFz{qksoPJAD8MLpcDl95Xz{uOm1A<qp6=4#EHb=K=r~4hEP6_XdgqkU`i32Acl?2D$?S2Cf1B2KE64<^l$ouK@<t0muO%b|5DHQ{VvyAPWGl9)AD=IRG6HISwKBBPRgsKp+4EIJ$TsBx~XL6G1jW1ot}{7qkPkCIAI(CADJ{95*2*03=}hjvwQIwE!h50JT1kp$G@T87Q!zEFS;~9|aWop;_PsQS}QAArb{awE!t9%q2hypbP*EpbDi+0M9xA6Bz#BaRDp<Wey3%4+Lq7Kq>&mAomsk5HJ8A0RagA5C-l726+aR{<44q28sj*nFId@jsym%0S2%C0tTf62KfU9|CIs;`vL}w0lx;D0tUkYm|z*ufPfdEm_n3bCDQ<2CH+6zPmBc;Gc6s0BjF_+0Ha_A-~_^}0Bdv|U<YD6Iw2(hLj!2|7=YrX2t-Q&H~`qcIU_VG5&#In*gZM{MFRi?1UW%CgZ<zWp#lJ^3IhWF8vw*X7!)51PXPe~0It9Sl1~`m<vq&-JqyLI;aCv~{{tTYC@BB|0RICb4;BDB4;}Y3CN)an1OO!#KL7$6023DWzyUyO1RD8)1<1r(H;bUZQz8!lkS+lLc*xHn`XB}X2L!6rL2(O~1t4xI1p}4^2Bn}AZx;Xw0KmWsA%vifK#n0JC4m4A0Q(>ozW@vx0FWyOU@Ynp0SyrX4iaGx8UVk!01yrlJO2R+{>VhN04OE^NC0mrDgY67;Sx2i051s!BMS>7OM}1-p#Kv9B^Lk;8vtvNED}H!0f7`731F`k4iY@~AqveVDCZ{tQXQcQU?2bzJvIqo5C<a+6rdb{`Afp!Hh>lYB^Us!7aUN57y&^U0YV!70YL;D0GbFuLHz*n02=@$8vq=AA4Y&44*(r0Wq|ue1p+}I9{`XrS|Z>V0f8VN1wkPK;rk*V*?}V@0K`JxIsgp-C@dM_Apm<4HxOVI2qO(8Ap1fEiNGiY00<-h2BriCr33^(`3x)|EPw`^0S3zd0|v$d2Gart`Hb?Qdw~Q$<1;h;GXOva5(e%A1m8dIW@cspKnCys0S1o(2CD-G?;Hd_&<Eu70|x)l0R%tEnVFgYnVFgfY6L&I-T_251V5<)q?82v2LET`^8p6V0{;fU0|q??`T~Cj%mM+a00=Mv&jA3A9YKKppaM0%7y$zSt|0*W0IrW900lNmfk_}+0RaC61qOix28aaz2C)GK&jJRj{RC~mFaTH)2mu;W3^GyxUMFsaQo{+LEdvRn0~%661Pdh$rh5e%{lEqw4Jbsxtp`NF9zp%VK>fiGuK*Vi0*}E6ieU-aCMuwnA}=aPV44SOJw7_Y3OQj595-NZ4GaJb1YjORH(-Al01g}gkS#Z3*BAf~Kq3%6!4Vu*S%DHEH)9ID;VPYAa-rZ845^nPwE!oYglQB5O`KpA4PiwD!2<uE00{r&IRXS{00<R5p*$d^1Utm<+X4pHJ^%s+sLKNeGKOq2Ydm4l0cQrj12dm9o8beYVEq?_=qD>KDik2diUGrcc|Zc!1jT?y0Bf2AU*iK^fdn6Vpsxiz85v*324Bess$aqg1tAGv!U|u;r2hZ~8~_V80ImN#Dl#5L0QEroBqHfRF984u3uYmqg8?50QA!3vQGhoF0PWae0W)-AtYv$SA3&o80K`D1K>Z5u00ai=0|v!E0S2Z629F$}r_y~3j$i=`4>|yvL47NlL3k+u2P2z6{|Fcb00Sfx7QX=C0ssKuumA)1B^4I|hTsGM0Q1C04Iwx{0S3VV`vR${z<vTdBQ3uGB^3Yx8@yox-vI*w22U&i4*<J~8l|9hJ`f9IN&6H5u%Q7O0GbBsQiB4F0RvKj1q=X{1X70vQi%tW!YUvb;{XX#f~+8l0ty2FF9iw)PesQScuPEBJrv3$Co3%~Szy+{X(s=Gz<>ce<t6|-;C}@_KmZdO01?3N8UO<xwx9$&82K1G;Qjz58UO_z_W+PDo5LCa1|GHrAqM~g;0PY9;R)3vWJ3(gVG2gTF#?|f2MPw<Sjai6i2VXjfFl5RAqow-D^4L2Azmgv0YD}HCICVJ*gGRM+ba`Kz)1iCp|m6a00ANZ(grCQ-z5MX4l`21C@XvwK!!sm00ajjxnhoNBW)lJ3T53ut6@J>3}aZJ2pppZ7hwk+p_K?6sR<mZ3LK)>02-?R3>=~j9H|Z*p#}c|2Mz}M0|uU_0S4Nvz^i4pShf+$ZeRoU;66o1{6GN)Wv?OO7$No}Ln$WdU^pT5ui+(UjvhfFW2}eg10)ezAXk9k1pxl+;R7N7zYz}?dkh0r;ROK%0~rDDmjnjKiy;mGs_zK{0vx>I0XG2uC@la10Inhcp8_}lTRHz=2|xh-Qvm@m79#+~68|(N832Vq5j6iP0L2zGCLI9(#TYax9{`RiZmWRs2rubi764t~{=@(R01yHO_yPV~AgKUR0N6Mq*EK2<Ish_2AteC&KL8bk0X6__A<Yg#z$7QFpvwUh8I(PMK%fKp<VyvBSl}l#0Kis21hk<8B<TRT!0)vHBq#=@8vq5ixB&(w13*Ltx4|fz07h3sv?6>!1|=J}C;&qpK?pj}0SNy-04@(KB>=AfCIAUM0FW{O{{R6F0Q)5?2Z;?+;rHN0d?96H2*^wS04o3}FaQbw=K~`aEdYkVCo46VF%&0SVJ;Qm=0FSWJY8TWDW_m<C>7qTgfT7vHpzhuDgLQoNCf~WH2@9&0In(k4nP2||0w_uKLCw98unu0E-rL{rvMNm|1C2Bt|$NzKK}sl4LBPB%RTEn5wL(s*x()j5d9((BOd?~0PqffHy;4YJ~$A#fW0VeKqxK%FAIzl{tJXl0673CGXT953goUO02T8fCI0{xK>!mX02jXi@De#900N*G|3LsJEi*F{DgMIXB?SNv7zUXC1O|!$2H*h(|JeZs<^l$o0sjWV0S1=?1|j~rVW9#Bs{#hGzX1l;0tQz;!UXd_;H$s@KnCdo2LEOTat49}1V8WAW@cspKnCXm)Vv^LVLk4F0q%f782=L<3IPBD0R~l~g~27hp#kzC0{>vUA3-_+BPIYUVJC)$ffE?8;4%OMrSie5&k6$q8`OYdq^=(C00cGw+du^Xe}4cY016j40EpoA20oz&0^$e&I}a}&GA1@pfhJ6VPl5NU3Izyhng>2V{Qyz`2>>M-01E#d06_o@4FC)AC*dGWKmtGw9RQHME~O(G01h1mK@XM%K@c5op%E8Cl;JMF1OWyS273Kr>fZqdc?M00p`ir(1V4zSlmrI<0Y3(x0tU$ex^CJsNid57yW&6rLZ<2srta$eKm;RU1tKFQ7Xa4=8vtA22Y$f=H~#?d00|EO2oL`Ntv)O=97O=W1K<i90MQXmKo@HO3jrVy0U`_=10mfF2Ouo~4uqi(I97(i5H|(^4+;Vi0s-3+H|-)n3_w8tD!$31WB`sJLJ8s%RT~h26b4}x24WTvguksjDl!~H0^t@_8^M4-0U;LzA{Y$8{~0#`#SJke6#Q<Wy<p%30RX=c{|^=m1_1pk6#Y6!AQ=X}0|u-A0|p!hvI7Qo-Ymdo1V8vtg9JbC!!t8806+%r1OEns1O_+;iv#{u!JGpI*Z~I0zXJxw0tT$QpwPBfWaa~xVZZ^sp~!UsRe&Mq;$9^^m*agtE@G}900A}Y1-B&tJ|2P%30~j<^(QRh0`FiXF#r9&h+^|ODiSOQp(yrP!WJl?fh9r!uD;#?IRI-27xW-H{!M`c0O2$bEkb<`GGGM~00a|t;oerjC;$gOGr%e`+apST05u+d05=Y_^2B}s2?+rTIr_m1{8QoM!vz2KJpcE<0RRjO2Ef*UssEXonVFfI1VH}@A^TKBEf@s(KOO{irzHl$0tWaWz}&!80iL)~>xKIsxY<B709X+S-v%E5C@I7M10s757iYj7GA1>-CI13803{Xx0vd{{!2<ze0|8=ifCAtI`U2tw0^$W40A48YDFj!50YIxj1|a~_w*@H|{(ulNEn>&t00$rvC~ZJM2m1h#O`sPL0sw9MBM~p)Gb#X00RM3h0x$r60ztnbECA6E1P?(7KN<j<2t7WBA$8#I7yt?!b>R#E3;8B>;KiUN7yu0%_W+PBb>kQS4jjCUfpy>*01zC<VG+KN;6fM_9|~API_^6KDgZ+9U;#WEzZd|;5i=)`ASC@4>!1e#0N@A#zW}y0J}oO20-yf?2mj?c0tW#53KF70r340>0pAAG0tSrjqT2#*2Cf1IeCE&teCz%*zyhfN2LQ(a_W>Xb9;~w}6E*7<FhjsVNdlh$ApigVIRXLz2LXEq+ogdB04ORlV6%=Lq`*=@0yTR91BP(n1UKA)E~79Y>%jp31qB9y1O|u%zF)!50tVp&J76w<0J#7G5D+?kAoT{Wf+4@4Eh-ZrNL`_$VXfr^v83{ZCR_m9UNF`{FeWl!ngraX!-k+400yPO2n~w>2c^derOBzl{Xh%)t04@f!VMw-q7eTB86H0X&OI~d3M>E%0h*u=A^@+_1}PXr02rF1Ui~N5ARqt_HUKjJGB6Gz6#(E1F8~1G2LNCLGC*&jtKbCz;0OX>3IgB_+5=z&1K<JxvOy3ee*nJ`5g`l(hG72_It>5@5C&P&+F?JlL9m9CGmZKKzXqWJ2FC-|pgiXQUMg2+F5){5AOA8ZHUKUQBp&?$lHdXWbpSH}ryv+0HG*ZJ1C`(p{zd=;001W|E-LL5DuE~`N<hZ|1oT`Xw;%;7z#c&Z0K1MHU4j$<9bJG$p8y6r7#3G!&|nAO0F5^jIE|zxC))r(ui*$fk>DvR%!fcbVH^;?=A&Q_5c?MlfT1h^stybOcK|yNBsC{G0RPM<7b-F?0FB!?80n!SERew|M*je=CjbdO0Bh{LAUk6uEScb+01>bM?>Pc&API6}YxKf^&R{GLgggKf9)AD|0JJFp3v~eVA4l||%3v`7UM~Ga6QVr;mJ~+}zex`Ojvq%6K`_<@VGJp8;7Ai8EegK?3k(K`1COVs{{#lE0S5K~2LIgy2B!lCm;}EDfCC2m12jRtsxP4f-C#XbApvz@LBALi9tr^fzaZYKSb-n2Lrz&^JIDY*{t$ryH~^;r0wMn?F95D200TPqv|`l{fPhdf0Fc!(fq)d#07c^98vy?V06P;QG$uCQ2E?u*00n3Q1~yLs10@lDVNC!5Nr1de0PWxhA^^mN;R`I8z*0g1Hf7^N0su3>XCVLqZ{_o#2qHhg|1B*NAplnZ0p}YW6`X=Lpa%g7_Xq}Y&}3}}vjWEks02+w*<jAV764!KHYyJ(od7#EAph7nBs3}$0Bw6A4A7%J0239lfPQg=B>+bNng(zq?E-4S1076&1Unar7s26jVg+ysbO1`iC6^fh2yg-k8RiPW3jWc+F#`Yw3I?711eV9n0tUbX2LC+<`T_>b0tVF-hd@(d=SsvRxFts*4la)YA>hJ50m4Fl!`{aL1t1M5bb;LlVXF)PCci*f5nBla&w>X4&wv=h;l%_2Ar{cZz@*RskSlV$Ko-%V4?xEN2yBG98^Dfih!y}F3cwT999RJ+#DX6{ptS(6D=Gj)bASiE;WB?WC=VqX0N{#&_PyY?GreO*0A4BffMF>m1pu`GKq_|tSpW$D3;?tV2mea|Isl&l8vil$XTSxa+&~Q>7Ne(uZ(b`t0JUHaHG_b&5E%?21RxI~lfVxD8Vmve{t_ua)fegk5Za&w+M^Kwde}e`+MyH-02A7$<rUhg7TTf*Ko|fRI@+Qc+NQMtC)r^YAgLM^Ef)YA3IRoi0YCo$pa0<h&p84Q2>=Nj*n!zV*yGrM^Vb2}fpmbN0S3yxRbT@Kj{*jx;LO<rR)O3}(E;2{&;h<$fCQ-k0|26+0et{8!6zdC#6j*t`gp<Pc)<byxFsLk4J`uX0syxFsQ~EQUp>LxRO<@C3IHhGD`jA=AOKMy6Biy3fF~<0Dsi9!z)1jUBzwVoK?3?fE<OT){&PS90R#jFo&o;`p#%g!xtW=dnVFfI`yg__6mskT0RX5mBLE2~yFn(AAt(Sm^}=3VCXmHz2N;w=DFX!C6B`>~v?Yr`0F18%7d9>Jf+_=r9PE*x1Aql41ArJeE%hOrfhz|jSQiNa|0MukCq)3RCjS5iJOC&&00-Xyt|$NoN?<1de+WGQjXM`SumRf%Jgxx>C}dzLH2*0)051Ru7d*c?0CE&AFQtJp{<z>1BLE8kE)v@@Dx(4p7iT~RHSYjzE*$$nIz9mZH~=U(01N=GuPp!#LkvL<4qz@n01rd}kUFPA4xqgb$AB*Y5JsrLPJaaet}Fl%LI#ZK5(b3@pb`b6MF7Ry96lwWTS;|b12FbuARtl)fG_|NM)v?ZE_dKR69AC?KX~990DU@6CHop0+~7Gl08;?_kURo{R30A{0Q-<VeF9lFOG^O%C_MlP0Io6s+YLz1Arnc=U{eM604P2Jp)&v!N&f&<QW-la0Pz1DLo5K|Ln1=o8z%r;OAlcpBmV%cQ7keqSOEW-EGsuf8vrHmDgX%{d>~Q)u5U8{6*bMF7B<#EeO2j!Ljchc58-3m5GU_oHaIz;1plw`N&pw+pby@m7kVGdD<!5&0In+}=HDeF02dyN;21^!93cQQKqn3^-y;Cv5CP*rPz3(~C^`Tc0Io0h02)Pn;Tr&q1n(j^EG!McB{cx|LjY?JB4#)MC;mKQMF6xi017ec2O$SIgB+jW1v&utZ8IS_fIUM1J9hvmJ2-(b01Y)@_b31kBw#TB4@asf0~9*qNhg62Ccq%QQ83^y01-t7iC*O>A)*Ncq6fxpH6WS>p$Q4X4oW5A2q4ARAVD-MfK59AG$nfLfL00sGyoAw6NCL96M;VfeLhkts~#RYp*%XFLAF2{{{U1YBpLvaLVh}<I8aakC__4-uQ&h=PCBAbzQ9@fI-o>7VL1R4PXPOnMff5v5<)Ei|L`PB769T*D)&hvK@Ol=1px5BA4V?#B`rC_RsR64HUJej0JN_p02VpNz*srO4z@YN4=XvqDm*#EPkuSTMgSQ(LJ}~?{~Q3K4-y$3PG11o1~MLdLTd(Me?L3`GXRi2Qp5KmAs1HT764f{-%U*bC_hrcGyvZnN&sFc5JCw|{{XHv02509ZT~nW0IoLx2~GYJ0TWCB#U(*9e=GpBF904oCV>1Lzyp90O#ojTPX9GFJ^;lcML7Q{0IfYMGBR3f8e%cffK&-V6*lI9dloq2Kvx6+kSQU*6#&ahL>^SawV(g6F#uI6gDe0h-z6IWkVE6*k0rlUH99W<C@F*;|4#sIIVk|HJO2O)Q2?$w02BXE0Bt=g0Iody00}=}I{*_=0RP1*KsGS|v^UoP9zQz3UPRzL0RItE0LxTPBmk?9A1(kTi~uv^fL8t+0ToC9v^4-0#u<PfSrXt5ffC?ONOd3*;6i(i|C2bOpii~`;V@O86apDUM*sibJOCO603!b$2ABi}iU9`y-~k5a0tT1?{|5X62C)GKr2hd1_yGn*1V8`zA^TKBEf@y>W(FJvtOEve{|4s*2BQN8tG@vTmjecd0H6fR2BW!v0@wk%q`tUcQR{^sxVy)M1YrFFydVVtrvL#T|0XK{t|0&dH+2BUzyn7>A^-&GrSAa%1q2VF)&d6a=>i6c*C8+f$KL<}APgum!2%-wF~C6s0FE3$2mb((01yBd5CYWz?;r#3Aq4keA4UBIdEqJmJ^)@Oy*&XyC?x<#0w6orDgaak0R;sKO91~m04OQ|1^}-69{{tUCIABlAngk-KtKf!K_Lw({0)H&;S2yN5dr}JSP=*V9{`#M-#tD66By@UB^dtz2^;`H01FJe01Et}Lj?c=Kn$-O0FW)LAQu6F4YeEvK@I^y4;-FB5KJ8f6rd?8l>irj5fW|hRt_dGIij>C0QC|JAw{HNKmeZr{|f*7IsyQn|Nr~{*Es?N00{pQ2HOG#*8v9qiv$L!0|wy&_Xev2G@z6O2LJy72A={3)dL3q&H@I&0|q??|M~(3%mN0~0{aHO_Q5CsmKi~R2SNz|YX%k8LH{NIQ2_oECqMrf09FboEdZ{69smJ000SoXp<e<30N?`vU<3f*y9WR;g&#o#1fc`I1fV4m7XaY=VFl6!AP591D}V&O0R<!KXrMwi!9gj(5dau|DZuy=KmZdRFQ8wvCjbX0F2F`NLGvUl<RAk<wE!n8n*c%tAqW5jC^liLuMY_aAPOKx$3Z{-BET5`^g03v0sjdI2Dk$T#{<6xpaTZ30V3ggJ|e;D0RpK2f`A%=`x6&p0Dk}@01Dj~@PI1-15kkkHuV4k;05{M9x*01)<^&+CJ#Xv6M-TC?FUYPA3;jtGbR9kOaQ711OgjS!Tt}Ung%{U023MBLE#wy2^~S<4FK&58Q>m7LEsqx4CfsHknbTu;28i7c^w5oLEsqx4;?9C0T2sf7~!Ph4#h$s4#yrM^9lwIX(vDg0R|D@26+Ze25v;TnLnACnVFgf9wI;nd&vPn4C(;@so;USA!#5XVqPUaXCNf;CKv!SApya(BLD;cA^_3`DHtUHw;T;Kp8{Sc1i>ShCICQe06sy%1V;`!1VkqUL@WSa0YC_<eGdddD+2)p0~dmRQGyu&cOeQ5#Nj#$z&#4WwE!hBAq|5gDJEp#4&ezP0TJd6gxD2g5?}*kjvi9rO8`|r4*)+q0RmIv7E|N+SRqtk5#zrR4;Kve1I^(D5rO&x2BCQYM?jQd6#!l(haux5B?#diz=NOxH2{}wAPpnqK-7YOAOd7tK_mc<LxB!~wE!aEZVuod00f(21vn7k|3LtC04)F@8~G#KVxAxdIRLLDZ$3Ic5`+N+8!DjRIs*U)2C%200`mqTtROW2WB`^FuS5q$40J&%OCXm26h#L{4FIkrw*Ub;Vu1oCWPmaMF%l&Jb~7y-?I|<@C@)%JBme~eIshgB1q&e%_?iHsfTVy10QE#D`yK$*KnEWHB^Ubu2mqiK00|!e|0pm33IMJp0N)Ec09!on00Srg6acM4EHWTT{sn;y9{>{@01fH^K@I^z4+5bO9{~5!5D5d}5g!1Ml`!<c6a|4238HF%CI0{fI{;<?6E5{c?!X^=KqxT)6#oFOCIAFH0Fdc21;Qa<6*QnI02cnL03QGs0Pqht^&hXmN2uT&02m--65$Ca83`t?;2I#lp}!jdB^&@80YV-60YM%HKr#Ry0IqK*03baLVIe#M!Q~(Vz%hLR4}xX@BIhqeI}F2*z#{-9{~Z7aApj^c0KFs!0R%k&y%V4g{Sp*F05AZ>6*<2w8~~0XNV{Mi*8m717h@F$fes;003{g!x&RU2B?tiRGY=ss07d~P04Gg71VJVti=iBeC>((OHZCAD04V^jD8B$IJ^))kA%G3*C>I|9Nyq>m04ur?fHWAPDF7@Z!Y#i(03{v(ED2yK`v5KiC@vuYsuH&a2P2liCNXlr74HB65f~Fd8vrl;B_Y8uB>;dJ75^9!K>)iZ5jOu1836bbNdpDX4KN0?z@f!MV+QR>aRBZE`C-Zf2LHwa2BiT6KjZf^Gcy1{22uw5{>H!o1}_HN0S5og0S1}`27&{>2BZW8Kgo^6w!Z=fpaKT024M96%*@Qp%*_VK?*jxs;3t6q00#T!1NmWt0|vbU{{}Y(xdH}L27kE&2Im0=^8|qZ!Rv({xKZo||0M>D1P0v!2LEdYtON#S1{muGAe2BG(xD{)N`C;k009dSJNbbBK>)5I00B4vzo!5KAt^6lVFTSdH9-Lk4@sahE%sI-A4pYU1OPh|^C2|300twjApiw_apDFx0A49T*g^ifK*T~A6dwx!qh2V50^PuOqCx@yK-B;SAOUzIHr@dUBK~Z^EiDou09OD{0UI0@p#rdA1<oPcdj=-shyg0$s02jM;p}2hh~NoDgCHk&;G1407@`6=iJ<<VC076gBwgS`-r^|U=NBjdLj(gP1O~u?aG>PrpaNheWPr<nwE!{xenIa51`z-S68`}8Jt!priVXi8Gbls=={5lK2R2Y4Rv<+H2|vjj)&W>!3Rq;(;2i*K3nA<Q3|YYqA?(4|4kiF20uLZz4?6z<A^<x86(S~nmt_z-0Bs`^@!?w$CW_$%0FA&BF@fz9e83$=@&iQx6#qOL7y!i)G$-{K96%SZ;0FN!;M)iR=AcLf?g0=z{{Sd702KhPDf<8xTw)hL0JJJc02nEMzyu(1fEjq9-5PkHA^;m;q8vU~0FX3>;8H;08#G{lDF7Wn0FEFUqrV#-0BZ#tMu9E(q~HhO5`ZTF9z6j610xp~0N?@uKLEBgJ}oP^LIbPs7y#e{1E>T74gDUmLD&NZ-~k4IiU9^d1`7u1=KszD2EYRbJqG#uV!#1F0S4v*2D|YB@M8w11YM!l{{jYA28ja(X7>gh2Du<|2Im4F2FL*esU4u|VabDUC@cU1OrZleTOj{J0Inkd1UUfPZ6%}v0z9!{1v~znAqD{O3^N=6|I0iz3;-xD0PP0_Ap<#-A`K4z|NsB}EC8)QEdMedM*zz^H4DBgz(NH8kS(jAM(opJmB7S9T%Za90RIXI2F3#h_yJxLfR_UXtZ%^hbY%Bt25@cQ1^`$QdkF!-Kq>$M02E-~0yO}TD+u5z0RN&70vR4Y0M36rED9_E00SL_dIne+23H#Z6B!HOAG9I>0wcWu6@X&`>rDXZpaJ2*0~`QvB^3Y!0H78CIl%htfCl8D2OIz>E&BinfFTJu09!f#00033BoP3u-#;ue9Y*NE3LGj3K?~|33<Y2=)xauX+YUK~VGlU%0T3K+KVvKa5qrTBHwFRy6DA`|04M+g2lo>O`#xfM2EYM(2I3?j=4NJQ06_N!y#stii2?*a^~0k?CYvFJ0|uyX0tUqbsbl^EBB0VxVkP>3mjDo#7h5~_7-1$8maHE%CpLco9smVE3NIt!US(h(00uab;Ri(^|0zKLv?KrsBa(DO42$5GZ6%jzouIV$BLE4PbOr$l3HJt&0hfeP1VQtUIN+&3wqV16n21H204PEy6Bp>9H-H57ArpW=mZ2jh06tbtAq65SAVGhlUfO`>sbW9?0YMO81|k6e(grCQB>)@}?K7uhC@Wb(AOHw=HUOlmAOHz9u0g({z>Xh51po}fC4UzH3L5~?5bofA7XS+z0FW$NpsOta0>BIcz!3t%4f7iSX#iq?Api(B{{UtH4k|!40KdNx5El#t#J~@?ASW%xVF)+_KoBP@LpQBM^`H?+!h|66A^-z`Qa}>`TRQG$fCD5FX}~Qq9aTqBVH5<az4W0CYao9rD*(k1G$-}onIX3T37{1mZbR=N82<nk8~`Q&7YTnN4gmE*B_movH5dcL9sz+F92!7cLi-vV%_SQ*00SoZ5~N_1fZzuJ0N||w0AK|GJwY7%U=V*FI3_m$#6Wo9{|pEK2pk5*0lx;H0|tWvli|K^0|xp7`6HPE`2hc)1O}S~25$!ET?YE{K=8$#0|xO^@`r!m{oqmtivs@!umJ|V0|u`50tT1X!2ziNDXP|BJ?}$4*T6o3K>;~6Hez)kB>+Y708V0y0yc6X1M*?npyl8M|2F_m87l`n72<IL1?*uypgF>|03@d-06?!If1n2gLL+|wCoC^46C$<%^Cc+b0q~%;04OJ)073v08hrp<zy|K)L`wiay1*(Z0ChCxfDXJNCjdn2LjFWR2^|3QI4cmILf{zy3LVs?I)Kr?5C;Gy82|&|OZxyVNWx11Gz0+K1`2zD`~!D^qyhT|#3+J^1P1j2)*zwQ1De1eAHz-n+;|&7-~kK|LEzUdR{)SQLf{n9U`1De{~G`V06P;QG;1a{Pk{k<f(19;fzEOO10@mRfjo#K080lVdE*O00D0{wdFbl}HY%YAdGrSX33mtvR+R*|0S0);{yN|h0P{8~4=MCJC6izb`+zhX0~dQK3gTj#20cEgLHz=-q(J}$3;+Zw{9qnjg9coL7qP^)0Br~bK?xkq0SY0KL!Sx*00jyVpylT8^8yCuO2)tf0ICYV0|FZW#6i;_3;O{9?|`WQ1^{dO1Qjm<CICGE*xxuKG%FJl!q_>g0Yw4@10ge`P&2;()fY3Nj5DM%Gru+fYXc`Ur3r9D;0STUq?lkdzX3dgG`k5jp`NV-G{lMmG|VJ4#CPu@3JohE#a<>p+GN2dV_?`jBO*%xxk+%~uK*(e0jow1+N(waO@RY8kpKh-Qz8t=;IjoK2>~N4LHQHwz<Q-707n3t=LkPQZz1iV8UP199(>>kJQx_dU|JymB^m$;9srOpJfC1cpc()Q9t9!oU@sZ~3?9+}4blb*z<mydfH4IC2M&_~@16k$+K}M6nVJ8YnVFgfwgCpLLncDX1`$IQ9&w{hmT|uT4L#|Malbv_B)~o4tw63pJb#>^Jbw~EUh5zT2Fn6GWaV*9eH1)oegZopERAD7JpdCG00FG0G2qVyK0g4ZpmD$%0J{SnG2jF{7tTN){Y2s582|+x0FXT{G2<Bk1|0<<ox(E+9fU#tK*U08feOLZ3NhgVp8*grmD~b$a=<D8PL*vS4X^=WCa$4TKw)4`j$S8AAzvmY07C#kKmx_&pDHE*P5=Wz21*b1RO4PKQGqcg04P>Zh64aiKm<>L1y6}V22Y7oV8jAagT%lJPl?eB9f9iLV@wbZK^X;a0S5~P<^aS4P_<Rxzu^Pk;w3Tw8>1o4lmGz+uOuM@5yJuMnjjm-BTB|03lKZ{b3j4AM5h1(Au0ba0Inne13Ccw#voK<(k%e3LM-1hA4mWb#hP9zaX`Ky!~ash5<msR;mx3rCGP`|DHviXD!x!at{(sbH8^1d{{TA=9Wf>~0Ka4a1Su;PynzLcA!=Yi1y)6p!}~x#ZpZ?v3I)1=jvkF<^O^@(1Bw6{00$jD{6Gl}00<|FAXp<*^?+C>3s@oy_5lr8B5MvJmZdKCU=9X|;Gdxc1V8xf!0jLgw@n7%i73ed%x+Hp-N`@z#{dB!4fQDJp#lp49zg>D|Bf6$2LO=(8h-#I5CQ<22j64fPv95;1RND$1`KNe1>a`}-)RUO<iXVm<iQHxVhi780EpihG9?QaWneEVbhH2puM7&mB^Uq-t>3O901Y~|WhwyuKubXmIsg+K0KX3av?l-%6yP6zw4k*BBPswq#Q|q3089j727t8yI)Ldo0fYts5e5MgCIG)DEHW<>B?Vw8@hf_O3<C-6O8_ze|E?nd6FdNrGJcI96adK-KplGo|0F8_I{=^m`>+4mIRX&@6bwNX|2+VT4jwZqM*jfmH~<4U0447q00bkK00luE^&LLIN|yj100$#?0FX4710Mhg3&7hS04YEp0C=FZDfa*iC_cbP1OO=iF#r|-t|kB%|2zPy5eEh$0REZ65d{DY7Y44k0S5NS$bbYtiw6JR0tT1_2G|4F2ATmxq2>X=0S3R-0R{~Qc}T&?zIFiu0ICWDRiMPFL8PI4AOK(>HblW8TMQ}MAp#>+0768;y+K655C9hu9RM9`00S-|1X!RSMquGzLMs4U04QJu?g8Bf?g0Y_AnpPM0QVCY0J1<A00<lV0Hiu$2{r(&JO3&&9z_84KqP-603{ay3mX8TRSW>44FO^f0wNCrBC8M^OyLns;SvNu7^a0`kS#GHM1T|mLKXWP0E2)401+1i>StjV!lV{y0T&$r>(LOxf*1nA4?<IZYvCCk09X_WV8FNd5<o?OCo4(-6LB4307*a_1xo-r14D~K00Tf99%%zXPJkTtc>zWQyyBn#_5c6TIsyU#2^<Fh+X4pH0S1c%{|2Z72CD-G9QOw311`Xe0tTP|0tWR1295y+|9=Lq1O}l42LH4I2KxdAz5@RS>;ndn0|w*%0RRC8n*j!;1b+r#2H^q*)B}M2v7r|Ls4^r2ivIus5fe86GBW!r4`d+V0s#Qv^#cH41OVU$0RXi3CIA95VgvxL9`^tPI|ShnCmI0y1m*|@W3(s$0xAChI}j!@COrWEt|tHlJpcnE+ZYxE;<PFQVYW2+KRLi7Kmh>@1P1@s0S3nd2Dk!$29N>+sQ?fQf!?hkC@ug3V<7=KylVkn0F5>hH==<i;%~w!;DHdp1ug_Q0R9CcO8__kSP}^H0U#%$4Pplb2Gaim2C)GKjsgam<5U4^03HAhe+^(q<Px$CYY7ct5+DUO0H1yXJS8qwfdOC~yzvAbpacO21rR9)C70m=C*cB$;3lFV8ZopVXTYF6z@oJP5@1*S5`Gb(HvwxE11tX&3IL}71|cV{EtH`LIQL*f<-rJjI*)+~IRI@YAz=R|00=w)t|b8H3OfMQ00CgjJ~#CagaHcz!U;P7ZR;o%Iw1=>;3fbH_62|+00CgjKRFNY0FEI;k3bjz1-%?D1q1;L3oZoW*#Ry99l!=tRe*8^f3O1vqyz?nAE6@sv48^shmusy4piS%--1-i7gXO=!be|J#YbOQff7ewM^a^fWq)d+Wq+yJ094;^1hoKE-y#5zbjeiTRNqwJ094;p*DCD9p`bt_0J>m~A3^@o!6POBJ^+>!|3L>r2>@#b6^^-KCICjs!Pnpg2{HdB07?Lw1U^5urr`uR!{G!Ss9^>E0b&Im0Duq`5dLtWO8`FrC@cVf1^})h00cMPq5lUq03{Xx1RA`|fX`qS00kPsfGvCtL&m@u00;oI4M&K|ArcBPAVG!#52Xx%CAS#>2@WcdE8V~q`V8R-3!ydv0R{>82DJgpfd&Sg1NR1t1Eyh-0S4dq0S4xFVF>`a0KWkX4>|z72LM0+3jhEDSSbJpT_Xsf4HyNzU=(P9UjP6DBo)4a0LXy<006{C7!)50{{sLB0S1Kx0>7yM4FHK61_1YeJ`ez!1wB41!}fWg0vw>A1PlNJPbL749*QRNA{X?5qXr!H;qCw*KpY=o3GX2Q#6k;U0ssYn2?mq|2LA!z!T+5B2F?NozytpVJqG#$2FwEg0I2{00M0xtzX~h?0RjL4pdRY3z&**~CG$XDB|ZKq;Q=84(gi6O-z5MX4KnV6^ETHj4=DtLJoR8DC9Xao^ENC3U`uNvC+#H_pk60C03ZMY-!=ei1r+sQIskiKCkr7eB>+XO0Ifc$fde%n;1D6e1N{IE0R$lczYz|%77PNpq6Z`=Km*eh0Wd*40zU%51OWd81qS*92EYOL2A2fnA>080smlNn7RNrv0<|CkHCWtY$Uqa}UL_790s@GiK>(@=11lg(zytd?04ahP0LwZv<qAH514=;-A^`veUJb&o0tVdU!2uJZP$u9dz_HS|k?t))1|J~L0XP>FIACQ(JOHcCJujdDO`_cLfIPne0RsUBBQZdjsR0=%7@|LI!2&Wt1Jfb^ZN!S8LM6gpCH+8T1QQtm1pu_^Bu+pCfI@O%BqsnS<RvF3NgxCxA_OL6A^)x*00uY!A^`tK03aYF0GbHDKtTW#8vsf`8}|SRA5WkP4*&`EDNmqA+29)h3m@kIkT6?7PoNtB4E-MkK@9*U8vqV}9{{u^01qTjqx}te!4NnAZ6Xo&0>Kd^5&%O404Vn@021yY6F2~n;Vxs~A^`%xeBr7L1iu9y0BZ>tOTj7rUVx+k6&(N+H~vR}LjbfW02U|y5J3X~jvPe?0DqAH3;-Av0#HHyC}ZG=7B?yo9G(XNGcN#55+Nl(CD#B0B@Tc@lOZxGs{l?L06~Nx92)@~_W%eWYQPr|015Rf3ZO?D02}}dAol=}F&hIM01P1a023T?fF&FN4u2p3v?c%#B^v|Y|KKM80Y6LxC@;$ZR|NqW9D#H}A4OiFAuTEZOfy2R1!DITApkdEEC2&5?jWE_1poq}KmZf}A^;Eov@HM`|11C}EI2e1E8ZUfE-?T|BjFl5-vF*702^gO8$aIwE)y&!x&a(KcL7>KiogaULL{KmD=r0q6rddsix?`u09pWTD;N|+LH{uTT>zi|@BjbMJ^}zJG5{X>k^mTx-~j*tCo4BMGZcBjKrjYC4gvnHz%~FM0In+l{~$pCt|R~<LgxUGI5gq`fFeWye~utb1ptsan;`#H08|$o5&#qbB>*D;@D4pC{{YKIKNbM+5`Q@&0Lwx<5?$c`9zhu$0L2zD>nt5HARM4T3;_W9;0*v^3IPDNId?uVD_4STBoQfKzY_qiDF7r5hROFDMk6dFCNTgQ?*MHo7cK=b07Ab2t|$N-Lx`apzeE5o7%?jq;T-=#02%+=016p-Iv-$;p%?&=H5Vd(O8`3nZ7dKjqWw5F;0*-;5+nxym;?rj0S4d!KL*$X2ATnifu%<MbEPW=<^l%s0{;e{0S2K20|x)D0S5K~2Eqg12H61ym;yio2LG1>1|bH*0S5o31O{dX90qbf2Im3<Kj6QBH38$*0lQ#=!KvlMK^S`z9v~nB0S2OjA*~k2Vh}pk!Xad!K%WHw6BhvHBLU<n_bUJd-+=`-0ABqjePRYT0N6SuKQ${A00SbZplZP01OOrc1vmo0Br|_4762zHF)K^}|3v@?JsBAQkXbU?B7Fb|J~&`T3!?Q2bwEGRfDHox3jYZP{{sfR0S3=42KWIOU>ZQf1K$Sq0S0iaAO`^d)eSol07o1!|2hQ#c>n<e8a)M900JW%LUCZ3pnUP*ra<@;KmY(E;HOFk%?BaM0NozIDtK5TvEZ1ZKmcAU!$NZbHo#%BAYL#&eZb=;CeA?xW5WQo04AR$07C#1{NQZFE2$>OAqQgv2WBS+VJc@P07MGFWg-PNhhVDAphov$2KQkv2%!fWK7cz3$tWgBfDuG0U{b~)2*xGY07VC;E(U>Z2?wHHFL7cDH8X*w3pIfZGlUhSUKhg+Y7jvy-2y5#A_X@$A-@PV0Bs-+c3~&<;9&`a4h3X00A4Gm<KZtQmw*W54+CK{*ChZ_L4gn;#5yO309XJKBnN;*z!54-p8zQUC@SJ0;6M_$H2}StU_T0)0NlkW+(Tq{z)PU5fwcf_H49;0Eiu9qHnRcw6te{4fE70YP8n}22|E?BU^yn7K=K=;78W6WU|awt7l!~B8!q4+X#L<EV?l=}09zKpkRi9gAma_(AmRjIUMoMmAU!8k3ZNB?7Zrhw6@)Ssg=;hbU%(Mx!4ftaVYdMc3$%cEDaZyOeCi+?V>2cIPyiZxsSFxo1prY-g&8oRH|He)Q7s|=L$v@oS0?~dFCiN*CtFOQUZP+k01r6rp#mEq+bKZRU_dCX!5|G@*1$m~0ACfq1+xXeCIDUlUM@c&Mpq>OWLSk9LZM0m0a`3z1`q)M)<9t$Sc3WjLtZLOB^3Z38(b2BEQ23500JN&2SN4NN5LVUfHVLT7|e)(B;!3O4<IV50EL<=p~xzu0TaCdDy9Fg_a*>YA7vIFW-Oi`VL~VXTw4GiVMA9Y0AWw94Ns}uPpN-HB>-RmUNIkGuS_KXYIp@AVj)ofB>-&zB^Uq(nH(-IjX)k8<KZx4AN@Cd0U#UzOaIDP8{x)bMa=-g8v!yK4153YA?ZXY0A)<9s{jol;r~pe@FD5-sU{a;d!rdzrY>5cNGB%%Vjz-QrHoprbt<y~3}2FEK|UpEz`1t-Bo4%Y(GdoZWWOgZEh-ZrX&^-DCJtb8<Rx?ANF@M4W+&@5rYGhCBPZy&C*koXMFK+%Ap+7V0IhdEEHdrjOaJFl!A&Q#Bt9ozKvCozd`3+%d_hDfOreqM)f}N!P?6*md|TIiQ96;KzeWHkIWh;~U_bu=v?Ks2BLI%~9zp}rfd>GQ0ADHqGZ6y9B`P8T13)Eh0B0&T#%Cru17|38q;7#LXCoH?EYSq&g5X+!<sxBaZ6FV(njk+YWWZ{S)lXq${uu2v0Ei$nCJe0@pujpStAQopfj)UAX<!>a0QeF>uc4rWATG^-#xVnc$gGGVE&71PE*XS0C;(LeZ>}Q%3gdts0NQ~6C;$v60FEC<?FF;|BP-8fwE#QUD*$e=60|e1HYVVvz#E1KVAa4If<GnzL0x)lC#HI40wYpr!g^uZFPDN8pbk6Hfhz!CA^_1512Mn|vE{WTl4d2b;W#K40Bv-!;@3b{90xD}v>X$maU37EWgG$#gA*o9Oa3Szpa0SSuQ~!k7U3~0iP$lcKx#z*hhdWdCeT0}<vbkcT;M9o&f+Q@>pM509OFDDK+r&@Dk5g4CITaVD6_W!Xjb7R;#Tn#erEsyMB(@_ARd4y%1ZzU0H5#w&Ht+&i!CSs)lRAnHL&4=%n|%1>i|hTK{8V004M-KOu!2tM!*IkgO~`m8N{zEC;&wdO&7pHP^gK-(Ba!+1P);{d>{$BOyM+QgbgSFVZa#s05yL=Ck+4zHU9=y1|SCD0|x(v0tS!)2FwBf2DbqQrUC}{{{jZs0|uG_2LIpz2A%{4m<0a@&I1NJ2Fe5f2F3yg`~wED{{aT10S2H12LG@D2A=^2%L4xf9|rIP25|=eQ3kmK1{emc{{aSy0tTZ52LG)D22BQg2Jim^24M!S0S5N}0R~hC<pBof{{aSV2Iv9?JpTr|0|t!&28jOw2K@mB&;ka(vjG6903hz7uJ0ZI0XKDFCjdRo00D(9Cl~+&AObi400Soy7XaV^uK)nx0svqG0AK|A0bv2Ap#viTwl4WUQviwK6B+;n0Kbqh0000Psv!l{B>&(;fTAd$K&~PG00ub##SbtfzZL)kC>ItALkHCX3d;rxz$OFW0JirtKP;yKBm@Bp{RSfekOT(D0|x)*0tUPR29^SE0;vEN{pA5Qtf8#}+Cc*$k03w}VkO%EJbgeXB|@ON0J{PV-oUgX00ZSq`v5xZAp`)f9{~LY2f!8p1^@#l$q*8N8|4KZU>;zOA0t2nodO&H1V9Eg!6`ugHNgP}+5rSV>HnFTnVFfI0jYlg7y!8d0SoKLl>!l9AQ5Ff%;2-(B>5(Ez$JmI3Izfi`p!T>3&WZRK0g5e6Bz&l03{g!{{$TXK>!8~0Nn+s;2uN;0zn5I*8q?%D<BsEfe0P?1wjb{;R+o9v?J#L3nH!n2_h~80P_Y5K|o31lmrI<{zjkz2FU>i&I11izyk(72KoZm2FwCKAQQ7;B>?3>qhSFHBQ{_n00LSG03cf6wEz_WN5rE3Bp?Gf05UQx4#gujWCS*BB|zu^1SLNJwlF^`D+YobAP)rr2Lv_7H$WsHHb1a7KQ=!$KQ=!jC1GG*!6r68Ha|8$Ha~S>x&!|J?*IZ6009<f023iZz*&F<Dr^A%Nd*A)MJXo$|0ps51puxm0RIL(0Bt800JQ%q00$`mj0GF_IxQqUVJ-pZ0Q)F2tl+LF00}<N0Hgo~_8@)0DFE{ZK=ptKpd}mt3;!bk(GU#)B_F>43?l%LG<g6^{sDmvBLFBh01p2Et||ZzKme|<DF6^Z1Yr*Xz%>2}At?X}KLBO`ZxJ#`KK|fJ1qGqK5(S|NKmff6fDQi@0003jGXPWlK>>i?9xDKjAw5f4fFJ-9Bn3$t!2c8gkT?JT|9<}f6C(f>0FXJV2Y?g>rWOUF7ZAZ1_doz!34skP836ySM=UZWP5>qUAOIO8023epeHsBl8zcabH3y>V0^l4B!Uz&1W&j=MGf6*$zz|?4HUNJf0In+l2|*PDtriAA3N(m7Om2W7CjcKM6X6F3AO{H%0M{!37zYFC2LUED{{XE?EHWlf0AD2`03jtb!6E@cR7qeqAS3}nB?<sGCP6+9LS_IaG)XU^4WRcZHvlF;EC2~Ywh<x@7a+jYH4>v4))@dKHzuG>fj}Yvw-Y7+1*{Dh9Y74fH2}pLJ~E&HA?5_*7A7g6AYc^$CGR2t8zw4YCjj-AOD`S);V1}#7+@^F02o35TSGJ;0$VN{7y>6y1_3Dyp#3;Lfh_<kLjbNXEC4G)0>LT@gc~6LA^<EV0In?n6)gk8E(5|X6Jjku86rPs053I3L9!qc0DCAn904r=2}3PI{TMT#95w*O8$azbj$k29oS-8B6Kq)E1nUkMLEzptGs8_9Iv@l%ApixV76qcNFyJi!7z(4o3ZWkVHUO<lEHWrjzW^m802wDqVKA}*K_~^s5P(}m34t$99009K1!ZWVIb7jyE&wV-8zC!02H{^SCjgK*Nnjxef#EC;Vo6{bB1vF2OhW9=Ko`I$IZ0tI01353Hm3$QpdU}T03`PSA1F-$F+%_{|2roWFCqZo5dPgDFaR<!04FSeJS`G104O^{0q-yX2}WsPCOJvfMcE)xX<$4i;V}Tq2}eT%99p2)fKy2>TcAZHGD4tI!~h(iw<`cB1xH&*Uw{MGGavv2;#CCb7AyAvkUT=8Cjc8O{(&GgEdVn|0ImN%Dl#ut0QFJ-H8TM9Jv1=@@g*G~3SwOVF#s4x^#BTD)e2y(Pb@O4EL8*nDGq==gCR2i04hiTt}y^LVMhkxz<>;5CLkvO_@HnT045+9VuZjtNk;U5_7<QhJwib;00~H1USl19K;k=bBOh@g^*vr-Q{TWS023^200pcK9ecnJI~)U-cP29hMivD^7JxF}02oLBTO{EyH2)z0txzm7Emr>kB`5$HEC7%lJ%eK?02~VfIp7e&&N<*aQAdB^4xlJLUOC}200~KQBOWgS^*jS$RPq2R03R*?04@zU9RMy2|2Z81R3sr70B{BXLf{4hp@2M5NCjj2C_i5TGyn-o0JT#xp)VC+TTM@aH}xfYU{wjADgYBMc>o09Eg&=i7)lM|{plbfCOrVHQY`;6FIWI2DgYVpE&z}}nqw*e9MA>=P~Zy!P~bg6AdVmQ37{xI7U4Aj2}{xz;~+)>vjJ8X;41+0A1@6d2L~@bQAyAq00#rMpa%vG2LT#BUjW4;M>@>_AqT_769>RRc_9Si8Ui9GJv6_dHb7TQlt2Wd`4$ACM*uYd7)t>ATTF|gHzWY9Q~xY7Fj)X4D*%5PF8~uO05<_a>nJbIfEfaTI4=M@kU+MBD*zk_LTvz?5&~@iK2%B+;1HlFy+LgOHUJ4sGXo*?909rkS2F-C03R^_0L36eBPRgG{~|IbDFDSJMgJlz00S#3768BC9035}7yw`yssLaS0N@(|U>5=48rlG05&+;80pH*t0ROHt069|t10&xq8UWxPbf7>0eKN)2UIYNHFasgKGEOKIKQaSi;Qb&2<3RvB5I!;gCRG5gKL9#aT>u0i5J5BqBO(YO??M1FLj)i|F(%hn0ImgKR|}vr9r_ESL<3=tA7TUmdnio9K|ufsSLvZwN=a5S;9}{ZO{XERLI4R^Q3EaHAnaB<gAFgkK~2LzV^V;>H~<qo04N2k4ZSUC0ZRZ=S!KYjdp1J_Mix8(kWirx!=N|-8wTQ<pbVn6z-LQgS3-aafGAE6f&W7Q30VLWIso}R<iif30Zjm{VgD^MK4<_XIRNJqJpcs&;vho+80}eQ!XYkmz@SV3zpY>_GCpSnVHrO?024U?Jpn;^Kx_rY3gBB>u^~k=1!(mt3E)q$Aw&QwTHgS!LjWsApg92FDm?&@PO&370O2eSVzD3-g0Ub>Vp!@~0A!{>Pq86H0135P6~_i7fFEUdAUgK|A3iW)F<Ah`|1UKnHUI-AH?J80;3h&uCqcjhzW@NVMgTH*;b(d>pi%Y#MgR$1GN7+7PhneSpl7n+QvTWDM*s<3024mz06q;PGm>BdQ2_s~Wi2v7Yyc(h9w0#gC<O{X09$=uvq4HX0Ig;OrFj+vqVa%702o~sV(YCkVBt^+AS^OMEo%uO89^+eKmkEu09Xou1;P)YTVB}#N#20fWd&s^3E)%N0Z0J<DqaAtM*u5bz6e1oK>(0aC&N9%04xq-*#H<q*#J;x)m(t!XwD#0*#SrZTM1qohXzrEU}>KK|2_a8LIAEs0Q)gr*#IaHNjw1S;0I_RDrCS)05bhcT!2S2CSL%p|3xY>L~8*3D*qQc0JJIqK`Q?MwlzL2D**Wa5<mk7EkOp!{{sf-0S5m92LHbS2E_pep9B8}-~k4!0|p%b2AKi|c?O>Z{|1``2C)GKoc{s_?E?n10|tLn2JQm{Kj4{R{{R34Kh|buX8r&`2A2Z{$^!=f#sUVV0R%s^|9as^t`vI)QvU|q0S3(h2Acl_2DSnQpaKT9tOJ1f2SWzP2*AVlGcz*)KnCUm2LCq(P6o^Y2D$$O2Im0=^8*I|-2nz=2DSqR|6>Mn2B-uE$NvKcWCouC2G{)p4~7Q&0tPPzf7Ss8xB>={0>J;?xKZnc9=Hbir2%IZ0HfCmJ#hb|20;eC0|=?#05||%Dki`q0RI6w0Inhc0yzHwE(#_e0InnZ00ROAR1yyc0QV>?0E~bk00lSq08=*G;4c#(0R51BVHE&75g{`FCpQ495CsMy{{Su#DkK2#2>&x10Lwfz3;=s5E(XCP00ueu!v7vc0DcBOC@|juwE!b2Q$PnO{!Sqo1^~$tJ{#`<O8`Fu1496~|0*I9G5}N+67vZF1)!V2B>)CH{{XE&Dl#BP0ROKjKs-Pc037=eHwHquD<Tau{{rGBK_WsP0sm_i2rwBB0Q>JFDGUpaKrjFYUjVKp00{A*IToSc7bE~%K6-&D7W()gM&;le00|!ezo!5PBPuWjDI&fFAZ7pxFh}a(A@&603m+1|CJZwG|D*s7A^;3L0RPxKBsDZ00QLVyDkuQ;L?|Y|03{m$4j)M&3BLgh4hE_NH6RIp1|<eD2KE9(!0{YK2}9vG;>-a6ss1ZK*f=9JDiQ$wUh3eqA^-s)0RO~67!)500s!*@0W|;wKo$UACH+1o;U)k<0InXF00B2EfdVxlH$wxzH~@_{5;p`uB=IJhfLY)LpeZH*Myds}1O=o^Kp`fM;2!=vL9QSG1~&kX=N>@>F@j=X0s#l_1_sgsULoQE2J7Pi7U6Oczz_hq`z0T^Ksyf}GbaBv044wd2q6vs0QEp5A^?gA{}?kQKmh470RI9q03{g!108<=MF0dl7Z(cv{Y2pa82|+x0Fe5yp%(+e1|0ws8T>TB1t16=0JI|j-w7fB#6ll{3k3fF1_=fM29yN*2LEvY0tU_k2LHeV20aG)0tU0p0uW*#`y(d8z_s-NAYelvepnI-0lgp|g#iHv1RjKrX#yUA4PXN=z&!vnNhJX@Miepp5a&k_{}AE<UNS$BVH1KfCn3K=BO$*xSP}>!x&i=I<ffqS0RRC2F@Wj;0AKSrDiA7ELq1s`TR#9vzyUT=13+TI+C2dRJV65^x&T52!UI7k)F4%1Pe4*&wE)v3C;|msU^xeYDFD_7gd6||fF|O=04HB8GA|P)1A!|C#pxqVKsVwOSs(zkCiegaD8_(C1ppJ-AAn#1-~%ZJz%?>U6DSlRE{#B#APB%g+XgDjph*Qkg03O|00}?<t|<Tt?>_*LHTnQX02yBZ3jhWe<)AYG0AG$BN(BG}fDGNh?;rpTBt{}@2_Bjrp)XCMCNCAhr@#*1KmcnG9!elP05@$X7B2uYFH6980RIm_023hq5CH#*5+XA$N&xBqJOB|q03{;;dlDyPz!OCwA!NY)PGrC%02C(xkoh>nfMmcU02L<y?-L^c76l;}CjkGnEdUrS0Jb-?KP=ZGI^ZQQg5YiaDGebYF91UTUVkS^0In(k85IEU9{?I9BSRtp8`dL194zVJOE1ACFuwp>0Bt1}Um!C70L2wEBOCw&za$$L0N@PgKn?!^0ZcXs2oeClei1t)I{+>K9sd9&B>)~N04RGo0K{M}03bvHq52jfPxGKU03race=h(aMF3kyy5avZ9ssRPEHWzPQwE_42A~87W&k7iI8a0b$RsHMCD#}LB?~}3iGZ#${{SaQ0Io3rDE~(Q(GV5@v?TukDKP*iEj%#o631aAHAaB_Di-fL0BaOLp(Qo|^-L_F99zI2H2_fVo&gU>06ico0E+(^DKj-u0O>>j01-m~B`N?CZ7wXKOejNu9#t%$e<}bJE&z}}ETexa02M9(6DlmB|0)0%E&#MN0P7etNT5=o!AAfCza<|R0N@WJAO`*;pbh~5txGB~`zun0pg{m_DIETXpd<jaF#szvzMTM31OO;L86h+M05JhF04PWR(d!Wx86q;~Krb^U{<8ou02xLAB^SQ{8Y=)OJ4?b+UQ56*01ZZH!8W+S>ySG@02B;DSRx3w0Wbg_!jL=ypcVfB%Sl5S04P0rQsPun;4%OWNDje&3;?b(03b;k<Np)@W&kWbR7rOLjvxeJ@EJfYAonK#46=bONf;&n05U`;5HcqKSKt%@v*1(~z(6no|1|(7O8~Ak0GlpL7C|pHX<!3kJ=*{<ci}NMxnNZTe*lggR0jZ&S%AM6Bmw{vFiW92*8nm)Zva_Kp(j4807@XiGZEo55Fj0X2w+P9M*t{8ML~Z!03c2PjvWO+e<dye2{Hh#0t)LjGO@ry7-KR3$=e=Ii$Nqg+d!WH-xB}sO#+#KEjg?SfOcRuObS5@34mJubHF$N4Nd^AH~#=PO#m(-IyAl*!3s(MkU%LQE#CmLAvHC;;4}gAi#<010K)<RrvT3jAvZk{peW-wNdEvOC;%QT0GihaPf$WZ5l4hU03SIX024SL!AHMGr~m)&1OXg52AKZ@2Ic|=m;na=tO5o!2H*h(|I`5n=>rCs1OEmg222L{0S5n$0|qDtc?NX;-joKh0tT7_2LH7I27?3w29o~+2CD-G90q*<24)080K<sTenmhA*8>K?0rkQE)&d6W0S1)>{{{>Oz5@h5;QUD71L39w251I}{{sfD0S4Cr2LGr72A%;1p#=8^_yWk`Lk80Ue+H=m1E~NSA|U?(A1W>Yt|b850z2FR13dTOMg{)>@C-8+0PqX-GWUW3`(ip576AXn4>2Sb05UcIDh?$Y0N?@u_W<ApWdsKS06YH=BrzsD04Os30H>fQ00KP#z5fMWN{tdVr0M=j0IftUG9pU=-z6OY1|bA#TR!pw-~*aK1Oozm00;LAK}E>{0s{;O(j~zh7J(WdW+*}U0`CE-00|c2Co2G7t|9;eIMAR$0U`SXIS@c0GbcCz|KT?dFhUIg@b?HX82O<DAppexLKqYu3IqTK`XGP-DWI1F28RK@+5q?g04OWlV2<q_)c_M1&tS_sGw%ujkSuZpKLB3qB|zPwC{jRPCP3cLg0%o6D8Jzz0N4&d5J1{MkT7^4JOH2cDiAIplp&oUsNUg%UM4~S#Q+64{;&WN0Inne20Fh0st*MMARu7}KLD;L00=!8!O{TV@DVr~0M+0M0DtfhHy{9zG{T~O96$>}0Pqqy17Lq401N=|5jn?z>mW$6Kr`N8t|$Pz4L;w&4ggzUVFUXs7=U0&0{}Y>|06LbI{+v#0RImFt|kBoJOH~}JuM+96#y+EAty=zCBVQCz%bOnKj426I{-TlBQpj-pLqZW0wRl`6GlOQ0|`buC=L@7f%Os-h!HR03qk`4Uq?JB4;0=36BE<@TdzR_Di;8)M(->zBTN%|Lo6~>6MrVr6eideCe{`v-&7{wCf^q(+88F?MJC?dYoI34jvYqY!L|VVkS@$XcmQ7pJ8v{1J^(yHAqqm|`;aovqGkXYFh~77)}SadCp-YIuPFcpKRsa>OMx2y08|+k4FJnOb2tx5Ay(if01bUY{To<896bQ7Jt{vkB1r&SKG`67p;wL|N5>&V%|I?p0rw*S5p%!}Au}cwIS;fQ54Ii;zYo6;yhR@$b|4SG55Et*ArH3EA`ibGe;;ZfKHwz)-v~PZkTE{wBQFC+JBEP1z=fbYe~aKdd$J5KBn&@Czm6SApiAEXKL98#wjx9Y{{R{P6#xbfI{w9>0|5^t28aXa1V9AfWbNXb0|xt-0my@L1V6sG|559O9=HbQ0{Q`G{Q+S4A^TKB?=2VxX5`}pKd$@*0|5pEKgS9^a5tmZ3IPTLKL&&ak=^+4!vsI{@#G~2Z<_-IzXHt!KLRf31b7F<)}RaD;wCEq_l_My?O-7Q0yp9!fdk>;(Sdzo6aZ!)00k^VI5nUIVBtml?_l9W0RRUE226Jbjsqit1V7*=r0U|LzjmN1EMTr50Dl5C023Dg1L(xxj0F=iE!*KECi4MK=OO(dAOHq7{{W-_0UH1ZHFE&25nv8LA3+5M!~Z2000<iZ(GXh&00AHg8|wp50fD~?8vrOQ02iVL{Wle03o1Z10FLn=@W4C3&!8dz1~~fwy;L9#4FCWE-z+NtQ#k<O`xfsb0FEIV03{dz^9>w9Aq7Pf82}Fd0FW>L|NnjfBNH3mfLp``r4R+8)<W+RH~?D-fB+37{}BMKKP)mGM*RQ@z!Mw*6Bqz}6ahgM8~~6lV}jxW;1&l06#x<<W&juGD?v9E04jheE&#0<`+){I6$1`w;0*aJ17K4iB^dx29pn??2L~Dl3FlxV022BK1L+3=CM*E0LEkJg9!CHNKpP!Z02$yM0YM!Ipe`ig`y&7h;AQ|GEJ55X0SrJWF90OqBmmn6Iwax_4<BIEEm|gH5qm%;FC{=lFCgC<01X}h1*{DZ{uO~O0L2nEDjDVk<`5nzK!TtZ044t#02Lkp6B+>J9|1ui2jczUBmffcIsjWcF(3ja6Mq1$LM$>LNCjd2Aq)U803racCI0{;I{>aE03_8q0>L8*<RS!NB_1jR!6pO3Cj-JJ62dD$nizs+Ilw_VD?k=tD7`QnVI=?tJ3wO){*^!+E&#<7H!ArWKme6MB^v+@A8h~x><$n=;NC7q<1G@Kzy&Y`rVs_9KmgYz01^tL!3v=sF8=_nLo6~NNdQ&~AQK-)VJQJYAO**E5P(}erC<an6a{E?Aqn6y9ziAmBjw=lB>*Hl2H_(g04tC%s{kPgfh7)NM_?QoB1d2@L^?-cts_TZuO<KnJT?agHUJ;JM>YT)02v@l0V@AH05UTt4<{P`0N@A#0JJCot1Br7ph)UqGG`$t_W%YxXCN#vK|J09!36*)GbW)Z0BZ(5LL(C)pzJXrqpcOafFd(zfJs6i9=8AuA_c7t6T!d=Z!rK<Kf=IU91S4lAq7Ja1wv;aC;$@oJ^)(-!5k_V0DrATEHWcZ06L(56CwZ;9sn%?K@}hYLM{TKF9ydE;0D4~1P00>3h#Rg;YJGO^)M7*G)jRf03$!Y0InziF+L5!Bkv*rkTWbJ9sng3B8#950>LsGB6Q#%;?6B#F-JWmpcr5%G+uP!DF6mPLjx4v;Oho517J!aKpy}Z$s;EL2L~Dl35EbE0N)Zn09!!ifKw}X7yzvkz$8roJ0SlXBLJ=@05d-S05Uo&5Gox2|KJM&0N@4y0L$P40AK?EV9_A7E2{u2f+0()AT^z#Dt7<|K%Jp8K|d3K^-DHjHeDer00u#-He(hxVKi7H81w)h_M)I6Og3O401YME04N2k4Hh<GGyt1ZLis?09}OS{L=f*K0FX9$10etva0cR-APl02Kr~7~BOvw)fG9U?!7Km<Li$Dn7iYl0H2_mXt_MIbAT33pO+}z0zW@y;0FXBc!y>N$6(#^aAT%#QAoC^w2tcZUEC3Qh`v6-8!OJci0IlyzEHWp&pdtVv`UC(tg5fOyBSQdRt}Fl~LI&X@3FQ1_fP+9L0In?nCJF<>Cj-JJ3c{{H6C#4(XEjPeIY1F$C^&-Q?=1iZLnJ3QHUPU*L>*vBAue0MPQF{fBLEF200m4A{TPEl$~FKKCIHtp0FZgX2L+}OC;tFmD@y>i044V`07BhCHX;DTpFtQD9}5Vf#$YY;01^%ZKmY&$pf-LSA}CP+O8`Fxpm!rP08;=X022tss&L>!2Q6JWffNTIOZzM`2O>8B6C(iqHwZ_o03{;;Am|q24k8>tTN=RxFC5ej#RLE$8vr@20WJXBBSa?QBtr(_BPUk?kT^ZyAOV3TAA&g6ASB|Bpf*fGVIU(Qdnh?!Aua$0M5II28ALz`*`ZH@fFuC_87Kg*D*!4(-vBZ{DiL?!;0Nkhpb%Q10a>Il04vooYG6>1AUgM9F916RMOmRZK|}(<S)jc;GvP1*21ZH)8{S!=IRINpQD6fy^&yYIQ4Js_01YbJ04N1Z4I7WaIRINzM^?b6Bn-eI1w;7|1wt@@FaQ!p0R3A7!9Ow|0Ig2HEHW!p03}g?Dsupk(jfOiCIA)%qWtxs5MpKkI5|N@?0}#SpeQ^?K`{UZ^+#P}9K}HLIsj8`NX9^~C4s;pQXqieCjbpA00m499MWkZ2L(ZDAgu*R5G&kCBjvy+02Kj*6acC(;1&ZU7y*Gf3Mm55O+Z9Y;=rt-76AWTFg_L_K>%C*N+aPlA^>>+I{z3m900C306YCo96%~EGg<(U{y?FM0Pr71F97|Jb0Ho8%TP)ny1779HlQg0JQe^x-iu)~00v2mU_CsuP)MHu1Ar($WuY|J00v6pBOihwfIW8rQ%i#&ohUWIfPGay;3@z<E&v5le+WGQ#Ue&I!6E7d<39x8K>VRK06_ms0IoCuK}rDsB`N?wE&#^>_d+!gt-u~t2LOMO0384sB?4Q)|3d&v|IGkiD*spjt~UTgQ2>99Pb*LWC`A>4?>YbmP@w=QLr~REw4hs|07iR3I{@njQTM|p6@f$mQ?*hRfiK)3AzV~|F@FFJH2`foC~m<2CP4s00ID7e{{$}pwn08FEB^ra5<mbbMgXpL;5z^k2%|&@p%4E=0IgXpGB#iSZG}MqPXHw`0N)ce0249R;V}T~AT`Lq9|D0zH2@zaEdW6^2_eE@5#rAG07P0)$$$_bC`Vq&fjj^PQuhNVXhC{RL0xD-G5{Gi2Mhfg2LUH6NkkJoUWFhiLI6b+Nn0C%rx!gc6X&JiM;IYI>i`lA1L+I_CPe_hty(NHH(-UuLSBv`G5{MkAz&#B1MH3<2Pa!ozkoG9E8GUhjlePhMhE9^0Loba9TlKQF`*gaW&qDeMOsnjU>QItNM5Z0Jpcw%M?)ydfPXqh0L3d$LS;dHULAll01Y<)1mO2b0Ime$6EpxxO8}5rAr$W51S3iWBE1X*CrbcZRe@nZFD(F&Ow<4z%wP$F-w-zdkVw`;GXUKcqo6bZOh&?00C)9VK>r{!08I&^xb+|n;@JR3T2c)|D7{I-;XVKcRC|Ld^1XoieFJ&m0010G`V8P-G$1qp4LAU%1*{Dz5+Q=bE5yL!o&~26H~^5BfqXzTw*VD55&=$CPyj93#i2&Oz!Ne_fJ*>B3IG!}08qK50|EQ>UHm{LGyottN(I0x%Yj78fCQi|zF@gI5Mj#zJ^&IHA_4sj5MfY90IggsmohnG!lgtCKnOq~`W8S+Zs9)wBUJ$Ju08-Hp8zxfBX|>JR^aiVH~`TR>45h%08td6IRGkD{{Y1*Nh2`;1HULT769NPxS%2G0AK>SAOpFh;06Hy0JK2>D?<RbFHS#4E72fC5~(!e`O7rm5=JEepZ}2m|6xu72mmEf{|3bY2A=~4HU9?S0S2oB1|0tenF0oR2A>4~2Ac#1v;ziHKL+jt1V7+CKs})U1V5yD;YY3%|9b|P0|v?i2LHwa2BiT6Kd%3{QR{^sxCT=H2HOD!%>f3Q{{#lM0tTQ02KB51fcOVP2FL>j|2GEv0S3$g2LHJO2C)GK=K=o)^8*Im0S0CN2DSqRV+L{t|EL58#{&k20{;g40tVUx2J`;{208}U0tStL0|uf52CV`R#{UMs0|qVzf&%{ro&p9X21o|~xd8^E0R{yI{~iX}0|s>luKxiBfB^>80tWvt1V8-D%*@O`%*_T}2Kp5M7{vPqof=05ivk9)_W=fh3!w8eGc*1GKn9Eg2J8X^|ET~U0A40O0ROHZ00A`seggMEBrJ2_BP9Sm?*LvXJ^jTc06~8Mxc~wV5IO~b|3Lt*A^-t60RQzrBOw4K76AJL8kGVj00amj{R;zO1vmf`836wV0QEp5A^?j22pBXZKmh47{{ROv03{g!2>l(3U<o@H7XXg?9z>8}82}0$0BevgY=9R7!3!M+Vf_pNK@A-Mv?Boj4k7?M5FRlm{WbxC4<Z1>K^T7&9}5Nm1`i)$_8P;J0vjL(nFI#!lmrI<Jm3Nb&i?`izyk(72Kw&;2FwB}005}~e**wsB|QMN7eIX>2!jd%00IF6W8WnJZ6FOE;U)n6Km@=*0Ineb0seYm7ytqQKn5uF6tN{HXdqrCKLG!(AOHb20Dc3TJS1xYBqp1{xuIV3C_V)zCLse35j*}4z(N47BLD$8z9Iu97XSns1j3qU2tGd@p&+6L9V}p92n_%SCnE+4BMDR_pele1Bw-9A0u3Vu(-RjIzzV<t3c)4?hXDr-Pr*x|BcmdQ;`}1)B7iIa^EN6ET`4~RJ0mO=AU+_4ZzwAO0UW^sHk2a!D+{2YpeX>YJ&!Ch8$=w3oZvtLxHlyr42)qYCWe3qY?WOHVH5{oJ_lr_fEM!r1S)ArpamKL*#9~sG%6ARCIGJn1|SQT0VkFL7UKX1kRlwQ24*J!N6Je9GfM*qO9CaJMF2qxO9@F}O9v)^C*TcCVJQwL;z?mbNnrpBAPhmnF$7A1edTXJcwm46_-uhn(@J0y0R=5Mdk->4BRv2U7AAnbOGIF`03#+8K$^b=KR^Hz8Z)69_W%PPUjPI=7#R9r07dVB8UO_z0DF)xUjrHd1|9_={|5ji8UP3$0DrV300|=i#1rB53<|*tO5ia90S9ji2E+kewFm$"),b)end,{},i=(function()local function m(i,j,k)if j>k then return end return i[j],m(i,j+1,k)end return function(o)return m(o[1],1,o[0b10])end end)(),(function()local q,i,s=type,getmetatable,pairs return function(u,v,w)if q(u)~="function"then local p=i(u)if p~=nil and p.__iter~=nil then return p.__iter(u)elseif(p and p.__call)==nil and q(u)=="table"then return s(u)end end return u,v,w end end)(),bit32.bor,function(m,v)return function(c)local k,u,g,q,l,f,i,d,h,n,e,s,j,r,o,a,_,t i=0b101101 while true do if i<0b1001001 then if i>=0b101010 then if i<0b110100 then if i<=0b101010 then f,n,u,l=1,q,nil,v[0b11][1][v[0b11][0b11]]l=l(n,f)n=0 i=l~=n and 0b1101000 or 0b11001101 else h=v[0b110][1][v[0b110][0b11]]o=h[c]i=o and 0b110100 or 0xa5 end elseif i>0b110100 then q=#c i=h<=q and i+0b10001000 or 0x17 else return o end elseif i>=0b10111 then if i>0x17 then f,n=1,#k l=n+f k[l]=u n,f,l=g..u,-0x800,v[0b100][1][v[0b100][0b11]]l=l(n,f)i,g=0xc1,l else q,r=v[0b101][1][v[0b101][0b11]],k q=q(r)r=v[0b110][1][v[0b110][0b11]]r[c]=q return q end else e,n,l,f=h,c,v[0b100][1][v[0b100][0b11]],h l=l(n,f,e)l,u=1,l i,h=0b1001001,h+l end elseif i>0b10100101 then if i<=0b11000001 then if i>0xbd then r=r+a i=(a>0 and r>d or a<=0 and r<d or a~=a)and 0b110101 or 0x2a else q,r,d=v[0b10][1][v[0b10][0b11]],c,h q=q(r,d)r=1 h,d,a=h+r,0b1000,r i=(d~=d or(a>0 and r>d or(a<=0 or a~=a)and r<d))and 0b11110010-i or 0x2a end else n=1 n,l=#c,h+n i=l<=n and i+-0x49 or 0x3a75/i end elseif i<0x84 then if i>0x49 then l=#c i=h<=l and 0x548/i or i+-0b11111 else f,n,l=1,q,v[1][1][v[1][0b11]]l=l(n,f)q=l i=u and 0b100111 or i+0x78 end elseif i<=0b10000100 then f,l,n,e=c,v[0b111][1][v[0b111][0b11]],">I2",h l=l(n,f,e)n=0b10 e,h,s,t,f=v[1][1][v[1][0b11]],h+n,0b101,l,#g e=e(t,s)t,n,e,s=l,f-e,v[0b11][1][v[0b11][0b11]],0x1f e=e(t,s)t=0b11 e,s,f,t=v[0b100][1][v[0b100][0b11]],n,e+t,g i,j,_=0x49,1,n+f _=_-j e=e(t,s,_)u=e else h,g=1,{}i,k,g=0xda-i,g,""end end end end,function(m,v)return function(y,w)local A,l,_,u,t,e,p,x,q,B,s,n,o,j,b,d,k,a,C,c,i,g,z,h,f i=0b10110001 while true do if i<0x82 then if i<=0b1000100 then if i<=0b101111 then if i>=0b11001 then if i<=0b11111 then if i<=0b11101 then if i<=0b11001 then i,c,o,p,_,h,b=0b10011001,j,v[0b11][1][v[0b11][0b11]],v[0b1100][1][v[0b1100][0b11]],0b1111111,v[0b1110][1][v[0b1110][0b11]],e else i=l~=l and 0b101110 or i+0xe1 end else i=l<=0 and 0b1110001-i or 0x122a/i end elseif i>0x2e then i=l>0 and 0x74-i or 0xd09/i else i=a<u and 0x3b or 0x6f end elseif i>0b10101 then x=m._ x={[0b11]=0b10,[0b10]=x}x[1]=x i,A[1][A[0b11]]=0x1b0/i,{[0b11]=0b10,[0b10]=A[1][A[0b11]]}A[1][A[0b11]][1]=A[1][A[0b11]]A[1][A[0b11]]=m:H{v[0x14],v[0b10101],v[0b1101],x,v[0b100],v[0b10],v[1],v[0b1011],v[0b111],v[0b10010],A,v[0b1110],v[0b101],v[0b10011],v[0b1001],v[0b10000],v[0b1010]}q[1][q[0b11]],g[1][g[0b11]],B[1][B[0b11]]=y,A[1][A[0b11]],w elseif i>=0x12 then if i>0x12 then i,f=i+0xa4,e else g[1][g[0b11]]=g[1][g[0b11]](q[1][q[0b11]],B[1][B[0b11]])return g[1][g[0b11]]end else i=a>u and i+0x2b or i+0b1101 end elseif i<0b1000000 then if i>0b110011 then i,B=i+0x74,d elseif i>0b110001 then b=b(o,h)p=not b i=p and 0x48-i or 0b10100100 else i=a<u and 0xb4b/i or 0x2617/i end elseif i>0x42 then i,d=0x18,d()y=d elseif i>0b1000001 then i,t=i+0b111111,t(s,z,j)g[1][g[0b11]],n=g[1][g[0b11]]+f,t elseif i>0b1000000 then i=t<s and 0x555/i or i+-1 else i=z~=z and 0x15 or 0x2080/i end elseif i<=0b1100101 then if i>0b1010001 then if i<0x5a then i=a<u and 0b101001001-i or i+0b1000100 elseif i>0x5a then i,t=i+0x87,m.h(t(s,z))else i=a>u and 0b10010101-i or i+0b11111 end elseif i<0x49 then if i>0b1000101 then i=l~=l and 0x125-i or 0xfa-i else i=a>u and 0x13c-i or 0x8c-i end elseif i>=0b1001101 then if i>0x4d then i,s=0x1ff5/i,s(z,j)z=0b111 z=a*z else i=z>0 and 0xb6-i or 0xf0 end else i=z<=0 and 0b10001010-i or 0x40 end elseif i<0b1111001 then if i<=0b1101111 then if i<=0x69 then i=t>s and 0b10101 or 0x159-i else i,s,t,e,f=0b11111101,g[1][g[0b11]],A[1][A[0b11]],"B",v[0b110][1][v[0b110][0b11]]end else i=a>u and 0b11110111 or 0x91-i end elseif i<0x7d then i=l<=0 and i+-0x48 or 0b101000000-i elseif i<=0b1111101 then p=p(b,o,h)i,b=0x96-i,1 g[1][g[0b11]],j=g[1][g[0b11]]+b,p else i,d[a]=0b100101000-i,n end elseif i<=0b10111001 then if i<0xa7 then if i>=0x96 then if i<=0b10011110 then if i>=0x99 then if i>0x99 then i,o=0b10111100,m.h(o(h,c))else h=h(c,_)c=0b111 i,c=0b100110111-i,t*c end else i=l~=l and 0x90ba/i or 0x94 end else t=t+z i=z>0 and 0b11100111 or i+-0x5b end elseif i<0x86 then if i>0x82 then a=a+l i=l>0 and 0b1011010 or 0x79 else h,o,b,i,p=g[1][g[0b11]],A[1][A[0b11]],"B",0x7d,v[0b110][1][v[0b110][0b11]]end elseif i<=0x86 then d=d(a)u,a=B,1 l=a i=u~=u and 0x814a/i or 0b101111 else e=0 s,z,t=0b100,1,e i=s~=s and 0b10101 or 0x2c84/i end elseif i<0xb1 then if i>=0xab then if i>0xab then C,i,a,d,k=0b10011111,0x5b9a/i,B,v[0b10100][1][v[0b10100][0b11]],0xb1 else j,i,s,z,f,e,t=0x7f,0b1010001,v[0b1110][1][v[0b1110][0b11]],n,v[0b1100][1][v[0b1100][0b11]],d,v[0b11][1][v[0b11][0b11]]end elseif i<=0xa7 then a=a+l i=l>0 and 0x4a5e/i or i+-0b10001000 else i=z<=0 and 0x16b-i or 0x82 end elseif i<0b10110101 then if i<=0xb1 then x=y A=x A={[0b11]=0b10,[0b10]=A}A[1]=A g=1 g={[0b11]=0b10,[0b10]=g}g[1]=g d=0 u,l,a=0b100,1,d i=u~=u and 0x3b or 0b11110100 else i=l<=0 and 0xde or 0x94 end elseif i>0b10110101 then e=0 i=f==e and 0xeb or 0b11111011 else i,q=0x44,{[0b11]=0b10,[0b10]=q}q[1]=q B=nil B={[0b11]=0b10,[0b10]=B}B[1]=B B[1][B[0b11]]=m:I{v[0x11],B,g,q,v[0b1111],v[0b110],v[0b11],v[0x14],v[0b1110],v[0b1000],v[0b1100],A}d=B[1][B[0b11]]end elseif i>=0b11101100 then if i>=0xf7 then if i>0b11111101 then i=l<=0 and 0x2da4/i or 0x6f elseif i>=0xfb then if i>0xfb then f=f(e,t,s)i,e=0b10101011,1 n,g[1][g[0b11]]=f,g[1][g[0b11]]+e else i,t=0x40b6/i,"c"t,e=v[0b110][1][v[0b110][0b11]],t..f s,j,z=e,g[1][g[0b11]],A[1][A[0b11]]end else q=d i=k<=C and 0x8053/i or 0b10110101 end elseif i>0b11110000 then i=l>0 and 0x10 or 0x1ba4/i elseif i<=0xec then f=f(e,m.i(t))d,t,i,e,s=f,n,0xe2,v[0b1111][1][v[0b1111][0b11]],0b10000000 else i=z~=z and i+-0b101101 or 0x9d80/i end elseif i>=0xde then if i<=0xe7 then if i>=0xe2 then if i>0b11100010 then i=t>s and 0x12f3/i or i+-0b10011110 else e=e(t,s)f=not e i=f and 0b100011101-i or 0x85 end else i=a<u and 0b11110111 or 0b10010100 end else i,n=0b10000001,""end elseif i<=0b11000011 then if i<=0b10111100 then i,p=0x33,p(b,m.i(o))o,e,b,h=j,p,v[0b1111][1][v[0b1111][0b11]],0x80 else i=t<s and 0x15 or 0b10000010 end else i=l~=l and 0x102-i or 0x6f end end end end,{},function(m,b)return function(...)local k,j,e,_,c,d,a,h,g,l,o,i i=0b10100110 while true do if i>=0b10010101 then if i>=0b11000101 then if i<=0xe6 then if i<0xdb then k,g=k(m.i(g))j=k[1]i=j and 0xbd or 0x72a9/i elseif i<=0b11011011 then c=c(m.i(o))o,i,h=b[0b10][1][b[0b10][0b11]],0x2e32/i,b[0b11][1][b[0b11][0b11]]h=h[0xe0ec]else d,j,k,i,g,_=h,b[0b101][1][b[0b101][0b11]],b[0b111][1][b[0b111][0b11]],0x35,b[0b1001][1][b[0b1001][0b11]],o end else _=m.h(_(d,a))return m.i(_)end elseif i>0b10100110 then _,i,d,j,a=k,0b100001011-i,0b10,b[0b1000][1][b[0b1000][0b11]],g elseif i<=0b10010101 then j,_=k[0b10],b[1][1][b[1][0b11]]d,i,a=j,0b11101100,0 else o,i,c=m.h(...),0b11011011,b[0b110][1][b[0b110][0b11]]end elseif i>0b110110 then if i>0x4e then i=0xe6 j(_,d,a,e,l)else j=m.h(j(_,d,a))return m.i(j)end elseif i<0b110101 then if i>0x29 then k(g,j,_,d,a)g=b[0b11][1][b[0b11][0b11]]g,k=c.n,g[0x50c1]i=k<g and 0x29 or 0b11100110 else j=b[0b11][1][b[0b11][0b11]]j,g=1,j[0x50c1]k,d,j=g+j,b[0b11][1][b[0b11][0b11]],c.n _=d[0x50c1]i,g=0x4f,j-_ h[0x8f9]=g e,l,j,d,_=k+g,1,b[0b100][1][b[0b100][0b11]],k,c e,a,l=l,e-l,h[0x80c6]end elseif i>0b110101 then o=o(h)j,k={},{}g=j k[0x80c6]=g g=0 k[0x8f9]=g k,d,h,j,g=b[0b100][1][b[0b100][0b11]],b[0b11][1][b[0b11][0b11]],k,1,c a,_,i,d=o,d[0x50c1],0b101010,j else i,g=0xfa-i,m.h(g(j,_,d))end end end end,bit32.bxor,function(m,T)return function()local P,ia,f,ra,K,N,g,C,v,r,oa,n,Ia,i,ba,Na,ga,ya,Y,Ka,Sa,la,A,F,ha,ca,ea,j,Q,Ma,da,W,I,w,Fa,x,t,wa,J,na,D,Aa,a,ta,Ra,Ea,z,_a,O,ua,Qa,o,E,Ba,U,H,S,Ha,e,q,aa,Ca,Oa,k,c,Pa,va,y,V,l,b,R,Da,p,La,Ja,G,L,ma,za,pa,s,fa,_,B,ja,xa,X,ka,sa,d,Ga,M,qa,u i=m.N[0x278]or m:Q(0,0,0x3c,0x278)repeat if i>0x2a5 then if i>0x51a then if i<=0xaa7 then if i<0x818 then if i>=0x693 then if i>=0x772 then if i>=0x7c9 then if i>=0x7e0 then if i>=0x7f8 then if i<=0x7f8 then i,z=i+0x4a1,z(Q,la)Q=0b111 Q=La*Q else i=la>F and 0xa16-i or(m._a[0x45a0]or m:aa(1,0x750,0x45a0))end else i=ta>ma and(m.N[0x41c8]or m:R(0x7f,0x41c8))or(m.T[-0x5608]or m:U(0x5f3f,0b1001,0b1011001,-0x5608))end elseif i>0x7d1 then i=ta>ma and i+-0x758 or 0x1a5e0c/i elseif i>0x7c9 then i=f~=f and(m.T[0x702e]or m:W(0xd77,0x702e))or 0x767f79/i else i=Y<=0 and(m.N[-0x6448]or m:Q(0x273,0b10000,0x8a5,-0x6448))or i+0x2d0 end elseif i>0x789 then if i<=0x78e then i=l>Na and(m.T[-0x316a]or m:W(0x1ce,-0x316a))or(m.N[0xcb2]or m:P(2782130603,2782120939,0xcb2))else i=La<l and i+-0x790 or(m.T[-0x6c9f]or m:U(0x5f9e,1,1,-0x6c9f))end elseif i<0x782 then if i>0x772 then i,f=0x835c8/i,f(e,ha,qa)ha,e=1,qa e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e else f=f(e,ha,qa)i,e,ha=0x941-i,qa,1 e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f end elseif i>0x782 then i=ta>ma and(m.T[0x6206]or m:W(0b1111111,0x6206))or(m.T[0x71ca]or m:W(0x945,0x71ca))else f=f(e,ha,qa)i,e,ha=m._a[-0x23a1]or m:ba(3020718976,3020718280,-0x23a1),qa,1 e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e end elseif i<0x709 then if i<0x6c8 then if i<=0x693 then i=f>e and i+-0x5d1 or 0x47780d/i else i=f>e and 0x8ee-i or(m.N[-0x74fd]or m:Q(0x3c1,0xd7,0x823,-0x74fd))end elseif i<=0x704 then if i<=0x6c8 then i,qa=0x89f-i,qa(z,Q,la)z,Q=la,0b1000 z=z+Q T[0b11][1][T[0b11][0b11]],ha=z,qa else i=Aa>X and(m.N[-0x4a0b]or m:Q(0b110,0x25,0x2b,-0x4a0b))or(m.N[0x2414]or m:Q(0b11110111,0x389,0x960,0x2414))end else i=wa<=0 and(m.T[-0x4341]or m:W(0x2a6,-0x4341))or(m._a[-0xa6c]or m:aa(1,0x5fc,-0xa6c))end elseif i<0x750 then if i>0x737 then i=Na>0 and 0x51a1be/i or i+-0x4b2 elseif i<=0x709 then ta=ta(ma,Y,ea)ma=ea ma=ma+Aa T[0b11][1][T[0b11][0b11]],i,ga=ma,i+-0x705,ta else i=f<e and(m._a[-0x278d]or m:ba(2460365364,2460365170,-0x278d))or 0xa3c-i end elseif i<=0x764 then if i>0x750 then f=f(e,ha,qa)e,ha=qa,1 e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f i=q<ha and(m.T[0xc40]or m:V(2558663871,0x626dc0b6,0xc40))or 0x141f44/i else i=wa~=wa and(m.T[-0x41ff]or m:U(0x564c,1,1,-0x41ff))or(m.T[-0x1b1f]or m:U(0x558d,1,1,-0x1b1f))end else i,f=i+-0x5fa,f(e,ha,qa)ha,e=0b100,qa e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f end elseif i<=0x610 then if i<0x5cc then if i>=0x57a then if i>0x5a2 then i,f=0xf3087/i,f(e,ha,qa)e,ha=qa,0b10 e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e elseif i>0x57a then i=ha<=0 and(m._a[-0x3f18]or m:ba(2789361941,2789357993,-0x3f18))or(m._a[0x538]or m:ca(0x28af,0x538))else c=c(ra,m.i(S))S,Q,i,ra,D=da,c,m._a[0x1d44]or m:aa(0xcde,1,0x1d44),T[0b101][1][T[0b101][0b11]],0b10000000 end elseif i>=0x566 then if i<=0x566 then i,z=i+0x7d2,m.h(z(Q,la))else i=f>e and 0x7b6-i or 0x362430/i end else i=f>e and(m.T[-0x5535]or m:U(0x5f3f,0xc2,1,-0x5535))or 0xb02-i end elseif i<0x5fc then if i<0x5dd then ha=ha(qa,z)e=not ha i=e and(m.N[0x30f1]or m:S(0x6a87399f,2841672101,2836411721,0x30f1))or(m.N[0x242f]or m:R(0b1100110,0x242f))elseif i<=0x5dd then i=ta>ma and 0x658-i or(m.T[-0x373]or m:U(0x5f3f,0xe9e,1,-0x373))else i,qa=m.N[0x3c66]or m:Q(0x12b,0x16,0x102,0x3c66),qa()Na[f]=qa end elseif i>0x604 then i=Y>0 and 0x238bd0/i or(m.N[0x2783]or m:Q(0xba3,0xf7,0xa96,0x2783))elseif i>0x5fc then i,z=0x1adbdc/i,z(Q,la)Q=0b111 Q=La*Q else i=wa~=wa and i+-0x3eb or(m._a[-0x7896]or m:ba(3579931267,3579930252,-0x7896))end elseif i<=0x66d then if i<=0x655 then if i<0x64e then if i<=0x620 then f=f(e,ha,qa)i,ha,e=0x776-i,1,qa e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f else f=f(e,ha,qa)ha,i,e=1,0x126a49/i,qa e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e end elseif i<=0x64e then i,Na=0xfae-i,m.h(Na(f,e))else f=f(e,ha,qa)e,ha=qa,1 e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e i=pa>ha and 0x1201b8/i or(m.N[0x542d]or m:Q(0b110001,0b1010000,0x2b9,0x542d))end elseif i<=0x66b then f=f(e,ha,qa)ha,e=1,qa i,e=m._a[0x41f6]or m:da(0b10,0x3c4c49f6,0x113b979,0x41f6),e+ha T[0b11][1][T[0b11][0b11]],Na=e,f else i=Y~=Y and(m.T[0x6206]or m:X(3472653730,4214865013,3392682913,0x6206))or(m.N[0x6a8d]or m:P(0x1127ae56,0x11279aac,0x6a8d))end elseif i<0x67f then if i<=0x677 then f=f(e,ha,qa)e,ha=qa,1 e=e+ha i,Na,T[0b11][1][T[0b11][0b11]]=m.N[-0x1678]or m:S(0x72b2c73f,0x141aee77,0xf16ecec,-0x1678),f,e else i=f<=0 and 0x1631-i or 0xa71-i end elseif i<=0x67f then La=La(l,Na,f)i,l,Na=0x6be-i,f,0b10 l=l+Na ea,T[0b11][1][T[0b11][0b11]]=La,l else i=Na<=0 and(m.T[0x77d9]or m:X(0x7edbeb7e,3883157991,0x665040d7,0x77d9))or i+-0x236 end elseif i<=0x942 then if i>=0x8af then if i<=0x901 then if i>=0x8f0 then if i<0x8f7 then if i<=0x8f0 then i=f~=f and(m.N[-0x558b]or m:R(0x29e,-0x558b))or(m._a[0x2ae7]or m:ba(4205479233,4205478925,0x2ae7))else z=z(Q,la,F)Q,la=F,1 Q=Q+la qa,T[0b11][1][T[0b11][0b11]]=z,Q i=t>la and(m._a[-0x6124]or m:da(1,2693787259,0x1e70ab85,-0x6124))or(m._a[-0x225]or m:ca(0x2e45,-0x225))end elseif i<=0x8f7 then z=z(Q,la,F)la,Q=1,F Q=Q+la T[0b11][1][T[0b11][0b11]],qa=Q,z i=G>la and 0xaaa-i or i+-0x54f else qa=qa(z,Q)ha=not qa i=ha and i+-0x6a9 or(m.T[0x188e]or m:U(0x5f2f,1,0b100000,0x188e))end elseif i<=0x8cf then if i<=0x8af then i=Y<=0 and 0x184c-i or 0x4b705/i else f=f(e,ha,qa)e,ha=qa,1 i,e=m.T[-0x227c]or m:U(0x5f3f,0b101,0b1111111,-0x227c),e+ha T[0b11][1][T[0b11][0b11]],Na=e,f end else i=Na~=Na and(m.N[-0x205e]or m:S(2561548159,4032026470,2383636606,-0x205e))or i+0x2ad end elseif i<0x918 then if i<=0x907 then f=f(e,ha,qa)e,i,ha=qa,0x6ce47/i,0b10 e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e else i=f<e and(m.N[-0x1bcc]or m:S(3466497775,0x15ae2c35,0x15acf9ef,-0x1bcc))or(m._a[0x48c4]or m:ba(3331157102,3331156719,0x48c4))end elseif i>=0x941 then if i>0x941 then i,S=i+-0x3c8,m.h(S(D,J))else f=f(e,ha,qa)ha,e=1,qa i,e=i+-0x7f1,e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e end else f=f(e,ha,qa)e,ha=qa,0b100 e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e i=Ea>ha and i+-0x6ff or(m.N[0x4d70]or m:S(0x6985d39f,0x596195cb,0x56e78f70,0x4d70))end elseif i>=0x854 then if i>=0x881 then if i<0x88f then i,la=m.T[-0x330e]or m:W(0xd5a,-0x330e),m.h(la(F,wa))elseif i>0x88f then f=f(e,ha,qa)e,ha=qa,1 e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f i=K<=ha and(m.N[-0x7ede]or m:S(0xb3b9fb6,3185026384,0x913a314,-0x7ede))or(m.N[0x1657]or m:Q(0,1,0x107,0x1657))else i=La<l and(m.T[-0x3daa]or m:X(3216963581,2789766834,2785572500,-0x3daa))or 0xcdd-i end elseif i>0x860 then i=Na<=0 and(m.T[0x21ae]or m:U(0x5f2f,1,0b111101,0x21ae))or 0x127960/i elseif i<=0x854 then i=ha>0 and 0xee7-i or(m.N[0xf3c]or m:S(0x759beadf,0x12893c00,0x8892c01,0xf3c))else i,Q=0x2d3640/i,Q(la,F)la=0b111 la=l*la end elseif i>0x833 then if i>0x83c then i=ta>ma and(m.T[0x2de5]or m:V(3672098711,0x200008ee,0x2de5))or 0x40b6d0/i else f=f(e,ha,qa)i,ha,e=m._a[-0x330e]or m:ca(0x2fc5,-0x330e),0b10,qa e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e end elseif i<=0x830 then if i>=0x825 then if i<=0x825 then f=f(e,ha)e=0b111 i,e=0x335946/i,ta*e else f=f(e,ha)i,e=m.N[0x3096]or m:R(0x95b,0x3096),0b111 e=ta*e end else i,f=m.T[0xd09]or m:U(0x5f3f,0b1101,0x3f,0xd09),f(e,ha,qa)e,ha=qa,1 e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f end else i=f~=f and 0xa01-i or(m.N[-0x1ff6]or m:Q(0b111011,0b110110,0x3c2,-0x1ff6))end elseif i<=0x9e8 then if i<0x972 then if i>=0x95b then if i<=0x960 then if i<=0x95b then i,Na=0x13ac-i,m.h(Na(f,e))else i,La=0xd5d-i,La(l,m.i(Na))l,X,Na,f=T[0b101][1][T[0b101][0b11]],La,ea,0x80 end else f=f(e,ha,qa)ha,e=1,qa e=e+ha Na,i,T[0b11][1][T[0b11][0b11]]=f,0xd30-i,e end elseif i<=0x951 then if i>0x945 then La=La(l,Na,f)l,Na=f,1 l=l+Na i,T[0b11][1][T[0b11][0b11]],ea=i+-0x8c8,l,La else i=Y~=Y and 0x18e2-i or(m.T[0x7e1e]or m:W(0x8af,0x7e1e))end else i=Na<=0 and(m.N[-0x5aa3]or m:P(0x39a8584e,0x39a86b93,-0x5aa3))or(m.N[-0x48ec]or m:R(0b10100000,-0x48ec))end elseif i<=0x999 then if i<=0x992 then if i>0x991 then La=La(l)Na,l=ea,1 f=l i=Na~=Na and i+-0x6f4 or(m.T[0x44aa]or m:X(3489104895,0x19fbc018,0x9f3718c,0x44aa))elseif i>0x972 then i=ha<=0 and(m.T[-0x43fe]or m:V(0x79820f7e,2181392783,-0x43fe))or 0xb10-i else i=la<F and(m.T[-0x14d3]or m:X(3409313720,0x4a7ddb1f,0x4a35d907,-0x14d3))or(m.T[-0x1fd4]or m:W(0x3f7,-0x1fd4))end else i,f=m._a[-0x4e26]or m:ba(0x47b18604,0x47b184ac,-0x4e26),f(e,ha,qa)ha,e=1,qa e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e end elseif i<=0x9d1 then e=e(ha,m.i(qa))qa,z,i,ha,ea=f,0x80,0xf9d-i,T[0b101][1][T[0b101][0b11]],e else f=f(e,ha,qa)ha,e=1,qa i,e=0xb81-i,e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e end elseif i>0xa80 then if i>=0xa99 then if i>0xa99 then i=ta<ma and 0xb2d-i or(m._a[-0x5ae7]or m:ca(0x265a,-0x5ae7))else i=Y~=Y and(m._a[-0x3bed]or m:ca(0x2c45,-0x3bed))or(m.N[-0x4c9f]or m:R(0b1101000,-0x4c9f))end elseif i>0xa81 then i=Y~=Y and(m.T[-0x6d6e]or m:V(3357859583,0x3200207b,-0x6d6e))or(m.T[-0x3047]or m:X(4281310206,0x7665b48c,0x76258fbe,-0x3047))else i=ta~=ta and 0xf197/i or 0xb72-i end elseif i>=0xa30 then if i>=0xa51 then if i>0xa51 then f=f(e,ha,qa)ha,e=0b10,qa e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f i=va>ha and i+-0x8d3 or i+-0xa31 else La=La(l,m.i(Na))Na,X,l,i,f=ea,La,T[0b101][1][T[0b101][0b11]],m.N[-0xd71]or m:P(0x20f51887,0x20f52065,-0xd71),0b10000000 end else ma=ma(Y,ea,La)Y,ea=La,1 Y=Y+ea T[0b11][1][T[0b11][0b11]],i,ta=Y,m.T[0x70c2]or m:W(0x7c,0x70c2),ma end elseif i>=0xa0f then if i<=0xa0f then i,ha=m.T[-0x62e9]or m:V(3074825215,0x821a0cb,-0x62e9),ha(qa,z,Q)z,qa=1,Q qa=qa+z e,T[0b11][1][T[0b11][0b11]]=ha,qa else f=f(e,ha,qa)ha,e=1,qa e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e i=P>=ha and(m.T[0x904]or m:W(0x2a2,0x904))or(m.T[0x24a9]or m:U(0x5c0b,1,1,0x24a9))end else i=ha~=ha and(m.T[-0x43fe]or m:U(0x5f3f,0x90e,1,-0x43fe))or(m._a[-0x6a32]or m:ba(2503945865,2503943416,-0x6a32))end elseif i<0xda8 then if i>=0xc64 then if i>0xd06 then if i<=0xd5a then if i>0xd41 then if i>0xd54 then i,z=0xa56f28/i,z(Q,m.i(la))F,la,Na,Q=0x80,qa,z,T[0b101][1][T[0b101][0b11]]else f=f(e,ha,qa)e,ha=qa,1 e=e+ha Na,i,T[0b11][1][T[0b11][0b11]]=f,0x10d7-i,e end elseif i>0xd38 then f=f(e,ha,qa)e,ha=qa,1 e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e i=s<ha and 0xf22-i or 0xe7d-i elseif i>=0xd30 then if i<=0xd30 then f=f(e,ha,qa)ha,i,e=1,0x1d7740/i,qa e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f else ha=ha(qa,m.i(z))Q,qa,i,La,z=0x80,T[0b101][1][T[0b101][0b11]],0x770538/i,ha,e end else i=ta<ma and(m.N[0x41c8]or m:S(3383474175,2332967474,0x58fa41b3,0x41c8))or i+-0x6bc end elseif i>0xd7b then i=ha~=ha and(m._a[0xabe]or m:da(0b110,2315039479,0x7602f8bf,0xabe))or(m.N[-0x6889]or m:R(0x17f,-0x6889))elseif i>=0xd77 then if i<=0xd77 then i=l<Na and(m._a[0x5544]or m:ba(0x219e4ff7,0x219e4d59,0x5544))or 0xeab-i else f=f(e,ha,qa)e,ha=qa,0b10 e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f i=v<ha and(m.T[-0x21c9]or m:W(0b101111,-0x21c9))or(m.N[-0x4f92]or m:Q(0x236,0x102,0x14c,-0x4f92))end else i=ta<ma and(m.T[0x2de5]or m:V(4131281807,0x800a4d6,0x2de5))or(m.N[-0x4c9f]or m:Q(0b10010,0b10110,0x40,-0x4c9f))end elseif i<=0xca6 then if i>=0xc88 then if i>=0xc99 then if i>0xc99 then i,c=i+-0x9e4,c(ra,S,D)ra,S=D,1 ra=ra+S T[0b11][1][T[0b11][0b11]],da=ra,c else i,qa=0x166a-i,m.h(qa(z,Q))end elseif i<=0xc88 then f=f(e,ha,qa)ha,e=1,qa e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f i=C<ha and 0x53050/i or(m._a[0x45a4]or m:da(1,2320309709,0x4420fba5,0x45a4))else l=l(Na,f)La=not l i=La and i+-0xc14 or 0xd52-i end elseif i<=0xc7a then if i>0xc64 then i=Aa<X and(m.N[0x3dba]or m:S(0x4004ca1f,2591791390,0x19239887,0x3dba))or 0x830d7a/i else Q=Q(la,F)z=not Q i=z and(m._a[-0x278d]or m:ca(0x2c01,-0x278d))or i+-0x96a end else i=X<ta and(m.T[-0x670d]or m:W(0xfa,-0x670d))or 0x18c3-i end elseif i<0xcde then if i<=0xcbb then i=ha<=0 and(m.T[-0x795a]or m:X(3757045691,0x74ef4a64,0x54ef328e,-0x795a))or(m.N[-0x728b]or m:P(0x15a57ff,0x15a6e1c,-0x728b))else i=Y>0 and(m.T[-0x6f63]or m:V(3402520575,0x1100af89,-0x6f63))or 0x160c-i end elseif i<=0xd00 then if i>0xcde then f=f(e,ha,qa)e,ha=qa,1 i,e=0xee8-i,e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e else ra=ra(S,D)c=not ra i=c and i+-0xacd or 0xf12-i end else i=ta~=ta and(m.T[0x4e3d]or m:U(0x5f15,1,1,0x4e3d))or(m.N[-0x2469]or m:P(0x220a6e5a,0x220a5a9d,-0x2469))end elseif i<=0xb65 then if i>0xb33 then if i<0xb44 then if i>0xb3b then i,ha=m.T[-0x5d7f]or m:W(0x182,-0x5d7f),ha(qa,z,Q)z,qa=1,Q qa=qa+z e,T[0b11][1][T[0b11][0b11]]=ha,qa else i=f<=0 and 0x37e39e/i or(m._a[0x6ff2]or m:ca(0x2433,0x6ff2))end elseif i<=0xb47 then if i<=0xb44 then i=ta>ma and(m.N[0b10000110]or m:S(2235193467,2411732417,0x24fb77c2,0b10000110))or(m.N[-0x4650]or m:P(3856914371,3856919623,-0x4650))else f=f(e,ha,qa)e,ha=qa,1 e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f i=ca<=ha and(m.N[-0x4e1a]or m:P(4015955379,4015958315,-0x4e1a))or(m._a[0x6e77]or m:da(0x3ca,2176216531,0x5609badb,0x6e77))end else f=f(e,ha,qa)ha,e=1,qa e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e i=ya<ha and 0xf40-i or i+-0x826 end elseif i<=0xad1 then if i>0xacb then i=l>Na and(m._a[0x5544]or m:ba(3808676266,3808675596,0x5544))or 0x548ba1/i elseif i<=0xac9 then if i>0xab3 then i,Y=0x9800d8/i,Y(ea,m.i(La))l,ea,La,ga=0b10000000,T[0b101][1][T[0b101][0b11]],ma,Y else i=wa<=0 and 0x1425-i or i+-0x6bc end else f=f(e,ha,qa)ha,e=1,qa e=e+ha i,Na,T[0b11][1][T[0b11][0b11]]=i+-0x8eb,f,e end elseif i<0xb1e then i=ha~=ha and 0x4e6ee9/i or(m.T[-0x59cd]or m:V(0x606f7fff,0x1c800f9e,-0x59cd))elseif i<=0xb1e then i=f~=f and(m.T[0x3aae]or m:X(3018578935,0x5bfea2d3,0x13ea731e,0x3aae))or(m.T[0x7a4]or m:U(0x5ddd,1,1,0x7a4))else i=La>l and i+-0xb17 or(m.T[0xe2d]or m:U(0x5f3f,1,0x298,0xe2d))end elseif i>=0xbf4 then if i>0xc0d then if i>0xc28 then i=ma~=ma and 0xd38-i or 0xcf5-i else i,f=0x21ffe0/i,f(e,ha,qa)ha,e=1,qa e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e end elseif i>=0xbf6 then if i<=0xbf6 then i,D=m._a[-0x3237]or m:ca(0x2581,-0x3237),D(J,za)J=0b111 J=la*J else i,f=m.T[0x3f42]or m:V(0x1c39c37f,0x20460376,0x3f42),f(e,ha,qa)e,ha=qa,0b10 e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e end else f=f(e,ha,qa)e,i,ha=qa,m._a[-0x455]or m:aa(0x26a,1,-0x455),0b10 e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f end elseif i>0xbdf then if i<=0xbe3 then i=f>0 and i+-0x7b1 or 0x1a64-i else f=f(e,ha,qa)e,ha=qa,1 i,e=m._a[0x42b8]or m:ca(0x2c0c,0x42b8),e+ha T[0b11][1][T[0b11][0b11]],Na=e,f end elseif i<0xbc5 then i=Na<=0 and i+0x2d7 or(m.N[0x4d97]or m:P(0x7b73efb8,0x7b73db67,0x4d97))elseif i<=0xbc5 then i=ta<ma and 0x5a7a7/i or 0x97886/i else i=f>0 and(m.T[-0x1b01]or m:U(0x5cb6,1,1,-0x1b01))or(m.N[0x2ab]or m:Q(0x71f,0b11110101,0xb1e,0x2ab))end elseif i<=0xed4 then if i<0xe5f then if i<0xe18 then if i>0xdc1 then if i<=0xde0 then i=ta<=0 and i+-0xb18 or(m.T[-0x29f]or m:U(0x5238,1,1,-0x29f))else f=f(e,ha,qa)e,ha=qa,1 i,e=m.T[-0x6fd0]or m:W(0x2c5,-0x6fd0),e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e end elseif i<=0xdbb then if i<=0xda8 then i=l<Na and 0x2001c0/i or i+0x23c else f=f(e,ha,qa)ha,e=1,qa i,e=0x20a9db/i,e+ha T[0b11][1][T[0b11][0b11]],Na=e,f end else i=Na>0 and 0x429117/i or 0x16a5-i end elseif i>0xe2c then if i>0xe31 then i,e=m.T[0x3dfb]or m:U(0x5b16,1,1,0x3dfb),e(ha,m.i(qa))qa,z,ea,ha=f,0x80,e,T[0b101][1][T[0b101][0b11]]else i=f<=0 and 0xc8c946/i or 0x745bc3/i end elseif i>=0xe26 then if i>0xe26 then i,f=0x109b-i,f(e,ha,qa)e,ha=qa,1 e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e else i=l<Na and(m.N[-0x738d]or m:R(0b111001110,-0x738d))or(m._a[0x1c4d]or m:ca(0x24f0,0x1c4d))end elseif i<=0xe18 then ea=ea(La,l)Y=not ea i=Y and 0x25e08/i or 0xe46-i else La=La(l,Na,f)Na,l=1,f i,l=0xe8e-i,l+Na T[0b11][1][T[0b11][0b11]],ea=l,La end elseif i>0xe8c then if i<0xed0 then if i<=0xe9e then i=Y~=Y and(m.T[0x6243]or m:V(0x6ad87fe7,2432961477,0x6243))or i+0xb0 else i=ta<ma and(m.T[-0x6d6e]or m:U(0x5f3f,1,0b1111011,-0x6d6e))or(m.T[0x787f]or m:W(0xa93,0x787f))end elseif i>=0xed2 then if i<=0xed2 then i=ha>0 and 0x5095e0/i or 0x9390fa/i else i=X>ta and(m.N[-0x48af]or m:P(0xb0c82b,0xb0fca0,-0x48af))or 0xe0ae4c/i end else f=f(e,ha,qa)ha,i,e=1,0x11f9-i,qa e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f end elseif i<0xe6e then if i<=0xe65 then if i<=0xe5f then f=f(e,ha,qa)i,ha,e=0x119d-i,1,qa e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f else F=F(wa,da)wa=0b111 i,wa=m.T[-0x3a8b]or m:U(0x57bf,1,1,-0x3a8b),f*wa end else i=La<l and 0xe6f-i or 0xf16-i end elseif i<=0xe81 then if i<0xe7d then i=Aa>X and(m.T[0x352d]or m:V(2199697239,0x3c4248bf,0x352d))or(m.N[0x1f35]or m:S(2210945929,3725422453,0x79f6cc8a,0x1f35))elseif i>0xe7d then i=f~=f and i+0x132 or(m.T[-0x5db2]or m:W(0x67e,-0x5db2))else i=Y<=0 and i+-0x120 or(m.T[-0x10e4]or m:U(0x5f3f,1,0b1101000,-0x10e4))end else i=f>0 and(m.T[-0x774a]or m:V(3729288185,0x1b39ad5,-0x774a))or 0x165d-i end elseif i>=0xf9d then if i<=0xfb5 then if i<0xfaa then if i<=0xf9e then if i<=0xf9d then i=ta<ma and 0x101c-i or(m.N[0x6a8d]or m:S(0xa6815bf,3567613473,0x3f148b56,0x6a8d))else i=ha<=0 and 0x70acf2/i or 0x2f2816/i end else i,La=m.T[-0x6c83]or m:U(0x5f35,0xfb,1,-0x6c83),m.h(La(l,Na))end elseif i<=0xfb3 then if i<=0xfaa then f=f(e,ha,qa)e,ha=qa,0b10 e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e i=d>=ha and i+-0xe4b or i+-0xd75 else i=l<Na and i+-0xde5 or i+-0xbc0 end else i=l<Na and i+-0xd5d or(m.T[-0x4664]or m:X(0x4dd2fef4,4226872045,0x49d0f1e8,-0x4664))end elseif i>=0xfe4 then if i>0xff1 then i=Y<=0 and(m.T[0x24d4]or m:W(0xeb0,0x24d4))or i+-0x562 elseif i<=0xfe4 then i=f~=f and i+-0xd8c or(m._a[0x1f4c]or m:ba(0x35520866,0x3552076a,0x1f4c))else f=f(e,ha,qa)ha,e=1,qa i,e=m._a[-0x57a1]or m:ba(0x75c1d7be,0x75c1d531,-0x57a1),e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e end elseif i<=0xfbd then i=f<=0 and(m.T[0x4015]or m:V(0x43b8fbc,3099622825,0x4015))or 0x1fa1-i else i,f=m.T[-0x3d31]or m:X(3653205781,2360568331,2293458643,-0x3d31),f(e,ha,qa)e,ha=qa,1 e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f end elseif i<0xf4e then if i<=0xf11 then if i>0xef2 then f=f(e,ha,qa)ha,i,e=0b100,0x37f827/i,qa e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e elseif i>0xee1 then i=l>Na and(m._a[0x5544]or m:ba(0x6816eca5,0x6816ea07,0x5544))or i+-0x3b7 else f=f(e,ha,qa)e,ha=qa,0b10 e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e i=W<=ha and(m._a[0xa8b]or m:da(1,0x6a40cf7f,2165947239,0xa8b))or 0x1022-i end elseif i>0xf27 then i=f<=0 and 0xcc210f/i or 0x105d-i else i=ma<=0 and i+-0x2a2 or i+-0x2e9 end elseif i<0xf92 then if i<0xf6c then i=Y<=0 and 0xb42106/i or(m.T[-0x3047]or m:U(0x5f3c,0x67,1,-0x3047))elseif i>0xf6c then Na(f,e)Na=0xc2 i=La<Na and 0x1f6044/i or i+-0xd0f else i=f<e and(m.N[0xaf3]or m:P(3265198968,3265187787,0xaf3))or(m.N[0x2628]or m:S(0xaba946c,3690767141,0x2afc3526,0x2628))end elseif i<=0xf95 then if i>0xf92 then i=la>F and i+-0xd84 or 0x6d8fa8/i else i=f<e and 0x2365ec/i or 0x1d24-i end else X=X(ta)ma,ta=Aa,1 Y=ta i=ma~=ma and(m.N[0x4f75]or m:P(0x7a07df59,0x7a07ebae,0x4f75))or(m.T[-0x7c7d]or m:W(0x278,-0x7c7d))end elseif i>=0x363 then if i<=0x3c7 then if i<0x393 then if i>0x377 then if i<=0x383 then if i<0x380 then if i>=0x37e then if i<=0x37e then l=0b11001001 i=ea<=l and(m.N[0x1cb2]or m:Q(0,0x28,0b111000010,0x1cb2))or(m._a[0x2844]or m:aa(1,0b111110101,0x2844))else l=0x1a i=ea>l and(m.T[-0x7222]or m:W(0x20f,-0x7222))or(m.T[-0x1973]or m:V(3340820779,0x185205fb,-0x1973))end else l[0x8bb3]=Na f,i,ha,qa,e=T[0b110][1][T[0b110][0b11]],0x1a28f8/i,T[0b1100][1][T[0b1100][0b11]],T[0b11][1][T[0b11][0b11]],"B"end elseif i>0x382 then i,l[0xe068]=m.T[0x7241]or m:U(0x5f3f,1,0x774,0x7241),Na f,qa,e,ha=T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],"B",T[0b1100][1][T[0b1100][0b11]]elseif i<=0x380 then i,La=0x4d1-i,0xdf else l=0x15 i=ea>l and(m._a[0x71d0]or m:ba(0x13bd776,0x13bd4b9,0x71d0))or(m.N[0x378a]or m:S(0x11074fa7,3308972096,0x16ca5491,0x378a))end elseif i<=0x388 then if i<=0x387 then if i>0x386 then qa,e,i,f,ha=T[0b11][1][T[0b11][0b11]],m.N[-0x3f0e]or m:O(m.q"h0=)",m.q"y8",-0x3f0e),0x1268-i,T[0b110][1][T[0b110][0b11]],T[0b1100][1][T[0b1100][0b11]]else l=0b11000101 i=ea<=l and(m.T[-0x69ec]or m:U(0x5f3f,1,0b10110010,-0x69ec))or(m.T[-0x5fe8]or m:W(0x1ae,-0x5fe8))end else i=l>Na and 0x5e0-i or(m.T[0x1911]or m:W(0xb1e,0x1911))end elseif i<=0x38a then i,l[0x8bb3]=m._a[-0x5267]or m:da(0x647,2799847207,0x911300f,-0x5267),Na ha,f,e,qa=T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]],"B",T[0b11][1][T[0b11][0b11]]else i,La=i+-0x23b,0xe0 end elseif i<0x371 then if i>0x36d then if i<=0x36f then l=0xfe i=ea<l and(m.T[-0x18f3]or m:X(3214917431,3420339040,2342401930,-0x18f3))or 0x567bd/i else i,l[0xfb62]=m._a[-0x55f4]or m:ba(0x634fe5ae,0x634fdf37,-0x55f4),Na e,f,qa,ha="B",T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],T[0b1100][1][T[0b1100][0b11]]end elseif i>=0x36b then if i>0x36b then e,ha,f,i,qa=m.T[0x6b6e]or m:Y(m.q"`L6Q",m.q"#{",0x6b6e),T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]],0x11134c/i,T[0b11][1][T[0b11][0b11]]else La=0b11011111 i=Ja<La and 0x47fdb/i or 0xa000f/i end elseif i<=0x363 then l=0b1011 i=ea>l and(m.N[-0x7783]or m:R(0x2b0,-0x7783))or(m.T[-0x68c2]or m:V(3805077950,0x1c3101a2,-0x68c2))else i,La=i+-0x214,0x67 end elseif i<=0x375 then if i>0x373 then i,La=m.T[-0x765a]or m:X(0x479df3df,0x6fcf7efc,0x478d718b,-0x765a),0xa0 elseif i<0x372 then l=0x59 i=ea<=l and(m.N[-0x8df]or m:S(4054456296,4005338577,3764908519,-0x8df))or 0x3f6-i elseif i>0x372 then l=l+f i=f>0 and 0x1a0eca/i or(m.N[0xcb2]or m:R(0xe31,0xcb2))else Na=0xf3 i=La<=Na and i+-0x25b or 0x6b7-i end elseif i>0x376 then La=0b11011111 i=p<La and(m._a[-0x2dd7]or m:ba(2339619588,2339619251,-0x2dd7))or(m._a[-0x8c5]or m:aa(0x119,1,-0x8c5))else i,l[0xeb5]=0xe41-i,Na f,ha,qa,e=T[0b110][1][T[0b110][0b11]],T[0b1100][1][T[0b1100][0b11]],T[0b11][1][T[0b11][0b11]],"B"end elseif i>0x3a8 then if i<=0x3bf then if i<0x3b7 then if i<=0x3b1 then if i<=0x3b0 then l=0x32 i=ea>l and(m.T[-0x16a7]or m:X(3757932092,3945201595,3408165914,-0x16a7))or 0x5eb90/i else i,La=m._a[-0x2dd7]or m:aa(0b101010001,1,-0x2dd7),0xdf end else l=0b10110011 i=ea<=l and 0x6db48/i or(m.T[-0x6d7e]or m:W(0x3a0,-0x6d7e))end elseif i<=0x3be then if i<=0x3b7 then i,l[0xfb62]=0x33c2d9/i,Na qa,f,e,ha=T[0b11][1][T[0b11][0b11]],T[0b110][1][T[0b110][0b11]],"B",T[0b1100][1][T[0b1100][0b11]]else i,La=m.N[-0x41bc]or m:P(2217779747,2217776899,-0x41bc),0b11000010 end else i,La=0x4ee6f/i,0xa0 end elseif i>0x3c5 then if i>0x3c6 then i,La=m.N[-0x41bc]or m:R(0x151,-0x41bc),0b11010001 else i=La>l and(m.T[0x1a9d]or m:X(4223662895,3068119725,2996816422,0x1a9d))or 0xc38-i end elseif i<0x3c2 then i,l[0xe068]=0x6b5-i,Na elseif i<=0x3c2 then f,i,e,ha,qa=T[0b110][1][T[0b110][0b11]],m.N[0x7e7b]or m:P(0xfac2ec5,0xfac1c94,0x7e7b),"B",T[0b1100][1][T[0b1100][0b11]],T[0b11][1][T[0b11][0b11]]else i,La=m.T[-0x765a]or m:W(0b101010001,-0x765a),0b10100000 end elseif i<=0x39d then if i>=0x39a then if i>=0x39c then if i>0x39c then i,La=0x4ee-i,0xa0 else i,La=0x4c05c/i,0b10100000 end elseif i<=0x39a then la,i,z,qa,Q=T[0b11][1][T[0b11][0b11]],0xa62-i,m._a[0x473]or m:ea(m.q"3Qz",m.q"Gy",0x473),T[0b110][1][T[0b110][0b11]],T[0b1100][1][T[0b1100][0b11]]else i,La=i+-0x24a,0b11011111 end elseif i>0x396 then i,La=m._a[-0x2dd7]or m:aa(0b101010001,1,-0x2dd7),0x67 elseif i<=0x393 then l=0x4e i=ea<l and 0x763-i or(m.N[0x5f3b]or m:R(0x34d,0x5f3b))else i,La=0x4b876/i,0xdf end elseif i<=0x3a5 then if i>=0x3a3 then if i>0x3a3 then i,La=m._a[-0x2dd7]or m:aa(1,0x151,-0x2dd7),0xa0 else i,La=0x4c993/i,0x67 end else La=0xbf i=V>=La and(m._a[-0x4bfa]or m:ca(0x2e9c,-0x4bfa))or(m.T[-0x765a]or m:U(0x5f3f,1,0x151,-0x765a))end elseif i>0x3a7 then i,La=m._a[-0x2dd7]or m:ca(0x2d92,-0x2dd7),0b10100000 else i,La=0x4ced7/i,0b11100000 end elseif i>=0x3f7 then if i<=0x452 then if i<0x40d then if i>0x3fd then if i<=0x3ff then i,La=m._a[-0x2dd7]or m:ca(0x2d92,-0x2dd7),0xe0 else Na=Na(f)f,e=1,l ha=f i=e~=e and i+-0b110111011 or 0x3b56d2/i end elseif i>=0x3fc then if i<=0x3fc then i,La=m.N[-0x41bc]or m:R(0b101010001,-0x41bc),0xe0 else l=l(Na,f)La=not l i=La and 0x1ea8f/i or 0x494-i end elseif i<=0x3f7 then S,c,ra,i,D=T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]],"B",0x109d-i,T[0b11][1][T[0b11][0b11]]else Na,W=0b10011000,0xe1 i=La>Na and(m.T[-0x6198]or m:X(2979921639,2507974310,2434573292,-0x6198))or 0x782-i end elseif i>=0x432 then if i>0x44e then Y=Y(ea,La,l)ea,La=l,1 i,ea=0x4cc-i,ea+La T[0b11][1][T[0b11][0b11]],ma=ea,Y elseif i<=0x432 then i=l>Na and 0x7923c/i or(m.N[0x3d64]or m:P(2235221551,2235235551,0x3d64))else i=Na~=Na and i+-0x432 or(m.T[-0x6c9f]or m:V(2765083813,0x4b302aa8,-0x6c9f))end elseif i<0x428 then i=La<l and 0x414-i or(m.T[0x1c6e]or m:U(0x5f2e,1,0b100011,0x1c6e))elseif i<=0x428 then ha=ha(qa,z)e=not ha i=e and(m.N[0x2d01]or m:S(4130238815,2553483101,2410809142,0x2d01))or(m.T[-0x53c0]or m:V(2577313759,0x4000117d,-0x53c0))else i=La>l and 0x755c/i or 0x1b4f44/i end elseif i<0x4a8 then if i<0x46d then if i>0x461 then i=ha~=ha and(m._a[-0x278d]or m:da(0b11000010,4164138805,0x70cf0d7,-0x278d))or(m.N[-0x492]or m:Q(0b1111101,0x184,0x305,-0x492))else e=e(ha,qa,z)qa,ha=1,z i,ha=i+-0x16f,ha+qa T[0b11][1][T[0b11][0b11]],f=ha,e end elseif i>=0x473 then if i<=0x473 then f=f(e,ha,qa)i,ha,e=0xfbefe/i,0b10,qa e=e+ha T[0b11][1][T[0b11][0b11]],Na=e,f else i,qa=m.N[0x56b9]or m:S(0x32c32fdf,0x252c4198,0x23fbb335,0x56b9),m.h(qa(z,Q))end else i=l>Na and(m.N[-0x2f3b]or m:S(0x64fa86fe,4198494201,0x603f94a0,-0x2f3b))or(m.N[-0x4d20]or m:P(0x143f8099,0x143fbb55,-0x4d20))end elseif i<0x4fc then if i>0x4d7 then i=l<Na and(m._a[0x5544]or m:ba(0x7942b63,0x79428c5,0x5544))or i+0x3f6 elseif i<=0x4a8 then e=e(ha,qa,z)qa,i,ha=1,0x4ab-i,z ha=ha+qa f,T[0b11][1][T[0b11][0b11]]=e,ha else i=La>l and(m.N[0x2d01]or m:R(0b111,0x2d01))or(m.N[0x6901]or m:S(0xb3cb9fc,3909838789,0x25091ae1,0x6901))end elseif i>=0x510 then if i>0x510 then i=wa>0 and(m._a[0x3a10]or m:aa(0x805,1,0x3a10))or 0x254e20/i else f=f(e,ha,qa)e,ha=qa,0b100 i,e=m.T[0x11ce]or m:W(0x370,0x11ce),e+ha T[0b11][1][T[0b11][0b11]],Na=e,f end else i,f=m.T[0x5dcd]or m:W(0b100010001,0x5dcd),f(e,ha,qa)ha,e=0b100,qa e=e+ha Na,T[0b11][1][T[0b11][0b11]]=f,e end elseif i>=0x3df then if i<=0x3ee then if i<=0x3e5 then if i<=0x3e4 then if i>=0x3e1 then if i<=0x3e1 then i,La=i+-0x290,0b1100111 else l=0b111101 i=ea>l and i+-0b110011111 or(m.N[0x46ed]or m:S(2308344571,3271018729,2463543698,0x46ed))end else i,La=i+-0x28e,0x6a end else l=0xed i=ea<=l and i+-0x151 or(m.T[-0x5481]or m:U(0x5f3f,1,0x3ee,-0x5481))end elseif i<=0x3e8 then La=0b11011111 i=ka>La and(m._a[0x7bac]or m:da(1,0x30f9f3f1,0x506b720,0x7bac))or(m.N[-0x41bc]or m:S(4088548857,0x39b267df,0x316a448c,-0x41bc))else i,La=m.N[-0x41bc]or m:Q(0b1101111,0x92,0x50,-0x41bc),0b11011000 end elseif i>=0x3f1 then if i<=0x3f2 then if i>0x3f1 then La=0x67 i=ua>=La and 0x48d-i or(m.T[-0x765a]or m:U(0x5f3f,1,0x151,-0x765a))else i,la,z,F,Q=i+0x506,T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],"B"end else e=X[l]qa,z=e[0x8bb3],0 ha=qa~=z i=ha and(m._a[0x4c5b]or m:da(0b1001,0x270cf51f,0x5062b2e3,0x4c5b))or i+-0x2f4 end elseif i<=0x3ef then i,La=i+-0x29e,0xe0 else l=l+f i=f>0 and 0x3ad8e0/i or(m.N[-0x6e62]or m:S(2840951743,3793945895,2711811500,-0x6e62))end elseif i>0x3d4 then if i>=0x3dc then if i<0x3dd then l=0xfb i=ea<l and(m.N[0x23d1]or m:S(0x398793ff,3941771807,0x24923ce5,0x23d1))or i+-0x22b elseif i>0x3dd then l=0x26 i=ea<=l and(m.N[0x5794]or m:S(4076618943,0x26e0eb2d,0x19de6851,0x5794))or 0x888f6/i else i,La=m._a[-0x2dd7]or m:da(1,3474970961,0x10209d25,-0x2dd7),0x67 end elseif i<=0x3d5 then l=0b1110010 i=ea>l and 0x499-i or 0x602-i else i,La=m.N[-0x41bc]or m:Q(1,0x4f,0x141,-0x41bc),0xdf end elseif i>=0x3cf then if i<=0x3d0 then if i<=0x3cf then i=Aa<X and(m.N[-0x4a0b]or m:S(0x5f566b6f,0x600eb194,0x3f869d69,-0x4a0b))or i+-0x319 else La=0b1100001 i=Ia<=La and(m.T[-0x59e3]or m:U(0x5f3f,0x1c3,1,-0x59e3))or(m.N[-0x41bc]or m:Q(0x64,0b10101100,0b1010001,-0x41bc))end else i,La=m.N[-0x41bc]or m:R(0b101010001,-0x41bc),0xdf end elseif i>0x3ca then i,La=m.N[-0x41bc]or m:P(2258010793,2258024329,-0x41bc),0b1100111 elseif i>0x3c8 then i,l[0x64ac]=m._a[0x7b4d]or m:ba(0x14221a21,0x1422111a,0x7b4d),Na ha,f,e,qa=T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]],m.N[-0x52cf]or m:O(m.q"D_kc",m.q"6#",-0x52cf),T[0b11][1][T[0b11][0b11]]else i,ha=i+-0b111110001,1/0 end elseif i>=0x302 then if i<0x332 then if i<0x31c then if i<=0x308 then if i<=0x305 then if i>0x304 then Q,i,z,F,la="B",m.N[0x7bd2]or m:P(2688377917,2688374968,0x7bd2),T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],T[0b1100][1][T[0b1100][0b11]]elseif i<=0x303 then if i>0x302 then La=0x67 i=M>La and(m.N[-0x41bc]or m:Q(0x4e,0b10,0x101,-0x41bc))or(m.N[0x590e]or m:R(0xdf,0x590e))else l=0b10101000 i=ea>=l and(m.T[-0x5972]or m:W(0x275,-0x5972))or 0x59e-i end else i,La=m.T[-0x765a]or m:W(0b101010001,-0x765a),0xe0 end elseif i>0x306 then i=Aa<X and i+-0x2f1 or 0x3f9-i else i,l[0x31d1]=i+-0x11,Na end elseif i<0x312 then if i<=0x30b then l=0xb0 i=ea<l and 0x557-i or 0x56ea3/i else i,La=i+-0x1bc,0b11010001 end elseif i<0x313 then l=0xf3 i=ea>l and i+-0b111111010 or i+-0x26c elseif i<=0x313 then i,La=m.T[-0x765a]or m:V(0x3c60dfd9,2197815665,-0x765a),0x67 else l=0b10110110 i=ea<=l and 0x3224b/i or 0x669c2/i end elseif i<=0x328 then if i<=0x321 then if i>=0x320 then if i>0x320 then i=Y<=0 and(m.T[0x7600]or m:U(0x5217,1,1,0x7600))or(m.N[-0x5fee]or m:Q(0b1000000,0x1e5,0x66c,-0x5fee))else i=Aa>X and 0x337-i or(m.N[0x7010]or m:Q(0b110110110,0x15c,0x122,0x7010))end elseif i<=0x31c then i,La=m.T[-0x765a]or m:X(4093500575,3072249543,3005008694,-0x765a),0b11011111 else l=0xf5 i=ea>l and i+0b11010000 or(m.T[0x9cc]or m:W(0x233,0x9cc))end elseif i<=0x323 then l=0x3a i=ea>l and(m.N[0x442b]or m:R(0x2df,0x442b))or i+-0x16a else i,La=i+-0b111010111,0b11000010 end elseif i<=0x32b then if i<=0x32a then if i<=0x329 then i,l[0x64ac]=i+0x647,Na ha,qa,e,f=T[0b1100][1][T[0b1100][0b11]],T[0b11][1][T[0b11][0b11]],"B",T[0b110][1][T[0b110][0b11]]else i,La=m._a[-0x2dd7]or m:da(1,3179119993,0x2008189,-0x2dd7),0b11100000 end else i,La=m.N[-0x41bc]or m:P(0x1846ea02,0x1846df22,-0x41bc),0xf3 end elseif i<=0x32d then La=0xbf i=Da>La and 0x6e4-i or 0x47e-i else i,l[0x64ac]=m.N[0x42a0]or m:Q(0b101011111,0b11100010,0x2f4,0x42a0),Na end elseif i>=0x344 then if i<0x353 then if i<0x34c then if i<=0x345 then if i<=0x344 then i,La=0x495-i,0xe0 else e,i,qa,ha,f="B",m.T[-0x5d6b]or m:W(0xfdb,-0x5d6b),T[0b11][1][T[0b11][0b11]],T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]]end else l=0x9f i=ea<=l and i+-0x104 or 0x70fd7/i end elseif i<=0x34d then if i>0x34c then l=0b1001110 i=ea<=l and 0x41a-i or(m.T[-0x42e]or m:U(0x5d23,1,1,-0x42e))else i,l[0x64ac]=i+-0b1010111,Na end else ga=ga(Aa)Aa,X=1,w ta=Aa i=X~=X and(m.N[0x3dba]or m:S(4200045119,0x44f5f384,0x3fed936d,0x3dba))or 0x9cf90/i end elseif i>=0x359 then if i<=0x35a then if i<=0x359 then l=0x8a i=ea<=l and(m.N[0x6471]or m:R(0x39d,0x6471))or i+-0x1c8 else i=Y~=Y and 0x2cc9b2/i or 0x11d7-i end else s,K,Na=1,0b1111111,0b1100111 i=La<=Na and(m.N[-0x47ba]or m:Q(0b10001110,0x102,0b1001000,-0x47ba))or(m.T[0x75b0]or m:X(0xfef7ffe,0x478d2772,0x78d2514,0x75b0))end elseif i>=0x355 then if i<=0x355 then i,La=m._a[-0x2dd7]or m:da(0b101010001,3298351831,0x26599f7,-0x2dd7),0xdf else l=0xd9 i=ea>l and(m.N[0x52e7]or m:Q(0xab,0b1011110,0b1000,0x52e7))or 0x4c5-i end else i=ha and 0x4d4-i or 0x3e0-i end elseif i<=0x338 then if i<=0x335 then if i<0x334 then if i<=0x332 then i=ta~=ta and i+-0b101010 or(m.N[-0x7c5d]or m:S(4105032699,0x39cbe885,0x38bbb9cf,-0x7c5d))else i,l[0x64ac]=m.T[-0x3a61]or m:W(0x2f5,-0x3a61),Na end elseif i>0x334 then La=0xe0 i=O>La and i+-0x1e4 or(m.N[-0x38b4]or m:S(3404803898,4046457669,3962435606,-0x38b4))else Na=0b11011111 i=La<=Na and 0x55b-i or 0x24090/i end elseif i>0x336 then i=ma~=ma and i+-0b110110101 or 0x76b10/i else La=0b11011111 i=N>=La and(m.N[0x490]or m:S(0x6363db7f,0x3f816fc1,0x33716c0e,0x490))or i+-0x1e5 end elseif i<0x33f then if i<=0x339 then La=0b11011111 i=r>La and(m.T[0x604f]or m:X(3722444663,0x76ae5f51,0x548e5c35,0x604f))or(m.N[-0x41bc]or m:R(0b101010001,-0x41bc))else i,l[0xe068]=0x633-i,Na end elseif i>=0x340 then if i<=0x340 then i=ta<=0 and(m.N[-0x6d1b]or m:R(0x3cf,-0x6d1b))or(m.N[-0x2469]or m:P(3923724439,3923737680,-0x2469))else l=0b100110 i=ea<l and(m.N[-0x38c7]or m:R(0x32d,-0x38c7))or 0x720-i end else i,l[0x83b5]=m._a[-0x68e2]or m:da(1,0x469318fb,0x184c50c6,-0x68e2),Na qa,f,e,ha=T[0b11][1][T[0b11][0b11]],T[0b110][1][T[0b110][0b11]],"B",T[0b1100][1][T[0b1100][0b11]]end elseif i<0x2d6 then if i<0x2bd then if i>=0x2b4 then if i<0x2b8 then if i>0x2b5 then i,La=m.N[-0x41bc]or m:Q(0b11001110,0x72,0b10001,-0x41bc),0xd8 elseif i>0x2b4 then i,La=m.N[-0x41bc]or m:P(2593124481,2593113505,-0x41bc),0xe0 else l=0x29 i=ea>l and 0x88820/i or(m.N[0x666c]or m:S(3067661252,2644142701,0x5c955759,0x666c))end elseif i<0x2b9 then i,l[0xe068]=m._a[0x6211]or m:ca(0x2e36,0x6211),Na elseif i>0x2b9 then ha,i,qa,f,e=T[0b1100][1][T[0b1100][0b11]],i+0xa9a,T[0b11][1][T[0b11][0b11]],T[0b110][1][T[0b110][0b11]],"B"else i,l[0x64ac]=0xa23-i,Na f,ha,e,qa=T[0b110][1][T[0b110][0b11]],T[0b1100][1][T[0b1100][0b11]],m.T[0x6b6e]or m:Y(m.q"awT{",m.q"Oa",0x6b6e),T[0b11][1][T[0b11][0b11]]end elseif i>0x2af then if i>0x2b0 then i=ta<=0 and(m.N[-0b101101]or m:P(0x8935f2d,0x8936854,-0x2d))or(m.N[-0x3be0]or m:S(0x3da791f5,3412783538,0xb52acb9,-0x3be0))else i,La=m.N[-0x41bc]or m:P(0x50226c94,0x502259b4,-0x41bc),0b11100000 end elseif i>0x2ae then i,l[0x8bb3]=m.T[0x1109]or m:W(0xc88,0x1109),Na e,f,qa,ha="B",T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],T[0b1100][1][T[0b1100][0b11]]elseif i>0x2a6 then l=0x45 i=ea>l and(m.T[0x22f4]or m:U(0x5e14,1,1,0x22f4))or(m.N[0x2769]or m:P(0x4e5ee9cb,0x4e5edd3e,0x2769))else i=la<F and(m._a[0x277c]or m:aa(0x211,1,0x277c))or(m.N[0x7871]or m:Q(0x2a4,0x17c,0x5dc,0x7871))end elseif i<0x2c7 then if i<=0x2c2 then if i<=0x2be then if i<=0x2bd then i,La=m.N[-0x41bc]or m:Q(0x2a,0b100010111,0x111,-0x41bc),0x98 else i,La=0x39c1e/i,0xf3 end else S,D,ra,c,za,i,J=T[0b111][1][T[0b111][0b11]],T[0b1001][1][T[0b1001][0b11]],Q,T[0b1011][1][T[0b1011][0b11]],0x7f,m.N[-0x79dc]or m:R(0xbf6,-0x79dc),da end elseif i<=0x2c5 then i,l[0x83b5]=m._a[0x52ce]or m:aa(1,0x66b,0x52ce),Na f,qa,ha,e=T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],T[0b1100][1][T[0b1100][0b11]],"B"else i,La=m._a[-0x2dd7]or m:ba(2677288608,2677288271,-0x2dd7),0x98 end elseif i>=0x2cc then if i<=0x2d1 then if i>0x2cc then La=La(l,Na,f)l=f i,l=0x2a3f/i,l+Y T[0b11][1][T[0b11][0b11]],ma=l,La else l[0xe068]=Na f,e,i,ha,qa=T[0b110][1][T[0b110][0b11]],m.N[-0x221e]or m:O(m.q"J8Ur",m.q"1p",-0x221e),0xe28c0/i,T[0b1100][1][T[0b1100][0b11]],T[0b11][1][T[0b11][0b11]]end else i,La=m.N[-0x41bc]or m:S(2768911217,0x5293ce25,0x5002cc4e,-0x41bc),0b11111101 end elseif i<0x2c8 then i,La=0x3a7f7/i,0b11010001 elseif i>0x2c8 then f,i,ha,qa,e=T[0b110][1][T[0b110][0b11]],m._a[-0x3f62]or m:aa(0x83c,1,-0x3f62),T[0b1100][1][T[0b1100][0b11]],T[0b11][1][T[0b11][0b11]],m._a[0x53f9]or m:ea(m.q"E_os",m.q"5C",0x53f9)else i=Aa<X and(m.T[0x4e3d]or m:U(0x5f3f,0x2b,1,0x4e3d))or(m.T[-0x29f]or m:U(0x5238,1,1,-0x29f))end elseif i>=0x2e9 then if i>=0x2f5 then if i>=0x2fc then if i<=0x300 then if i>0x2fc then Q,qa=0,T[0b100][1][T[0b100][0b11]]F,la,wa=0b100,Q,1 i=F~=F and(m.T[-0x14d3]or m:W(0x211,-0x14d3))or 0xf4e00/i else i,La=m.T[-0x765a]or m:X(3589135323,3747936658,3580155969,-0x765a),0xdf end else i,La=m.N[-0x41bc]or m:P(0x4b35b3b6,0x4b358696,-0x41bc),0b11101001 end elseif i>0x2f8 then f=f+ha i=ha>0 and i+0x266 or(m.T[0x517]or m:V(0x76cc65ee,0x80385a2,0x517))elseif i<=0x2f5 then ta=ta+Y i=Y>0 and 0xb45-i or i+0x4d4 else i=ta>0 and 0x94700/i or(m.N[0x7010]or m:R(0x332,0x7010))end elseif i<0x2f0 then if i>0x2ed then i,l[0xe068]=0xfef-i,Na ha,qa,e,f=T[0b1100][1][T[0b1100][0b11]],T[0b11][1][T[0b11][0b11]],"B",T[0b110][1][T[0b110][0b11]]elseif i<=0x2e9 then La=La(l,Na)ea=not La i=ea and 0x3e3-i or 0x3be-i else i,La=m.T[-0x765a]or m:W(0x151,-0x765a),0xe0 end elseif i<0x2f1 then i,La=m.N[-0x41bc]or m:Q(0b111110,0x12,0b101010001,-0x41bc),0b11011111 elseif i<=0x2f1 then l=0b11101 i=ea>=l and i+-0b111011011 or(m.N[-0xe19]or m:R(0x37f,-0xe19))else ha,la,z,qa,i,e,Q=ea,0b1111111,T[0b1001][1][T[0b1001][0b11]],T[0b111][1][T[0b111][0b11]],0x8f6-i,T[0b1011][1][T[0b1011][0b11]],f end elseif i<0x2e2 then if i>0x2d8 then if i>0x2de then i,La=m._a[-0x2dd7]or m:aa(1,0b101010001,-0x2dd7),0b10100000 else i,ha=0x43c-i,0 end elseif i>0x2d7 then i,l[0x64ac]=m.T[-0x3a61]or m:W(0x2f5,-0x3a61),Na elseif i<=0x2d6 then La=0b10100000 i=Ma<La and(m.N[-0x41bc]or m:R(0x151,-0x41bc))or(m.N[0x75e1]or m:Q(0b10001001,0xd7,0x38f,0x75e1))else l=0x38a i=ea>l and 0x51a54/i or 0xb5929/i end elseif i>0x2e5 then if i<=0x2e6 then i,La=0x437-i,0xd1 else l=0xbc i=ea>l and(m.T[-0x2aa3]or m:V(3144864619,0x40890f81,-0x2aa3))or(m._a[-0x4334]or m:da(1,2866197500,0x108bdf6,-0x4334))end elseif i>0x2e4 then i,qa=0x99f3f/i,e[0x71f5]ha=La[qa]elseif i<0x2e3 then Na=0b11000010 i=La>Na and(m._a[-0x665a]or m:aa(1,0x25d,-0x665a))or 0x2e4e2/i elseif i<=0x2e3 then i=f<=0 and(m.T[0x3aae]or m:U(0x508b,1,1,0x3aae))or(m.T[-0x4664]or m:U(0x5f3f,1,0b11111100,-0x4664))else i,La=m.T[-0x765a]or m:V(2405556059,0x50880155,-0x765a),0xa0 end elseif i>0x120 then if i<=0x1e8 then if i>0x183 then if i>0x1bc then if i>=0x1d0 then if i>=0x1d9 then if i>0x1e1 then if i<=0b111100101 then l=0b11100010 i=ea<=l and(m.T[0x4e41]or m:U(0x5f3f,0x1fd,1,0x4e41))or(m.T[0x4df8]or m:V(0x1d1895bb,3794018593,0x4df8))else i,l[0x83b5]=i+0x46d,Na e,f,qa,ha="B",T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],T[0b1100][1][T[0b1100][0b11]]end elseif i<=0x1e0 then if i<0x1da then i,La=i+-0x88,0xdf elseif i>0b111011010 then l[0x64ac]=Na qa,e,i,ha,f=T[0b11][1][T[0b11][0b11]],m.N[-0x3f0e]or m:O(m.q"`L6W",m.q"#{",-0x3f0e),m.N[0x2559]or m:R(0xbf4,0x2559),T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]]else i,La=0x32b-i,0b10100000 end else l=0x24d i=ea>l and(m.T[0x3c3c]or m:U(0x5ea4,1,1,0x3c3c))or(m.N[0x4070]or m:P(0x1cf77b42,0x1cf74ee3,0x4070))end elseif i>=0b111010101 then if i>0b111010111 then ha,f,i,qa,e=T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]],i+0xb69,T[0b11][1][T[0b11][0b11]],"B"elseif i<=0x1d5 then La=0xc2 i=xa<La and i+-0xd6 or 0x326-i else i,La[l]=0x5c7-i,ha end elseif i>0b111010000 then l=0x25f i=ea>l and 0x301a4/i or(m.N[-0x6c27]or m:R(0x3a8,-0x6c27))else l=0x221 i=ea>l and(m.N[-0x751a]or m:R(0x186,-0x751a))or(m.T[-0x623c]or m:V(2547062766,0x6808833b,-0x623c))end elseif i<0b111001000 then if i<=0b111000011 then if i<0x1c1 then l=0b11001011 i=ea>l and(m.N[-0x2f44]or m:P(0x358b4c54,0x358b7979,-0x2f44))or 0x61c80/i elseif i<=0b111000001 then qa=0b101 i=e==qa and(m._a[-0x4fb6]or m:ba(2386846661,2386846387,-0x4fb6))or(m.T[-0x15c5]or m:X(3753224187,4222412792,3685000737,-0x15c5))else i,La=m.T[-0x765a]or m:X(4192026476,2641177618,2571971247,-0x765a),0b10100000 end elseif i>0x1c4 then Na=Na(f,e)i,f=m.N[-0b111101110]or m:P(2313263381,2313269016,-0b111101110),0b111 f=X*f else l=0b10111101 i=ea>l and i+0b100100000 or(m.T[0xe08]or m:V(2301946847,0x62810657,0xe08))end elseif i>=0b111001100 then if i>0x1ce then i,l[0xe068]=m.N[0x2868]or m:Q(0x65,0b111100,0x509,0x2868),Na ha,f,qa,e=T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],m._a[0x5bcb]or m:ea(m.q"K{ib",m.q"e*",0x5bcb)elseif i<=0x1cc then i,La=0x25d8c/i,0xbf else Na=0 f,e,ha=Na,0b100,1 i=e~=e and i+-0b100001100 or(m.N[0x290e]or m:Q(0x227,0x62d,0x850,0x290e))end elseif i<0b111001001 then i,La=m.N[-0x41bc]or m:S(2845905755,0x7734fd5c,0x35349787,-0x41bc),0xa0 elseif i>0b111001001 then i,La=m.N[-0x41bc]or m:S(0x59913f75,3213718118,0x1b84b10d,-0x41bc),0b10100000 else l=0xb0 i=ea>l and(m.T[-0x59a5]or m:W(0b101000100,-0x59a5))or i+0x1ac end elseif i<0b110100101 then if i>0x192 then if i>0b110011010 then if i>0b110011011 then La=0b1100111 i=Ba<=La and i+-0b1010001 or i+-0b1111 else l=0x30 i=ea<=l and 0x1ece1/i or(m.T[-0x35f1]or m:W(0x139,-0x35f1))end elseif i>=0x199 then if i<=0b110011001 then l[0xb2f5]=Na i,f,ha,e,qa=0xcfe-i,T[0b110][1][T[0b110][0b11]],T[0b1100][1][T[0b1100][0b11]],"B",T[0b11][1][T[0b11][0b11]]else i,La=i+-0x49,0b11100000 end else l=0b11111110 i=ea>l and 0x25634/i or(m._a[-0x55b9]or m:aa(0x3cb,1,-0x55b9))end elseif i>=0x18f then if i<=0x191 then if i>0b110001111 then La=0b10100000 i=o<=La and 0x5287b/i or 0x2e2-i else i,La=0x20d3f/i,0b1100111 end else Na,i,f=T[0b1000][1][T[0b1000][0b11]],i+0x26f,l end elseif i>=0b110001010 then if i<=0x18a then l=0xf3 i=ea>=l and(m.N[-0x3bf6]or m:P(3496687533,3496673486,-0x3bf6))or(m.N[0x52dc]or m:P(2802041527,2802054429,0x52dc))else i,La=m.T[-0x765a]or m:V(0x2ead0379,0x41101951,-0x765a),0xd1 end else i,La=0x20166/i,0b1100111 end elseif i<=0b110110100 then if i>0x1ae then if i<0x1b3 then l=0xfb i=ea>l and 0x497-i or 0x25360/i elseif i<=0x1b3 then Q=m.T[-0x5c30]or m:Y(m.q"=CJ",m.q"*Z",-0x5c30)z,i,Q=Q..qa,m.T[0x2561]or m:X(4294171134,2783637246,2783102609,0x2561),T[0b110][1][T[0b110][0b11]]la,F,wa=z,T[0b1100][1][T[0b1100][0b11]],T[0b11][1][T[0b11][0b11]]else La,i,l=T[0b1000][1][T[0b1000][0b11]],0x104ca8/i,ea end elseif i>0x1ad then i,La=m._a[-0x2dd7]or m:aa(1,0x151,-0x2dd7),0xe0 elseif i>=0b110101001 then if i<=0b110101001 then ha=0/0 i=u>k and i+0x2e or 0x4b4-i else l[0xeb5]=Na ha,i,e,f,qa=T[0b1100][1][T[0b1100][0b11]],i+0xd23,"B",T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]]end else i,La=m.T[-0x765a]or m:U(0x5e6f,1,1,-0x765a),0xdf end elseif i<0b110111001 then if i>0x1b7 then i,La=0x24338/i,0b10011000 else l=0x33b i=ea<=l and(m.N[-0x6fa1]or m:S(2795756027,2887352029,0x6bd15992,-0x6fa1))or 0x52a25/i end elseif i<=0x1ba then if i<=0x1b9 then La=0b10 i=Ha<=La and 0x23e-i or 0x30a-i else j,qa,fa=0xb6,0b100,0x73 i=e==qa and(m.T[-0x4afd]or m:W(0x39a,-0x4afd))or 0x459-i end else i,La=m.T[-0x765a]or m:U(0x5e6f,1,1,-0x765a),0b11000010 end elseif i<=0x151 then if i<0b100111010 then if i<0x12e then if i>=0b100101001 then if i<=0b100101010 then if i<=0b100101001 then l=0x85 i=ea<=l and(m.N[-0x348f]or m:R(0b100010011,-0x348f))or 0x4c5-i else i,La=0x1884a/i,0xe0 end else i,La=0x27c-i,0xd1 end elseif i<=0x125 then if i<=0x121 then i,La=m.N[-0x41bc]or m:S(0x72da3f77,2776172427,0x2157c5b2,-0x41bc),0b10111111 else l=0b11001110 i=ea>l and(m.N[-0xe21]or m:P(2953918199,2953904523,-0xe21))or(m.T[-0x4a17]or m:X(0x23db7e77,0x25ddd079,0x21d94c7f,-0x4a17))end else i,La=i+0x29,0b11011111 end elseif i<0x136 then if i<=0x133 then if i>0b100101110 then i,La=0x19423/i,0b10111111 else i,La=m._a[-0x2dd7]or m:ba(0x54370446,0x543702f5,-0x2dd7),0b10100000 end else Ra,z,g,qa,i,ha,Q,G=0xc0,T[0b1100][1][T[0b1100][0b11]],0x14,"B",m.N[-0x36e8]or m:R(0xb42,-0x36e8),T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],0b10101 end elseif i>=0b100110111 then if i>0b100110111 then i,La=0x28a-i,0b10100000 else ea=ea(La,l,Na)l,La=1,Na i,La=i+-0x137,La+l T[0b11][1][T[0b11][0b11]],Y=La,ea end else i,La=i+0x1b,0b11100000 end elseif i>=0b101000100 then if i>0x14b then if i>0x150 then q,Na=0xdd,{}Na[0x7b19]=ea f=0 i,Na[0x64ac]=0x10e2-i,f Na[0xe068]=f Na[0x83b5]=f Na[0xa2f0]=f Na[0xb2f5]=f Na[0x8bb3]=f Na[0x71f5]=f Na[0xfb62]=f Na[0x85c0]=f Na[0xeb5]=f Na[0x9019]=f Na[0x31d1]=f f,Na,l=X,T[1][1][T[1][0b11]],Na e=l else l[0x64ac]=Na ha,f,i,e,qa=T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]],0xecb-i,m._a[0x5bcb]or m:ea(m.q"_>c4",m.q"#s",0x5bcb),T[0b11][1][T[0b11][0b11]]end elseif i>=0x14a then if i<=0x14a then i=X>ta and i+-0x50 or(m.N[-0xe1c]or m:Q(0b100110,0b10,0x318,-0xe1c))else l=0x319 i=ea>l and(m._a[-0x13b8]or m:da(0x3be,0xc1fd8f9,2990587103,-0x13b8))or i+0x258 end elseif i>0x144 then l[0x64ac]=Na i=Ca<=H and 0x27f-i or i+0x1ac else i,La=m.N[-0x41bc]or m:R(0x151,-0x41bc),0xdf end elseif i<=0b101000001 then if i<0x13f then if i>0x13a then i,l[0x64ac]=i+0x770,Na f,e,qa,ha=T[0b110][1][T[0b110][0b11]],"B",T[0b11][1][T[0b11][0b11]],T[0b1100][1][T[0b1100][0b11]]else i,La=m.T[-0x765a]or m:U(0x5e6f,1,1,-0x765a),0xc2 end elseif i<=0x13f then i,La=m.N[-0x41bc]or m:S(3399409527,0x2bd0dfda,0x690de81,-0x41bc),0xbf else i,l[0x9019]=i+0x93f,Na qa,f,e,ha=T[0b11][1][T[0b11][0b11]],T[0b110][1][T[0b110][0b11]],m.N[-0x3f0e]or m:O(m.q"f!2)",m.q"zW",-0x3f0e),T[0b1100][1][T[0b1100][0b11]]end elseif i<=0b101000010 then Na=0xa0 i=La>Na and(m.N[0x2396]or m:S(2474276505,3796594035,3058133634,0x2396))or 0x501b6/i else f=f+ha i=ha>0 and i+0x565 or 0x100ff1/i end elseif i>0x170 then if i<0b101111110 then if i<0x176 then if i<=0x173 then l=0x2e i=ea<=l and(m.N[-0x2bdc]or m:S(2829010917,2437266883,0x3c2584ee,-0x2bdc))or 0x4b7-i else i,La=0x1eb05/i,0x6a end elseif i>0b101111100 then i,La=m.T[-0x765a]or m:U(0x5f3f,1,0b101010001,-0x765a),0b11000010 elseif i<=0x176 then Y=Y(ea,La,l)ea,La=l,1 i,ea=m.N[0x604d]or m:P(3203367979,3203379248,0x604d),ea+La ma,T[0b11][1][T[0b11][0b11]]=Y,ea else La=0b1100111 i=Ka>La and(m._a[-0x2dd7]or m:aa(0x151,1,-0x2dd7))or(m.N[0x7d1f]or m:S(4194001229,2724954412,2691098646,0x7d1f))end elseif i>0x181 then if i<=0b110000010 then qa,ha=1,nil i=e==qa and 0x573-i or 0x392-i else i=X<ta and 0x179ee/i or(m.N[-0x53ee]or m:R(0b10110111,-0x53ee))end elseif i>=0b101111111 then if i>0x17f then e[0x71f5]=ha i=_a>=aa and(m.T[0x5401]or m:U(0x5c4d,1,1,0x5401))or(m.T[-0x6f31]or m:U(0x5cda,1,1,-0x6f31))else i,qa=i+0x474,T[0b10][1][T[0b10][0b11]]end else i,La=0x1f6de/i,0xa0 end elseif i>=0b101011101 then if i>=0x160 then if i>0b101101101 then i,l[0x85c0]=0xfcf-i,Na ha,f,e,qa=T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]],"B",T[0b11][1][T[0b11][0b11]]elseif i<=0x160 then i,La=0x1cf60/i,0xa0 else l=0xd8 i=ea>l and 0x46eec/i or(m._a[-0xa37]or m:aa(0b111000011,1,-0xa37))end elseif i<0b101011110 then La=La+Na i=Na>0 and i+0x269 or i+0x715 elseif i<=0x15e then e[0x8bb3]=ha qa,z=e[0x71f5],0 ha=qa~=z i=ha and(m._a[0x448a]or m:ca(0x2e26,0x448a))or(m._a[0x5b30]or m:ca(0x2f90,0x5b30))else l[0x71f5]=Na f,ha,i,e,qa=T[0b110][1][T[0b110][0b11]],T[0b1100][1][T[0b1100][0b11]],m._a[-0x740f]or m:ca(0x2582,-0x740f),"B",T[0b11][1][T[0b11][0b11]]end elseif i<=0b101011000 then if i<=0x157 then if i<0x156 then l=0b11000000 i=ea>l and 0x37dda/i or(m.N[0x76f]or m:R(0x251,0x76f))elseif i<=0x156 then l[0x64ac]=Na e,ha,i,qa,f=m.N[-0x221e]or m:O(m.q"x8S`",m.q"i2",-0x221e),T[0b1100][1][T[0b1100][0b11]],m.T[0x7e8f]or m:W(0x918,0x7e8f),T[0b11][1][T[0b11][0b11]],T[0b110][1][T[0b110][0b11]]else La=0xd8 i=a>=La and(m.T[0x102e]or m:U(0x5dd8,1,1,0x102e))or i+-0b110 end else i,l[0x64ac]=m.T[-0x3a61]or m:W(0x2f5,-0x3a61),Na end elseif i<=0x159 then P,Na=0b1110100,0xdf i=La>=Na and i+0x1db or(m._a[-0x6ab7]or m:da(1,0x880dd76,3309541841,-0x6ab7))else i,La=0x1ca1c/i,0b10100000 end elseif i>=0x246 then if i>=0x270 then if i>=0x289 then if i>=0x298 then if i<0x29f then if i<0x29c then i=Na~=Na and(m.T[-0x150c]or m:U(0x5f3f,0x7ac,1,-0x150c))or i+0x6ba elseif i<=0x29c then i,La=i+-0b101001011,0b11100000 else Na,l=Aa,1 f=l i=Na~=Na and 0x4b924/i or(m.N[0x34e]or m:Q(0x10f,0b1110001,0xbe3,0x34e))end elseif i>0x2a2 then i,La=m.T[-0x765a]or m:W(0b101010001,-0x765a),0b10100000 elseif i<=0x29f then qa=0b110 i=e==qa and(m._a[-0x54a3]or m:ba(0x7d2091bb,0x7d208ebb,-0x54a3))or 0x504-i else l[0xe068]=Na e,ha,f,i,qa="B",T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]],m.T[-0x633a]or m:U(0x5285,1,1,-0x633a),T[0b11][1][T[0b11][0b11]]end elseif i>=0x290 then if i>=0x291 then if i>0x291 then i,La=m.T[-0x765a]or m:W(0x151,-0x765a),0xd8 else C,f,qa,ha,i,e=0x14,T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],T[0b1100][1][T[0b1100][0b11]],m._a[0x6f0d]or m:aa(0x772,1,0x6f0d),"B"end else i,La=m.N[-0x41bc]or m:R(0b101010001,-0x41bc),0b10100000 end elseif i<0x28d then i=ta<=0 and(m.N[0x295a]or m:Q(0x208,0x9fa,0x47a,0x295a))or 0x1aa109/i elseif i>0x28d then l=l(Na,f)Na=0b111 i,Na=0x27fcef/i,Aa*Na else l[0x83b5]=Na i=y>=R and i+0x68 or 0x4b6-i end elseif i<0x27c then if i>0x275 then if i<=0x278 then i=Y>0 and 0x136c10/i or(m.T[0x74e3]or m:V(2629437438,0x2205db5b,0x74e3))else i,l[0x83b5]=m.N[0x42a0]or m:S(0x17930ff7,2812324531,0x275c47b6,0x42a0),Na end elseif i>=0x272 then if i<=0x272 then La=0b11100000 i=A<=La and(m.N[-0x60f3]or m:P(0x4242ae3d,0x42429a5d,-0x60f3))or(m.N[-0x41bc]or m:P(0x64776661,0x64775341,-0x41bc))else Oa,l=0x2a,0xa8 i=ea<=l and(m.T[0x18a7]or m:V(0x501bdff,2566521301,0x18a7))or 0x4f4-i end else l=0b11010010 i=ea<l and 0x21ab0/i or 0x355-i end elseif i>=0x283 then if i<0x284 then i,La=m.T[-0x765a]or m:W(0b101010001,-0x765a),0b1100111 elseif i>0x284 then l=0x27c i=ea>l and(m._a[0x3c87]or m:da(1,2153528187,0x18023e41,0x3c87))or(m._a[-0x2e1e]or m:aa(0b1100,0b1010101,-0x2e1e))else i=ta>0 and(m.N[-0x31d8]or m:R(0x213,-0x31d8))or i+-0x44 end elseif i>0x27f then Na=0b11100000 i=La>Na and(m.N[-0x1622]or m:Q(0b10,0b1000001,0x263,-0x1622))or(m.T[-0x75b5]or m:V(0x31ededf7,0x461010ff,-0x75b5))elseif i>0x27c then La=0b1100111 i=Oa>La and 0x3d776/i or 0x3d0-i else i,l=m.N[0x1800]or m:Q(1,0b101000,0b10000001,0x1800),m.h(l(Na,f))end elseif i<=0x25d then if i<0x253 then if i>0x24c then if i<=0x24e then i=ma<=0 and(m.N[-0x7d3a]or m:R(0b110000011,-0x7d3a))or(m.N[-0x53ee]or m:Q(0b100100,0b1111,0x84,-0x53ee))else i,La=m.T[-0x765a]or m:V(0x1dce5153,2148634101,-0x765a),0b10100000 end elseif i<=0x249 then if i>=0x247 then if i>0x247 then l=0b111000000 i=ea>l and(m.T[0x3770]or m:U(0x5d39,1,1,0x3770))or(m.N[0x5f31]or m:Q(0xf5,0x1a,0b100110111,0x5f31))else l=0b10011010 i=ea<=l and i+-0b1101110 or 0x4a6-i end else e={}e[0xe0ec]=Y e[0x50c1]=ma e[0xb6ce]=ta e[0xb463]=X e[0xdc36]=Na e[0x64fa]=ga ha=0 e[0xe4a7]=ha e[0x7035]=ha f=e return f end else i,La=m.N[-0x41bc]or m:Q(0,0,0b101010001,-0x41bc),0b10100000 end elseif i>=0x25a then if i<=0x25b then if i>0x25a then Q,i,da,wa,z,F,la=Na,0x10c0-i,0x7f,qa,T[0b1011][1][T[0b1011][0b11]],T[0b1001][1][T[0b1001][0b11]],T[0b111][1][T[0b111][0b11]]else i,La=0x3187a/i,0xe0 end else i,qa,f,e,ha=m.N[0x63d4]or m:S(2694188590,2776085247,2637619986,0x63d4),T[0b11][1][T[0b11][0b11]],T[0b110][1][T[0b110][0b11]],"B",T[0b1100][1][T[0b1100][0b11]]end elseif i<0x257 then i,La=i+-0b100000010,0b11110011 elseif i<=0x257 then l=0b10111100 i=ea>=l and 0x6ca81/i or(m.T[0x4e7a]or m:V(3076815765,0x81302f8,0x4e7a))else i,ea=0x40c-i,La end elseif i<0x266 then if i<=0x261 then if i>=0x25f then if i<=0x25f then i,La=0x31f0f/i,0b10011000 else i,l[0x64ac]=0x1252-i,Na ha,qa,e,f=T[0b1100][1][T[0b1100][0b11]],T[0b11][1][T[0b11][0b11]],"B",T[0b110][1][T[0b110][0b11]]end else f,qa,i,ha,e=T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],m.T[0x5ff3]or m:X(3413573335,2477697014,2200345487,0x5ff3),T[0b1100][1][T[0b1100][0b11]],"B"end elseif i>0x263 then qa=0b10 i=e==qa and 0x3f9ad/i or(m.T[0x569e]or m:V(0x4f4bc9f3,0xb001c9,0x569e))else Na=0b11110011 i=La<Na and(m._a[0x20eb]or m:ba(3721766056,3721765179,0x20eb))or(m.N[0x7a16]or m:S(3129445234,2334584678,2243341159,0x7a16))end elseif i<0x26a then if i<=0x266 then Na=0b10101 i=La<Na and i+-0b101001101 or(m._a[-0x3485]or m:ca(0x2ef4,-0x3485))else l=0xad i=ea<=l and(m.T[-0x56b4]or m:V(2480861150,0x480102f7,-0x56b4))or(m.T[-0x7a89]or m:V(0x53ce19fb,2148657140,-0x7a89))end elseif i<0x26d then i,l[0x9019]=0x55f-i,Na elseif i<=0x26d then Q=Q(la,F,wa)la=wa i,la=m.T[-0x15c5]or m:W(0x1d7,-0x15c5),la+qa T[0b11][1][T[0b11][0b11]],ha=la,Q else i,l[0xe068]=0x24aa5f/i,Na f,e,ha,qa=T[0b110][1][T[0b110][0b11]],m._a[-0xbc6]or m:ea(m.q"mcg6",m.q"r~",-0xbc6),T[0b1100][1][T[0b1100][0b11]],T[0b11][1][T[0b11][0b11]]end elseif i<0x21e then if i<=0x207 then if i<=0b111111101 then if i<=0b111110101 then if i<=0b111110010 then if i>0x1f0 then i,La=m._a[-0x2dd7]or m:ba(0x5b0dd742,0x5b0dd5f1,-0x2dd7),0xe0 elseif i>0b111101010 then La=0b10111111 i=na<La and(m.T[-0xe02]or m:X(3614961261,3254382008,3245468493,-0xe02))or 0x341-i else i,La=m.T[-0x765a]or m:X(4219125631,0x69ea9b6f,0x696a9a1e,-0x765a),0b11011111 end else i,La=0x346-i,0xdf end elseif i>0x1f9 then l=0b11100001 i=ea<=l and 0x2f786/i or 0x25876/i elseif i>0b111111000 then i,La=m.N[-0x41bc]or m:R(0b101010001,-0x41bc),0b10100000 else l=0b11111 i=ea<=l and 0x410-i or 0x21780/i end elseif i>0x204 then if i>0x205 then i,La=m._a[-0x2dd7]or m:ba(2866406987,2866406650,-0x2dd7),0b11011111 else l=0b110001011 i=ea<=l and 0x4d8-i or(m.N[0x5d06]or m:R(0x2fc,0x5d06))end elseif i>0x202 then Na=0x6a i=La<=Na and(m._a[-0x795a]or m:ca(0x2c7f,-0x795a))or(m.N[0x728d]or m:Q(0b100101101,0b10011,0b10,0x728d))elseif i<=0b111111110 then l=0x14c i=ea>l and i+-0x70 or(m.N[0x6671]or m:Q(0b100010011,0b10001110,0x260,0x6671))else l=0b101101011 i=ea>l and 0x338-i or 0x43c-i end elseif i<=0x215 then if i<0x212 then if i>0x210 then z=Q i=Ra<=g and 0x28cfc/i or 0x330-i elseif i<=0x20f then i,La=m._a[-0x2dd7]or m:ca(0x2d92,-0x2dd7),0b11000010 else qa=0b11 i=e==qa and 0x7cc80/i or 0x3ca-i end elseif i<0x213 then i,La=m.T[-0x765a]or m:X(4289020703,3192045181,3187671244,-0x765a),0x67 elseif i<=0x213 then i=Aa>X and 0x23e-i or(m.N[0x4f95]or m:Q(0,0,0x240,0x4f95))else w=w(ga,Aa,X)Aa,ga=1,X i,ga=0x19e53/i,ga+Aa Qa,T[0b11][1][T[0b11][0b11]]=w,ga end elseif i>=0x21b then if i>0x21b then La=0b11010001 i=Pa<=La and(m._a[-0x2dd7]or m:da(1,3938293629,0x1442990f,-0x2dd7))or(m.N[-0x614e]or m:P(0x646c03db,0x646c370f,-0x614e))else i,La=m._a[-0x2dd7]or m:ba(3804528623,3804528286,-0x2dd7),0xa0 end elseif i<=0x218 then La=0xd1 i=ia>=La and 0xb840/i or(m._a[-0x2dd7]or m:ca(0x2d92,-0x2dd7))else i,l[0xfb62]=0x633ed/i,Na end elseif i>=0x233 then if i>=0x23a then if i<0x243 then if i>=0x23c then if i<=0x23c then l[0xe068]=Na i,f,qa,ha,e=i+0x75d,T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],T[0b1100][1][T[0b1100][0b11]],"B"else i=ta~=ta and 0x891c0/i or(m.N[-0x3688]or m:R(0x340,-0x3688))end else i,La=m.N[-0x41bc]or m:P(0x27ca472c,0x27ca720c,-0x41bc),0xa0 end elseif i<0x244 then La=0b1100111 i=oa>La and 0x394-i or(m.T[0x6339]or m:U(0x5e43,1,1,0x6339))elseif i>0x244 then i,La=m.N[-0x41bc]or m:R(0x151,-0x41bc),0xdf else i,La=m.N[-0x41bc]or m:R(0b101010001,-0x41bc),0xfd end elseif i<=0x235 then if i<0x234 then La=0b11011111 i=L>La and i+0b101101000 or 0x384-i elseif i>0x234 then i,La=m.N[-0x41bc]or m:P(0x6e688d15,0x6e68b835,-0x41bc),0xa0 else la=la+wa i=wa>0 and 0x225444/i or 0x93c-i end elseif i>0x236 then Na=0b10101 i=La<=Na and i+0x18b or(m.T[-0x129d]or m:X(4159766527,3623403438,3622878436,-0x129d))else i,La=i+-0b11100101,0xe0 end elseif i>0x225 then if i<=0x22c then if i>0x229 then i,La=0x37d-i,0xc2 elseif i<=0x227 then ha,qa,e,i,f=T[0b1100][1][T[0b1100][0b11]],T[0b11][1][T[0b11][0b11]],"B",i+0x7f9,T[0b110][1][T[0b110][0b11]]else i,La=m.N[-0x41bc]or m:Q(0b10010,0x3f,0b101010000,-0x41bc),0xc2 end elseif i<=0x22d then La=0xdf i=x>La and 0x6ef7/i or 0x37e-i else i=Na~=Na and(m._a[0x1f6]or m:aa(0b111,1,0b111110110))or i+-0b110000010 end elseif i<=0x222 then if i<=0x220 then if i>0x21f then l=l+f i=f>0 and(m.N[0x20a7]or m:Q(0,0x25,0x46d,0x20a7))or(m.T[-0x1b72]or m:U(0x5083,1,1,-0x1b72))elseif i>0x21e then i,La=0x370-i,0b1100111 else i,La=i+-0xcd,0b10100000 end else i,X=m.N[-0x17e5]or m:Q(0b1010,0x16,0xf8,-0x17e5),X(ta,ma,Y)ta=Y ta=ta+ga w,T[0b11][1][T[0b11][0b11]]=X,ta end elseif i<=0x223 then i,La=m.N[-0x41bc]or m:Q(0b11010000,0b110000,0x151,-0x41bc),0xa0 else i,La=0x2d2b5/i,0xa0 end elseif i>0xa5 then if i>0xe1 then if i>0b100000010 then if i<0b100010010 then if i<0b100001001 then if i>0b100000101 then if i<=0b100000110 then e,f,i,ha,qa=m.N[-0x52cf]or m:O(m.q"g!70",m.q"x&",-0x52cf),T[0b110][1][T[0b110][0b11]],0x1007fc/i,T[0b1100][1][T[0b1100][0b11]],T[0b11][1][T[0b11][0b11]]else l[0xe068]=Na i,e,f,ha,qa=0xc46a5/i,"B",T[0b110][1][T[0b110][0b11]],T[0b1100][1][T[0b1100][0b11]],T[0b11][1][T[0b11][0b11]]end elseif i>=0x104 then if i>0x104 then i,qa=0x103fb/i,e[0x8bb3]ha=La[qa]else l=0x2e2 i=ea<=l and(m.T[0x538]or m:U(0x5f3f,1,0x286,0x538))or i+0b11000100 end else l=0xb5 i=ea>l and(m._a[0x734d]or m:aa(0b1011,0b1001111,0x734d))or 0x3c1-i end elseif i>=0x10c then if i>0b100010000 then i,l[0xfb62]=m.T[-0x2e42]or m:W(0x764,-0x2e42),Na e,f,qa,ha="B",T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],T[0b1100][1][T[0b1100][0b11]]elseif i>0b100001100 then i,La=i+0b1000001,0x98 else l=0b1000111 i=ea<=l and(m.N[0x7c2]or m:Q(0b11010010,0x2e,0x299,0x7c2))or(m.N[0x4f40]or m:S(0x78d0777f,3950959791,0x6b59d210,0x4f40))end elseif i<=0b100001001 then i,La=i+0x48,0xe0 else l[0x64ac]=Na i=B>=sa and 0x3a254/i or(m.T[-0x3a61]or m:V(4271144957,0x12002f7,-0x3a61))end elseif i<0x119 then if i<=0x116 then if i<=0b100010011 then if i>0x112 then i,La=m.N[-0x41bc]or m:P(0x5bafd18f,0x5bafe4af,-0x41bc),0b1100111 else i,ha=0x2e9-i,1/-0 end else l=0x1d i=ea<=l and(m.T[-0xef9]or m:W(0x380,-0xef9))or(m.N[0x6c1d]or m:Q(0x2c,0x215,0xac,0x6c1d))end elseif i>0b100010111 then i,La=m.T[-0x765a]or m:V(0x45ef3751,0xa1009dd,-0x765a),0xa0 else qa,i,ha,e,f=T[0b11][1][T[0b11][0b11]],0xd24-i,T[0b1100][1][T[0b1100][0b11]],m.N[-0x3f0e]or m:O(m.q"U^i?",m.q"UH",-0x3f0e),T[0b110][1][T[0b110][0b11]]end elseif i<0b100011110 then if i<0x11a then e,qa,i,ha,f="B",T[0b11][1][T[0b11][0b11]],m.N[-0x50f6]or m:R(0xc28,-0x50f6),T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]]elseif i<=0b100011010 then l[0xa2f0]=Na f,qa,i,ha,e=T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],m.T[0x11de]or m:X(4294967293,4159007647,4159005109,0x11de),T[0b1100][1][T[0b1100][0b11]],"B"else l=0x77 i=ea<=l and 0x430-i or i+0x198 end elseif i<=0x11f then if i>0x11e then ha=qa[z]i=j>=fa and 0x2f6-i or(m.T[-0xef9]or m:X(3984391389,3220054734,2909543756,-0xef9))else La=0b10100000 i=ba>La and i+0x33 or(m.T[0x2a1a]or m:V(0x351d9af3,0x48000537,0x2a1a))end else l=0x15 i=ea<l and i+0b1010101 or 0x3f240/i end elseif i>=0xf2 then if i>=0b11111011 then if i<=0xff then if i>0b11111101 then i=ha and(m.N[0xa65]or m:S(0x7554cfde,3343366029,3207042607,0xa65))or i+0b111011111 elseif i>0b11111100 then l=0x5b i=ea<=l and(m.N[0x1a59]or m:S(0x73012373,3054543766,0x3153df99,0x1a59))or(m.T[0x5a37]or m:V(4008953853,0x100009fb,0x5a37))elseif i>0b11111011 then qa,ha,Q,i,z="B",T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],m.T[-0x5eaa]or m:X(2650799614,4243715941,2633100117,-0x5eaa),T[0b1100][1][T[0b1100][0b11]]else l=0b100111 i=ea<=l and i+0x247 or i+0x2e4 end elseif i<=0b100000001 then qa,ha,i,f,e=T[0b11][1][T[0b11][0b11]],T[0b1100][1][T[0b1100][0b11]],m.T[0x3bf5]or m:W(0xd30,0x3bf5),T[0b110][1][T[0b110][0b11]],"B"else i,La=i+0x4f,0b11100000 end elseif i<0xf8 then if i<=0b11110011 then if i>0xf2 then La=0 l,Na,f=La,0b100,1 i=Na~=Na and(m.T[0x41fe]or m:V(0x5e969b7f,2686977624,0x41fe))or i+0xaec else l=0x1eb i=ea>l and(m.T[-0x5c83]or m:U(0x5f3f,0x355,1,-0x5c83))or(m.T[0x7077]or m:W(0x249,0x7077))end else Na=0b11011000 i=La<Na and i+0x1eb or i+0x62 end elseif i<0xf9 then X=0 Y,ma,ta=1,0b100,X i=ma~=ma and i+-0x79 or(m.T[-0x2dae]or m:V(3923681279,0x10004cc7,-0x2dae))elseif i<=0xf9 then l=0b111 i=ea>l and(m.N[-0x29ab]or m:S(0x1941bff8,0x4d2b64cb,0x468d21d9,-0x29ab))or(m.T[-0x4d41]or m:X(4191594229,3750639327,3649446926,-0x4d41))else i,ga=m.N[0x722c]or m:P(3930927365,3930916203,0x722c),Aa end elseif i<=0b11101010 then if i>=0b11100111 then if i>=0b11101001 then if i<=0xe9 then l=0x66 i=ea>=l and(m.T[0x35ef]or m:U(0x5f19,1,0b10,0x35ef))or(m.T[-0x754]or m:U(0x5f3f,0b11000110,1,-0x754))else i,La=m._a[-0x2dd7]or m:ba(0x3dbb3608,0x3dbb34b7,-0x2dd7),0xdf end else l=0x319 i=ea>=l and i+-0x56 or i+-0b10110000 end elseif i<=0xe5 then if i<=0b11100011 then l=0xd1 i=ea>=l and(m.T[-0x5755]or m:V(0x7b600ff0,0x90927c,-0x5755))or(m.N[-0x2aa]or m:Q(0,0,0x125,-0x2aa))else l=0b11010010 i=ea>l and i+0x292 or 0x4c2-i end else l=0b1111111 i=ea>=l and(m.N[0x6649]or m:Q(0,0,0x40,0x6649))or i+-0x68 end elseif i>=0b11101111 then if i>0b11110000 then ea=0 La,l,Na=ea,0b100,1 i=l~=l and(m.N[0x30f1]or m:Q(0b111,1,0b11100,0x30f1))or i+0x659 elseif i>0xef then t,i,O,ta,ca,na,oa,X=0xfb,m.N[-0x1c9]or m:R(0xf9b,-0x1c9),0xed,Aa,0x33,0b11101001,0b10110101,T[0b1000][1][T[0b1000][0b11]]else l=0xf4 i=ea<=l and(m.T[-0x4423]or m:U(0x5f3f,0x18a,1,-0x4423))or(m.T[0x78c3]or m:X(0x5d7e77b7,0x7cde2f89,0x5c5e2462,0x78c3))end elseif i<=0b11101011 then l=0x96 i=ea<l and(m.N[0x5524]or m:Q(0b10,0x42,0,0x5524))or 0b11111110-i else i,La=i+0x65,0xdf end elseif i<0xc2 then if i>=0b10110100 then if i>0b10111011 then if i<0xbe then if i>0xbc then l=0b10101010 i=ea<=l and(m.T[-0x1cc4]or m:W(0x302,-0x1cc4))or(m.N[-0x3c9b]or m:R(0x267,-0x3c9b))else Na=0x61 i=La>Na and i+0x2a2 or(m._a[0x594b]or m:ba(2869306786,2869306172,0x594b))end elseif i>=0b10111111 then if i<=0b10111111 then ta=ta+Y i=Y>0 and(m.T[-0x5350]or m:X(0x43fff9fb,0x56fbd9eb,0x42fbd20b,-0x5350))or(m.T[-0x5608]or m:W(0x321,-0x5608))else i,l[0x8bb3]=m._a[0x6211]or m:ca(0x2e36,0x6211),Na end else l=0xb5 i=ea>=l and(m.T[-0x3276]or m:X(0x49fd7eda,0x4fedff2a,0x49ed7e05,-0x3276))or(m.N[0x645d]or m:P(0x4dc4a1b,0x4dc7eb1,0x645d))end elseif i>0b10110111 then if i>=0b10111010 then if i<=0b10111010 then i=ma>0 and 0x204-i or 0x3f2-i else i,ga=i+-0b10110111,""end else l=0xf0 i=ea>=l and 0b110101000-i or i+0b101000 end elseif i<0xb6 then if i>0xb4 then l=0b11111000 i=ea<l and(m.T[0x3ad2]or m:V(0x12ea99bf,0x651162f9,0x3ad2))or(m.T[0x68f5]or m:U(0x5fb1,1,1,0x68f5))else ha,i,f,qa,e=T[0b1100][1][T[0b1100][0b11]],m.T[-0x248b]or m:V(3688509311,0x4040473,-0x248b),T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],m.T[-0x35d3]or m:Y(m.q"MKVb",m.q"dj",-0x35d3)end elseif i>0xb6 then ea,La,l,i,Na=T[0b110][1][T[0b110][0b11]],"B",T[0b1100][1][T[0b1100][0b11]],0xde51/i,T[0b11][1][T[0b11][0b11]]else La,Y,l,i,ea=T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],m.N[0x663f]or m:R(0b101110110,0x663f),"B"end elseif i>0b10101101 then if i<=0b10110001 then if i>=0xaf then if i>0b10101111 then l=0b1011 i=ea<l and(m.T[-0x3499]or m:W(0xd8,-0x3499))or(m.T[-0x5bef]or m:U(0x5f46,1,1,-0x5bef))else l=0xdf i=ea>l and(m.N[0x5b6c]or m:P(0x113a344c,0x113a0214,0x5b6c))or(m.T[0x377a]or m:V(0x46ff67dc,2818579321,0x377a))end else z,ha,i,e,qa=T[0b11][1][T[0b11][0b11]],"B",m.T[-0x583f]or m:W(0x461,-0x583f),T[0b110][1][T[0b110][0b11]],T[0b1100][1][T[0b1100][0b11]]end elseif i>0b10110010 then l,Ma=0xe1,0b10001011 i=ea<l and 0x607e/i or i+-0b1011 else i,La=i+0x9f,0b1100111 end elseif i<0b10101001 then if i<=0xa7 then if i>0xa6 then l=0x57 i=ea>l and(m.T[-0xf62]or m:V(3545299967,0x4af0283,-0xf62))or(m.T[0x465b]or m:X(4279226230,4000829239,3993488640,0x465b))else i,La=m.T[-0x765a]or m:X(0x7fbffffb,0x2f7bebf9,0x2f3beaa8,-0x765a),0b1100111 end else l=0b101110111 i=ea<=l and(m.T[0x1c8b]or m:U(0x5f3f,1,0xb5,0x1c8b))or(m.T[0x54af]or m:V(4236073371,0x182821e,0x54af))end elseif i<0xac then i,ea=m.N[-0x4a39]or m:R(0x2e9,-0x4a39),ea(La,m.i(l))Aa,l,La,Na=ea,Y,T[0b101][1][T[0b101][0b11]],0x80 elseif i>0b10101100 then Aa=Aa+ta i=ta>0 and 0xf1b-i or(m.T[0x47cd]or m:V(0x1f0fecd,0xe030399,0x47cd))else l=0xa2 i=ea<=l and 0x23664/i or(m.T[0x3748]or m:X(4261379703,0x1cb36c2f,0x1cb36ad0,0x3748))end elseif i<=0xcf then if i<=0b11001001 then if i>0b11000101 then if i<0b11000111 then l=0b1100001 i=ea<=l and i+0x17e or(m.N[0x3989]or m:Q(0b10111001,0b1000111,0x102,0x3989))elseif i<=0b11000111 then Sa,w,Fa,v,I,ja=0b1010110,0xa9,0x42,0b100110,0xc0,0b10110111 i=Qa~=w and(m.N[0x1443]or m:P(4019247497,4019252729,0x1443))or 0x18a-i else i,ma=m.T[-0x4b09]or m:X(4285463551,0x55af3d76,0x552e3967,-0x4b09),""end elseif i<=0b11000100 then if i>=0xc3 then if i>0b11000011 then La=0x98 i=n>La and(m.T[0x2118]or m:V(2951405437,0x52109,0x2118))or 0x215-i else ka,p,ga,Ea,E,b=0xd8,0x97,0,0b100001,0b11111110,0b10001101 Aa,X,ta=ga,0b100,1 i=X~=X and i+-0x98 or 0x347-i end else i,l=m.N[0b1100011]or m:Q(0b10110111,0x4b,0b10010010,0x63),Na end else l=0x2c i=ea<=l and(m._a[0x6d69]or m:ca(0x2d31,0x6d69))or 0x2f224/i end elseif i<0xcd then if i>0b11001010 then Q,i,la,F,ha,z,qa=T[0b1001][1][T[0b1001][0b11]],m.N[-0x54d4]or m:S(0x55626d68,2177791639,0x59355bb3,-0x54d4),e,0b1111111,T[0b1011][1][T[0b1011][0b11]],T[0b111][1][T[0b111][0b11]],La else l=0x8e i=ea<=l and 0x2e9aa/i or(m.T[0x15a7]or m:W(0b100011110,0x15a7))end elseif i>=0b11001110 then if i<=0xce then Na,i,f,La,l=T[0b1100][1][T[0b1100][0b11]],m.T[0x77f8]or m:W(0x951,0x77f8),T[0b11][1][T[0b11][0b11]],T[0b110][1][T[0b110][0b11]],"B"else i,l[0xa2f0]=0x71f61/i,Na f,ha,qa,e=T[0b110][1][T[0b110][0b11]],T[0b1100][1][T[0b1100][0b11]],T[0b11][1][T[0b11][0b11]],"B"end else i,La=m.N[-0x41bc]or m:P(3467875770,3467878554,-0x41bc),0xa0 end elseif i<0b11011010 then if i<=0b11010101 then if i>=0b11010010 then if i>0b11010010 then X=X+ma i=ma>0 and 0xc5664/i or 0xc9b73/i else X=0 i=Aa==X and i+-0b10111 or 0x131-i end else l=0xa7 i=ea>=l and i+-0b10011 or(m.T[-0x36e9]or m:W(0xac,-0x36e9))end elseif i>0b11011000 then l=0b1010101 i=ea<l and(m.T[0x2717]or m:V(0x13fdf33f,0x20fb6,0x2717))or(m.T[0x6cc1]or m:U(0x5f3f,1,0xdf,0x6cc1))else l=0b111 i=ea>=l and 0xd218/i or(m.N[-0x71e1]or m:Q(0b101010,0b110111,0b1000101,-0x71e1))end elseif i<=0b11011101 then if i>0b11011100 then i,La=i+0b1110100,0xc2 elseif i>0b11011011 then i,La=i+0x75,0x67 elseif i>0xda then l=0b10110010 i=ea<=l and i+0x230 or(m.T[0x4c89]or m:U(0x5c8a,1,1,0x4c89))else l=0x3d i=ea>=l and(m.T[-0x271b]or m:U(0x5f66,1,1,-0x271b))or(m.N[-0x1bda]or m:R(0x75,-0x1bda))end elseif i<=0xdf then l=0x55 i=ea<=l and(m.T[-0x204a]or m:W(0x18f,-0x204a))or 0x44a-i else l=0b11101001 i=ea>l and(m.N[0x747f]or m:S(3076274157,2266683638,0x7e97d501,0x747f))or(m.N[0x1b38]or m:Q(0x22,0b1100010,0x1e1,0x1b38))end elseif i>=0x53 then if i<=0b1111111 then if i>=0x6f then if i>=0x79 then if i>0b1111100 then if i<=0b1111110 then l=0x79 i=ea>l and(m.T[-0x4bda]or m:V(2925077227,0x4180450d,-0x4bda))or 0b11010001-i else i,Aa=0b101010001-i,X end elseif i<=0b1111011 then if i>=0b1111010 then if i<=0x7a then ea=0 Na,La,l=1,ea,0b100 i=l~=l and(m.N[0x2d01]or m:P(2381042687,2381047689,0x2d01))or(m.T[-0x126a]or m:V(0x57452fd5,0x280a5dc1,-0x126a))else R,B,y,pa,Aa,ia,sa=0b10100011,0b1000100,0xd3,0b111110,X,0b10010011,0x9f i=_>=Ga and(m.T[-0x550a]or m:W(0b11110000,-0x550a))or i+0x2d2 end else ea=0 i=Y==ea and(m.N[-0x6a85]or m:R(0b11001001,-0x6a85))or 0b10010111-i end else Y,i,ea,l,La=T[0b110][1][T[0b110][0b11]],0x4ce-i,"B",T[0b11][1][T[0b11][0b11]],T[0b1100][1][T[0b1100][0b11]]end elseif i<=0x73 then if i>0x71 then l=0b11001001 i=ea>=l and(m.T[0x31e1]or m:X(0x5ebefe3f,0x69b79bfc,0x48b6987c,0x31e1))or 0x19532/i elseif i>0b1110000 then i,w=m.N[-0x17e5]or m:R(0b11111000,-0x17e5),""elseif i>0b1101111 then l=0x16b i=ea<l and(m.N[-0x7d6d]or m:Q(0x2b,0b1001,0x1de,-0x7d6d))or 0x272-i else l=0b11001100 i=ea>l and i+-0x39 or(m.T[-0x62f9]or m:X(0x7ff7e17f,0x63b6dbd4,0x63b6c13f,-0x62f9))end elseif i>0x75 then l=0x13 i=ea<l and i+0x2eb or(m.T[-0x61da]or m:V(0x20c24f28,2285474087,-0x61da))else l=0x30 i=ea>=l and(m.T[-0x2ff9]or m:X(4240244735,2617228443,2562505825,-0x2ff9))or 0x7c5/i end elseif i>0b1100101 then if i>=0x6a then if i>=0x6b then if i<=0b1101011 then Na,f,ha,La,i,e,l=T[0b111][1][T[0b111][0b11]],T[0b1001][1][T[0b1001][0b11]],0b1111111,T[0b1011][1][T[0b1011][0b11]],m.N[0x27fe]or m:Q(0,0,0x830,0x27fe),ea,X else l=0b100010 i=ea<=l and 0x294/i or i+0b10001101 end else f,Y,ea,i,l,La,Na=0x7f,T[0b1011][1][T[0b1011][0b11]],ga,m.N[-0x755d]or m:P(4158458014,4158471776,-0x755d),T[0b1001][1][T[0b1001][0b11]],T[0b111][1][T[0b111][0b11]],ma end elseif i<=0x66 then La=La+Na i=Na>0 and(m.N[-0x281d]or m:R(0x431,-0x281d))or(m.T[-0xf15]or m:X(4260755823,3220415971,3186727647,-0xf15))else f,l,i,Na,La,L=T[0b11][1][T[0b11][0b11]],m.T[-0x35d3]or m:Y(m.q"TP#-",m.q"Wd",-0x35d3),m.T[0x55af]or m:X(0x75bcf5ef,3400464010,0x40acee0b,0x55af),T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]],0b10011000 end elseif i<=0x5a then if i<=0b1011000 then if i<0x55 then l=0b1110111 i=ea<l and 0x12f-i or(m.T[0x19cf]or m:U(0x5f3f,0b1111,0x13,0x19cf))elseif i>0x55 then l=0b1000111 i=ea<l and(m.T[-0x4dcd]or m:X(3086024637,3513049086,2439044983,-0x4dcd))or(m.T[0x13fe]or m:W(0x18,0x13fe))else _,i,ga,Aa,Ga=0b11110011,m.N[-0b100111110]or m:R(0x34e,-0b100111110),T[0b1000][1][T[0b1000][0b11]],w,0b1011110 end else l=0x88 i=ea>l and(m.T[-0x5d9d]or m:X(0x5dcaaedf,0x6fd5c75e,0x4dc08297,-0x5d9d))or 0x183-i end elseif i>=0b1100000 then if i>0b1100000 then l=0b11 i=ea>l and(m.N[0x1398]or m:P(0xd5a83a4,0xd5ab4fe,0x1398))or(m.T[-0x6488]or m:V(3758030319,0x200002ea,-0x6488))else l=0x72 i=ea>=l and(m.T[0x31a4]or m:W(0x3d5,0x31a4))or(m.T[0x131a]or m:U(0x5f9a,1,1,0x131a))end else i,ta=i+0x6aa,"c"X,ta=ta..Aa,T[0b110][1][T[0b110][0b11]]Y,ma,ea=T[0b1100][1][T[0b1100][0b11]],X,T[0b11][1][T[0b11][0b11]]end elseif i>0x95 then if i>=0x9e then if i<=0b10100001 then if i>=0xa0 then if i<=0b10100000 then qa,e,i,z,ha=T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]],m.N[-0x25f8]or m:R(0x4a8,-0x25f8),T[0b11][1][T[0b11][0b11]],"B"else l=0x76 i=ea<l and(m.T[-0x478f]or m:X(3987733998,4292787680,3985554879,-0x478f))or(m.T[-0x7306]or m:W(0x83,-0x7306))end else La=0x15 i=U<=La and 0x13710/i or(m.T[-0x765a]or m:X(3623870191,3462199151,3327972638,-0x765a))end elseif i>0xa4 then l=0b10111001 i=ea>l and(m.N[0x6259]or m:P(0x53afabc2,0x53af9f5f,0x6259))or i+0x290 else i,La=0x1f5-i,0xdf end elseif i<=0b10011010 then if i<0x99 then ta=ta+Y i=Y>0 and i+0xaad or 0x96983/i elseif i<=0x99 then l,Ia,Ba=0b101001,0xcf,0x50 i=ea<l and 0x1023/i or(m.T[0x6aaf]or m:X(2950019883,0x7393aab5,0x2391a947,0x6aaf))else V,l=0b1001111,0xaf i=ea>=l and 0x724c/i or(m.N[-0b1010]or m:R(0b11010000,-0b1010))end elseif i<=0x9b then l,x,n=0x6c,0xc0,0x89 i=ea>=l and 0x24ef/i or 0x8d13/i else i,La=i+0xb5,0xe0 end elseif i>0x8b then if i>=0b10010001 then if i<0b10010100 then l=0x340 i=ea<=l and(m.N[0x2abc]or m:Q(0x11b,0x6b,0b110110011,0x2abc))or(m.N[-0x1b62]or m:S(4200555519,2462748077,2452256470,-0x1b62))elseif i>0b10010100 then l=0b11111101 i=ea>=l and 0x404-i or(m.N[-0x1385]or m:R(0x3dc,-0x1385))else l=0x258 i=ea>l and(m.T[0x7763]or m:V(0x14fa2bbf,0x301479b,0x7763))or(m.N[0x5a85]or m:S(3977300449,3206759590,2931309749,0x5a85))end elseif i<=0x8d then i,ha=0xd40d/i,0 else l=0x105 i=ea>l and i+-0x1f or i+0b110 end elseif i<0b10000110 then if i>=0b10000100 then if i>0x84 then i,La=m.T[-0x765a]or m:W(0b101010001,-0x765a),0xd1 else l=0b1000001 i=ea<=l and(m._a[0x6acd]or m:ca(0x2e75,0x6acd))or i+0b111010110 end else l=0b10001001 i=ea<=l and(m.N[-0x4f49]or m:P(3165993841,3165982694,-0x4f49))or 0x180d/i end elseif i>=0b10001010 then if i>0b10001010 then i,f,Na,La,l=m.T[0x1262]or m:V(0x2fa79f33,2149084719,0x1262),T[0b11][1][T[0b11][0b11]],T[0b1100][1][T[0b1100][0b11]],T[0b110][1][T[0b110][0b11]],"B"else l=0b10111011 i=ea>=l and(m.N[0x7221]or m:P(2522916146,2522911020,0x7221))or 0x5304/i end elseif i<=0b10000110 then Y,La,ma,i,ea="B",T[0b11][1][T[0b11][0b11]],T[0b110][1][T[0b110][0b11]],m.T[0x3bde]or m:X(3178223034,3070711983,3037152890,0x3bde),T[0b1100][1][T[0b1100][0b11]]else Na,f,i,l,ha,e,La=T[0b111][1][T[0b111][0b11]],T[0b1001][1][T[0b1001][0b11]],m.T[0x606a]or m:U(0x571b,1,1,0x606a),X,0x7f,ea,T[0b1011][1][T[0b1011][0b11]]end elseif i>0x27 then if i>0b111110 then if i<0x45 then if i>0b1000001 then if i<=0b1000010 then l,ba=0b1010011,0b10110111 i=ea>l and(m.N[-0x3ed1]or m:P(0x5b4dd2cc,0x5b4de61c,-0x3ed1))or 0b11011011-i else l=0b10010000 i=ea>l and 0xbc98/i or(m.N[-0x51c9]or m:R(0b10011110,-0x51c9))end elseif i>=0x40 then if i>0x40 then l,N=0b1011001,0b1100000 i=ea>=l and(m.T[0x57e3]or m:W(0b100010,0x57e3))or(m.N[-0x3cd8]or m:R(0b100111,-0x3cd8))else l=0b10000101 i=ea<l and i+-0b10 or i+0x1a end else l,A,ya,Da=0b10011010,0xf2,0b10100001,0xb1 i=ea<l and i+0b11 or i+0x74 end elseif i<=0b1001110 then if i>=0b1001010 then if i<=0b1001010 then l=0b10001101 i=ea>l and 0x3a64/i or(m.T[-0x7153]or m:W(0b110100,-0x7153))else l=0b1100110 i=ea<=l and(m.N[0x5760]or m:S(0x6d9e4b76,3898955011,0x5643a289,0x5760))or(m.T[0x4141]or m:W(0x1bc,0x4141))end else l=0x41 i=ea<l and 0x10c74/i or 0xb8e6/i end elseif i>0x4f then l=0x6c i=ea>l and i+0x12d or(m.N[0x4462]or m:R(0x38c,0x4462))else l=0b1011110 i=ea<=l and i+0b111011101 or(m.N[0x79b4]or m:Q(0x94,0b101111110,0x3af,0x79b4))end elseif i<=0b110110 then if i<=0b110001 then if i>0x2f then l=0x1c0 i=ea>=l and 0b100100011-i or 0x236-i elseif i<=0b101110 then if i<=0x2b then d,w,xa,Pa=0b1010100,ga,0b11110100,0b1100001 i=b>=E and 0x81d7/i or(m.N[0x5a6e]or m:S(0x4c1af0d7,3912538577,0x45f3915c,0x5a6e))else Aa=Aa+ta i=ta>0 and i+0x6d6 or i+0xdb2 end else U,o,l=0b1111010,0xeb,0x8f i=ea<=l and 0x79-i or(m.N[0x26e7]or m:R(0b11101011,0x26e7))end elseif i<0x34 then X="c"Aa,X=X..ga,T[0b110][1][T[0b110][0b11]]ta,i,Y,ma=Aa,i+0b111101111,T[0b11][1][T[0b11][0b11]],T[0b1100][1][T[0b1100][0b11]]elseif i<=0b110100 then l=0x8c i=ea>l and(m.T[0x5fd7]or m:W(0x339,0x5fd7))or(m.N[-0x7381]or m:P(3598994300,3599006804,-0x7381))else ua,l=0x63,0xd5 i=ea>l and i+0b1111001 or(m.N[0x461f]or m:Q(1,0b1000010,0b11100010,0x461f))end elseif i>0x3c then if i<=0x3d then l=0b1110001 i=ea>=l and 0x16e0/i or(m.N[-0x4a81]or m:R(0x50,-0x4a81))else l=0x7f i=ea>l and(m.T[-0b11100111]or m:X(3112172539,0x3aedf79e,0x386df1cf,-0b11100111))or(m.T[0x8ca]or m:U(0x5f09,0b100,0b10,0x8ca))end elseif i>=0x3a then if i>0b111010 then Ca,w,X,Aa,r,Ka,H,i,ga=0b11101000,T[0b110][1][T[0b110][0b11]],T[0b11][1][T[0b11][0b11]],T[0b1100][1][T[0b1100][0b11]],0xd2,0b10101101,0x83,m.N[0x3d36]or m:P(4271059578,4271047710,0x3d36),"B"else l=0b110100 i=ea<=l and(m.N[-0x56de]or m:R(0x3b0,-0x56de))or(m.T[0x682e]or m:V(2574403435,0x640c03a3,0x682e))end else l=0x27c i=ea<l and i+0b110011101 or(m.N[0x7d1f]or m:S(2847192854,3666219547,3330476111,0x7d1f))end elseif i>=0x13 then if i<0x1c then if i<0x18 then if i>0b10101 then a,Ja,Ha,X,va=0b1000010,0x19,0xf7,0,0xe6 Y,ta,ma=1,X,0b100 i=ma~=ma and(m.N[0b10000110]or m:Q(0x3d,0b1011,0x3b,0x86))or(m.N[-0x3265]or m:P(2855716554,2855728299,-0x3265))elseif i<=0b10011 then l=0x96 i=ea<=l and(m.N[-0x4534]or m:S(3278654399,3519569870,3384167787,-0x4534))or i+0x392 else l=0xc4 i=ea<=l and i+-0b1011 or(m.T[0x468f]or m:W(0b1110011,0x468f))end elseif i<0x1a then l=0b1001011 i=ea<l and 0x124-i or i+0x37b elseif i>0x1a then l=0x1a i=ea<l and(m.N[0x12b8]or m:R(0xb1,0x12b8))or(m.T[0x6278]or m:W(0b1101110,0x6278))else l,M=0x25f,0b11000000 i=ea>=l and(m.N[-0x671d]or m:Q(0b1111,0xb5,0b11100011,-0x671d))or 0x26-i end elseif i>=0x21 then if i<0b100010 then l=0x5f i=ea>l and(m.N[-0x27e2]or m:R(0x9b,-0x27e2))or 0x62-i elseif i<=0x22 then l=0b1011100 i=ea<=l and i+0xdb or 0xa7e/i else l=0x56 i=ea>l and i+0x80 or(m.T[0x2aaa]or m:X(3207069149,3108303771,3104108736,0x2aaa))end elseif i<0x1e then Y=ea i=ja<=I and(m.N[0x3e24]or m:Q(0b1101,0b1010100,0x79,0x3e24))or(m.T[0x58cb]or m:W(0x2b9,0x58cb))elseif i>0b11110 then Aa=0 i=ga==Aa and i+0b1010010 or 0x52-i else i,La=m.T[0x7095]or m:W(0x2d1,0x7095),"c"La,ea=T[0b110][1][T[0b110][0b11]],La..Y l,Na,f=ea,T[0b1100][1][T[0b1100][0b11]],T[0b11][1][T[0b11][0b11]]end elseif i<=0b111 then if i>0b100 then if i>0b110 then _a,i,k,aa,Y,u=0x42,m.T[-0x4eb4]or m:W(0xf3,-0x4eb4),0b1101001,0b11111,ea,0xc7 elseif i>0b101 then l=0b11110 i=ea<=l and(m.T[0x1814]or m:V(2917502715,0x21a52f5,0x1814))or(m.N[0x6fef]or m:S(0x7a7c85ff,2637632311,0x17b3d93f,0x6fef))else l=0xb8 i=ea<=l and(m.N[0x2edc]or m:S(0x4596ef5f,3843742144,0x3afac6a7,0x2edc))or(m.N[-0x614e]or m:Q(0x2c,0b1111000,0b10000001,-0x614e))end elseif i<0b11 then if i<=0 then l,i,La,e,ea,f,Na=T[0b111][1][T[0b111][0b11]],i+0x1c5,Aa,0b1111111,T[0b1011][1][T[0b1011][0b11]],Y,T[0b1001][1][T[0b1001][0b11]]else Aa=0 ma,ta,X=1,0b100,Aa i=ta~=ta and 0xfb-i or 0xbb-i end elseif i>0b11 then ta,X=0,{}X[0xe0ec]=ta X[0x50c1]=ta X[0xb6ce]=ta ma={}ta=ma X[0xb463]=ta ma={}ta=ma X[0xdc36]=ta ma={}ta=ma X[0x64fa]=ta X[0xe4a7]=w X[0x7035]=ga Aa=X return Aa else i,ha,e,z,qa,Q,la=0x7fb-i,ea,T[0b1011][1][T[0b1011][0b11]],T[0b1001][1][T[0b1001][0b11]],T[0b111][1][T[0b111][0b11]],f,0x7f end elseif i>0b1100 then if i>0b1111 then l=0b101100 i=ea<l and(m.N[-0x5f66]or m:P(0x6e79a31c,0x6e7995d9,-0x5f66))or 0x184-i else ea=T[0b1010][1][T[0b1010][0b11]]Y=ea[ma]ga[Aa]=Y i=Fa<=Sa and i+0x9e or(m.N[-0x4539]or m:S(0x43e93ecf,3026100860,0x304c6277,-0x4539))end elseif i>0b1010 then l=0x207 i=ea>l and 0x6f0/i or(m.T[0x2935]or m:V(0x3cb20a39,2168799409,0x2935))elseif i<=0b1001 then l=0b1111101 i=ea>l and(m.N[-0x6109]or m:Q(0x10f,0x134,0x203,-0x6109))or 0x3ce-i else l=0xbf i=ea<=l and 0x11a8/i or i+0b101001000 end until false end end,function(l,b)return function(c,f,h)local k,j,g,_,d,i i=l.T[-0x11eb]or l:V(2161474799,0x100201ff,-0x11eb)while true do if i>0b11101111 then i,g,j,k,d=l.T[-0x6855]or l:V(0x652bbe67,2588934388,-0x6855),b[1][1][b[1][0b11]],c,c[f],1 d,_=h,f+d elseif i<0b1100100 then return elseif i>0b1100100 then i=f>h and(l._a[0x694a]or l:aa(1,0b10,0x694a))or(l._a[0x2ede]or l:ca(0x2c35,0x2ede))else g=l.h(g(j,_,d))return k,l.i(g)end end end end,function(a,b,c,d,e)a.T[e]=d+(-0b10*a.b(a.c(4294967295,b),a.c(b,c))+(a.c(4294967295,a.d(c))+(a.d(a.b(d,d))*0b10+(a.b(a.a(0xffff,b),a.a(0xffff,c))*a.a(a.a(b,0xffff),a.a(c,0xffff))+a.a(a.d(a.a(b,0xffff)),a.a(0xffff,c))*a.a(a.d(a.a(c,0xffff)),a.a(0xffff,b))-a.a(0xffff,c)*a.a(0xffff,b))+-c))+-a.a(b,c))return a.T[e]end,function(e,f,...)local h={...}local d=select("#",...)for i=1,d do e[f+i-1]=h[i]end end,function(a,b,c,d,e)a.N[e]=a.a(a.a(0xffff,b),a.d(a.a(b,0xffff)))*a.a(a.a(0xffff,b),a.d(a.a(b,0xffff)))+a.a(a.a(0xffff,b),a.a(b,0xffff))*a.b(a.a(b,0xffff),a.a(b,0xffff))-a.a(b,0xffff)*a.a(b,0xffff)+a.d(a.a(a.d(d),a.d(a.a(b+c,4294967295))))return a.N[e]end,function(a,b,c,d)a.N[d]=a.o(b,c)return a.N[d]end,function(m,T)return function(Qa,w)local r,Pa,P,b,Ia,F,L,k,ca,ma,Q,Ga,qa,O,na,Na,X,N,xa,e,A,la,c,h,G,Ja,I,n,s,ka,Ea,Ha,W,E,fa,g,ga,oa,U,Ma,Ba,Ka,sa,K,Fa,q,La,ya,o,Y,C,x,_a,Oa,ua,j,ra,S,v,D,Ca,p,ba,R,za,ea,aa,V,f,a,l,u,t,da,pa,_,i,ha,M,ia,va,Aa,B,ja,d,z,wa,ta,J,H,Da i=0x3b while true do if i>=0x277 then if i<=0x3c7 then if i<0x31c then if i<0x2c8 then if i<=0x2a4 then if i>=0x288 then if i<=0x296 then if i>=0x291 then if i>0x294 then f,Na=0b1001,ea[0x64ac]ha,l,e=0b101111,Na-f,ea[0xe068]f=e-ha Na=Qa[f]i,Qa[l]=i+-0x23f,Na f,Na=0b1111,ea[0x83b5]e,l,ha=ea[0xa2f0],Na-f,0x21 f=e-ha Na=Qa[f]Qa[l]=Na elseif i<=0x291 then Na,f=ea[0x64ac],0x36 e,l,ha=ea[0xe068],Na-f,0b1100 f=e-ha Na=Qa[f]Qa[l]=Na f,e=ea[0x83b5],0b111 Na=f-e ha,e,l=0x14,ea[0xa2f0],Qa[Na]f=e-ha Na,qa,ha=Qa[f],0b1101,ea[0xb2f5]e=ha-qa f=Qa[e]l[Na]=f i=A>qa and 0xdf47/i or 0b111101 else i,Q=0x848,m.h(Q(la,F,wa))end elseif i<=0x28d then if i>0x288 then ha=1 i,e=0x58c-i,Na-ha else f,Na=0b10100,ea[0x64ac]Na,l=ea[0x8bb3],Na-f Qa[l]=Na i=Da<=f and 0x29a-i or 0x2df-i end else Na,f=ea[0x64ac],0b100001 l,qa,ha=Na-f,0b111100,ea[0xe068]e=ha-qa qa,z,f=ea[0x83b5],0x1d,Qa[e]ha=qa-z e=Qa[ha]Na=f..e Qa[l]=Na i=M>=z and 0b1010111 or 0x2ef end elseif i>0x2a1 then if i<=0x2a3 then i=e and 0x40452/i or 0xfa else ha,qa=Qa[l],T[0b1000][1][T[0b1000][0b11]]la,i,wa,z,Q=Qa,i+0x6e0,1,ha,T[0b1010][1][T[0b1010][0b11]]F,wa=l+wa,l+e end elseif i<=0x29f then if i<=0x297 then Na,f=ea[0x64ac],0b111111 ha,qa,l=ea[0xe068],0x3e,Na-f e=ha-qa f=Qa[e]Na=-f i,Qa[l]=0x2ee-i,Na Na,f=ea[0x83b5],0b110101 f,e,l=ea[0xfb62],0b101,Na-f Na=f-e Qa[l]=Na else i=0x733 f,e=f(m.i(e))F,ha,qa,Q,z=0b11,T[0b1110][1][T[0b1110][0b11]],f,Na,1 F,la=Qa,l+F end else da,wa,i,F,la,Q,c=l,z,0xbb2-i,1,qa,T[0b1110][1][T[0b1110][0b11]],Qa end elseif i>0x280 then if i>=0x285 then if i<=0x285 then Na,ha,e=T[0b1111][1][T[0b1111][0b11]],0b10011,ea[0xe068]f=e-ha l,e,f=Na[f],0b101,ea[0x64ac]i,Na,e,ha=0x57,f-e,l[1],l[0b11]f=e[ha]Qa[Na]=f f,e=ea[0x83b5],0b111111 Na,z,qa=f-e,0x3d,ea[0xa2f0]ha=qa-z Q,z,e=0b110,ea[0xb2f5],Qa[ha]qa=z-Q ha=Qa[qa]f=e[ha]Qa[Na]=f else i=e and 0x168 or 0x645-i end elseif i>0x282 then i,z=0x7f2-i,m.h(z(m.i(Q)))else i,z,qa=0x2d9-i,0b10111,ea[0x9019]ha=qa-z Aa=Aa+ha end elseif i<=0x27c then if i<=0x27a then if i<0x279 then i,qa=i+0b100110110,1 ha=f-qa elseif i>0x279 then f,Na=0b111000,ea[0x64ac]e,f,l=ea[0x8bb3],T[0b1101][1][T[0b1101][0b11]],Na-f Na=f[e]Qa[l]=Na f,Na=0x31,ea[0xe068]e,f,l=ea[0x71f5],T[0b1101][1][T[0b1101][0b11]],Na-f i,Na=0x57,f[e]Qa[l]=Na else da,i,wa=Q,i+0x957,T[0b1001][1][T[0b1001][0b11]]end else ha,e,Na=0x24,ea[0xe068],T[0b1111][1][T[0b1111][0b11]]f=e-ha l,e,f=Na[f],0x3c,ea[0x64ac]ha,e,i,Na=l[0b11],l[1],0b1010111,f-e f=e[ha]Qa[Na]=f end elseif i>0x27d then f,Na=0b1001,ea[0x64ac]Na,l=ea[0x8bb3],Na-f Qa[l]=Na ha,Na,e=0b11111,T[0b1111][1][T[0b1111][0b11]],ea[0x83b5]i,f=0b1010111,e-ha l,f,e=Na[f],ea[0xe068],0b11 ha,e,Na=l[0b11],l[1],f-e f=e[ha]Qa[Na]=f else Na,f=ea[0x64ac],0b111000 l,f,Na=Na-f,T[0b1000][1][T[0b1000][0b11]],ea[0xe068]z,i,e=1,0x77c,Qa[l]qa=l+z z,ha=0b10,Qa[qa]qa=l+z qa=Qa[qa]end elseif i>=0x2b7 then if i>=0x2c1 then if i<=0x2c4 then if i<0x2c3 then f,Na=0x20,ea[0x64ac]l,qa,ha=Na-f,0b1011,ea[0xe068]e=ha-qa qa,z,f=ea[0x83b5],0x1e,Qa[e]i,ha=0x57,qa-z e=Qa[ha]Na=f<e Qa[l]=Na elseif i<=0x2c3 then F,c,i,la,Q,da,wa=1,Qa,0x411,qa,T[0b1110][1][T[0b1110][0b11]],l,z else ha,e=0x1b,ea[0x64ac]l,ha,e=e-ha,0b10,ea[0xe068]Na,ha,e=e-ha,0b101011,ea[0x83b5]ha,f=0,e-ha e=Na==ha i=e and 0x3c0 or 0x3a3-i end elseif i>0x2c5 then f,Na=0b100100,ea[0x64ac]ha,l,qa=ea[0xe068],Na-f,0x3a e=ha-qa f,qa,z=Qa[e],ea[0x83b5],0b101 ha=qa-z i,e=0xf14a/i,Qa[ha]Na=f+e Qa[l]=Na f,Na=0b1100,ea[0xa2f0]e,l,ha=ea[0xb2f5],Na-f,0x2d f=e-ha Na=Qa[f]Qa[l]=Na else la,Q=1,l+z i,ga=0x2a1,Q-la end elseif i>0x2bb then if i>0x2bd then f,Na=0b101101,ea[0x64ac]Na,l=ea[0x8bb3],Na-f Qa[l]=Na Na,i,f=ea[0xe068],0xeee9/i,0b101 qa,ha,l=0b101001,ea[0x83b5],Na-f e=ha-qa f=Qa[e]Na=-f Qa[l]=Na else e,f=1,ea[0x64ac]Na=f-e ha,qa,Na,l=ea[0xe068],0b1000,ea[0x8bb3],Qa[Na]e=ha-qa f=Qa[e]l[Na]=f f,Na=0b10011,ea[0x83b5]l,Na=Na-f,nil Qa[l]=Na i=r<=qa and 0x7ae or i+-0x266 end elseif i<0x2b9 then F,la=1,Na+Q i,ga=0b111001001,la-F elseif i>0x2b9 then da,c=ga-Q,1 wa=da+c i=j<c and 0x14f81a/i or 0x276 else f,Na=0x27,ea[0x64ac]l,ha,e=Na-f,0b100,ea[0xe068]f=e-ha Na=Qa[f]Qa[l]=Na Na,f=ea[0x83b5],0b10 ha,e,l=0b111,ea[0xa2f0],Na-f e,f=1,e-ha Na=f==e Qa[l]=Na i=U>e and 0xecdf/i or i+0x1c end elseif i>0x2af then if i>0x2b3 then l=0x66 i=La<=l and 0x2f5 or 0x3a3 elseif i>0x2b2 then qa,i,z=ga-Na,0x2f92e/i,1 ha=qa+z elseif i>0x2b0 then i=e and 0x66ed6/i or 0x4f1-i else f,Na=0b1111,ea[0x64ac]l,e,f=Na-f,0b101111,ea[0xfb62]Na=f-e Qa[l]=Na ha,Na,e=0x3d,T[0b1111][1][T[0b1111][0b11]],ea[0x83b5]f=e-ha i,l=0b1010111,Na[f]f,Na,z,qa=l[0b11],l[1],0b11001,ea[0xe068]ha=qa-z e=Qa[ha]Na[f]=e end elseif i<=0x2ad then if i<0x2aa then if i>0x2a8 then Na,f=ea[0x64ac],0b100000 ha,e,l=0x15,ea[0xe068],Na-f f=e-ha Na=Qa[f]Qa[l]=Na Na,f=ea[0x83b5],0x24 f,Na,e,l=nil,X,nil,Na-f Na,f,e=m.g(Na,f,e)ha,qa=Na(f,e)e=ha i=e==nil and 0b1010111 or 0x21e else i=qa<=0 and 0xd22 or 0x40b-i end elseif i<=0x2aa then z,qa=0b10111,ea[0xeb5]ha=qa-z i,Aa=0xe7c6/i,Aa+ha else i,e=0x2e2,qa end elseif i<=0x2ae then i,e=0x67aba/i,ga-l else i,f=0x35f-i,ha end elseif i>0x2ef then if i<=0x305 then if i>0x2f9 then if i>0x2fe then if i<=0x2ff then i,ha,qa=0x57f,Qa[l],T[0b1000][1][T[0b1000][0b11]]wa,la,Q,z=1,Qa,T[0b1010][1][T[0b1010][0b11]],ha wa,F=l+e,l+wa else i,da,wa,la,c,Q,F=0x64e,l,z,qa,Qa,T[0b1110][1][T[0b1110][0b11]],1 end elseif i>=0x2fb then if i<=0x2fb then la,Q=qa[0b11],qa[1]z=Q[la]qa[0b10]=z i,qa[1]=0x35765/i,qa z=0b10 qa[0b11]=z z=nil X[ha]=z else f,Na=0b110100,ea[0x64ac]ha,qa,l=ea[0xe068],0b11101,Na-f e=ha-qa e,f=ea[0x8bb3],Qa[e]Na=f[e]i,Qa[l]=0b1010111,Na end else Na,f=ea[0x64ac],0b101101 l,Na=Na-f,nil Qa[l]=Na f,Na=0b10010,ea[0xe068]e,l,f=ea[0x8bb3],Na-f,T[0b1101][1][T[0b1101][0b11]]i,Na=0b1010111,f[e]Qa[l]=Na end elseif i>=0x2f5 then if i>=0x2f6 then if i<=0x2f6 then l=0b11101 i=La<l and i+-0b10110010 or 0x9087e/i else l=0x54 i=La<=l and 0x309 or 0b110001011 end else Na,f=ea[0x64ac],0b110010 l,Na=Na-f,ea[0x8bb3]i,Qa[l]=0b1010111,Na Na,f=ea[0xe068],0b100101 e,l,ha=ea[0x83b5],Na-f,0x3e f=e-ha Na=Qa[f]Qa[l]=Na end elseif i<0x2f1 then J=ra(S,D)D=J i=D==nil and 0x365 or 0x66c-i elseif i>0x2f1 then Q=1 i,z=0x2a1,f-Q else f,e=ea[0x64ac],0x3d Na=f-e qa,ha,l,Na=0b10,ea[0xe068],Qa[Na],ea[0x8bb3]e=ha-qa f=Qa[e]l[Na]=f f,Na=0x3c,ea[0x83b5]Na,e,l,f=X,nil,Na-f,nil Na,f,e=m.g(Na,f,e)ha,qa=Na(f,e)e=ha i=e==nil and i+-0x29a or 0x387 end elseif i<0x30e then if i>0x30b then l=0x1d i=La>l and 0x388 or 0x174 elseif i<0x309 then i,e=0x442-i,ga-l elseif i>0x309 then l=0b110010 i=La<=l and 0x6f6-i or 0x2cb else f,Na=0b1101,ea[0x64ac]qa,l,ha=0b1111,Na-f,ea[0xe068]e=ha-qa f,z,qa=Qa[e],0b10,ea[0x83b5]ha=qa-z e=Qa[ha]Na=f/e Qa[l]=Na i=Ma>z and 0x34c-i or 0b1010111 end elseif i>0x312 then if i>0x313 then qa,ha=0x26,ea[0xa2f0]Q,z,e=0x28,ea[0xb2f5],ha-qa qa=z-Q ha=Qa[qa]Qa[e]=ha i=G>=Q and 0x10d28/i or 0xd9 else la,Q=1,l+z i,ga=i+-0x122,Q-la end elseif i<=0x310 then if i>0x30e then Na,f=ea[0x64ac],0x2e l,f=Na-f,{}Na=f i,Qa[l]=0x367-i,Na f,Na=0b101101,ea[0xe068]l,Na=Na-f,ea[0x8bb3]Qa[l]=Na else Q,c,wa,i,la,F,da=T[0b1110][1][T[0b1110][0b11]],Qa,z,0x30a5f6/i,qa,1,l end else qa,z=qa(m.i(z))Q=0 i=f==Q and 0x3c4 or 0x369 end elseif i<=0x2e1 then if i>0x2d3 then if i<0x2d9 then if i<=0x2d5 then i,c=0x3fa,wa.__call else f,Na=0b110110,ea[0x64ac]e,ha,l=ea[0xe068],1,Na-f f=e-ha Na=Qa[f]i,Qa[l]=0x32d-i,Na Na,f=ea[0x83b5],0b100101 l,f=Na-f,{}Na=f Qa[l]=Na end elseif i<0x2de then f,Na=0x12,ea[0x64ac]Na,l=nil,Na-f Qa[l]=Na e,f=0x19,ea[0xe068]Na=f-e ha,Na,qa,l=ea[0x83b5],ea[0x8bb3],e,Qa[Na]e=ha-qa i,f=0x330-i,Qa[e]l[Na]=f elseif i>0x2de then la,i,Q=1,0xa0,l+z ga=Q-la else f,Na=0b111001,ea[0x64ac]e,f,l=0b110,ea[0xfb62],Na-f Na=f-e Qa[l]=Na ha,e,Na=0x1e,ea[0x83b5],T[0b1111][1][T[0b1111][0b11]]f=e-ha e,l,f=0b110111,Na[f],ea[0xe068]Na,e,ha=f-e,l[1],l[0b11]i,f=0x57,e[ha]Qa[Na]=f end elseif i<=0x2cd then if i>0x2cb then qa=1 i,ha=0x32e,f-qa elseif i<0x2c9 then f,Na=0b10000,ea[0x64ac]l,qa,ha=Na-f,0b110011,ea[0xe068]e=ha-qa z,f,qa=0b110011,Qa[e],ea[0x83b5]ha=qa-z i,e=0x57,Qa[ha]Na=f==e Qa[l]=Na elseif i<=0x2c9 then ha,qa=Na(f,e)e=ha i=e==nil and 0x35f-i or 0x3f5-i else f,Na=0b111,ea[0x64ac]ha,l,e=0x1a,Na-f,ea[0xe068]f,e=e-ha,1 Na=f==e Qa[l]=Na ha,e=0x28,ea[0x83b5]Na,ha,l,e=ea[0xa2f0],0x16,e-ha,ea[0xb2f5]ha,f=0,e-ha e=Na==ha i=e and 0x34e or 0x8238e/i end elseif i>=0x2d1 then if i<=0x2d1 then ha,e,Na=0x15,ea[0xe068],T[0b1111][1][T[0b1111][0b11]]f=e-ha f,e,l=ea[0x64ac],0b10000,Na[f]i,ha,e,Na=i+-0x27a,l[0b11],l[1],f-e f=e[ha]Qa[Na]=f f,e=ea[0x83b5],0b101 z,qa,Na=0b101101,ea[0xa2f0],f-e ha=qa-z Q,z,e=0x1e,ea[0xb2f5],Qa[ha]qa=z-Q ha=Qa[qa]f=e~=ha Qa[Na]=f else i,Q=0b11010111,1 z=f-Q end else e,ha,Na=ea[0xe068],0b11110,T[0b1111][1][T[0b1111][0b11]]f=e-ha l,e,f=Na[f],0b101010,ea[0x64ac]e,ha,Na=l[1],l[0b11],f-e f=e[ha]Qa[Na]=f e,f=0x22,ea[0x83b5]e,Na,ha=T[0b1101][1][T[0b1101][0b11]],f-e,ea[0x8bb3]f=e[ha]Qa[Na]=f i=Pa>p and 0xf402/i or 0x7ae end elseif i<0x2ea then if i<0x2e7 then if i>0x2e2 then e,ha,Na=ea[0xe068],0b110111,T[0b1111][1][T[0b1111][0b11]]f=e-ha l=Na[f]Na,qa,f,z=l[1],ea[0x64ac],l[0b11],0b101100 ha=qa-z e=Qa[ha]Na[f]=e e,f=0b110000,ea[0x83b5]ha,qa,Na=ea[0xa2f0],0b1110,f-e e=ha-qa f=Qa[e]i,Qa[Na]=i+-0x28c,f else ha=0x47a16e0e i=e~=ha and 0x63b or 0x464 end elseif i>=0x2e8 then if i<=0x2e8 then i=ha and i+0xc5 or i+-0b1110001 else Na,f=ea[0x64ac],0x1f e,l,f=0b100000,Na-f,ea[0xe068]e,ha,Na=ea[0xeb5],0x14,f-e f,qa,ha=e-ha,0b110010,ea[0x9019]ha,e,qa=Qa[l],ha-qa,Qa[Na]i=ha~=qa and 0x3a7 or 0x197 end else i,Q=0x98311/i,1 z=f-Q end elseif i<=0x2ec then if i>0x2eb then ha,qa=ga-l,1 e=ha+qa i=x<=qa and 0x67e-i or 0x35a elseif i<=0x2ea then i=e and 0x193 or 0x3b9-i else Q,la=l+z,1 ga=Q-la i=R>=la and 0xd7 or 0x6de-i end elseif i>0x2ed then ha,e,Na=0b11,ea[0xe068],T[0b1111][1][T[0b1111][0b11]]f=e-ha l,f,e=Na[f],ea[0x64ac],0b111100 Na,ha,e=f-e,l[0b11],l[1]f=e[ha]Qa[Na]=f f,e=ea[0x83b5],0x3b e,Na={},f-e f=e i,Qa[Na]=0b1010111,f else ha=1 i,e=0x190,Na-ha end elseif i<=0x36a then if i>0x34b then if i<0x35b then if i<=0x356 then if i>=0x353 then if i<=0x354 then if i>0x353 then i,Q,la=0x2c3,l+z,1 ga=Q-la else Na,f=ea[0x64ac],0b100100 f,l,e=ea[0xeb5],Na-f,0b100011 Na,ha,e=f-e,0x3b,ea[0x9019]f,e=e-ha,Qa[l]i=e and 0x3c7 or 0b100100011 end else f,e=ea[0x64ac],0b11001 Na=f-e l,ha,Na,qa=Qa[Na],ea[0xe068],ea[0x8bb3],0b10100 i,e=0b1010111,ha-qa f=Qa[e]l[Na]=f end elseif i<=0x351 then if i>0x34e then da,i,c=wa.__iter,0x145020/i,Q else i,e=0x9a14c/i,ga-l end else l=0xb2 i=La<=l and 0x613-i or 0x3e1 end elseif i>0x359 then Q,la,i,ha,z,qa=l+e,1,0x8ac,T[0b1010][1][T[0b1010][0b11]],l,Qa Q=Q-la elseif i>=0x358 then if i<=0x358 then qa=Na<=e ha=not qa i=ha and 0x5da-i or i+-0x206 else Na,f=ea[0x64ac],0x2c l,Na=Na-f,nil i,Qa[l]=0x1233f/i,Na e,f=0x27,ea[0xe068]Na=f-e l,ha,e=Qa[Na],0x28,ea[0x83b5]f=e-ha ha,Na,qa=ea[0xa2f0],Qa[f],0b10100 e=ha-qa f=Qa[e]l[Na]=f end else Q,la=qa[1],qa[0b11]z=Q[la]qa[0b10]=z qa[1]=qa z=0b10 i,qa[0b11]=i+-0x26f,z z=nil X[ha]=z end elseif i<=0x365 then if i<0x361 then if i>=0x35e then if i>0x35e then Na,f=ea[0x64ac],0b1001 i,l,f=0x57,Na-f,{}Na=f Qa[l]=Na f,e=ea[0xe068],0b101 Na=f-e qa,l,ha,Na=0x12,Qa[Na],ea[0x83b5],ea[0x8bb3]e=ha-qa f=Qa[e]l[Na]=f else Q=1 i,z=0x272,f-Q end else Na,f=ea[0x64ac],0b1110 Na,l=ea[0x8bb3],Na-f Qa[l]=Na Na,f=ea[0xe068],0b11001 l,e,f=Na-f,0b11,ea[0x83b5]Na,e=f-e,1 ha,f,e=-1,Na-e,nil i=f==ha and 0x3f9 or 0x202 end elseif i>=0x364 then if i<=0x364 then la=qa(z,Q)Q=la i=Q==nil and i+-0b10110101 or i+-0b101000100 else i,wa=0x148,c end else i=e and 0xa1f9f/i or 0x5ee-i end elseif i<=0x368 then if i<0x367 then f,Na=0b101111,ea[0x64ac]l=Na-f Na,e=Qa[l],T[0b100][1][T[0b100][0b11]]i,ha=0x9d2,Na elseif i<=0x367 then ha,Na,e=0b111111,T[0b1111][1][T[0b1111][0b11]],ea[0xe068]f=e-ha l,e,f=Na[f],0x2a,ea[0x64ac]Na,ha,e=f-e,l[0b11],l[1]f=e[ha]Qa[Na]=f e,i,f=0b1001,0x3be-i,ea[0x83b5]qa,Na,z=ea[0xa2f0],f-e,0b111010 ha=qa-z e=Qa[ha]f=#e Qa[Na]=f else Na,f=ea[0x64ac],0b1111 Na,l,e=ea[0xe068],Na-f,1 f,ha=l+e,0b10 wa,e,Q=1,l+ha,Qa[l]F=l+wa la,da=Qa[F],ha i,wa=0xd02,l+da c,da,F=Q,T[0b100][1][T[0b100][0b11]],Qa[wa]end elseif i>0x369 then la,Q=1,l+z ga=Q-la i=K>la and i+-0x1bf or 0b1000010 else i,Q=0x243ba/i,1 z=f-Q end elseif i<=0x331 then if i<=0x329 then if i>=0x326 then if i>=0x328 then if i<=0x328 then e,i,f=0b100101,0x37f-i,ea[0x64ac]Na=f-e e,l,ha=ea[0xe068],Qa[Na],0b1001 f=e-ha Na,ha,qa=Qa[f],ea[0x83b5],0x2a e=ha-qa f=Qa[e]l[Na]=f else l=0b1111001 i=La<=l and 0xd5 or i+-0x244 end elseif i>0x326 then ha=1 i,e=0x235,Na-ha else l=0b1000000 i=La>l and 0x19c or 0x184 end elseif i>=0x31f then if i<=0x31f then l=0b110001100 i=La<=l and i+-0b10111011 or i+-0x1c2 else f,Na=0b111001,ea[0x64ac]f,l={},Na-f Na=f Qa[l]=Na f,Na=0b1010,ea[0xe068]ha,l,e=0x11,Na-f,ea[0x83b5]f,e=e-ha,1 f,Na=-1,f-e i=Na==f and 0x21a or 0x3e2 end else i=e and 0x667-i or 0x48f-i end elseif i<0x32e then if i<=0x32a then Na,ha,e=T[0b1111][1][T[0b1111][0b11]],0x21,ea[0xe068]f=e-ha e,f,l=0b10001,ea[0x64ac],Na[f]Na,ha,e=f-e,l[0b11],l[1]f=e[ha]Qa[Na]=f e,f=0b10101,ea[0x83b5]Na,ha,qa=f-e,ea[0xa2f0],0b111110 ha,e=1,ha-qa i,f=0x381-i,e==ha Qa[Na]=f else Na,f=ea[0x64ac],0b1110 l,ha,e=Na-f,0b111000,ea[0xe068]e,f=1,e-ha Na=f==e Qa[l]=Na Na,f=ea[0x83b5],0b100110 qa,l,ha=0b110,Na-f,ea[0xa2f0]e=ha-qa f=Qa[e]Na=not f i,Qa[l]=0x1144b/i,Na end elseif i>=0x330 then if i<=0x330 then Q,z=1,Y[Aa]la,Q,Aa=1,z[0x64ac],Aa+Q i=Q==la and 0x135 or 0x3e3 else f,e=ea[0x64ac],0b10000 Na=f-e l,qa,ha,i,Na=Qa[Na],0x2a,ea[0xe068],0x57,ea[0x8bb3]e=ha-qa f=Qa[e]l[Na]=f f,Na=0x1d,ea[0x83b5]l,f=Na-f,{}Na=f Qa[l]=Na end else z,i,F,qa,la,Q=Qa,0x21dbd4/i,1,T[0b1010][1][T[0b1010][0b11]],Na+ha,Na la=la-F end elseif i>=0x341 then if i<0x347 then if i>0x341 then f,Na=0b1000,ea[0x64ac]e,l,f=0b1101,Na-f,ea[0xfb62]Na=f-e i,Qa[l]=0x39a-i,Na f,Na=0x25,ea[0xe068]Na,l=ea[0x85c0],Na-f Qa[l]=Na else f,Na=0b111111,ea[0x64ac]qa,ha,l=0b110,ea[0xe068],Na-f e=ha-qa qa,f,z=ea[0x83b5],Qa[e],0b100001 ha=qa-z i,e=i+-0x2ea,Qa[ha]Na=f..e Qa[l]=Na ha,Na,e=0x2f,T[0b1111][1][T[0b1111][0b11]],ea[0xb2f5]f=e-ha e,l,f=0x16,Na[f],ea[0xa2f0]ha,e,Na=l[0b11],l[1],f-e f=e[ha]Qa[Na]=f end elseif i>=0x348 then if i>0x348 then i,ha,qa=i+0x6cd,Qa[l],T[0b1000][1][T[0b1000][0b11]]z,la,Q,wa=ha,Qa,T[0b1010][1][T[0b1010][0b11]],1 wa,F=l+e,l+wa else z=qa[0b11]i=z>=l and i+0b1111 or 0b11101000 end else Q,la,wa,i,F,c,da=T[0b1110][1][T[0b1110][0b11]],qa,z,0xf0e,1,Qa,l end elseif i<0x338 then if i>0x333 then e,ha,Na=ea[0xe068],0x29,T[0b1111][1][T[0b1111][0b11]]f=e-ha l,f,e=Na[f],ea[0x64ac],0b110100 Na,e,ha=f-e,l[1],l[0b11]f=e[ha]Qa[Na]=f f,i,e=ea[0x83b5],i+-0x2de,0b101000 z,qa,Na=0b1101,ea[0xa2f0],f-e ha=qa-z e=Qa[ha]f=not e Qa[Na]=f else Na,ha,e=T[0b1111][1][T[0b1111][0b11]],0x38,ea[0xe068]f=e-ha l=Na[f]qa,Na,z,f=ea[0x64ac],l[1],0x3e,l[0b11]ha=qa-z i,e=0b1010111,Qa[ha]Na[f]=e f,e=ea[0x83b5],0b101 e,Na,ha=ea[0xfb62],f-e,0b101110 f=e-ha Qa[Na]=f end elseif i<=0x339 then if i<=0x338 then qa=0x47a16e0e i=ha~=qa and 0x41d or 0x961-i else i,Aa=0b1010111,Aa+f end else f,Na=0x3f,ea[0x64ac]Na,l=ea[0x8bb3],Na-f Qa[l]=Na Na,f=ea[0xe068],0b11111 e,l,ha=ea[0x83b5],Na-f,0b11100 f,e=e-ha,1 Na,f=f-e,-1 i=Na==f and 0x274 or 0xf0 end elseif i>0x3a4 then if i>=0x3b5 then if i<0x3c0 then if i>=0x3bc then if i<0x3be then Na,f=ea[0x64ac],0b11100 l,Na=Na-f,nil Qa[l]=Na Na,f=ea[0xe068],0x19 l,Na=Na-f,ea[0x8bb3]i,Qa[l]=0x144e4/i,Na elseif i<=0x3be then ha=1 i,e=0b101101000,Na-ha else f,Na=0x16,ea[0x64ac]ha,qa,l=ea[0xe068],0b100110,Na-f e=ha-qa f,qa,z=Qa[e],ea[0x83b5],0x19 ha=qa-z e=Qa[ha]Na=f<e Qa[l]=Na f,Na=0b1011,ea[0xa2f0]ha,l,qa=ea[0xb2f5],Na-f,0x28 e=ha-qa f=Qa[e]Na=not f Qa[l]=Na i=L>z and 0x416-i or 0x52 end elseif i<=0x3b5 then da,i,S=T[1][1][T[1][0b11]],0x2b233f/i,0x11 S,D,ra=T[0b1011][1][T[0b1011][0b11]],F,qa*S else ha,e=1,ea[0x64ac]l,ha,e=e-ha,0b1110,ea[0xe068]ha,Na,e=0b1010,e-ha,ea[0x83b5]ha,f=0,e-ha e=Na==ha i=e and i+-0b10101111 or 0x48e76/i end elseif i>=0x3c5 then if i>=0x3c6 then if i<=0x3c6 then Na,f=ea[0x64ac],0x2e ha,l,qa=ea[0xe068],Na-f,0b1011 e=ha-qa e,f=ea[0x8bb3],Qa[e]Na=f[e]Qa[l]=Na f,Na=0x30,ea[0x83b5]Na,l=nil,Na-f Qa[l]=Na i=h>qa and i+-0x36f or 0x167 else i,Aa=0x41e-i,Aa+Na end else f,Na=0x35,ea[0x64ac]e,l,ha=ea[0xe068],Na-f,0b1100 f=e-ha Na=Qa[f]i,Qa[l]=i+-0x36e,Na e,Na,ha=ea[0xa2f0],T[0b1111][1][T[0b1111][0b11]],0b110010 f=e-ha f,e,l=ea[0x83b5],0b11101,Na[f]e,Na,ha=l[1],f-e,l[0b11]f=e[ha]Qa[Na]=f end elseif i<=0x3c0 then i,e=0xdf,ga-l else i,Q,la=0x28028/i,l+z,1 ga=Q-la end elseif i<=0x3ad then if i<=0x3ab then if i<0x3a9 then if i<=0x3a7 then i,Aa=0b1010111,Aa+f else i,Q=0x2c3,1 z=f-Q end elseif i<=0x3a9 then z,Q=Y[Aa],1 la,Q,Aa=1,z[0x64ac],Aa+Q i=Q==la and 0x245 or 0x84 else f,Na=0x39,ea[0x64ac]ha,l,qa=ea[0xe068],Na-f,0b1100 e=ha-qa f,z,qa=Qa[e],0b10100,ea[0x83b5]i,ha=0x402-i,qa-z e=Qa[ha]Na=f>e Qa[l]=Na end elseif i<=0x3ac then i,ha,qa=0x155,ga-l,1 e=ha+qa else qa,i,z=Qa[Na],0xae9,T[0b1000][1][T[0b1000][0b11]]da,F,la,Q=1,Qa,T[0b1010][1][T[0b1010][0b11]],qa wa,da=Na+da,Na+ha end elseif i<=0x3b2 then if i<=0x3af then if i>0x3ae then i,ha,Na,e=0x14079/i,0b100001,T[0b1111][1][T[0b1111][0b11]],ea[0xe068]f=e-ha Na,l=ea[0x64ac],Na[f]e,ha=l[1],l[0b11]f=e[ha]Qa[Na]=f f,e=ea[0x83b5],0x12 e,Na,ha=ea[0xfb62],f-e,0b11 f=e-ha Qa[Na]=f else i=e<ha and 0x318 or i+0x2b8 end else Na,e,ha=T[0b1111][1][T[0b1111][0b11]],ea[0xe068],0b110111 f=e-ha f,e,l=ea[0x64ac],0b10001,Na[f]ha,Na,e=l[0b11],f-e,l[1]f=e[ha]Qa[Na]=f ha,qa=ea[0x83b5],0x29 qa,ha,Na=0b100010,ea[0xa2f0],ha-qa ha,f,qa=ea[0xb2f5],ha-qa,0x33 qa,e=0,ha-qa ha=f==qa i=ha and 0x212 or 0x2e8 end else i,Na,ha,e=0x57,T[0b1111][1][T[0b1111][0b11]],0b10011,ea[0xe068]f=e-ha e,l,f=0b110,Na[f],ea[0x64ac]e,ha,Na=l[1],l[0b11],f-e f=e[ha]Qa[Na]=f e,f=0x12,ea[0x83b5]Na,ha=f-e,ea[0xa2f0]z,e,Q=ea[0xb2f5],Qa[ha],0x27 qa=z-Q ha=Qa[qa]f=e-ha Qa[Na]=f end elseif i<=0x385 then if i<0x37c then if i<=0x376 then if i>=0x374 then if i>0x374 then c=wa i=c and 0x64b-i or 0x3fa else ha,e=0b100,ea[0x64ac]e,ha,l=ea[0xe068],0x27,e-ha e,Na,ha=ea[0x83b5],e-ha,0b100100 f,ha=e-ha,0 e=Na==ha i=e and 0x462-i or 0x31c end else i=qa~=qa and 0b1010111 or 0x330 end elseif i>0x378 then i,Aa=0x57,Aa+e else Aa=Aa+f i=ua>=O and 0x57 or i+-0x263 end elseif i>0x380 then if i<=0x382 then Na,f=ea[0x64ac],0b1100 e,f,l=0b110101,ea[0xe068],Na-f e,Na,ha=ea[0xeb5],f-e,0b110 f,qa,ha=e-ha,0b110,ea[0x9019]e,ha,qa=ha-qa,Qa[l],Qa[Na]i=ha<qa and 0x52a-i or 0x37b else i,Aa=0x3dc-i,Aa+e end elseif i>=0x37e then if i<=0x37e then l=0xbb i=La<=l and 0x227 or i+-0x10f else wa={}wa[0b11]=la i,wa[1]=0x23c,Qa F=wa X[la]=F end elseif i<=0x37c then I,b=0x25,T[1][1][T[1][0b11]]_,i,ja,I=J,i+0x14e,c*I,T[0b1011][1][T[0b1011][0b11]]else f,Na=0b11100,ea[0x64ac]ha,e,l=0b111,ea[0xe068],Na-f f,e=e-ha,1 i,Na=0x3d4-i,f==e Qa[l]=Na Na,f=ea[0x83b5],0x3b f,l,e=ea[0xfb62],Na-f,0b100011 Na=f-e Qa[l]=Na end elseif i<0x39a then if i<0x391 then if i<=0x387 then z=qa[0b11]i=z>=l and i+-0x157 or 0xd4 else Na,f=ea[0x64ac],0b101011 e,l,ha=ea[0xe068],Na-f,0x3e f=e-ha Na=Qa[f]Qa[l]=Na f,Na=0b101,ea[0x83b5]l,Na=Na-f,ea[0x8bb3]i,Qa[l]=0x57,Na end elseif i>=0x392 then if i>0x392 then Na,f=ea[0x64ac],0x23 l,ha,qa=Na-f,ea[0xe068],0b1001 e=ha-qa qa,z,f=ea[0x83b5],0x1b,Qa[e]ha=qa-z e=Qa[ha]i,Na=0b1010111,f-e Qa[l]=Na else z,qa=0b10,ea[0xeb5]ha=qa-z i,Aa=0x57,Aa+ha end else la=z[0xe068]F,wa=X[la],nil i=F==wa and i+-0b10001 or 0x23c end elseif i>0x3a2 then if i<=0x3a3 then f,Na=0x13,ea[0x64ac]i,ha,l,qa=0b1010111,ea[0xe068],Na-f,0b11 e=ha-qa f=Qa[e]Na=not f Qa[l]=Na else i,e=0x656-i,ga-l end elseif i<0x39d then la,Q=1,l+z i,ga=0x272,Q-la elseif i>0x39d then qa,z=qa(m.i(z))Q=0 i=f==Q and 0x2e1 or 0b101110001 else l=0x4b i=La<=l and 0x492b4/i or 0x41d-i end elseif i<0x80f then if i>0x564 then if i>=0x67d then if i<0x752 then if i>0x6b5 then if i<=0x6e1 then if i<=0x6d7 then if i<=0x6bd then ha(qa,z,Q,la,F)qa=0b10 Q,ha=0b11,l+qa z=l+Q qa=Qa[z]Qa[ha]=qa z=0b10 qa=l+z ha,qa=Qa[qa],nil i=ha==qa and 0x197aa8/i or 0x2aa else i=e>ha and i+-0x3bf or 0xcdc end else i=qa~=qa and 0xd22 or 0x2a8 end else ha(qa,z,Q,la,F)qa=0b10 ha,Q=l+qa,0b11 z=l+Q qa=Qa[z]Qa[ha]=qa z=0b10 qa=l+z qa,ha=nil,Qa[qa]i=ha==qa and 0x10edee/i or i+-0x3a1 end elseif i>0x6a2 then if i>0x6b2 then i=qa<=0 and 0x6a2 or 0xa20-i else ha=ha(qa,z)Qa[e]=ha ha,e=Na,1 qa=e i=ha~=ha and 0x14b6b0/i or i+-0xf8 end elseif i<0x69f then if i<=0x67d then i=qa~=qa and 0x54866b/i or 0x537 else da=da(c,ra)i,qa=0x7b388/i,da end elseif i<=0x69f then i=e>ha and 0b1010111 or 0x6e1 else i=e<ha and i+-0x64b or 0x36b end elseif i>0x780 then if i<0x7c1 then if i<=0x7ae then wa=Q(la,F)F=wa i=F==nil and i+-0x36d or 0xe4d else f(e,ha,qa,z,Q)i=xa<ha and 0b10000101 or 0x57 end elseif i<0x7d0 then i,z=i+-0x35a,m.h(z(m.i(Q)))elseif i<=0x7d0 then qa=qa(z)F,z,Q,i,la=".",0x1505,T[0b10][1][T[0b10][0b11]],0xe09,qa else Q(la,F,wa,da,c)wa,da,la=ea[0xb2f5],0b110000,T[0b1111][1][T[0b1111][0b11]]F=wa-da F,Q,wa=ea[0xa2f0],la[F],0x1c la,wa,da=F-wa,Q[1],Q[0b11]F=wa[da]Qa[la]=F i=v<Ca and 0xb20-i or 0x57 end elseif i<0x77b then if i>0x76e then i=da and 0x127c-i or 0xb3a-i elseif i>0x752 then da,c=la(F,wa)wa=da i=wa==nil and 0x7c5-i or 0x185 else qa,z=qa(m.i(z))Q=0 i=f==Q and i+-0x5a9 or i+-0x64f end elseif i<=0x77c then if i<=0x77b then i,Q=0xc10,m.h(Q(la,F,wa))else i,e=i+-0x4dd,m.h(e(ha,qa))end else ha=ha(qa)z=0b10 i,qa=i+-0x157,l+z Qa[qa]=ha e=ha end elseif i<0x612 then if i>0x5ba then if i>=0x600 then if i<=0x600 then i,z=0xd52-i,m.h(z(m.i(Q)))else ja=ja(I,_)S=ja i=fa>=_ and 0x848-i or 0xc9a end elseif i<=0x5d1 then qa,z=qa(m.i(z))Q=0 i=f==Q and i+-0x3a4 or 0x10e197/i else i=e>ha and 0x201d8/i or i+0b11001101 end elseif i>=0x59f then if i<=0x5a1 then if i<=0x59f then i,z=i+-0x3b,m.h(z(m.i(Q)))else i,f=0x6b2,f(e)ha,qa=ea[0x64ac],0x33 e,ha,z,qa=ha-qa,T[0b10001][1][T[0x11][0b11]],f,l end else i=qa>0 and 0xeef-i or 0xf43 end elseif i<0x56f then qa,z=qa(m.i(z))Q=0 i=f==Q and i+-0x346 or 0x814b6/i elseif i<=0x56f then i,c=0xd1d-i,c(ra,S)z=c else i,Q=0x59f,m.h(Q(la,F,wa))end elseif i>0x629 then if i>=0x65c then if i>0x65c then i=qa~=qa and 0x318 or 0xa0f-i else i,Q=0xbc0,m.h(Q(la,F,wa))end elseif i<=0x63b then i,ha,e=0x463d22/i,f,T[0b111][1][T[0b111][0b11]]else Q(la,F,wa,da,c)i=B>=F and 0x57 or 0x364 end elseif i>0x620 then if i<=0x626 then i,f=0x469642/i,f(e)ha,qa=ea[0x64ac],0b1101 ha,qa,z,e=T[0x11][1][T[0b10001][0b11]],l,f,ha-qa else ha=0 i=e>ha and 0xf04 or 0x405e6b/i end elseif i<0x614 then if i<=0x612 then i,e=0x508,m.h(e(ha,qa))else z,Q=z(m.i(Q))la=0 i=e==la and 0x2b7 or 0x19b end elseif i>0x614 then da,c,ra=da(c)i,z,qa,ha=0b101010100,ra,c,da else qa,z=qa(m.i(z))Q=0 i=f==Q and 0x84f58/i or 0x71f-i end elseif i<=0x3f9 then if i<0x3e4 then if i<=0x3d9 then if i>0x3d5 then if i>0x3d6 then Na,f=ea[0x64ac],0b10000 l,e,f,Na=Na-f,nil,nil,X Na,f,e=m.g(Na,f,e)ha,qa=Na(f,e)e=ha i=e==nil and 0x22a or i+-0b10010001 else wa={}i,wa[0b11]=0x268,la wa[1]=Qa F=wa X[la]=F end elseif i>=0x3cb then if i>0x3cb then f,Na=0x1f,ea[0x64ac]ha,l,e=0b10101,Na-f,ea[0xe068]f=e-ha Na=Qa[f]Qa[l]=Na ha,Na,e=0x3f,T[0b1111][1][T[0b1111][0b11]],ea[0xa2f0]f=e-ha i,l=0b1010111,Na[f]Na,z,qa,f=l[1],0b11,ea[0x83b5],l[0b11]ha=qa-z e=Qa[ha]Na[f]=e else Na,f=ea[0x64ac],0x13 Na,l=ea[0x8bb3],Na-f Qa[l]=Na Na,f=ea[0xe068],0b100101 l,ha,e=Na-f,0b101010,ea[0x83b5]e,f=1,e-ha Na=f==e Qa[l]=Na i=oa<=ha and 0b1000100 or 0x149fd/i end elseif i>0x3c8 then z,qa,i,ha=F,la,0b101010100,Q else z,qa=0b1100,ea[0x9019]i,ha=0x57,qa-z Aa=Aa+ha end elseif i<0x3e1 then if i>0x3dd then Na,f=ea[0x64ac],0b11000 Na,l=ea[0x8bb3],Na-f Qa[l]=Na i,Na,f=0x57,ea[0xe068],0x31 l,e,f=Na-f,ea[0x71f5],T[0b1101][1][T[0b1101][0b11]]Na=f[e]Qa[l]=Na else Na,i,f=ea[0x64ac],0b1010111,0b1110 l,ha,qa=Na-f,ea[0xe068],0x18 e=ha-qa f=Qa[e]Na=#f Qa[l]=Na f,Na=0x3c,ea[0x83b5]e,f,l=0x14,ea[0xfb62],Na-f Na=f-e Qa[l]=Na end elseif i<=0x3e2 then if i>0x3e1 then f,i,z,Q,qa,ha,e=T[0b1110][1][T[0b1110][0b11]],0x7b2,l,Qa,Na,1,w[0x80c6]else Na,ha,e=T[0b1111][1][T[0b1111][0b11]],0b101000,ea[0xe068]f=e-ha f,e,l=ea[0x64ac],0x2a,Na[f]Na,ha,e=f-e,l[0b11],l[1]f=e[ha]Qa[Na]=f e,ha=ea[0x83b5],0b1111 f=e-ha Na,qa,ha=Qa[f],0b1111,ea[0xa2f0]e=ha-qa f,qa,z=Qa[e],ea[0xb2f5],0x30 i,ha=0x15177/i,qa-z e=Qa[ha]Na[f]=e end else i,wa,F=0b110111100,z[0xe068],T[0b1111][1][T[0b1111][0b11]]la=F[wa]f[e]=la end elseif i>0x3f2 then if i<=0x3f6 then if i>=0x3f4 then if i>0x3f4 then Na,f=ea[0x64ac],0b10111 e,l,f=0b11110,Na-f,ea[0xe068]e,ha,Na=ea[0xeb5],0b11111,f-e f,qa,ha=e-ha,0x2d,ea[0x9019]ha,e,qa=Qa[l],ha-qa,Qa[Na]i=ha>qa and 0x72f-i or 0x32ff4/i else i,f[e]=i+-0x238,F end else Na,ha,e=T[0b1111][1][T[0b1111][0b11]],0b1001,ea[0xe068]f=e-ha l=Na[f]Na,f,qa,z=l[1],l[0b11],ea[0x64ac],0x20 ha=qa-z e=Qa[ha]Na[f]=e f,e=ea[0x83b5],0x29 qa,z,Na=ea[0xa2f0],0b1100,f-e ha=qa-z e=Qa[ha]f=not e i,Qa[Na]=0x57,f end elseif i<=0x3f7 then ha,Na,e=0x2b,T[0b1111][1][T[0b1111][0b11]],ea[0xe068]f=e-ha l=Na[f]Na,qa,f,z=l[1],ea[0x64ac],l[0b11],0b111011 ha=qa-z e=Qa[ha]Na[f]=e f,e=ea[0x83b5],0b101011 ha,Na,e=0b1001,f-e,ea[0xa2f0]ha,f=1,e-ha ha,e,qa=nil,f-ha,-1 i=e==qa and i+-0b101000100 or 0x1a1 else qa,ha=1,ga-l i,e=0b110111110,ha+qa end elseif i>=0x3eb then if i>=0x3f0 then if i<=0x3f0 then f,i,e=T[0b111][1][T[0b111][0b11]],0x4b0,Na else Na,f=ea[0x64ac],0b1011 Na,l=ea[0x8bb3],Na-f Qa[l]=Na f,Na=0b1010,ea[0xe068]i,Na,l=0x449-i,ea[0x71f5],Na-f Qa[l]=Na end else Na,f=ea[0x64ac],0x12 ha,l,e=0x31,Na-f,ea[0xe068]f=e-ha Na=Qa[f]Qa[l]=Na e,f=0b1101,ea[0xb2f5]i,Na=0xf03-i,f-e e,l,f=0x26,ta[Na],ea[0xa2f0]f,Na=T[0x10][1][T[0x10][0b11]],f-e e=Na end elseif i>0x3e8 then qa,z=f(e,ha)ha=qa i=ha==nil and 0x15486/i or i+-0b110011110 elseif i<=0x3e4 then Na,ha,e=T[0b1111][1][T[0b1111][0b11]],0x30,ea[0xe068]f=e-ha l=Na[f]qa,Na,f,z=ea[0x64ac],l[1],l[0b11],1 ha=qa-z e=Qa[ha]Na[f]=e f,e=ea[0x83b5],0x18 f,Na=ea[0x8bb3],f-e Qa[Na]=f i=N>z and i+-0x38d or 0xe5e else f,Na=0b110,ea[0x64ac]e,i,l,ha=ea[0xe068],0b1010111,Na-f,0b111001 e,f=1,e-ha Na=f==e Qa[l]=Na f,Na=0b110000,ea[0x83b5]l,e,f=Na-f,ea[0x8bb3],T[0b1101][1][T[0b1101][0b11]]Na=f[e]Qa[l]=Na end elseif i>=0x44e then if i<=0x4db then if i>0x4b0 then if i>0x4ca then f(e,ha,qa,z,Q)i=t>=ha and i+-0x484 or 0x1328-i else i,I=0x94f,I(_)E,ja=ja+I,4294967295 end elseif i>0x467 then f=f(e)Qa[l]=f i,Na=0x8e170/i,f elseif i>=0x464 then if i>0x464 then qa,z=qa(m.i(z))Q=0 i=f==Q and 0xea6cc/i or 0x101898/i else qa=0b10 i,ha=0x224d40/i,l+qa qa,e=T[0b100][1][T[0b100][0b11]],Qa[ha]z=e end else i,Q=i+0xb0c,m.h(Q(la,F,wa))end elseif i<0x537 then if i<=0x4ea then i=0x57 Q(la,F,wa,da,c)else f,e=f(m.i(e))ha,qa,i,Q,F,z=T[0b1110][1][T[0b1110][0b11]],f,0x6bd,Na,0b11,1 F,la=Qa,l+F end elseif i<=0x537 then i=qa<=0 and i+0x7d0 or 0x330 else qa,z=qa(m.i(z))Q=0 i=f==Q and 0x6615c/i or 0x626-i end elseif i<0x418 then if i<0x3fe then if i>0x3fa then ra,c=nil,wa.__iter i,da=0x194,c~=ra else fa,ra=0xdb,nil da=c==ra i=da and 0x82e or 0x771 end elseif i<=0x400 then if i>0x3fe then i,Q=i+0x200,m.h(Q(la,F,wa))else ha=1 e=Na-ha i=ka>=ha and 0x758-i or 0x3e8 end else Q(la,F,wa,da,c)la,wa,da=T[0b1111][1][T[0b1111][0b11]],ea[0xb2f5],0b10101 F=wa-da Q=la[F]c,F,ra,la=ea[0xa2f0],Q[0b11],0b1101,Q[1]da=c-ra wa=Qa[da]la[F]=wa i=k<ra and 0x32d or 0x161c7/i end elseif i<0x43b then if i>0x418 then i,ha,qa=0x1ed980/i,T[0b111][1][T[0b111][0b11]],e else i,z=0x81b,m.h(z(m.i(Q)))end elseif i>=0x441 then if i<=0x441 then i,ha=0x338,z else z,qa=0b110,ea[0x9019]i,ha=0x174cf/i,qa-z Aa=Aa+ha end else i,Q=0x418,m.h(Q(la,F,wa))end elseif i>=0xba6 then if i<=0xdba then if i<0xc9f then if i<0xbf5 then if i<0xbd0 then if i>0xba6 then i,z=0x5d1,m.h(z(m.i(Q)))else i=qa<=0 and 0x1a48-i or i+-0x29d end elseif i>0xbd2 then Q(la,F,wa,da,c)F,la=0b1101,ea[0xa2f0]F,Q={},la-F i,la=i+-0xb91,F Qa[Q]=la elseif i<=0xbd0 then wa=wa(da)c=nil da=wa~=c i=da and 0xfcb-i or 0xd64-i else ra,S,D=ra(S,D)ra,S,D=m.g(ra,S,D)J=ra(S,D)D=J i=D==nil and 0x365 or i+-0x856 end elseif i>=0xc29 then if i>0xc7b then b=D(J,za)za=b i=za==nil and 0xe5e or 0x679e4a/i elseif i<=0xc29 then i=e>ha and 0b1010111 or 0x4ee605/i else Q(la,F,wa,da,c)la,F=ea[0xa2f0],1 Q,wa,da=la-F,ea[0xb2f5],0b11001 F,wa=wa-da,1 la=F==wa i,Qa[Q]=0x57,la end elseif i>=0xc10 then if i>0xc10 then i=qa>0 and 0x12b6-i or 0x6e1 else i,z=0x614,m.h(z(m.i(Q)))end else i,z=0x979,m.h(z(m.i(Q)))end elseif i>0xd22 then if i>=0xd8c then if i<=0xd93 then if i>0xd8c then ha=ha(qa,z)Qa[e]=ha e,ha=1,Na qa=e i=ha~=ha and 0x49cf5/i or 0xc17 else i,z=i+-0x3a9,m.h(z(m.i(Q)))end else i,Q=0xa42102/i,m.h(Q(la,F,wa))end elseif i<=0xd3b then Q(la,F,wa,da,c)la,F=ea[0xa2f0],0x16 la,Q=nil,la-F Qa[Q]=la i=u>F and 0x47f0d/i or i+-0xb30 else da=m.h(da(c,ra,S))return m.i(da)end elseif i>=0xd02 then if i>0xd07 then i=e<ha and 0xd79-i or 0x123626/i elseif i>0xd02 then i=e<ha and 0x46d61/i or 0x330 else i,da=0xbd2,da(c)S,ra,D,c=da,T[0b10][1][T[0b10][0b11]],".",0x1003f end elseif i<=0xcdc then if i>0xc9f then i=qa<=0 and i+-0x92e or 0x5247a8/i else i,z,qa=0x57,0b110,ea[0x9019]ha=qa-z Aa=Aa+ha end else i=qa>0 and 0x191e-i or 0x67d end elseif i<0xed9 then if i>=0xe80 then if i>=0xeab then if i>=0xeb5 then if i<=0xeb5 then qa=m.h(qa(z,Q,la))return m.i(qa)else Q(la,F,wa,da,c)la,F=ea[0xa2f0],0x17 wa,Q,F=0b10011,la-F,ea[0xb2f5]la,wa=F-wa,1 wa,da,F=nil,-1,la-wa i=F==da and 0x1189-i or 0x18fba0/i end else i,ra=i+-0x73a,0x5024717f da=c==ra end elseif i>0xe80 then i=e<ha and 0x4f90e/i or 0x17ab-i else qa,z,Q=qa(z,Q)qa,z,Q=m.g(qa,z,Q)la=qa(z,Q)Q=la i=Q==nil and 0x2af or 0x220 end elseif i>0xe4d then if i<=0xe5e then i,c=0xeab,S else qa,z=qa(m.i(z))Q=0 i=f==Q and 0x2eb or i+-0xba2 end elseif i<0xe09 then i,Ga=i+-0x7db,Ga(Fa)_,I=4294967295,_+Ga elseif i<=0xe09 then Q,la,F=Q(la,F)Q,la,F=m.g(Q,la,F)wa=Q(la,F)F=wa i=F==nil and 0x3bb449/i or 0xe4d else c,D=T[1][1][T[1][0b11]],0b10001 i,J,D,S=0x910,wa,T[0b1011][1][T[0b1011][0b11]],z*D end elseif i>0xf5a then if i<0xfb1 then if i<=0xf5e then i,wa=0x12c2-i,wa(da,c)ha=wa else i,z=0x1791-i,m.h(z(m.i(Q)))end elseif i<=0xfb1 then i,ha=i+-0xd8,ha(qa)z,Q,la,qa=T[0b10][1][T[0b10][0b11]],ha,".",0x1505 else i=0x57 Q(la,F,wa,da,c)end elseif i<=0xf0e then if i<0xf04 then if i>0xed9 then ha=m.h(ha(qa,z,Q))return m.i(ha)else z,Q,la=z(Q,la)z,Q,la=m.g(z,Q,la)F=z(Q,la)la=F i=la==nil and 0x2ad or 0x3b5 end elseif i>0xf04 then i=0x57 Q(la,F,wa,da,c)else qa=Na<=f ha=not qa i=ha and i+-0xabb or i+-0x621 end elseif i>0xf43 then i,z=0x312,m.h(z(m.i(Q)))else i=qa~=qa and 0x8e2 or 0x817 end elseif i>=0x9e3 then if i>0xadd then if i<0xb5b then if i>=0xb18 then if i>=0xb1a then if i>0xb1a then e=e(ha)i,qa=0x464,1 ha=l+qa Qa[ha]=e f=e else i,ra=0xb72,ra(S)D,za,J,S=T[0b10][1][T[0b10][0b11]],".",ra,0x1003f end else f=f(e)i,qa,ha=0x9696c8/i,0x1c,ea[0x83b5]z,qa,e,ha=f,l,ha-qa,T[0b10001][1][T[0x11][0b11]]end elseif i<=0xae9 then i,la=0xa17,m.h(la(F,wa,da))else da,i,c=T[0b101][1][T[0b101][0b11]],i+-0b100011110,Q end elseif i<0xb77 then if i>0xb5b then D,J,za=D(J,za)D,J,za=m.g(D,J,za)b=D(J,za)za=b i=za==nil and 0x19d0-i or i+-0x339 else i,Q=0x284,m.h(Q(la,F,wa))end elseif i>0xb7b then i,S=i+-0x50b,S(D)ra,c=4294967295,ra+S elseif i<=0xb77 then i,Q=0xb1cb6e/i,m.h(Q(la,F,wa))else ha=ha(qa,z)Qa[e]=ha ha,e=Na,1 qa=e i=ha~=ha and 0x57 or i+0b101111010 end elseif i>0xa58 then if i<=0xaa6 then if i>0xaa3 then qa=m.h(qa(z,Q,la))return m.i(qa)elseif i<=0xa73 then qa=f<=Na ha=not qa i=ha and 0xc9f or 0x1356-i else i=0b1010111 Q(la,F,wa,da,c)la,F=ea[0xa2f0],0x11 c,Q,da=0x31,la-F,ea[0xb2f5]wa=da-c F=Qa[wa]la=not F Qa[Q]=la end elseif i<=0xadc then ha=m.h(ha(qa,z,Q))return m.i(ha)else i=e>ha and 0x3b11b/i or 0xba6 end elseif i<=0xa17 then if i<0x9ef then if i>0x9e3 then da,c,ra=da(c)z,ha,qa=ra,da,c i=ya>pa and i+-0x899 or 0x2c4 else qa,z=qa(m.i(z))Q=0 i=f==Q and i+-0x6d0 or 0b10101100 end elseif i<=0x9ef then Q(la,F,wa,da,c)F,la=0x2b,ea[0xa2f0]da,wa,Q=0x29,ea[0xb2f5],la-F F=wa-da i,la=i+-0x998,Qa[F]Qa[Q]=la else i,Q=0x613,m.h(Q(m.i(la)))end elseif i>0xa18 then ra=ra(S)i,c,da=i+0x506,4294967295,c+ra else i,Q=0x92f,m.h(Q(la,F,wa))end elseif i>0x909 then if i<=0x935 then if i<0x912 then if i<=0x910 then D=D(J)ra,i,S=S+D,i+-0x3a1,4294967295 else Q(la,F,wa,da,c)la,F=ea[0xa2f0],0b100110 F,Q,la,wa=nil,la-F,X,nil la,F,wa=m.g(la,F,wa)da,c=la(F,wa)wa=da i=wa==nil and 0x57 or 0x185 end elseif i>0x92f then i=e>ha and 0x318 or 0x1878-i elseif i<=0x912 then X=X(ta,ma)ma=T[0b11][1][T[0b11][0b11]]i,ta,Y=0b1010111,ma[0xdc36],ma ea,ma=Y,Y[0x64fa]Y,ea,La=ea[0xb463],nil,nil else i,z=i+-0x58d,m.h(z(m.i(Q)))end elseif i>0x984 then e=e(ha)qa,i,ha,z,Q=T[0b10][1][T[0b10][0b11]],0xe80,0x1505,e,"."elseif i<=0x979 then if i>0x94f then qa,z=qa(m.i(z))Q=0 i=f==Q and 0x2c5 or 0xc6c-i else i,b=i+-0x65f,b(E,ja)c=b end else i,Q=0x80e830/i,m.h(Q(la,F,wa))end elseif i>=0x848 then if i<=0x8e3 then if i<=0x8e2 then if i<=0x8ac then if i<=0x848 then i,z=0xe75,m.h(z(m.i(Q)))else ha=m.h(ha(qa,z,Q))return m.i(ha)end else i=e<ha and 0x318 or 0x3a9 end else z,qa=0b100011,ea[0xeb5]ha=qa-z i,Aa=0x57,Aa+ha end elseif i>0x8ef then i=qa~=qa and 0b1010111 or 0x163 else la(F,wa,da,c,ra)i=sa<wa and 0x3b3 or i+-0x898 end elseif i>0x81b then if i<=0x82e then i,S,ra=0xb1a,Q,T[0b100][1][T[0b100][0b11]]else Ga,ja=0b10111,T[1][1][T[1][0b11]]_,i,Fa,Ga=S*Ga,0x1617-i,b,T[0b1011][1][T[0b1011][0b11]]end elseif i>0x817 then qa,z=qa(m.i(z))Q=0 i=f==Q and 0x39a or 0xb79-i elseif i>0x80f then i=qa<=0 and 0x10f9-i or 0x3a9 else qa,z=qa(m.i(z))Q=0 i=f==Q and 0xb79-i or 0x213 end elseif i>0x110 then if i>0x1c0 then if i>=0x227 then if i<0x257 then if i<=0x23c then if i<=0x22e then if i<0x22c then if i<=0x228 then if i>0x227 then la,Q=1,l+z ga=Q-la i=H>=la and 0x682c8/i or 0x109 else Na,f=ea[0x64ac],0b1110 e,l,i,ha=ea[0xe068],Na-f,0x57,0x1c f=e-ha Na=Qa[f]Qa[l]=Na Na,f=ea[0x83b5],0b101 qa,l,ha=0b110,Na-f,ea[0xa2f0]e=ha-qa f,z,qa=Qa[e],0b110101,ea[0xb2f5]ha=qa-z e=Qa[ha]Na=f[e]Qa[l]=Na end else f,e=ea[0xe068],0x29 e,ha,Na=ea[0x83b5],0x39,f-e ha,f=1,e-ha e,ha,qa=f-ha,nil,-1 i=e==qa and 0b111010100 or i+0xa3 end elseif i<=0x22d then if i>0x22c then Q,la=l+z,1 i,ga=0x347,Q-la else f,Na=0b100000,ea[0x64ac]f,e,l=ea[0xe068],0x21,Na-f f,i,Na=ea[0x8bb3],0b1010111,f-e e,qa=Qa[Na],1 ha=l+qa Qa[ha]=e ha=e[f]Qa[l]=ha end else l=0xed i=La<=l and 0x27a or i+0x1c4 end elseif i<=0x238 then if i>0x235 then ha,e=0x3f,ea[0x64ac]e,l,ha=ea[0xe068],e-ha,0x1c e,Na,ha=ea[0x83b5],e-ha,0b11 ha,f=0,e-ha e=Na==ha i=e and 0x45e40/i or 0x24bf8/i elseif i>0x230 then ha,qa=Qa[l],T[0b1000][1][T[0b1000][0b11]]wa,la,i,z,Q=1,Qa,0x9b0-i,ha,T[0b1010][1][T[0b1010][0b11]]F,wa=l+wa,l+e else Q,la=qa[1],qa[0b11]z=Q[la]i,qa[0b10]=0x304-i,z qa[1]=qa z=0b10 qa[0b11]=z z=nil X[ha]=z end elseif i<=0x239 then i=0b1010111 ha(qa,z,Q,la,F)else i,f[e]=0x19f,F end elseif i>0x245 then if i<=0x255 then if i<=0x252 then if i<=0x24c then Q=z[0b11]i=Q>=Na and 0x3a4-i or 0x3ea else f,Na=0x39,ea[0x64ac]l,Na=Na-f,nil Qa[l]=Na f,Na=0b100001,ea[0xe068]Na,l,e=ea[0x83b5],Na-f,1 f,ha,e=Na-e,-1,nil i=f==ha and 0x88518/i or 0x20d end else f,Na=0x27,ea[0x64ac]ha,l,qa=ea[0xe068],Na-f,0x1f e=ha-qa z,qa,f=0b101100,ea[0x83b5],Qa[e]ha=qa-z e=Qa[ha]Na=f[e]Qa[l]=Na e,Na,ha=ea[0xb2f5],T[0b1111][1][T[0b1111][0b11]],0x22 f=e-ha f,e,l=ea[0xa2f0],0b1110,Na[f]Na,ha,e=f-e,l[0b11],l[1]f=e[ha]i,Qa[Na]=0b1010111,f end else f,Na=0x31,ea[0x64ac]l,ha,qa=Na-f,ea[0xe068],0b1011 e=ha-qa f=Qa[e]Na=-f Qa[l]=Na i=a>=qa and i+-0b111111111 or 0x149 end elseif i<0x242 then if i<=0x23e then f,Na=0x3b,ea[0x64ac]ha,qa,l=ea[0xe068],0b11,Na-f e=ha-qa f,z,qa=Qa[e],0b11101,ea[0x83b5]ha=qa-z e=Qa[ha]Na=f+e i,Qa[l]=0x295-i,Na Na,ha,e=T[0b1111][1][T[0b1111][0b11]],0b110001,ea[0xb2f5]f=e-ha f,l,e=ea[0xa2f0],Na[f],0x36 ha,e,Na=l[0b11],l[1],f-e f=e[ha]Qa[Na]=f else ha=1 i,e=i+0x24,Na-ha end elseif i>0x244 then la=z[0xe068]F,wa=X[la],nil i=F==wa and i+0x191 or i+0x23 elseif i<=0x242 then i,Q,c,wa,da,la,F=0x4ea,T[0b1110][1][T[0b1110][0b11]],Qa,z,l,qa,1 else Na,e,ha=T[0b1111][1][T[0b1111][0b11]],ea[0xe068],0b1100 f=e-ha l=Na[f]z,f,Na,qa=0b110001,l[0b11],l[1],ea[0x64ac]ha=qa-z e=Qa[ha]Na[f]=e i=Ia>=z and 0b1010111 or 0x2d3 end elseif i>0x26a then if i<=0x272 then if i>=0x26f then if i<=0x270 then if i>0x26f then l=0b11111101 i=La>l and 0x32a or 0x960f0/i else f,Na=0x2a,ea[0x64ac]l,i,Na=Na-f,0xd3b9/i,nil Qa[l]=Na f,Na=0b11100,ea[0xe068]l,ha,e=Na-f,0b101110,ea[0x83b5]f=e-ha Na=Qa[f]Qa[l]=Na end else F,Q,i,wa,la,da,c=1,T[0b1110][1][T[0b1110][0b11]],0xc7b,z,qa,l,Qa end elseif i<0x26c then i=e and 0b10000101 or 0x37a-i elseif i>0x26c then i,Na,f=0x2c5-i,ea[0x64ac],0b1011 e,ha,l=ea[0xe068],0b11111,Na-f f=e-ha Na=Qa[f]Qa[l]=Na else wa,F=z[0xe068],T[0b1111][1][T[0b1111][0b11]]i,la=0x3ed14/i,F[wa]f[e]=la end elseif i<=0x275 then if i>=0x274 then if i<=0x274 then Na=w[0x8f9]f,i,e=l+Na,0x24cc0/i,1 ga=f-e else Na,f=ea[0x64ac],0b111000 l,ha,qa=Na-f,ea[0xe068],0b110101 e=ha-qa qa,z,f=ea[0x83b5],0b110111,Qa[e]ha=qa-z i,e=0x57,Qa[ha]Na=f^e Qa[l]=Na end else ha,e=0x2b,ea[0x64ac]ha,e,l=0x3c,ea[0xe068],e-ha Na,ha,e=e-ha,0b101010,ea[0x83b5]ha,f=0,e-ha e=Na==ha i=e and 0x402-i or 0x1e8 end else ra,S,da,D,c=Q,Q+wa,T[0b1010][1][T[0b1010][0b11]],1,Qa i,S=i+0xadd,S-D end elseif i<=0x263 then if i>0x25f then if i<=0x260 then i,la,Q=0xde,qa[0b11],qa[1]z=Q[la]qa[0b10]=z qa[1]=qa z=0b10 qa[0b11]=z z=nil X[ha]=z else qa,ha=T[0b1000][1][T[0b1000][0b11]],Qa[l]la,z,wa,Q=Qa,ha,1,T[0b1010][1][T[0b1010][0b11]]i,wa,F=0x65c,l+e,l+wa end elseif i<0x25c then if i<=0x257 then ha,e=0b1001,ea[0x64ac]e,l,ha=ea[0xe068],e-ha,0b111111 e,Na,ha=ea[0x83b5],e-ha,0b11110 f,ha=e-ha,0 e=Na==ha i=e and i+-0b10111010 or 0x25f else qa,z=ea[0x9019],0x22 ha=qa-z i,Aa=0x2b1-i,Aa+ha end elseif i>0x25c then i=e and 0x423e1/i or 0x266 else qa,ha=T[0b1000][1][T[0b1000][0b11]],Qa[l]la,z,Q,wa=Qa,ha,T[0b1010][1][T[0b1010][0b11]],1 i,F,wa=0x203,l+wa,l+e end elseif i<0x268 then if i<=0x264 then Na,i,f=ea[0x64ac],0b1010111,0b10111 ha,l,e=0b1000,Na-f,ea[0xe068]e,f=1,e-ha Na=f==e Qa[l]=Na f,Na=0x3d,ea[0x83b5]l,Na=Na-f,nil Qa[l]=Na else i,ha=0x425-i,1 e=Na-ha end elseif i<0x269 then i,f[e]=0x1c0,F elseif i>0x269 then f,Na=0b111111,ea[0x64ac]ha,l,e=0b111010,Na-f,ea[0xe068]f=e-ha Na=Qa[f]Qa[l]=Na ha,e=0b11001,ea[0x83b5]l,e,ha=e-ha,ea[0xa2f0],0b101000 Na,ha,e=e-ha,0b110000,ea[0xb2f5]f,ha=e-ha,0 e=Na==ha i=e and 0x20b or 0x361 else qa,ha=T[0b1000][1][T[0b1000][0b11]],Qa[l]la,z,i,Q,wa=Qa,ha,0x400,T[0b1010][1][T[0b1010][0b11]],1 wa,F=l+e,l+wa end elseif i>0x1f4 then if i>0x20d then if i>0x21d then if i<=0x224 then if i>=0x220 then if i>0x220 then i,e=0b110100011,ga-l else wa,ra=T[1][1][T[1][0b11]],0x11 i,c,ra,S=0xa58,ha*ra,T[0b1011][1][T[0b1011][0b11]],la end else z=qa[0b11]i=z>=l and 0x64f6a/i or 0x11f end else ha=1 i,e=0x2a4,Na-ha end elseif i<0x21a then if i<=0x212 then ha=ga-Na i=va>P and 0x2e8 or 0x3a else Q=1 i,z=0x375b1/i,f-Q end elseif i<=0x21b then if i>0x21a then i,wa=i+0b111011001,{}wa[0b11]=la wa[1]=Qa F=wa X[la]=F else i,Na=0x5fc-i,w[0x8f9]f,e=l+Na,1 ga=f-e end else i,e=0x4c0-i,ga-l end elseif i>=0x203 then if i>=0x20a then if i<0x20b then ha,Na,e=0x21,T[0b1111][1][T[0b1111][0b11]],ea[0xe068]f=e-ha e,l,f=0b1100,Na[f],ea[0x64ac]ha,Na,e=l[0b11],f-e,l[1]f=e[ha]Qa[Na]=f f,e=ea[0x83b5],0b111010 z,Na,qa=0x39,f-e,ea[0xa2f0]ha=qa-z z,Q,e=ea[0xb2f5],0b110100,Qa[ha]qa=z-Q i,ha=0xb166/i,Qa[qa]f=e*ha Qa[Na]=f elseif i<=0x20b then i,e=0x56c-i,ga-l else ha=1 i,e=0b101010101,Na-ha end elseif i>=0x204 then if i<=0x204 then qa,z=ea[0x9019],0x17 i,ha=0x25b-i,qa-z Aa=Aa+ha else e,f=0b100100,ea[0x83b5]Na=f-e e,f,i,l=0x2c,ea[0xe068],0x5a1,ta[Na]Na,f=f-e,T[0b10000][1][T[0x10][0b11]]e=Na end else i,Q=i+0x5be,m.h(Q(la,F,wa))end elseif i>=0x1fd then if i<0x1ff then f,Na=0b101,ea[0x64ac]l,ha,qa=Na-f,ea[0xe068],0x20 e=ha-qa f=Qa[e]Na=-f Qa[l]=Na e,ha=ea[0x83b5],0x14 ha,l,e=0b10001,e-ha,ea[0xa2f0]Na,e,ha=e-ha,ea[0xb2f5],0b111100 ha,f=0,e-ha e=Na==ha i=e and 0x73d14/i or 0x2b2 elseif i<=0b111111111 then l=0b11110101 i=La<=l and 0x51972/i or 0b110000011 else i,ha=0x1be,1 e=Na-ha end elseif i<=0b111111000 then e=ga-l i=ca>W and 0x5ea-i or i+-0xef else z=qa[0b11]i=z>=l and 0x4b420/i or 0xde end elseif i>0x1e0 then if i>=0b111101111 then if i>0b111110001 then if i<=0b111110011 then l=0xa4 i=La<=l and 0x5d3-i or 0x5778a/i else l=0b100 i=La>l and i+0x1bb or 0x20d64/i end elseif i<0x1f0 then Na,f=ea[0x64ac],0x29 Na,l,e,f=X,Na-f,nil,nil Na,f,e=m.g(Na,f,e)ha,qa=Na(f,e)e=ha i=e==nil and 0x57 or 0x1fb elseif i<=0x1f0 then l=0x5e i=La<=l and 0x27c or 0x45820/i else wa,i,la,F,Q,da,c=z,0xaa3,qa,1,T[0b1110][1][T[0b1110][0b11]],l,Qa end elseif i>=0b111101000 then if i<=0b111101010 then if i>0b111101000 then Na,ha,e=T[0b1111][1][T[0b1111][0b11]],0b101,ea[0xe068]f=e-ha l=Na[f]f,Na,qa,z=l[0b11],l[1],ea[0x64ac],0b100001 ha=qa-z e=Qa[ha]Na[f]=e e,f=0b1110,ea[0x83b5]f,e,ha,Na=X,nil,nil,f-e f,e,ha=m.g(f,e,ha)qa,z=f(e,ha)ha=qa i=ha==nil and 0x57 or 0x24c else i=e and 0b110010000 or 0x593c8/i end else f,Na=0x12,ea[0x64ac]e,f,l=ea[0x8bb3],T[0b1101][1][T[0b1101][0b11]],Na-f Na=f[e]Qa[l]=Na Na,i,f=ea[0xe068],0b1010111,0b110101 e,l,ha=ea[0x83b5],Na-f,0x16 f=e-ha Na=Qa[f]Qa[l]=Na end elseif i<=0b111100101 then i,ha=i+0xdcc,1 e=l+ha f,ha=Qa[e],T[0b100][1][T[0b100][0b11]]qa=f else l=0b110001100 i=La<l and i+0b1000 or i+0x138 end elseif i<=0x1d0 then if i<0x1cc then if i<0b111000010 then i,Na,f=0x218-i,ea[0x64ac],0x19 e,l,ha=ea[0xe068],Na-f,0b10110 f=e-ha Na=Qa[f]Qa[l]=Na f,Na=0x2f,ea[0x83b5]l,ha,qa=Na-f,ea[0xa2f0],0b10111 e=ha-qa qa,z,f=ea[0xb2f5],0x35,Qa[e]ha=qa-z e=Qa[ha]Na=f*e Qa[l]=Na elseif i>0b111000010 then ra,la,da,i,F,c,wa=Qa,T[0b1110][1][T[0b1110][0b11]],Q,0xff2a7/i,z,Na,1 else f,Na=0x1c,ea[0x64ac]ha,l,qa=ea[0xe068],Na-f,0b111000 e=ha-qa f,z,qa=Qa[e],0b10010,ea[0x83b5]ha=qa-z e=Qa[ha]Na=f/e Qa[l]=Na ha,Na,e=0b100,T[0b1111][1][T[0b1111][0b11]],ea[0xb2f5]i,f=0x98ee/i,e-ha l=Na[f]qa,f,Na,z=ea[0xa2f0],l[0b11],l[1],0b10011 ha=qa-z e=Qa[ha]Na[f]=e end elseif i>0x1cd then f,Na=0x21,ea[0x64ac]Na,f,e,l=X,nil,nil,Na-f Na,f,e=m.g(Na,f,e)ha,qa=Na(f,e)e=ha i=e==nil and i+-0b100111010 or 0x2fc-i elseif i>0b111001100 then da,wa,i,Q,F,c,la=l,z,0xbbc-i,T[0b1110][1][T[0b1110][0b11]],1,Qa,qa else l=0xd8 i=La>l and 0x37078/i or i+0b111100110 end elseif i>0x1d4 then if i<=0x1dd then l=0b11001001 i=La<=l and 0x3ab or 0x110 else l=0xb8 i=La>l and 0x3b3-i or 0b111010001 end elseif i>0b111010011 then z,qa=1,ga-Na i,ha=0x5d018/i,qa+z elseif i>0b111010001 then ha,Na,e=0b1010,T[0b1111][1][T[0b1111][0b11]],ea[0xe068]f=e-ha i,f,e,l=0x22a-i,ea[0x64ac],0b111001,Na[f]Na,ha,e=f-e,l[0b11],l[1]f=e[ha]Qa[Na]=f f,e=ea[0x83b5],0b1101 Na,f=f-e,ea[0x8bb3]Qa[Na]=f else ha,e,Na=0x1e,ea[0xe068],T[0b1111][1][T[0b1111][0b11]]f=e-ha l,f,e=Na[f],ea[0x64ac],0x24 e,Na,ha=l[1],f-e,l[0b11]f=e[ha]Qa[Na]=f qa,f,ha=0b1011,T[0b1111][1][T[0b1111][0b11]],ea[0xa2f0]e=ha-qa Na,ha,e=f[e],0b101011,ea[0x83b5]qa,f,ha=Na[0b11],e-ha,Na[1]e=ha[qa]Qa[f]=e i=Ja<o and 0xb9 or 0x228-i end elseif i<0x162 then if i>=0x136 then if i>=0x14f then if i>0x155 then if i>0x15d then if i<=0b101011110 then Q,la=l+z,1 i,ga=0x30e,Q-la else l=0x309 i=La>l and i+-0b10111 or 0x293-i end elseif i<=0x15c then if i<=0b101011000 then F,la=z[0b11],z[1]Q=la[F]z[0b10]=Q z[1]=z Q=0b10 z[0b11]=Q Q=nil X[qa]=Q i=_a<=aa and 0x330 or 0x54270/i else e,ha,Na=ea[0xe068],0x3a,T[0b1111][1][T[0b1111][0b11]]f=e-ha l=Na[f]f,z,qa,Na=l[0b11],1,ea[0x64ac],l[1]ha=qa-z e=Qa[ha]Na[f]=e qa,f,ha=0b100001,T[0b1111][1][T[0b1111][0b11]],ea[0xa2f0]e=ha-qa e,ha,Na=ea[0x83b5],0x2b,f[e]f,ha,qa=e-ha,Na[1],Na[0b11]i,e=0x57,ha[qa]Qa[f]=e end else f,Na=0b1111,ea[0x64ac]f,l={},Na-f Na=f Qa[l]=Na i,Na,f=0b1010111,ea[0xe068],0x16 l,e,f=Na-f,ea[0x8bb3],T[0b1101][1][T[0b1101][0b11]]Na=f[e]Qa[l]=Na end elseif i>0b101010010 then if i<=0x154 then Qa[l]=ha Qa[f]=qa Qa[e]=z f,e,z=T[0b1000][1][T[0b1000][0b11]],Qa[l],1 qa=l+z ha,z=Qa[qa],0b10 i,qa=i+0x4be,l+z qa=Qa[qa]else Q,qa,ha,la,z=l+e,Qa,T[0b1010][1][T[0b1010][0b11]],1,l i,Q=0x13f5ac/i,Q-la end elseif i<=0b101010001 then if i>0b101010000 then i,f,Na=0x57,0x10,ea[0x64ac]e,ha,l=ea[0xe068],0b1000,Na-f f,e=e-ha,1 Na=f==e Qa[l]=Na f,Na=ea[0xa2f0],T[0b1111][1][T[0b1111][0b11]]l=Na[f]f,Na,qa,z=l[0b11],l[1],ea[0x83b5],0x1e ha=qa-z e=Qa[ha]Na[f]=e elseif i<=0x14f then Na,f=ea[0x64ac],0b100001 l,Na=Na-f,nil Qa[l]=Na f,Na=0b110,ea[0xe068]l,ha,qa=Na-f,ea[0x83b5],0b101000 i,e=0x57,ha-qa f=Qa[e]Na=not f Qa[l]=Na else f,Na=0x28,ea[0x64ac]f,i,l,e=T[0b1101][1][T[0b1101][0b11]],0x1a7-i,Na-f,ea[0x8bb3]Na=f[e]Qa[l]=Na end else qa,z=ea[0xeb5],0b1100 ha=qa-z i,Aa=i+-0b11111011,Aa+ha end elseif i<=0b100111110 then if i>0x13a then if i<=0x13c then l=0xf3 i=La>l and 0x49fc4/i or 0x335 else qa,ha=1,ga-Na i,f=0x179,ha+qa end elseif i>=0b100111000 then if i<=0b100111000 then i,Na,f=0b1010111,ea[0x64ac],0x27 f,l,e=T[0b1101][1][T[0b1101][0b11]],Na-f,ea[0x8bb3]Na=f[e]Qa[l]=Na e,ha,Na=ea[0x83b5],0b1011,T[0b1111][1][T[0b1111][0b11]]f=e-ha f,l,e=ea[0xe068],Na[f],0b11110 e,ha,Na=l[1],l[0b11],f-e f=e[ha]Qa[Na]=f else i=e and 0x396-i or 0b11111001 end elseif i>0x136 then e,f,l=0b111110,ea[0xfb62],ea[0x64ac]Na=f-e Qa[l]=Na Na,f=ea[0xe068],0x21 l,i,Na=Na-f,0x69b1/i,nil Qa[l]=Na else Na,f=ea[0x64ac],0x3e l,Na=Na-f,nil i,Qa[l]=i+-0xdf,Na Na,e,ha=T[0b1111][1][T[0b1111][0b11]],ea[0x83b5],0x25 f=e-ha e,f,l=0b100100,ea[0xe068],Na[f]ha,Na,e=l[0b11],f-e,l[1]f=e[ha]Qa[Na]=f end elseif i>0b101001001 then e,ha=ea[0x64ac],0b11111 l,e,ha=e-ha,ea[0xe068],0x29 ha,e,Na=0b10001,ea[0x83b5],e-ha ha,f=0,e-ha e=Na==ha i=e and 0x224 or 0x1a3 elseif i<=0b101001000 then if i<=0x144 then Na,f=ea[0x31d1],0x3f l=Na-f Aa=Aa+l i=Ha>f and 0b1010111 or 0b1110000 else ya,da,pa=0xcf,2184235841,0xcd i=wa~=da and 0x279 or 0x3c9 end else e,ha=ea[0x64ac],0x22 l,e,ha=e-ha,ea[0xe068],0x2c Na,ha,e=e-ha,0x14,ea[0x83b5]ha,f=0,e-ha e=Na==ha i=e and 0x279-i or 0x33f7f/i end elseif i<=0x123 then if i>0b100011010 then if i>=0b100100000 then if i<0x121 then f,Na=0x22,ea[0x64ac]Na,l=nil,Na-f Qa[l]=Na f,Na=0x2f,ea[0xe068]Na,l=nil,Na-f Qa[l]=Na i=ia>f and 0x57 or i+-0b111100 elseif i>0b100100001 then i,Aa=0b1010111,Aa+f else i,ha=0x269,1 e=Na-ha end elseif i<=0x11c then Na,f=ea[0x64ac],0b110110 f,l={},Na-f Na=f Qa[l]=Na f,Na=0x36,ea[0xe068]l,ha,e=Na-f,0x22,ea[0x83b5]f,e=e-ha,1 Na=f==e Qa[l]=Na i=ba<=ha and 0x2b324/i or 0b1010111 else ha,qa=Na(f,e)e=ha i=e==nil and i+-0xc8 or i+0xff end elseif i>=0x117 then if i>0x119 then Q,qa,la,i,z,F=Na,T[0b1010][1][T[0b1010][0b11]],Na+ha,0xeb5,Qa,1 la=la-F elseif i>0x117 then f,Na=0x15,ea[0x64ac]l,f,e=Na-f,ea[0xe068],0b110101 e,Na,ha=ea[0xeb5],f-e,0b1010 f,ha,qa=e-ha,ea[0x9019],0b11110 ha,qa,e=Qa[l],Qa[Na],ha-qa i=ha==qa and 0x3ceb8/i or 0x385 else f,Na=0x33,ea[0x64ac]Na,l=nil,Na-f Qa[l]=Na i,f,Na=0x57,0b1100,ea[0xe068]l,qa,ha=Na-f,0x12,ea[0x83b5]e=ha-qa e,f=ea[0x8bb3],Qa[e]Na=f[e]Qa[l]=Na end elseif i<0x115 then l=0b1011000 i=La<=l and 0b101010001 or i+0b101100011 elseif i<=0x115 then ha,e=0b111101,ea[0x64ac]ha,e,l=0b1101,ea[0xe068],e-ha Na,e,ha=e-ha,ea[0x83b5],0b11101 f,ha=e-ha,0 e=Na==ha i=e and 0x21d or i+0b110001110 else f,l={},ea[0x64ac]Na=f Qa[l]=Na i,f,Na=0x16d-i,0b1110,ea[0xe068]e,ha,l=ea[0x83b5],0x2e,Na-f f=e-ha Na=Qa[f]Qa[l]=Na end elseif i>=0x12f then if i>0x133 then if i>0b100110100 then la=z[0xe068]wa,F=nil,X[la]i=F==wa and 0x21b or 0x3f4 else f,Na=0b111111,ea[0x64ac]f,e,l=ea[0xe068],0x11,Na-f e,Na=1,f-e ha,e,f=-1,nil,Na-e i=f==ha and 0x2ec or 0x3fe end elseif i<=0x130 then if i<=0b100101111 then Q,i,la=l+z,0x242,1 ga=Q-la else i,e=0x287,ga-l end else f,Na=0b111,ea[0x64ac]l,ha,qa=Na-f,ea[0xe068],0x39 e=ha-qa f=Qa[e]Na=-f Qa[l]=Na Na,f=ea[0x83b5],0b11 ha,qa,l=ea[0xa2f0],0x2f,Na-f e=ha-qa qa,f,z=ea[0xb2f5],Qa[e],0x22 ha=qa-z e=Qa[ha]Na=f*e Qa[l]=Na i=na>z and 0x18a-i or 0x3cef7/i end elseif i>0b100101100 then Na,f=ea[0x64ac],0b1100 e,f,l=0b11,ea[0xfb62],Na-f i,Na=0x664b/i,f-e Qa[l]=Na Na,f=ea[0xe068],0x33 ha,l,e=0x1f,Na-f,ea[0x83b5]f=e-ha Na=Qa[f]Qa[l]=Na elseif i<0b100101011 then Na,ha,e=T[0b1111][1][T[0b1111][0b11]],0b10,ea[0xe068]f=e-ha e,f,l=0b1000,ea[0x64ac],Na[f]ha,Na,e=l[0b11],f-e,l[1]f=e[ha]Qa[Na]=f f,e=ea[0x83b5],0x18 i,Na,ha,qa=0x57,f-e,ea[0xa2f0],1 e=ha-qa f=Qa[e]Qa[Na]=f elseif i>0x12b then q,z,d=0b1110110,qa[0b11],0xb1 i=z>=l and 0x2aa-i or 0x3f5-i else F=z(Q,la)la=F i=la==nil and 0x2ad or 0x3b5 end elseif i<0x195 then if i<0x17e then if i>=0b101110001 then if i<=0b101110100 then if i<0x173 then Q=1 z=f-Q i=Ea>Q and 0xa0 or 0x285 elseif i<=0x173 then i,ha=0x4c5b1/i,1 e=Na-ha else Na,f=ea[0x64ac],0b110110 ha,l,qa=ea[0xe068],Na-f,0b1100 e=ha-qa qa,z,f=ea[0x83b5],0b11001,Qa[e]i,ha=0x57,qa-z e=Qa[ha]Na=f[e]Qa[l]=Na end elseif i<=0b101111001 then qa,z,F,ha,la=Qa,Na,1,T[0b1110][1][T[0b1110][0b11]],Na+f F,Q,i,la=Qa[l],la-F,0x239,e else i,Q=0x47e71/i,1 z=f-Q end elseif i<=0b101100111 then if i<=0b101100011 then if i>0x162 then Q,z=1,Y[Aa]Q,la,Aa=z[0x64ac],1,Aa+Q i=Q==la and 0x4f4-i or 0x26c else f,i,Na=0b10,0x57,ea[0x64ac]e,l,ha=ea[0xe068],Na-f,0b10000 e,f=1,e-ha Na=f==e Qa[l]=Na end else Na,f=ea[0x64ac],0b1010 qa,ha,l=0x33,ea[0xe068],Na-f e=ha-qa i,qa,f,z=i+-0x110,ea[0x83b5],Qa[e],0b111101 ha=qa-z e=Qa[ha]Na=f*e Qa[l]=Na ha,Na,e=0b101100,T[0b1111][1][T[0b1111][0b11]],ea[0xb2f5]f=e-ha l,e,f=Na[f],0b1010,ea[0xa2f0]Na,ha,e=f-e,l[0b11],l[1]f=e[ha]Qa[Na]=f end elseif i<=0b101101000 then ha,qa=Qa[l],T[0b1000][1][T[0b1000][0b11]]la,wa,Q,z=Qa,1,T[0b1010][1][T[0b1010][0b11]],ha F,i,wa=l+wa,0x3fc-i,l+e else f,Na=0b100,ea[0x64ac]ha,l,e=1,Na-f,ea[0xe068]f=e-ha Na=Qa[f]Qa[l]=Na f,Na=0x18,ea[0x83b5]l,e,f=Na-f,ea[0x8bb3],T[0b1101][1][T[0b1101][0b11]]Na=f[e]i,Qa[l]=i+-0b100011001,Na end elseif i>0b110001011 then if i<=0x190 then if i>0b110001111 then ha,qa=Qa[l],T[0b1000][1][T[0b1000][0b11]]Q,la,i,wa,z=T[0b1010][1][T[0b1010][0b11]],Qa,0xf4a-i,1,ha wa,F=l+e,l+wa elseif i>0b110001100 then i,e=i+0b1011001,ga-l else W,ca,l=0xd1,0b1110,0b10001101 i=La<=l and 0x2c8 or 0x3c4-i end elseif i>0x193 then i=da and 0x351 or 0x376 else qa,ha,H=T[0b1000][1][T[0b1000][0b11]],Qa[l],0b11101101 wa,la,z,Q=1,Qa,ha,T[0b1010][1][T[0b1010][0b11]]wa,i,F=l+e,0x11e041/i,l+wa end elseif i>=0b110000101 then if i>0x186 then f,Na=0b111011,ea[0x64ac]l,qa,ha=Na-f,0b1011,ea[0xe068]e=ha-qa qa,f,z=ea[0x83b5],Qa[e],0b11111 i,ha=i+-0x134,qa-z e=Qa[ha]Na=f-e Qa[l]=Na f,Na=0x23,ea[0xa2f0]l,Na=Na-f,nil Qa[l]=Na elseif i>0b110000101 then qa,ha=T[0b1000][1][T[0b1000][0b11]],Qa[l]Q,la,z,wa=T[0b1010][1][T[0b1010][0b11]],Qa,ha,1 i,F,wa=0x43b,l+wa,l+e else ra=c[0b11]i=ra>=Q and 0x13477/i or 0x76e end elseif i>0x183 then f,Na=0b100110,ea[0x64ac]qa,l,ha=0b11,Na-f,ea[0xe068]e=ha-qa z,qa,f=0x10,ea[0x83b5],Qa[e]ha=qa-z e=Qa[ha]Na=f~=e Qa[l]=Na i=s<=z and 0x1d5d8/i or i+-0x12d elseif i>0b101111110 then f,Na=0b110000,ea[0x64ac]Na,l=ea[0x8bb3],Na-f Qa[l]=Na ha,Na,e=0b1101,T[0b1111][1][T[0b1111][0b11]],ea[0x83b5]f=e-ha l=Na[f]qa,Na,f,z=ea[0xe068],l[1],l[0b11],0x2a ha=qa-z e=Qa[ha]Na[f]=e i=n<=z and 0x8385/i or 0x1ab-i else la,Q=qa[0b11],qa[1]z=Q[la]qa[0b10]=z qa[1]=qa z=0b10 qa[0b11]=z z=nil X[ha]=z i=q<=d and 0x2c9 or 0x353 end elseif i<=0x1a8 then if i<=0x19f then if i>=0b110011100 then if i>=0b110011101 then if i<=0x19d then i,e=0x25f,ga-l else e=e+qa i=qa>0 and 0x119c43/i or 0xba6 end else f,Na=0b1000,ea[0x64ac]e,f,l=ea[0x8bb3],T[0b1101][1][T[0b1101][0b11]],Na-f Na=f[e]Qa[l]=Na Na,i,f=ea[0xe068],0b1010111,0x21 l,Na=Na-f,ea[0x71f5]Qa[l]=Na end elseif i>0x197 then la=1 Q=e-la i=g<=la and 0x3b004/i or 0b111001001 elseif i<=0b110010101 then i,e,f=0x7bb-i,0b10101,ea[0x83b5]Na=f-e f,l,e=ea[0xe068],ta[Na],0b100010 Na,f=f-e,T[0b10000][1][T[0x10][0b11]]e=Na else i,Aa=0x8a51/i,Aa+e end elseif i<=0x1a3 then if i<=0x1a2 then if i<=0b110100001 then qa=1 i,ha=0b100011010,f-qa else Na,f=ea[0x64ac],0b110111 l,qa,ha=Na-f,0x1d,ea[0xe068]e=ha-qa qa,f,z=ea[0x83b5],Qa[e],0b100 ha=qa-z e=Qa[ha]Na=f/e Qa[l]=Na e,Na,ha=ea[0xb2f5],T[0b1111][1][T[0b1111][0b11]],0b11 f=e-ha l,e,f=Na[f],0b100011,ea[0xa2f0]ha,e,Na=l[0b11],l[1],f-e f=e[ha]Qa[Na]=f i=Ba>=z and 0b1010111 or 0x339 end else i=e and 0x269 or 0x121 end elseif i>0x1a7 then i,Aa=i+-0b101010001,Aa+f else l=0x40 i=La>=l and 0x326 or i+0x1bf end elseif i>0x1b4 then if i<0b110111111 then if i<=0x1bc then e=e+qa i=qa>0 and 0x5e8 or i+0x4f9 else i,ha,z,qa,Q,la=0xadc,T[0b1010][1][T[0b1010][0b11]],l,Qa,l+e,1 Q=Q-la end elseif i>0b110111111 then e=e+qa i=qa>0 and 0x6d7 or 0xcdc else ha,qa=Qa[l],T[0b1000][1][T[0b1000][0b11]]Q,la,z,wa=T[0b1010][1][T[0b1010][0b11]],Qa,ha,1 wa,i,F=l+e,0x44e,l+wa end elseif i<=0b110101110 then if i<0x1ad then if i>0b110101001 then Q,da,i,F,c,la,wa=T[0b1110][1][T[0b1110][0b11]],l,i+0x62a,1,Qa,qa,z else Q,la=l+z,1 i,ga=i+0x24,Q-la end elseif i>0b110101101 then Na,f=ea[0x64ac],0b111000 i,l,f=0x9222/i,Na-f,{}Na=f Qa[l]=Na Na,f=ea[0xe068],0b11111 l,qa,ha=Na-f,0b10110,ea[0x83b5]e=ha-qa f,e=Qa[e],ea[0x8bb3]Na=f[e]Qa[l]=Na else f,Na=0b101101,ea[0x64ac]l,qa,i,ha=Na-f,0x1b,0x204-i,ea[0xe068]e=ha-qa z,f,qa=0b1010,Qa[e],ea[0x83b5]ha=qa-z e=Qa[ha]Na=f/e Qa[l]=Na f,Na=0b101001,ea[0xa2f0]e,ha,l=ea[0xb2f5],0b11,Na-f f=e-ha Na=Qa[f]Qa[l]=Na end elseif i<=0b110110000 then i,da=0x276,1 wa=la-da else e,ha=ea[0x64ac],0b110100 l,e,ha=e-ha,ea[0xe068],0b1101 ha,e,Na=0x25,ea[0x83b5],e-ha f,ha=e-ha,0 e=Na==ha i=e and 0x2ae or 0x26b end elseif i>=0x99 then if i<=0b11011000 then if i<=0b10111101 then if i>=0xac then if i>=0b10110100 then if i<0b10111001 then if i>=0xb5 then if i>0xb5 then l,ka,ia,L=0xe1,0b1000011,0b10100001,0b10011000 i=La>=l and 0b11001010-i or 0b10011001 else l=0x80 i=La>l and 0xc3 or 0x13c-i end else f,Na=0b11000,ea[0x64ac]qa,ha,l=0b11111,ea[0xe068],Na-f e=ha-qa f,z,qa=Qa[e],0x3a,ea[0x83b5]ha=qa-z e=Qa[ha]Na=f-e Qa[l]=Na e,Na,ha=ea[0xb2f5],T[0b1111][1][T[0b1111][0b11]],0x1f f=e-ha l,f,e=Na[f],ea[0xa2f0],0x39 e,ha,Na=l[1],l[0b11],f-e i,f=0b100001011-i,e[ha]Qa[Na]=f end elseif i<0b10111010 then R,l=0b11001010,0x319 i=La<=l and 0x3d or 0x1211/i elseif i<=0b10111010 then qa=e<=Na ha=not qa i=ha and 0x2be-i or 0x152 else l=0b110000 i=La>=l and i+-0b1111010 or 0b111001 end elseif i>0xaf then if i>0b10110000 then l=0xbf i=La<=l and 0x469-i or 0x1c2 else e=0x47a16e0e i=f~=e and 0x3f0 or 0x14d70/i end elseif i<0xae then Q=1 i,z=0x1f1,f-Q elseif i>0b10101110 then l=0b101000 i=La<l and 0x93a8/i or i+-0x75 else l=0b10110010 i=La<l and 0b1100000 or i+0b101110 end elseif i>=0xa4 then if i>=0xa7 then if i>=0xa9 then if i>0xa9 then c,da,i,F,la,wa,Q=Qa,l,0x9d4cc/i,1,qa,z,T[0b1110][1][T[0b1110][0b11]]else A,l=0b110011,0b1111111 i=La>l and 0x291 or 0x119 end else l=0b1101011 i=La>l and 0xdd or 0x28 end elseif i>0b10100101 then l=0xf3 i=La>=l and 0b100111100 or 0b100000111 elseif i<=0b10100100 then l=0x38a i=La>l and 0x2fa or 0xb2bc/i else l=0x29 i=La<=l and 0x4263/i or i+0x2e end elseif i>=0x9c then if i<=0xa0 then if i>0b10011100 then Q,F,la,wa,c,i,da=T[0b1110][1][T[0b1110][0b11]],1,qa,z,Qa,0xd3b,l else l=0x8d i=La>=l and 0xf150/i or 0x2c4 end else l=0b10001010 i=La<=l and 0x728a/i or 0b11010001 end elseif i>0x99 then l=0b11110 i=La<=l and 0x2f6 or 0x297 else u,g,l=0xf4,0xf5,0b10111011 i=La<l and 0b1111000 or i+0x64 end elseif i>=0xcd then if i>0xd3 then if i<=0xd6 then if i<0xd5 then ha,qa=Na(f,e)e=ha i=e==nil and 0x57 or 0x45b-i elseif i<=0b11010101 then l=0x77 i=La>l and 0b101110000 or i+0x31e else l=0x2e i=La>l and 0x3c6 or 0x46f-i end elseif i>0xd7 then l=0x26 i=La>l and 0x14d or i+0x1a8 else c,da,wa,i,la,Q,F=Qa,l,z,0xbe8,qa,T[0b1110][1][T[0b1110][0b11]],1 end elseif i<=0xd1 then if i>0b11001111 then l=0x90 i=La<l and 0b1001100 or 0x5f elseif i>0xce then i,ha=0b110010011,1 e=Na-ha elseif i<=0xcd then l=0xbd i=La<=l and 0x1a or i+-0b11011 else i,Aa=0x57,Aa+e end elseif i<=0xd2 then l=0xce i=La<=l and 0x1b9-i or 0x333 else h,l=0xe5,0x3d i=La<l and 0xbd or i+-0b11010000 end elseif i<0xc4 then if i<=0b11000000 then if i>=0xbf then if i>0xbf then l=0x25f i=La<=l and 0x70 or 0x179-i else t,l=0b1110000,0b10000 i=La<=l and 0x33d or 0x288 end else l,M=0xf6,0b1100010 i=La<=l and 0b111111111 or 0x134 end elseif i<=0xc2 then Q=1 z=f-Q i=C<=Q and i+0x330 or 0x1b604/i else l=0x89 i=La<l and 0x3c2d/i or 1 end elseif i<=0xc7 then if i>=0xc6 then if i<=0b11000110 then l=0x76 i=La>l and 0b101101000-i or i+-0b10000010 else l=0xb5 i=La>=l and 0x119-i or 0xae end else l=0xfd i=La<l and 0x7b or i+-0b10111010 end elseif i>0b11001000 then S,D=c[1],c[0b11]ra=S[D]i,c[0b10]=0x76e,ra c[1]=c ra=0b10 c[0b11]=ra ra=nil X[da]=ra else l=0b1110101 i=La>=l and i+-0x96 or i+-0xbc end elseif i>=0xf2 then if i<0xfc then if i<=0b11110111 then if i>=0b11110101 then if i<0b11110110 then l,K=0x3a,0b10100100 i=La<=l and 0x22c-i or 0b110110100 elseif i>0xf6 then l=0x59 i=La<=l and 0x88 or 0x97 else l=0b11111 i=La<=l and i+-0x5c or 0x5a end elseif i<=0b11110011 then if i>0xf2 then Na,f=ea[0x64ac],0b101001 f,i,l,e=ea[0xfb62],0b1010111,Na-f,0x14 Na=f-e Qa[l]=Na else l=0xd1 i=La<=l and i+0b1110000 or 0x374 end else l=0xe1 i=La<=l and i+0x73 or 0x2c6 end elseif i<=0xfa then if i<0xf9 then l=0x25 i=La>l and 0b110100111-i or 0xf6 elseif i<=0b11111001 then i,ha=0x355-i,1 e=Na-ha else ha=1 i,e=0b110000110,Na-ha end else l=0x19 i=La>l and 0x37d or i+0x287 end elseif i<0x107 then if i>=0xfe then if i>=0xff then if i>0b11111111 then Q=1 i,z=0x1d267/i,f-Q else C,l=0x5a,0b10101101 i=La>l and 0x3fd-i or i+0b101101011 end else l=0b10110101 i=La>l and 0x273 or 0x353 end elseif i>0xfc then l,Ka,xa,Oa=0b11001100,0b10,0x52,0b1010011 i=La>=l and 0b1000111 or 0x749e/i else Na,f=ea[0x64ac],0b110000 e,l,ha=ea[0xe068],Na-f,0x12 e,f=1,e-ha Na=f==e Qa[l]=Na f,Na=0b10100,ea[0x83b5]l,ha,e=Na-f,0b100001,ea[0xa2f0]f=e-ha i,Na=0b101010011-i,Qa[f]Qa[l]=Na end elseif i>=0b100001101 then if i>=0x10f then if i>0b100001111 then Na,f=ea[0x64ac],0b110001 i,l,qa,ha=0b1010111,Na-f,0x37,ea[0xe068]e=ha-qa z,f,qa=0b110,Qa[e],ea[0x83b5]ha=qa-z e=Qa[ha]Na=f+e Qa[l]=Na else ha=1 i,e=i+-0x8a,Na-ha end else f,Na=0b111011,ea[0x64ac]e,l=1,Na-f f=l+e Na,ha=Qa[f],0b10 e=l+ha f,ha=Qa[e],Qa[l]e=ha+f Qa[l]=e ha=0 i=f>ha and 0x1c7-i or 0x358 end elseif i<=0x109 then if i>0x107 then i=e and i+0x12c or 0x327 else Na,f=ea[0x64ac],0x2d qa,l,ha=0b101,Na-f,ea[0xe068]e=ha-qa qa,z,f=ea[0x83b5],0b10100,Qa[e]ha=qa-z e=Qa[ha]Na=f*e i,Qa[l]=0x15e-i,Na end else i,Q=0x32f9a/i,1 z=f-Q end elseif i<0xe4 then if i>0xdf then if i>=0b11100010 then if i>0xe2 then l=0x309 i=La>=l and 0x160 or 0x9f9c/i else l=0b10100010 i=La>=l and 0x1b or 0b100 end elseif i<=0b11100000 then l=0b11011111 i=La<=l and 0x28e-i or 0x57 else l=0x207 i=La>l and 0b111010000 or i+0b1110 end elseif i<0xdd then if i>0b11011011 then l=0b10110011 i=La<=l and 0x352 or 0x22c elseif i<=0xd9 then l=0b100000101 i=La>l and 0x81 or 0x19d-i else l=0b10101101 i=La>=l and 0xff or i+-0xbe end elseif i<=0b11011110 then if i>0xdd then ha,qa=Na(f,e)e=ha i=e==nil and 0x57 or 0x1b7aa/i else l=0x6c i=La<=l and 0x35bd4/i or 0x26e end else i=e and 0x2a4 or 0x226 end elseif i<0xeb then if i>=0xe6 then if i<0xe7 then Na,f=ea[0x64ac],0x1a f,e,l=ea[0xe068],0b101101,Na-f Na,ha,qa=f-e,ea[0x83b5],0b101 ha,e=1,ha-qa ha,f,qa=ea[0xa2f0],e-ha,0x39 ha,e=-1,ha-qa i=f==ha and 0b100111110 or 0x179 elseif i>0xe7 then ha,qa=Na(f,e)e=ha i=e==nil and 0x312-i or 0x348 else l=0b11001100 i=La>l and 0x3f7 or 0x21ab3/i end elseif i>0xe4 then Na,f=ea[0x64ac],0b101 ha,qa,l=ea[0xe068],0x27,Na-f e=ha-qa qa,f,z=ea[0x83b5],Qa[e],0b100 ha=qa-z e=Qa[ha]Na=f<=e Qa[l]=Na Na,f=ea[0xa2f0],0x3a ha,l,qa=ea[0xb2f5],Na-f,0x10 e=ha-qa f=Qa[e]Na=not f Qa[l]=Na i=V>qa and 0x57 or 0x13831/i else f,Na=0b10110,ea[0x64ac]l,qa,ha=Na-f,0x11,ea[0xe068]e=ha-qa qa,f,z=ea[0x83b5],Qa[e],0b100000 ha=qa-z e=Qa[ha]Na=f^e Qa[l]=Na i,ha,e,Na=i+-0x8d,0b110001,ea[0xb2f5],T[0b1111][1][T[0b1111][0b11]]f=e-ha e,l,f=0x3a,Na[f],ea[0xa2f0]ha,Na,e=l[0b11],f-e,l[1]f=e[ha]Qa[Na]=f end elseif i<0b11101110 then if i<=0xeb then l=0x24d i=La>l and 0x331 or 0x452-i else l=0b101101011 i=La>l and 0x2bd or 0x3b3 end elseif i<0b11101111 then e=ga-l i=Oa>=Ka and 0x40a-i or 0b111101000-i elseif i>0b11101111 then i,z,Q,ha,qa,e,f=0x4db,l,Qa,1,Na,w[0x80c6],T[0b1110][1][T[0b1110][0b11]]else f,Na=0b100101,ea[0x64ac]ha,l,e=0b111000,Na-f,ea[0xe068]f=e-ha i,Na=0x57,Qa[f]Qa[l]=Na Na,f=ea[0x83b5],0b1101 l,Na=Na-f,nil Qa[l]=Na end elseif i<0x52 then if i<=0b110000 then if i<0b10100 then if i<=0b1100 then if i<=0b1000 then if i>0b100 then l=0b1000110 i=La>l and 0xe6 or 0x1f40/i elseif i<0b11 then l=0x89 i=La<=l and 0x2b0 or 0x341 elseif i<=0b11 then s,l=0xf6,0b1000111 i=La>l and 0b110000/i or 0b1011110 else l=0x9a i=La<=l and 0x2f3-i or i+0x279 end elseif i>0b1010 then l=0x71 i=La>l and 0b101001111 or 0xd08/i else l=0xfe i=La>l and 0x2e3 or 0x270 end elseif i<0x11 then if i>0b1101 then l=0x4e i=La>l and 0x73 or i+0b1111111 else l=0b111 i=La>l and 0x3cf/i or 0b110100 end elseif i<=0x11 then l=0xa7 i=La<=l and 0b11100010 or i+0b11001010 else l=0x10 i=La>=l and 0x40 or 0b1101 end elseif i>0x1c then if i<0x28 then if i>0b11101 then l=0x25e i=La<l and 0xeb or 0b1010110-i else l=0b10101000 i=La<=l and 0b100100000 or 0b100101010 end elseif i>=0b101111 then if i<=0x2f then l=0b11111000 i=La>l and 0b11011001 or 0x1376/i else l=0x25e i=La>l and 0x6150/i or 0x7fb0/i end else l=0b1100110 i=La<l and 0x3cb or 0x2b4 end elseif i>=0x1a then if i>=0b11011 then if i>0x1b then l=0x90 i=La>l and 0x5f60/i or 0x1a94/i else l=0b10100100 i=La>=l and 0x34a1/i or 0b100010101 end else l=0b10111100 i=La>l and i+0x329 or 0x37e end elseif i<0x18 then l,x=0b101110111,0x9e i=La>l and 0xc0 or 0x3ac/i elseif i<=0x18 then l=0xc9 i=La>=l and 0x1dd or 0x138 else l=0x38a i=La<l and i+0x71 or 0b10100100 end elseif i<=0b1000000 then if i<=0x38 then if i>=0x36 then if i>=0x37 then if i>0b110111 then j,l=0x10,0b11000111 i=La<l and 0x53 or 0x18 else l=0x1eb i=La<=l and 0b11001111-i or 0xe1 end else N,l=0b11000101,0x6d i=La>l and 0xc8 or 0b10100111 end elseif i>0x34 then B,a,l=0b11100,0b1110111,0x53 i=La<=l and 0x2229/i or 0xc6 elseif i>0b110010 then l=0b100 i=La<l and 0x5244/i or 0x228-i else l=0x75 i=La>l and 0x359 or 0x428-i end elseif i<=0b111011 then if i<0x3a then l=0b101110 i=La>=l and 0x2fa6/i or 0x1f65/i elseif i>0b111010 then P,Aa,X,Ha,Ea,_a,U,i,ga,va,v,Ca,aa,ma,Ba=0b1101001,1,T[0b110][1][T[0b110][0b11]],0b10101100,0x96,0b1000000,0b10101100,0x912,-1,0xbd,0xe8,0b100100,0x1b,{},0x4f ta,ma=ma,T[0b1100][1][T[0b1100][0b11]]else l=0x28 i=La<=l and 0x18a-i or 0x2bf end elseif i<=0b111101 then na,l=0b1111000,0x2e2 i=La<l and 0x5c or 0b100100000-i else Da,l=0xdc,0b10101 i=La<=l and 0x7c or 0b11111011 end elseif i>=0b1001010 then if i>=0b1001100 then if i<=0x4f then if i<=0x4c then l=0b10001110 i=La>l and 0x43b0/i or 0x9c else l=0b10000101 i=La>l and i+0x282 or 0x129cb/i end else l=0b11010000 i=La>l and 0x4ba0/i or 0x122-i end elseif i>0b1001010 then l=0b1001 i=La>l and 0x32d or 0x181-i else l=0x32 i=La<l and 0x406-i or 0x30b end elseif i>=0x44 then if i<=0b1000100 then oa,l,Ma=0b10111001,0b1100001,1 i=La<=l and 0xf7 or 0x36 else l=0b11010101 i=La>=l and 0xb0-i or 0b1010000 end elseif i<=0b1000010 then l=0x5b i=La>l and 0x6e9a/i or 0b100101101 else l=0b110100 i=La>l and 0x401f/i or 0x4a end elseif i>=0b1110110 then if i>0x87 then if i>=0b10010011 then if i<=0b10010110 then if i>=0b10010101 then if i>0x95 then f,e=ea[0xe068],0x1b qa,Na,z=ea[0x83b5],f-e,0x2c ha=qa-z ha,e=ea[0x8bb3],Qa[ha]i,f=0x57,e[ha]Qa[Na]=f else l=0b11011000 i=La>=l and 0x10bbc/i or 0x320 end else l=0b1000001 i=La>l and 0x11b17/i or 0xf2e5/i end elseif i>0b10010111 then l=0b111000000 i=La<=l and 0b111100111 or 0b100011100 else l=0x5e i=La<l and 0x26ee/i or 0x3937/i end elseif i>0b10001101 then if i>0b10001111 then f,Na=0x34,ea[0x64ac]Na,l=nil,Na-f Qa[l]=Na Na,f=ea[0xe068],0b111110 f,l={},Na-f Na=f i,Qa[l]=0b1010111,Na else l=0x4b i=La>=l and 0x42c-i or 0x223fb/i end elseif i<=0b10001010 then if i<=0b10001000 then l=0b1010111 i=La<l and 0xf5-i or 0b1011101 else l=0x33b i=La<=l and 0x11b-i or 0xfc end else l=0x2b i=La<=l and 0x256 or 0x35b end elseif i<=0b10000000 then if i>0x7b then if i<=0b1111100 then l=0b10011 i=La<=l and 0xbf or 0x1a280/i else f,Na=0b10100,ea[0x64ac]ha,l,qa=ea[0xe068],Na-f,0b10111 e=ha-qa qa,f,z=ea[0x83b5],Qa[e],0x38 ha=qa-z e=Qa[ha]Na=f==e Qa[l]=Na i,Na,e,ha=0b11010111-i,T[0b1111][1][T[0b1111][0b11]],ea[0xb2f5],0b100 f=e-ha l,f,e=Na[f],ea[0xa2f0],0x29 ha,Na,e=l[0b11],f-e,l[1]f=e[ha]Qa[Na]=f end elseif i>=0b1111000 then if i<=0b1111000 then p,l,Pa=0b11001,0xaf,0b110100 i=La>=l and 0b11000111 or 0x7f8/i else l=0b11111011 i=La<=l and 0x1a2 or 0x3dd end elseif i>0b1110110 then l=0b11101101 i=La<l and 0x310 or 0x10362/i else k,l=0b1010100,0b11000100 i=La>=l and 0b111000 or 0b11001101 end elseif i>0x85 then if i>0b10000110 then ua,O,l=0xdb,0x62,0x7e i=La>l and 0b10101001 or 0b1011001 else l=0b11101001 i=La<l and 0xf4 or i+-0b1111 end elseif i<0b10000100 then l=0x16b i=La>=l and 0xec or 0x6e elseif i>0b10000100 then ha,i,qa=Qa[l],0xb77,T[0b1000][1][T[0b1000][0b11]]Q,wa,z,la=T[0b1010][1][T[0b1010][0b11]],1,ha,Qa wa,F=l+e,l+wa else F,i,wa=T[0b1111][1][T[0b1111][0b11]],0xe700/i,z[0xe068]la=F[wa]f[e]=la end elseif i>0b1100000 then if i>0x6a then if i<=0x70 then if i>=0x6e then if i<=0b1101110 then l=0x14c i=La>l and 0x2de or 0x2b9 else ba,l=0b10100000,0x221 i=La<=l and 0x1810/i or i+-0b1001010 end else l=0x55 i=La<=l and 0x2f9 or 0x15808/i end else f,Na=0b11100,ea[0x64ac]ha,l,e=0b110100,Na-f,ea[0xe068]f=e-ha Na=Qa[f]Qa[l]=Na Na,f=ea[0x83b5],0b1110 i,f,l,e=0x2715/i,ea[0xfb62],Na-f,0x2f Na=f-e Qa[l]=Na end elseif i>0x68 then if i<=0b1101001 then sa,l=0xbe,0xd9 i=La>l and i+0b1110111 or 0b10010101 else l,n=0b11110000,0b1010 i=La<l and 0xf0-i or 0b1011011 end elseif i<0x67 then if i>0x61 then o,Ja,l=0b1110011,0b11000001,0xb9 i=La<=l and 0x1e0 or 0xe5b6/i else l=0x5f i=La<=l and 0b111110000 or i+-0b1010 end elseif i>0x67 then l=0b10010110 i=La<=l and 0x285 or 0xb668/i else l=0x1c i=La<l and 0x79-i or 0b11111000 end elseif i<=0x5b then if i<=0x59 then if i>0b1010111 then l=0x7d i=La<=l and 0x11941/i or 0x15c elseif i<0x53 then l=0xb8 i=La>=l and 0b10110101-i or i+0xac elseif i<=0b1010011 then l=0b11000100 i=La>l and 0x2e9-i or 0x257 else G,ea,Ia,V,r=0b11001001,Y[Aa],0xd2,0x44,0b100100 l,La=1,ea[0x7b19]l,Aa=0x9a,Aa+l i=La<l and 0b110101 or 0b10110110 end elseif i>0x5a then l=0xf5 i=La<l and 0x3b02/i or 0xbe else l=0b100010 i=La<=l and i+0x28f or 0x12c3c/i end elseif i<=0b1011110 then if i>0x5d then l=0x45 i=La>l and 0b1000 or 0b10010011 elseif i>0x5c then l=0b1011000 i=La>=l and i+0xb5 or 0x108d5/i else l=0x26b i=La<=l and 0x332-i or 0x10e9c/i end elseif i>0x5f then l=0b10101111 i=La<=l and 0xc3c0/i or 0x1fd else l=0b10010110 i=La>=l and 0b1101000 or 0b11100 end end end end,function(a,b,c,d)a._a[d]=a.o(b,c)return a._a[d]end,l=function(m,o,h,...)local f,d,n,c,k,q,i,_,l,p,g,a i=0b1110000 while true do if i<=0xaf then if i>=0b1110000 then if i<=0b10010101 then if i>0x94 then g=g+_ i=_>0 and 0b101110 or 0b10101111 elseif i<=0b1110000 then k,d,g,c=#o,1,0,m _,q=d,k-d i=q~=q and 0xf4 or 0x94 else i=_>0 and i+-0b111100 or 0xbc end else i=_<=0 and 0x88b8/i or 0b10110110 end elseif i>=0b1011000 then if i<=0x58 then i=g>q and 0b11110100 or 0xbc else f=0x19919 f,n=0x5479,f*g i,l=0x95,n+f p,l=l%k,1 a=p+l p,d=g+l,o[a]a=c[p]c[d]=a end elseif i>0x1d then i=g>q and 0b11110100 or i+0b10000001 else i=_<=0 and i+0b10010110 or 0x7b-i end elseif i>0b10111100 then if i<=0b11001000 then i=g<q and 0b110111100-i or 0xb6 else q,i,g,_=c,i+-0x39,c[h],m.h(...)end elseif i>0b10111011 then i=_~=_ and i+-0b1001 or 0x154c/i elseif i>=0b10110110 then if i<=0b10110110 then i=_~=_ and 0b11110100 or i+-0b1011000 else g=m.h(g(q,m.i(_)))return m.i(g)end else i=g<q and 0x1a7-i or 0x41ba/i end end end,function(a,b,c,d,e)a._a[e]=a.a(a.a(a.c(d,0xb8de),c),a.d(b))*a.a(b,a.d(a.a(c,a.c(d,0xb8de))))+(a.b(a.a(a.c(d,0xb8de),c),b)*a.a(a.a(b,a.a(a.c(d,0xb8de),c)),a.d(a.d(b)))*0b10+-(a.a(a.d(a.d(b)),a.a(b,a.a(a.c(d,0xb8de),c)))*a.a(c,a.b(a.a(c,a.c(d,0xb8de)),b)))+-(a.a(a.a(a.c(d,0xb8de),c),b)*a.b(a.a(a.c(d,0xb8de),c),b))+b+-a.c(b,a.d(4294967295)))+-(a.a(a.d(a.d(b)),a.a(a.a(c,a.c(d,0xb8de)),b))*a.a(a.b(b,a.a(c,a.c(d,0xb8de))),a.d(c)))+a.a(4294967295,a.a(b,a.a(c,a.c(d,0xb8de))))*a.b(b,a.a(a.c(d,0xb8de),c))return a._a[e]end,{},function(a,b,c,d)a._a[d]=-(a.a(a.d(b),c)*a.a(a.d(c),b))+(a.a(b,a.d(c))*a.a(a.a(c,a.d(b)),a.d(a.a(a.b(b,4294967295),a.d(c))))*0b100+(a.a(a.b(c,b),a.d(a.d(a.c(b,c))))*a.a(c,b)+(-a.d(b)+-a.b(a.d(4294967295),a.a(4294967295,c))+a.c(a.c(4294967295,b),a.c(c,c))+-(a.a(a.a(a.b(4294967295,c),a.b(b,c)),a.a(b,a.d(c)))*a.a(c,a.d(b))))))+c+-(a.a(a.d(c),b)*a.a(a.a(a.a(a.d(b),c),a.d(a.a(a.d(c),a.b(4294967295,b)))),a.d(a.c(b,b))))+a.a(a.b(c,b),a.d(a.c(c,b)))*a.a(b,c)return a._a[d]end,function(e)local h,a,f,c a=string f,a,c=a.byte,bit32,a.char h=a.bxor c={[0b11]=0b10,[0b10]=c}c[1]=c f={[0b11]=0b10,[0b10]=f}f[1]=f h={[0b11]=0b10,[0b10]=h}h[1]=h a=e:p{c,h,f}return a end,getfenv(),function(m,b)return function(c,o)local f,d,g,k,h,q,a,p,_,i,n,l i=0b10100110 while true do if i>0x63 then if i>=0b10100110 then if i<0xec then if i<=0b10100110 then _,d,h,k=#c,1,"",0 q,g=d,_-d i=g~=g and 0x76 or 0x17 else i,p=0b1001001,m.h(p(l,n))end elseif i<=0xec then i=k<g and 0b101100010-i or 0x170c/i else i,_=0b111000,_(m.i(d))h=h.._ end elseif i>=0x74 then if i>0b1110100 then return h else p,d,i,a,l,_=c,b[0b10][1][b[0b10][0b11]],i+-0b101,b[0b11][1][b[0b11][0b11]],1,b[1][1][b[1][0b11]]l=k+l end elseif i<=0x6e then i=q~=q and 0b1111100-i or 0x8d-i else a=a(p,l)f,i,p,l=#o,0xb5,b[0b11][1][b[0b11][0b11]],o n,f=k%f,1 n=n+f end elseif i<=0b11111 then if i>0b11000 then if i<=0b11001 then i=q~=q and 0xb86/i or i+0b1011011 else i=q<=0 and 0b1110 or 0x93-i end elseif i<0x17 then i=k<g and 0x674/i or 0x74 elseif i>0x17 then i=q<=0 and 0x1620/i or i+1 else i=q>0 and 0b1100011 or 0x85-i end elseif i<=0x49 then if i<=0x48 then if i>0b111000 then i=k>g and 0b10111110-i or 0x18 else k=k+q i=q>0 and 0x48 or i+-0b100000 end else i,d=i+0xb3,m.h(d(a,m.i(p)))end else i=k>g and 0x2da2/i or 0b1101110 end end end end,function(e,b)return function(c,f)local j,g,h,a c={[0b11]=0b10,[0b10]=c}c[1]=c f={[0b11]=0b10,[0b10]=f}f[1]=f h=e:J{b[0b110]}h={[0b11]=0b10,[0b10]=h}h[1]=h a=nil a={[0b11]=0b10,[0b10]=a}a[1]=a a[1][a[0b11]]=e:L{a}g={[0b11]=0b10,[0b10]=g}g[1]=g g[1][g[0b11]]=e:K{b[0b1100],b[0b11],c,b[0b1110],b[0b1111],b[0b10000],b[0x11],h,b[0b1000],a,b[0b1010],b[0b1101],b[0b100],b[0b10],f,b[1],b[0b1011]}j=e:M{b[0b111],b[1],c,b[0b10],g,b[0b1001],h,a,b[0b101]}return j end end,function(a,b,c,d)a._a[d]=a.a(a.a(0xffff,c),a.a(c,0xffff))*a.b(a.a(c,0xffff),a.a(c,0xffff))+a.a(a.d(a.a(0xffff,c)),a.a(c,0xffff))*a.a(a.a(0xffff,c),a.d(a.a(c,0xffff)))-a.a(0xffff,c)*a.a(0xffff,c)+(-b+(a.d(a.a(c,4294967295))*0b10+-0b10*a.c(a.d(b),a.c(b,b))+c))return a._a[d]end,function(a,b,c)a.N[c]=b return a.N[c]end,function(a,b,c,d,e)a.N[e]=a.b(a.a(0xffff,d),a.a(0xffff,b))*a.a(a.a(d,0xffff),a.a(b,0xffff))+a.a(a.d(a.a(b,0xffff)),a.a(d,0xffff))*a.a(a.a(b,0xffff),a.d(a.a(d,0xffff)))-a.a(0xffff,b)*a.a(d,0xffff)+a.d(a.b(a.d(a.a(c-d,4294967295)),a.d(b)))return a.N[e]end,function(l,b)return function(c)local h,g,k,i,d,j,f,_ i=0xe5 while true do if i<0xd8 then if i>0x8b then g,h=0b101,"~"g,h,k=g-f,h.rep,h i,h=0x8b,h(k,g)c=c..h elseif i<=0x2d then i,j=0b11101000,-1 else k,j,h,g=c,l:s{b[0b10],b[0b11],b[0b100]},b[1][1][b[1][0b11]],"....."h=h(k,g,j)j,g=0,1 j=f>j i=j and i+0b1100100 or 0xd8 end elseif i<0xe8 then if i>0xd8 then k,h=0b101,#c h,f=0,h%k i=f>h and 0xcb or 0b10001011 else i=j and 0b111000000-i or 0x105-i end elseif i>0xe8 then d=0b101 _=d-f _,j=1,-_ i,j=i+-0b10111,j-_ else h,k=h.sub,h h=l.h(h(k,g,j))return l.i(h)end end end end,function(a,b,c,d)a.T[d]=a.m(b,c)return a.T[d]end,function(a,b,c,d)a.T[d]=0b10*a.a(a.a(c,4294967295),c)+(-c+-a.b(a.d(4294967295),a.b(c,b)))+b+(a.a(a.a(0xffff,c),a.a(b,0xffff))*a.b(a.a(0xffff,c),a.a(0xffff,b))+a.a(a.d(a.a(c,0xffff)),a.a(0xffff,b))*a.a(a.d(a.a(b,0xffff)),a.a(0xffff,c))-a.a(0xffff,c)*a.a(b,0xffff))return a.T[d]end,function(e)local a,c,h,f a=string a,c,f=bit32,a.char,a.byte h=a.bxor c={[0b11]=0b10,[0b10]=c}c[1]=c f={[0b11]=0b10,[0b10]=f}f[1]=f h={[0b11]=0b10,[0b10]=h}h[1]=h a=e:n{c,h,f}return a end,function(a,b,c)a._a[c]=a.c(b,0x2cc3)return a._a[c]end}):l({"K","o","R","m","t","fa","T","_a","X","ea","_","S","ca","F","a","g","M","j","da","n","r","p","W","P","b","c","Q","N","H","Y","U","d","J","u","I","O","aa","ba","V","q","s","k","G","L"},"fa",...)
+local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
+local _BT = nil
+local _bullettracerlol = nil
+
+do
+    local u9, u10, u99, u105, u110, u116, u157
+    local Players = game:GetService('Players')
+    local Workspace, RunService, LocalPlayer, u129, u130, u131, u162, u163, u164, u165, u166, u167, u168, u169, t25, v220, uDim2, t26
+
+    do
+        local u98, u104, u222
+        local v125, uDim2_2
+
+        do
+            local u218
+            local v21, v115, t17
+
+            do
+                local Lighting, TextLabel
+
+                do
+                    local ReplicatedStorage = game:GetService('ReplicatedStorage')
+
+                    Workspace = game:GetService('Workspace')
+                    UserInputService = game:GetService('UserInputService')
+                    RunService = game:GetService('RunService')
+                    Lighting = game:GetService('Lighting')
+                    LocalPlayer = Players.LocalPlayer
+                    CurrentCamera = Workspace.CurrentCamera
+                    u9 = false
+                    u10 = false
+                    n1 = 200
+                    n2 = 200
+                    u13 = false
+                    n3 = 70
+                    u15 = false
+                    u16 = false
+                    u17 = true
+                    
+local NeverLose = loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/protoxak/Crystal_Ui/refs/heads/main/Ui.lua"
+))()
+
+getgenv().LunarNeverLose = NeverLose
+
+v18 = {}
+
+function v18:SetTheme(_) end
+
+function v18:Notify(cfg)
+    local notifier = NeverLose:CreateNotification()
+    if notifier and notifier.new then
+        notifier.new({
+            Title = cfg.Title or "Lunar",
+            Content = cfg.Content or "",
+            Duration = cfg.Duration or 3,
+            Logo = NeverLose.GlobalLogo,
+        })
+    end
+end
+
+local function makeControlAdapter(section)
+    local api = {}
+
+    function api:Paragraph(cfg)
+        cfg = cfg or {}
+        local text = tostring(cfg.Title or "")
+        if cfg.Content and cfg.Content ~= "" then
+            text = text .. "\\n" .. tostring(cfg.Content)
+        end
+        return section:AddLabel(text, true)
+    end
+
+    function api:Toggle(cfg)
+        cfg = cfg or {}
+        return section:AddLabel(tostring(cfg.Title or "Toggle")):AddToggle({
+            Default = cfg.Default == true,
+            Flag = cfg.Flag,
+            Callback = cfg.Callback,
+        })
+    end
+
+    function api:Button(cfg)
+        cfg = cfg or {}
+        return section:AddButton({
+            Name = tostring(cfg.Title or "Button"),
+            Icon = cfg.Icon or "chevron-large-right",
+            Callback = cfg.Callback,
+            ToolTip = cfg.Description,
+        })
+    end
+
+    function api:Dropdown(cfg)
+        cfg = cfg or {}
+        local item = section:AddLabel(tostring(cfg.Title or "Dropdown"))
+        local control = item:AddDropdown({
+            Default = cfg.Value,
+            Values = cfg.Values or {},
+            Multi = cfg.Multi == true,
+            Flag = cfg.Flag,
+            Callback = cfg.Callback,
+        })
+
+        function control:Refresh(values)
+            self:SetValues(values or {})
+        end
+
+        function control:Select(value)
+            self:SetValue(value)
+        end
+
+        return control
+    end
+
+    function api:Slider(cfg)
+        cfg = cfg or {}
+        local value = cfg.Value or {}
+        return section:AddLabel(tostring(cfg.Title or "Slider")):AddSlider({
+            Flag = cfg.Flag,
+            Min = value.Min or cfg.Min or 0,
+            Max = value.Max or cfg.Max or 100,
+            Default = value.Default or value.Min or cfg.Default or 0,
+            Rounding = cfg.Rounding or 0,
+            Type = cfg.Suffix or cfg.Type or "",
+            Callback = cfg.Callback,
+        })
+    end
+
+    function api:ColorPicker(cfg)
+        cfg = cfg or {}
+        return section:AddLabel(tostring(cfg.Title or "Color")):AddColorPicker({
+            Default = cfg.Default or Color3.fromRGB(255,255,255),
+            Flag = cfg.Flag,
+            Callback = cfg.Callback,
+        })
+    end
+
+    function api:Divider() end
+
+    return api
+end
+
+function v18:CreateWindow(cfg)
+    cfg = cfg or {}
+
+    local window = NeverLose:CreateWindow({
+        Logo = NeverLose.GlobalLogo,
+        Name = cfg.Title or "Lunar",
+        Content = cfg.Author or "Mmv And Mm2",
+        Size = cfg.Size or UDim2.fromOffset(700, 450),
+        ConfigFolder = cfg.Folder or "Lunar",
+        Enable3DRenderer = false,
+        Keybind = "Insert",
+    })
+
+    local adapter = {
+        _window = window,
+        _tabs = {},
+    }
+
+    function adapter:Section(_)
+        return self
+    end
+
+    local sectionNames = {
+        ["Main"]           = { "COMBAT",       "PLAYER"        },
+        ["Fling/Teleport"] = { "FLING",        "TELEPORT"      },
+        ["Visuals"]        = { "VISUALS",       "COMBAT VISUAL" },
+    }
+
+    function adapter:Tab(cfg2)
+        cfg2 = cfg2 or {}
+
+        local tab = window:AddTab({
+            Name = cfg2.Title or "Tab",
+            Icon = cfg2.Icon or "grid",
+        })
+
+        local names = sectionNames[cfg2.Title]
+
+        if not names then
+            local section = tab:AddSection({
+                Name     = (cfg2.Title or "MAIN"):upper(),
+                Position = "left",
+            })
+            local controls = makeControlAdapter(section)
+            controls._tab     = tab
+            controls._section = section
+            self._tabs[#self._tabs + 1] = controls
+            return controls
+        end
+
+        local sectionLeft = tab:AddSection({
+            Name     = names[1],
+            Position = "left",
+        })
+
+        local sectionRight = tab:AddSection({
+            Name     = names[2],
+            Position = "right",
+        })
+
+        local leftControls  = makeControlAdapter(sectionLeft)
+        local rightControls = makeControlAdapter(sectionRight)
+
+        local columnControls = {
+            _tab          = tab,
+            _sectionLeft  = sectionLeft,
+            _sectionRight = sectionRight,
+            _left         = leftControls,
+            _right        = rightControls,
+            _counter      = 0,
+        }
+
+        local function nextCol(self2)
+            self2._counter = self2._counter + 1
+            return (self2._counter % 2 == 1) and self2._left or self2._right
+        end
+
+        function columnControls:Toggle(cfg3)      return nextCol(self):Toggle(cfg3)      end
+        function columnControls:Button(cfg3)       return nextCol(self):Button(cfg3)       end
+        function columnControls:Dropdown(cfg3)     return nextCol(self):Dropdown(cfg3)     end
+        function columnControls:Slider(cfg3)       return nextCol(self):Slider(cfg3)       end
+        function columnControls:ColorPicker(cfg3)  return nextCol(self):ColorPicker(cfg3)  end
+        function columnControls:Paragraph(cfg3)    return nextCol(self):Paragraph(cfg3)    end
+
+        function columnControls:Divider()
+            leftControls:Divider()
+            rightControls:Divider()
+        end
+
+        self._tabs[#self._tabs + 1] = columnControls
+        return columnControls
+    end
+
+    function adapter:ToggleInterface()
+        return window:ToggleInterface()
+    end
+
+    return adapter
+end
+
+do
+    local _ = v18
+end
+                    do
+                        local u20 = UserInputService
+
+                        function v21(p1)
+                            local u362 = nil
+                            local p2Position = nil
+                            local Position = nil
+                            local InputBegan = p1.InputBegan
+                            local u366 = p1
+
+                            InputBegan:Connect(function(p2)
+                                if p2.UserInputType == Enum.UserInputType.MouseButton1 or p2.UserInputType == Enum.UserInputType.Touch then
+                                    u362 = true
+                                    p2Position = p2.Position
+                                    Position = u366.Position
+                                end
+                            end)
+
+                            local InputChanged = p1.InputChanged
+                            local u368 = p1
+
+                            InputChanged:Connect(function(p3)
+                                if u362 then
+                                    if p3.UserInputType == Enum.UserInputType.MouseMovement or p3.UserInputType == Enum.UserInputType.Touch then
+                                        local v838 = p3.Position - p2Position
+
+                                        u368.Position = UDim2.new(Position.X.Scale, Position.X.Offset + v838.X, Position.Y.Scale, Position.Y.Offset + v838.Y)
+                                    end
+
+                                    return
+                                end
+                            end)
+                            u20.InputEnded:Connect(function(input)
+                                if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+                                    u362 = false
+                                end
+                            end)
+                        end
+                    end
+                    do
+                        local u22 = UserInputService
+                        local u23 = v18
+                        local u24 = v21
+
+                        function v25(p4, p5, p6, p7, p8, p9, p10)
+                            local v377 = 'RuzSlider_' .. p4:gsub('%s+', '_')
+                            local v378 = game.CoreGui:FindFirstChild(v377)
+
+                            if not v378 then
+                                local ScreenGui = Instance.new('ScreenGui', game.CoreGui)
+
+                                ScreenGui.Name = v377
+                                ScreenGui.ResetOnSpawn = false
+                                ScreenGui.DisplayOrder = 55
+                                ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+                                local Frame = Instance.new('Frame', ScreenGui)
+
+                                Frame.Size = UDim2.new(0, 300, 0, 175)
+                                Frame.Position = UDim2.new(0.5, -150, 0.35, 0)
+                                Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+                                Frame.BackgroundTransparency = 0.08
+                                Frame.BorderSizePixel = 0
+                                Instance.new('UICorner', Frame).CornerRadius = UDim.new(0, 10)
+
+                                local UIStroke = Instance.new('UIStroke', Frame)
+
+                                UIStroke.Color = Color3.fromRGB(220, 38, 38)
+                                UIStroke.Thickness = 1.5
+                                UIStroke.Transparency = 0.15
+
+                                local TextLabel2 = Instance.new('TextLabel', Frame)
+
+                                TextLabel2.Size = UDim2.new(1, -44, 0, 36)
+                                TextLabel2.Position = UDim2.new(0, 12, 0, 0)
+                                TextLabel2.BackgroundTransparency = 1
+                                TextLabel2.Text = 'Lunar  \u{2014}  ' .. p4
+                                TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
+                                TextLabel2.Font = Enum.Font.GothamBold
+                                TextLabel2.TextSize = 14
+                                TextLabel2.TextXAlignment = Enum.TextXAlignment.Left
+
+                                local TextButton = Instance.new('TextButton', Frame)
+
+                                TextButton.Size = UDim2.new(0, 28, 0, 28)
+                                TextButton.Position = UDim2.new(1, -34, 0, 4)
+                                TextButton.BackgroundColor3 = Color3.fromRGB(180, 30, 30)
+                                TextButton.Text = 'X'
+                                TextButton.TextColor3 = Color3.new(1, 1, 1)
+                                TextButton.Font = Enum.Font.GothamBold
+                                TextButton.TextSize = 13
+                                Instance.new('UICorner', TextButton).CornerRadius = UDim.new(0, 6)
+
+                                local MouseButton1Click = TextButton.MouseButton1Click
+                                local u385 = ScreenGui
+
+                                MouseButton1Click:Connect(function()
+                                    u385:Destroy()
+                                end)
+
+                                local u386 = p7
+                                local TextLabel3 = Instance.new('TextLabel', Frame)
+
+                                TextLabel3.Size = UDim2.new(1, 0, 0, 22)
+                                TextLabel3.Position = UDim2.new(0, 0, 0, 38)
+                                TextLabel3.BackgroundTransparency = 1
+                                TextLabel3.Text = p4 .. ':  ' .. tostring(p7)
+                                TextLabel3.TextColor3 = Color3.fromRGB(210, 210, 210)
+                                TextLabel3.Font = Enum.Font.Gotham
+                                TextLabel3.TextSize = 13
+
+                                local Frame2 = Instance.new('Frame', Frame)
+
+                                Frame2.Size = UDim2.new(1, -30, 0, 10)
+                                Frame2.Position = UDim2.new(0, 15, 0, 72)
+                                Frame2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+                                Frame2.BorderSizePixel = 0
+                                Instance.new('UICorner', Frame2).CornerRadius = UDim.new(1, 0)
+
+                                local v390 = (p7 - p5) / (p6 - p5)
+                                local Frame3 = Instance.new('Frame', Frame2)
+
+                                Frame3.Size = UDim2.new(v390, 0, 1, 0)
+                                Frame3.BackgroundColor3 = Color3.fromRGB(220, 38, 38)
+                                Frame3.BorderSizePixel = 0
+                                Instance.new('UICorner', Frame3).CornerRadius = UDim.new(1, 0)
+
+                                local TextButton2 = Instance.new('TextButton', Frame2)
+
+                                TextButton2.Size = UDim2.new(0, 26, 0, 26)
+                                TextButton2.Position = UDim2.new(v390, -13, 0.5, -13)
+                                TextButton2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                                TextButton2.Text = ''
+                                TextButton2.AutoButtonColor = false
+                                TextButton2.BorderSizePixel = 0
+                                Instance.new('UICorner', TextButton2).CornerRadius = UDim.new(1, 0)
+
+                                local u393 = Frame2
+                                local u394 = p5
+                                local u395 = p6
+                                local u396 = p8
+                                local u397 = TextButton2
+                                local u398 = p4
+
+                                local function v399(p11)
+                                    local v841 = (p11 - u393.AbsolutePosition.X) / u393.AbsoluteSize.X
+                                    local v842 = math.clamp(v841, 0, 1)
+                                    local v843 = u394 + v842 * (u395 - u394)
+
+                                    u386 = math.round(v843)
+
+                                    if u396 and u396 > 0 then
+                                        local v844 = u386 / u396
+
+                                        u386 = math.round(v844) * u396
+                                    end
+
+                                    local v845 = (u386 - u394) / (u395 - u394)
+
+                                    Frame3.Size = UDim2.new(v845, 0, 1, 0)
+                                    u397.Position = UDim2.new(v845, -13, 0.5, -13)
+                                    TextLabel3.Text = u398 .. ':  ' .. tostring(u386)
+                                end
+
+                                local u400 = false
+
+                                TextButton2.InputBegan:Connect(function(input)
+                                    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+                                        u400 = true
+                                    end
+                                end)
+
+                                local InputBegan = Frame2.InputBegan
+                                local u402 = v399
+
+                                InputBegan:Connect(function(p12)
+                                    if p12.UserInputType == Enum.UserInputType.MouseButton1 or p12.UserInputType == Enum.UserInputType.Touch then
+                                        u400 = true
+
+                                        u402(p12.Position.X)
+                                    end
+                                end)
+
+                                local InputChanged = u22.InputChanged
+                                local u404 = v399
+
+                                InputChanged:Connect(function(p13)
+                                    if u400 then
+                                        if p13.UserInputType == Enum.UserInputType.MouseMovement or p13.UserInputType == Enum.UserInputType.Touch then
+                                            u404(p13.Position.X)
+                                        end
+
+                                        return
+                                    end
+                                end)
+                                u22.InputEnded:Connect(function(input)
+                                    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+                                        u400 = false
+                                    end
+                                end)
+
+                                local Frame4 = Instance.new('Frame', Frame)
+
+                                Frame4.Size = UDim2.new(1, -20, 0, 36)
+                                Frame4.Position = UDim2.new(0, 10, 0, 126)
+                                Frame4.BackgroundTransparency = 1
+
+                                local TextButton3 = Instance.new('TextButton', Frame4)
+
+                                TextButton3.Size = UDim2.new(0.48, 0, 1, 0)
+                                TextButton3.BackgroundColor3 = Color3.fromRGB(20, 160, 20)
+                                TextButton3.Text = 'Apply'
+                                TextButton3.TextColor3 = Color3.new(1, 1, 1)
+                                TextButton3.Font = Enum.Font.GothamBold
+                                TextButton3.TextSize = 13
+                                Instance.new('UICorner', TextButton3).CornerRadius = UDim.new(0, 6)
+
+                                local MouseButton1Click2 = TextButton3.MouseButton1Click
+                                local u408 = p9
+                                local u409 = p4
+
+                                MouseButton1Click2:Connect(function()
+                                    u408(u386)
+
+                                    local v853 = u409 .. ' set to ' .. u386
+
+                                    u23:Notify({
+                                        Title = 'Lunar',
+                                        Content = tostring(v853),
+                                        Duration = 3,
+                                        Icon = 'bell',
+                                    })
+                                end)
+
+                                local TextButton4 = Instance.new('TextButton', Frame4)
+
+                                TextButton4.Size = UDim2.new(0.48, 0, 1, 0)
+                                TextButton4.Position = UDim2.new(0.52, 0, 0, 0)
+                                TextButton4.BackgroundColor3 = Color3.fromRGB(160, 20, 20)
+                                TextButton4.Text = 'Reset'
+                                TextButton4.TextColor3 = Color3.new(1, 1, 1)
+                                TextButton4.Font = Enum.Font.GothamBold
+                                TextButton4.TextSize = 13
+                                Instance.new('UICorner', TextButton4).CornerRadius = UDim.new(0, 6)
+
+                                local MouseButton1Click3 = TextButton4.MouseButton1Click
+                                local u412 = ScreenGui
+
+                                MouseButton1Click3:Connect(function()
+                                    p10()
+                                    u412:Destroy()
+                                end)
+                                u24(Frame)
+
+                                return
+                            end
+
+                            v378:Destroy()
+                        end
+                    end
+                    do
+                        local ScreenGui = Instance.new('ScreenGui', game.CoreGui)
+
+                        ScreenGui.Name = 'RuzLGStar'
+                        ScreenGui.ResetOnSpawn = false
+                        ScreenGui.DisplayOrder = 40
+                        TextLabel = Instance.new('TextLabel', ScreenGui)
+                    end
+
+                    TextLabel.Size = UDim2.new(0, 28, 0, 28)
+                    TextLabel.Position = UDim2.new(1, -34, 0, 4)
+                    TextLabel.BackgroundTransparency = 1
+                    TextLabel.Text = '\u{2605}'
+                    TextLabel.TextColor3 = Color3.fromRGB(255, 215, 0)
+                    TextLabel.Font = Enum.Font.GothamBold
+                    TextLabel.TextSize = 22
+                    TextLabel.Visible = false
+
+                    do
+                        local t2, n4, u82
+                        local Part = Instance.new('Part')
+
+                        Part.Name = 'RuzPredictionPart'
+                        Part.Size = Vector3.new(0.5, 0.5, 0.5)
+                        Part.Anchored = true
+                        Part.CanCollide = false
+                        Part.Transparency = 1
+                        Part.Parent = Workspace
+                        u29 = nil
+
+                        do
+                            local v35
+
+                            do
+                                local u30 = Workspace
+
+                                u31 = nil
+                                u32 = nil
+
+                                local color3 = Color3.fromRGB(255, 215, 0)
+
+                                local function u34(p14)
+                                    if u29 then
+                                        u29:Destroy()
+
+                                        u29 = nil
+                                    end
+
+                                    local Part2 = Instance.new('Part')
+
+                                    Part2.Name = 'RuzGunMarker'
+                                    Part2.Size = Vector3.new(1.5, 0.15, 1.5)
+                                    Part2.Anchored = true
+                                    Part2.CanCollide = false
+                                    Part2.CastShadow = false
+                                    Part2.Material = Enum.Material.Neon
+                                    Part2.Color = Color3.fromRGB(50, 255, 80)
+                                    Part2.Transparency = 0.25
+                                    Part2.CFrame = CFrame.new(p14)
+                                    Part2.Parent = u30
+
+                                    local spawn = task.spawn
+                                    local u416 = Part2
+
+                                    spawn(function()
+                                        local _t = 0
+                                        while u416 and u416.Parent do
+                                            _t = _t + 0.05
+                                            if _t > 1 then _t = 0 end
+                                            u416.Transparency = 0.25 + 0.5 * math.sin(_t * math.pi)
+                                            task.wait(0.03)
+                                        end
+                                    end)
+
+                                    u29 = Part2
+                                end
+
+                                function v35(p15)
+                                    if u17 then
+                                        if u31 then
+                                            u31:Destroy()
+
+                                            u31 = nil
+                                        end
+                                        if u32 then
+                                            u32:Destroy()
+
+                                            u32 = nil
+                                        end
+
+                                        local Highlight = Instance.new('Highlight')
+
+                                        Highlight.Adornee = p15
+                                        Highlight.FillColor = color3
+                                        Highlight.OutlineColor = Color3.fromRGB(255, 255, 255)
+                                        Highlight.FillTransparency = 0.35
+                                        Highlight.OutlineTransparency = 0
+                                        Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+                                        Highlight.Parent = p15
+                                        u31 = Highlight
+
+                                        local v419 = p15:FindFirstChild('Handle') or (p15:IsA('Model') and p15.PrimaryPart or p15:FindFirstChildWhichIsA('BasePart')) or p15:IsA('BasePart') and p15
+
+                                        if not v419 then
+                                            if p15:IsA('Model') then
+                                                u34(p15:GetModelCFrame().Position + Vector3.new(0, 0.1, 0))
+                                            end
+
+                                            return
+                                        end
+
+                                        u34(v419.Position + Vector3.new(0, 0.1, 0))
+
+                                        local BillboardGui = Instance.new('BillboardGui')
+
+                                        BillboardGui.Adornee = v419
+                                        BillboardGui.Size = UDim2.new(0, 130, 0, 36)
+                                        BillboardGui.StudsOffset = Vector3.new(0, 4, 0)
+                                        BillboardGui.AlwaysOnTop = true
+                                        BillboardGui.MaxDistance = 300
+                                        BillboardGui.Parent = v419
+
+                                        local Frame = Instance.new('Frame', BillboardGui)
+
+                                        Frame.Size = UDim2.new(1, 0, 1, 0)
+                                        Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+                                        Frame.BackgroundTransparency = 0.4
+                                        Frame.BorderSizePixel = 0
+                                        Instance.new('UICorner', Frame).CornerRadius = UDim.new(0, 6)
+
+                                        local UIStroke = Instance.new('UIStroke', Frame)
+
+                                        UIStroke.Color = color3
+                                        UIStroke.Thickness = 1.5
+                                        UIStroke.Transparency = 0.1
+
+                                        local TextLabel4 = Instance.new('TextLabel', Frame)
+
+                                        TextLabel4.Size = UDim2.new(1, 0, 1, 0)
+                                        TextLabel4.BackgroundTransparency = 1
+                                        TextLabel4.Text = 'GUN ON MAP'
+                                        TextLabel4.TextColor3 = color3
+                                        TextLabel4.Font = Enum.Font.GothamBlack
+                                        TextLabel4.TextSize = 13
+                                        TextLabel4.TextStrokeTransparency = 0.4
+                                        TextLabel4.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+                                        u32 = BillboardGui
+
+                                        return
+                                    end
+                                end
+                            end
+                            do
+                                local _ = Workspace
+                                local _ = v35
+                                local _ = v18
+                            end
+                            do
+                                local u42
+
+                                do
+                                    local t1 = {}
+                                    local u40 = v35
+                                    local u41 = v18
+
+                                    function u42(p16)
+                                        if not t1[p16] then
+                                            t1[p16] = true
+
+                                            p16.ChildAdded:Connect(function(child)
+                                                if child.Name == 'GunDrop' then
+                                                    task.wait(0.1)
+
+                                                    if u17 then
+                                                        u40(child)
+                                                    end
+
+                                                    u41:Notify({
+                                                        Title = 'Lunar',
+                                                        Content = tostring('Gun dropped on the map!'),
+                                                        Duration = 3,
+                                                        Icon = 'bell',
+                                                    })
+                                                end
+                                                if child:IsA('Model') or child:IsA('Folder') then
+                                                    u42(child)
+                                                end
+                                            end)
+                                            p16.ChildRemoved:Connect(function(child)
+                                                if child.Name == 'GunDrop' then
+                                                    if u31 then
+                                                        u31:Destroy()
+
+                                                        u31 = nil
+                                                    end
+                                                    if u32 then
+                                                        u32:Destroy()
+
+                                                        u32 = nil
+                                                    end
+                                                    if u29 then
+                                                        u29:Destroy()
+
+                                                        u29 = nil
+                                                    end
+                                                end
+                                            end)
+
+                                            for _, child in ipairs(p16:GetChildren())do
+                                                if child:IsA('Model') or child:IsA('Folder') then
+                                                    u42(child)
+                                                end
+                                            end
+
+                                            return
+                                        end
+                                    end
+                                end
+
+                                u42(Workspace)
+
+                                local ChildAdded = Workspace.ChildAdded
+                                local u44 = u42
+                                local u45 = v35
+                                local u46 = v18
+
+                                ChildAdded:Connect(function(p17)
+                                    if p17:IsA('Model') or p17:IsA('Folder') then
+                                        u44(p17)
+                                    end
+                                    if p17.Name == 'GunDrop' then
+                                        task.wait(0.1)
+
+                                        if u17 then
+                                            u45(p17)
+                                        end
+
+                                        u46:Notify({
+                                            Title = 'Lunar',
+                                            Content = tostring('Gun dropped on the map!'),
+                                            Duration = 3,
+                                            Icon = 'bell',
+                                        })
+                                    end
+                                end)
+                            end
+                            do
+                                local spawn = task.spawn
+                                local u48 = Workspace
+                                local u49 = v35
+                                local u50 = v18
+
+                                spawn(function()
+                                    task.wait(1.5)
+
+                                    local GunDrop = u48:FindFirstChild('GunDrop', true)
+
+                                    if GunDrop then
+                                        if u17 then
+                                            u49(GunDrop)
+                                        end
+
+                                        u50:Notify({
+                                            Title = 'Lunar',
+                                            Content = tostring('Gun dropped on the map!'),
+                                            Duration = 3,
+                                            Icon = 'bell',
+                                        })
+                                    end
+                                end)
+                            end
+                            do
+                                local u51 = Workspace
+                                local u52 = v35
+                                local u53 = v18
+
+                                for _, player in ipairs(Players:GetPlayers())do
+                                    if player ~= LocalPlayer then
+                                        task.spawn(function(p18)
+                                            local u431 = p18
+
+                                            if p18.Character then
+                                                local Character = p18.Character
+
+                                                if Character then
+                                                    local Humanoid = Character:WaitForChild('Humanoid', 5)
+
+                                                    if Humanoid then
+                                                        local Died = Humanoid.Died
+                                                        local u435 = p18
+                                                        local u436 = Character
+
+                                                        Died:Connect(function()
+                                                            if u435.Backpack:FindFirstChild('Gun') or u436:FindFirstChild('Gun') then
+                                                                task.delay(0.8, function()
+                                                                    local GunDrop = u51:FindFirstChild('GunDrop', true)
+
+                                                                    if GunDrop then
+                                                                        if u17 then
+                                                                            u52(GunDrop)
+                                                                        end
+
+                                                                        u53:Notify({
+                                                                            Title = 'Lunar',
+                                                                            Content = tostring('Gun dropped on the map!'),
+                                                                            Duration = 3,
+                                                                            Icon = 'bell',
+                                                                        })
+                                                                    end
+                                                                end)
+                                                            end
+                                                        end)
+                                                    end
+                                                end
+                                            end
+
+                                            p18.CharacterAdded:Connect(function(character)
+                                                if character then
+                                                    local Humanoid = character:WaitForChild('Humanoid', 5)
+
+                                                    if Humanoid then
+                                                        local Died = Humanoid.Died
+                                                        local u862 = character
+
+                                                        Died:Connect(function()
+                                                            if u431.Backpack:FindFirstChild('Gun') or u862:FindFirstChild('Gun') then
+                                                                task.delay(0.8, function()
+                                                                    local GunDrop = u51:FindFirstChild('GunDrop', true)
+
+                                                                    if GunDrop then
+                                                                        if u17 then
+                                                                            u52(GunDrop)
+                                                                        end
+
+                                                                        u53:Notify({
+                                                                            Title = 'Lunar',
+                                                                            Content = tostring('Gun dropped on the map!'),
+                                                                            Duration = 3,
+                                                                            Icon = 'bell',
+                                                                        })
+                                                                    end
+                                                                end)
+                                                            end
+                                                        end)
+
+                                                        return
+                                                    end
+
+                                                    return
+                                                end
+                                            end)
+                                        end, player)
+                                    end
+                                end
+                            end
+
+                            local PlayerAdded = Players.PlayerAdded
+                            local u57 = LocalPlayer
+                            local u58 = Workspace
+                            local u59 = v35
+                            local u60 = v18
+
+                            PlayerAdded:Connect(function(p19)
+                                if p19 ~= u57 then
+                                    local u438 = p19
+
+                                    if p19.Character then
+                                        local Character = p19.Character
+
+                                        if Character then
+                                            local Humanoid = Character:WaitForChild('Humanoid', 5)
+
+                                            if Humanoid then
+                                                local Died = Humanoid.Died
+                                                local u442 = p19
+                                                local u443 = Character
+
+                                                Died:Connect(function()
+                                                    if u442.Backpack:FindFirstChild('Gun') or u443:FindFirstChild('Gun') then
+                                                        task.delay(0.8, function()
+                                                            local GunDrop = u58:FindFirstChild('GunDrop', true)
+
+                                                            if GunDrop then
+                                                                if u17 then
+                                                                    u59(GunDrop)
+                                                                end
+
+                                                                u60:Notify({
+                                                                    Title = 'Lunar',
+                                                                    Content = tostring('Gun dropped on the map!'),
+                                                                    Duration = 3,
+                                                                    Icon = 'bell',
+                                                                })
+                                                            end
+                                                        end)
+                                                    end
+                                                end)
+                                            end
+                                        end
+                                    end
+
+                                    p19.CharacterAdded:Connect(function(character)
+                                        if character then
+                                            local Humanoid = character:WaitForChild('Humanoid', 5)
+
+                                            if Humanoid then
+                                                local Died = Humanoid.Died
+                                                local u866 = character
+
+                                                Died:Connect(function()
+                                                    if u438.Backpack:FindFirstChild('Gun') or u866:FindFirstChild('Gun') then
+                                                        task.delay(0.8, function()
+                                                            local GunDrop = u58:FindFirstChild('GunDrop', true)
+
+                                                            if GunDrop then
+                                                                if u17 then
+                                                                    u59(GunDrop)
+                                                                end
+
+                                                                u60:Notify({
+                                                                    Title = 'Lunar',
+                                                                    Content = tostring('Gun dropped on the map!'),
+                                                                    Duration = 3,
+                                                                    Icon = 'bell',
+                                                                })
+                                                            end
+                                                        end)
+                                                    end
+                                                end)
+
+                                                return
+                                            end
+
+                                            return
+                                        end
+                                    end)
+                                end
+                            end)
+
+                            u61 = false
+                            u62 = nil
+                            t2 = {}
+                            n4 = 0
+                            t3 = {
+                                Murderer = true,
+                                Sheriff = true,
+                                Hero = true,
+                                Innocent = true,
+                                Self = true,
+                            }
+                            t4 = {
+                                Murderer = Color3.fromRGB(255, 40, 40),
+                                Sheriff = Color3.fromRGB(40, 130, 255),
+                                Hero = Color3.fromRGB(255, 215, 0),
+                                Innocent = Color3.fromRGB(0, 220, 0),
+                            }
+
+                            local u67 = Players
+
+                            function v68()
+                                for _, player in ipairs(u67:GetPlayers())do
+                                    if player.Character then
+                                        local Lunar_ESP = player.Character:FindFirstChild('Lunar_ESP')
+
+                                        if Lunar_ESP then
+                                            Lunar_ESP:Destroy()
+                                        end
+                                    end
+                                end
+
+                                t2 = {}
+                                n4 = 0
+                            end
+                        end
+                        do
+                            local u69 = ReplicatedStorage
+                            local u70 = v18
+                            local u71 = RunService
+                            local u72 = Players
+
+                            local function u73(p20)
+                                local s1 = 'Innocent'
+                                local v446 = t2[p20.Name]
+
+                                if v446 then
+                                    local v447 = v446.Role or (v446.role or (v446.Team or ''))
+                                    local v448 = tostring(v447):lower()
+
+                                    if v448:find('murd') then
+                                        return 'Murderer'
+                                    end
+                                    if v448:find('sheriff') or v448:find('gun') then
+                                        return 'Sheriff'
+                                    end
+                                    if v448:find('hero') then
+                                        s1 = 'Hero'
+                                    end
+                                end
+
+                                return s1
+                            end
+
+                            local u74 = t3
+                            local u75 = LocalPlayer
+
+                            local function u76(p21, p22)
+                                local v451 = p21:FindFirstChild('Lunar_ESP') or Instance.new('Highlight')
+
+                                v451.Name = 'Lunar_ESP'
+                                v451.Parent = p21
+                                v451.FillColor = p22
+                                v451.FillTransparency = 0.7
+                                v451.OutlineColor = Color3.fromRGB(255, 255, 255)
+                                v451.OutlineTransparency = 0.15
+                                v451.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+                            end
+
+                            local u77 = t4
+
+                            function v78()
+                                local GetCurrentPlayerData = u69:FindFirstChild('GetCurrentPlayerData', true)
+
+                                if GetCurrentPlayerData and GetCurrentPlayerData:IsA('RemoteFunction') then
+                                    if u62 then
+                                        u62:Disconnect()
+
+                                        u62 = nil
+                                    end
+
+                                    local Heartbeat = u71.Heartbeat
+                                    local u459 = GetCurrentPlayerData
+
+                                    u62 = Heartbeat:Connect(function()
+                                        if u61 then
+                                            if tick() - n4 > 0.5 then
+                                                local ok, result = pcall(function()
+                                                    return u459:InvokeServer()
+                                                end)
+
+                                                if ok and type(result) == 'table' then
+                                                    t2 = result
+                                                end
+
+                                                n4 = tick()
+                                            end
+
+                                            for _, player in ipairs(u72:GetPlayers())do
+                                                if player.Character then
+                                                    local v871 = u73(player)
+                                                    local v872 = u74[v871]
+
+                                                    if player == u75 and not u74.Self then
+                                                        v872 = false
+                                                    end
+                                                    if not v872 then
+                                                        local Lunar_ESP = player.Character:FindFirstChild('Lunar_ESP')
+
+                                                        if Lunar_ESP then
+                                                            Lunar_ESP:Destroy()
+                                                        end
+                                                    else
+                                                        u76(player.Character, u77[v871])
+                                                    end
+                                                end
+                                            end
+
+                                            return
+                                        end
+                                    end)
+
+                                    return
+                                end
+
+                                u70:Notify({
+                                    Title = 'Lunar',
+                                    Content = tostring('ESP remote not found!'),
+                                    Duration = 3,
+                                    Icon = 'bell',
+                                })
+
+                                u61 = false
+                            end
+                        end
+                        do
+                            local _ = v68
+                            local _ = v78
+                            local _ = v68
+
+                            u82 = nil
+
+                            local u83 = LocalPlayer
+                            local u84 = Players
+                            local RenderStepped = RunService.RenderStepped
+
+                            local function u86()
+                                local Character = u83.Character
+                                local v464 = Character and Character:FindFirstChild('HumanoidRootPart')
+
+                                if v464 then
+                                    local v466 = u83.Backpack:FindFirstChild('Knife') or u83.Character and u83.Character:FindFirstChild('Knife')
+                                    local v468 = u83.Backpack:FindFirstChild('Gun') or u83.Character and u83.Character:FindFirstChild('Gun')
+                                    local v469 = nil
+                                    local n5 = (1/0)
+
+                                    for _, player in ipairs(u84:GetPlayers())do
+                                        if player ~= u83 and player.Character then
+                                            local Character2 = player.Character
+                                            local Humanoid = Character2:FindFirstChildOfClass('Humanoid')
+
+                                            if Humanoid and Humanoid.Health > 0 then
+                                                local HumanoidRootPart = Character2:FindFirstChild('HumanoidRootPart')
+
+                                                if HumanoidRootPart then
+                                                    local v476 = player.Backpack:FindFirstChild('Knife') or player.Character and player.Character:FindFirstChild('Knife')
+                                                    local v477 = player.Backpack:FindFirstChild('Gun') or player.Character and player.Character:FindFirstChild('Gun')
+                                                    local Magnitude = (HumanoidRootPart.Position - v464.Position).Magnitude
+                                                    local v479 = false
+
+                                                    if not v466 then
+                                                        if not v468 then
+                                                            if v476 then
+                                                                v479 = true
+                                                                Magnitude = Magnitude - 1000
+                                                            end
+                                                            if v477 then
+                                                                v479 = true
+                                                            end
+                                                        elseif v477 or v476 then
+                                                            v479 = true
+                                                        end
+                                                    elseif v476 then
+                                                        v479 = true
+                                                    end
+                                                    if v479 and Magnitude < n5 then
+                                                        n5 = Magnitude
+                                                        v469 = Character2
+                                                    end
+                                                end
+                                            end
+                                        end
+                                    end
+
+                                    if not v469 then
+                                        for _, player in ipairs(u84:GetPlayers())do
+                                            if player ~= u83 and player.Character then
+                                                local Character3 = player.Character
+                                                local Humanoid = Character3:FindFirstChildOfClass('Humanoid')
+                                                local HumanoidRootPart = Character3:FindFirstChild('HumanoidRootPart')
+
+                                                if Humanoid and Humanoid.Health > 0 and HumanoidRootPart then
+                                                    local Magnitude = (HumanoidRootPart.Position - v464.Position).Magnitude
+
+                                                    if Magnitude < n5 then
+                                                        n5 = Magnitude
+                                                        v469 = Character3
+                                                    end
+                                                end
+                                            end
+                                        end
+                                    end
+
+                                    return v469
+                                end
+
+                                return nil
+                            end
+
+                            local u87 = LocalPlayer
+                            local u88 = Part
+
+                            RunService.Heartbeat:Connect(function()
+                                u82 = u86()
+                            end)
+
+                            RenderStepped:Connect(function()
+                                local v486 = u82
+
+                                if v486 then
+                                    local Character = u87.Character
+                                    local v488 = Character and Character:FindFirstChild('HumanoidRootPart')
+
+                                    if v488 then
+                                        local v489 = v486:FindFirstChild('UpperTorso') or (v486:FindFirstChild('Torso') or v486:FindFirstChild('HumanoidRootPart'))
+                                        local Humanoid = v486:FindFirstChildOfClass('Humanoid')
+
+                                        if v489 then
+                                            local Position = v489.Position
+                                            local v492 = (Position - v488.Position).Magnitude / 250
+
+                                            if u13 then
+                                                local ok, result = pcall(function()
+                                                    return u87:GetNetworkPing()
+                                                end)
+
+                                                if ok and result then
+                                                    v492 = v492 + result * 0.5
+                                                end
+                                            end
+
+                                            local AssemblyLinearVelocity = v489.AssemblyLinearVelocity
+
+                                            if Humanoid then
+                                                local State = Humanoid:GetState()
+
+                                                if State == Enum.HumanoidStateType.Freefall or State == Enum.HumanoidStateType.Jumping then
+                                                    AssemblyLinearVelocity = Vector3.new(AssemblyLinearVelocity.X, AssemblyLinearVelocity.Y * 0.35, AssemblyLinearVelocity.Z)
+                                                end
+                                            end
+
+                                            u88.CFrame = CFrame.new(Position + AssemblyLinearVelocity * v492)
+
+                                            return
+                                        end
+
+                                        return
+                                    end
+
+                                    return
+                                end
+                            end)
+                        end
+
+                        local u89 = LocalPlayer
+                        local u90 = v18
+                        local u91 = Part
+                        local u92 = LocalPlayer
+                        local u93 = v18
+                        local u94 = Players
+                        local u95 = LocalPlayer
+
+                        local function u96()
+                            local Character = u92.Character
+
+                            if Character then
+                                local HumanoidRootPart = Character:FindFirstChild('HumanoidRootPart')
+
+                                if HumanoidRootPart then
+                                    local v507 = u92.Backpack:FindFirstChild('Knife') or Character:FindFirstChild('Knife')
+
+                                    if v507 then
+                                        if Character ~= v507.Parent then
+                                            Character.Humanoid:EquipTool(v507)
+                                            task.wait(0)
+                                        end
+
+                                        local v508 = u82
+
+                                        if not u82 then
+                                            local n6 = (1/0)
+
+                                            for _, player in ipairs(u94:GetPlayers())do
+                                                if player ~= u92 and player.Character then
+                                                    local HumanoidRootPart2 = player.Character:FindFirstChild('HumanoidRootPart')
+                                                    local Humanoid = player.Character:FindFirstChildOfClass('Humanoid')
+
+                                                    if HumanoidRootPart2 and Humanoid and Humanoid.Health > 0 then
+                                                        local Magnitude = (HumanoidRootPart2.Position - HumanoidRootPart.Position).Magnitude
+
+                                                        if Magnitude < n6 then
+                                                            n6 = Magnitude
+                                                            v508 = player.Character
+                                                        end
+                                                    end
+                                                end
+                                            end
+                                        end
+                                        if v508 then
+                                            local HumanoidRootPart3 = v508:FindFirstChild('HumanoidRootPart')
+
+                                            if HumanoidRootPart3 then
+                                                local v516 = v508:FindFirstChild('UpperTorso') or (v508:FindFirstChild('Torso') or HumanoidRootPart3)
+                                                local AssemblyLinearVelocity = HumanoidRootPart3.AssemblyLinearVelocity
+                                                local Magnitude = (v516.Position - HumanoidRootPart.Position).Magnitude
+                                                local n7 = 0
+
+                                                if u13 then
+                                                    local ok, result = pcall(function()
+                                                        return u92:GetNetworkPing()
+                                                    end)
+
+                                                    n7 = ok and result or 0
+                                                end
+
+                                                local u522 = v516.Position + Vector3.new(AssemblyLinearVelocity.X, 0, AssemblyLinearVelocity.Z) * (Magnitude / 65 + n7 * 0.5)
+                                                local _pcall = pcall
+                                                local u524 = v507
+                                                local u525 = HumanoidRootPart
+
+                                                pcall(function()
+                                                    local KnifeThrown = u524:WaitForChild('Events'):WaitForChild('KnifeThrown')
+                                                    local cFrame = CFrame.new(u525.Position, u522)
+                                                    local v881 = (function(...)
+                                                        local t5 = {...}
+
+                                                        t5.n = select('#', ...)
+
+                                                        return t5
+                                                    end)(CFrame.new(u522))
+
+                                                    KnifeThrown:FireServer(cFrame, unpack(v881, 1, v881.n))
+                                                end)
+
+                                                return
+                                            end
+
+                                            return
+                                        end
+
+                                        u93:Notify({
+                                            Title = 'Lunar',
+                                            Content = tostring('No target found!'),
+                                            Duration = 3,
+                                            Icon = 'bell',
+                                        })
+
+                                        return
+                                    end
+
+                                    u93:Notify({
+                                        Title = 'Lunar',
+                                        Content = tostring('No knife in inventory!'),
+                                        Duration = 3,
+                                        Icon = 'bell',
+                                    })
+
+                                    return
+                                end
+
+                                return
+                            end
+                        end
+                        local function u97()
+                            local _silent = getgenv().SILENT_SHOT
+                            if _silent and _silent() then return end
+                            local Character = u89.Character
+
+                            if Character then
+                                local HumanoidRootPart = Character:FindFirstChild('HumanoidRootPart')
+
+                                if HumanoidRootPart then
+                                    local v499 = u89.Backpack:FindFirstChild('Gun') or Character:FindFirstChild('Gun')
+
+                                    if v499 then
+                                        if u82 then
+                                            if Character ~= v499.Parent then
+                                                Character.Humanoid:EquipTool(v499)
+                                                task.wait(0)
+                                            end
+
+                                            local CFramePosition = u91.CFrame.Position
+                                            local v501 = HumanoidRootPart.Position + Vector3.new(0, 1, 0)
+                                            local cFrame = CFrame.new(v501, CFramePosition)
+                                            local _pcall = pcall
+                                            local u504 = v499
+
+                                            pcall(function()
+                                                local Shoot = u504:WaitForChild('Shoot')
+                                                local v876 = (function(...)
+                                                    local t6 = {...}
+
+                                                    t6.n = select('#', ...)
+
+                                                    return t6
+                                                end)(CFrame.new(CFramePosition))
+
+                                                Shoot:FireServer(cFrame, unpack(v876, 1, v876.n))
+
+                                                if _BT and _BT.Enabled and _bullettracerlol then
+                                                    local gun  = u504
+                                                    local h    = gun:FindFirstChild("Handle")
+                                                    local sPos = h and h.Position or v501
+                                                    local ePos = CFramePosition
+                                                    task.spawn(_bullettracerlol, sPos, ePos)
+                                                end
+                                            end)
+
+                                            return
+                                        end
+
+                                        u90:Notify({
+                                            Title = 'Lunar',
+                                            Content = tostring('No target found.'),
+                                            Duration = 3,
+                                            Icon = 'bell',
+                                        })
+
+                                        return
+                                    end
+
+                                    u90:Notify({
+                                        Title = 'Lunar',
+                                        Content = tostring('No gun in inventory!'),
+                                        Duration = 3,
+                                        Icon = 'bell',
+                                    })
+
+                                    return
+                                end
+
+                                return
+                            end
+                        end
+
+                        function u98()
+                            if u95.Character then
+                                if not u95.Backpack:FindFirstChild('Knife') and (not u95.Character or not u95.Character:FindFirstChild('Knife')) then
+                                    u97()
+
+                                    return
+                                end
+
+                                u96()
+
+                                return
+                            end
+                        end
+                    end
+
+                    u99 = false
+
+                    do
+                        local u100 = LocalPlayer
+                        local u101 = UserInputService
+                        local u102 = CurrentCamera
+                        local u103 = RunService
+
+                        function u104()
+                            if u99 then
+                                return
+                            end
+
+                            local Character = u100.Character
+
+                            if not Character then
+                                return
+                            end
+
+                            local HumanoidRootPart = Character:FindFirstChild('HumanoidRootPart')
+
+                            if not HumanoidRootPart then
+                                return
+                            end
+
+                            u99 = true
+
+                            local g539
+
+                            if u101.MouseBehavior ~= Enum.MouseBehavior.LockCenter then
+                                local HumanoidRootPartCFrame = HumanoidRootPart.CFrame
+                                local v530 = HumanoidRootPartCFrame * CFrame.Angles(0, 3.141592653589793, 0)
+
+                                for i = 1, 4 do
+                                    HumanoidRootPart.CFrame = HumanoidRootPartCFrame:Lerp(v530, i / 4)
+
+                                    u103.RenderStepped:Wait()
+                                end
+                            else
+                                local CFrame2 = u102.CFrame
+                                local LookVector = CFrame2.LookVector
+                                local vector3 = Vector3.new(-LookVector.X, LookVector.Y, -LookVector.Z)
+                                local cFrame = CFrame.lookAt(CFrame2.Position, CFrame2.Position + vector3)
+                                local n8 = 1
+                                local n9 = 5
+                                local n10 = 1
+
+                                g539 = nil
+
+                                if false then
+                                    if true then
+                                        g539 = true
+                                    end
+                                elseif not (n8 <= n9) then
+                                    g539 = true
+                                end
+                                if not g539 then
+                                    if not g539 then
+                                        repeat
+                                            while true do
+                                                u102.CFrame = CFrame2:Lerp(cFrame, n8 / 5)
+
+                                                u103.RenderStepped:Wait()
+
+                                                n8 = n8 + n10
+
+                                                if n10 > 0 then
+                                                    break
+                                                end
+                                                if not (n9 <= n8) then
+                                                    g539 = true
+                                                end
+                                                if g539 then
+                                                    break
+                                                end
+                                            end
+
+                                            if g539 then
+                                                break
+                                            end
+                                        until not (n8 <= n9)
+                                    end
+                                end
+                            end
+
+                            g539 = false
+
+                            task.wait(0.15)
+
+                            u99 = false
+                        end
+
+                        u105 = false
+
+                        local u106 = LocalPlayer
+                        local u107 = UserInputService
+                        local u108 = CurrentCamera
+                        local u109 = RunService
+
+                        function u110()
+                            local v540 = nil
+                            local RenderStepped = nil
+                            local v542 = nil
+                            local v543 = nil
+
+                            if u105 then
+                                return
+                            end
+
+                            local Character = u106.Character
+
+                            if not Character then
+                                return
+                            end
+
+                            local HumanoidRootPart = Character:FindFirstChild('HumanoidRootPart')
+
+                            if not HumanoidRootPart then
+                                return
+                            end
+
+                            local Humanoid = Character:FindFirstChildOfClass('Humanoid')
+
+                            if not Humanoid then
+                                return
+                            end
+
+                            u105 = true
+
+                            local v547 = u107.MouseBehavior == Enum.MouseBehavior.LockCenter
+                            local _, v549, _ = HumanoidRootPart.CFrame:ToEulerAnglesYXZ()
+                            local CFrame3 = u108.CFrame
+                            local g590 = nil
+                            local g566
+
+                            if not v547 then
+                                local v552 = v549 - 1.5707963267948966
+
+                                for i = 1, 7 do
+                                    local _ = i / 7
+                                    local _ = RenderStepped ^ 2
+                                    local cFrame = CFrame.new(HumanoidRootPart.Position)
+                                    local fromEulerAnglesYXZ = CFrame.fromEulerAnglesYXZ
+
+                                    v543 = v549 + (v552 - v549) * v540
+                                    v542 = fromEulerAnglesYXZ(0, v543, 0)
+                                    HumanoidRootPart.CFrame = cFrame * v542
+                                    RenderStepped = u109.RenderStepped
+
+                                    RenderStepped:Wait()
+                                end
+                            else
+                                local Unit = Vector3.new(CFrame3.LookVector.X, 0, CFrame3.LookVector.Z).Unit
+                                local new = Vector3.new
+                                local RightVectorX = CFrame3.RightVector.X
+                                local RightVectorZ = CFrame3.RightVector.Z
+                                local Unit2 = new(RightVectorX, 0, RightVectorZ).Unit
+                                local n11 = 1
+                                local n12 = 7
+                                local n13 = 1
+
+                                g566 = nil
+
+                                if false then
+                                    if true then
+                                        g566 = true
+                                    end
+                                elseif not (n11 <= n12) then
+                                    g566 = true
+                                end
+                                if not g566 then
+                                    if not g566 then
+                                        repeat
+                                            while true do
+                                                local _ = n11 / 7
+                                                local _ = v542 ^ 2
+                                                local lookAt = CFrame.lookAt
+                                                local CFramePosition = u108.CFrame.Position
+
+                                                v543 = u108.CFrame.Position + Unit:Lerp(Unit2, RightVectorZ).Unit
+                                                u108.CFrame = lookAt(CFramePosition, v543)
+                                                v542 = u109.RenderStepped
+
+                                                v542:Wait()
+
+                                                n11 = n11 + n13
+
+                                                if n13 > 0 then
+                                                    break
+                                                end
+                                                if not (n12 <= n11) then
+                                                    g566 = true
+                                                end
+                                                if g566 then
+                                                    break
+                                                end
+                                            end
+
+                                            if g566 then
+                                                break
+                                            end
+                                        until not (n11 <= n12)
+                                    end
+                                end
+                            end
+
+                            g566 = false
+
+                            local AssemblyLinearVelocity = HumanoidRootPart.AssemblyLinearVelocity
+
+                            HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(AssemblyLinearVelocity.X, 55, AssemblyLinearVelocity.Z)
+
+                            local _pcall = pcall
+                            local u574 = Humanoid
+
+                            pcall(function()
+                                u574:ChangeState(Enum.HumanoidStateType.Jumping)
+                            end)
+                            task.wait(0.12)
+
+                            if not v547 then
+                                local _, v576, _ = HumanoidRootPart.CFrame:ToEulerAnglesYXZ()
+
+                                for i = 1, 5 do
+                                    local _ = i / 5
+                                    local _ = v543 ^ 2
+
+                                    HumanoidRootPart.CFrame = CFrame.new(HumanoidRootPart.Position) * CFrame.fromEulerAnglesYXZ(0, v576 + (v549 - v576) * v542, 0)
+                                    v543 = u109.RenderStepped
+
+                                    v543:Wait()
+                                end
+                            else
+                                local Unit = Vector3.new(CFrame3.LookVector.X, 0, CFrame3.LookVector.Z).Unit
+                                local new = Vector3.new
+                                local LookVectorX = u108.CFrame.LookVector.X
+                                local CFrame4 = u108.CFrame
+                                local LookVectorZ = CFrame4.LookVector.Z
+                                local Unit3 = new(LookVectorX, 0, LookVectorZ).Unit
+                                local n14 = 1
+                                local n15 = 5
+                                local n16 = 1
+
+                                if false then
+                                    if true then
+                                        g590 = true
+                                    end
+                                elseif not (n14 <= n15) then
+                                    g590 = true
+                                end
+                                if not g590 then
+                                    if not g590 then
+                                        repeat
+                                            while true do
+                                                local _ = n14 / 5
+                                                local _ = CFrame4 ^ 2
+
+                                                u108.CFrame = CFrame.lookAt(u108.CFrame.Position, u108.CFrame.Position + Unit3:Lerp(Unit, LookVectorZ).Unit)
+                                                CFrame4 = u109.RenderStepped
+
+                                                CFrame4:Wait()
+
+                                                n14 = n14 + n16
+
+                                                if n16 > 0 then
+                                                    break
+                                                end
+                                                if not (n15 <= n14) then
+                                                    g590 = true
+                                                end
+                                                if g590 then
+                                                    break
+                                                end
+                                            end
+
+                                            if g590 then
+                                                break
+                                            end
+                                        until not (n14 <= n15)
+                                    end
+                                end
+                            end
+
+                            g590 = false
+
+                            task.wait(0.1)
+
+                            u105 = false
+                        end
+                    end
+
+                    local spawn = task.spawn
+                    local u112 = ReplicatedStorage
+
+                    spawn(function()
+                        while true do
+                            task.wait(2)
+                            pcall(function()
+                                u112.Remotes.Extras.ReplicateToy:InvokeServer('FakeBomb')
+                                u112.Remotes.Extras.ReplicateToy:InvokeServer('GoldBomb')
+                            end)
+                        end
+                    end)
+
+                    local u113 = LocalPlayer
+                    local u114 = v18
+
+                    function v115(p23, p24)
+                        local Character = u113.Character
+
+                        if Character then
+                            local v596 = u113.Backpack:FindFirstChild(p23) or Character:FindFirstChild(p23)
+
+                            if v596 then
+                                local HumanoidRootPart = Character:FindFirstChild('HumanoidRootPart')
+
+                                if HumanoidRootPart then
+                                    if Character ~= v596.Parent then
+                                        Character.Humanoid:EquipTool(v596)
+                                        task.wait()
+                                    end
+
+                                    local _pcall = pcall
+                                    local u599 = v596
+                                    local u600 = HumanoidRootPart
+
+                                    pcall(function()
+                                        u599.Remote:FireServer(CFrame.new(u600.Position + u600.CFrame.LookVector * 1.5 + Vector3.new(0, -3, 0)), 50)
+                                    end)
+                                    Character.Humanoid:ChangeState(Enum.HumanoidStateType.Freefall)
+
+                                    HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(HumanoidRootPart.AssemblyLinearVelocity.X, 62, HumanoidRootPart.AssemblyLinearVelocity.Z)
+
+                                    if not p24 then
+                                        task.spawn(function()
+                                            u10 = true
+
+                                            task.wait(21)
+
+                                            u10 = false
+                                        end)
+
+                                        return
+                                    end
+
+                                    task.spawn(function()
+                                        u9 = true
+
+                                        task.wait(4)
+
+                                        u9 = false
+                                    end)
+
+                                    return
+                                end
+
+                                return
+                            end
+
+                            local v601 = 'No ' .. p23 .. ' found!'
+
+                            u114:Notify({
+                                Title = 'Lunar',
+                                Content = tostring(v601),
+                                Duration = 3,
+                                Icon = 'bell',
+                            })
+
+                            return
+                        end
+                    end
+
+                    u116 = false
+
+                    local u117 = nil
+                    local u118 = RunService
+
+                    local function v119(p25)
+                        local Humanoid = p25:WaitForChild('Humanoid')
+
+                        if u117 then
+                            u117:Disconnect()
+                        end
+
+                        local RenderStepped = u118.RenderStepped
+                        local u605 = Humanoid
+
+                        local u901 = false
+
+                        u117 = RenderStepped:Connect(function()
+                            if u116 then
+                                u901 = true
+
+                                local State = u605:GetState()
+
+                                u605.WalkSpeed = (State == Enum.HumanoidStateType.Jumping or State == Enum.HumanoidStateType.Freefall) and (u605.MoveDirection.Magnitude > 0 and n2) or 16
+
+                                return
+                            end
+                            if u901 then
+                                u901 = false
+                                u605.WalkSpeed = 16
+                            end
+                        end)
+                    end
+
+                    LocalPlayer.CharacterAdded:Connect(v119)
+
+                    if LocalPlayer.Character then
+                        task.spawn(v119, LocalPlayer.Character)
+                    end
+
+                    u120 = false
+
+                    local u121 = nil
+
+                    n17 = 0.5
+
+                    local u123 = RunService
+                    local u124 = CurrentCamera
+
+                    function v125(p26)
+                        u120 = p26
+
+                        if not p26 then
+                            if u121 then
+                                u121:Disconnect()
+
+                                u121 = nil
+                            end
+
+                            return
+                        end
+                        if u121 then
+                            u121:Disconnect()
+                        end
+
+                        u121 = u123.RenderStepped:Connect(function()
+                            u124.CFrame = u124.CFrame * CFrame.new(0, 0, 0, 1, 0, 0, 0, n17, 0, 0, 0, 1)
+                        end)
+                    end
+                end
+
+                u126 = v25
+                u127 = v125
+                u128 = v18
+                u129 = Workspace
+                u130 = v18
+                u131 = LocalPlayer
+
+                do
+                    local SkyboxAssets = {
+                        ["Black Storm"] = { Bk="rbxassetid://15502511288", Dn="rbxassetid://15502508460", Ft="rbxassetid://15502510289", Lf="rbxassetid://15502507918", Rt="rbxassetid://15502509398", Up="rbxassetid://15502511911" },
+                        ["HD"] = { Bk="http://www.roblox.com/asset/?id=16553658937", Dn="http://www.roblox.com/asset/?id=16553660713", Ft="http://www.roblox.com/asset/?id=16553662144", Lf="http://www.roblox.com/asset/?id=16553664042", Rt="http://www.roblox.com/asset/?id=16553665766", Up="http://www.roblox.com/asset/?id=16553667750" },
+                        ["Snow"] = { Bk="http://www.roblox.com/asset/?id=155657655", Dn="http://www.roblox.com/asset/?id=155674246", Ft="http://www.roblox.com/asset/?id=155657609", Lf="http://www.roblox.com/asset/?id=155657671", Rt="http://www.roblox.com/asset/?id=155657619", Up="http://www.roblox.com/asset/?id=155674931" },
+                        ["Blue Space"] = { Bk="rbxassetid://15536110634", Dn="rbxassetid://15536112543", Ft="rbxassetid://15536116141", Lf="rbxassetid://15536114370", Rt="rbxassetid://15536118762", Up="rbxassetid://15536117282" },
+                        ["Realistic"] = { Bk="rbxassetid://653719502", Dn="rbxassetid://653718790", Ft="rbxassetid://653719067", Lf="rbxassetid://653719190", Rt="rbxassetid://653718931", Up="rbxassetid://653719321" },
+                        ["Stormy"] = { Bk="http://www.roblox.com/asset/?id=18703245834", Dn="http://www.roblox.com/asset/?id=18703243349", Ft="http://www.roblox.com/asset/?id=18703240532", Lf="http://www.roblox.com/asset/?id=18703237556", Rt="http://www.roblox.com/asset/?id=18703235430", Up="http://www.roblox.com/asset/?id=18703232671" },
+                        ["Pink"] = { Bk="rbxassetid://12216109205", Dn="rbxassetid://12216109875", Ft="rbxassetid://12216109489", Lf="rbxassetid://12216110170", Rt="rbxassetid://12216110471", Up="rbxassetid://12216108877" },
+                        ["Sunset"] = { Bk="rbxassetid://600830446", Dn="rbxassetid://600831635", Ft="rbxassetid://600832720", Lf="rbxassetid://600886090", Rt="rbxassetid://600833862", Up="rbxassetid://600835177" },
+                        ["Arctic"] = { Bk="http://www.roblox.com/asset/?id=225469390", Dn="http://www.roblox.com/asset/?id=225469395", Ft="http://www.roblox.com/asset/?id=225469403", Lf="http://www.roblox.com/asset/?id=225469450", Rt="http://www.roblox.com/asset/?id=225469471", Up="http://www.roblox.com/asset/?id=225469481" },
+                        ["Space"] = { Bk="http://www.roblox.com/asset/?id=166509999", Dn="http://www.roblox.com/asset/?id=166510057", Ft="http://www.roblox.com/asset/?id=166510116", Lf="http://www.roblox.com/asset/?id=166510092", Rt="http://www.roblox.com/asset/?id=166510131", Up="http://www.roblox.com/asset/?id=166510114" },
+                        ["Roblox Default"] = { Bk="rbxasset://textures/sky/sky512_bk.tex", Dn="rbxasset://textures/sky/sky512_dn.tex", Ft="rbxasset://textures/sky/sky512_ft.tex", Lf="rbxasset://textures/sky/sky512_lf.tex", Rt="rbxasset://textures/sky/sky512_rt.tex", Up="rbxasset://textures/sky/sky512_up.tex" },
+                        ["Red Night"] = { Bk="http://www.roblox.com/asset/?id=401664839", Dn="http://www.roblox.com/asset/?id=401664862", Ft="http://www.roblox.com/asset/?id=401664960", Lf="http://www.roblox.com/asset/?id=401664881", Rt="http://www.roblox.com/asset/?id=401664901", Up="http://www.roblox.com/asset/?id=401664936" },
+                        ["Deep Space 1"] = { Bk="http://www.roblox.com/asset/?id=149397692", Dn="http://www.roblox.com/asset/?id=149397686", Ft="http://www.roblox.com/asset/?id=149397697", Lf="http://www.roblox.com/asset/?id=149397684", Rt="http://www.roblox.com/asset/?id=149397688", Up="http://www.roblox.com/asset/?id=149397702" },
+                        ["Pink Skies"] = { Bk="http://www.roblox.com/asset/?id=151165214", Dn="http://www.roblox.com/asset/?id=151165197", Ft="http://www.roblox.com/asset/?id=151165224", Lf="http://www.roblox.com/asset/?id=151165191", Rt="http://www.roblox.com/asset/?id=151165206", Up="http://www.roblox.com/asset/?id=151165227" },
+                        ["Purple Sunset"] = { Bk="rbxassetid://264908339", Dn="rbxassetid://264907909", Ft="rbxassetid://264909420", Lf="rbxassetid://264909758", Rt="rbxassetid://264908886", Up="rbxassetid://264907379" },
+                        ["Blue Night"] = { Bk="http://www.roblox.com/asset/?id=12064107", Dn="http://www.roblox.com/asset/?id=12064152", Ft="http://www.roblox.com/asset/?id=12064121", Lf="http://www.roblox.com/asset/?id=12063984", Rt="http://www.roblox.com/asset/?id=12064115", Up="http://www.roblox.com/asset/?id=12064131" },
+                        ["Blossom Daylight"] = { Bk="http://www.roblox.com/asset/?id=271042516", Dn="http://www.roblox.com/asset/?id=271077243", Ft="http://www.roblox.com/asset/?id=271042556", Lf="http://www.roblox.com/asset/?id=271042310", Rt="http://www.roblox.com/asset/?id=271042467", Up="http://www.roblox.com/asset/?id=271077958" },
+                        ["Blue Nebula"] = { Bk="http://www.roblox.com/asset?id=135207744", Dn="http://www.roblox.com/asset?id=135207662", Ft="http://www.roblox.com/asset?id=135207770", Lf="http://www.roblox.com/asset?id=135207615", Rt="http://www.roblox.com/asset?id=135207695", Up="http://www.roblox.com/asset?id=135207794" },
+                        ["Blue Planet"] = { Bk="rbxassetid://218955819", Dn="rbxassetid://218953419", Ft="rbxassetid://218954524", Lf="rbxassetid://218958493", Rt="rbxassetid://218957134", Up="rbxassetid://218950090" },
+                        ["Deep Space 2"] = { Bk="http://www.roblox.com/asset/?id=159248188", Dn="http://www.roblox.com/asset/?id=159248183", Ft="http://www.roblox.com/asset/?id=159248187", Lf="http://www.roblox.com/asset/?id=159248173", Rt="http://www.roblox.com/asset/?id=159248192", Up="http://www.roblox.com/asset/?id=159248176" },
+                        ["Summer"] = { Bk="rbxassetid://16648590964", Dn="rbxassetid://16648617436", Ft="rbxassetid://16648595424", Lf="rbxassetid://16648566370", Rt="rbxassetid://16648577071", Up="rbxassetid://16648598180" },
+                        ["Galaxy"] = { Bk="rbxassetid://15983968922", Dn="rbxassetid://15983966825", Ft="rbxassetid://15983965025", Lf="rbxassetid://15983967420", Rt="rbxassetid://15983966246", Up="rbxassetid://15983964246" },
+                        ["Stylized"] = { Bk="rbxassetid://18351376859", Dn="rbxassetid://18351374919", Ft="rbxassetid://18351376800", Lf="rbxassetid://18351376469", Rt="rbxassetid://18351376457", Up="rbxassetid://18351377189" },
+                        ["Minecraft"] = { Bk="rbxassetid://8735166756", Dn="http://www.roblox.com/asset/?id=8735166707", Ft="http://www.roblox.com/asset/?id=8735231668", Lf="http://www.roblox.com/asset/?id=8735166755", Rt="http://www.roblox.com/asset/?id=8735166751", Up="http://www.roblox.com/asset/?id=8735166729" },
+                        ["Cloudy Rain"] = { Bk="http://www.roblox.com/asset/?id=4498828382", Dn="http://www.roblox.com/asset/?id=4498828812", Ft="http://www.roblox.com/asset/?id=4498829917", Lf="http://www.roblox.com/asset/?id=4498830911", Rt="http://www.roblox.com/asset/?id=4498830417", Up="http://www.roblox.com/asset/?id=4498831746" },
+                        ["Black Cloudy Rain"] = { Bk="http://www.roblox.com/asset/?id=149679669", Dn="http://www.roblox.com/asset/?id=149681979", Ft="http://www.roblox.com/asset/?id=149679690", Lf="http://www.roblox.com/asset/?id=149679709", Rt="http://www.roblox.com/asset/?id=149679722", Up="http://www.roblox.com/asset/?id=149680199" },
+                    }
+                    local t7 = {}
+                    local skyColorMap = {
+                        ["Black Storm"]={30,30,40}, ["HD"]={100,160,220}, ["Snow"]={200,220,240},
+                        ["Blue Space"]={40,80,180}, ["Realistic"]={120,170,220}, ["Stormy"]={60,60,80},
+                        ["Pink"]={220,100,160}, ["Sunset"]={230,120,60}, ["Arctic"]={180,210,240},
+                        ["Space"]={20,20,60}, ["Roblox Default"]={100,180,255}, ["Red Night"]={160,30,30},
+                        ["Deep Space 1"]={20,20,50}, ["Pink Skies"]={220,140,180}, ["Purple Sunset"]={140,60,180},
+                        ["Blue Night"]={30,60,140}, ["Blossom Daylight"]={180,220,200}, ["Blue Nebula"]={60,100,200},
+                        ["Blue Planet"]={60,120,200}, ["Deep Space 2"]={20,20,60}, ["Summer"]={100,200,240},
+                        ["Galaxy"]={80,40,160}, ["Stylized"]={120,180,240}, ["Minecraft"]={100,180,240},
+                        ["Cloudy Rain"]={100,110,120}, ["Black Cloudy Rain"]={30,30,35},
+                    }
+                    local skyboxOrder = {"Black Storm","HD","Snow","Blue Space","Realistic","Stormy","Pink","Sunset","Arctic","Space","Roblox Default","Red Night","Deep Space 1","Pink Skies","Purple Sunset","Blue Night","Blossom Daylight","Blue Nebula","Blue Planet","Deep Space 2","Summer","Galaxy","Stylized","Minecraft","Cloudy Rain","Black Cloudy Rain"}
+                    for i, name in ipairs(skyboxOrder) do
+                        local c = skyColorMap[name] or {128,128,128}
+                        t7[i] = { name=name, id=name, color=Color3.fromRGB(c[1],c[2],c[3]) }
+                    end
+
+                    local u140 = nil
+                    local u141 = false
+                    local u142 = Lighting;
+
+                    (function()
+                        local Sky = u142:FindFirstChildOfClass('Sky')
+
+                        if Sky then
+                            u140 = {
+                                SkyboxBk = Sky.SkyboxBk,
+                                SkyboxDn = Sky.SkyboxDn,
+                                SkyboxFt = Sky.SkyboxFt,
+                                SkyboxLf = Sky.SkyboxLf,
+                                SkyboxRt = Sky.SkyboxRt,
+                                SkyboxUp = Sky.SkyboxUp,
+                            }
+                        end
+                    end)()
+
+                    local u143 = Lighting
+                    local u144 = v18
+
+                    function v145()
+                        for _, child in pairs(u143:GetChildren())do
+                            if child:IsA('Sky') or child:IsA('Atmosphere') or child:IsA('Clouds') then
+                                child:Destroy()
+                            end
+                        end
+
+                        if u140 then
+                            local Sky = Instance.new('Sky', u143)
+
+                            for k, v in pairs(u140)do
+                                Sky[k] = v
+                            end
+                        end
+
+                        u141 = false
+
+                        u144:Notify({
+                            Title = 'Lunar',
+                            Content = tostring('Skybox restored to default.'),
+                            Duration = 3,
+                            Icon = 'bell',
+                        })
+                    end
+
+                    local u146 = Lighting
+
+                    function u147(p27)
+                        for _, child in pairs(u146:GetChildren())do
+                            if child:IsA('Sky') or child:IsA('Atmosphere') or child:IsA('Clouds') then
+                                child:Destroy()
+                            end
+                        end
+
+                        local Sky = Instance.new('Sky', u146)
+                        Sky.Name = 'Lunar_CustomSky'
+
+                        local faces = SkyboxAssets[tostring(p27)]
+                        if faces then
+                            Sky.SkyboxBk = faces.Bk
+                            Sky.SkyboxDn = faces.Dn
+                            Sky.SkyboxFt = faces.Ft
+                            Sky.SkyboxLf = faces.Lf
+                            Sky.SkyboxRt = faces.Rt
+                            Sky.SkyboxUp = faces.Up
+                        else
+                            local v625 = 'rbxassetid://' .. tostring(p27)
+                            Sky.SkyboxBk = v625
+                            Sky.SkyboxDn = v625
+                            Sky.SkyboxFt = v625
+                            Sky.SkyboxLf = v625
+                            Sky.SkyboxRt = v625
+                            Sky.SkyboxUp = v625
+                        end
+                        Sky.SunTextureId = ''
+                        Sky.MoonTextureId = ''
+                        Sky.SunAngularSize = 0
+                        Sky.StarCount = 0
+                        u146.ClockTime = 14
+                        u146.Brightness = 2
+                        u146.GlobalShadows = false
+                        u146.FogEnd = 999999
+                        u141 = true
+                    end
+
+                    u148 = v18
+                    u149 = v145
+                    u150 = t7
+                    u151 = v21
+
+                    local u152 = false
+                    local u153 = nil
+                    local u154 = RunService
+                    local u155 = LocalPlayer
+
+                    do
+                        local _af_players    = game:GetService("Players")
+                        local _af_run        = game:GetService("RunService")
+                        local _af_ws         = workspace
+                        local _af_lp         = _af_players.LocalPlayer
+
+                        local anti_fling     = false
+                        local _af_void_orig  = _af_ws.FallenPartsDestroyHeight
+
+                        local FLING_MAX_VEL  = 700
+                        local FLING_MAX_ANG  = 90
+                        local FLING_SNAP_DIST = 60
+                        local FLING_HOLD     = 0.25
+                        local FLING_SAFE_VEL = 250
+
+                        local fling_cache    = {}
+                        local fling_reg      = {}
+                        local fling_conns    = {}
+                        local fling_attached = false
+                        local fling_safe_cf  = nil
+                        local fling_hold_until = 0
+                        local fling_active_since = 0
+
+                        local function _af_get_hrp()
+                            local c = _af_lp.Character
+                            return c and c:FindFirstChild("HumanoidRootPart")
+                        end
+
+                        local function _af_fling_busy()
+                            if os.clock() < (getgenv().VELOCITY_DESYNC_UNTIL or 0) then return true end
+                            if (getgenv().FLING_ACTIVE or 0) > 0 then
+                                local now = os.clock()
+                                if fling_active_since == 0 then fling_active_since = now end
+                                if now - fling_active_since < 20 then return true end
+                                getgenv().FLING_ACTIVE = 0; fling_active_since = 0; return false
+                            end
+                            fling_active_since = 0; return false
+                        end
+
+                        local function _af_kill_part(p)
+                            if fling_cache[p] == nil then fling_cache[p] = p.CanCollide end
+                            if p.CanCollide then p.CanCollide = false end
+                        end
+
+                        local function _af_unregister(model)
+                            local entry = fling_reg[model]
+                            if not entry then return end
+                            fling_reg[model] = nil
+                            for i = 1, #entry.conns do pcall(function() entry.conns[i]:Disconnect() end) end
+                            for p in pairs(entry.parts) do
+                                local v = fling_cache[p]; fling_cache[p] = nil
+                                if v ~= nil and p.Parent then pcall(function() p.CanCollide = v end) end
+                            end
+                            table.clear(entry.parts)
+                        end
+
+                        local function _af_register(model)
+                            if not anti_fling or not model then return end
+                            if fling_reg[model] or model == _af_lp.Character then return end
+                            local entry = { parts = {}, conns = {} }
+                            fling_reg[model] = entry
+                            local function add(d)
+                                if d:IsA("BasePart") and not entry.parts[d] then
+                                    entry.parts[d] = true
+                                    if anti_fling then pcall(_af_kill_part, d) end
+                                end
+                            end
+                            for _, d in model:GetDescendants() do pcall(add, d) end
+                            local function push(c) entry.conns[#entry.conns + 1] = c end
+                            push(model.DescendantAdded:Connect(function(d) if anti_fling then pcall(add, d) end end))
+                            push(model.DescendantRemoving:Connect(function(d)
+                                if entry.parts[d] then entry.parts[d] = nil; fling_cache[d] = nil end
+                            end))
+                            push(model.AncestryChanged:Connect(function(_, parent)
+                                if not parent then _af_unregister(model) end
+                            end))
+                        end
+
+                        local function _af_is_body(m)
+                            return m ~= _af_lp.Character
+                                and m:IsA("Model")
+                                and m:FindFirstChildOfClass("Humanoid") ~= nil
+                        end
+
+                        local function _af_scan()
+                            for _, pl in _af_players:GetPlayers() do
+                                if pl ~= _af_lp and pl.Character then _af_register(pl.Character) end
+                            end
+                            for _, m in _af_ws:GetChildren() do
+                                if _af_is_body(m) then _af_register(m) end
+                            end
+                        end
+
+                        local function _af_sweep()
+                            for model, entry in pairs(fling_reg) do
+                                if not model.Parent or model == _af_lp.Character then
+                                    _af_unregister(model)
+                                else
+                                    for p in pairs(entry.parts) do
+                                        if p.Parent then
+                                            if p.CanCollide then
+                                                if fling_cache[p] == nil then fling_cache[p] = true end
+                                                p.CanCollide = false
+                                            end
+                                        else entry.parts[p] = nil; fling_cache[p] = nil end
+                                    end
+                                end
+                            end
+                        end
+
+                        local function _af_guard(full)
+                            local hrp = _af_get_hrp()
+                            if not hrp or not hrp.Parent then fling_safe_cf = nil; return end
+                            if _af_fling_busy() then fling_safe_cf = nil; return end
+                            local lin = hrp.AssemblyLinearVelocity
+                            local ang = hrp.AssemblyAngularVelocity
+                            local spike = lin.Magnitude > FLING_MAX_VEL or ang.Magnitude > FLING_MAX_ANG
+                            local now = os.clock()
+                            if spike then fling_hold_until = now + FLING_HOLD end
+                            if spike or now < fling_hold_until then
+                                hrp.AssemblyLinearVelocity = Vector3.zero
+                                hrp.AssemblyAngularVelocity = Vector3.zero
+                                if full and fling_safe_cf then
+                                    if (hrp.Position - fling_safe_cf.Position).Magnitude > FLING_SNAP_DIST then
+                                        hrp.CFrame = fling_safe_cf
+                                    end
+                                end
+                            elseif full and lin.Magnitude < FLING_SAFE_VEL then
+                                fling_safe_cf = hrp.CFrame
+                            end
+                        end
+
+                        local function _af_detach()
+                            fling_attached = false
+                            for i = 1, #fling_conns do pcall(function() fling_conns[i]:Disconnect() end) end
+                            table.clear(fling_conns)
+                        end
+
+                        local function _af_attach()
+                            if fling_attached then return end
+                            fling_attached = true
+                            local function push(c) fling_conns[#fling_conns + 1] = c end
+                            local function watch(pl)
+                                if pl == _af_lp then return end
+                                push(pl.CharacterAdded:Connect(function(c) if anti_fling then _af_register(c) end end))
+                                push(pl.CharacterRemoving:Connect(function(c) _af_unregister(c) end))
+                            end
+                            for _, pl in _af_players:GetPlayers() do watch(pl) end
+                            push(_af_players.PlayerAdded:Connect(function(pl)
+                                watch(pl)
+                                if anti_fling and pl.Character then _af_register(pl.Character) end
+                            end))
+                            push(_af_players.PlayerRemoving:Connect(function(pl)
+                                if pl.Character then _af_unregister(pl.Character) end
+                            end))
+                            push(_af_ws.ChildAdded:Connect(function(m)
+                                if not anti_fling then return end
+                                task.defer(function()
+                                    if anti_fling and m.Parent == _af_ws and _af_is_body(m) then _af_register(m) end
+                                end)
+                            end))
+                            push(_af_lp.CharacterAdded:Connect(function(c)
+                                _af_unregister(c); fling_safe_cf = nil; fling_hold_until = 0
+                                if anti_fling then task.defer(_af_scan) end
+                            end))
+                            _af_scan()
+                        end
+
+                        local function _af_restore()
+                            _af_detach()
+                            for model in pairs(fling_reg) do _af_unregister(model) end
+                            table.clear(fling_reg)
+                            for p, v in pairs(fling_cache) do
+                                if p and p.Parent then pcall(function() p.CanCollide = v end) end
+                            end
+                            table.clear(fling_cache)
+                            fling_safe_cf = nil; fling_hold_until = 0
+                        end
+
+                        _af_run.Stepped:Connect(function()
+                            if anti_fling then
+                                if not fling_attached then pcall(_af_attach) end
+                                pcall(_af_sweep)
+                                pcall(_af_guard, true)
+                            end
+                        end)
+
+                        _af_run.Heartbeat:Connect(function()
+                            if anti_fling then pcall(_af_guard, false) end
+                        end)
+
+                        getgenv().ANTI_FLING = {
+                            enable = function(v)
+                                anti_fling = v
+                                if v then _af_attach() else _af_restore() end
+                            end,
+                            unload = function()
+                                anti_fling = false
+                                pcall(function() _af_ws.FallenPartsDestroyHeight = _af_void_orig end)
+                                _af_restore()
+                            end,
+                        }
+                    end
+
+                    function u156(p28)
+                        if getgenv().ANTI_FLING then
+                            getgenv().ANTI_FLING.enable(p28)
+                        end
+                    end
+                end
+
+                local _fling_bypass_velocity = false
+
+                local function v161(p29)
+                    if not p29 or not p29.Character then return end
+                    local Character = LocalPlayer.Character
+                    local Humanoid = Character and Character:FindFirstChildOfClass('Humanoid')
+                    local RootPart = Humanoid and Humanoid.RootPart
+                    if not RootPart then return end
+
+                    local Character4 = p29.Character
+                    local thrp = Character4:FindFirstChild('HumanoidRootPart') or Character4:FindFirstChild('Head')
+                    local Humanoid2 = Character4:FindFirstChildOfClass('Humanoid')
+                    if not thrp then return end
+
+                    getgenv().FLING_ACTIVE = (getgenv().FLING_ACTIVE or 0) + 1
+
+                    if RootPart.Velocity.Magnitude < 50 then
+                        getgenv().OldPos = RootPart.CFrame
+                    end
+
+                    if Humanoid2 and Humanoid2.Sit then
+                        getgenv().FLING_ACTIVE = math.max(0, (getgenv().FLING_ACTIVE or 1) - 1)
+                        v18:Notify({ Title = 'Lunar', Content = p29.Name .. ' is sitting, skipped.', Duration = 3, Icon = 'bell' })
+                        return
+                    end
+
+                    local camera = Workspace.CurrentCamera
+                    local old_fdh = Workspace.FallenPartsDestroyHeight
+
+                    camera.CameraSubject = thrp
+
+                    pcall(function() Workspace.FallenPartsDestroyHeight = 0/0 end)
+
+                    local bv = Instance.new('BodyVelocity')
+                    bv.Parent = RootPart
+                    bv.Velocity = Vector3.new(0, 0, 0)
+                    bv.MaxForce = Vector3.new(9e9, 9e9, 9e9)
+
+                    local se = Humanoid:GetStateEnabled(Enum.HumanoidStateType.Seated)
+                    Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, false)
+
+                    u157 = true
+
+                    local tw = 2
+                    local tm = tick()
+                    local ang = 0
+
+                    repeat
+                        if RootPart and Humanoid2 then
+                            local tv
+                            if _fling_bypass_velocity then
+                                tv = Humanoid2.MoveDirection * Humanoid2.WalkSpeed
+                            else
+                                tv = thrp.Velocity
+                            end
+
+                            if tv.Magnitude < 50 then
+                                ang = ang + 100
+
+                                RootPart.CFrame = CFrame.new(thrp.Position) * CFrame.new(0, 1.5, 0) + Humanoid2.MoveDirection * tv.Magnitude / 1.25
+                                RootPart.CFrame = RootPart.CFrame * CFrame.Angles(math.rad(ang), 0, 0)
+                                pcall(function() Character:SetPrimaryPartCFrame(RootPart.CFrame) end)
+                                RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+                                RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+                                task.wait()
+
+                                RootPart.CFrame = CFrame.new(thrp.Position) * CFrame.new(0, -1.5, 0) + Humanoid2.MoveDirection * tv.Magnitude / 1.25
+                                RootPart.CFrame = RootPart.CFrame * CFrame.Angles(math.rad(ang), 0, 0)
+                                pcall(function() Character:SetPrimaryPartCFrame(RootPart.CFrame) end)
+                                RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+                                RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+                                task.wait()
+
+                                RootPart.CFrame = CFrame.new(thrp.Position) * CFrame.new(0, 1.5, 0) + Humanoid2.MoveDirection * tv.Magnitude / 1.25
+                                RootPart.CFrame = RootPart.CFrame * CFrame.Angles(math.rad(ang), 0, 0)
+                                pcall(function() Character:SetPrimaryPartCFrame(RootPart.CFrame) end)
+                                RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+                                RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+                                task.wait()
+
+                                RootPart.CFrame = CFrame.new(thrp.Position) * CFrame.new(0, -1.5, 0) + Humanoid2.MoveDirection * tv.Magnitude / 1.25
+                                RootPart.CFrame = RootPart.CFrame * CFrame.Angles(math.rad(ang), 0, 0)
+                                pcall(function() Character:SetPrimaryPartCFrame(RootPart.CFrame) end)
+                                RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+                                RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+                                task.wait()
+
+                                RootPart.CFrame = CFrame.new(thrp.Position) * CFrame.new(0, 1.5, 0) + Humanoid2.MoveDirection
+                                RootPart.CFrame = RootPart.CFrame * CFrame.Angles(math.rad(ang), 0, 0)
+                                pcall(function() Character:SetPrimaryPartCFrame(RootPart.CFrame) end)
+                                RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+                                RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+                                task.wait()
+
+                                RootPart.CFrame = CFrame.new(thrp.Position) * CFrame.new(0, -1.5, 0) + Humanoid2.MoveDirection
+                                RootPart.CFrame = RootPart.CFrame * CFrame.Angles(math.rad(ang), 0, 0)
+                                pcall(function() Character:SetPrimaryPartCFrame(RootPart.CFrame) end)
+                                RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+                                RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+                                task.wait()
+                            else
+                                RootPart.CFrame = CFrame.new(thrp.Position) * CFrame.new(0, 1.5, Humanoid2.WalkSpeed)
+                                RootPart.CFrame = RootPart.CFrame * CFrame.Angles(math.rad(90), 0, 0)
+                                pcall(function() Character:SetPrimaryPartCFrame(RootPart.CFrame) end)
+                                RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+                                RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+                                task.wait()
+
+                                RootPart.CFrame = CFrame.new(thrp.Position) * CFrame.new(0, -1.5, -Humanoid2.WalkSpeed)
+                                RootPart.CFrame = RootPart.CFrame * CFrame.Angles(0, 0, 0)
+                                pcall(function() Character:SetPrimaryPartCFrame(RootPart.CFrame) end)
+                                RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+                                RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+                                task.wait()
+
+                                RootPart.CFrame = CFrame.new(thrp.Position) * CFrame.new(0, 1.5, Humanoid2.WalkSpeed)
+                                RootPart.CFrame = RootPart.CFrame * CFrame.Angles(math.rad(90), 0, 0)
+                                pcall(function() Character:SetPrimaryPartCFrame(RootPart.CFrame) end)
+                                RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+                                RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+                                task.wait()
+
+                                RootPart.CFrame = CFrame.new(thrp.Position) * CFrame.new(0, -1.5, 0)
+                                RootPart.CFrame = RootPart.CFrame * CFrame.Angles(math.rad(90), 0, 0)
+                                pcall(function() Character:SetPrimaryPartCFrame(RootPart.CFrame) end)
+                                RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+                                RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+                                task.wait()
+
+                                RootPart.CFrame = CFrame.new(thrp.Position) * CFrame.new(0, -1.5, 0)
+                                RootPart.CFrame = RootPart.CFrame * CFrame.Angles(0, 0, 0)
+                                pcall(function() Character:SetPrimaryPartCFrame(RootPart.CFrame) end)
+                                RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+                                RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+                                task.wait()
+
+                                RootPart.CFrame = CFrame.new(thrp.Position) * CFrame.new(0, -1.5, 0)
+                                RootPart.CFrame = RootPart.CFrame * CFrame.Angles(math.rad(90), 0, 0)
+                                pcall(function() Character:SetPrimaryPartCFrame(RootPart.CFrame) end)
+                                RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+                                RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+                                task.wait()
+
+                                RootPart.CFrame = CFrame.new(thrp.Position) * CFrame.new(0, -1.5, 0)
+                                RootPart.CFrame = RootPart.CFrame * CFrame.Angles(0, 0, 0)
+                                pcall(function() Character:SetPrimaryPartCFrame(RootPart.CFrame) end)
+                                RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+                                RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+                                task.wait()
+                            end
+                        end
+                    until tm + tw < tick()
+
+                    if bv then bv:Destroy() end
+                    Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, se)
+                    camera.CameraSubject = Humanoid
+
+                    if getgenv().OldPos and RootPart then
+                        RootPart.CFrame = getgenv().OldPos * CFrame.new(0, 0.5, 0)
+                        pcall(function() Character:SetPrimaryPartCFrame(getgenv().OldPos * CFrame.new(0, 0.5, 0)) end)
+                        Humanoid:ChangeState('GettingUp')
+                        for _, part in pairs(Character:GetChildren()) do
+                            if part:IsA('BasePart') then
+                                part.Velocity = Vector3.new()
+                                part.RotVelocity = Vector3.new()
+                            end
+                        end
+                        pcall(function() Workspace.FallenPartsDestroyHeight = old_fdh end)
+                        v18:Notify({ Title = 'Lunar', Content = 'Returned to previous position.', Duration = 3, Icon = 'bell' })
+                    end
+
+                    u157 = false
+                    getgenv().FLING_ACTIVE = math.max(0, (getgenv().FLING_ACTIVE or 1) - 1)
+                end
+
+                getgenv().FLING_BYPASS = function(v) _fling_bypass_velocity = v end
+
+                u162 = v18
+                u163 = Players
+                u164 = LocalPlayer
+                u165 = v161
+                u166 = v18
+                u167 = Players
+                u168 = LocalPlayer
+                u169 = v161
+
+                local t15 = {
+                    GlobalShadows = Lighting.GlobalShadows,
+                    Brightness = Lighting.Brightness,
+                    Ambient = Lighting.Ambient,
+                    OutdoorAmbient = Lighting.OutdoorAmbient,
+                }
+                local t16 = {}
+
+                u172 = nil
+                u173 = Lighting
+                u174 = t15
+                u175 = Workspace
+
+                function u176(p34)
+                    if p34:IsA('BasePart') then
+                        if not t16[p34] then
+                            t16[p34] = {
+                                Material = p34.Material,
+                                CastShadow = p34.CastShadow,
+                            }
+                        end
+
+                        p34.Material = Enum.Material.SmoothPlastic
+                        p34.CastShadow = false
+                    end
+                    if p34:IsA('Decal') or p34:IsA('Texture') then
+                        if not t16[p34] then
+                            t16[p34] = {
+                                Transparency = p34.Transparency,
+                            }
+                        end
+
+                        p34.Transparency = 1
+                    end
+                end
+
+                u177 = TextLabel
+                u178 = v18
+
+                local u179 = Lighting
+                local u180 = t15
+                local u181 = TextLabel
+                local u182 = v18
+
+                function v183()
+                    u15 = false
+
+                    pcall(function()
+                        settings().Rendering.QualityLevel = Enum.QualityLevel.Automatic
+                    end)
+
+                    u179.GlobalShadows = u180.GlobalShadows
+                    u179.Brightness = u180.Brightness
+                    u179.Ambient = u180.Ambient
+                    u179.OutdoorAmbient = u180.OutdoorAmbient
+
+                    if u172 then
+                        u172:Disconnect()
+
+                        u172 = nil
+                    end
+
+                    for k, v in pairs(t16)do
+                        if k and k.Parent then
+                            local _pcall = pcall
+                            local u699 = v
+                            local u700 = k
+
+                            pcall(function()
+                                for k2, v2 in pairs(u699)do
+                                    u700[k2] = v2
+                                end
+                            end)
+                        end
+                    end
+
+                    t16 = {}
+                    u181.Visible = false
+
+                    u182:Notify({
+                        Title = 'Lunar',
+                        Content = tostring('Low Graphics OFF'),
+                        Duration = 3,
+                        Icon = 'bell',
+                    })
+                end
+
+                u184 = v183
+                u185 = Lighting
+                u186 = v18
+                u187 = Lighting
+                u188 = t15
+                u189 = v18
+                t17 = {}
+
+                local t18 = {
+                    name = 'Neon Cyan',
+                    id = '11770890197',
+                }
+                local t19 = {
+                    name = 'Electric Purple',
+                    id = '11770691141',
+                }
+                local t20 = {
+                    name = 'Precision Dot',
+                    id = '10878218308',
+                }
+                local t21 = {
+                    name = 'Aim Cross',
+                    id = '10891594349',
+                }
+                local t22 = {
+                    name = 'Blue Spec',
+                    id = '11720475063',
+                }
+                local t23 = {
+                    name = 'Circle Dot',
+                    id = '10831379335',
+                }
+                local t24 = {
+                    name = 'Green Hit',
+                    id = '8375241602',
+                }
+
+                t17[1] = t18
+                t17[2] = t19
+                t17[3] = t20
+                t17[4] = t21
+                t17[5] = t22
+                t17[6] = t23
+                t17[7] = t24
+            end
+
+            u198 = false
+            u199 = false
+            id = t17[1].id
+            u201 = nil
+            u202 = nil
+
+            local u203 = RunService
+
+            local function v204()
+                if u202 then
+                    u202:Disconnect()
+
+                    u202 = nil
+                end
+                if not u199 or not u201 or not u201.Parent then
+                    if u201 then
+                        u201.Rotation = 0
+                    end
+
+                    return
+                end
+
+                u202 = u203.RenderStepped:Connect(function()
+                    if u201 and u201.Parent and u201.Visible then
+                        u201.Rotation = u201.Rotation + 4
+                    end
+                end)
+            end
+
+            u205 = RunService
+            u206 = UserInputService
+            u207 = LocalPlayer
+            u208 = v204
+            u209 = v18
+            u210 = v204
+            u211 = t17
+            u212 = v21
+
+            local Lunar_BtnLayer = game.CoreGui:FindFirstChild('Lunar_BtnLayer')
+
+            if Lunar_BtnLayer then
+                Lunar_BtnLayer:Destroy()
+            end
+
+            local ScreenGui = Instance.new('ScreenGui', game.CoreGui)
+
+            ScreenGui.Name = 'Lunar_BtnLayer'
+            ScreenGui.ResetOnSpawn = false
+            ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+            ScreenGui.DisplayOrder = 10
+
+            local u215 = ScreenGui
+
+            t25 = {}
+
+            -- Button positions are stored separately for EACH config.
+            -- Example: Lunar/Default.btnpos, Lunar/MyConfig.btnpos.
+            -- Dragging only changes memory; config Save/Load controls disk persistence.
+            local _BTN_POS_SUFFIX = ".btnpos"
+
+            local function _serializePos(tbl)
+                local lines = {}
+                for name, v in pairs(tbl) do
+                    lines[#lines + 1] = name .. "=" ..
+                        tostring(v.xs or 0) .. "," .. tostring(v.xo or 0) .. "," ..
+                        tostring(v.ys or 0) .. "," .. tostring(v.yo or 0)
+                end
+                table.sort(lines)
+                return table.concat(lines, "\n")
+            end
+
+            local function _deserializePos(raw)
+                local out = {}
+                if type(raw) ~= "string" then
+                    return out
+                end
+                for line in (raw .. "\n"):gmatch("([^\n]*)\n") do
+                    local name, xs, xo, ys, yo = line:match("^(.-)=([^,]+),([^,]+),([^,]+),([^,]+)$")
+                    if name and name ~= "" then
+                        out[name] = {
+                            xs = tonumber(xs) or 0,
+                            xo = tonumber(xo) or 0,
+                            ys = tonumber(ys) or 0,
+                            yo = tonumber(yo) or 0,
+                        }
+                    end
+                end
+                return out
+            end
+
+            local _writefile = (typeof(writefile) == "function" and writefile)
+                or (syn and syn.write_file)
+                or (typeof(savefile) == "function" and savefile)
+            local _readfile = (typeof(readfile) == "function" and readfile)
+                or (syn and syn.read_file)
+            local _isfile = (typeof(isfile) == "function" and isfile)
+                or (syn and syn.is_file)
+                or function(path)
+                    if not _readfile then return false end
+                    local ok = pcall(_readfile, path)
+                    return ok
+                end
+
+            local _buttonConfigPositions = {}
+            local _activeButtonConfig = "Default"
+
+            local function _configNameFromPath(path)
+                local pathStr = tostring(path or ""):gsub("\\", "/")
+                local name = pathStr:match("^Lunar/([^/]+)$")
+                if not name or name == "" or name:sub(-#_BTN_POS_SUFFIX) == _BTN_POS_SUFFIX then
+                    return nil
+                end
+                return name
+            end
+
+            local function _buttonPosPath(configName)
+                return "Lunar/" .. tostring(configName or "Default") .. _BTN_POS_SUFFIX
+            end
+
+            local function _collectBtnPositions()
+                local data = {}
+                for name, entry in pairs(t25) do
+                    if entry and entry.btn and entry.btn.Parent then
+                        local pos = entry.btn.Position
+                        data[name] = {
+                            xs = pos.X.Scale,
+                            xo = math.round(pos.X.Offset),
+                            ys = pos.Y.Scale,
+                            yo = math.round(pos.Y.Offset),
+                        }
+                    end
+                end
+                return data
+            end
+
+            local function _applyBtnPositions(data)
+                if type(data) ~= "table" then
+                    return
+                end
+
+                _buttonConfigPositions = {}
+                for name, pos in pairs(data) do
+                    _buttonConfigPositions[name] = {
+                        XScale = pos.xs or 0,
+                        XOffset = pos.xo or 0,
+                        YScale = pos.ys or 0,
+                        YOffset = pos.yo or 0,
+                    }
+
+                    local entry = t25[name]
+                    if entry and entry.btn and entry.btn.Parent then
+                        entry.btn.Position = UDim2.new(
+                            pos.xs or 0, pos.xo or 0,
+                            pos.ys or 0, pos.yo or 0
+                        )
+                    end
+                end
+            end
+
+            local function _saveBtnPositions(configName)
+                if not _writefile or not configName or configName == "" then
+                    return false
+                end
+
+                local data = _collectBtnPositions()
+                local ok = pcall(_writefile, _buttonPosPath(configName), _serializePos(data))
+                return ok
+            end
+
+            local function _loadBtnPositions(configName)
+                if not _readfile or not configName or configName == "" then
+                    _buttonConfigPositions = {}
+                    return false
+                end
+
+                local path = _buttonPosPath(configName)
+                local data = {}
+                local ok = false
+
+                pcall(function()
+                    if _isfile(path) then
+                        data = _deserializePos(_readfile(path))
+                        ok = true
+                    end
+                end)
+
+                _activeButtonConfig = configName
+                _applyBtnPositions(data)
+                return ok
+            end
+
+            local function _loadBtnPos(name, default)
+                local saved = _buttonConfigPositions[name]
+                if saved then
+                    return UDim2.new(
+                        saved.XScale or 0, saved.XOffset or 0,
+                        saved.YScale or 0, saved.YOffset or 0
+                    )
+                end
+                return default
+            end
+
+            -- The config library writes Lunar/<configName>. We attach the
+            -- button layout to that exact config instead of using one global file.
+            local _originalWriteFile = _writefile
+            if _originalWriteFile and typeof(writefile) == "function" then
+                local _wrappedWriteFile = function(path, content)
+                    local result = _originalWriteFile(path, content)
+                    local configName = _configNameFromPath(path)
+                    if configName then
+                        task.defer(function()
+                            _saveBtnPositions(configName)
+                        end)
+                    end
+                    return result
+                end
+                writefile = _wrappedWriteFile
+                if getgenv then
+                    getgenv().writefile = _wrappedWriteFile
+                end
+            end
+
+            -- When the config library reads Lunar/<configName>, load the
+            -- matching button-position sidecar before the config finishes loading.
+            local _originalReadFile = _readfile
+            if _originalReadFile and typeof(readfile) == "function" then
+                local _wrappedReadFile = function(path)
+                    local result = _originalReadFile(path)
+                    local configName = _configNameFromPath(path)
+                    if configName then
+                        _loadBtnPositions(configName)
+                    end
+                    return result
+                end
+                readfile = _wrappedReadFile
+                if getgenv then
+                    getgenv().readfile = _wrappedReadFile
+                end
+            end
+
+            -- Initial config is Default until the config library selects another one.
+            _loadBtnPositions("Default")
+
+            local u217 = UserInputService
+
+            local _dragActive = false
+            u217.InputEnded:Connect(function(input)
+                if input.UserInputType == Enum.UserInputType.MouseButton1
+                or input.UserInputType == Enum.UserInputType.Touch then
+                    if _dragActive then
+                        _dragActive = false
+
+                        -- Update only the current config's in-memory positions.
+                        for name, entry in pairs(t25) do
+                            if entry and entry.btn and entry.btn.Parent then
+                                local pos = entry.btn.Position
+                                _buttonConfigPositions[name] = {
+                                    XScale = pos.X.Scale,
+                                    XOffset = pos.X.Offset,
+                                    YScale = pos.Y.Scale,
+                                    YOffset = pos.Y.Offset,
+                                }
+                            end
+                        end
+                    end
+                end
+            end)
+
+            function u218(p35)
+                local u740 = nil
+                local p36Position = nil
+                local Position = nil
+                local InputBegan = p35.InputBegan
+                local u744 = p35
+
+                InputBegan:Connect(function(p36)
+                    if p36.UserInputType == Enum.UserInputType.MouseButton1 or p36.UserInputType == Enum.UserInputType.Touch then
+                        u740 = true
+                        _dragActive = true
+                        p36Position = p36.Position
+                        Position = u744.Position
+                    end
+                end)
+
+                local InputChanged = p35.InputChanged
+                local u746 = p35
+
+                InputChanged:Connect(function(p37)
+                    if u740 then
+                        if p37.UserInputType == Enum.UserInputType.MouseMovement or p37.UserInputType == Enum.UserInputType.Touch then
+                            local v923 = p37.Position - p36Position
+
+                            u746.Position = UDim2.new(Position.X.Scale, Position.X.Offset + v923.X, Position.Y.Scale, Position.Y.Offset + v923.Y)
+                        end
+
+                        return
+                    end
+                end)
+                u217.InputEnded:Connect(function(input)
+                    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+                        u740 = false
+                    end
+                end)
+            end
+
+            local u219 = t25
+
+            function v220(p38, p39, p40, p41, p42)
+                if u219[p38] then
+                    u219[p38].btn:Destroy()
+
+                    u219[p38] = nil
+                end
+
+                local TextButton = Instance.new('TextButton', u215)
+
+                TextButton.Name = 'RuzBtn_' .. p38
+                TextButton.Size = p40
+                local _cfgPos = _buttonConfigPositions[p38]
+                TextButton.Position = _cfgPos and UDim2.new(
+                    _cfgPos.XScale, _cfgPos.XOffset,
+                    _cfgPos.YScale, _cfgPos.YOffset
+                ) or _loadBtnPos(p38, p39)
+                TextButton.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+                TextButton.BackgroundTransparency = 0.08
+                TextButton.Text = ''
+                TextButton.AutoButtonColor = false
+                TextButton.BorderSizePixel = 0
+                Instance.new('UICorner', TextButton).CornerRadius = UDim.new(0, p40.Y.Offset * 0.32)
+
+                local UIStroke = Instance.new('UIStroke', TextButton)
+
+                UIStroke.Color = Color3.fromRGB(50, 50, 50)
+                UIStroke.Thickness = 1.0
+                UIStroke.Transparency = 0.6
+                UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+                local TextLabel = Instance.new('TextLabel', TextButton)
+
+                TextLabel.Name = 'Lbl'
+                TextLabel.Size = UDim2.new(1, 0, 1, 0)
+                TextLabel.BackgroundTransparency = 1
+                TextLabel.Text = p42
+                TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+                TextLabel.Font = Enum.Font.GothamBlack
+
+                local v755 = p40.Y.Offset * 0.18
+
+                TextLabel.TextSize = math.max(12, v755)
+                TextLabel.TextYAlignment = Enum.TextYAlignment.Center
+                TextLabel.TextXAlignment = Enum.TextXAlignment.Center
+
+                u218(TextButton)
+
+                u219[p38] = {
+                    btn = TextButton,
+                    stroke = UIStroke,
+                    lbl = TextLabel,
+                }
+
+                return u219[p38]
+            end
+
+            local u221 = RunService
+
+            function u222(p43, p44)
+                local YOffset = p43.btn.Size.Y.Offset
+                local v759 = YOffset * 0.55
+                local v760 = math.floor(v759)
+                local ImageLabel = Instance.new('ImageLabel', p43.btn)
+
+                ImageLabel.Name = 'SpinImg'
+                ImageLabel.Size = UDim2.new(0, v760, 0, v760)
+                ImageLabel.Position = UDim2.new(0.5, -v760 / 2, 0.5, -v760 / 2)
+                ImageLabel.BackgroundTransparency = 1
+                ImageLabel.Image = 'rbxassetid://' .. tostring(p44)
+                p43.img = ImageLabel
+                p43.lbl.Size = UDim2.new(1, 0, 0.28, 0)
+                p43.lbl.Position = UDim2.new(0, 0, 0.72, 0)
+
+                local lbl = p43.lbl
+                local v763 = YOffset * 0.12
+
+                lbl.TextSize = math.max(9, v763)
+
+                local spawn = task.spawn
+                local u765 = ImageLabel
+
+                spawn(function()
+                    while u765 and u765.Parent do
+                        u765.Rotation = u765.Rotation + 4
+                        task.wait(0.03)
+                    end
+                end)
+
+                return ImageLabel
+            end
+
+            uDim2_2 = UDim2.new(0, 110, 0, 110)
+            uDim2 = UDim2.new(0, 72, 0, 72)
+            t26 = {
+                GoldBomb = UDim2.new(0.5, -210, 0.78, 0),
+                NormalBomb = UDim2.new(0.5, -110, 0.78, 0),
+                Shoot = UDim2.new(0.5, -10, 0.78, 0),
+                ESP = UDim2.new(0.5, 90, 0.78, 16),
+                Flick = UDim2.new(0.5, 154, 0.78, 16),
+                Speed = UDim2.new(0.5, -278, 0.78, 16),
+                Stretch = UDim2.new(0.5, -214, 0.78, 16),
+                GrabGun = UDim2.new(0.5, 90, 0.68, 16),
+                WallHop = UDim2.new(0.5, 154, 0.68, 16),
+                FlingMurderer = UDim2.new(0.5, -278, 0.68, 16),
+                FlingSheriff = UDim2.new(0.5, -214, 0.68, 16),
+            }
+
+            -- Button positions are loaded from the currently selected config.
+
+            local u226 = t25
+            local u227 = v220
+            local u228 = t26
+            local u229 = uDim2_2
+            local u230 = v18
+            local u231 = v115
+
+            function v232(p45)
+                if p45 then
+                    u227('GoldBomb', u228.GoldBomb, u229, Color3.fromRGB(255, 215, 0), 'GOLD\nJUMP')
+                    u226.GoldBomb.btn.MouseButton1Click:Connect(function()
+                        if not u9 then
+                            u231('GoldBomb', true)
+
+                            return
+                        end
+
+                        u230:Notify({
+                            Title = 'Lunar',
+                            Content = tostring('Gold Bomb on cooldown.'),
+                            Duration = 3,
+                            Icon = 'bell',
+                        })
+                    end)
+
+                    return
+                end
+                if u226.GoldBomb then
+                    u226.GoldBomb.btn:Destroy()
+
+                    u226.GoldBomb = nil
+                end
+            end
+
+            local u233 = t25
+            local u234 = v220
+            local u235 = t26
+            local u236 = uDim2_2
+            local u237 = v18
+            local u238 = v115
+
+            function v239(p46)
+                if p46 then
+                    u234('NormalBomb', u235.NormalBomb, u236, Color3.fromRGB(0, 170, 255), 'NORMAL\nJUMP')
+                    u233.NormalBomb.btn.MouseButton1Click:Connect(function()
+                        if not u10 then
+                            u238('FakeBomb', false)
+
+                            return
+                        end
+
+                        u237:Notify({
+                            Title = 'Lunar',
+                            Content = tostring('Normal Bomb on cooldown.'),
+                            Duration = 3,
+                            Icon = 'bell',
+                        })
+                    end)
+
+                    return
+                end
+                if u233.NormalBomb then
+                    u233.NormalBomb.btn:Destroy()
+
+                    u233.NormalBomb = nil
+                end
+            end
+        end
+
+        local u240 = t25
+        local u241 = v220
+        local u242 = t26
+        local u243 = uDim2_2
+
+        function v244(p47)
+            if p47 then
+                local v769 = u241('Shoot', u242.Shoot, u243, Color3.fromRGB(255, 255, 255), 'SHOOT')
+
+                u222(v769, 5159914132)
+                v769.btn.MouseButton1Click:Connect(u98)
+
+                return
+            end
+            if u240.Shoot then
+                u240.Shoot.btn:Destroy()
+
+                u240.Shoot = nil
+            end
+        end
+
+        local u245 = t25
+        local u246 = v220
+        local u247 = t26
+        local u248 = uDim2
+        local u249 = v78
+        local u250 = v68
+        local u251 = v18
+
+        function u252(p48)
+            if p48 then
+                u246('ESP', u247.ESP, u248, Color3.fromRGB(10, 140, 30), 'ESP\nOFF')
+                u245.ESP.btn.MouseButton1Click:Connect(function()
+                    local v926 = not u61
+
+                    u61 = v926
+
+                    if not v926 then
+                        if u62 then
+                            u62:Disconnect()
+
+                            u62 = nil
+                        end
+
+                        task.delay(0.1, u250)
+                    else
+                        u249()
+                    end
+
+                    local v927 = u61 and 'ESP ON' or 'ESP OFF'
+
+                    u251:Notify({
+                        Title = 'Lunar',
+                        Content = tostring(v927),
+                        Duration = 3,
+                        Icon = 'bell',
+                    })
+                end)
+
+                return
+            end
+            if u245.ESP then
+                u245.ESP.btn:Destroy()
+
+                u245.ESP = nil
+            end
+        end
+
+        local u253 = t25
+        local u254 = v220
+        local u255 = t26
+        local u256 = uDim2
+
+        function u257(p49)
+            if p49 then
+                u254('Flick', u255.Flick, u256, Color3.fromRGB(180, 50, 255), 'FLICK')
+                u253.Flick.btn.MouseButton1Click:Connect(u104)
+
+                return
+            end
+            if u253.Flick then
+                u253.Flick.btn:Destroy()
+
+                u253.Flick = nil
+            end
+        end
+
+        local u258 = t25
+        local u259 = v220
+        local u260 = t26
+        local u261 = uDim2
+        local u262 = v18
+
+        function u263(p50)
+            if p50 then
+                u259('Speed', u260.Speed, u261, Color3.fromRGB(0, 140, 120), 'SPEED')
+                u258.Speed.btn.MouseButton1Click:Connect(function()
+                    u116 = not u116
+
+                    local v928 = u116 and 'Speed Glitch ON' or 'Speed Glitch OFF'
+
+                    u262:Notify({
+                        Title = 'Lunar',
+                        Content = tostring(v928),
+                        Duration = 3,
+                        Icon = 'bell',
+                    })
+                end)
+
+                return
+            end
+            if u258.Speed then
+                u258.Speed.btn:Destroy()
+
+                u258.Speed = nil
+            end
+        end
+
+        local u264 = t25
+        local u265 = v220
+        local u266 = t26
+        local u267 = uDim2
+        local u268 = v125
+        local u269 = v18
+
+        function u270(p51)
+            if p51 then
+                u265('Stretch', u266.Stretch, u267, Color3.fromRGB(200, 80, 0), 'STRETCH')
+                u264.Stretch.btn.MouseButton1Click:Connect(function()
+                    u120 = not u120
+
+                    u268(u120)
+
+                    local v929 = u120 and 'Stretch ON' or 'Stretch OFF'
+
+                    u269:Notify({
+                        Title = 'Lunar',
+                        Content = tostring(v929),
+                        Duration = 3,
+                        Icon = 'bell',
+                    })
+                end)
+
+                return
+            end
+            if u264.Stretch then
+                u264.Stretch.btn:Destroy()
+
+                u264.Stretch = nil
+            end
+        end
+    end
+
+    local u271 = t25
+    local u272 = v220
+    local u273 = t26
+    local u274 = uDim2
+
+    local function u275()
+        local grab = getgenv().LunarGrabGun
+
+        if grab then
+            grab()
+        end
+    end
+
+    function u276(p52)
+        if p52 then
+            u272('GrabGun', u273.GrabGun, u274, Color3.fromRGB(200, 120, 0), 'GRAB\nGUN')
+            u271.GrabGun.btn.MouseButton1Click:Connect(u275)
+
+            return
+        end
+        if u271.GrabGun then
+            u271.GrabGun.btn:Destroy()
+
+            u271.GrabGun = nil
+        end
+    end
+
+    local u277 = t25
+    local u278 = v220
+    local u279 = t26
+    local u280 = uDim2
+
+    function u281(p53)
+        if p53 then
+            u278('WallHop', u279.WallHop, u280, Color3.fromRGB(0, 210, 210), 'WALL\nHOP')
+            u277.WallHop.btn.MouseButton1Click:Connect(u110)
+
+            return
+        end
+        if u277.WallHop then
+            u277.WallHop.btn:Destroy()
+
+            u277.WallHop = nil
+        end
+    end
+
+    local u282 = t25
+    local u283 = v220
+    local u284 = t26
+    local u285 = uDim2
+
+    local function u286()
+        if not u157 then
+            for _, player in ipairs(u163:GetPlayers())do
+                if player ~= u164 and player.Character and (player.Backpack:FindFirstChild('Knife') or player.Character and player.Character:FindFirstChild('Knife')) then
+                    local Humanoid = player.Character:FindFirstChildOfClass('Humanoid')
+
+                    if Humanoid and Humanoid.Health > 0 then
+                        local v684 = 'Flinging: ' .. player.Name
+
+                        u162:Notify({
+                            Title = 'Lunar',
+                            Content = tostring(v684),
+                            Duration = 3,
+                            Icon = 'bell',
+                        })
+                        task.spawn(u165, player)
+
+                        return
+                    end
+                end
+            end
+
+            u162:Notify({
+                Title = 'Lunar',
+                Content = tostring('No knife player found!'),
+                Duration = 3,
+                Icon = 'bell',
+            })
+
+            return
+        end
+
+        u162:Notify({
+            Title = 'Lunar',
+            Content = tostring('Fling in progress...'),
+            Duration = 3,
+            Icon = 'bell',
+        })
+    end
+
+    function u287(p54)
+        if p54 then
+            u283('FlingMurderer', u284.FlingMurderer, u285, Color3.fromRGB(255, 50, 50), 'FLING\nMURD')
+            u282.FlingMurderer.btn.MouseButton1Click:Connect(u286)
+
+            return
+        end
+        if u282.FlingMurderer then
+            u282.FlingMurderer.btn:Destroy()
+
+            u282.FlingMurderer = nil
+        end
+    end
+
+    local u288 = t25
+    local u289 = v220
+    local u290 = t26
+    local u291 = uDim2
+
+    local function u292()
+        if not u157 then
+            for _, player in ipairs(u167:GetPlayers())do
+                if player ~= u168 and player.Character and (player.Backpack:FindFirstChild('Gun') or player.Character and player.Character:FindFirstChild('Gun')) then
+                    local Humanoid = player.Character:FindFirstChildOfClass('Humanoid')
+
+                    if Humanoid and Humanoid.Health > 0 then
+                        local v688 = 'Flinging: ' .. player.Name
+
+                        u166:Notify({
+                            Title = 'Lunar',
+                            Content = tostring(v688),
+                            Duration = 3,
+                            Icon = 'bell',
+                        })
+                        task.spawn(u169, player)
+
+                        return
+                    end
+                end
+            end
+
+            u166:Notify({
+                Title = 'Lunar',
+                Content = tostring('No gun player found!'),
+                Duration = 3,
+                Icon = 'bell',
+            })
+
+            return
+        end
+
+        u166:Notify({
+            Title = 'Lunar',
+            Content = tostring('Fling in progress...'),
+            Duration = 3,
+            Icon = 'bell',
+        })
+    end
+
+    function u293(p55)
+        if p55 then
+            u289('FlingSheriff', u290.FlingSheriff, u291, Color3.fromRGB(40, 130, 255), 'FLING\nSHERIF')
+            u288.FlingSheriff.btn.MouseButton1Click:Connect(u292)
+
+            return
+        end
+        if u288.FlingSheriff then
+            u288.FlingSheriff.btn:Destroy()
+
+            u288.FlingSheriff = nil
+        end
+    end
+
+    local Heartbeat = RunService.Heartbeat
+    local u295 = t25
+    local u296 = LocalPlayer
+    local u297 = UserInputService
+    local u298 = Workspace
+    local u299 = Players
+
+    local _uiLastTick = 0
+    local _uiCache = {}
+
+    local function _setLbl(key, lbl, text)
+        if _uiCache[key..'_t'] ~= text then
+            lbl.Text = text
+            _uiCache[key..'_t'] = text
+        end
+    end
+    local function _setColor(key, lbl, stroke, color)
+        if _uiCache[key..'_c'] ~= color then
+            lbl.TextColor3 = color
+            stroke.Color = color
+            _uiCache[key..'_c'] = color
+        end
+    end
+
+    Heartbeat:Connect(function()
+        local _now = tick()
+        if _now - _uiLastTick < 0.066 then return end -- ~15 FPS для UI
+        _uiLastTick = _now
+
+        if u295.GoldBomb then
+            _setLbl('gb', u295.GoldBomb.lbl, u9 and 'WAIT...' or 'GOLD\nJUMP')
+        end
+        if u295.NormalBomb then
+            _setLbl('nb', u295.NormalBomb.lbl, u10 and 'WAIT...' or 'NORMAL\nJUMP')
+        end
+        if u295.Shoot and u295.Shoot.img then
+            local v779 = u296.Backpack:FindFirstChild('Knife') or u296.Character and u296.Character:FindFirstChild('Knife')
+            local _shootImg = v779 and 'rbxassetid://9695655416' or 'rbxassetid://5159914132'
+            if _uiCache['sh_img'] ~= _shootImg then
+                u295.Shoot.img.Image = _shootImg
+                _uiCache['sh_img'] = _shootImg
+            end
+            _setLbl('sh', u295.Shoot.lbl, v779 and 'THROW' or 'SHOOT')
+        end
+        if u295.ESP then
+            local v780 = u61 and Color3.fromRGB(50, 220, 80) or Color3.fromRGB(10, 140, 30)
+            _setLbl('esp', u295.ESP.lbl, u61 and 'ESP\nON' or 'ESP\nOFF')
+            _setColor('esp', u295.ESP.lbl, u295.ESP.stroke, v780)
+        end
+        if u295.Flick then
+            local v781 = u297.MouseBehavior == Enum.MouseBehavior.LockCenter
+            local v782 = u99 and Color3.fromRGB(255, 120, 0) or (v781 and Color3.fromRGB(120, 200, 255) or Color3.fromRGB(180, 50, 255))
+            _setLbl('fl', u295.Flick.lbl, u99 and 'WAIT...' or 'FLICK')
+            _setColor('fl', u295.Flick.lbl, u295.Flick.stroke, v782)
+        end
+        if u295.WallHop then
+            local v783 = u297.MouseBehavior == Enum.MouseBehavior.LockCenter
+            local v784 = u105 and Color3.fromRGB(255, 120, 0) or (v783 and Color3.fromRGB(0, 255, 220) or Color3.fromRGB(0, 210, 210))
+            _setLbl('wh', u295.WallHop.lbl, u105 and 'WAIT...' or 'WALL\nHOP')
+            _setColor('wh', u295.WallHop.lbl, u295.WallHop.stroke, v784)
+        end
+        if u295.Speed then
+            local v785 = u116 and Color3.fromRGB(0, 220, 200) or Color3.fromRGB(0, 140, 120)
+            _setLbl('sp', u295.Speed.lbl, u116 and 'SPEED\nON' or 'SPEED')
+            _setColor('sp', u295.Speed.lbl, u295.Speed.stroke, v785)
+        end
+        if u295.Stretch then
+            local v786 = u120 and Color3.fromRGB(255, 140, 30) or Color3.fromRGB(200, 80, 0)
+            _setLbl('st', u295.Stretch.lbl, u120 and 'STRETCH\nON' or 'STRETCH')
+            _setColor('st', u295.Stretch.lbl, u295.Stretch.stroke, v786)
+        end
+        if u295.GrabGun then
+            local GunDrop = u298:FindFirstChild('GunDrop', true)
+            local v788 = GunDrop and Color3.fromRGB(255, 215, 0) or Color3.fromRGB(200, 100, 0)
+            _setLbl('gg', u295.GrabGun.lbl, GunDrop and 'GRAB\nGUN' or 'NO\nGUN')
+            _setColor('gg', u295.GrabGun.lbl, u295.GrabGun.stroke, v788)
+        end
+        if u295.FlingMurderer then
+            local v789 = false
+            for _, player in ipairs(u299:GetPlayers())do
+                if player ~= u296 and (player.Backpack:FindFirstChild('Knife') or player.Character and player.Character:FindFirstChild('Knife')) then
+                    v789 = true
+                    break
+                end
+            end
+            local v792 = u157 and Color3.fromRGB(255, 180, 0) or (v789 and Color3.fromRGB(255, 50, 50) or Color3.fromRGB(200, 20, 20))
+            _setLbl('fm', u295.FlingMurderer.lbl, u157 and 'FLING...' or (v789 and 'FLING\nMURD' or 'NO\nMURD'))
+            _setColor('fm', u295.FlingMurderer.lbl, u295.FlingMurderer.stroke, v792)
+        end
+        if u295.FlingSheriff then
+            local v793 = false
+            for _, player in ipairs(u299:GetPlayers())do
+                if player ~= u296 and (player.Backpack:FindFirstChild('Gun') or player.Character and player.Character:FindFirstChild('Gun')) then
+                    v793 = true
+                    break
+                end
+            end
+            local v796 = u157 and Color3.fromRGB(255, 180, 0) or (v793 and Color3.fromRGB(40, 130, 255) or Color3.fromRGB(10, 80, 200))
+            _setLbl('fs', u295.FlingSheriff.lbl, u157 and 'FLING...' or (v793 and 'FLING\nSHERIF' or 'NO\nSHERIF'))
+            _setColor('fs', u295.FlingSheriff.lbl, u295.FlingSheriff.stroke, v796)
+        end
+    end)
+    v18:Notify({
+        Title = 'Lunar Mmv And Mm2',
+        Content = 'v7.3 loaded!\\nBombs and Shoot auto-loaded.\\nOpen menu to configure everything.',
+        Duration = 5,
+    })
+
+
+    local v300 = v18:CreateWindow({
+        Title = 'Lunar',
+        Author = 'Mmv And Mm2',
+        Folder = 'Lunar',
+        Size = UDim2.fromOffset(700, 450),
+    }):Section({
+        Title = 'Lunar',
+        Opened = true,
+    })
+
+    do
+        local Players = game:GetService("Players")
+        local RunService = game:GetService("RunService")
+        local Stats = game:GetService("Stats")
+        local LocalPlayer = Players.LocalPlayer
+
+        local guiParent
+        pcall(function()
+            if typeof(gethui) == "function" then
+                guiParent = gethui()
+            end
+        end)
+        if not guiParent then
+            guiParent = game:GetService("CoreGui")
+        end
+
+        local oldOverlay = guiParent:FindFirstChild("LunarOpenButton")
+        if oldOverlay then
+            oldOverlay:Destroy()
+        end
+
+        local overlayGui = Instance.new("ScreenGui")
+        overlayGui.Name = "LunarOpenButton"
+        overlayGui.ResetOnSpawn = false
+        overlayGui.IgnoreGuiInset = true
+        overlayGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+        overlayGui.DisplayOrder = 999999
+        overlayGui.Parent = guiParent
+
+        local overlay = Instance.new("TextButton")
+        overlay.Name = "LunarOverlay"
+        overlay.Size = UDim2.new(0, 530, 0, 42)
+        overlay.Position = UDim2.new(1, -10, 0, 7)
+        overlay.AnchorPoint = Vector2.new(1, 0)
+        overlay.BackgroundColor3 = Color3.fromRGB(10, 10, 14)
+        overlay.BackgroundTransparency = 0.16
+        overlay.BorderSizePixel = 0
+        overlay.AutoButtonColor = false
+        overlay.Text = ""
+        overlay.Parent = overlayGui
+
+        local corner = Instance.new("UICorner")
+        corner.CornerRadius = UDim.new(0, 10)
+        corner.Parent = overlay
+
+        local stroke = Instance.new("UIStroke")
+        stroke.Thickness = 1
+        stroke.Color = Color3.fromRGB(70, 70, 80)
+        stroke.Transparency = 0.45
+        stroke.Parent = overlay
+
+        local padding = Instance.new("UIPadding")
+        padding.PaddingLeft = UDim.new(0, 7)
+        padding.PaddingRight = UDim.new(0, 7)
+        padding.Parent = overlay
+
+        local list = Instance.new("UIListLayout")
+        list.FillDirection = Enum.FillDirection.Horizontal
+        list.VerticalAlignment = Enum.VerticalAlignment.Center
+        list.HorizontalAlignment = Enum.HorizontalAlignment.Left
+        list.Padding = UDim.new(0, 3)
+        list.SortOrder = Enum.SortOrder.LayoutOrder
+        list.Parent = overlay
+
+        local function makeLabel(name, text, order, width, bold)
+            local label = Instance.new("TextLabel")
+            label.Name = name
+            label.LayoutOrder = order
+            label.Size = UDim2.new(0, width, 1, 0)
+            label.BackgroundTransparency = 1
+            label.Font = bold and Enum.Font.GothamBold or Enum.Font.Gotham
+            label.Text = text
+            label.TextSize = 11
+            label.TextColor3 = Color3.fromRGB(215, 215, 225)
+            label.TextXAlignment = Enum.TextXAlignment.Center
+            label.TextYAlignment = Enum.TextYAlignment.Center
+            label.Parent = overlay
+            return label
+        end
+
+        local logo = makeLabel("Logo", "▣", 1, 18, true)
+        logo.TextColor3 = Color3.fromRGB(120, 140, 255)
+
+        local fpsLabel = makeLabel("FPS", "-- FPS", 2, 50, true)
+        local pingLabel = makeLabel("Ping", "-- MS", 3, 52, true)
+        local memoryLabel = makeLabel("Memory", "-- MB", 4, 60, false)
+        local playerLabel = makeLabel("Player", LocalPlayer and LocalPlayer.Name or "Player", 5, 85, true)
+        local profileLabel = makeLabel("Profile", "● Default", 6, 70, false)
+        local infoLabel = makeLabel("Info", "Lunar", 7, 70, true)
+        local timeLabel = makeLabel("Time", "--:--", 8, 45, false)
+        local menuLabel = makeLabel("Menu", "≡", 9, 24, true)
+        menuLabel.TextSize = 17
+
+        local function updateScale()
+            local camera = workspace.CurrentCamera
+            if not camera then return end
+            local width = camera.ViewportSize.X
+            local size = width < 600 and 10 or 11
+            for _, child in ipairs(overlay:GetChildren()) do
+                if child:IsA("TextLabel") then
+                    child.TextSize = (child == menuLabel and size + 7 or size)
+                end
+            end
+        end
+        updateScale()
+        pcall(function()
+            workspace.CurrentCamera:GetPropertyChangedSignal("ViewportSize"):Connect(updateScale)
+        end)
+
+        local frames = 0
+        local lastFpsUpdate = os.clock()
+        local fps = 0
+
+        local function getPing()
+            local value = nil
+            pcall(function()
+                local network = Stats:FindFirstChild("Network")
+                local serverStats = network and network:FindFirstChild("ServerStatsItem")
+                local item = serverStats and serverStats:FindFirstChild("Data Ping")
+                if item then
+                    value = item:GetValue()
+                end
+            end)
+            return value
+        end
+
+        local updateConnection
+        updateConnection = RunService.RenderStepped:Connect(function()
+            frames += 1
+            local now = os.clock()
+            local elapsed = now - lastFpsUpdate
+            if elapsed >= 0.5 then
+                fps = math.floor(frames / elapsed + 0.5)
+                frames = 0
+                lastFpsUpdate = now
+
+                fpsLabel.Text = string.format("%d FPS", fps)
+
+                local ping = getPing()
+                if ping then
+                    pingLabel.Text = string.format("%d MS", math.floor(ping + 0.5))
+                else
+                    pingLabel.Text = "-- MS"
+                end
+
+                local memory = 0
+                pcall(function()
+                    memory = Stats:GetTotalMemoryUsageMb()
+                end)
+                memoryLabel.Text = string.format("%d MB", math.floor(memory + 0.5))
+
+                timeLabel.Text = os.date("%H:%M")
+            end
+        end)
+
+        overlay.Activated:Connect(function()
+            pcall(function()
+                v300:ToggleInterface()
+            end)
+        end)
+
+        overlay.MouseButton1Down:Connect(function()
+            overlay.BackgroundTransparency = 0.04
+        end)
+        overlay.MouseButton1Up:Connect(function()
+            overlay.BackgroundTransparency = 0.16
+        end)
+
+        overlay.InputBegan:Connect(function(input)
+            if input.UserInputType == Enum.UserInputType.Touch then
+                overlay.BackgroundTransparency = 0.04
+            end
+        end)
+        overlay.InputEnded:Connect(function(input)
+            if input.UserInputType == Enum.UserInputType.Touch then
+                overlay.BackgroundTransparency = 0.16
+            end
+        end)
+
+        overlay.Destroying:Connect(function()
+            if updateConnection then
+                updateConnection:Disconnect()
+            end
+        end)
+    end
+
+    v301 = v300:Tab({
+        Title = 'Main',
+        Icon = 'grid',
+    })
+    v302 = v300:Tab({
+        Title = 'ESP',
+        Icon = 'eye',
+    })
+
+    v303 = v300:Tab({
+        Title = 'Fling/Teleport',
+        Icon = 'person-teleport',
+    })
+
+    local v304 = v300:Tab({
+        Title = 'Rage',
+        Icon = 'sword',
+    })
+
+
+    do
+        local AFPlayers = game:GetService("Players")
+        local AFRunService = game:GetService("RunService")
+        local AFTweenService = game:GetService("TweenService")
+        local AFLocalPlayer = AFPlayers.LocalPlayer
+
+        local AFSettings = {
+            AutoFarmEnabled = false,
+            FarmMode = "Underground",
+            TweenSpeed = 25,
+            AutoReset = true,
+            AvoidMurder = false,
+            AntiAfkEnabled = false,
+            AntiAfkInterval = 120,
+            UndergroundOffset = 4,
+            MaxDistance = 600,
+            CoinLimit = 40,
+        }
+
+        local AFState = {
+            isFarming = false,
+            isActivelyFlying = false,
+            currentTargetCoin = nil,
+            ignoredCoins = {},
+            currentTween = nil,
+            antiAfkRunning = false,
+        }
+
+        local AFVirtualUser = game:GetService("VirtualUser")
+
+        AFLocalPlayer.Idled:Connect(function()
+            if not AFSettings.AntiAfkEnabled then return end
+            pcall(function()
+                AFVirtualUser:CaptureController()
+                AFVirtualUser:ClickButton2(Vector2.new())
+            end)
+        end)
+
+        local function afStartAntiAfk()
+            if AFState.antiAfkRunning then return end
+            AFState.antiAfkRunning = true
+
+            task.spawn(function()
+                while AFSettings.AntiAfkEnabled do
+                    local waitTime = AFSettings.AntiAfkInterval + math.random(0, 30)
+                    task.wait(waitTime)
+                    if not AFSettings.AntiAfkEnabled then break end
+
+                    local character = AFLocalPlayer.Character
+                    local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+                    if humanoid then
+                        pcall(function()
+                            humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+                        end)
+                    end
+                end
+
+                AFState.antiAfkRunning = false
+            end)
+        end
+
+        local function afGetTorso(char)
+            if not char then return nil end
+            return char:FindFirstChild("Torso")
+                or char:FindFirstChild("LowerTorso")
+                or char:FindFirstChild("HumanoidRootPart")
+        end
+
+        local function afGetCurrentCoins()
+            local ok, result = pcall(function()
+                local gui = AFLocalPlayer.PlayerGui:FindFirstChild("MainGUI")
+                local gameGui = gui and gui:FindFirstChild("Game")
+                local coinBags = gameGui and gameGui:FindFirstChild("CoinBags")
+                local container = coinBags and coinBags:FindFirstChild("Container")
+                local coin = container and container:FindFirstChild("Coin")
+                local currencyFrame = coin and coin:FindFirstChild("CurrencyFrame")
+                local icon = currencyFrame and currencyFrame:FindFirstChild("Icon")
+                local coinsText = icon and icon:FindFirstChild("Coins")
+                return coinsText and coinsText.Text or 0
+            end)
+            return ok and (tonumber(result) or 0) or 0
+        end
+
+        local function afIsRoundOver()
+            local pGui = AFLocalPlayer:FindFirstChild("PlayerGui")
+            local victoryGui = pGui and pGui:FindFirstChild("Victory")
+            if victoryGui then
+                for _, child in ipairs(victoryGui:GetChildren()) do
+                    if child:IsA("GuiObject") and child.Visible then
+                        return true
+                    end
+                end
+            end
+            return false
+        end
+
+        local function afIsBagFull()
+            local pGui = AFLocalPlayer:FindFirstChild("PlayerGui")
+            local mainGui = pGui and pGui:FindFirstChild("MainGUI")
+            local lobby = mainGui and mainGui:FindFirstChild("Lobby")
+            local dock = lobby and lobby:FindFirstChild("Dock")
+            local coinBags = dock and dock:FindFirstChild("CoinBags")
+            local notification = coinBags and coinBags:FindFirstChild("FullBagNotification")
+            return notification and notification.Visible == true or false
+        end
+
+        local function afHasNearbyMurderer()
+            if not AFSettings.AvoidMurder then return false end
+
+            local char = AFLocalPlayer.Character
+            local hrp = char and char:FindFirstChild("HumanoidRootPart")
+            if not hrp then return false end
+
+            for _, player in ipairs(AFPlayers:GetPlayers()) do
+                if player ~= AFLocalPlayer and player.Character then
+                    local otherHRP = player.Character:FindFirstChild("HumanoidRootPart")
+                    local backpack = player:FindFirstChild("Backpack")
+                    if otherHRP and (otherHRP.Position - hrp.Position).Magnitude <= 10 then
+                        if player.Character:FindFirstChild("Knife")
+                            or (backpack and backpack:FindFirstChild("Knife")) then
+                            return true
+                        end
+                    end
+                end
+            end
+            return false
+        end
+
+        local function afGetNearestCoin(torso)
+            local container
+            for _, obj in ipairs(workspace:GetDescendants()) do
+                if obj.Name == "CoinContainer" then
+                    container = obj
+                    break
+                end
+            end
+            if not container then return nil end
+
+            local nearestCoin
+            local minDist = math.huge
+
+            for _, coin in ipairs(container:GetChildren()) do
+                if coin.Name == "Coin_Server"
+                    and coin:IsA("BasePart")
+                    and not AFState.ignoredCoins[coin] then
+
+                    local dist = (torso.Position - coin.Position).Magnitude
+                    if dist < minDist and dist <= AFSettings.MaxDistance then
+                        minDist = dist
+                        nearestCoin = coin
+                    end
+                end
+            end
+
+            return nearestCoin
+        end
+
+        local function afApplyFlightPhysics(char)
+            local hrp = char and char:FindFirstChild("HumanoidRootPart")
+            if not hrp then return CFrame.identity end
+
+            local bv = hrp:FindFirstChild("LunarFarmBV")
+            if not bv then
+                bv = Instance.new("BodyVelocity")
+                bv.Name = "LunarFarmBV"
+                bv.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+                bv.Velocity = Vector3.zero
+                bv.Parent = hrp
+            end
+
+            local bg = hrp:FindFirstChild("LunarFarmBG")
+            if not bg then
+                bg = Instance.new("BodyGyro")
+                bg.Name = "LunarFarmBG"
+                bg.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
+                bg.P = 50000
+                bg.Parent = hrp
+
+                local _, rotY, _ = hrp.CFrame:ToOrientation()
+                bg.CFrame =
+                    CFrame.new(hrp.Position)
+                    * CFrame.Angles(0, rotY, 0)
+                    * CFrame.Angles(math.rad(-90), 0, 0)
+            end
+
+            return bg.CFrame.Rotation
+        end
+
+        local function afRemovePhysics()
+            local char = AFLocalPlayer.Character
+            local hrp = char and char:FindFirstChild("HumanoidRootPart")
+            if hrp then
+                local bv = hrp:FindFirstChild("LunarFarmBV")
+                local bg = hrp:FindFirstChild("LunarFarmBG")
+                if bv then bv:Destroy() end
+                if bg then bg:Destroy() end
+                hrp.Anchored = false
+            end
+        end
+
+        local function afSetupNoclip()
+            local char = AFLocalPlayer.Character
+            if not char then return end
+
+            local humanoid = char:FindFirstChild("Humanoid")
+            if humanoid then humanoid.PlatformStand = true end
+
+            for _, part in ipairs(char:GetDescendants()) do
+                if part:IsA("BasePart") then
+                    part.CanCollide = false
+                end
+            end
+        end
+
+        local function afFlyToPoint(targetPos, targetCoin, hrp, torso, lockedRotation)
+            local dist = (torso.Position - targetPos).Magnitude
+            local duration = math.max(dist / math.max(AFSettings.TweenSpeed, 1), 0.05)
+            local tween = AFTweenService:Create(
+                hrp,
+                TweenInfo.new(duration, Enum.EasingStyle.Linear),
+                {CFrame = CFrame.new(targetPos) * lockedRotation}
+            )
+
+            AFState.currentTween = tween
+            local reached = false
+            local connection
+
+            tween:Play()
+
+            connection = AFRunService.Heartbeat:Connect(function()
+                if not AFState.isFarming
+                    or not targetCoin
+                    or not targetCoin:IsDescendantOf(workspace) then
+                    pcall(function() tween:Cancel() end)
+                    connection:Disconnect()
+                    return
+                end
+
+                if firetouchinterest then
+                    pcall(function()
+                        firetouchinterest(torso, targetCoin, 0)
+                        firetouchinterest(torso, targetCoin, 1)
+                    end)
+                end
+
+                if (torso.Position - targetPos).Magnitude <= 1.5 then
+                    reached = true
+                    pcall(function() tween:Cancel() end)
+                    connection:Disconnect()
+                end
+            end)
+
+            while connection.Connected and AFState.isFarming do
+                AFRunService.Heartbeat:Wait()
+            end
+
+            return reached
+        end
+
+        local function afTweenToCoin(coin)
+            if not coin or not coin.Parent or not coin:FindFirstChild("TouchInterest") then
+                return false
+            end
+
+            local char = AFLocalPlayer.Character
+            local hrp = char and char:FindFirstChild("HumanoidRootPart")
+            local hum = char and char:FindFirstChildOfClass("Humanoid")
+            if not hrp or not hum then return false end
+
+            local target = coin.Position + Vector3.new(0, 2, 0)
+            if (hrp.Position - target).Magnitude < 5 then
+                return true
+            end
+
+            if AFState.currentTween then
+                pcall(function() AFState.currentTween:Cancel() end)
+            end
+
+            local duration = math.max(
+                (hrp.Position - target).Magnitude / math.max(AFSettings.TweenSpeed, 1),
+                0.05
+            )
+
+            AFState.currentTween = AFTweenService:Create(
+                hrp,
+                TweenInfo.new(duration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+                {CFrame = CFrame.new(target)}
+            )
+
+            hum.Sit = true
+            AFState.currentTween:Play()
+
+            local done = false
+            local connection
+            connection = AFState.currentTween.Completed:Connect(function()
+                done = true
+                connection:Disconnect()
+            end)
+
+            local started = os.clock()
+            while not done and AFState.isFarming do
+                task.wait(0.1)
+
+                if not coin.Parent or not coin:FindFirstChild("TouchInterest") then
+                    pcall(function() AFState.currentTween:Cancel() end)
+                    hum.Sit = false
+                    return false
+                end
+
+                if os.clock() - started > 30 then
+                    pcall(function() AFState.currentTween:Cancel() end)
+                    hum.Sit = false
+                    return false
+                end
+            end
+
+            hum.Sit = false
+            return done
+        end
+
+        local function afCollectCoin(coin)
+            local char = AFLocalPlayer.Character
+            local hrp = char and char:FindFirstChild("HumanoidRootPart")
+            if not hrp or not coin or not coin.Parent then return end
+
+            if firetouchinterest then
+                pcall(function()
+                    firetouchinterest(hrp, coin, 0)
+                    task.wait(0.05)
+                    firetouchinterest(hrp, coin, 1)
+                end)
+            end
+        end
+
+        local function afStopFarming()
+            AFState.isFarming = false
+            AFState.isActivelyFlying = false
+            AFState.currentTargetCoin = nil
+
+            if AFState.currentTween then
+                pcall(function() AFState.currentTween:Cancel() end)
+                AFState.currentTween = nil
+            end
+
+            afRemovePhysics()
+
+            local char = AFLocalPlayer.Character
+            local humanoid = char and char:FindFirstChild("Humanoid")
+            if humanoid then
+                humanoid.PlatformStand = false
+                humanoid.Sit = false
+            end
+        end
+
+        local function afStartFarming()
+            if AFState.isFarming then return end
+
+            AFState.isFarming = true
+            table.clear(AFState.ignoredCoins)
+
+            task.spawn(function()
+                while AFState.isFarming do
+                    task.wait()
+
+                    local success = pcall(function()
+                        if afHasNearbyMurderer() then
+                            AFState.isActivelyFlying = false
+                            AFState.currentTargetCoin = nil
+                            afRemovePhysics()
+
+                            local char = AFLocalPlayer.Character
+                            local hum = char and char:FindFirstChild("Humanoid")
+                            if hum then hum.Sit = false end
+
+                            task.wait(1)
+                            return
+                        end
+
+                        local char = AFLocalPlayer.Character
+                        if not char then return end
+
+                        local hrp = char:FindFirstChild("HumanoidRootPart")
+                        local torso = afGetTorso(char)
+                        local humanoid = char:FindFirstChild("Humanoid")
+
+                        if not hrp or not torso or not humanoid or humanoid.Health <= 0 then
+                            AFState.isActivelyFlying = false
+                            AFState.currentTargetCoin = nil
+                            afRemovePhysics()
+                            task.wait(1)
+                            return
+                        end
+
+                        if afIsRoundOver() or afIsBagFull() then
+                            AFState.isActivelyFlying = false
+                            AFState.currentTargetCoin = nil
+                            afRemovePhysics()
+                            humanoid.Sit = false
+                            task.wait(1)
+                            return
+                        end
+
+                        if AFSettings.AutoReset and afGetCurrentCoins() >= AFSettings.CoinLimit then
+                            humanoid.Health = 0
+                            task.wait(5)
+                            return
+                        end
+
+                        local targetCoin = afGetNearestCoin(torso)
+                        if not targetCoin or not targetCoin:IsDescendantOf(workspace) then
+                            AFState.isActivelyFlying = false
+                            AFState.currentTargetCoin = nil
+                            afRemovePhysics()
+                            humanoid.Sit = false
+                            task.wait(0.5)
+                            return
+                        end
+
+                        AFState.isActivelyFlying = true
+                        AFState.currentTargetCoin = targetCoin
+
+                        local reachedTarget = false
+
+                        if AFSettings.FarmMode == "Underground" then
+                            afSetupNoclip()
+                            local lockedRotation = afApplyFlightPhysics(char)
+                            local targetPos =
+                                targetCoin.Position
+                                - Vector3.new(0, AFSettings.UndergroundOffset, 0)
+
+                            reachedTarget = afFlyToPoint(
+                                targetPos,
+                                targetCoin,
+                                hrp,
+                                torso,
+                                lockedRotation
+                            )
+                        else
+                            reachedTarget = afTweenToCoin(targetCoin)
+                            if reachedTarget and AFState.isFarming and humanoid.Health > 0 then
+                                afCollectCoin(targetCoin)
+                            end
+                        end
+
+                        if reachedTarget and AFState.isFarming and humanoid.Health > 0 then
+                            AFState.ignoredCoins[targetCoin] = true
+                            task.delay(5, function()
+                                AFState.ignoredCoins[targetCoin] = nil
+                            end)
+                            task.wait(0.2)
+                        end
+
+                        AFState.currentTargetCoin = nil
+                    end)
+
+                    if not success then
+                        AFState.isActivelyFlying = false
+                        AFState.currentTargetCoin = nil
+                        afRemovePhysics()
+                        task.wait(1)
+                    end
+                end
+            end)
+        end
+
+        AFRunService.Stepped:Connect(function()
+            if not AFState.isFarming
+                or not AFState.isActivelyFlying
+                or AFSettings.FarmMode ~= "Underground" then
+                return
+            end
+
+            local char = AFLocalPlayer.Character
+            if not char then return end
+
+            local humanoid = char:FindFirstChild("Humanoid")
+            if humanoid then humanoid.PlatformStand = true end
+
+            for _, part in ipairs(char:GetDescendants()) do
+                if part:IsA("BasePart") then
+                    part.CanCollide = false
+                end
+            end
+        end)
+
+        local AutoFarmTab = v300:Tab({
+            Title = "AutoFarm",
+            Icon = 'two-arrows-loop-clockwise',
+        })
+
+        AutoFarmTab:Paragraph({
+            Title = "AutoFarm",
+        })
+
+        AutoFarmTab:Toggle({
+            Flag = "anti_afk",Title = "Anti AFK",
+            Default = AFSettings.AntiAfkEnabled,
+            Callback = function(value)
+                AFSettings.AntiAfkEnabled = value
+                if value then
+                    afStartAntiAfk()
+                end
+            end,
+        })
+
+        AutoFarmTab:Toggle({
+            Flag = "auto_farm",Title = "Auto Farm",
+            Default = AFSettings.AutoFarmEnabled,
+            Callback = function(value)
+                AFSettings.AutoFarmEnabled = value
+
+                if value then
+                    afStartFarming()
+                    v18:Notify({
+                        Title = "Lunar",
+                        Content = "AutoFarm ON",
+                        Duration = 3,
+                        Icon = "check",
+                    })
+                else
+                    afStopFarming()
+                    v18:Notify({
+                        Title = "Lunar",
+                        Content = "AutoFarm OFF",
+                        Duration = 3,
+                        Icon = "x",
+                    })
+                end
+            end,
+        })
+
+        AutoFarmTab:Dropdown({
+            Flag = "farm_mode",Title = "Farm Mode",
+            Values = {"Underground", "Sit"},
+            Value = AFSettings.FarmMode,
+            Callback = function(value)
+                if value == "Underground" or value == "Sit" then
+                    AFSettings.FarmMode = value
+                end
+            end,
+        })
+
+        AutoFarmTab:Slider({
+            Flag = "tween_speed",Title = "Tween Speed",
+            Step = 1,
+            IsTooltip = true,
+            IsTextbox = true,
+            Value = {
+                Min = 10,
+                Max = 100,
+                Default = AFSettings.TweenSpeed,
+            },
+            Callback = function(value)
+                value = tonumber(value)
+                if value then
+                    AFSettings.TweenSpeed = math.clamp(math.floor(value), 10, 100)
+                end
+            end,
+        })
+
+        AutoFarmTab:Toggle({
+            Flag = "auto_reset",Title = "Auto Reset",
+            Default = AFSettings.AutoReset,
+            Callback = function(value)
+                AFSettings.AutoReset = value
+            end,
+        })
+
+        AutoFarmTab:Toggle({
+            Flag = "avoid_murder",Title = "Avoid Murder",
+            Default = AFSettings.AvoidMurder,
+            Callback = function(value)
+                AFSettings.AvoidMurder = value
+            end,
+        })
+
+        AutoFarmTab:Dropdown({
+            Flag = "coin_limit",Title = "Coin Limit",
+            Values = {"40", "50"},
+            Value = tostring(AFSettings.CoinLimit),
+            Callback = function(value)
+                local limit = tonumber(value)
+                if limit == 40 or limit == 50 then
+                    AFSettings.CoinLimit = limit
+                end
+            end,
+        })
+
+    end
+
+    do
+        local _vs_run_service  = game:GetService("RunService")
+        local _vs_players      = game:GetService("Players")
+        local _vs_lp           = _vs_players.LocalPlayer
+
+        local _vs_render_stepped      = _vs_run_service.RenderStepped
+        local _vs_render_stepped_wait = _vs_render_stepped.Wait
+        local _vs_vector3_new         = Vector3.new
+        local _vs_vector3_zero        = Vector3.zero
+        local _vs_math_random         = math.random
+        local _vs_clock               = os.clock
+
+        local _vs_anti_aim    = {}
+        local _vs_local_fps   = 200
+        local _vs_local_parts = {}
+        local _vs_stomping    = false
+        local _vs_purchasing  = false
+
+        local _vs_fake_position_sender_rate_old
+        pcall(function()
+            _vs_fake_position_sender_rate_old = getfflag("S2PhysicsSenderRate")
+        end)
+
+        local function _vs_round(num, decimals)
+            local mult = 10^(decimals or 0)
+            return math.floor(num * mult + 0.5 - (num < 0 and 1 or 0)) / mult
+        end
+
+        local function _vs_remove(tbl, index)
+            local length = #tbl
+            for i = index, length - 1 do
+                tbl[i] = tbl[i + 1]
+            end
+            tbl[length] = nil
+        end
+
+        local function LPH_ATTRIBUTES() end
+        local function VM() end
+        local NONE = nil
+
+        local _vs_velocity_desync_type   = "low"
+        local _vs_velocity_desync_rotate = false
+
+        local _vs_do_velocity_desync = function(dt, hrp)
+            LPH_ATTRIBUTES(VM(NONE))
+            if hrp and not _vs_stomping and not _vs_purchasing
+                and (getgenv().FLING_ACTIVE or 0) == 0 then
+
+                pcall(function()
+                    setfflag("S2PhysicsSenderRate", tostring(_vs_round(_vs_local_fps, 1)))
+                end)
+                pcall(function()
+                    sethiddenproperty(hrp, "NetworkIsSleeping", false)
+                end)
+
+                local old_lin = hrp.AssemblyLinearVelocity
+                local old_ang = hrp.AssemblyAngularVelocity
+
+                local vel = _vs_velocity_desync_type == "y high" and _vs_vector3_new(0, 16384, 0)
+                    or _vs_velocity_desync_type == "limit" and _vs_vector3_new(
+                        _vs_math_random(-9223372036854775808, 9223372036854775807),
+                        _vs_math_random(-9223372036854775808, 9223372036854775807),
+                        _vs_math_random(-9223372036854775808, 9223372036854775807)
+                    )
+                    or _vs_velocity_desync_type == "low" and _vs_vector3_new(
+                        _vs_math_random(1,2) == 1 and -300 or 300,
+                        _vs_math_random(1,2) == 1 and -300 or 300,
+                        _vs_math_random(1,2) == 1 and -300 or 300
+                    )
+                    or _vs_velocity_desync_type == "high" and _vs_vector3_new(
+                        _vs_math_random(1,2) == 1 and -16384 or 16384,
+                        _vs_math_random(1,2) == 1 and -14384 or 16384,
+                        _vs_math_random(1,2) == 1 and -16384 or 16384
+                    )
+                    or _vs_velocity_desync_type == "zero" and _vs_vector3_zero
+                    or _vs_vector3_zero
+
+                getgenv().VELOCITY_DESYNC_UNTIL = _vs_clock() + 0.35
+                hrp.AssemblyLinearVelocity = vel
+                if _vs_velocity_desync_rotate then
+                    hrp.AssemblyAngularVelocity = vel
+                end
+
+                _vs_render_stepped_wait(_vs_render_stepped)
+                hrp.AssemblyLinearVelocity = old_lin
+                hrp.AssemblyAngularVelocity = old_ang
+                getgenv().VELOCITY_DESYNC_UNTIL = _vs_clock() + 0.05
+            end
+        end
+
+        local function _vs_velocity_desync_enable(value)
+            for i = 1, #_vs_anti_aim do
+                if _vs_anti_aim[i] == _vs_do_velocity_desync then
+                    _vs_remove(_vs_anti_aim, i)
+                    break
+                end
+            end
+            if value then
+                _vs_anti_aim[#_vs_anti_aim + 1] = _vs_do_velocity_desync
+            else
+                pcall(function()
+                    setfflag("S2PhysicsSenderRate", _vs_fake_position_sender_rate_old or "15")
+                end)
+            end
+        end
+
+        local function _vs_init_character(character)
+            if not character then return end
+            local hrp = character:WaitForChild("HumanoidRootPart", 5)
+            if hrp then
+                _vs_local_parts["HumanoidRootPart"] = hrp
+                _vs_local_parts["Humanoid"]         = character:WaitForChild("Humanoid", 5)
+            end
+        end
+
+        _vs_init_character(_vs_lp.Character)
+        _vs_lp.CharacterAdded:Connect(_vs_init_character)
+
+        local _vs_last_fps = _vs_clock()
+        _vs_run_service.Heartbeat:Connect(function(dt)
+            local diff = _vs_clock() - _vs_last_fps
+            if diff > 0 then _vs_local_fps = 1 / diff end
+            _vs_last_fps = _vs_clock()
+
+            local hrp = _vs_local_parts["HumanoidRootPart"]
+            for i = 1, #_vs_anti_aim do
+                local func = _vs_anti_aim[i]
+                if func then
+                    task.spawn(func, dt, hrp)
+                end
+            end
+        end)
+
+        getgenv().VELOCITY_SPOOF = {
+            enable    = function(v)      _vs_velocity_desync_enable(v) end,
+            setPreset = function(preset) _vs_velocity_desync_type = preset end,
+            setRotate = function(v)      _vs_velocity_desync_rotate = v end,
+        }
+
+        v304:Paragraph({ Title = "Velocity Spoof" })
+
+        v304:Toggle({
+            Flag    = "velocity_spoof_enable",
+            Title   = "Enable Velocity Spoof",
+            Default = false,
+            Callback = function(val)
+                _vs_velocity_desync_enable(val)
+                v18:Notify({
+                    Title   = "Lunar",
+                    Content = "Velocity Spoof " .. (val and "ON" or "OFF"),
+                    Duration = 3,
+                    Icon    = "bell",
+                })
+            end,
+        })
+
+        v304:Dropdown({
+            Flag   = "velocity_spoof_preset",
+            Title  = "Preset",
+            Values = { "low", "high", "y high", "limit", "zero" },
+            Value  = "low",
+            Callback = function(val)
+                _vs_velocity_desync_type = val
+            end,
+        })
+
+        v304:Toggle({
+            Flag    = "velocity_spoof_rotate",
+            Title   = "Rotate Spoof",
+            Default = false,
+            Callback = function(val)
+                _vs_velocity_desync_rotate = val
+            end,
+        })
+    end
+
+    do
+        local sbEnabled    = false
+        local sbSpeed      = 16.67  -- 50% от 1/3 * 50
+        local sbConnection = nil
+
+        v304:Divider()
+
+        v304:Paragraph({ Title = "SpinBot" })
+
+        v304:Toggle({
+            Flag    = "spinbot",
+            Title   = "SpinBot",
+            Default = false,
+            Callback = function(val)
+                sbEnabled = val
+
+                local char     = LocalPlayer.Character
+                local humanoid = char and char:FindFirstChildOfClass("Humanoid")
+
+                if val then
+                    if humanoid then
+                        humanoid.AutoRotate = false
+                    end
+                    if not sbConnection then
+                        sbConnection = RunService.Heartbeat:Connect(function(dt)
+                            if not sbEnabled then return end
+                            local c   = LocalPlayer.Character
+                            local hrp = c and c:FindFirstChild("HumanoidRootPart")
+                            if hrp then
+                                hrp.CFrame = hrp.CFrame * CFrame.fromEulerAnglesXYZ(0, sbSpeed * dt, 0)
+                            end
+                        end)
+                    end
+                else
+                    if sbConnection then
+                        sbConnection:Disconnect()
+                        sbConnection = nil
+                    end
+                    if humanoid then
+                        humanoid.AutoRotate = true
+                    end
+                end
+
+                v18:Notify({
+                    Title   = "Lunar",
+                    Content = "SpinBot " .. (val and "ON" or "OFF"),
+                    Duration = 3,
+                    Icon    = "bell",
+                })
+            end,
+        })
+
+        v304:Slider({
+            Flag     = "spin_speed",
+            Title    = "Spin Speed",
+            IsTooltip = true,
+            IsTextbox = true,
+            Value    = { Min = 1, Max = 100, Default = 50 },
+            Callback = function(val)
+                sbSpeed = (tonumber(val) or 50) * (1 / 3)
+            end,
+        })
+    end
+
+    v303._left:Paragraph({ Title = 'Fling Players' })
+
+    do
+        local flingNames = {}
+        local flingSelected = nil
+
+        local flingDropdown
+        local function rebuildFlingList()
+            flingNames = {}
+            for _, player in ipairs(Players:GetPlayers()) do
+                if player ~= LocalPlayer then
+                    table.insert(flingNames, player.Name)
+                end
+            end
+            table.sort(flingNames)
+
+            if flingSelected and not table.find(flingNames, flingSelected) then
+                flingSelected = nil
+            end
+            if flingDropdown then
+                flingDropdown:Refresh(flingNames)
+                if flingSelected then
+                    flingDropdown:Select(flingSelected)
+                end
+            end
+        end
+
+        rebuildFlingList()
+
+        flingDropdown = v303._left:Dropdown({
+            Flag = "select_player_2", Title = 'Select Player',
+            Values = flingNames,
+            Value = flingSelected,
+            Callback = function(value) flingSelected = value end,
+        })
+
+        v303._left:Button({
+            Title = 'Fling Selected Player',
+            Description = 'Fling the selected player',
+            Callback = function()
+                if not flingSelected then
+                    v18:Notify({
+                        Title = 'Lunar',
+                        Content = 'Select a player first!',
+                        Duration = 3,
+                        Icon = 'bell',
+                    })
+                    return
+                end
+
+                if u157 then
+                    v18:Notify({
+                        Title = 'Lunar',
+                        Content = 'Fling is already in progress!',
+                        Duration = 3,
+                        Icon = 'bell',
+                    })
+                    return
+                end
+
+                local target = Players:FindFirstChild(flingSelected)
+
+                if target and target.Character then
+                    v18:Notify({
+                        Title = 'Lunar',
+                        Content = tostring('Flinging: ' .. target.Name),
+                        Duration = 3,
+                        Icon = 'bell',
+                    })
+                    task.spawn(u165, target)
+                else
+                    v18:Notify({
+                        Title = 'Lunar',
+                        Content = 'Player left or has no character!',
+                        Duration = 3,
+                        Icon = 'bell',
+                    })
+                end
+            end,
+        })
+
+        v303._left:Button({
+            Title = 'Refresh Fling List',
+            Description = 'Update the player list',
+            Callback = rebuildFlingList,
+        })
+
+        do
+            local fling_tool_on = false
+            local fling_tool_obj = nil
+            local fling_act_conn = nil
+            local fling_char_conn = nil
+
+            local function clicked_fling_player()
+                local m = LocalPlayer:GetMouse()
+                local target = m.Target
+                if target then
+                    local node = target
+                    while node and node ~= Workspace do
+                        local p = Players:GetPlayerFromCharacter(node)
+                        if p and p ~= LocalPlayer then return p end
+                        node = node.Parent
+                    end
+                end
+                local cam = Workspace.CurrentCamera
+                local mp = Vector2.new(m.X, m.Y)
+                local best, bestd = nil, 110
+                for _, p in ipairs(Players:GetPlayers()) do
+                    if p ~= LocalPlayer and p.Character then
+                        local hrpF = p.Character:FindFirstChild('HumanoidRootPart') or p.Character:FindFirstChild('Head')
+                        if hrpF then
+                            local sp, on = cam:WorldToViewportPoint(hrpF.Position)
+                            if on then
+                                local d = (Vector2.new(sp.X, sp.Y) - mp).Magnitude
+                                if d < bestd then bestd = d best = p end
+                            end
+                        end
+                    end
+                end
+                return best
+            end
+
+            local function give_fling_tool()
+                if not fling_tool_on then return end
+                local bp = LocalPlayer:FindFirstChildOfClass('Backpack')
+                if not bp then return end
+                if bp:FindFirstChild('fling') or (LocalPlayer.Character and LocalPlayer.Character:FindFirstChild('fling')) then return end
+                if fling_act_conn then pcall(function() fling_act_conn:Disconnect() end) fling_act_conn = nil end
+                fling_tool_obj = Instance.new('Tool')
+                fling_tool_obj.Name = 'fling'
+                fling_tool_obj.RequiresHandle = false
+                fling_tool_obj.CanBeDropped = false
+                fling_tool_obj.Parent = bp
+                fling_act_conn = fling_tool_obj.Activated:Connect(function()
+                    local tp = clicked_fling_player()
+                    local myHRP = LocalPlayer.Character and LocalPlayer.Character:FindFirstChild('HumanoidRootPart')
+                    if tp and myHRP then task.spawn(u165, tp) end
+                end)
+            end
+
+            local function remove_fling_tool()
+                if fling_act_conn then pcall(function() fling_act_conn:Disconnect() end) fling_act_conn = nil end
+                if fling_tool_obj then pcall(function() fling_tool_obj:Destroy() end) fling_tool_obj = nil end
+                local bp = LocalPlayer:FindFirstChildOfClass('Backpack')
+                if bp then local t = bp:FindFirstChild('fling') if t then pcall(function() t:Destroy() end) end end
+                local c = LocalPlayer.Character
+                if c then local t = c:FindFirstChild('fling') if t then pcall(function() t:Destroy() end) end end
+            end
+
+            v303._left:Toggle({
+                Flag = 'fling_tool_enable',
+                Title = 'Fling Tool',
+                Default = false,
+                Callback = function(v)
+                    fling_tool_on = v
+                    if v then
+                        give_fling_tool()
+                        if not fling_char_conn then
+                            fling_char_conn = LocalPlayer.CharacterAdded:Connect(function()
+                                task.wait(0.5)
+                                if fling_tool_on then give_fling_tool() end
+                            end)
+                        end
+                    else
+                        if fling_char_conn then pcall(function() fling_char_conn:Disconnect() end) fling_char_conn = nil end
+                        remove_fling_tool()
+                    end
+                    v18:Notify({ Title = 'Lunar', Content = 'Fling Tool ' .. (v and 'ON' or 'OFF'), Duration = 3, Icon = 'bell' })
+                end,
+            })
+        end
+
+        v303._left:Toggle({
+            Flag = 'fling_bypass_velocity',
+            Title = 'Bypass Velocity',
+            Default = false,
+            Callback = function(v)
+                if getgenv().FLING_BYPASS then getgenv().FLING_BYPASS(v) end
+                v18:Notify({ Title = 'Lunar', Content = 'Bypass Velocity ' .. (v and 'ON' or 'OFF'), Duration = 3, Icon = 'bell' })
+            end,
+        })
+
+        Players.PlayerAdded:Connect(function()
+            task.delay(0.3, rebuildFlingList)
+        end)
+
+        Players.PlayerRemoving:Connect(function()
+            task.delay(0.3, rebuildFlingList)
+        end)
+    end
+
+    v303._right:Paragraph({ Title = 'Teleport Players' })
+
+    do
+        local teleportNames = {}
+        local teleportSelected = nil
+
+        local teleportDropdown
+        local function rebuildTeleportNames()
+            teleportNames = {}
+            for _, player in ipairs(Players:GetPlayers()) do
+                if player ~= LocalPlayer then
+                    table.insert(teleportNames, player.Name)
+                end
+            end
+            table.sort(teleportNames)
+            if teleportSelected and not table.find(teleportNames, teleportSelected) then
+                teleportSelected = nil
+            end
+            if teleportDropdown then
+                teleportDropdown:Refresh(teleportNames)
+                if teleportSelected then
+                    teleportDropdown:Select(teleportSelected)
+                end
+            end
+        end
+
+        rebuildTeleportNames()
+
+        teleportDropdown = v303._right:Dropdown({
+            Flag = "select_player", Title = 'Select Player',
+            Values = teleportNames,
+            Value = teleportSelected,
+            Callback = function(value) teleportSelected = value end,
+        })
+
+        v303._right:Button({
+            Title = 'Teleport to Player',
+            Description = 'Teleport to the selected player',
+            Callback = function()
+                if not teleportSelected then
+                    v18:Notify({ Title = 'Lunar', Content = 'Select a player first!', Duration = 3, Icon = 'bell' })
+                    return
+                end
+                local target = Players:FindFirstChild(teleportSelected)
+                local character = LocalPlayer.Character
+                local targetCharacter = target and target.Character
+                local hrp = character and character:FindFirstChild('HumanoidRootPart')
+                local targetHRP = targetCharacter and targetCharacter:FindFirstChild('HumanoidRootPart')
+                if not (hrp and targetHRP) then
+                    v18:Notify({ Title = 'Lunar', Content = 'Player or character not found!', Duration = 3, Icon = 'bell' })
+                    return
+                end
+                hrp.CFrame = targetHRP.CFrame * CFrame.new(0, 0, 3)
+                v18:Notify({ Title = 'Lunar', Content = 'Teleported to: ' .. target.Name, Duration = 3, Icon = 'bell' })
+            end,
+        })
+
+        v303._right:Button({
+            Title = 'Refresh Teleport List',
+            Description = 'Update the player list',
+            Callback = function() rebuildTeleportNames() end,
+        })
+
+        Players.PlayerAdded:Connect(function()
+            task.delay(0.3, rebuildTeleportNames)
+        end)
+        Players.PlayerRemoving:Connect(function()
+            task.delay(0.3, rebuildTeleportNames)
+        end)
+    end
+
+    local VisualsTab = v300:Tab({
+        Title = 'Visuals',
+        Icon = 'diamond-simplified',
+    })
+
+    do
+        local _player  = game:GetService("Players").LocalPlayer
+        local _uis     = game:GetService("UserInputService")
+
+        local aura_ids = {
+            angel     = "97658130917593",
+            starlight = "134645216613107",
+            heavenly  = "139300897520961",
+            ribbon    = "132069507632161",
+            sakura    = "81755778619404",
+            wind      = "80694081850877",
+            flow      = "119913533725648",
+            star      = "73754563740680",
+        }
+        local aura_order = {"angel","starlight","heavenly","ribbon","sakura","wind","flow","star"}
+
+        local aura_cache     = {}
+        local aura_particles = {}
+        local aura_color     = Color3.fromRGB(133, 220, 255)
+        local aura_active    = false
+        local selected_auras = {}
+        for _, name in ipairs(aura_order) do selected_auras[name] = false end
+
+        local function clearAura()
+            for _, p in ipairs(aura_particles) do pcall(function() p:Destroy() end) end
+            aura_particles = {}
+        end
+
+        local function loadAura(name)
+            if aura_cache[name] then return aura_cache[name] end
+            local id = aura_ids[name]; if not id then return nil end
+            local ok, res = pcall(game.GetObjects, game, "rbxassetid://"..id)
+            if ok and res and res[1] then aura_cache[name] = res[1]; return res[1] end
+        end
+
+        local function colorAura(model, color)
+            local seq = ColorSequence.new(color)
+            for _, d in ipairs(model:GetDescendants()) do
+                if d:IsA("PointLight") then d.Color = color
+                elseif d:IsA("ParticleEmitter") or d:IsA("Beam") or d:IsA("Trail") then d.Color = seq end
+            end
+        end
+
+        local function applyAura()
+            clearAura()
+            if not aura_active then return end
+            local char = _player.Character; if not char then return end
+            local real_char = char
+            if char.Parent ~= workspace then
+                real_char = nil
+                for _, obj in ipairs(workspace:GetChildren()) do
+                    if obj:IsA("Model") and obj.Name == _player.Name then
+                        local hrp = obj:FindFirstChild("HumanoidRootPart")
+                        if hrp and hrp:IsA("BasePart") then real_char = obj; break end
+                    end
+                end
+            end
+            if not real_char then return end
+            for _, name in ipairs(aura_order) do
+                if selected_auras[name] then
+                    local m = loadAura(name)
+                    if m then
+                        colorAura(m, aura_color)
+                        local cl = m:Clone()
+                        for _, part in ipairs(cl:GetChildren()) do
+                            local target = real_char:FindFirstChild(part.Name)
+                            if target and target:IsA("BasePart") then
+                                for _, child in ipairs(part:GetChildren()) do
+                                    child.Parent = target; table.insert(aura_particles, child)
+                                end
+                            end
+                        end
+                        cl:Destroy()
+                    end
+                end
+            end
+        end
+
+        _player.CharacterAdded:Connect(function()
+            task.wait(0.5); applyAura()
+        end)
+
+        VisualsTab._left:Paragraph({
+            Title = "Aura Selector",
+        })
+
+        VisualsTab._left:Toggle({
+            Flag = "enable_auras",Title = "Enable Auras",
+            Description = "Apply selected auras to your character",
+            Default = false,
+            Callback = function(state)
+                aura_active = state
+                applyAura()
+            end,
+        })
+
+        VisualsTab._left:Paragraph({
+            Title = "Aura List",
+        })
+
+        for _, name in ipairs(aura_order) do
+            local auraName = name
+            VisualsTab._left:Toggle({
+                Flag = "control_4735",Title = auraName:sub(1,1):upper()..auraName:sub(2),
+                Default = false,
+                Callback = function(state)
+                    selected_auras[auraName] = state
+                    applyAura()
+                end,
+            })
+        end
+
+        VisualsTab._left:Paragraph({
+            Title = "Color Presets",
+        })
+
+        local colorPresets = {"Default (Blue)","Red","Green","Gold","Purple","White","Rainbow (cycle)"}
+
+        VisualsTab._left:Dropdown({
+            Flag = "color_preset",Title = "Color Preset",
+            Description = "Pick a preset color",
+            Values = colorPresets,
+            Value = "Default (Blue)",
+            Callback = function(val)
+                if val == "Default (Blue)" then
+                    aura_color = Color3.fromRGB(133, 220, 255)
+                elseif val == "Red" then
+                    aura_color = Color3.fromRGB(255, 60, 60)
+                elseif val == "Green" then
+                    aura_color = Color3.fromRGB(60, 255, 100)
+                elseif val == "Gold" then
+                    aura_color = Color3.fromRGB(255, 200, 50)
+                elseif val == "Purple" then
+                    aura_color = Color3.fromRGB(180, 60, 255)
+                elseif val == "White" then
+                    aura_color = Color3.fromRGB(255, 255, 255)
+                elseif val == "Rainbow (cycle)" then
+                    task.spawn(function()
+                        local hue = 0
+                        while aura_active do
+                            hue = (hue + 0.005) % 1
+                            aura_color = Color3.fromHSV(hue, 1, 1)
+                            applyAura()
+                            task.wait(0.05)
+                        end
+                    end)
+                    return
+                end
+                applyAura()
+            end,
+        })
+
+        VisualsTab._left:Button({
+            Title = "Clear All Auras",
+            Description = "Remove all aura effects from character",
+            Callback = function()
+                clearAura()
+                v18:Notify({
+                    Title = "Lunar",
+                    Content = "Auras cleared.",
+                    Duration = 2,
+                    Icon = "eye",
+                })
+            end,
+        })
+    end
+VisualsTab._left:Divider()
+VisualsTab._left:Paragraph({
+    Title = 'Skybox',
+})
+VisualsTab._left:Button({
+    Title = 'Open Skybox Picker',
+    Description = 'Color preview list \u{2014} click to apply instantly',
+    Callback = function()
+        local RuzSkyboxPicker = game.CoreGui:FindFirstChild('RuzSkyboxPicker')
+
+        if not RuzSkyboxPicker then
+            local ScreenGui = Instance.new('ScreenGui', game.CoreGui)
+
+            ScreenGui.Name = 'RuzSkyboxPicker'
+            ScreenGui.ResetOnSpawn = false
+            ScreenGui.DisplayOrder = 62
+
+            local Frame = Instance.new('Frame', ScreenGui)
+
+            Frame.Size = UDim2.new(0, 310, 0, 420)
+            Frame.Position = UDim2.new(0.5, -155, 0.04, 0)
+            Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+            Frame.BackgroundTransparency = 0.06
+            Frame.BorderSizePixel = 0
+            Instance.new('UICorner', Frame).CornerRadius = UDim.new(0, 12)
+
+            local UIStroke = Instance.new('UIStroke', Frame)
+
+            UIStroke.Color = Color3.fromRGB(220, 38, 38)
+            UIStroke.Thickness = 1.5
+
+            local TextLabel = Instance.new('TextLabel', Frame)
+
+            TextLabel.Size = UDim2.new(1, -44, 0, 38)
+            TextLabel.Position = UDim2.new(0, 12, 0, 0)
+            TextLabel.BackgroundTransparency = 1
+            TextLabel.Text = 'Lunar  \u{2014}  Skybox Picker'
+            TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+            TextLabel.Font = Enum.Font.GothamBold
+            TextLabel.TextSize = 14
+            TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+            local TextButton = Instance.new('TextButton', Frame)
+
+            TextButton.Size = UDim2.new(0, 28, 0, 28)
+            TextButton.Position = UDim2.new(1, -34, 0, 5)
+            TextButton.BackgroundColor3 = Color3.fromRGB(180, 30, 30)
+            TextButton.Text = 'X'
+            TextButton.TextColor3 = Color3.new(1, 1, 1)
+            TextButton.Font = Enum.Font.GothamBold
+            TextButton.TextSize = 13
+            Instance.new('UICorner', TextButton).CornerRadius = UDim.new(0, 6)
+
+            local MouseButton1Click = TextButton.MouseButton1Click
+            local u633 = ScreenGui
+
+            MouseButton1Click:Connect(function()
+                u633:Destroy()
+            end)
+
+            local TextBox = Instance.new('TextBox', Frame)
+
+            TextBox.Size = UDim2.new(1, -20, 0, 34)
+            TextBox.Position = UDim2.new(0, 10, 0, 44)
+            TextBox.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+            TextBox.Text = ''
+            TextBox.PlaceholderText = 'Enter custom Skybox ID, press Enter...'
+            TextBox.TextColor3 = Color3.new(1, 1, 1)
+            TextBox.PlaceholderColor3 = Color3.fromRGB(120, 120, 120)
+            TextBox.Font = Enum.Font.Gotham
+            TextBox.TextSize = 13
+            TextBox.ClearTextOnFocus = false
+            Instance.new('UICorner', TextBox).CornerRadius = UDim.new(0, 6)
+            Instance.new('UIStroke', TextBox).Color = Color3.fromRGB(80, 80, 80)
+
+            local FocusLost = TextBox.FocusLost
+            local u636 = TextBox
+
+            FocusLost:Connect(function(p68)
+                if p68 and u636.Text ~= '' then
+                    u147(u636.Text)
+
+                    local v888 = 'Custom skybox applied \u{2014} ID: ' .. u636.Text
+
+                    u148:Notify({
+                        Title = 'Lunar',
+                        Content = tostring(v888),
+                        Duration = 3,
+                        Icon = 'bell',
+                    })
+
+                    u636.Text = ''
+                end
+            end)
+
+            local TextButton5 = Instance.new('TextButton', Frame)
+
+            TextButton5.Size = UDim2.new(1, -20, 0, 28)
+            TextButton5.Position = UDim2.new(0, 10, 0, 84)
+            TextButton5.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+            TextButton5.Text = 'Restore Default Sky'
+            TextButton5.TextColor3 = Color3.fromRGB(200, 200, 200)
+            TextButton5.Font = Enum.Font.GothamBold
+            TextButton5.TextSize = 12
+            Instance.new('UICorner', TextButton5).CornerRadius = UDim.new(0, 6)
+
+            local MouseButton1Click4 = TextButton5.MouseButton1Click
+            local u639 = ScreenGui
+
+            MouseButton1Click4:Connect(function()
+                u149()
+                u639:Destroy()
+            end)
+
+            local Frame5 = Instance.new('Frame', Frame)
+
+            Frame5.Size = UDim2.new(1, -20, 0, 1)
+            Frame5.Position = UDim2.new(0, 10, 0, 118)
+            Frame5.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+            Frame5.BorderSizePixel = 0
+
+            local ScrollingFrame = Instance.new('ScrollingFrame', Frame)
+
+            ScrollingFrame.Size = UDim2.new(1, -14, 1, -126)
+            ScrollingFrame.Position = UDim2.new(0, 7, 0, 124)
+            ScrollingFrame.BackgroundTransparency = 1
+            ScrollingFrame.BorderSizePixel = 0
+            ScrollingFrame.ScrollBarThickness = 4
+            ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, #u150 * 56)
+
+            local UIListLayout = Instance.new('UIListLayout', ScrollingFrame)
+
+            UIListLayout.Padding = UDim.new(0, 6)
+            UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+            for i, v in ipairs(u150)do
+                local TextButton6 = Instance.new('TextButton', ScrollingFrame)
+
+                TextButton6.Size = UDim2.new(1, -8, 0, 48)
+                TextButton6.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+                TextButton6.Text = ''
+                TextButton6.AutoButtonColor = false
+                TextButton6.LayoutOrder = i
+                Instance.new('UICorner', TextButton6).CornerRadius = UDim.new(0, 8)
+
+                local UIStroke2 = Instance.new('UIStroke', TextButton6)
+
+                UIStroke2.Color = v.color
+                UIStroke2.Thickness = 1
+
+                local Frame6 = Instance.new('Frame', TextButton6)
+
+                Frame6.Size = UDim2.new(0, 34, 0, 34)
+                Frame6.Position = UDim2.new(0, 8, 0.5, -17)
+                Frame6.BackgroundColor3 = v.color
+                Frame6.BorderSizePixel = 0
+                Instance.new('UICorner', Frame6).CornerRadius = UDim.new(0, 6)
+
+                local TextLabel5 = Instance.new('TextLabel', TextButton6)
+
+                TextLabel5.Size = UDim2.new(1, -58, 0, 22)
+                TextLabel5.Position = UDim2.new(0, 50, 0, 6)
+                TextLabel5.BackgroundTransparency = 1
+                TextLabel5.Text = v.name
+                TextLabel5.TextColor3 = Color3.fromRGB(210, 210, 210)
+                TextLabel5.Font = Enum.Font.GothamBold
+                TextLabel5.TextSize = 14
+                TextLabel5.TextXAlignment = Enum.TextXAlignment.Left
+
+                local TextLabel6 = Instance.new('TextLabel', TextButton6)
+
+                TextLabel6.Size = UDim2.new(1, -58, 0, 14)
+                TextLabel6.Position = UDim2.new(0, 50, 1, -18)
+                TextLabel6.BackgroundTransparency = 1
+                TextLabel6.Text = 'ID: ' .. v.id
+                TextLabel6.TextColor3 = Color3.fromRGB(100, 100, 100)
+                TextLabel6.Font = Enum.Font.Gotham
+                TextLabel6.TextSize = 10
+                TextLabel6.TextXAlignment = Enum.TextXAlignment.Left
+
+                local MouseButton1Click5 = TextButton6.MouseButton1Click
+                local u651 = v
+                local u652 = ScrollingFrame
+                local u653 = UIStroke2
+                local u654 = TextButton6
+                local u655 = TextLabel5
+
+                MouseButton1Click5:Connect(function()
+                    u147(u651.id)
+
+                    local v889 = 'Skybox applied: ' .. u651.name
+
+                    u148:Notify({
+                        Title = 'Lunar',
+                        Content = tostring(v889),
+                        Duration = 3,
+                        Icon = 'bell',
+                    })
+
+                    for _, child in ipairs(u652:GetChildren())do
+                        if child:IsA('TextButton') then
+                            local UIStroke3 = child:FindFirstChildOfClass('UIStroke')
+
+                            if UIStroke3 then
+                                UIStroke3.Thickness = 1
+                                UIStroke3.Color = Color3.fromRGB(80, 80, 80)
+                            end
+
+                            child.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+                        end
+                    end
+
+                    u653.Thickness = 2
+                    u653.Color = Color3.fromRGB(220, 38, 38)
+                    u654.BackgroundColor3 = Color3.fromRGB(50, 15, 15)
+                    u655.TextColor3 = Color3.fromRGB(255, 80, 80)
+                end)
+            end
+
+            u151(Frame)
+
+            return
+        end
+
+        RuzSkyboxPicker:Destroy()
+    end,
+})
+
+local t30 = {
+    Flag = "restore_default_sky",
+    Title = 'Restore Default Sky',
+}
+local u310 = v145
+
+function t30.Callback()
+    u310()
+end
+
+VisualsTab._left:Button(t30)
+VisualsTab._right:Paragraph({
+    Title = 'Crosshair',
+})
+
+local t31 = {
+    Flag = "enable_custom_crosshair",
+    Title = 'Enable Custom Crosshair',
+    Description = 'Visible only while ShiftLock is on',
+    Default = false,
+}
+
+local function u312()
+    local RuzCrosshairDisplay = game.CoreGui:FindFirstChild('RuzCrosshairDisplay')
+
+    if RuzCrosshairDisplay then
+        RuzCrosshairDisplay:Destroy()
+    end
+    if u202 then
+        u202:Disconnect()
+
+        u202 = nil
+    end
+
+    local ScreenGui = Instance.new('ScreenGui', game.CoreGui)
+
+    ScreenGui.Name = 'RuzCrosshairDisplay'
+    ScreenGui.ResetOnSpawn = false
+    ScreenGui.DisplayOrder = 25
+    ScreenGui.IgnoreGuiInset = true
+    u201 = Instance.new('ImageLabel', ScreenGui)
+    u201.AnchorPoint = Vector2.new(0.5, 0.5)
+    u201.Position = UDim2.new(0.5, 0, 0.5, 0)
+    u201.Size = UDim2.new(0, 42, 0, 42)
+    u201.BackgroundTransparency = 1
+    u201.Image = 'rbxassetid://' .. id
+    u201.ZIndex = 10
+    u201.Visible = false
+
+    local _crosshairRef = nil
+    local _crosshairLastVisible = nil
+    local _crosshairLastMouseIcon = nil
+
+    u205.RenderStepped:Connect(function()
+        if u201 and u201.Parent then
+            local v914 = u206.MouseBehavior == Enum.MouseBehavior.LockCenter
+
+            if not _crosshairRef then
+                local PlayerGui = u207:FindFirstChild('PlayerGui')
+                if PlayerGui then
+                    local GameTopbar = PlayerGui:FindFirstChild('GameTopbar')
+                    if GameTopbar then
+                        _crosshairRef = GameTopbar:FindFirstChild('Crosshair')
+                    end
+                end
+            end
+            if _crosshairRef and _crosshairRef.Parent then
+                _crosshairRef.Visible = false
+            else
+                _crosshairRef = nil -- сброс кеша если удалили
+            end
+
+            local v917 = u198 and (v914 or false)
+
+            if _crosshairLastVisible ~= v917 then
+                u201.Visible = v917
+                _crosshairLastVisible = v917
+            end
+            if _crosshairLastMouseIcon ~= (not v917) then
+                u206.MouseIconEnabled = not v917
+                _crosshairLastMouseIcon = not v917
+            end
+
+            return
+        end
+    end)
+    u208()
+end
+
+local u313 = v18
+local u314 = UserInputService
+
+function t31.Callback(p69)
+    u198 = p69
+
+    if not p69 then
+        local RuzCrosshairDisplay = game.CoreGui:FindFirstChild('RuzCrosshairDisplay')
+
+        if RuzCrosshairDisplay then
+            RuzCrosshairDisplay:Destroy()
+
+            u201 = nil
+        end
+        if u202 then
+            u202:Disconnect()
+
+            u202 = nil
+        end
+
+        u314.MouseIconEnabled = true
+
+        u313:Notify({
+            Title = 'Lunar',
+            Content = tostring('Crosshair OFF'),
+            Duration = 3,
+            Icon = 'bell',
+        })
+
+        return
+    end
+
+    u312()
+    u313:Notify({
+        Title = 'Lunar',
+        Content = tostring('Crosshair ON \u{2014} enable ShiftLock to see it!'),
+        Duration = 3,
+        Icon = 'bell',
+    })
+end
+
+VisualsTab._right:Toggle(t31)
+VisualsTab._right:Button({
+    Title = 'Open Cursor Picker',
+    Description = 'Visual grid with spin toggle \u{2014} click to apply',
+    Callback = function()
+        local RuzCursorPicker = game.CoreGui:FindFirstChild('RuzCursorPicker')
+
+        if not RuzCursorPicker then
+            local ScreenGui = Instance.new('ScreenGui', game.CoreGui)
+
+            ScreenGui.Name = 'RuzCursorPicker'
+            ScreenGui.ResetOnSpawn = false
+            ScreenGui.DisplayOrder = 60
+
+            local Frame = Instance.new('Frame', ScreenGui)
+
+            Frame.Size = UDim2.new(0, 300, 0, 460)
+            Frame.Position = UDim2.new(0.5, -150, 0.04, 0)
+            Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+            Frame.BackgroundTransparency = 0.06
+            Frame.BorderSizePixel = 0
+            Instance.new('UICorner', Frame).CornerRadius = UDim.new(0, 12)
+
+            local UIStroke = Instance.new('UIStroke', Frame)
+
+            UIStroke.Color = Color3.fromRGB(220, 38, 38)
+            UIStroke.Thickness = 1.5
+
+            local TextLabel = Instance.new('TextLabel', Frame)
+
+            TextLabel.Size = UDim2.new(1, -44, 0, 38)
+            TextLabel.Position = UDim2.new(0, 12, 0, 0)
+            TextLabel.BackgroundTransparency = 1
+            TextLabel.Text = 'Lunar  \u{2014}  Cursor Picker'
+            TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+            TextLabel.Font = Enum.Font.GothamBold
+            TextLabel.TextSize = 14
+            TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+            local TextButton = Instance.new('TextButton', Frame)
+
+            TextButton.Size = UDim2.new(0, 28, 0, 28)
+            TextButton.Position = UDim2.new(1, -34, 0, 5)
+            TextButton.BackgroundColor3 = Color3.fromRGB(180, 30, 30)
+            TextButton.Text = 'X'
+            TextButton.TextColor3 = Color3.new(1, 1, 1)
+            TextButton.Font = Enum.Font.GothamBold
+            TextButton.TextSize = 13
+            Instance.new('UICorner', TextButton).CornerRadius = UDim.new(0, 6)
+
+            local MouseButton1Click = TextButton.MouseButton1Click
+            local u715 = ScreenGui
+
+            MouseButton1Click:Connect(function()
+                u715:Destroy()
+            end)
+
+            local TextBox = Instance.new('TextBox', Frame)
+
+            TextBox.Size = UDim2.new(1, -20, 0, 34)
+            TextBox.Position = UDim2.new(0, 10, 0, 44)
+            TextBox.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+            TextBox.Text = ''
+            TextBox.PlaceholderText = 'Enter custom Cursor ID, press Enter...'
+            TextBox.TextColor3 = Color3.new(1, 1, 1)
+            TextBox.PlaceholderColor3 = Color3.fromRGB(120, 120, 120)
+            TextBox.Font = Enum.Font.Gotham
+            TextBox.TextSize = 13
+            TextBox.ClearTextOnFocus = false
+            Instance.new('UICorner', TextBox).CornerRadius = UDim.new(0, 6)
+            Instance.new('UIStroke', TextBox).Color = Color3.fromRGB(80, 80, 80)
+
+            local FocusLost = TextBox.FocusLost
+            local u718 = TextBox
+
+            FocusLost:Connect(function(p70)
+                if p70 and u718.Text ~= '' then
+                    id = u718.Text
+
+                    if u198 and u201 then
+                        u201.Image = 'rbxassetid://' .. u718.Text
+                    end
+
+                    u209:Notify({
+                        Title = 'Lunar',
+                        Content = tostring('Custom cursor applied \u{2014} enable ShiftLock to see it!'),
+                        Duration = 3,
+                        Icon = 'bell',
+                    })
+
+                    u718.Text = ''
+                end
+            end)
+
+            local Frame7 = Instance.new('Frame', Frame)
+
+            Frame7.Size = UDim2.new(1, -20, 0, 30)
+            Frame7.Position = UDim2.new(0, 10, 0, 84)
+            Frame7.BackgroundTransparency = 1
+
+            local TextLabel7 = Instance.new('TextLabel', Frame7)
+
+            TextLabel7.Size = UDim2.new(1, -64, 1, 0)
+            TextLabel7.BackgroundTransparency = 1
+            TextLabel7.Text = 'Spin Crosshair'
+            TextLabel7.TextColor3 = Color3.fromRGB(200, 200, 200)
+            TextLabel7.Font = Enum.Font.GothamBold
+            TextLabel7.TextSize = 13
+            TextLabel7.TextXAlignment = Enum.TextXAlignment.Left
+
+            local TextButton7 = Instance.new('TextButton', Frame7)
+
+            TextButton7.Size = UDim2.new(0, 54, 0, 26)
+            TextButton7.Position = UDim2.new(1, -54, 0.5, -13)
+            TextButton7.BackgroundColor3 = u199 and Color3.fromRGB(30, 160, 30) or Color3.fromRGB(80, 20, 20)
+            TextButton7.Text = u199 and 'ON' or 'OFF'
+            TextButton7.TextColor3 = Color3.new(1, 1, 1)
+            TextButton7.Font = Enum.Font.GothamBold
+            TextButton7.TextSize = 12
+            Instance.new('UICorner', TextButton7).CornerRadius = UDim.new(0, 8)
+
+            local MouseButton1Click6 = TextButton7.MouseButton1Click
+            local u723 = TextButton7
+
+            MouseButton1Click6:Connect(function()
+                u199 = not u199
+                u723.BackgroundColor3 = u199 and Color3.fromRGB(30, 160, 30) or Color3.fromRGB(80, 20, 20)
+                u723.Text = u199 and 'ON' or 'OFF'
+
+                u210()
+
+                local v919 = 'Crosshair Spin: ' .. (u199 and 'ON' or 'OFF')
+
+                u209:Notify({
+                    Title = 'Lunar',
+                    Content = tostring(v919),
+                    Duration = 3,
+                    Icon = 'bell',
+                })
+            end)
+
+            local Frame8 = Instance.new('Frame', Frame)
+
+            Frame8.Size = UDim2.new(1, -20, 0, 1)
+            Frame8.Position = UDim2.new(0, 10, 0, 120)
+            Frame8.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+            Frame8.BorderSizePixel = 0
+
+            local ScrollingFrame = Instance.new('ScrollingFrame', Frame)
+
+            ScrollingFrame.Size = UDim2.new(1, -14, 1, -128)
+            ScrollingFrame.Position = UDim2.new(0, 7, 0, 126)
+            ScrollingFrame.BackgroundTransparency = 1
+            ScrollingFrame.BorderSizePixel = 0
+            ScrollingFrame.ScrollBarThickness = 4
+
+            local new = UDim2.new
+            local v727 = #u211 / 2
+
+            ScrollingFrame.CanvasSize = new(0, 0, 0, math.ceil(v727) * 118 + 10)
+
+            local UIGridLayout = Instance.new('UIGridLayout', ScrollingFrame)
+
+            UIGridLayout.CellSize = UDim2.new(0, 128, 0, 110)
+            UIGridLayout.CellPadding = UDim2.new(0, 8, 0, 8)
+            UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+            for i, v in ipairs(u211)do
+                local v731 = id == v.id
+                local TextButton8 = Instance.new('TextButton', ScrollingFrame)
+
+                TextButton8.Size = UDim2.new(0, 128, 0, 110)
+                TextButton8.BackgroundColor3 = v731 and Color3.fromRGB(55, 15, 15) or Color3.fromRGB(20, 20, 20)
+                TextButton8.Text = ''
+                TextButton8.AutoButtonColor = false
+                TextButton8.LayoutOrder = i
+                Instance.new('UICorner', TextButton8).CornerRadius = UDim.new(0, 8)
+
+                local UIStroke4 = Instance.new('UIStroke', TextButton8)
+
+                UIStroke4.Color = v731 and Color3.fromRGB(220, 38, 38) or Color3.fromRGB(50, 50, 50)
+                UIStroke4.Thickness = v731 and 1.8 or 1.2
+
+                local ImageLabel = Instance.new('ImageLabel', TextButton8)
+
+                ImageLabel.Size = UDim2.new(0, 58, 0, 58)
+                ImageLabel.AnchorPoint = Vector2.new(0.5, 0)
+                ImageLabel.Position = UDim2.new(0.5, 0, 0, 8)
+                ImageLabel.BackgroundTransparency = 1
+                ImageLabel.Image = 'rbxassetid://' .. v.id
+
+                local TextLabel8 = Instance.new('TextLabel', TextButton8)
+
+                TextLabel8.Size = UDim2.new(1, -6, 0, 28)
+                TextLabel8.Position = UDim2.new(0, 3, 1, -30)
+                TextLabel8.BackgroundTransparency = 1
+                TextLabel8.Text = v.name .. (v731 and ' \u{2713}' or '')
+                TextLabel8.TextColor3 = v731 and Color3.fromRGB(255, 80, 80) or Color3.fromRGB(200, 200, 200)
+                TextLabel8.Font = Enum.Font.GothamBold
+                TextLabel8.TextSize = 11
+                TextLabel8.TextWrapped = true
+
+                local MouseButton1Click7 = TextButton8.MouseButton1Click
+                local u737 = v
+                local u738 = ScreenGui
+
+                MouseButton1Click7:Connect(function()
+                    id = u737.id
+
+                    if u198 and u201 then
+                        u201.Image = 'rbxassetid://' .. u737.id
+                    end
+
+                    local v920 = 'Cursor: ' .. u737.name .. ' \u{2014} enable ShiftLock to see it!'
+
+                    u209:Notify({
+                        Title = 'Lunar',
+                        Content = tostring(v920),
+                        Duration = 3,
+                        Icon = 'bell',
+                    })
+                    u738:Destroy()
+                end)
+            end
+
+            u212(Frame)
+
+            return
+        end
+
+        RuzCursorPicker:Destroy()
+    end,
+})
+
+do
+    local TweenService = game:GetService("TweenService")
+
+    local BT = {
+        Enabled      = false,
+        Color        = Color3.fromRGB(255, 50, 50),
+        Size         = 0.12,
+        Transparency = 0,
+        TimeAlive    = 0.6,
+        TextureID    = "rbxassetid://6880875456",
+    }
+    _BT = BT  -- expose to outer scope so Shoot button can read BT.Enabled
+
+    local function bullettracerlol(startPos, endPos)
+        local sp = Instance.new("Part")
+        sp.Name = "BulletStart" sp.Anchored = true sp.CanCollide = false
+        sp.CanTouch = false sp.CanQuery = false sp.Massless = true
+        sp.Transparency = 1 sp.Size = Vector3.new(0.2,0.2,0.2)
+        sp.Position = startPos sp.Parent = Workspace
+
+        local ep = Instance.new("Part")
+        ep.Name = "BulletEnd" ep.Anchored = true ep.CanCollide = false
+        ep.CanTouch = false ep.CanQuery = false ep.Massless = true
+        ep.Transparency = 1 ep.Size = Vector3.new(0.2,0.2,0.2)
+        ep.Position = endPos ep.Parent = Workspace
+
+        local beam = Instance.new("Beam")
+        beam.Attachment0   = Instance.new("Attachment", sp)
+        beam.Attachment1   = Instance.new("Attachment", ep)
+        beam.FaceCamera    = true
+        beam.LightEmission = 1
+        beam.Color         = ColorSequence.new(BT.Color)
+        beam.Texture       = BT.TextureID
+        beam.Transparency  = NumberSequence.new(BT.Transparency)
+        beam.Width0        = BT.Size
+        beam.Width1        = BT.Size
+        beam.Parent        = sp
+
+        task.delay(BT.TimeAlive, function()
+            if beam and beam.Parent then
+                local tw = TweenService:Create(beam,
+                    TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+                    { Width0 = 0, Width1 = 0 })
+                tw:Play()
+                tw.Completed:Wait()
+            end
+            if sp   and sp.Parent   then sp:Destroy()   end
+            if ep   and ep.Parent   then ep:Destroy()   end
+            if beam and beam.Parent then beam:Destroy() end
+        end)
+    end
+    _bullettracerlol = bullettracerlol  -- expose to outer scope for Shoot button
+
+    local shootRemoteRef = nil
+    local rawFireServer = Instance.new("RemoteEvent").FireServer
+
+    local mt = getrawmetatable(game)
+    local oldNamecall = mt.__namecall
+
+    setreadonly(mt, false)
+    mt.__namecall = newcclosure(function(self, ...)
+        if getnamecallmethod() == "FireServer" and BT.Enabled and self == shootRemoteRef then
+            local args = { ... }
+            local dirCF    = args[1]
+            local targetCF = args[2]
+
+            local startPos, endPos
+
+            pcall(function()
+                local char = LocalPlayer.Character
+                local gun  = char and char:FindFirstChild("Gun")
+                local h    = gun and gun:FindFirstChild("Handle")
+                startPos   = h and h.Position
+            end)
+
+            if typeof(targetCF) == "CFrame" then
+                endPos = targetCF.Position
+            elseif typeof(dirCF) == "CFrame" then
+                endPos = dirCF.Position + dirCF.LookVector * 200
+            end
+
+            if startPos and endPos then
+                task.spawn(bullettracerlol, startPos, endPos)
+            end
+
+            return rawFireServer(self, ...)
+        end
+
+        return oldNamecall(self, ...)
+    end)
+    setreadonly(mt, true)
+
+    local function watchChar(char)
+        if not char then return end
+        shootRemoteRef = nil
+
+        local function tryFindShoot(tool)
+            if not tool or tool.Name ~= "Gun" then return end
+            pcall(function()
+                local remote = tool:WaitForChild("Shoot", 5)
+                if remote and remote:IsA("RemoteEvent") then
+                    shootRemoteRef = remote
+                end
+            end)
+        end
+
+        for _, obj in ipairs(char:GetChildren()) do
+            task.spawn(tryFindShoot, obj)
+        end
+        char.ChildAdded:Connect(function(obj)
+            task.spawn(tryFindShoot, obj)
+        end)
+
+        local bp = LocalPlayer:FindFirstChild("Backpack")
+        if bp then
+            for _, obj in ipairs(bp:GetChildren()) do
+                task.spawn(tryFindShoot, obj)
+            end
+            bp.ChildAdded:Connect(function(obj)
+                task.spawn(tryFindShoot, obj)
+            end)
+        end
+    end
+
+    watchChar(LocalPlayer.Character)
+    LocalPlayer.CharacterAdded:Connect(function(char)
+        shootRemoteRef = nil
+        task.wait(1)
+        watchChar(char)
+    end)
+
+    VisualsTab._right:Paragraph({ Title = "Bullet Tracers" })
+
+    VisualsTab._right:Toggle({
+        Flag = "enable_bullet_tracers", Title = "Enable Bullet Tracers",
+        Default  = false,
+        Callback = function(val)
+            BT.Enabled = val
+            v18:Notify({
+                Title    = "Lunar",
+                Content  = "Bullet Tracers " .. (val and "ON" or "OFF"),
+                Duration = 3,
+                Icon     = "bell",
+            })
+        end,
+    })
+
+    VisualsTab._right:ColorPicker({
+        Flag = "tracer_color", Title = "Tracer Color",
+        Default  = BT.Color,
+        Callback = function(col) BT.Color = col end,
+    })
+
+    VisualsTab._right:Slider({
+        Flag = "tracer_width", Title = "Tracer Width",
+        Value    = { Min = 1, Max = 20, Default = 12 },
+        Rounding = 0,
+        Callback = function(val) BT.Size = val * 0.01 end,
+    })
+
+    VisualsTab._right:Slider({
+        Flag = "tracer_duration_0_1s", Title = "Tracer Duration (×0.1s)",
+        Value    = { Min = 1, Max = 30, Default = 6 },
+        Rounding = 0,
+        Callback = function(val) BT.TimeAlive = val * 0.1 end,
+    })
+
+    VisualsTab._right:Slider({
+        Flag = "tracer_transparency", Title = "Tracer Transparency",
+        Value    = { Min = 0, Max = 9, Default = 0 },
+        Rounding = 0,
+        Callback = function(val) BT.Transparency = val * 0.1 end,
+    })
+end
+
+do
+    local _ChinaHat = {
+        enabled      = false,
+        hatColor     = Color3.fromRGB(255, 105, 180),
+        lightColor   = Color3.fromRGB(255, 105, 180),
+        lightBrightness = 0,
+        lightRange   = 12,
+        scale        = Vector3.new(1.7, 1.1, 1.7),
+    }
+
+    local _hatCone = nil
+
+    local function _RemoveHat()
+        if _hatCone and _hatCone.Parent then
+            _hatCone:Destroy()
+        end
+        _hatCone = nil
+    end
+
+    local function _CreateHat(Character)
+        _RemoveHat()
+        local Head = Character:FindFirstChild("Head")
+        if not Head then return end
+
+        local Cone = Instance.new("Part")
+        Cone.Size       = Vector3.new(1, 1, 1)
+        Cone.Material   = Enum.Material.Neon
+        Cone.Transparency = 0.2
+        Cone.Anchored   = false
+        Cone.CanCollide = false
+        Cone.Color      = _ChinaHat.hatColor
+        Cone.Name       = "Lunar_ChinaHat"
+
+        local Mesh = Instance.new("SpecialMesh")
+        Mesh.MeshType = Enum.MeshType.FileMesh
+        Mesh.MeshId   = "rbxassetid://1033714"
+        Mesh.Scale    = _ChinaHat.scale
+        Mesh.Parent   = Cone
+
+        local Weld = Instance.new("Weld")
+        Weld.Part0  = Head
+        Weld.Part1  = Cone
+        Weld.C0     = CFrame.new(0, 0.9, 0)
+        Weld.Parent = Cone
+
+        local Light = Instance.new("PointLight")
+        Light.Color      = _ChinaHat.lightColor
+        Light.Brightness = _ChinaHat.lightBrightness
+        Light.Range      = _ChinaHat.lightRange
+        Light.Shadows    = true
+        Light.Parent     = Cone
+
+        Cone.Parent = Character
+        _hatCone    = Cone
+    end
+
+    local _charConn = nil
+
+    local function _ApplyHat()
+        local lp  = Players.LocalPlayer
+        local chr = lp and lp.Character
+        if chr then _CreateHat(chr) end
+        if _charConn then _charConn:Disconnect() end
+        _charConn = lp.CharacterAdded:Connect(function(character)
+            if _ChinaHat.enabled then
+                character:WaitForChild("Head", 10)
+                _CreateHat(character)
+            end
+        end)
+    end
+
+    VisualsTab._left:Divider()
+    VisualsTab._left:Paragraph({ Title = "China Hat", Content = "Decorative hat on your character" })
+
+    VisualsTab._left:Toggle({
+        Flag = "enable_china_hat",Title   = "Enable China Hat",
+        Default = false,
+        Callback = function(val)
+            _ChinaHat.enabled = val
+            if val then
+                _ApplyHat()
+            else
+                _RemoveHat()
+                if _charConn then _charConn:Disconnect() _charConn = nil end
+            end
+            v18:Notify({
+                Title   = "Lunar",
+                Content = val and "China Hat ON" or "China Hat OFF",
+                Duration = 3,
+                Icon    = "bell",
+            })
+        end,
+    })
+
+    VisualsTab._left:ColorPicker({
+        Flag = "hat_color",Title   = "Hat Color",
+        Default = Color3.fromRGB(255, 105, 180),
+        Callback = function(col)
+            _ChinaHat.hatColor = col
+            if _hatCone and _hatCone.Parent then
+                _hatCone.Color = col
+            end
+        end,
+    })
+
+    VisualsTab._left:ColorPicker({
+        Flag = "light_color",Title   = "Light Color",
+        Default = Color3.fromRGB(255, 105, 180),
+        Callback = function(col)
+            _ChinaHat.lightColor = col
+            if _hatCone and _hatCone.Parent then
+                local light = _hatCone:FindFirstChildOfClass("PointLight")
+                if light then light.Color = col end
+            end
+        end,
+    })
+
+    VisualsTab._left:Slider({
+        Flag = "light_brightness",Title    = "Light Brightness",
+        Value    = { Min = 0, Max = 10, Default = 0 },
+        Rounding = 0,
+        Callback = function(val)
+            _ChinaHat.lightBrightness = val
+            if _hatCone and _hatCone.Parent then
+                local light = _hatCone:FindFirstChildOfClass("PointLight")
+                if light then light.Brightness = val end
+            end
+        end,
+    })
+
+    VisualsTab._left:Slider({
+        Flag = "light_range",Title    = "Light Range",
+        Value    = { Min = 0, Max = 60, Default = 12 },
+        Rounding = 0,
+        Callback = function(val)
+            _ChinaHat.lightRange = val
+            if _hatCone and _hatCone.Parent then
+                local light = _hatCone:FindFirstChildOfClass("PointLight")
+                if light then light.Range = val end
+            end
+        end,
+    })
+end
+
+do
+	getgenv().WORLD_FOG_END = 1000
+	getgenv().WORLD_FULLBRIGHT_ENABLED = false
+	getgenv().WORLD_AMBIENT_ENABLED = false
+	getgenv().WORLD_AMBIENT_COLOR = Color3.fromRGB(128, 128, 128)
+	
+	local lighting = game:GetService("Lighting")
+	local originalFogColor = lighting.FogColor
+	local originalFogStart = lighting.FogStart
+	local originalFogEnd = lighting.FogEnd
+	local originalBrightness = lighting.Brightness
+	local originalAmbient = lighting.Ambient
+	local originalOutdoorAmbient = lighting.OutdoorAmbient
+	local originalGlobalShadows = lighting.GlobalShadows
+	local originalClockTime = lighting.ClockTime
+	local originalColorShift_Bottom = lighting.ColorShift_Bottom
+	local originalColorShift_Top = lighting.ColorShift_Top
+	local originalEnvironmentDiffuseScale = lighting.EnvironmentDiffuseScale
+	local originalEnvironmentSpecularScale = lighting.EnvironmentSpecularScale
+	local originalGeographicLatitude = lighting.GeographicLatitude
+	local originalExposureCompensation = lighting.ExposureCompensation
+	
+	local shader_enabled = false
+	local shader_type = "morning"
+	local shader_connection = nil
+	local original_effects = {}
+	local created_effects = {}
+	
+	local bloom_effect = nil
+	local blur_effect = nil
+	local colorcor_effect = nil
+	local depth_effect = nil
+	local atmosphere_effect = nil
+	local cloud_effect = nil
+	
+	local shaders = {
+		morning = {
+			yfbghj = Color3.fromRGB(10, 10, 10),
+			khnbfth = 1.5,
+			tgvbyd = 7.5,
+			hgyghkg = Color3.fromRGB(0, 0, 0),
+			yfbhjku = Color3.fromRGB(200, 200, 200),
+			ygyyfgvhbjytrt = 0.1,
+			sdfcddc = 0.1,
+			hyhnngtf = Color3.fromRGB(10, 10, 10),
+			ghuybhuyhj = 44,
+			hdfr7thgr = 0.3,
+			hgnujuu7thgr = true,
+			fhnchvhfjsd = -0.02,
+			ugtbbjhygt = 0.8,
+			tfbghuugbnjhg = -0.5,
+			fvrtccvghghj = Color3.fromRGB(100, 150, 200),
+			jnfdhbnfcvh = 0.2,
+			fvtyghj = 5,
+			ygbhnj = 0.8,
+			njnfg = 2,
+			jdfkd = 0.5,
+			fvgsdfg = 15,
+			sdkvkflv = 5,
+			hbjhd = 0.5,
+			shdbsnjfc = 0.2,
+			skdjfkdm = 0.5,
+			sjdjncdjf = Color3.fromRGB(70, 120, 170),
+			efjdjfk = Color3.fromRGB(10, 50, 100),
+			sejfd = 0.3,
+			jddfjsd = 1,
+			gyhgtg = 0.6,
+			ygbhggv = 0.36,
+			jghbjhgyfd = Color3.fromRGB(255, 255, 255)
+		},
+		midday = {
+			yfbghj = Color3.fromRGB(2, 2, 2),
+			khnbfth = 3.25,
+			tgvbyd = 8,
+			hgyghkg = Color3.fromRGB(0, 0, 0),
+			yfbhjku = Color3.fromRGB(255, 247, 237),
+			ygyyfgvhbjytrt = 0.203,
+			sdfcddc = 0.255,
+			hyhnngtf = Color3.fromRGB(51, 54, 67),
+			ghuybhuyhj = -15.12,
+			hdfr7thgr = 0.85,
+			hgnujuu7thgr = true,
+			fhnchvhfjsd = 0.1,
+			ugtbbjhygt = 0.5,
+			tfbghuugbnjhg = -0.3,
+			fvrtccvghghj = Color3.fromRGB(242, 243, 243),
+			jnfdhbnfcvh = 0.3,
+			fvtyghj = 10,
+			ygbhnj = 0.8,
+			njnfg = 5,
+			jdfkd = 0.277,
+			fvgsdfg = 21.54,
+			sdkvkflv = 16.77,
+			hbjhd = 0.277,
+			shdbsnjfc = 0.364,
+			skdjfkdm = 0.556,
+			sjdjncdjf = Color3.fromRGB(175, 221, 255),
+			efjdjfk = Color3.fromRGB(13, 105, 172),
+			sejfd = 0.36,
+			jddfjsd = 0.72,
+			gyhgtg = 0.75,
+			ygbhggv = 0.26,
+			jghbjhgyfd = Color3.fromRGB(255, 255, 255)
+		},
+		evening = {
+			yfbghj = Color3.fromRGB(2, 2, 2),
+			khnbfth = 2.25,
+			tgvbyd = 16,
+			hgyghkg = Color3.fromRGB(0, 0, 0),
+			yfbhjku = Color3.fromRGB(255, 247, 237),
+			ygyyfgvhbjytrt = 0.203,
+			sdfcddc = 0.215,
+			hyhnngtf = Color3.fromRGB(0, 0, 0),
+			ghuybhuyhj = 45,
+			hdfr7thgr = 0.65,
+			hgnujuu7thgr = true,
+			fhnchvhfjsd = 0.1,
+			ugtbbjhygt = 0.5,
+			tfbghuugbnjhg = -0.3,
+			fvrtccvghghj = Color3.fromRGB(255, 205, 185),
+			jnfdhbnfcvh = 0.3234,
+			fvtyghj = 10,
+			ygbhnj = 0.813,
+			njnfg = 5,
+			jdfkd = 0.217,
+			fvgsdfg = 21.54,
+			sdkvkflv = 16.77,
+			hbjhd = 0.277,
+			shdbsnjfc = 0.364,
+			skdjfkdm = 5.556,
+			sjdjncdjf = Color3.fromRGB(199, 175, 166),
+			efjdjfk = Color3.fromRGB(44, 39, 33),
+			sejfd = 0.36,
+			jddfjsd = 1.72,
+			gyhgtg = 0.55,
+			ygbhggv = 0.43,
+			jghbjhgyfd = Color3.fromRGB(199, 175, 166)
+		},
+		night = {
+			yfbghj = Color3.fromRGB(33, 33, 33),
+			khnbfth = 3.25,
+			tgvbyd = 20,
+			hgyghkg = Color3.fromRGB(0, 0, 0),
+			yfbhjku = Color3.fromRGB(255, 247, 237),
+			ygyyfgvhbjytrt = 0.203,
+			sdfcddc = 0.255,
+			hyhnngtf = Color3.fromRGB(51, 54, 67),
+			ghuybhuyhj = -15,
+			hdfr7thgr = 0.85,
+			hgnujuu7thgr = true,
+			fhnchvhfjsd = -0.06,
+			ugtbbjhygt = -0.02,
+			tfbghuugbnjhg = -0.2,
+			fvrtccvghghj = Color3.fromRGB(242, 243, 243),
+			jnfdhbnfcvh = 0.34,
+			fvtyghj = 10,
+			ygbhnj = 0.813,
+			njnfg = 5,
+			jdfkd = 0.217,
+			fvgsdfg = 11.54,
+			sdkvkflv = 16.77,
+			hbjhd = 0.277,
+			shdbsnjfc = 0.264,
+			skdjfkdm = 0.156,
+			sjdjncdjf = Color3.fromRGB(175, 221, 255),
+			efjdjfk = Color3.fromRGB(13, 105, 172),
+			sejfd = 0.36,
+			jddfjsd = 1.72,
+			gyhgtg = 0.65,
+			ygbhggv = 0.33,
+			jghbjhgyfd = Color3.fromRGB(255, 255, 255)
+		}
+	}
+	
+	local function ensure_effects()
+		if not bloom_effect or not bloom_effect.Parent then
+			bloom_effect = lighting:FindFirstChildOfClass("BloomEffect")
+			if not bloom_effect then
+				bloom_effect = Instance.new("BloomEffect")
+				bloom_effect.Enabled = false
+				bloom_effect.Parent = lighting
+				created_effects.bloom = true
+			end
+		end
+		if not blur_effect or not blur_effect.Parent then
+			blur_effect = lighting:FindFirstChildOfClass("BlurEffect")
+			if not blur_effect then
+				blur_effect = Instance.new("BlurEffect")
+				blur_effect.Enabled = false
+				blur_effect.Size = 0
+				blur_effect.Parent = lighting
+				created_effects.blur = true
+			end
+		end
+		if not colorcor_effect or not colorcor_effect.Parent then
+			colorcor_effect = lighting:FindFirstChildOfClass("ColorCorrectionEffect")
+			if not colorcor_effect then
+				colorcor_effect = Instance.new("ColorCorrectionEffect")
+				colorcor_effect.Enabled = false
+				colorcor_effect.Parent = lighting
+				created_effects.colorcor = true
+			end
+		end
+		if not depth_effect or not depth_effect.Parent then
+			depth_effect = lighting:FindFirstChildOfClass("DepthOfFieldEffect")
+			if not depth_effect then
+				depth_effect = Instance.new("DepthOfFieldEffect")
+				depth_effect.Enabled = false
+				depth_effect.Parent = lighting
+				created_effects.depth = true
+			end
+		end
+		if not atmosphere_effect or not atmosphere_effect.Parent then
+			atmosphere_effect = lighting:FindFirstChildOfClass("Atmosphere")
+			if not atmosphere_effect then
+				atmosphere_effect = Instance.new("Atmosphere")
+				atmosphere_effect.Parent = lighting
+				created_effects.atmosphere = true
+			end
+		end
+		if workspace.Terrain and (not cloud_effect or not cloud_effect.Parent) then
+			cloud_effect = workspace.Terrain:FindFirstChildOfClass("Clouds")
+			if not cloud_effect then
+				cloud_effect = Instance.new("Clouds")
+				cloud_effect.Cover = 0
+				cloud_effect.Density = 0
+				cloud_effect.Parent = workspace.Terrain
+				created_effects.cloud = true
+			end
+		end
+	end
+	
+	local function save_original_effects()
+		bloom_effect = lighting:FindFirstChildOfClass("BloomEffect")
+		blur_effect = lighting:FindFirstChildOfClass("BlurEffect")
+		colorcor_effect = lighting:FindFirstChildOfClass("ColorCorrectionEffect")
+		depth_effect = lighting:FindFirstChildOfClass("DepthOfFieldEffect")
+		atmosphere_effect = lighting:FindFirstChildOfClass("Atmosphere")
+		if workspace.Terrain then
+			cloud_effect = workspace.Terrain:FindFirstChildOfClass("Clouds")
+		end
+		
+		if colorcor_effect then
+			original_effects.colorcor = {
+				Brightness = colorcor_effect.Brightness,
+				Contrast = colorcor_effect.Contrast,
+				Saturation = colorcor_effect.Saturation,
+				TintColor = colorcor_effect.TintColor,
+				Enabled = colorcor_effect.Enabled
+			}
+		end
+		if bloom_effect then
+			original_effects.bloom = {
+				Intensity = bloom_effect.Intensity,
+				Size = bloom_effect.Size,
+				Threshold = bloom_effect.Threshold,
+				Enabled = bloom_effect.Enabled
+			}
+		end
+		if blur_effect then
+			original_effects.blur = {
+				Size = blur_effect.Size,
+				Enabled = blur_effect.Enabled
+			}
+		end
+		if depth_effect then
+			original_effects.depth = {
+				FarIntensity = depth_effect.FarIntensity,
+				FocusDistance = depth_effect.FocusDistance,
+				InFocusRadius = depth_effect.InFocusRadius,
+				NearIntensity = depth_effect.NearIntensity,
+				Enabled = depth_effect.Enabled
+			}
+		end
+		if atmosphere_effect then
+			original_effects.atmosphere = {
+				Density = atmosphere_effect.Density,
+				Offset = atmosphere_effect.Offset,
+				Color = atmosphere_effect.Color,
+				Decay = atmosphere_effect.Decay,
+				Glare = atmosphere_effect.Glare,
+				Haze = atmosphere_effect.Haze
+			}
+		end
+		if cloud_effect then
+			original_effects.cloud = {
+				Cover = cloud_effect.Cover,
+				Density = cloud_effect.Density,
+				Color = cloud_effect.Color
+			}
+		end
+	end
+	
+	local shader_fog_inf = math.huge
+	local shader_fog_color = Color3.fromRGB(255, 255, 255)
+
+	local function apply_shader(shader_data)
+		ensure_effects()
+		local v = shader_data.yfbghj
+		if lighting.Ambient ~= v then lighting.Ambient = v end
+		v = shader_data.khnbfth
+		if lighting.Brightness ~= v then lighting.Brightness = v end
+		v = shader_data.tgvbyd
+		if lighting.ClockTime ~= v then lighting.ClockTime = v end
+		v = shader_data.hgyghkg
+		if lighting.ColorShift_Bottom ~= v then lighting.ColorShift_Bottom = v end
+		v = shader_data.yfbhjku
+		if lighting.ColorShift_Top ~= v then lighting.ColorShift_Top = v end
+		v = shader_data.ygyyfgvhbjytrt
+		if lighting.EnvironmentDiffuseScale ~= v then lighting.EnvironmentDiffuseScale = v end
+		v = shader_data.sdfcddc
+		if lighting.EnvironmentSpecularScale ~= v then lighting.EnvironmentSpecularScale = v end
+		v = shader_data.hyhnngtf
+		if lighting.OutdoorAmbient ~= v then lighting.OutdoorAmbient = v end
+		v = shader_data.ghuybhuyhj
+		if lighting.GeographicLatitude ~= v then lighting.GeographicLatitude = v end
+		v = shader_data.hdfr7thgr
+		if lighting.ExposureCompensation ~= v then lighting.ExposureCompensation = v end
+		v = shader_data.hgnujuu7thgr
+		if lighting.GlobalShadows ~= v then lighting.GlobalShadows = v end
+		if lighting.FogEnd ~= shader_fog_inf then lighting.FogEnd = shader_fog_inf end
+		if lighting.FogColor ~= shader_fog_color then lighting.FogColor = shader_fog_color end
+		if lighting.FogStart ~= shader_fog_inf then lighting.FogStart = shader_fog_inf end
+		
+		if colorcor_effect then
+			v = shader_data.fhnchvhfjsd
+			if colorcor_effect.Brightness ~= v then colorcor_effect.Brightness = v end
+			v = shader_data.ugtbbjhygt
+			if colorcor_effect.Contrast ~= v then colorcor_effect.Contrast = v end
+			v = shader_data.tfbghuugbnjhg
+			if colorcor_effect.Saturation ~= v then colorcor_effect.Saturation = v end
+			v = shader_data.fvrtccvghghj
+			if colorcor_effect.TintColor ~= v then colorcor_effect.TintColor = v end
+			if colorcor_effect.Enabled ~= true then colorcor_effect.Enabled = true end
+		end
+		if bloom_effect then
+			v = shader_data.jnfdhbnfcvh
+			if bloom_effect.Intensity ~= v then bloom_effect.Intensity = v end
+			v = shader_data.fvtyghj
+			if bloom_effect.Size ~= v then bloom_effect.Size = v end
+			v = shader_data.ygbhnj
+			if bloom_effect.Threshold ~= v then bloom_effect.Threshold = v end
+			if bloom_effect.Enabled ~= true then bloom_effect.Enabled = true end
+		end
+		if blur_effect then
+			v = shader_data.njnfg
+			if blur_effect.Size ~= v then blur_effect.Size = v end
+			if blur_effect.Enabled ~= false then blur_effect.Enabled = false end
+		end
+		if depth_effect then
+			v = shader_data.jdfkd
+			if depth_effect.FarIntensity ~= v then depth_effect.FarIntensity = v end
+			v = shader_data.fvgsdfg
+			if depth_effect.FocusDistance ~= v then depth_effect.FocusDistance = v end
+			v = shader_data.sdkvkflv
+			if depth_effect.InFocusRadius ~= v then depth_effect.InFocusRadius = v end
+			v = shader_data.hbjhd
+			if depth_effect.NearIntensity ~= v then depth_effect.NearIntensity = v end
+			if depth_effect.Enabled ~= true then depth_effect.Enabled = true end
+		end
+		if atmosphere_effect then
+			v = shader_data.shdbsnjfc
+			if atmosphere_effect.Density ~= v then atmosphere_effect.Density = v end
+			v = shader_data.skdjfkdm
+			if atmosphere_effect.Offset ~= v then atmosphere_effect.Offset = v end
+			v = shader_data.sjdjncdjf
+			if atmosphere_effect.Color ~= v then atmosphere_effect.Color = v end
+			v = shader_data.efjdjfk
+			if atmosphere_effect.Decay ~= v then atmosphere_effect.Decay = v end
+			v = shader_data.sejfd
+			if atmosphere_effect.Glare ~= v then atmosphere_effect.Glare = v end
+			v = shader_data.jddfjsd
+			if atmosphere_effect.Haze ~= v then atmosphere_effect.Haze = v end
+		end
+		if cloud_effect then
+			v = shader_data.gyhgtg
+			if cloud_effect.Cover ~= v then cloud_effect.Cover = v end
+			v = shader_data.ygbhggv
+			if cloud_effect.Density ~= v then cloud_effect.Density = v end
+			v = shader_data.jghbjhgyfd
+			if cloud_effect.Color ~= v then cloud_effect.Color = v end
+		end
+	end
+	
+	local function restore_original()
+		if original_effects.colorcor and colorcor_effect then
+			for prop, value in pairs(original_effects.colorcor) do
+				colorcor_effect[prop] = value
+			end
+		elseif created_effects.colorcor and colorcor_effect then
+			colorcor_effect:Destroy()
+			colorcor_effect = nil
+			created_effects.colorcor = nil
+		end
+		if original_effects.bloom and bloom_effect then
+			for prop, value in pairs(original_effects.bloom) do
+				bloom_effect[prop] = value
+			end
+		elseif created_effects.bloom and bloom_effect then
+			bloom_effect:Destroy()
+			bloom_effect = nil
+			created_effects.bloom = nil
+		end
+		if original_effects.blur and blur_effect then
+			for prop, value in pairs(original_effects.blur) do
+				blur_effect[prop] = value
+			end
+		elseif created_effects.blur and blur_effect then
+			blur_effect:Destroy()
+			blur_effect = nil
+			created_effects.blur = nil
+		end
+		if original_effects.depth and depth_effect then
+			for prop, value in pairs(original_effects.depth) do
+				depth_effect[prop] = value
+			end
+		elseif created_effects.depth and depth_effect then
+			depth_effect:Destroy()
+			depth_effect = nil
+			created_effects.depth = nil
+		end
+		if original_effects.atmosphere and atmosphere_effect then
+			for prop, value in pairs(original_effects.atmosphere) do
+				atmosphere_effect[prop] = value
+			end
+		elseif created_effects.atmosphere and atmosphere_effect then
+			atmosphere_effect:Destroy()
+			atmosphere_effect = nil
+			created_effects.atmosphere = nil
+		end
+		if original_effects.cloud and cloud_effect then
+			for prop, value in pairs(original_effects.cloud) do
+				cloud_effect[prop] = value
+			end
+		elseif created_effects.cloud and cloud_effect then
+			cloud_effect:Destroy()
+			cloud_effect = nil
+			created_effects.cloud = nil
+		end
+	end
+
+    local ambience_enabled = false
+    local ambience_style = "morning"
+
+    local function setAmbience(enabled)
+        ambience_enabled = enabled
+        if enabled then
+            local data = shaders[ambience_style]
+            if data then
+                apply_shader(data)
+            end
+        else
+            restore_original()
+        end
+    end
+
+    VisualsTab._left:Divider()
+    VisualsTab._left:Paragraph({
+        Title = "Ambience",
+        Content = "Lighting and atmosphere presets"
+    })
+
+    VisualsTab._left:Toggle({
+        Flag = "ambience_enabled",
+        Title = "Enable Ambience",
+        Description = "Apply the selected lighting preset",
+        Default = false,
+        Callback = function(state)
+            setAmbience(state)
+        end,
+    })
+
+    VisualsTab._left:Dropdown({
+        Flag = "ambience_style",
+        Title = "Ambience Style",
+        Values = {"morning", "midday", "evening", "night"},
+        Value = "morning",
+        Callback = function(value)
+            ambience_style = value
+            if ambience_enabled then
+                setAmbience(true)
+            end
+        end,
+    })
+end
+
+v301._left:Paragraph({ Title = 'Combat Buttons' })
+
+do
+    local _ka_on = false
+    local _ka_am_murderer = false
+    local _ka_round_mod = nil
+    local _ka_last_kill = 0
+    local _ka_victims = {}
+    local _ka_RS = game:GetService('ReplicatedStorage')
+
+    local function _ka_require_round()
+        return require(_ka_RS:WaitForChild('Modules'):WaitForChild('CurrentRoundClient'))
+    end
+
+    local function _ka_refresh_role()
+        if not _ka_round_mod then
+            local ok, m = pcall(_ka_require_round)
+            if not ok or type(m) ~= 'table' then _ka_am_murderer = false return end
+            _ka_round_mod = m
+        end
+        local data = _ka_round_mod.PlayerData
+        if type(data) ~= 'table' then _ka_am_murderer = false return end
+        local me = data[LocalPlayer.Name]
+        _ka_am_murderer = me ~= nil and me.Role == 'Murderer' and not me.Dead
+    end
+
+    local function _ka_get_knife()
+        local char = LocalPlayer.Character
+        if char then local k = char:FindFirstChild('Knife') if k then return k, true end end
+        local bp = LocalPlayer:FindFirstChildOfClass('Backpack')
+        if bp then local k = bp:FindFirstChild('Knife') if k then return k, false end end
+        return nil, false
+    end
+
+    local function _ka_equip_knife()
+        local knife, equipped = _ka_get_knife()
+        if not knife then return nil end
+        if not equipped then
+            local hum = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+            if hum then pcall(function() hum:EquipTool(knife) end) end
+            return nil
+        end
+        return knife
+    end
+
+    task.spawn(function()
+        while task.wait(0.3) do
+            if _ka_on then pcall(_ka_refresh_role) end
+        end
+    end)
+
+    task.spawn(function()
+        while task.wait() do
+            if not (_ka_on and _ka_am_murderer) then continue end
+            if getgenv().AUTOFARM_HOLD then continue end
+            local knife = _ka_equip_knife()
+            if not knife then continue end
+            if os.clock() - _ka_last_kill < 0.05 then continue end
+
+            table.clear(_ka_victims)
+            local vc = 0
+            for _, plr in ipairs(Players:GetPlayers()) do
+                if plr == LocalPlayer then continue end
+                local tc = plr.Character
+                if not tc then continue end
+                local hum = tc:FindFirstChildOfClass('Humanoid')
+                if not hum or hum.Health <= 0 then continue end
+                local part = tc:FindFirstChild('HumanoidRootPart') or tc:FindFirstChild('Head')
+                if not part then continue end
+                vc = vc + 1; _ka_victims[vc] = part
+            end
+
+            if vc > 0 then
+                local evts = knife:FindFirstChild('Events')
+                local stabbed = evts and evts:FindFirstChild('KnifeStabbed')
+                local touched = evts and evts:FindFirstChild('HandleTouched')
+                if stabbed then pcall(function() stabbed:FireServer() end) end
+                if touched then
+                    for i = 1, vc do pcall(function() touched:FireServer(_ka_victims[i]) end) end
+                end
+                _ka_last_kill = os.clock()
+            end
+        end
+    end)
+
+    v301._left:Toggle({
+        Flag = 'kill_all',
+        Title = 'Kill All',
+        Default = false,
+        Callback = function(v)
+            _ka_on = v
+            if v then
+                task.spawn(_ka_refresh_role)
+                v18:Notify({ Title = 'Lunar', Content = 'Kill All ON', Duration = 3, Icon = 'bell' })
+            else
+                v18:Notify({ Title = 'Lunar', Content = 'Kill All OFF', Duration = 3, Icon = 'bell' })
+            end
+        end,
+    })
+end
+
+    local t27 = {
+        Flag = "show_gold_bomb",
+        Title = 'Show Gold Bomb',
+        Default = false,
+    }
+    local u304 = v232
+
+    function t27.Callback(p56)
+        u304(p56)
+    end
+
+    v301._left:Toggle(t27)
+
+    local t28 = {
+        Flag = "show_normal_bomb",
+        Title = 'Show Normal Bomb',
+        Default = false,
+    }
+    local u306 = v239
+
+    function t28.Callback(p57)
+        u306(p57)
+    end
+
+    v301._left:Toggle(t28)
+
+    local t29 = {
+        Flag = "show_shoot_throw",
+        Title = 'Show Shoot/Throw',
+        Default = false,
+    }
+    local u308 = v244
+
+    function t29.Callback(p58)
+        u308(p58)
+    end
+
+    v301._left:Toggle(t29)
+end
+
+v301._left:Toggle({
+    Flag = "load_grab_gun", Title = 'Load Grab Gun',
+    Default = false,
+    Callback = function(p61) u276(p61) end,
+})
+
+do
+local lp = game:GetService("Players").LocalPlayer
+
+local autograb_on = false
+
+local grab_rs = game:GetService("ReplicatedStorage")
+local grab_round_mod = nil
+
+local function grab_has_role()
+    if not grab_round_mod then
+        local ok, m = pcall(function()
+            return require(
+                grab_rs:WaitForChild("Modules"):WaitForChild("CurrentRoundClient")
+            )
+        end)
+
+        if ok and type(m) == "table" then
+            grab_round_mod = m
+        end
+    end
+
+    local d = grab_round_mod and grab_round_mod.PlayerData
+    if type(d) ~= "table" then
+        return false
+    end
+
+    local me = d[lp.Name]
+    return me ~= nil and me.Role ~= nil and not me.Dead
+end
+
+local function has_knife()
+    local char = lp.Character
+
+    if char and char:FindFirstChild("Knife") then
+        return true
+    end
+
+    local backpack = lp:FindFirstChildOfClass("Backpack")
+
+    if backpack and backpack:FindFirstChild("Knife") then
+        return true
+    end
+
+    return false
+end
+
+local function grab_gun(obj, force)
+    if (not force and not autograb_on) or has_knife() then
+        return
+    end
+
+    if not grab_has_role() then
+        return
+    end
+
+    local char = lp.Character
+    local root = char and char:FindFirstChild("HumanoidRootPart")
+
+    if not root then
+        return
+    end
+
+    pcall(function()
+        obj.CFrame = root.CFrame
+    end)
+
+    local prompt = obj:FindFirstChildOfClass("ProximityPrompt")
+
+    if prompt then
+        pcall(function()
+            fireproximityprompt(prompt)
+        end)
+    end
+end
+
+local function scan_guns()
+    for _, obj in pairs(workspace:GetDescendants()) do
+        if obj.Name == "GunDrop" and obj:IsA("BasePart") then
+            grab_gun(obj)
+        end
+    end
+end
+
+getgenv().LunarGrabGun = function()
+    local found = false
+
+    for _, obj in pairs(workspace:GetDescendants()) do
+        if obj.Name == "GunDrop" and obj:IsA("BasePart") then
+            found = true
+            grab_gun(obj, true)
+        end
+    end
+
+    v18:Notify({
+        Title = 'Lunar',
+        Content = found and 'Grabbing gun...' or 'No gun on map!',
+        Duration = 3,
+        Icon = 'bell',
+    })
+end
+
+local grab_desc_conn = nil
+
+local function grab_desc_added(obj)
+    if obj.Name == "GunDrop" and obj:IsA("BasePart") then
+        task.wait(0.1)
+        grab_gun(obj)
+    end
+end
+
+local function grab_desc_stop()
+    if grab_desc_conn then
+        pcall(function()
+            grab_desc_conn:Disconnect()
+        end)
+
+        grab_desc_conn = nil
+    end
+end
+
+v301._left:Toggle({
+    Flag = "auto_grab_gun",
+    Title = 'Auto Grab Gun',
+    Default = false,
+    Callback = function(v)
+        autograb_on = v
+        grab_desc_stop()
+        if v then
+            task.spawn(scan_guns)
+            grab_desc_conn = workspace.DescendantAdded:Connect(grab_desc_added)
+        end
+        v18:Notify({ Title = 'Lunar', Content = v and 'Auto Grab Gun ON' or 'Auto Grab Gun OFF', Duration = 3, Icon = 'bell' })
+    end,
+})
+end
+
+do
+local function __silent_aim_block()
+local players = game:GetService("Players")
+local rs = game:GetService("ReplicatedStorage")
+local run = game:GetService("RunService")
+local collection = game:GetService("CollectionService")
+local stats = game:GetService("Stats")
+local lp = players.LocalPlayer
+
+	getgenv().SILENT_S = {
+		enabled = false,
+		predict = true,
+		force = false,
+		auto_on = false,
+		auto_delay = 0,
+		am_sheriff = false,
+		fire_gap = 0,
+		last_shot = 0,
+		stand_off = 3,
+	}
+	local S = getgenv().SILENT_S
+
+
+	local MAX_RANGE = 300
+
+	local gap_min = 0
+	local gap_seen = false
+	local gap_gun = nil
+	local want_since = 0
+
+	local function gap_reset()
+		gap_min = 0
+		gap_seen = false
+		S.fire_gap = 0
+	end
+
+	local function gap_push(value)
+		if value <= 0 then return end
+		if not gap_seen or value < gap_min then
+			gap_min = value
+			gap_seen = true
+			S.fire_gap = value
+		end
+	end
+
+	local round_mod = nil
+
+	local function get_round()
+		if round_mod then return round_mod end
+		local ok, m = pcall(function()
+			return require(rs:WaitForChild("Modules"):WaitForChild("CurrentRoundClient"))
+		end)
+		if ok and type(m) == "table" then round_mod = m end
+		return round_mod
+	end
+
+	local function holds(container, name)
+		return container ~= nil and container:FindFirstChild(name) ~= nil
+	end
+
+	local function lp_has_gun()
+		return holds(lp.Character, "Gun") or holds(lp:FindFirstChildOfClass("Backpack"), "Gun")
+	end
+
+	local target_player = nil
+	local target_char = nil
+	local target_part = nil
+	local target_hum = nil
+
+	local function refresh_target()
+		local found = nil
+		local m = get_round()
+		local data = m and m.PlayerData or nil
+		if type(data) == "table" then
+			local me = data[lp.Name]
+			S.am_sheriff = (me ~= nil and (me.Role == "Sheriff" or me.Role == "Hero")) or lp_has_gun()
+			for name, d in pairs(data) do
+				if type(d) == "table" and d.Role == "Murderer" and not d.Dead then
+					found = players:FindFirstChild(name)
+					break
+				end
+			end
+		else
+			S.am_sheriff = lp_has_gun()
+		end
+		if not found then
+			for _, plr in ipairs(players:GetPlayers()) do
+				if plr ~= lp and holds(plr.Character, "Knife") then
+					found = plr
+					break
+				end
+			end
+		end
+		if found ~= target_player then
+			target_player = found
+			target_char = nil
+			target_part = nil
+			target_hum = nil
+		end
+		if not found then return end
+		local char = found.Character
+		if char ~= target_char then
+			target_char = char
+			target_part = nil
+			target_hum = nil
+		end
+		if not char then return end
+		if not target_part or not target_part.Parent then
+			target_part = char:FindFirstChild("HumanoidRootPart") or char:FindFirstChild("UpperTorso") or char:FindFirstChild("Torso")
+		end
+		if not target_hum or not target_hum.Parent then
+			target_hum = char:FindFirstChildOfClass("Humanoid")
+		end
+	end
+
+	local function target_alive()
+		if not target_part or not target_part.Parent then return false end
+		if not target_hum or not target_hum.Parent then return false end
+		return target_hum.Health > 0
+	end
+
+	local ray_params = RaycastParams.new()
+	ray_params.FilterType = Enum.RaycastFilterType.Exclude
+	ray_params.IgnoreWater = false
+
+	local ignore_base = {}
+	local ignore_work = {}
+	local ignore_time = 0
+
+	local function refresh_ignore()
+		local now = os.clock()
+		if #ignore_base > 0 and now - ignore_time < 0.5 then return end
+		ignore_time = now
+		table.clear(ignore_base)
+		local char = lp.Character
+		if char then ignore_base[1] = char end
+		local ok, tagged = pcall(function() return collection:GetTagged("WeaponPassthrough") end)
+		if ok and type(tagged) == "table" then
+			for k = 1, #tagged do
+				ignore_base[#ignore_base + 1] = tagged[k]
+			end
+		end
+	end
+
+	local function trace(origin, direction)
+		refresh_ignore()
+		table.clear(ignore_work)
+		for k = 1, #ignore_base do ignore_work[k] = ignore_base[k] end
+		local result = nil
+		for _ = 1, 6 do
+			ray_params.FilterDescendantsInstances = ignore_work
+			result = workspace:Raycast(origin, direction, ray_params)
+			if not result then break end
+			local inst = result.Instance
+			if not inst then break end
+			local ok, tr = pcall(function() return inst.Transparency end)
+			if not ok or tr ~= 1 then break end
+			ignore_work[#ignore_work + 1] = inst
+		end
+		return result
+	end
+
+	local function gun_attachment()
+		local char = lp.Character
+		local hrp = char and char:FindFirstChild("HumanoidRootPart")
+		if not hrp then return nil, nil end
+		return hrp:FindFirstChild("GunRaycastAttachment"), hrp
+	end
+
+	local function origin_cframe()
+		local att, hrp = gun_attachment()
+		if att then return att.WorldCFrame end
+		if hrp then return hrp.CFrame end
+		return nil
+	end
+
+	local function grav()
+		local ok, g = pcall(function() return workspace.Gravity end)
+		if ok and type(g) == "number" and g > 0 then return g end
+		return 0
+	end
+
+	local P = {
+		snap = 48,
+		ring = 48,
+		hit_r = 2.1,
+		pad = 2.6,
+		min_span = 5,
+		max_span = 90,
+		acc_t = 0.15,
+		acc_max = 280,
+		acc_min = 40,
+		speed_floor = 26,
+		speed_head = 1.3,
+	}
+
+	local snap_t = table.create(P.snap, 0)
+	local snap_p = table.create(P.snap, Vector3.zero)
+	local snap_n = 0
+	local snap_i = 0
+
+	local TR = {
+		part = nil,
+		pos = nil,
+		time = 0,
+		vel = Vector3.zero,
+		gap = 0,
+		ready = false,
+		fresh = Vector3.zero,
+		air = false,
+		air_since = 0,
+		jumping = false,
+		jump_v = 0,
+		fresh_ok = false,
+		turn = 0,
+		spoof = 0,
+		clr = 0,
+		air_edge = 0,
+		jump_fresh = false,
+	}
+
+	local SK = {
+		vt = table.create(P.ring, 0),
+		dx = table.create(P.ring, 0),
+		dz = table.create(P.ring, 0),
+		vn = 0,
+		vi = 0,
+	}
+
+	local EC = {
+		ping = 0,
+		rtt = 0,
+		jitter = 0,
+		seen = false,
+		step = 0,
+		step_seen = false,
+	}
+
+	local function step_push(dt)
+		if dt <= 0 or dt > 0.5 then return end
+		if EC.step_seen then
+			EC.step = EC.step * 0.85 + dt * 0.15
+		else
+			EC.step = dt
+			EC.step_seen = true
+		end
+	end
+
+	local function sample_span()
+		local span = math.max(EC.step, TR.gap)
+		if span <= 0 then return 0 end
+		return span
+	end
+
+	local HY = {
+		pos = {},
+		w = {},
+		n = 0,
+		weight = 0,
+		primary = nil,
+		stamp = 0,
+		conf = 0,
+	}
+
+	local ground_params = RaycastParams.new()
+	ground_params.FilterType = Enum.RaycastFilterType.Exclude
+	ground_params.IgnoreWater = true
+
+	local ground_filter = {}
+	local axis_pool = {}
+
+	local function ground_below(pos, reach)
+		table.clear(ground_filter)
+		local n = 0
+		local char = target_char
+		if char then
+			n = n + 1
+			ground_filter[n] = char
+		end
+		local mine = lp.Character
+		if mine then
+			n = n + 1
+			ground_filter[n] = mine
+		end
+		ground_params.FilterDescendantsInstances = ground_filter
+		local res = workspace:Raycast(pos, Vector3.new(0, -reach, 0), ground_params)
+		if res then return res.Position.Y end
+		return nil
+	end
+
+	local function snap_push(now, pos)
+		snap_i = snap_i % P.snap + 1
+		snap_t[snap_i] = now
+		snap_p[snap_i] = pos
+		if snap_n < P.snap then snap_n = snap_n + 1 end
+	end
+
+	local function snap_get(k)
+		local idx = (snap_i - k - 1) % P.snap + 1
+		return snap_t[idx], snap_p[idx]
+	end
+
+	local function fit_velocity()
+		if snap_n < 3 then return nil end
+		local newest = snap_get(0)
+		local used = 0
+		local sum_d = 0
+		local win = sample_span() * 4
+		for k = 0, snap_n - 1 do
+			local t = snap_get(k)
+			if newest - t > win then break end
+			used = used + 1
+			sum_d = sum_d + t - newest
+		end
+		if used < 3 then return nil end
+		local mean_d = sum_d / used
+		local num = Vector3.zero
+		local den = 0
+		for k = 0, used - 1 do
+			local t, p = snap_get(k)
+			local d = t - newest - mean_d
+			num = num + p * d
+			den = den + d * d
+		end
+		if den < 1e-8 then return nil end
+		return num / den, -mean_d
+	end
+
+	local function recent_velocity()
+		if snap_n < 2 then return nil end
+		local newest, head = snap_get(0)
+		local fallback, fallback_age = nil, nil
+		local target_span = sample_span() * 2
+		local max_span = target_span * 2
+		for k = 1, snap_n - 1 do
+			local t, p = snap_get(k)
+			local dt = newest - t
+			if dt > max_span then break end
+			if dt > 0 then
+				fallback = (head - p) / dt
+				fallback_age = dt * 0.5
+				if dt >= target_span then
+					return fallback, fallback_age
+				end
+			end
+		end
+		return fallback, fallback_age
+	end
+
+	local KIN = {
+		ok = false,
+		ax = 0,
+		az = 0,
+		smax = 0,
+	}
+
+	local function kin_clear()
+		KIN.ok = false
+		KIN.ax = 0
+		KIN.az = 0
+		KIN.smax = 0
+	end
+
+	local function fit_kin()
+		if snap_n < 5 then return nil end
+		local t0 = snap_get(0)
+		local win = math.max(sample_span() * 5, 0.12)
+		local scale = win
+		local n, s1, s2, s3, s4 = 0, 0, 0, 0, 0
+		local bx0, bx1, bx2 = 0, 0, 0
+		local bz0, bz1, bz2 = 0, 0, 0
+		for k = 0, snap_n - 1 do
+			local t, p = snap_get(k)
+			local age = t0 - t
+			if age > win then break end
+			local u = -age / scale
+			local u2 = u * u
+			n = n + 1
+			s1 = s1 + u
+			s2 = s2 + u2
+			s3 = s3 + u2 * u
+			s4 = s4 + u2 * u2
+			bx0 = bx0 + p.X
+			bx1 = bx1 + p.X * u
+			bx2 = bx2 + p.X * u2
+			bz0 = bz0 + p.Z
+			bz1 = bz1 + p.Z * u
+			bz2 = bz2 + p.Z * u2
+		end
+		if n < 5 then return nil end
+		local det = n * (s2 * s4 - s3 * s3)
+			- s1 * (s1 * s4 - s3 * s2)
+			+ s2 * (s1 * s3 - s2 * s2)
+		if math.abs(det) < 1e-9 then return nil end
+		local function solve(b0, b1, b2)
+			local d1 = n * (b1 * s4 - s3 * b2)
+				- b0 * (s1 * s4 - s3 * s2)
+				+ s2 * (s1 * b2 - b1 * s2)
+			local d2 = n * (s2 * b2 - b1 * s3)
+				- s1 * (s1 * b2 - b1 * s2)
+				+ b0 * (s1 * s3 - s2 * s2)
+			return d1 / det, d2 / det
+		end
+		local cx1, cx2 = solve(bx0, bx1, bx2)
+		local cz1, cz2 = solve(bz0, bz1, bz2)
+		local vx, vz = cx1 / scale, cz1 / scale
+		local ax, az = 2 * cx2 / (scale * scale), 2 * cz2 / (scale * scale)
+		if vx ~= vx or vz ~= vz or ax ~= ax or az ~= az then return nil end
+		return Vector3.new(vx, 0, vz), Vector3.new(ax, 0, az)
+	end
+
+	local function kin_update()
+		local kv, ka = fit_kin()
+		if not kv then
+			KIN.ok = false
+			KIN.ax = 0
+			KIN.az = 0
+			return nil
+		end
+		KIN.ok = true
+		local sp = math.sqrt(kv.X * kv.X + kv.Z * kv.Z)
+		if sp > KIN.smax then
+			KIN.smax = sp
+		else
+			KIN.smax = KIN.smax * 0.985 + sp * 0.015
+		end
+		if ka and not TR.air then
+			local am = math.sqrt(ka.X * ka.X + ka.Z * ka.Z)
+			local ax, az = ka.X, ka.Z
+			if am > P.acc_max and am > 0 then
+				ax = ax * P.acc_max / am
+				az = az * P.acc_max / am
+			end
+			KIN.ax = KIN.ax * 0.5 + ax * 0.5
+			KIN.az = KIN.az * 0.5 + az * 0.5
+		else
+			KIN.ax = KIN.ax * 0.5
+			KIN.az = KIN.az * 0.5
+		end
+		return kv
+	end
+
+	local function snap_vel(k)
+		local t0, p0 = snap_get(k)
+		local t1, p1 = snap_get(k + 1)
+		local d = t0 - t1
+		if d <= 0 then return nil end
+		return (p0 - p1) / d, d
+	end
+
+	local function vert_accel()
+		if snap_n < 3 then return nil end
+		local v0, d0 = snap_vel(0)
+		local v1, d1 = snap_vel(1)
+		if not v0 or not v1 then return nil end
+		local span = (d0 + d1) * 0.5
+		if span <= 1e-4 then return nil end
+		return (v0.Y - v1.Y) / span
+	end
+
+	local function air_vy()
+		if snap_n < 2 then return nil end
+		local edge = TR.air_edge
+		if edge <= 0 then return nil end
+		local g = grav()
+		local newest, head = snap_get(0)
+		local want = sample_span() * 2
+		local best = nil
+		for k = 1, snap_n - 1 do
+			local t, p = snap_get(k)
+			if t < edge then break end
+			local dt = newest - t
+			if dt > 1e-4 then
+				best = (head.Y - p.Y) / dt - 0.5 * g * dt
+				if dt >= want then break end
+			end
+		end
+		return best
+	end
+
+	local function body_clearance()
+		local part = target_part
+		local hum = target_hum
+		if not part or not hum then return 0 end
+		local ok, value = pcall(function() return part.Size.Y * 0.5 + hum.HipHeight end)
+		if ok and type(value) == "number" and value > 0 then return value end
+		return 0
+	end
+
+	local GC = {
+		base = 0,
+		seen = false,
+	}
+
+	local JL = {
+		v = 0,
+		seen = false,
+	}
+
+	local function stand_clearance()
+		if GC.seen then return GC.base end
+		return body_clearance()
+	end
+
+	local function engine_vel(part)
+		local ok, v = pcall(function() return part.AssemblyLinearVelocity end)
+		if not ok or typeof(v) ~= "Vector3" then
+			ok, v = pcall(function() return part.Velocity end)
+		end
+		if not ok or typeof(v) ~= "Vector3" then return nil end
+		if v.Magnitude ~= v.Magnitude then return nil end
+		return v
+	end
+
+	local function vel_trust(pv, ev)
+		if not pv or not ev then return 0 end
+		local ph = Vector3.new(pv.X, 0, pv.Z)
+		local eh = Vector3.new(ev.X, 0, ev.Z)
+		local pm, em = ph.Magnitude, eh.Magnitude
+		if pm < 1 and em < 1 then return 1 end
+		if pm < 1 or em < 1 then return 0 end
+		local ratio = em / pm
+		if ratio > 1.5 or ratio < 0.6 then return 0 end
+		local align = ph.Unit:Dot(eh.Unit)
+		if align < 0.7 then return 0 end
+		local a = math.clamp((align - 0.7) / 0.25, 0, 1)
+		local r = 1 - math.clamp(math.abs(ratio - 1) / 0.4, 0, 1)
+		return a * r
+	end
+
+	local function phase_velocity(v, age, air)
+		if not v then return nil end
+		local y = 0
+		if air then
+			y = v.Y - grav() * math.clamp(age or 0, 0, sample_span() * 4)
+		end
+		return Vector3.new(v.X, y, v.Z)
+	end
+
+	local function merge_vel(fit, fit_age, fast, fast_age, engine, engine_age, air)
+		local stable = phase_velocity(fit, fit_age, air)
+		local instant = phase_velocity(fast, fast_age, air)
+		local turn = 0
+		if stable and instant then
+			local sh = Vector3.new(stable.X, 0, stable.Z)
+			local ih = Vector3.new(instant.X, 0, instant.Z)
+			if sh.Magnitude > 1 and ih.Magnitude > 1 then
+				turn = math.acos(math.clamp(sh.Unit:Dot(ih.Unit), -1, 1)) / math.pi
+			end
+		end
+		local base = instant or stable
+		if not base then return Vector3.zero, 0, nil, 0 end
+		if stable and instant then
+			local agility = math.clamp(turn * 2.2, 0, 1)
+			base = stable:Lerp(instant, 0.4 + 0.6 * agility)
+		end
+		local trust = 0
+		if engine then
+			local live = phase_velocity(engine, engine_age, air)
+			trust = vel_trust(base, live)
+			if trust > 0 and air then
+				base = Vector3.new(base.X, base.Y, base.Z):Lerp(Vector3.new(base.X, live.Y, base.Z), trust * 0.35)
+			end
+		end
+		return base, turn, instant or stable, trust
+	end
+
+	local function vel_push(now, hx, hz)
+		SK.vi = SK.vi % P.ring + 1
+		SK.vt[SK.vi] = now
+		SK.dx[SK.vi] = hx
+		SK.dz[SK.vi] = hz
+		if SK.vn < P.ring then SK.vn = SK.vn + 1 end
+	end
+
+	local function track_clear()
+		TR.part = nil
+		TR.pos = nil
+		TR.vel = Vector3.zero
+		TR.gap = 0
+		TR.ready = false
+		TR.fresh = Vector3.zero
+		TR.air = false
+		TR.jumping = false
+		TR.jump_v = 0
+		TR.fresh_ok = false
+		TR.turn = 0
+		TR.spoof = 0
+		TR.clr = 0
+		TR.air_edge = 0
+		TR.jump_fresh = false
+		GC.base = 0
+		GC.seen = false
+		JL.v = 0
+		JL.seen = false
+		snap_n, snap_i = 0, 0
+		SK.vn, SK.vi = 0, 0
+		kin_clear()
+	end
+
+	local function track_seed(part, pos, now)
+		TR.part = part
+		TR.pos = pos
+		TR.time = now
+		TR.vel = Vector3.zero
+		TR.fresh = Vector3.zero
+		TR.fresh_ok = false
+		TR.turn = 0
+		TR.jump_v = 0
+		TR.gap = 0
+		TR.ready = false
+		TR.spoof = 0
+		TR.air_edge = 0
+		TR.jump_fresh = false
+		GC.base = 0
+		GC.seen = false
+		snap_n, snap_i = 0, 0
+		kin_clear()
+		snap_push(now, pos)
+	end
+
+	local function track_fresh(now)
+		local part = target_part
+		if not part or not part.Parent then
+			TR.fresh_ok = false
+			return
+		end
+		local pos = part.Position
+		local g = grav()
+		local sv = snap_vel(0)
+		local vy = sv and sv.Y or 0
+		local accel = vert_accel()
+		local falling = accel ~= nil and accel < -g * 0.5
+		local guess = stand_clearance()
+		local reach = guess + 6 + math.abs(vy) * sample_span() * 4
+		local air
+		local gy = ground_below(pos, reach)
+		if gy then
+			local clr = pos.Y - gy
+			TR.clr = clr
+			if math.abs(vy) < 1 and not falling then
+				if GC.seen then
+					if clr < GC.base then
+						GC.base = GC.base * 0.7 + clr * 0.3
+					else
+						GC.base = GC.base * 0.98 + clr * 0.02
+					end
+				else
+					GC.base = clr
+					GC.seen = true
+				end
+			end
+			local floor = GC.seen and GC.base or guess
+			local tol = math.max(floor * 0.35, 1)
+			air = clr > floor + tol
+			if not air and falling and math.abs(vy) > 4 and clr > floor + 0.35 then
+				air = true
+			end
+		else
+			air = true
+		end
+		if air ~= TR.air then
+			TR.air_edge = now
+			if air then
+				TR.air_since = now
+				TR.jump_fresh = true
+				TR.jump_v = JL.seen and JL.v or math.max(vy, 0)
+			else
+				TR.jump_fresh = false
+				TR.jump_v = 0
+			end
+		end
+		local model_vy = TR.jump_v - g * math.max(0, now - TR.air_since)
+		TR.air = air
+		TR.jumping = air and (vy > 1 or model_vy > 1)
+	end
+
+	local function track(now)
+		local part = target_part
+		if not part or not part.Parent then
+			if TR.part then track_clear() end
+			return
+		end
+		track_fresh(now)
+		local pos = part.Position
+		if part ~= TR.part or not TR.pos then
+			track_seed(part, pos, now)
+			return
+		end
+		local dt = now - TR.time
+		if dt > 0.75 or (pos - TR.pos).Magnitude > 140 then
+			track_seed(part, pos, now)
+			return
+		end
+		if dt <= 0 then return end
+		if (pos - TR.pos).Magnitude == 0 then
+			if TR.gap > 0 and dt >= TR.gap then
+				TR.vel = Vector3.zero
+				TR.fresh = Vector3.zero
+			end
+			return
+		end
+		step_push(dt)
+		TR.gap = dt
+		snap_push(now, pos)
+		TR.pos = pos
+		TR.time = now
+		local fit, fit_age = fit_velocity()
+		local fast, fast_age = recent_velocity()
+		local engine = engine_vel(part)
+		local fresh, turn, instant, trust = merge_vel(fit, fit_age, fast, fast_age, engine, sample_span() * 0.5, TR.air)
+		local kv = kin_update()
+		if kv then
+			fresh = Vector3.new(kv.X, fresh.Y, kv.Z)
+		end
+		if engine and trust <= 0 then
+			if TR.spoof < 20 then TR.spoof = TR.spoof + 1 end
+		elseif TR.spoof > 0 then
+			TR.spoof = TR.spoof - 1
+		end
+		if TR.air then
+			local vy = air_vy()
+			if vy then
+				fresh = Vector3.new(fresh.X, vy, fresh.Z)
+				local since = math.max(0, now - TR.air_edge)
+				if TR.jump_fresh and since <= 0.2 then
+					local impulse = vy + grav() * since
+					if impulse > 1 then
+						if JL.seen then
+							JL.v = JL.v * 0.7 + impulse * 0.3
+						else
+							JL.v = impulse
+							JL.seen = true
+						end
+						if impulse > TR.jump_v then TR.jump_v = impulse end
+					end
+				else
+					TR.jump_fresh = false
+				end
+			end
+		end
+		TR.vel = fresh
+		TR.ready = fit ~= nil or fast ~= nil
+		TR.fresh = TR.vel
+		TR.fresh_ok = TR.ready
+		TR.turn = turn
+		local raw = instant or fresh
+		vel_push(now, raw.X, raw.Z)
+	end
+
+	local function raw_rtt()
+		local a, b
+		local ok, ms = pcall(function()
+			return stats.Network.ServerStatsItem["Data Ping"]:GetValue()
+		end)
+		if ok and type(ms) == "number" and ms == ms and ms > 4 and ms < 800 then
+			a = ms / 1000
+		end
+		local fine, value = pcall(function() return lp:GetNetworkPing() end)
+		if fine and type(value) == "number" and value == value and value > 0 then
+			local rtt = value * 2
+			if rtt > 0.004 and rtt < 0.8 then b = rtt end
+		end
+		if a and b then return (a + b) * 0.5 end
+		return a or b
+	end
+
+	local function sample_ping()
+		local rtt = raw_rtt()
+		if not rtt or rtt ~= rtt then return end
+		rtt = math.clamp(rtt, 0, 1)
+		if EC.seen then
+			EC.jitter = EC.jitter * 0.9 + math.abs(rtt - EC.rtt) * 0.1
+			EC.rtt = EC.rtt * 0.82 + rtt * 0.18
+		else
+			EC.rtt = rtt
+			EC.jitter = 0
+			EC.seen = true
+		end
+		EC.ping = EC.rtt
+	end
+
+	local function lead_time()
+		if not EC.seen then return 0 end
+		local stale = 0
+		if TR.time > 0 and EC.step_seen then
+			stale = math.clamp(os.clock() - TR.time, 0, EC.step)
+		end
+		return math.clamp(EC.rtt + EC.jitter * 0.5 + stale, 0, 1)
+	end
+
+	local function rotate_y(v, ang)
+		local c, s = math.cos(ang), math.sin(ang)
+		return Vector3.new(v.X * c - v.Z * s, v.Y, v.X * s + v.Z * c)
+	end
+
+	local function dir_stats(win)
+		if SK.vn < 4 then return 1, 0 end
+		win = math.max(win, sample_span() * 3)
+		local newest = SK.vt[SK.vi]
+		local sx, sz, n = 0, 0, 0
+		local prev = nil
+		local turn, turn_n = 0, 0
+		local oldest = newest
+		for k = 0, SK.vn - 1 do
+			local idx = (SK.vi - k - 1) % P.ring + 1
+			local t = SK.vt[idx]
+			if newest - t > win then break end
+			local hx, hz = SK.dx[idx], SK.dz[idx]
+			local m = math.sqrt(hx * hx + hz * hz)
+			if m > 0 then
+				sx = sx + hx / m
+				sz = sz + hz / m
+				n = n + 1
+				local ang = math.atan2(hz, hx)
+				if prev then
+					local d = ang - prev
+					while d > math.pi do d = d - 6.2831853 end
+					while d < -math.pi do d = d + 6.2831853 end
+					turn = turn + d
+					turn_n = turn_n + 1
+				end
+				prev = ang
+				oldest = t
+			end
+		end
+		if n < 2 then return 1, 0 end
+		local coh = math.clamp(math.sqrt(sx * sx + sz * sz) / n, 0, 1)
+		local omega = 0
+		local elapsed = newest - oldest
+		if turn_n >= 1 and elapsed > 1e-3 then
+			omega = -turn / elapsed
+		end
+		return coh, omega
+	end
+
+	local function predict_from(base, sa, sb, fh, now)
+		local span = math.max(0, sa + sb)
+		local g = grav()
+		local dir = fh
+		if dir.Magnitude == 0 then
+			dir = Vector3.new(TR.vel.X, 0, TR.vel.Z)
+		end
+		local x, z
+		if span > 0 and KIN.ok then
+			local age = math.clamp(now - TR.time, 0, sample_span() * 2)
+			local ax, az = KIN.ax, KIN.az
+			if TR.air or math.sqrt(ax * ax + az * az) < P.acc_min then ax, az = 0, 0 end
+			local vx = dir.X + ax * age
+			local vz = dir.Z + az * age
+			local ta = math.min(span, P.acc_t)
+			local dx = vx * span + 0.5 * ax * ta * ta
+			local dz = vz * span + 0.5 * az * ta * ta
+			local reach = math.sqrt(dx * dx + dz * dz)
+			local cap = math.max(KIN.smax * P.speed_head, P.speed_floor) * span
+			if reach > cap and reach > 1e-6 then
+				dx = dx * cap / reach
+				dz = dz * cap / reach
+			end
+			x = base.X + dx
+			z = base.Z + dz
+		else
+			local hspan = span
+			if span > 0 and dir.Magnitude > 0 and not TR.air then
+				local coh, omega = dir_stats(span)
+				local conf = math.clamp(coh, 0, 1) * (1 - math.clamp(TR.turn, 0, 1) * 0.5)
+				if omega ~= 0 then
+					dir = rotate_y(dir, math.clamp(omega * span * 0.5 * conf, -0.6, 0.6))
+				end
+				hspan = span * (0.85 + 0.15 * conf)
+			end
+			x = base.X + dir.X * hspan
+			z = base.Z + dir.Z * hspan
+		end
+		local y = base.Y
+		if TR.air and span > 0 then
+			local vy = TR.vel.Y
+			local phase = math.max(0, now - TR.air_since)
+			local modeled = TR.jump_v - g * phase
+			if TR.jumping and TR.jump_v > 0 and g > 0 and phase <= TR.jump_v / g and modeled > vy then
+				vy = modeled
+			end
+			y = base.Y + vy * span - 0.5 * g * span * span
+			if y < base.Y then
+				local clearance = stand_clearance()
+				local reach = base.Y - y + clearance
+				local gy = ground_below(Vector3.new(x, base.Y, z), reach)
+				if gy then
+					local floor = gy + clearance
+					if y < floor then y = floor end
+				end
+			end
+		end
+		return Vector3.new(x, y, z)
+	end
+
+	local function build_hyps(base, now)
+		table.clear(HY.pos)
+		table.clear(HY.w)
+		local horizon = S.predict and TR.ready and lead_time() or 0
+		local fh = Vector3.new(TR.fresh.X, 0, TR.fresh.Z)
+		HY.primary = predict_from(base, 0, horizon, fh, now)
+		HY.n = 1
+		HY.pos[1] = HY.primary
+		HY.w[1] = 1
+		HY.weight = 1
+		HY.stamp = now
+	end
+
+	local function score_axis(anchor, axis)
+		local covered = 0
+		local lo, hi = 0, 0
+		for k = 1, HY.n do
+			local d = HY.pos[k] - anchor
+			local a = d:Dot(axis)
+			local perp = (d - axis * a).Magnitude
+			if perp <= P.hit_r then
+				covered = covered + HY.w[k]
+				if a < lo then lo = a end
+				if a > hi then hi = a end
+			end
+		end
+		return covered, lo, hi
+	end
+
+	local function corridor_axes(anchor)
+		table.clear(axis_pool)
+		local n = 0
+		local function add(v)
+			if typeof(v) ~= "Vector3" or v.Magnitude < 1e-4 then return end
+			local u = v.Unit
+			for k = 1, n do
+				if axis_pool[k]:Dot(u) > 0.985 then return end
+			end
+			n = n + 1
+			axis_pool[n] = u
+		end
+		local fh = Vector3.new(TR.fresh.X, 0, TR.fresh.Z)
+		if TR.air then add(TR.fresh) end
+		add(fh)
+		for k = 1, HY.n do
+			add(HY.pos[k] - anchor)
+		end
+		add(TR.fresh)
+		add(Vector3.new(0, 1, 0))
+		return n
+	end
+
+	local function build_corridor(now)
+		local part = target_part
+		if not part or not part.Parent then return nil end
+		local base = part.Position
+		build_hyps(base, now)
+		local anchor = HY.primary or base
+		local count = corridor_axes(anchor)
+		local best_axis, best_cov, best_lo, best_hi = nil, -1, 0, 0
+		for k = 1, count do
+			local axis = axis_pool[k]
+			local cov, lo, hi = score_axis(anchor, axis)
+			if cov > best_cov then
+				best_axis, best_cov, best_lo, best_hi = axis, cov, lo, hi
+			end
+		end
+		if not best_axis then return nil end
+		HY.conf = HY.weight > 0 and best_cov / HY.weight or 0
+
+		local pad = P.pad
+		local origin = anchor + best_axis * (best_lo - pad)
+		local aim = anchor + best_axis * (best_hi + pad)
+		if (aim - origin).Magnitude < 4 then
+			origin = anchor - best_axis * 4
+			aim = anchor + best_axis * 4
+		end
+		return origin, aim, HY.conf, anchor
+	end
+
+	local pred_off = Vector3.zero
+	local pred_stamp = 0
+
+	local function lead_offset()
+		local part = target_part
+		if not part or not part.Parent then return Vector3.zero end
+		if not S.predict or not TR.ready then return Vector3.zero end
+		local base = part.Position
+		local now = os.clock()
+		local fh = Vector3.new(TR.fresh.X, 0, TR.fresh.Z)
+		local point = predict_from(base, 0, lead_time(), fh, now)
+		local off = point - base
+		pred_stamp = now
+		pred_off = off
+		return pred_off
+	end
+
+	local function cloud_confidence()
+		local anchor = HY.primary
+		if not anchor or HY.n == 0 or HY.weight <= 0 then return 0 end
+		local covered = 0
+		for k = 1, HY.n do
+			if (HY.pos[k] - anchor).Magnitude <= P.hit_r then
+				covered = covered + HY.w[k]
+			end
+		end
+		return covered / HY.weight
+	end
+	local hit_names = {
+		"HumanoidRootPart", "UpperTorso", "Torso", "LowerTorso", "Head",
+		"RightUpperArm", "LeftUpperArm", "Right Arm", "Left Arm",
+		"RightUpperLeg", "LeftUpperLeg", "Right Leg", "Left Leg",
+		"RightLowerLeg", "LeftLowerLeg",
+	}
+
+	local hit_parts = {}
+	local hit_count = 0
+	local hit_char = nil
+
+	local function refresh_parts()
+		local char = target_char
+		if char == hit_char then return end
+		table.clear(hit_parts)
+		hit_count = 0
+		hit_char = char
+		if not char then return end
+		for k = 1, #hit_names do
+			local part = char:FindFirstChild(hit_names[k])
+			if part and part:IsA("BasePart") then
+				hit_count = hit_count + 1
+				hit_parts[hit_count] = part
+			end
+		end
+	end
+
+	local function los_clear(origin, point)
+		if not origin or not point then return false end
+		local delta = point - origin
+		local dist = delta.Magnitude
+		if dist < 0.5 then return true end
+		if dist > MAX_RANGE then return false end
+		local hit = trace(origin, delta)
+		if not hit then return true end
+		local inst = hit.Instance
+		local char = target_char
+		if inst and char and (inst == char or inst:IsDescendantOf(char)) then return true end
+		return (hit.Position - origin).Magnitude >= dist - 0.75
+	end
+
+	local function pick_point(origin, strict)
+		refresh_parts()
+		if hit_count == 0 then return nil end
+		local off = lead_offset()
+		local first = nil
+		for k = 1, hit_count do
+			local part = hit_parts[k]
+			if not part.Parent then
+				hit_char = nil
+			else
+				local point = part.Position + off
+				if not origin then return point end
+				if not first then first = point end
+				if los_clear(origin, point) then return point end
+			end
+		end
+		if strict then return nil end
+		return first
+	end
+
+	local force_att = nil
+	local force_saved = nil
+	local force_stamp = 0
+
+	local function restore_origin()
+		local att = force_att
+		if not att then return end
+		local saved = force_saved
+		force_att = nil
+		force_saved = nil
+		if saved then
+			pcall(function()
+				if att.Parent then att.CFrame = saved end
+			end)
+		end
+	end
+
+	local function push_origin(cf)
+		local att = gun_attachment()
+		if not att then return false end
+		if force_att and force_att ~= att then restore_origin() end
+		if not force_att then
+			local ok, saved = pcall(function() return att.CFrame end)
+			if not ok or typeof(saved) ~= "CFrame" then return false end
+			force_att = att
+			force_saved = saved
+		end
+		force_stamp = os.clock()
+		local ok = pcall(function() att.WorldCFrame = cf end)
+		if not ok then
+			restore_origin()
+			return false
+		end
+		task.defer(restore_origin)
+		return true
+	end
+
+	local function is_target_hit(inst)
+		local char = target_char
+		if not inst or not char then return false end
+		return inst == char or inst:IsDescendantOf(char)
+	end
+
+	local function force_clear(origin, aim)
+		local hit = trace(origin, aim - origin)
+		if not hit then return false end
+		return is_target_hit(hit.Instance)
+	end
+
+	local function force_velocity()
+		if TR.fresh_ok and TR.fresh.Magnitude > 0.5 then return TR.fresh end
+		if TR.ready and TR.vel.Magnitude > 0.5 then return TR.vel end
+		return Vector3.zero
+	end
+
+	local function resolve_force()
+		local part = target_part
+		if not part or not part.Parent then return nil end
+		local live = part.Position
+		local now = os.clock()
+
+		local origin, aim, conf, anchor = build_corridor(now)
+		if origin and aim then
+			local axis = aim - origin
+			local span = axis.Magnitude
+			if span > 1e-3 then
+				local u = axis / span
+				local mark = anchor or live
+				local behind = (mark - origin):Dot(u)
+				if behind < P.pad then
+					origin = origin - u * (P.pad - behind)
+				end
+				local ahead = (aim - mark):Dot(u)
+				if ahead < P.min_span then
+					aim = mark + u * P.min_span
+				end
+				local want = S.stand_off
+				while want > 0 do
+					local probe = origin - u * want
+					if (aim - probe).Magnitude <= P.max_span
+						and los_clear(probe, mark)
+						and los_clear(probe, live) then
+						origin = probe
+						break
+					end
+					want = want - 3
+				end
+				if (aim - origin).Magnitude > P.max_span then
+					origin = aim - u * P.max_span
+				end
+				return CFrame.new(origin, aim), CFrame.new(aim), conf or 0, mark
+			end
+		end
+
+		local vel = force_velocity()
+		local dir = Vector3.new(0, -1, 0)
+		if vel.Magnitude > 3 then
+			dir = vel.Unit
+		else
+			local mine = origin_cframe()
+			if mine then
+				local delta = live - mine.Position
+				if delta.Magnitude > 2 then dir = delta.Unit end
+			end
+		end
+		local back = live - dir * 6
+		local front = live + dir * math.max(P.min_span, vel.Magnitude * lead_time() + 8)
+		if not force_clear(back, front) then
+			back = live - dir * 2.5
+		end
+		return CFrame.new(back, front), CFrame.new(front), 0, live
+	end
+
+	local function shot_shift(dt)
+		if not S.predict or not TR.ready or dt <= 0 then return Vector3.zero end
+		local shift = Vector3.new(TR.vel.X * dt, 0, TR.vel.Z * dt)
+		if TR.air then
+			local g = grav()
+			local horizon = lead_time()
+			local vy = TR.vel.Y
+			local phase = math.max(0, os.clock() - TR.air_since)
+			local modeled = TR.jump_v - g * phase
+			if TR.jumping and TR.jump_v > 0 and g > 0 and phase <= TR.jump_v / g and modeled > vy then vy = modeled end
+			shift = Vector3.new(shift.X, vy * dt - g * horizon * dt - 0.5 * g * dt * dt, shift.Z)
+		end
+		return shift
+	end
+
+	local function compensate_force(origin_cf, aim_cf, started)
+		local shift = shot_shift(math.max(0, os.clock() - started))
+		if shift == Vector3.zero then return origin_cf, aim_cf end
+		local origin = origin_cf.Position + shift
+		local aim = aim_cf.Position + shift
+		return CFrame.new(origin, aim), CFrame.new(aim)
+	end
+
+	local function resolve_shot()
+		if not S.enabled or not S.am_sheriff or not target_alive() then return nil end
+		if S.force then
+			local started = os.clock()
+			local origin_cf, aim_cf = resolve_force()
+			if origin_cf and aim_cf then
+				origin_cf, aim_cf = compensate_force(origin_cf, aim_cf, started)
+				if push_origin(origin_cf) then return aim_cf end
+			end
+		end
+		local cf = origin_cframe()
+		local aim = pick_point(cf and cf.Position or nil, false)
+		if not aim then return nil end
+		return CFrame.new(aim)
+	end
+
+	local function compensate_resolve(cf)
+		if S.force or typeof(cf) ~= "CFrame" then return cf end
+		return CFrame.new(cf.Position + shot_shift(math.max(0, os.clock() - pred_stamp)))
+	end
+
+	local weapon_service = nil
+	local orig_mouse = nil
+	local orig_screen = nil
+	local hook_mouse = nil
+	local hook_screen = nil
+
+	local function get_weapon_service()
+		if weapon_service then return weapon_service end
+		local ok, m = pcall(function()
+			return require(rs:WaitForChild("ClientServices"):WaitForChild("WeaponService"))
+		end)
+		if ok and type(m) == "table" then weapon_service = m end
+		return weapon_service
+	end
+
+	local function install_hooks()
+		local m = get_weapon_service()
+		if not m then return end
+		if not hook_mouse then
+			local function knife_aim()
+				local fn = getgenv().KNIFE_AIM_RESOLVE
+				if type(fn) ~= "function" then return nil end
+				local ok, cf = pcall(fn)
+				if ok and typeof(cf) == "CFrame" then return cf end
+				return nil
+			end
+			hook_mouse = function(self, ...)
+				sample_ping()
+				local ok, cf = pcall(resolve_shot)
+				if ok and cf then return compensate_resolve(cf) end
+				local kcf = knife_aim()
+				if kcf then return kcf end
+				return orig_mouse(self, ...)
+			end
+			hook_screen = function(self, x, y, ...)
+				sample_ping()
+				local ok, cf = pcall(resolve_shot)
+				if ok and cf then return compensate_resolve(cf) end
+				local kcf = knife_aim()
+				if kcf then return kcf end
+				return orig_screen(self, x, y, ...)
+			end
+		end
+		pcall(function() setreadonly(m, false) end)
+		if type(m.GetMouseTargetCFrame) == "function" and m.GetMouseTargetCFrame ~= hook_mouse then
+			orig_mouse = m.GetMouseTargetCFrame
+			pcall(function() m.GetMouseTargetCFrame = hook_mouse end)
+		end
+		if type(m.GetTargetPosition) == "function" and m.GetTargetPosition ~= hook_screen then
+			orig_screen = m.GetTargetPosition
+			pcall(function() m.GetTargetPosition = hook_screen end)
+		end
+	end
+
+	local gun_fired_conn = nil
+	local last_fire_stamp = 0
+
+	local function on_gun_fired(tool)
+		if typeof(tool) ~= "Instance" then return end
+		local char = lp.Character
+		if not char then return end
+		local ok, mine = pcall(function() return tool:IsDescendantOf(char) end)
+		if not ok or not mine then return end
+		local now = os.clock()
+		if last_fire_stamp > 0 and want_since > 0 and want_since <= last_fire_stamp then
+			gap_push(now - last_fire_stamp)
+		end
+		last_fire_stamp = now
+	end
+
+	local function connect_gun_fired()
+		if gun_fired_conn then return end
+		local m = get_weapon_service()
+		if not m then return end
+		local ev = m.GunFired
+		if typeof(ev) ~= "Instance" then return end
+		gun_fired_conn = ev.OnClientEvent:Connect(function(tool)
+			pcall(on_gun_fired, tool)
+		end)
+	end
+
+	local function get_gun()
+		local char = lp.Character
+		if char then
+			local g = char:FindFirstChild("Gun")
+			if g then return g, true end
+		end
+		local bp = lp:FindFirstChildOfClass("Backpack")
+		if bp then
+			local g = bp:FindFirstChild("Gun")
+			if g then return g, false end
+		end
+		return nil, false
+	end
+
+	local function fire_gun(gun, start_cf, aim_cf)
+		if not gun or not start_cf or not aim_cf then return false end
+		local remote = gun:FindFirstChild("Shoot")
+		if not remote or not remote:IsA("RemoteEvent") then return false end
+		return (pcall(function() remote:FireServer(start_cf, aim_cf) end))
+	end
+
+	local function auto_step(now)
+		if not S.auto_on or not S.enabled or not S.am_sheriff or getgenv().AUTOFARM_HOLD or not target_alive() then
+			want_since = 0
+			return
+		end
+		local gun, equipped = get_gun()
+		if not gun then
+			want_since = 0
+			return
+		end
+		if gun ~= gap_gun then
+			gap_gun = gun
+			gap_reset()
+		end
+		if not equipped then
+			want_since = 0
+			local hum = lp.Character and lp.Character:FindFirstChildOfClass("Humanoid")
+			if hum then pcall(function() hum:EquipTool(gun) end) end
+			return
+		end
+		if want_since == 0 then want_since = now end
+		local hold = S.auto_delay
+		if hold < S.fire_gap then hold = S.fire_gap end
+		local since = last_fire_stamp > 0 and last_fire_stamp or S.last_shot
+		if now - since < hold then return end
+		if S.force then
+			local started = os.clock()
+			local origin_cf, aim_cf = resolve_force()
+			if not origin_cf or not aim_cf then return end
+			origin_cf, aim_cf = compensate_force(origin_cf, aim_cf, started)
+			if fire_gun(gun, origin_cf, aim_cf) then
+				S.last_shot = now
+			end
+			return
+		end
+		local cf = origin_cframe()
+		if not cf then return end
+		local aim = pick_point(cf.Position, true)
+		if not aim then return end
+		local aim_cf = compensate_resolve(CFrame.new(aim))
+		if fire_gun(gun, cf, aim_cf) then
+			S.last_shot = now
+		end
+	end
+
+	local watch_conns = {}
+
+	local function clear_watch()
+		for k = 1, #watch_conns do
+			local conn = watch_conns[k]
+			pcall(function() conn:Disconnect() end)
+		end
+		table.clear(watch_conns)
+	end
+
+	local function setup_watch()
+		clear_watch()
+		local m = get_round()
+		if m and m.PlayerDataChanged then
+			watch_conns[#watch_conns + 1] = m.PlayerDataChanged.Event:Connect(function()
+				pcall(refresh_target)
+			end)
+		end
+		watch_conns[#watch_conns + 1] = lp.CharacterAdded:Connect(function()
+			task.wait(0.3)
+			pcall(refresh_target)
+		end)
+	end
+
+	local next_role = 0
+	local next_hook = 0
+
+	local function tick()
+		if force_att and os.clock() - force_stamp > 0.05 then restore_origin() end
+		local now = os.clock()
+		if now >= next_role then
+			next_role = now + 0.2
+			refresh_target()
+		end
+		sample_ping()
+		track(now)
+		if not S.enabled then return end
+		if now >= next_hook then
+			next_hook = now + 1
+			install_hooks()
+			connect_gun_fired()
+		end
+		auto_step(now)
+	end
+
+	local main_conn = run.Heartbeat:Connect(function()
+		pcall(tick)
+	end)
+
+	local left = v301._left
+	local secL = v301._sectionLeft
+
+	left:Paragraph({ Title = 'Silent Aim' })
+
+	left:Toggle({
+		Flag = "silent",
+		Title = "Silent Aim",
+		Default = false,
+		Callback = function(v)
+			S.enabled = v
+			getgenv().SILENT_AIM_ACTIVE = v
+			if v then
+				task.spawn(function()
+					pcall(install_hooks)
+					pcall(connect_gun_fired)
+					pcall(setup_watch)
+					pcall(refresh_target)
+				end)
+			else
+				clear_watch()
+				track_clear()
+			end
+			v18:Notify({ Title = 'Lunar', Content = v and 'Silent Aim ON' or 'Silent Aim OFF', Duration = 3, Icon = 'bell' })
+		end,
+	})
+
+	left:Toggle({
+		Flag = "silent_prediction",
+		Title = "Prediction",
+		Default = true,
+		Callback = function(v)
+			S.predict = v
+			if not v then track_clear() end
+		end,
+	})
+
+	left:Toggle({
+		Flag = "silent_force",
+		Title = "Force Shoot",
+		Default = false,
+		Callback = function(v)
+			S.force = v
+			if not v then restore_origin() end
+		end,
+	})
+
+	left:Toggle({
+		Flag = "silent_auto_shoot",
+		Title = "Auto Shoot",
+		Default = false,
+		Callback = function(v) S.auto_on = v end,
+	})
+
+	secL:AddLabel("Auto shoot delay"):AddSlider({
+		Flag = "silent_auto_delay",
+		Min = 0,
+		Max = 600,
+		Default = 0,
+		Rounding = 0,
+		Type = " ms",
+		Callback = function(v) S.auto_delay = v / 1000 end,
+	})
+
+	local function shoot_now()
+		pcall(refresh_target)
+		if not target_alive() then return false end
+		local gun, equipped = get_gun()
+		if not gun then return false end
+		if not equipped then
+			local hum = lp.Character and lp.Character:FindFirstChildOfClass("Humanoid")
+			if not hum then return false end
+			pcall(function() hum:EquipTool(gun) end)
+			task.wait()
+			gun = get_gun()
+			if not gun then return false end
+		end
+		local now = os.clock()
+		if S.force then
+			local started = os.clock()
+			local origin_cf, aim_cf = resolve_force()
+			if not origin_cf or not aim_cf then return false end
+			origin_cf, aim_cf = compensate_force(origin_cf, aim_cf, started)
+			if fire_gun(gun, origin_cf, aim_cf) then S.last_shot = now return true end
+			return false
+		end
+		local cf = origin_cframe()
+		if not cf then return false end
+		local aim = pick_point(cf.Position, true)
+		if not aim then return false end
+		local aim_cf = compensate_resolve(CFrame.new(aim))
+		if fire_gun(gun, cf, aim_cf) then S.last_shot = now return true end
+		return false
+	end
+
+	getgenv().SILENT_SHOT = function()
+		local ok, res = pcall(shoot_now)
+		return ok and res == true
+	end
+
+	getgenv().SILENT_INSTALL_HOOKS = function()
+		pcall(install_hooks)
+	end
+
+	getgenv().SILENT_DBG = function()
+		local coh, omega = dir_stats(lead_time())
+		return {
+			target = target_player and target_player.Name or "none",
+			ping = EC.ping,
+			rtt = EC.rtt,
+			jitter = EC.jitter,
+			step = EC.step,
+			lead = lead_time(),
+			coherence = coh,
+			omega = omega,
+			turn = TR.turn,
+			spoof = TR.spoof,
+			clearance = TR.clr,
+			ground = GC.seen and GC.base or 0,
+			jump_learned = JL.seen and JL.v or 0,
+			jump_v = TR.jump_v,
+			fire_gap = S.fire_gap,
+			want_since = want_since,
+			conf_point = cloud_confidence(),
+			conf_ray = HY.conf,
+			gap = TR.gap,
+			airborne = TR.air,
+			vel_fresh = TR.fresh,
+			vel_pos = TR.vel,
+		}
+	end
+
+	task.spawn(function()
+		pcall(install_hooks)
+		pcall(connect_gun_fired)
+	end)
+
+	getgenv().SILENT_UNLOAD = function()
+		S.enabled = false
+		S.predict = false
+		S.force = false
+		S.auto_on = false
+		getgenv().SILENT_AIM_ACTIVE = false
+		getgenv().SILENT_SHOT = nil
+		restore_origin()
+		clear_watch()
+		track_clear()
+		if gun_fired_conn then
+			pcall(function() gun_fired_conn:Disconnect() end)
+			gun_fired_conn = nil
+		end
+		if main_conn then
+			pcall(function() main_conn:Disconnect() end)
+			main_conn = nil
+		end
+		local m = weapon_service
+		if m then
+			pcall(function() setreadonly(m, false) end)
+			if orig_mouse then
+				pcall(function() m.GetMouseTargetCFrame = orig_mouse end)
+			end
+			if orig_screen then
+				pcall(function() m.GetTargetPosition = orig_screen end)
+			end
+		end
+	end
+end
+__silent_aim_block()
+end
+
+v301._right:Paragraph({ Title = 'Optional Buttons' })
+v301._right:Toggle({
+    Flag = "load_esp_toggle", Title = 'Load ESP Toggle',
+    Default = false,
+    Callback = function(p59) u252(p59) end,
+})
+v301._right:Toggle({
+    Flag = "load_flick", Title = 'Load Flick',
+    Default = false,
+    Callback = function(p60) u257(p60) end,
+})
+v301._right:Toggle({
+    Flag = "load_speed_glitch", Title = 'Load Speed Glitch',
+    Default = false,
+    Callback = function(p62) u263(p62) end,
+})
+v301._right:Toggle({
+    Flag = "load_stretch", Title = 'Load Stretch',
+    Default = false,
+    Callback = function(p63) u270(p63) end,
+})
+v301._right:Button({
+    Title = 'Stretch Resolution Slider',
+    Callback = function()
+        local v607 = n17 * 100
+        local v608 = math.round(v607)
+
+        u126('Stretch Resolution', 10, 100, v608, 5, function(p64)
+            n17 = p64 / 100
+            if u120 then u127(true) end
+            u128:Notify({ Title = 'Lunar', Content = 'Stretch set to ' .. p64 .. '%  (1.0 = normal)', Duration = 3, Icon = 'bell' })
+        end, function()
+            n17 = 0.5
+            if u120 then u127(true) end
+            u128:Notify({ Title = 'Lunar', Content = 'Stretch reset to 50%', Duration = 3, Icon = 'bell' })
+        end)
+    end,
+})
+v301._right:Toggle({
+    Flag = "load_fling_murderer", Title = 'Load Fling Murderer',
+    Default = false,
+    Callback = function(p65) u287(p65) end,
+})
+v301._right:Toggle({
+    Flag = "load_fling_sheriff", Title = 'Load Fling Sheriff',
+    Default = false,
+    Callback = function(p66) u293(p66) end,
+})
+v301._right:Toggle({
+    Flag = "load_wall_hop", Title = 'Load Wall Hop',
+    Default = false,
+    Callback = function(p67) u281(p67) end,
+})
+
+v301._right:Paragraph({ Title = 'Graphics' })
+
+local t32 = {
+    Flag = "low_graphics_fps_boost",
+    Title = 'Low Graphics (FPS Boost)',
+    Default = false,
+}
+
+local function u316()
+    if u16 then
+        u16 = false
+        u173.Brightness = u174.Brightness
+        u173.GlobalShadows = u174.GlobalShadows
+        u173.Ambient = u174.Ambient
+        u173.OutdoorAmbient = u174.OutdoorAmbient
+
+        for _, child in pairs(u173:GetChildren())do
+            if child:IsA('BloomEffect') or child:IsA('SunRaysEffect') or child:IsA('ColorCorrectionEffect') then
+                child:Destroy()
+            end
+        end
+    end
+
+    u15 = true
+
+    pcall(function()
+        settings().Rendering.QualityLevel = Enum.QualityLevel.Level01
+    end)
+    pcall(function()
+        setfpscap(9999)
+    end)
+
+    u173.GlobalShadows = false
+    u173.Brightness = 2
+
+    for _, descendant in ipairs(u175:GetDescendants())do
+        local _pcall = pcall
+        local u695 = descendant
+
+        pcall(function()
+            u176(u695)
+        end)
+    end
+
+    if u172 then
+        u172:Disconnect()
+    end
+
+    u172 = u175.DescendantAdded:Connect(function(descendant)
+        task.wait(0.1)
+
+        local u911 = descendant
+
+        pcall(function()
+            u176(u911)
+        end)
+    end)
+    u177.Visible = true
+
+    u178:Notify({
+        Title = 'Lunar',
+        Content = tostring('Low Graphics ON \u{2014} FPS boost active'),
+        Duration = 3,
+        Icon = 'bell',
+    })
+end
+
+local u317 = v183
+
+function t32.Callback(p71)
+    if not p71 then
+        u317()
+
+        return
+    end
+
+    u316()
+end
+
+v301._right:Toggle(t32)
+
+local t33 = {
+    Flag = "high_graphics_beautiful",
+    Title = 'High Graphics (Beautiful)',
+    Default = false,
+}
+
+local function u319()
+    if u15 then
+        u184()
+    end
+
+    u16 = true
+
+    pcall(function()
+        settings().Rendering.QualityLevel = Enum.QualityLevel.Level21
+    end)
+
+    u185.GlobalShadows = true
+    u185.Brightness = 3.5
+    u185.Ambient = Color3.fromRGB(80, 80, 100)
+    u185.OutdoorAmbient = Color3.fromRGB(100, 110, 130)
+
+    local v701 = u185:FindFirstChildOfClass('BloomEffect') or Instance.new('BloomEffect', u185)
+
+    v701.Intensity = 0.6
+    v701.Size = 24
+    v701.Threshold = 0.95
+
+    local v702 = u185:FindFirstChildOfClass('SunRaysEffect') or Instance.new('SunRaysEffect', u185)
+
+    v702.Intensity = 0.25
+    v702.Spread = 1
+
+    local v703 = u185:FindFirstChildOfClass('ColorCorrectionEffect') or Instance.new('ColorCorrectionEffect', u185)
+
+    v703.Saturation = 0.2
+    v703.Contrast = 0.1
+    v703.Brightness = 0.05
+
+    u186:Notify({
+        Title = 'Lunar',
+        Content = tostring('High Graphics ON'),
+        Duration = 3,
+        Icon = 'bell',
+    })
+end
+local function u320()
+    u16 = false
+
+    pcall(function()
+        settings().Rendering.QualityLevel = Enum.QualityLevel.Automatic
+    end)
+
+    u187.Brightness = u188.Brightness
+    u187.GlobalShadows = u188.GlobalShadows
+    u187.Ambient = u188.Ambient
+    u187.OutdoorAmbient = u188.OutdoorAmbient
+
+    for _, child in pairs(u187:GetChildren())do
+        if child:IsA('BloomEffect') or child:IsA('SunRaysEffect') or child:IsA('ColorCorrectionEffect') then
+            child:Destroy()
+        end
+    end
+
+    u189:Notify({
+        Title = 'Lunar',
+        Content = tostring('High Graphics OFF'),
+        Duration = 3,
+        Icon = 'bell',
+    })
+end
+
+function t33.Callback(p72)
+    if not p72 then
+        u320()
+
+        return
+    end
+
+    u319()
+end
+
+v301._right:Toggle(t33)
+
+local t34 = {
+    Flag = "fov_slider",
+    Title = 'FOV Slider',
+}
+local u322 = v25
+local u323 = CurrentCamera
+local u324 = v18
+
+function t34.Callback()
+    u322('Field of View', 30, 120, n3, 5, function(p73)
+        n3 = p73
+        u323.FieldOfView = p73
+    end, function()
+        n3 = 70
+        u323.FieldOfView = 70
+
+        u324:Notify({
+            Title = 'Lunar',
+            Content = tostring('FOV reset to 70'),
+            Duration = 3,
+            Icon = 'bell',
+        })
+    end)
+end
+
+v301._right:Button(t34)
+v301._right:Paragraph({ Title = 'Extra Scripts' })
+
+local t35 = {
+    Flag = "load_emotes_gui",
+    Title = 'Load Emotes GUI',
+}
+local u326 = v18
+
+function t35.Callback()
+    local ok, result = pcall(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/7yd7/Hub/refs/heads/Branch/GUIS/Emotes.lua'))()
+    end)
+    local v814 = ok and 'Emotes GUI loaded!' or 'Error: ' .. tostring(result)
+
+    u326:Notify({
+        Title = 'Lunar',
+        Content = tostring(v814),
+        Duration = 3,
+        Icon = 'bell',
+    })
+end
+
+v301._right:Button(t35)
+
+local t36 = {
+    Flag = "load_infinite_yield",
+    Title = 'Load Infinite Yield',
+}
+local u328 = v18
+
+function t36.Callback()
+    local ok, result = pcall(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end)
+    local v817 = ok and 'Infinite Yield loaded!' or 'Error: ' .. tostring(result)
+
+    u328:Notify({
+        Title = 'Lunar',
+        Content = tostring(v817),
+        Duration = 3,
+        Icon = 'bell',
+    })
+end
+
+v301._right:Button(t36)
+
+local t37 = {
+    Flag = "anti_fling",
+    Title = 'Anti-Fling',
+    Default = false,
+}
+local u330 = v18
+
+function t37.Callback(p74)
+    u156(p74)
+
+    local v819 = p74 and 'Anti-Fling ON' or 'Anti-Fling OFF'
+
+    u330:Notify({
+        Title = 'Lunar',
+        Content = tostring(v819),
+        Duration = 3,
+        Icon = 'bell',
+    })
+end
+
+v301._right:Toggle(t37)
+
+local t39 = {
+    Flag = "speed_glitch_slider",
+    Title = 'Speed Glitch Slider',
+}
+local u334 = v25
+local u335 = v18
+
+function t39.Callback()
+    u334('Speed Glitch', 50, 600, n2, 10, function(p76)
+        n2 = p76
+    end, function()
+        n2 = 200
+        u335:Notify({ Title = 'Lunar', Content = 'Speed reset to 200', Duration = 3, Icon = 'bell' })
+    end)
+end
+
+v301._right:Button(t39)
+v301._right:Dropdown({
+    Flag = "velocity_cap_anti_fling", Title = 'Velocity Cap (Anti-Fling)',
+    Options = { '50', '100', '150', '200', '300', '500' },
+    Default = '200',
+    Callback = function(p77)
+        n1 = tonumber(p77) or 200
+    end,
+})
+
+
+local t40 = {
+    Flag = "enable_esp",
+    Title = 'Enable ESP',
+    Default = false,
+}
+local u337 = v78
+local u338 = v68
+local u339 = v18
+
+function t40.Callback(p78)
+    u61 = p78
+
+    if not p78 then
+        if u62 then
+            u62:Disconnect()
+
+            u62 = nil
+        end
+
+        task.delay(0.1, u338)
+    else
+        u337()
+    end
+
+    local v824 = p78 and 'ESP ON' or 'ESP OFF'
+
+    u339:Notify({
+        Title = 'Lunar',
+        Content = tostring(v824),
+        Duration = 3,
+        Icon = 'bell',
+    })
+end
+
+v302:Toggle(t40)
+v302:Divider()
+
+local t41 = {
+    Flag = "show_murderer",
+    Title = 'Show Murderer',
+    Default = true,
+}
+local u341 = t3
+
+function t41.Callback(p79)
+    u341.Murderer = p79
+end
+
+v302:Toggle(t41)
+
+local t42 = {
+    Flag = "show_sheriff",
+    Title = 'Show Sheriff',
+    Default = true,
+}
+local u343 = t3
+
+function t42.Callback(p80)
+    u343.Sheriff = p80
+end
+
+v302:Toggle(t42)
+
+local t43 = {
+    Flag = "show_hero",
+    Title = 'Show Hero',
+    Default = true,
+}
+local u345 = t3
+
+function t43.Callback(p81)
+    u345.Hero = p81
+end
+
+v302:Toggle(t43)
+
+local t44 = {
+    Flag = "show_innocents",
+    Title = 'Show Innocents',
+    Default = true,
+}
+local u347 = t3
+
+function t44.Callback(p82)
+    u347.Innocent = p82
+end
+
+v302:Toggle(t44)
+
+local t45 = {
+    Flag = "show_self",
+    Title = 'Show Self',
+    Default = true,
+}
+local u349 = t3
+
+function t45.Callback(p83)
+    u349.Self = p83
+end
+
+v302:Toggle(t45)
+
+local t46 = {
+    Flag = "dropped_gun_esp",
+    Title = 'Dropped Gun ESP',
+    Description = 'Highlight and label when a gun is on the map',
+    Default = true,
+}
+local u351 = v18
+
+function t46.Callback(p84)
+    u17 = p84
+
+    if not p84 then
+        if u31 then
+            u31:Destroy()
+
+            u31 = nil
+        end
+        if u32 then
+            u32:Destroy()
+
+            u32 = nil
+        end
+        if u29 then
+            u29:Destroy()
+
+            u29 = nil
+        end
+    end
+
+    local v831 = p84 and 'Gun ESP ON' or 'Gun ESP OFF'
+
+    u351:Notify({
+        Title = 'Lunar',
+        Content = tostring(v831),
+        Duration = 3,
+        Icon = 'bell',
+    })
+end
+
+v302:Toggle(t46)
+v302:Divider()
+
+local t47 = {
+    Flag = "murderer_color",
+    Title = 'Murderer Color',
+    Default = Color3.fromRGB(255, 40, 40),
+}
+local u353 = t4
+
+function t47.Callback(p85)
+    u353.Murderer = p85
+end
+
+v302:ColorPicker(t47)
+
+local t48 = {
+    Flag = "sheriff_color",
+    Title = 'Sheriff Color',
+    Default = Color3.fromRGB(40, 130, 255),
+}
+local u355 = t4
+
+function t48.Callback(p86)
+    u355.Sheriff = p86
+end
+
+v302:ColorPicker(t48)
+
+local t49 = {
+    Flag = "hero_color",
+    Title = 'Hero Color',
+    Default = Color3.fromRGB(255, 215, 0),
+}
+local u357 = t4
+
+function t49.Callback(p87)
+    u357.Hero = p87
+end
+
+v302:ColorPicker(t49)
+
+local t50 = {
+    Flag = "innocent_color",
+    Title = 'Innocent Color',
+    Default = Color3.fromRGB(0, 220, 0),
+}
+local u359 = t4
+
+function t50.Callback(p88)
+    u359.Innocent = p88
+end
+
+v302:ColorPicker(t50)
+task.wait(0.4)
+v232(false)
+v239(false)
+v244(false)
+v18:Notify({
+    Title = 'Lunar',
+    Content = tostring('Lunar Ready!'),
+    Duration = 3,
+    Icon = 'bell',
+})
+print('Lunar make detka')
