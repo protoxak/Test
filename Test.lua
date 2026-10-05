@@ -1,3 +1,4 @@
+--LPH OBFUSCATION WARN BAN IP AND HWID
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -6402,20 +6403,14 @@ do
         end
     end
 
-    local function _world_register(flag, control)
-        if flag and control and control.GetValue and control.SetValue then
-            NeverLose.Flags[flag] = control
-        end
-        return control
-    end
-
     VisualsTab._left:Divider()
     VisualsTab._left:Paragraph({
         Title = "World"
     })
 
-    _world_register("world_fullbright", VisualsTab._left:Toggle({
+    VisualsTab._left:Toggle({
         Flag = "world_fullbright",
+        Save = true,
         Title = "Fullbright",
         Default = false,
         Callback = function(state)
@@ -6445,10 +6440,11 @@ do
                 end
             end
         end,
-    ))
+    })
 
-    _world_register("world_custom_fog", VisualsTab._left:Toggle({
+    VisualsTab._left:Toggle({
         Flag = "world_custom_fog",
+        Save = true,
         Title = "Custom Fog",
         Default = false,
         Callback = function(state)
@@ -6469,10 +6465,11 @@ do
                 end
             end
         end,
-    ))
+    })
 
-    _world_register("world_fog_color", VisualsTab._left:ColorPicker({
+    VisualsTab._left:ColorPicker({
         Flag = "world_fog_color",
+        Save = true,
         Title = "Fog Color",
         Default = Color3.fromRGB(192, 192, 192),
         Callback = function(color)
@@ -6481,10 +6478,11 @@ do
                 lighting.FogColor = color
             end
         end,
-    ))
+    })
 
-    _world_register("world_fog_start", VisualsTab._left:Slider({
+    VisualsTab._left:Slider({
         Flag = "world_fog_start",
+        Save = true,
         Title = "Fog Start",
         Value = { Min = 0, Max = 1000, Default = 0 },
         Rounding = 0,
@@ -6494,10 +6492,11 @@ do
                 lighting.FogStart = value
             end
         end,
-    ))
+    })
 
-    _world_register("world_fog_end", VisualsTab._left:Slider({
+    VisualsTab._left:Slider({
         Flag = "world_fog_end",
+        Save = true,
         Title = "Fog End",
         Value = { Min = 0, Max = 1000, Default = 1000 },
         Rounding = 0,
@@ -6507,10 +6506,11 @@ do
                 lighting.FogEnd = value
             end
         end,
-    ))
+    })
 
-    _world_register("world_time", VisualsTab._left:Toggle({
+    VisualsTab._left:Toggle({
         Flag = "world_time",
+        Save = true,
         Title = "Time Changer",
         Default = false,
         Callback = function(state)
@@ -6518,10 +6518,11 @@ do
             getgenv().WORLD_TIME_ENABLED = state
             lighting.ClockTime = state and world_time_value or originalClockTime
         end,
-    ))
+    })
 
-    _world_register("world_time_value", VisualsTab._left:Slider({
+    VisualsTab._left:Slider({
         Flag = "world_time_value",
+        Save = true,
         Title = "Time",
         Value = { Min = 0, Max = 24, Default = 12 },
         Rounding = 1,
@@ -6531,20 +6532,22 @@ do
                 lighting.ClockTime = value
             end
         end,
-    ))
+    })
 
-    _world_register("world_ambient", VisualsTab._left:Toggle({
+    VisualsTab._left:Toggle({
         Flag = "world_ambient",
+        Save = true,
         Title = "Ambient",
         Default = false,
         Callback = function(state)
             getgenv().WORLD_AMBIENT_ENABLED = state
             apply_world_ambient()
         end,
-    ))
+    })
 
-    _world_register("world_ambient_color", VisualsTab._left:ColorPicker({
+    VisualsTab._left:ColorPicker({
         Flag = "world_ambient_color",
+        Save = true,
         Title = "Ambient Color",
         Default = Color3.fromRGB(128, 128, 128),
         Callback = function(color)
@@ -6553,10 +6556,11 @@ do
                 apply_world_ambient()
             end
         end,
-    ))
+    })
 
-    _world_register("world_exposure", VisualsTab._left:Toggle({
+    VisualsTab._left:Toggle({
         Flag = "world_exposure",
+        Save = true,
         Title = "Exposure",
         Default = false,
         Callback = function(state)
@@ -6568,10 +6572,11 @@ do
                 lighting.ExposureCompensation = originalExposureCompensation
             end
         end,
-    ))
+    })
 
-    _world_register("world_exposure_value", VisualsTab._left:Slider({
+    VisualsTab._left:Slider({
         Flag = "world_exposure_value",
+        Save = true,
         Title = "Exposure Value",
         Value = { Min = -3, Max = 3, Default = 0 },
         Rounding = 2,
@@ -6581,10 +6586,11 @@ do
                 lighting.ExposureCompensation = value
             end
         end,
-    ))
+    })
 
-    _world_register("world_shaders", VisualsTab._left:Toggle({
+    VisualsTab._left:Toggle({
         Flag = "world_shaders",
+        Save = true,
         Title = "Shaders",
         Default = false,
         Callback = function(state)
@@ -6599,10 +6605,11 @@ do
                 restore_original()
             end
         end,
-    ))
+    })
 
-    _world_register("world_shader_type", VisualsTab._left:Dropdown({
+    VisualsTab._left:Dropdown({
         Flag = "world_shader_type",
+        Save = true,
         Title = "Shader",
         Values = { "morning", "midday", "evening", "night" },
         Value = "morning",
@@ -6616,7 +6623,7 @@ do
                 end
             end
         end,
-    ))
+    })
 
 end
 
