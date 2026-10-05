@@ -1,3 +1,4 @@
+-- best ezz
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -6286,51 +6287,413 @@ do
 			created_effects.cloud = nil
 		end
 	end
+    -- WORLD
+    getgenv().WORLD_FOG_ENABLED = false
+    getgenv().WORLD_FOG_COLOR = Color3.fromRGB(192, 192, 192)
+    getgenv().WORLD_FOG_START = 0
+    getgenv().WORLD_FOG_END = 1000
+    getgenv().WORLD_AMBIENT_ENABLED = false
+    getgenv().WORLD_AMBIENT_COLOR = Color3.fromRGB(128, 128, 128)
+    getgenv().WORLD_EXPOSURE_ENABLED = false
+    getgenv().WORLD_EXPOSURE_VALUE = 0
 
-    local ambience_enabled = false
-    local ambience_style = "morning"
+    local world_time_on = false
+    local world_time_value = 12
 
-    local function setAmbience(enabled)
-        ambience_enabled = enabled
-        if enabled then
-            local data = shaders[ambience_style]
-            if data then
-                apply_shader(data)
-            end
+    local function apply_world_ambient()
+        if getgenv().WORLD_AMBIENT_ENABLED then
+            lighting.Ambient = getgenv().WORLD_AMBIENT_COLOR
+            lighting.OutdoorAmbient = getgenv().WORLD_AMBIENT_COLOR
         else
-            restore_original()
+            lighting.Ambient = originalAmbient
+            lighting.OutdoorAmbient = originalOutdoorAmbient
         end
     end
 
     VisualsTab._left:Divider()
     VisualsTab._left:Paragraph({
-        Title = "Ambience",
-        Content = "Lighting and atmosphere presets"
+        Title = "World",
+        Content = "Lighting and world visual settings"
     })
 
     VisualsTab._left:Toggle({
-        Flag = "ambience_enabled",
-        Title = "Enable Ambience",
-        Description = "Apply the selected lighting preset",
+        Flag = "world_fullbright",
+        Title = "Fullbright",
         Default = false,
         Callback = function(state)
-            setAmbience(state)
+            getgenv().WORLD_FULLBRIGHT_ENABLED = state
+
+            if state then
+                lighting.Brightness = 2
+                lighting.ClockTime = 14
+                lighting.GlobalShadows = false
+                lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+
+                if not getgenv().WORLD_FOG_ENABLED then
+                    lighting.FogEnd = 100000
+                end
+            else
+                lighting.Brightness = originalBrightness
+                lighting.GlobalShadows = originalGlobalShadows
+                lighting.OutdoorAmbient =
+                    getgenv().WORLD_AMBIENT_ENABLED
+                    and getgenv().WORLD_AMBIENT_COLOR
+                    or originalOutdoorAmbient
+
+                if getgenv().WORLD_FOG_ENABLED then
+                    lighting.FogEnd = getgenv().WORLD_FOG_END
+                else
+                    lighting.FogEnd = originalFogEnd
+                end
+            end
+        end,
+    })
+
+    VisualsTab._left:Toggle({
+        Flag = "world_custom_fog",
+        Title = "Custom Fog",
+        Default = false,
+        Callback = function(state)
+            getgenv().WORLD_FOG_ENABLED = state
+
+            if state then
+                lighting.FogColor = getgenv().WORLD_FOG_COLOR
+                lighting.FogStart = getgenv().WORLD_FOG_START
+                lighting.FogEnd = getgenv().WORLD_FOG_END
+            else
+                lighting.FogColor = originalFogColor
+                lighting.FogStart = originalFogStart
+
+                if getgenv().WORLD_FULLBRIGHT_ENABLED then
+                    lighting.FogEnd = 100000
+                else
+                    lighting.FogEnd = originalFogEnd
+                end
+            end
+        end,
+    })
+
+    VisualsTab._left:ColorPicker({
+        Flag = "world_fog_color",
+        Title = "Fog Color",
+        Default = Color3.fromRGB(192, 192, 192),
+        Callback = function(color)
+            getgenv().WORLD_FOG_COLOR = color
+            if getgenv().WORLD_FOG_ENABLED then
+                lighting.FogColor = color
+            end
+        end,
+    })
+
+    VisualsTab._left:Slider({
+        Flag = "world_fog_start",
+        Title = "Fog Start",
+        Value = { Min = 0, Max = 1000, Default = 0 },
+        Rounding = 0,
+        Callback = function(value)
+            getgenv().WORLD_FOG_START = value
+            if getgenv().WORLD_FOG_ENABLED then
+                lighting.FogStart = value
+            end
+        end,
+    })
+
+    VisualsTab._left:Slider({
+        Flag = "world_fog_end",
+        Title = "Fog End",
+        Value = { Min = 0, Max = 1000, Default = 1000 },
+        Rounding = 0,
+        Callback = function(value)
+            getgenv().WORLD_FOG_END = value
+            if getgenv().WORLD_FOG_ENABLED then
+                lighting.FogEnd = value
+            end
+        end,
+    })
+
+    VisualsTab._left:Toggle({
+        Flag = "world_time",
+        Title = "Time Changer",
+        Default = false,
+        Callback = function(state)
+            world_time_on = state
+            getgenv().WORLD_TIME_ENABLED = state
+            lighting.ClockTime = state and world_time_value or originalClockTime
+        end,
+    })
+
+    VisualsTab._left:Slider({
+        Flag = "world_time_value",
+        Title = "Time",
+        Value = { Min = 0, Max = 24, Default = 12 },
+        Rounding = 1,
+        Callback = function(value)
+            world_time_value = value
+            if world_time_on then
+                lighting.ClockTime = value
+            end
+        end,
+    })
+
+    VisualsTab._left:Toggle({
+        Flag = "world_ambient",
+        Title = "Ambient",
+        Default = false,
+        Callback = function(state)
+            getgenv().WORLD_AMBIENT_ENABLED = state
+            apply_world_ambient()
+        end,
+    })
+
+    VisualsTab._left:ColorPicker({
+        Flag = "world_ambient_color",
+        Title = "Ambient Color",
+        Default = Color3.fromRGB(128, 128, 128),
+        Callback = function(color)
+            getgenv().WORLD_AMBIENT_COLOR = color
+            if getgenv().WORLD_AMBIENT_ENABLED then
+                apply_world_ambient()
+            end
+        end,
+    })
+
+    VisualsTab._left:Toggle({
+        Flag = "world_exposure",
+        Title = "Exposure",
+        Default = false,
+        Callback = function(state)
+            getgenv().WORLD_EXPOSURE_ENABLED = state
+
+            if state then
+                lighting.ExposureCompensation = getgenv().WORLD_EXPOSURE_VALUE
+            else
+                lighting.ExposureCompensation = originalExposureCompensation
+            end
+        end,
+    })
+
+    VisualsTab._left:Slider({
+        Flag = "world_exposure_value",
+        Title = "Exposure Value",
+        Value = { Min = -3, Max = 3, Default = 0 },
+        Rounding = 2,
+        Callback = function(value)
+            getgenv().WORLD_EXPOSURE_VALUE = value
+            if getgenv().WORLD_EXPOSURE_ENABLED then
+                lighting.ExposureCompensation = value
+            end
+        end,
+    })
+
+    VisualsTab._left:Toggle({
+        Flag = "world_shaders",
+        Title = "Shaders",
+        Default = false,
+        Callback = function(state)
+            shader_enabled = state
+
+            if state then
+                local data = shaders[shader_type]
+                if data then
+                    apply_shader(data)
+                end
+            else
+                restore_original()
+            end
         end,
     })
 
     VisualsTab._left:Dropdown({
-        Flag = "ambience_style",
-        Title = "Ambience Style",
-        Values = {"morning", "midday", "evening", "night"},
+        Flag = "world_shader_type",
+        Title = "Shader",
+        Values = { "morning", "midday", "evening", "night" },
         Value = "morning",
         Callback = function(value)
-            ambience_style = value
-            if ambience_enabled then
-                setAmbience(true)
+            shader_type = value
+
+            if shader_enabled then
+                local data = shaders[shader_type]
+                if data then
+                    apply_shader(data)
+                end
             end
         end,
     })
-end
+
+    -- WORLD EFFECTS
+    local RunService = game:GetService("RunService")
+    local WORLD_FX_TEXTURE = "rbxasset://textures/particles/smoke_main.dds"
+
+    local fx_on = false
+    local fx_type = "Snow"
+    local fx_color = Color3.fromRGB(150, 200, 255)
+    local fx_rate = 250
+    local fx_part = nil
+    local fx_emitter = nil
+    local fx_connection = nil
+
+    local FX_SPAN = 260
+    local FX_TALL = 140
+
+    local function style_emitter()
+        if not fx_emitter then
+            return
+        end
+
+        fx_emitter.Texture = WORLD_FX_TEXTURE
+        fx_emitter.Rate = fx_rate
+        fx_emitter.Color = ColorSequence.new(fx_color)
+        fx_emitter.LockedToPart = false
+        fx_emitter.EmissionDirection = Enum.NormalId.Bottom
+        fx_emitter.SpreadAngle = Vector2.new(8, 8)
+
+        if fx_type == "Snow" then
+            fx_emitter.Lifetime = NumberRange.new(4, 7)
+            fx_emitter.Speed = NumberRange.new(2, 6)
+            fx_emitter.Acceleration = Vector3.new(0, -2, 0)
+            fx_emitter.Rotation = NumberRange.new(0, 360)
+            fx_emitter.RotSpeed = NumberRange.new(-45, 45)
+            fx_emitter.Size = NumberSequence.new({
+                NumberSequenceKeypoint.new(0, 0.18),
+                NumberSequenceKeypoint.new(0.5, 0.14),
+                NumberSequenceKeypoint.new(1, 0.08),
+            })
+            fx_emitter.Transparency = NumberSequence.new({
+                NumberSequenceKeypoint.new(0, 0.15),
+                NumberSequenceKeypoint.new(0.8, 0.25),
+                NumberSequenceKeypoint.new(1, 1),
+            })
+        else
+            fx_emitter.Lifetime = NumberRange.new(3, 6)
+            fx_emitter.Speed = NumberRange.new(1, 3)
+            fx_emitter.Acceleration = Vector3.new(0, -1, 0)
+            fx_emitter.Rotation = NumberRange.new(0, 360)
+            fx_emitter.RotSpeed = NumberRange.new(-70, 70)
+            fx_emitter.Size = NumberSequence.new({
+                NumberSequenceKeypoint.new(0, 0.35),
+                NumberSequenceKeypoint.new(0.5, 0.28),
+                NumberSequenceKeypoint.new(1, 0.12),
+            })
+            fx_emitter.Transparency = NumberSequence.new({
+                NumberSequenceKeypoint.new(0, 0.1),
+                NumberSequenceKeypoint.new(0.8, 0.3),
+                NumberSequenceKeypoint.new(1, 1),
+            })
+        end
+    end
+
+    local function ensure_fx_part()
+        if fx_part and fx_part.Parent then
+            return
+        end
+
+        fx_part = Instance.new("Part")
+        fx_part.Name = "SHITARO_WORLD_FX"
+        fx_part.Anchored = true
+        fx_part.CanCollide = false
+        fx_part.CanQuery = false
+        fx_part.CanTouch = false
+        fx_part.Transparency = 1
+        fx_part.Size = Vector3.new(FX_SPAN, 1, FX_SPAN)
+        fx_part.Parent = workspace
+
+        fx_emitter = Instance.new("ParticleEmitter")
+        fx_emitter.Parent = fx_part
+        style_emitter()
+    end
+
+    local function stop_fx()
+        fx_on = false
+
+        if fx_connection then
+            fx_connection:Disconnect()
+            fx_connection = nil
+        end
+
+        if fx_emitter then
+            fx_emitter.Enabled = false
+        end
+
+        if fx_part then
+            fx_part:Destroy()
+            fx_part = nil
+            fx_emitter = nil
+        end
+    end
+
+    local function start_fx()
+        ensure_fx_part()
+
+        fx_on = true
+        fx_emitter.Enabled = true
+        style_emitter()
+
+        if fx_connection then
+            fx_connection:Disconnect()
+        end
+
+        fx_connection = RunService.RenderStepped:Connect(function()
+            if not fx_on or not fx_part then
+                return
+            end
+
+            local camera = workspace.CurrentCamera
+            if camera then
+                fx_part.Position = camera.CFrame.Position + Vector3.new(0, FX_TALL / 2, 0)
+            end
+        end)
+    end
+
+    VisualsTab._left:Toggle({
+        Flag = "world_effects",
+        Title = "World Effects",
+        Default = false,
+        Callback = function(state)
+            if state then
+                start_fx()
+            else
+                stop_fx()
+            end
+        end,
+    })
+
+    VisualsTab._left:Dropdown({
+        Flag = "world_effects_type",
+        Title = "Effect",
+        Values = { "Snow", "Sakura" },
+        Value = "Snow",
+        Callback = function(value)
+            fx_type = value
+            if fx_emitter then
+                style_emitter()
+            end
+        end,
+    })
+
+    VisualsTab._left:ColorPicker({
+        Flag = "world_effects_color",
+        Title = "Effect Color",
+        Default = Color3.fromRGB(150, 200, 255),
+        Callback = function(color)
+            fx_color = color
+            if fx_emitter then
+                style_emitter()
+            end
+        end,
+    })
+
+    VisualsTab._left:Slider({
+        Flag = "world_effects_rate",
+        Title = "Effect Rate",
+        Value = { Min = 20, Max = 900, Default = 250 },
+        Rounding = 0,
+        Callback = function(value)
+            fx_rate = value
+            if fx_emitter then
+                fx_emitter.Rate = value
+            end
+        end,
+    })
 
 v301._left:Paragraph({ Title = 'Combat Buttons' })
 
