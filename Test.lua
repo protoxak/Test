@@ -1,3 +1,4 @@
+--11111
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -4614,6 +4615,7 @@ end
 
         v303._left:Button({
             Title = 'Fling Selected Player',
+            Description = 'Fling the selected player',
             Callback = function()
                 if not flingSelected then
                     v18:Notify({
@@ -4658,6 +4660,7 @@ end
 
         v303._left:Button({
             Title = 'Refresh Fling List',
+            Description = 'Update the player list',
             Callback = rebuildFlingList,
         })
 
@@ -4802,6 +4805,7 @@ end
 
         v303._right:Button({
             Title = 'Teleport to Player',
+            Description = 'Teleport to the selected player',
             Callback = function()
                 if not teleportSelected then
                     v18:Notify({ Title = 'Lunar', Content = 'Select a player first!', Duration = 3, Icon = 'bell' })
@@ -4823,6 +4827,7 @@ end
 
         v303._right:Button({
             Title = 'Refresh Teleport List',
+            Description = 'Update the player list',
             Callback = function() rebuildTeleportNames() end,
         })
 
@@ -4927,6 +4932,7 @@ end
 
         VisualsTab._left:Toggle({
             Flag = "enable_auras",Title = "Enable Auras",
+            Description = "Apply selected auras to your character",
             Default = false,
             Callback = function(state)
                 aura_active = state
@@ -4958,6 +4964,7 @@ end
 
         VisualsTab._left:Dropdown({
             Flag = "color_preset",Title = "Color Preset",
+            Description = "Pick a preset color",
             Values = colorPresets,
             Value = "Default (Blue)",
             Callback = function(val)
@@ -4991,6 +4998,7 @@ end
 
         VisualsTab._left:Button({
             Title = "Clear All Auras",
+            Description = "Remove all aura effects from character",
             Callback = function()
                 clearAura()
                 v18:Notify({
@@ -5008,6 +5016,7 @@ VisualsTab._left:Paragraph({
 })
 VisualsTab._left:Button({
     Title = 'Open Skybox Picker',
+    Description = 'Color preview list \u{2014} click to apply instantly',
     Callback = function()
         local RuzSkyboxPicker = game.CoreGui:FindFirstChild('RuzSkyboxPicker')
 
@@ -5247,6 +5256,7 @@ VisualsTab._right:Paragraph({
 local t31 = {
     Flag = "enable_custom_crosshair",
     Title = 'Enable Custom Crosshair',
+    Description = 'Visible only while ShiftLock is on',
     Default = false,
 }
 
@@ -5361,6 +5371,7 @@ end
 VisualsTab._right:Toggle(t31)
 VisualsTab._right:Button({
     Title = 'Open Cursor Picker',
+    Description = 'Visual grid with spin toggle \u{2014} click to apply',
     Callback = function()
         local RuzCursorPicker = game.CoreGui:FindFirstChild('RuzCursorPicker')
 
@@ -5838,7 +5849,7 @@ do
     end
 
     VisualsTab._left:Divider()
-    VisualsTab._left:Paragraph({ Title = "China Hat" })
+    VisualsTab._left:Paragraph({ Title = "China Hat", Content = "Decorative hat on your character" })
 
     VisualsTab._left:Toggle({
         Flag = "enable_china_hat",Title   = "Enable China Hat",
@@ -6399,7 +6410,6 @@ do
 
     VisualsTab._left:Toggle({
         Flag = "world_fullbright",
-        Save = true,
         Title = "Fullbright",
         Default = false,
         Callback = function(state)
@@ -6433,7 +6443,6 @@ do
 
     VisualsTab._left:Toggle({
         Flag = "world_custom_fog",
-        Save = true,
         Title = "Custom Fog",
         Default = false,
         Callback = function(state)
@@ -6458,7 +6467,6 @@ do
 
     VisualsTab._left:ColorPicker({
         Flag = "world_fog_color",
-        Save = true,
         Title = "Fog Color",
         Default = Color3.fromRGB(192, 192, 192),
         Callback = function(color)
@@ -6471,7 +6479,6 @@ do
 
     VisualsTab._left:Slider({
         Flag = "world_fog_start",
-        Save = true,
         Title = "Fog Start",
         Value = { Min = 0, Max = 1000, Default = 0 },
         Rounding = 0,
@@ -6485,7 +6492,6 @@ do
 
     VisualsTab._left:Slider({
         Flag = "world_fog_end",
-        Save = true,
         Title = "Fog End",
         Value = { Min = 0, Max = 1000, Default = 1000 },
         Rounding = 0,
@@ -6499,7 +6505,6 @@ do
 
     VisualsTab._left:Toggle({
         Flag = "world_time",
-        Save = true,
         Title = "Time Changer",
         Default = false,
         Callback = function(state)
@@ -6511,7 +6516,6 @@ do
 
     VisualsTab._left:Slider({
         Flag = "world_time_value",
-        Save = true,
         Title = "Time",
         Value = { Min = 0, Max = 24, Default = 12 },
         Rounding = 1,
@@ -6525,7 +6529,6 @@ do
 
     VisualsTab._left:Toggle({
         Flag = "world_ambient",
-        Save = true,
         Title = "Ambient",
         Default = false,
         Callback = function(state)
@@ -6536,7 +6539,6 @@ do
 
     VisualsTab._left:ColorPicker({
         Flag = "world_ambient_color",
-        Save = true,
         Title = "Ambient Color",
         Default = Color3.fromRGB(128, 128, 128),
         Callback = function(color)
@@ -6549,7 +6551,6 @@ do
 
     VisualsTab._left:Toggle({
         Flag = "world_exposure",
-        Save = true,
         Title = "Exposure",
         Default = false,
         Callback = function(state)
@@ -6565,7 +6566,6 @@ do
 
     VisualsTab._left:Slider({
         Flag = "world_exposure_value",
-        Save = true,
         Title = "Exposure Value",
         Value = { Min = -3, Max = 3, Default = 0 },
         Rounding = 2,
@@ -6579,7 +6579,6 @@ do
 
     VisualsTab._left:Toggle({
         Flag = "world_shaders",
-        Save = true,
         Title = "Shaders",
         Default = false,
         Callback = function(state)
@@ -6598,7 +6597,6 @@ do
 
     VisualsTab._left:Dropdown({
         Flag = "world_shader_type",
-        Save = true,
         Title = "Shader",
         Values = { "morning", "midday", "evening", "night" },
         Value = "morning",
@@ -8949,6 +8947,7 @@ v302:Toggle(t45)
 local t46 = {
     Flag = "dropped_gun_esp",
     Title = 'Dropped Gun ESP',
+    Description = 'Highlight and label when a gun is on the map',
     Default = true,
 }
 local u351 = v18
