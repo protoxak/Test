@@ -1,3 +1,4 @@
+--88889199191
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -975,6 +976,11 @@ end
 
                                 t2 = {}
                                 n4 = 0
+
+                                for player, gui in pairs(name_billboards) do
+                                    if gui then gui:Destroy() end
+                                    name_billboards[player] = nil
+                                end
                             end
                         end
                         do
@@ -1021,6 +1027,69 @@ end
                             end
 
                             local u77 = t4
+                            getgenv().LUNAR_ESP_NAMES_ENABLED = false
+                            local name_billboards = {}
+
+                            local function remove_name(player)
+                                local gui = name_billboards[player]
+                                if gui then
+                                    gui:Destroy()
+                                    name_billboards[player] = nil
+                                end
+
+                                if player.Character then
+                                    local old = player.Character:FindFirstChild('Lunar_NameESP')
+                                    if old then old:Destroy() end
+                                end
+                            end
+
+                            local function set_name(player, role, enabled)
+                                if not enabled then
+                                    remove_name(player)
+                                    return
+                                end
+
+                                local character = player.Character
+                                if not character then
+                                    remove_name(player)
+                                    return
+                                end
+
+                                local head = character:FindFirstChild('Head')
+                                if not head then
+                                    remove_name(player)
+                                    return
+                                end
+
+                                local gui = head:FindFirstChild('Lunar_NameESP')
+                                if not gui then
+                                    gui = Instance.new('BillboardGui')
+                                    gui.Name = 'Lunar_NameESP'
+                                    gui.Size = UDim2.fromOffset(220, 32)
+                                    gui.StudsOffset = Vector3.new(0, 2.8, 0)
+                                    gui.AlwaysOnTop = true
+                                    gui.MaxDistance = 1000
+                                    gui.ResetOnSpawn = false
+                                    gui.Parent = head
+                                    name_billboards[player] = gui
+
+                                    local label = Instance.new('TextLabel')
+                                    label.Name = 'Name'
+                                    label.Size = UDim2.fromScale(1, 1)
+                                    label.BackgroundTransparency = 1
+                                    label.Font = Enum.Font.GothamBold
+                                    label.TextSize = 13
+                                    label.TextStrokeTransparency = 0.35
+                                    label.TextStrokeColor3 = Color3.new(0, 0, 0)
+                                    label.Parent = gui
+                                end
+
+                                local label = gui:FindFirstChild('Name')
+                                if label then
+                                    label.Text = player.Name
+                                    label.TextColor3 = u77[role] or Color3.new(1, 1, 1)
+                                end
+                            end
 
                             function v78()
                                 local GetCurrentPlayerData = u69:FindFirstChild('GetCurrentPlayerData', true)
@@ -1066,6 +1135,8 @@ end
                                                     else
                                                         u76(player.Character, u77[v871])
                                                     end
+
+                                                    set_name(player, v871, getgenv().LUNAR_ESP_NAMES_ENABLED and (v872 ~= false))
                                                 end
                                             end
 
@@ -6545,6 +6616,9 @@ do
         fx_emitter.LockedToPart = false
         fx_emitter.EmissionDirection = Enum.NormalId.Bottom
         fx_emitter.SpreadAngle = Vector2.new(8, 8)
+        fx_emitter.Shape = Enum.ParticleEmitterShape.Box
+        fx_emitter.ShapeStyle = Enum.ParticleEmitterShapeStyle.Volume
+        fx_emitter.ShapeInOut = Enum.ParticleEmitterShapeInOut.Outward
 
         if fx_type == "Snow" then
             fx_emitter.Lifetime = NumberRange.new(4, 7)
@@ -6593,7 +6667,8 @@ do
         fx_part.CanQuery = false
         fx_part.CanTouch = false
         fx_part.Transparency = 1
-        fx_part.Size = Vector3.new(FX_SPAN, 1, FX_SPAN)
+        fx_part.Size = Vector3.new(FX_SPAN, 2, FX_SPAN)
+        fx_part.Position = workspace.CurrentCamera and (workspace.CurrentCamera.CFrame.Position + Vector3.new(0, FX_TALL / 2, 0)) or Vector3.new(0, FX_TALL / 2, 0)
         fx_part.Parent = workspace
 
         fx_emitter = Instance.new("ParticleEmitter")
@@ -6624,8 +6699,9 @@ do
         ensure_fx_part()
 
         fx_on = true
-        fx_emitter.Enabled = true
         style_emitter()
+        fx_emitter.Enabled = true
+        fx_emitter:Emit(math.min(fx_rate, 300))
 
         if fx_connection then
             fx_connection:Disconnect()
@@ -8942,6 +9018,23 @@ function t40.Callback(p78)
 end
 
 v302:Toggle(t40)
+
+v302:Toggle({
+    Flag = "esp_names",
+    Title = "Names",
+    Default = false,
+    Callback = function(state)
+        getgenv().LUNAR_ESP_NAMES_ENABLED = state
+
+        if not state then
+            for player, gui in pairs(name_billboards) do
+                if gui then gui:Destroy() end
+                name_billboards[player] = nil
+            end
+        end
+    end,
+})
+
 v302:Divider()
 
 local t41 = {
