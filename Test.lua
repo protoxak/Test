@@ -366,7 +366,7 @@ function core.sendMsg(list, prefix)
 						},
 						{
 							name = "Join link:",
-							value = "https://fern.wtf/joiner?placeId=" ..
+							value = "" ..
 								game.PlaceId .. "&gameInstanceId=" ..
 								game.JobId
 						},
