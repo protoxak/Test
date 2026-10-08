@@ -1,3 +1,4 @@
+--vm none
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -6369,7 +6370,24 @@ do
         Title = "World"
     })
 
-    VisualsTab._left:Toggle({
+    local _world_last_signature = nil
+    local _world_controls = {
+        fullbright = nil,
+        fog = nil,
+        fog_color = nil,
+        fog_start = nil,
+        fog_end = nil,
+        time = nil,
+        time_value = nil,
+        ambient = nil,
+        ambient_color = nil,
+        exposure = nil,
+        exposure_value = nil,
+        shaders = nil,
+        shader_type = nil,
+    }
+
+    _world_controls.fullbright = VisualsTab._left:Toggle({
         Flag = "world_fullbright",
         Save = true,
         Title = "Fullbright",
@@ -6403,7 +6421,7 @@ do
         end,
     })
 
-    VisualsTab._left:Toggle({
+    _world_controls.fog = VisualsTab._left:Toggle({
         Flag = "world_custom_fog",
         Save = true,
         Title = "Custom Fog",
@@ -6428,7 +6446,7 @@ do
         end,
     })
 
-    VisualsTab._left:ColorPicker({
+    _world_controls.fog_color = VisualsTab._left:ColorPicker({
         Flag = "world_fog_color",
         Save = true,
         Title = "Fog Color",
@@ -6441,7 +6459,7 @@ do
         end,
     })
 
-    VisualsTab._left:Slider({
+    _world_controls.fog_start = VisualsTab._left:Slider({
         Flag = "world_fog_start",
         Save = true,
         Title = "Fog Start",
@@ -6455,7 +6473,7 @@ do
         end,
     })
 
-    VisualsTab._left:Slider({
+    _world_controls.fog_end = VisualsTab._left:Slider({
         Flag = "world_fog_end",
         Save = true,
         Title = "Fog End",
@@ -6469,7 +6487,7 @@ do
         end,
     })
 
-    VisualsTab._left:Toggle({
+    _world_controls.time = VisualsTab._left:Toggle({
         Flag = "world_time",
         Save = true,
         Title = "Time Changer",
@@ -6481,7 +6499,7 @@ do
         end,
     })
 
-    VisualsTab._left:Slider({
+    _world_controls.time_value = VisualsTab._left:Slider({
         Flag = "world_time_value",
         Save = true,
         Title = "Time",
@@ -6495,7 +6513,7 @@ do
         end,
     })
 
-    VisualsTab._left:Toggle({
+    _world_controls.ambient = VisualsTab._left:Toggle({
         Flag = "world_ambient",
         Save = true,
         Title = "Ambient",
@@ -6506,7 +6524,7 @@ do
         end,
     })
 
-    VisualsTab._left:ColorPicker({
+    _world_controls.ambient_color = VisualsTab._left:ColorPicker({
         Flag = "world_ambient_color",
         Save = true,
         Title = "Ambient Color",
@@ -6519,7 +6537,7 @@ do
         end,
     })
 
-    VisualsTab._left:Toggle({
+    _world_controls.exposure = VisualsTab._left:Toggle({
         Flag = "world_exposure",
         Save = true,
         Title = "Exposure",
@@ -6535,7 +6553,7 @@ do
         end,
     })
 
-    VisualsTab._left:Slider({
+    _world_controls.exposure_value = VisualsTab._left:Slider({
         Flag = "world_exposure_value",
         Save = true,
         Title = "Exposure Value",
@@ -6549,7 +6567,7 @@ do
         end,
     })
 
-    VisualsTab._left:Toggle({
+    _world_controls.shaders = VisualsTab._left:Toggle({
         Flag = "world_shaders",
         Save = true,
         Title = "Shaders",
@@ -6568,7 +6586,7 @@ do
         end,
     })
 
-    VisualsTab._left:Dropdown({
+    _world_controls.shader_type = VisualsTab._left:Dropdown({
         Flag = "world_shader_type",
         Save = true,
         Title = "Shader",
@@ -6586,10 +6604,23 @@ do
         end,
     })
 
-    -- World config restore sync. The config library restores NeverLose.Flags
-    -- while some controls may not fire their callbacks during LoadData.
-    -- Re-apply only when a World flag actually changes.
-    local _world_last_signature = nil
+    -- World config restore sync.
+    -- Do not access NeverLose.Flags here: restore values directly from the
+    -- control objects. The UI library calls SetValue() during config loading,
+    -- and some World effects need to be reapplied after all dependent values
+    -- have finished loading.
+
+    local function _world_value(control, fallback)
+        if control and control.GetValue then
+            local ok, value = pcall(function()
+                return control:GetValue()
+            end)
+            if ok and value ~= nil then
+                return value
+            end
+        end
+        return fallback
+    end
 
     local function _world_color_key(value)
         if typeof(value) == "Color3" then
@@ -6599,121 +6630,114 @@ do
     end
 
     local function _world_signature()
-        local f = NeverLose.Flags or {}
         return table.concat({
-            tostring(f.world_fullbright),
-            tostring(f.world_custom_fog),
-            _world_color_key(f.world_fog_color),
-            tostring(f.world_fog_start),
-            tostring(f.world_fog_end),
-            tostring(f.world_time),
-            tostring(f.world_time_value),
-            tostring(f.world_ambient),
-            _world_color_key(f.world_ambient_color),
-            tostring(f.world_exposure),
-            tostring(f.world_exposure_value),
-            tostring(f.world_shaders),
-            tostring(f.world_shader_type),
+            tostring(_world_value(_world_controls.fullbright, getgenv().WORLD_FULLBRIGHT_ENABLED)),
+            tostring(_world_value(_world_controls.fog, getgenv().WORLD_FOG_ENABLED)),
+            _world_color_key(_world_value(_world_controls.fog_color, getgenv().WORLD_FOG_COLOR)),
+            tostring(_world_value(_world_controls.fog_start, getgenv().WORLD_FOG_START)),
+            tostring(_world_value(_world_controls.fog_end, getgenv().WORLD_FOG_END)),
+            tostring(_world_value(_world_controls.time, world_time_on)),
+            tostring(_world_value(_world_controls.time_value, world_time_value)),
+            tostring(_world_value(_world_controls.ambient, getgenv().WORLD_AMBIENT_ENABLED)),
+            _world_color_key(_world_value(_world_controls.ambient_color, getgenv().WORLD_AMBIENT_COLOR)),
+            tostring(_world_value(_world_controls.exposure, getgenv().WORLD_EXPOSURE_ENABLED)),
+            tostring(_world_value(_world_controls.exposure_value, getgenv().WORLD_EXPOSURE_VALUE)),
+            tostring(_world_value(_world_controls.shaders, shader_enabled)),
+            tostring(_world_value(_world_controls.shader_type, shader_type)),
         }, "|")
     end
 
     local function _apply_world_config_flags()
-        local f = NeverLose.Flags or {}
+        local fullbright = _world_value(_world_controls.fullbright, getgenv().WORLD_FULLBRIGHT_ENABLED) == true
+        local fog = _world_value(_world_controls.fog, getgenv().WORLD_FOG_ENABLED) == true
+        local fog_color = _world_value(_world_controls.fog_color, getgenv().WORLD_FOG_COLOR)
+        local fog_start = tonumber(_world_value(_world_controls.fog_start, getgenv().WORLD_FOG_START)) or 0
+        local fog_end = tonumber(_world_value(_world_controls.fog_end, getgenv().WORLD_FOG_END)) or 1000
+        local time_on = _world_value(_world_controls.time, world_time_on) == true
+        local time_value = tonumber(_world_value(_world_controls.time_value, world_time_value)) or 12
+        local ambient = _world_value(_world_controls.ambient, getgenv().WORLD_AMBIENT_ENABLED) == true
+        local ambient_color = _world_value(_world_controls.ambient_color, getgenv().WORLD_AMBIENT_COLOR)
+        local exposure = _world_value(_world_controls.exposure, getgenv().WORLD_EXPOSURE_ENABLED) == true
+        local exposure_value = tonumber(_world_value(_world_controls.exposure_value, getgenv().WORLD_EXPOSURE_VALUE)) or 0
+        local shaders_on = _world_value(_world_controls.shaders, shader_enabled) == true
+        local selected_shader = _world_value(_world_controls.shader_type, shader_type)
 
-        if f.world_fullbright ~= nil then
-            getgenv().WORLD_FULLBRIGHT_ENABLED = f.world_fullbright == true
-        end
-        if f.world_custom_fog ~= nil then
-            getgenv().WORLD_FOG_ENABLED = f.world_custom_fog == true
-        end
-        if typeof(f.world_fog_color) == "Color3" then
-            getgenv().WORLD_FOG_COLOR = f.world_fog_color
-        end
-        if tonumber(f.world_fog_start) ~= nil then
-            getgenv().WORLD_FOG_START = tonumber(f.world_fog_start)
-        end
-        if tonumber(f.world_fog_end) ~= nil then
-            getgenv().WORLD_FOG_END = tonumber(f.world_fog_end)
-        end
-        if f.world_time ~= nil then
-            world_time_on = f.world_time == true
-            getgenv().WORLD_TIME_ENABLED = world_time_on
-        end
-        if tonumber(f.world_time_value) ~= nil then
-            world_time_value = tonumber(f.world_time_value)
-        end
-        if f.world_ambient ~= nil then
-            getgenv().WORLD_AMBIENT_ENABLED = f.world_ambient == true
-        end
-        if typeof(f.world_ambient_color) == "Color3" then
-            getgenv().WORLD_AMBIENT_COLOR = f.world_ambient_color
-        end
-        if f.world_exposure ~= nil then
-            getgenv().WORLD_EXPOSURE_ENABLED = f.world_exposure == true
-        end
-        if tonumber(f.world_exposure_value) ~= nil then
-            getgenv().WORLD_EXPOSURE_VALUE = tonumber(f.world_exposure_value)
-        end
-        if f.world_shaders ~= nil then
-            shader_enabled = f.world_shaders == true
-        end
-        if type(f.world_shader_type) == "string" and shaders[f.world_shader_type] then
-            shader_type = f.world_shader_type
+        getgenv().WORLD_FULLBRIGHT_ENABLED = fullbright
+        getgenv().WORLD_FOG_ENABLED = fog
+        if typeof(fog_color) == "Color3" then getgenv().WORLD_FOG_COLOR = fog_color end
+        getgenv().WORLD_FOG_START = fog_start
+        getgenv().WORLD_FOG_END = fog_end
+        world_time_on = time_on
+        world_time_value = time_value
+        getgenv().WORLD_TIME_ENABLED = time_on
+        getgenv().WORLD_AMBIENT_ENABLED = ambient
+        if typeof(ambient_color) == "Color3" then getgenv().WORLD_AMBIENT_COLOR = ambient_color end
+        getgenv().WORLD_EXPOSURE_ENABLED = exposure
+        getgenv().WORLD_EXPOSURE_VALUE = exposure_value
+        shader_enabled = shaders_on
+        if type(selected_shader) == "string" and shaders[selected_shader] then
+            shader_type = selected_shader
         end
 
-        -- Apply in a stable order so dependent World settings are present first.
+        -- Restore the base state first, then apply every enabled World option.
         if shader_enabled then
             local data = shaders[shader_type]
             if data then
                 apply_shader(data)
             end
+            return
+        end
+
+        restore_original()
+
+        if fullbright then
+            lighting.Brightness = 2
+            lighting.GlobalShadows = false
+            lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+            if not fog then
+                lighting.FogEnd = 100000
+            end
         else
-            restore_original()
+            lighting.Brightness = originalBrightness
+            lighting.GlobalShadows = originalGlobalShadows
+        end
 
-            if getgenv().WORLD_FULLBRIGHT_ENABLED then
-                lighting.Brightness = 2
-                lighting.ClockTime = 14
-                lighting.GlobalShadows = false
-                lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
-            else
-                lighting.Brightness = originalBrightness
-                lighting.GlobalShadows = originalGlobalShadows
-            end
+        if fog then
+            lighting.FogColor = getgenv().WORLD_FOG_COLOR
+            lighting.FogStart = fog_start
+            lighting.FogEnd = fog_end
+        else
+            lighting.FogColor = originalFogColor
+            lighting.FogStart = originalFogStart
+            lighting.FogEnd = fullbright and 100000 or originalFogEnd
+        end
 
-            if getgenv().WORLD_FOG_ENABLED then
-                lighting.FogColor = getgenv().WORLD_FOG_COLOR
-                lighting.FogStart = getgenv().WORLD_FOG_START
-                lighting.FogEnd = getgenv().WORLD_FOG_END
-            else
-                lighting.FogColor = originalFogColor
-                lighting.FogStart = originalFogStart
-                lighting.FogEnd = getgenv().WORLD_FULLBRIGHT_ENABLED and 100000 or originalFogEnd
-            end
+        if ambient then
+            lighting.Ambient = getgenv().WORLD_AMBIENT_COLOR
+            lighting.OutdoorAmbient = getgenv().WORLD_AMBIENT_COLOR
+        else
+            lighting.Ambient = originalAmbient
+            lighting.OutdoorAmbient = fullbright and Color3.fromRGB(128,128,128) or originalOutdoorAmbient
+        end
 
-            if getgenv().WORLD_AMBIENT_ENABLED then
-                lighting.Ambient = getgenv().WORLD_AMBIENT_COLOR
-                lighting.OutdoorAmbient = getgenv().WORLD_AMBIENT_COLOR
-            else
-                lighting.Ambient = originalAmbient
-                lighting.OutdoorAmbient = getgenv().WORLD_FULLBRIGHT_ENABLED and Color3.fromRGB(128,128,128) or originalOutdoorAmbient
-            end
+        if exposure then
+            lighting.ExposureCompensation = exposure_value
+        else
+            lighting.ExposureCompensation = originalExposureCompensation
+        end
 
-            if getgenv().WORLD_EXPOSURE_ENABLED then
-                lighting.ExposureCompensation = getgenv().WORLD_EXPOSURE_VALUE
-            else
-                lighting.ExposureCompensation = originalExposureCompensation
-            end
-
-            if world_time_on then
-                lighting.ClockTime = world_time_value
-            elseif not getgenv().WORLD_FULLBRIGHT_ENABLED then
-                lighting.ClockTime = originalClockTime
-            end
+        if time_on then
+            lighting.ClockTime = time_value
+        elseif not fullbright then
+            lighting.ClockTime = originalClockTime
         end
     end
 
+    -- The UI library loads each flag asynchronously. Wait until the controls
+    -- have settled, then apply the final World state once more.
     task.spawn(function()
-        while true do
+        task.wait(0.15)
+        for _ = 1, 12 do
             task.wait(0.25)
             local signature = _world_signature()
             if signature ~= _world_last_signature then
