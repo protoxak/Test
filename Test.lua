@@ -1,3 +1,4 @@
+--iwiw
 repeat task.wait() until game:IsLoaded()
 
 local stealer = { core = {} }
