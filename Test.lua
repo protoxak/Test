@@ -1,4 +1,3 @@
---7181818
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -3257,7 +3256,7 @@ end
 
             local timerOn = false
             local timerBtn = nil
-            local base = { speed = 16, jump = 50, gravity = 196.2 }
+            local base = { speed = 16, jump = 50 }
 
             local function getHum()
                 local char = TLocal.Character
@@ -3270,19 +3269,17 @@ end
                 if on then
                     base.speed   = h and h.WalkSpeed or 16
                     base.jump    = h and h.JumpPower or 50
-                    base.gravity = workspace.Gravity
                 else
                     if h then
                         h.WalkSpeed = base.speed
                         h.JumpPower = base.jump
                     end
-                    workspace.Gravity = base.gravity
                 end
                 timerOn = on
             end
 
-            -- time warp: speed x k, gravity x k^2, jump power x k (keeps jump height)
-            TRun.Heartbeat:Connect(function()
+            -- time warp: walk speed x k, jump/fall k times faster with the same height (workspace.Gravity is not touched)
+            TRun.Heartbeat:Connect(function(dt)
                 if not timerOn then return end
                 local k = (getgenv().LUNAR_TIMER_PCT or 200) / 100
                 local h = getHum()
@@ -3290,8 +3287,17 @@ end
                     h.WalkSpeed = base.speed * k
                     h.UseJumpPower = true
                     h.JumpPower = base.jump * k
+
+                    local hrp = h.RootPart
+                    if hrp and k > 1 then
+                        local st = h:GetState()
+                        if st == Enum.HumanoidStateType.Freefall or st == Enum.HumanoidStateType.Jumping then
+                            -- extra downward pull on rise AND fall: same jump height, but k times faster
+                            local v = hrp.AssemblyLinearVelocity
+                            hrp.AssemblyLinearVelocity = Vector3.new(v.X, v.Y - workspace.Gravity * (k * k - 1) * dt, v.Z)
+                        end
+                    end
                 end
-                workspace.Gravity = base.gravity * k * k
             end)
 
             getgenv().LUNAR_LoadTimer = function(show)
