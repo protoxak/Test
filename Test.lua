@@ -1,4 +1,3 @@
---iqkqia
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -4650,6 +4649,125 @@ end
     end
 
     do
+        local FPlayers = game:GetService("Players")
+        local FRun     = game:GetService("RunService")
+        local FUIS     = game:GetService("UserInputService")
+        local FLocal   = FPlayers.LocalPlayer
+
+        local flyOn    = false
+        local flySpeed = 60
+        local flyConn  = nil
+        local bv, bg   = nil, nil
+
+        local function getParts()
+            local char = FLocal.Character
+            local hum  = char and char:FindFirstChildOfClass("Humanoid")
+            local hrp  = char and char:FindFirstChild("HumanoidRootPart")
+            return hum, hrp
+        end
+
+        local function stopFly()
+            if flyConn then flyConn:Disconnect() flyConn = nil end
+            if bv then bv:Destroy() bv = nil end
+            if bg then bg:Destroy() bg = nil end
+            local hum = getParts()
+            if hum then hum.PlatformStand = false end
+        end
+
+        local function startFly()
+            stopFly()
+            local hum, hrp = getParts()
+            if not hum or not hrp then return end
+
+            bv = Instance.new("BodyVelocity")
+            bv.MaxForce = Vector3.new(1e9, 1e9, 1e9)
+            bv.Velocity = Vector3.new(0, 0, 0)
+            bv.Parent = hrp
+
+            bg = Instance.new("BodyGyro")
+            bg.MaxTorque = Vector3.new(1e9, 1e9, 1e9)
+            bg.P = 9e4
+            bg.CFrame = hrp.CFrame
+            bg.Parent = hrp
+
+            hum.PlatformStand = true
+
+            flyConn = FRun.RenderStepped:Connect(function()
+                local h, root = getParts()
+                if not h or not root or not bv or not bv.Parent or not bg or not bg.Parent then
+                    return
+                end
+
+                local cam   = workspace.CurrentCamera
+                local look  = cam.CFrame.LookVector
+                local right = cam.CFrame.RightVector
+                local flatLook  = Vector3.new(look.X, 0, look.Z)
+                local flatRight = Vector3.new(right.X, 0, right.Z)
+                local md = h.MoveDirection
+                local vel = Vector3.new(0, 0, 0)
+
+                if md.Magnitude > 0 and flatLook.Magnitude > 0 and flatRight.Magnitude > 0 then
+                    local f = md:Dot(flatLook.Unit)
+                    local r = md:Dot(flatRight.Unit)
+                    vel = look * f + right * r
+                end
+                if FUIS:IsKeyDown(Enum.KeyCode.Space) then
+                    vel = vel + Vector3.new(0, 1, 0)
+                end
+                if FUIS:IsKeyDown(Enum.KeyCode.LeftShift) or FUIS:IsKeyDown(Enum.KeyCode.LeftControl) then
+                    vel = vel - Vector3.new(0, 1, 0)
+                end
+
+                bv.Velocity = vel * flySpeed
+                if flatLook.Magnitude > 0 then
+                    bg.CFrame = CFrame.new(root.Position, root.Position + flatLook)
+                end
+            end)
+        end
+
+        FLocal.CharacterAdded:Connect(function()
+            if flyOn then
+                task.wait(1)
+                if flyOn then startFly() end
+            end
+        end)
+
+        local flySection = v304._tab:AddSection({
+            Name     = "FLY",
+            Position = "right",
+        })
+
+        flySection:AddLabel("Fly"):AddToggle({
+            Default  = false,
+            Flag     = "fly_enabled",
+            Save     = true,
+            Callback = function(state)
+                flyOn = state
+                if state then startFly() else stopFly() end
+                v18:Notify({
+                    Title    = "Lunar",
+                    Content  = state and "Fly ON" or "Fly OFF",
+                    Duration = 3,
+                    Icon     = "bell",
+                })
+            end,
+        })
+
+        flySection:AddLabel("Fly Speed"):AddSlider({
+            Flag     = "fly_speed",
+            Save     = true,
+            Min      = 10,
+            Max      = 300,
+            Default  = 60,
+            Rounding = 0,
+            Type     = "",
+            Callback = function(val)
+                flySpeed = tonumber(val) or 60
+            end,
+        })
+    end
+
+    do
         local PRunService = game:GetService("RunService")
         local PPlayers = game:GetService("Players")
         local PLocal = PPlayers.LocalPlayer
@@ -5627,238 +5745,40 @@ function t31.Callback(p69)
 end
 
 VisualsTab._right:Toggle(t31)
-VisualsTab._right:Button({
-    Title = 'Open Cursor Picker',
-    Description = 'Visual grid with spin toggle \u{2014} click to apply',
-    Callback = function()
-        local RuzCursorPicker = game.CoreGui:FindFirstChild('RuzCursorPicker')
+do
+    local cursorNames = {}
+    for _, c in ipairs(u211) do
+        cursorNames[#cursorNames + 1] = c.name
+    end
 
-        if not RuzCursorPicker then
-            local ScreenGui = Instance.new('ScreenGui', game.CoreGui)
-
-            ScreenGui.Name = 'RuzCursorPicker'
-            ScreenGui.ResetOnSpawn = false
-            ScreenGui.DisplayOrder = 60
-
-            local Frame = Instance.new('Frame', ScreenGui)
-
-            Frame.Size = UDim2.new(0, 300, 0, 460)
-            Frame.Position = UDim2.new(0.5, -150, 0.04, 0)
-            Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
-            Frame.BackgroundTransparency = 0.06
-            Frame.BorderSizePixel = 0
-            Instance.new('UICorner', Frame).CornerRadius = UDim.new(0, 12)
-
-            local UIStroke = Instance.new('UIStroke', Frame)
-
-            UIStroke.Color = Color3.fromRGB(220, 38, 38)
-            UIStroke.Thickness = 1.5
-
-            local TextLabel = Instance.new('TextLabel', Frame)
-
-            TextLabel.Size = UDim2.new(1, -44, 0, 38)
-            TextLabel.Position = UDim2.new(0, 12, 0, 0)
-            TextLabel.BackgroundTransparency = 1
-            TextLabel.Text = 'Lunar  \u{2014}  Cursor Picker'
-            TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-            TextLabel.Font = Enum.Font.GothamBold
-            TextLabel.TextSize = 14
-            TextLabel.TextXAlignment = Enum.TextXAlignment.Left
-
-            local TextButton = Instance.new('TextButton', Frame)
-
-            TextButton.Size = UDim2.new(0, 28, 0, 28)
-            TextButton.Position = UDim2.new(1, -34, 0, 5)
-            TextButton.BackgroundColor3 = Color3.fromRGB(180, 30, 30)
-            TextButton.Text = 'X'
-            TextButton.TextColor3 = Color3.new(1, 1, 1)
-            TextButton.Font = Enum.Font.GothamBold
-            TextButton.TextSize = 13
-            Instance.new('UICorner', TextButton).CornerRadius = UDim.new(0, 6)
-
-            local MouseButton1Click = TextButton.MouseButton1Click
-            local u715 = ScreenGui
-
-            MouseButton1Click:Connect(function()
-                u715:Destroy()
-            end)
-
-            local TextBox = Instance.new('TextBox', Frame)
-
-            TextBox.Size = UDim2.new(1, -20, 0, 34)
-            TextBox.Position = UDim2.new(0, 10, 0, 44)
-            TextBox.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-            TextBox.Text = ''
-            TextBox.PlaceholderText = 'Enter custom Cursor ID, press Enter...'
-            TextBox.TextColor3 = Color3.new(1, 1, 1)
-            TextBox.PlaceholderColor3 = Color3.fromRGB(120, 120, 120)
-            TextBox.Font = Enum.Font.Gotham
-            TextBox.TextSize = 13
-            TextBox.ClearTextOnFocus = false
-            Instance.new('UICorner', TextBox).CornerRadius = UDim.new(0, 6)
-            Instance.new('UIStroke', TextBox).Color = Color3.fromRGB(80, 80, 80)
-
-            local FocusLost = TextBox.FocusLost
-            local u718 = TextBox
-
-            FocusLost:Connect(function(p70)
-                if p70 and u718.Text ~= '' then
-                    id = u718.Text
-
+    VisualsTab._right:Dropdown({
+        Flag = "crosshair_cursor",
+        Title = 'Crosshair',
+        Values = cursorNames,
+        Value = u211[1].name,
+        Callback = function(val)
+            for _, c in ipairs(u211) do
+                if c.name == val then
+                    id = c.id
                     if u198 and u201 then
-                        u201.Image = 'rbxassetid://' .. u718.Text
+                        u201.Image = 'rbxassetid://' .. c.id
                     end
-
-                    u209:Notify({
-                        Title = 'Lunar',
-                        Content = tostring('Custom cursor applied \u{2014} enable ShiftLock to see it!'),
-                        Duration = 3,
-                        Icon = 'bell',
-                    })
-
-                    u718.Text = ''
+                    break
                 end
-            end)
-
-            local Frame7 = Instance.new('Frame', Frame)
-
-            Frame7.Size = UDim2.new(1, -20, 0, 30)
-            Frame7.Position = UDim2.new(0, 10, 0, 84)
-            Frame7.BackgroundTransparency = 1
-
-            local TextLabel7 = Instance.new('TextLabel', Frame7)
-
-            TextLabel7.Size = UDim2.new(1, -64, 1, 0)
-            TextLabel7.BackgroundTransparency = 1
-            TextLabel7.Text = 'Spin Crosshair'
-            TextLabel7.TextColor3 = Color3.fromRGB(200, 200, 200)
-            TextLabel7.Font = Enum.Font.GothamBold
-            TextLabel7.TextSize = 13
-            TextLabel7.TextXAlignment = Enum.TextXAlignment.Left
-
-            local TextButton7 = Instance.new('TextButton', Frame7)
-
-            TextButton7.Size = UDim2.new(0, 54, 0, 26)
-            TextButton7.Position = UDim2.new(1, -54, 0.5, -13)
-            TextButton7.BackgroundColor3 = u199 and Color3.fromRGB(30, 160, 30) or Color3.fromRGB(80, 20, 20)
-            TextButton7.Text = u199 and 'ON' or 'OFF'
-            TextButton7.TextColor3 = Color3.new(1, 1, 1)
-            TextButton7.Font = Enum.Font.GothamBold
-            TextButton7.TextSize = 12
-            Instance.new('UICorner', TextButton7).CornerRadius = UDim.new(0, 8)
-
-            local MouseButton1Click6 = TextButton7.MouseButton1Click
-            local u723 = TextButton7
-
-            MouseButton1Click6:Connect(function()
-                u199 = not u199
-                u723.BackgroundColor3 = u199 and Color3.fromRGB(30, 160, 30) or Color3.fromRGB(80, 20, 20)
-                u723.Text = u199 and 'ON' or 'OFF'
-
-                u210()
-
-                local v919 = 'Crosshair Spin: ' .. (u199 and 'ON' or 'OFF')
-
-                u209:Notify({
-                    Title = 'Lunar',
-                    Content = tostring(v919),
-                    Duration = 3,
-                    Icon = 'bell',
-                })
-            end)
-
-            local Frame8 = Instance.new('Frame', Frame)
-
-            Frame8.Size = UDim2.new(1, -20, 0, 1)
-            Frame8.Position = UDim2.new(0, 10, 0, 120)
-            Frame8.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-            Frame8.BorderSizePixel = 0
-
-            local ScrollingFrame = Instance.new('ScrollingFrame', Frame)
-
-            ScrollingFrame.Size = UDim2.new(1, -14, 1, -128)
-            ScrollingFrame.Position = UDim2.new(0, 7, 0, 126)
-            ScrollingFrame.BackgroundTransparency = 1
-            ScrollingFrame.BorderSizePixel = 0
-            ScrollingFrame.ScrollBarThickness = 4
-
-            local new = UDim2.new
-            local v727 = #u211 / 2
-
-            ScrollingFrame.CanvasSize = new(0, 0, 0, math.ceil(v727) * 118 + 10)
-
-            local UIGridLayout = Instance.new('UIGridLayout', ScrollingFrame)
-
-            UIGridLayout.CellSize = UDim2.new(0, 128, 0, 110)
-            UIGridLayout.CellPadding = UDim2.new(0, 8, 0, 8)
-            UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-
-            for i, v in ipairs(u211)do
-                local v731 = id == v.id
-                local TextButton8 = Instance.new('TextButton', ScrollingFrame)
-
-                TextButton8.Size = UDim2.new(0, 128, 0, 110)
-                TextButton8.BackgroundColor3 = v731 and Color3.fromRGB(55, 15, 15) or Color3.fromRGB(20, 20, 20)
-                TextButton8.Text = ''
-                TextButton8.AutoButtonColor = false
-                TextButton8.LayoutOrder = i
-                Instance.new('UICorner', TextButton8).CornerRadius = UDim.new(0, 8)
-
-                local UIStroke4 = Instance.new('UIStroke', TextButton8)
-
-                UIStroke4.Color = v731 and Color3.fromRGB(220, 38, 38) or Color3.fromRGB(50, 50, 50)
-                UIStroke4.Thickness = v731 and 1.8 or 1.2
-
-                local ImageLabel = Instance.new('ImageLabel', TextButton8)
-
-                ImageLabel.Size = UDim2.new(0, 58, 0, 58)
-                ImageLabel.AnchorPoint = Vector2.new(0.5, 0)
-                ImageLabel.Position = UDim2.new(0.5, 0, 0, 8)
-                ImageLabel.BackgroundTransparency = 1
-                ImageLabel.Image = 'rbxassetid://' .. v.id
-
-                local TextLabel8 = Instance.new('TextLabel', TextButton8)
-
-                TextLabel8.Size = UDim2.new(1, -6, 0, 28)
-                TextLabel8.Position = UDim2.new(0, 3, 1, -30)
-                TextLabel8.BackgroundTransparency = 1
-                TextLabel8.Text = v.name .. (v731 and ' \u{2713}' or '')
-                TextLabel8.TextColor3 = v731 and Color3.fromRGB(255, 80, 80) or Color3.fromRGB(200, 200, 200)
-                TextLabel8.Font = Enum.Font.GothamBold
-                TextLabel8.TextSize = 11
-                TextLabel8.TextWrapped = true
-
-                local MouseButton1Click7 = TextButton8.MouseButton1Click
-                local u737 = v
-                local u738 = ScreenGui
-
-                MouseButton1Click7:Connect(function()
-                    id = u737.id
-
-                    if u198 and u201 then
-                        u201.Image = 'rbxassetid://' .. u737.id
-                    end
-
-                    local v920 = 'Cursor: ' .. u737.name .. ' \u{2014} enable ShiftLock to see it!'
-
-                    u209:Notify({
-                        Title = 'Lunar',
-                        Content = tostring(v920),
-                        Duration = 3,
-                        Icon = 'bell',
-                    })
-                    u738:Destroy()
-                end)
             end
+        end,
+    })
 
-            u212(Frame)
-
-            return
-        end
-
-        RuzCursorPicker:Destroy()
-    end,
-})
+    VisualsTab._right:Toggle({
+        Flag = "crosshair_spin",
+        Title = 'Spin Crosshair',
+        Default = false,
+        Callback = function(state)
+            u199 = state
+            u210()
+        end,
+    })
+end
 
 do
     local TweenService = game:GetService("TweenService")
@@ -8903,21 +8823,15 @@ v301._right:Toggle({
     Default = false,
     Callback = function(p63) u270(p63) end,
 })
-v301._right:Button({
-    Title = 'Stretch Resolution Slider',
-    Callback = function()
-        local v607 = n17 * 100
-        local v608 = math.round(v607)
-
-        u126('Stretch Resolution', 10, 100, v608, 5, function(p64)
-            n17 = p64 / 100
-            if u120 then u127(true) end
-            u128:Notify({ Title = 'Lunar', Content = 'Stretch set to ' .. p64 .. '%  (1.0 = normal)', Duration = 3, Icon = 'bell' })
-        end, function()
-            n17 = 0.5
-            if u120 then u127(true) end
-            u128:Notify({ Title = 'Lunar', Content = 'Stretch reset to 50%', Duration = 3, Icon = 'bell' })
-        end)
+v301._right:Slider({
+    Flag = "stretch_value",
+    Title = 'Stretch',
+    Value = { Min = 10, Max = 100, Default = 50 },
+    Rounding = 0,
+    Suffix = '%',
+    Callback = function(val)
+        n17 = (tonumber(val) or 50) / 100
+        if u120 then u127(true) end
     end,
 })
 v301._right:Toggle({
