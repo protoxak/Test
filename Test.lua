@@ -2550,7 +2550,7 @@ local function HttpGetJSON(url)
 				Method = "GET",
 				Headers = {
 					["Accept"] = "*/*",
-					["Referer"] = "https://mm2.cosmicvalues.gg/calculator",
+					["Referer"] = "",
 					["User-Agent"] = "Mozilla/5.0",
 				},
 			})
@@ -2581,7 +2581,7 @@ end
 local function FetchValuesPage(page, limit, query)
 	page = page or 1
 	limit = limit or 100
-	local url = "https://mm2.cosmicvalues.gg/api/v1/values?sortBy=position&limit="
+	local url = ""
 		.. tostring(limit) .. "&page=" .. tostring(page)
 	if query and query ~= "" then
 		url = url .. "&search=" .. urlEncode(query)
