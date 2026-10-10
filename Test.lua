@@ -1,3 +1,4 @@
+--8888
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -170,6 +171,7 @@ function v18:CreateWindow(cfg)
         ["Main"]           = { "COMBAT",       "PLAYER"        },
         ["Fling/Teleport"] = { "FLING",        "TELEPORT"      },
         ["Visuals"]        = { "VISUALS",       "COMBAT VISUAL" },
+        ["Rage"]           = { "RAGE",          "PLAYER"        },
     }
 
     function adapter:Tab(cfg2)
@@ -216,7 +218,12 @@ function v18:CreateWindow(cfg)
             _counter      = 0,
         }
 
+        local leftOnly = (cfg2.Title == "Rage")
+
         local function nextCol(self2)
+            if leftOnly then
+                return self2._left
+            end
             self2._counter = self2._counter + 1
             return (self2._counter % 2 == 1) and self2._left or self2._right
         end
@@ -4552,6 +4559,118 @@ end
             Value    = { Min = 1, Max = 100, Default = 50 },
             Callback = function(val)
                 sbSpeed = (tonumber(val) or 50) * (1 / 3)
+            end,
+        })
+    end
+
+    do
+        local PRunService = game:GetService("RunService")
+        local PPlayers = game:GetService("Players")
+        local PLocal = PPlayers.LocalPlayer
+
+        local mods = {
+            speed   = { enabled = false, value = 16,    default = 16    },
+            jump    = { enabled = false, value = 50,    default = 50    },
+            gravity = { enabled = false, value = 196.2, default = 196.2 },
+        }
+
+        local function getHum()
+            local char = PLocal.Character
+            return char and char:FindFirstChildOfClass("Humanoid")
+        end
+
+        PRunService.Heartbeat:Connect(function()
+            local hum = getHum()
+            if hum then
+                if mods.speed.enabled then
+                    hum.WalkSpeed = mods.speed.value
+                end
+                if mods.jump.enabled then
+                    hum.UseJumpPower = true
+                    hum.JumpPower = mods.jump.value
+                end
+            end
+            if mods.gravity.enabled then
+                workspace.Gravity = mods.gravity.value
+            end
+        end)
+
+        v304._right:Toggle({
+            Flag    = "player_speed_enable",
+            Title   = "Speed",
+            Default = false,
+            Callback = function(val)
+                if val then
+                    local hum = getHum()
+                    mods.speed.default = hum and hum.WalkSpeed or 16
+                else
+                    local hum = getHum()
+                    if hum then hum.WalkSpeed = mods.speed.default end
+                end
+                mods.speed.enabled = val
+            end,
+        })
+
+        v304._right:Slider({
+            Flag      = "player_speed_value",
+            Title     = "Speed Value",
+            IsTooltip = true,
+            IsTextbox = true,
+            Value     = { Min = 0, Max = 200, Default = 16 },
+            Callback  = function(val)
+                mods.speed.value = tonumber(val) or 16
+            end,
+        })
+
+        v304._right:Toggle({
+            Flag    = "player_jump_enable",
+            Title   = "Jump",
+            Default = false,
+            Callback = function(val)
+                if val then
+                    local hum = getHum()
+                    mods.jump.default = hum and hum.JumpPower or 50
+                else
+                    local hum = getHum()
+                    if hum then hum.JumpPower = mods.jump.default end
+                end
+                mods.jump.enabled = val
+            end,
+        })
+
+        v304._right:Slider({
+            Flag      = "player_jump_value",
+            Title     = "Jump Power",
+            IsTooltip = true,
+            IsTextbox = true,
+            Value     = { Min = 0, Max = 300, Default = 50 },
+            Callback  = function(val)
+                mods.jump.value = tonumber(val) or 50
+            end,
+        })
+
+        v304._right:Toggle({
+            Flag    = "player_gravity_enable",
+            Title   = "Gravity",
+            Default = false,
+            Callback = function(val)
+                if val then
+                    mods.gravity.default = workspace.Gravity
+                else
+                    workspace.Gravity = mods.gravity.default
+                end
+                mods.gravity.enabled = val
+            end,
+        })
+
+        v304._right:Slider({
+            Flag      = "player_gravity_value",
+            Title     = "Gravity Value",
+            IsTooltip = true,
+            IsTextbox = true,
+            Value     = { Min = 0, Max = 400, Default = 196 },
+            Callback  = function(val)
+                mods.gravity.value = tonumber(val) or 196.2
             end,
         })
     end
