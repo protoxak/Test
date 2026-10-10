@@ -1,3 +1,4 @@
+--щфдцды
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -4829,24 +4830,53 @@ end
         local FUIS     = game:GetService("UserInputService")
         local FLocal   = FPlayers.LocalPlayer
 
-        local flyOn    = false
-        local flySpeed = 60
-        local flyConn  = nil
-        local bv, bg   = nil, nil
-        local controls = nil
-        local controlsTried = false
+        local flyOn     = false
+        local flySmooth = false
+        local flySpeed  = 50
+        local flyConn   = nil
+        local bv, bg    = nil, nil
+        local controls  = nil
+
+        local st = {
+            ctrlF = 0, ctrlB = 0, ctrlL = 0, ctrlR = 0,
+            smoothF = 0, smoothB = 0, smoothL = 0, smoothR = 0,
+            currentVel = Vector3.new(0, 0.1, 0),
+            currentLie = 0,
+        }
+
+        local function resetState()
+            st.ctrlF, st.ctrlB, st.ctrlL, st.ctrlR = 0, 0, 0, 0
+            st.smoothF, st.smoothB, st.smoothL, st.smoothR = 0, 0, 0, 0
+            st.currentVel = Vector3.new(0, 0.1, 0)
+            st.currentLie = 0
+        end
 
         local function getParts()
             local char = FLocal.Character
-            local hum  = char and char:FindFirstChildOfClass("Humanoid")
-            local hrp  = char and char:FindFirstChild("HumanoidRootPart")
+            local hum  = char and char:FindFirstChildWhichIsA("Humanoid")
+            local hrp  = char and (char:FindFirstChild("HumanoidRootPart") or char:FindFirstChild("Torso"))
             return hum, hrp
+        end
+
+        -- exponential smoothing factor
+        local function alphaOf(rate, dt)
+            return 1 - math.exp(-rate * dt)
+        end
+        local function lerpN(a, b, t)
+            return a + (b - a) * t
+        end
+
+        -- vertical input: Space = up, Shift/Ctrl = down
+        local function getVertical()
+            local v = 0
+            if FUIS:IsKeyDown(Enum.KeyCode.Space) then v = v + 1 end
+            if FUIS:IsKeyDown(Enum.KeyCode.LeftShift) or FUIS:IsKeyDown(Enum.KeyCode.LeftControl) then v = v - 1 end
+            return v
         end
 
         -- stick / WASD input relative to the camera: x = right, z = back
         local function getMoveVector(hum, look, right)
-            if not controls and not controlsTried then
-                controlsTried = true
+            if not controls then
                 pcall(function()
                     local pm = require(FLocal.PlayerScripts:WaitForChild("PlayerModule", 2))
                     controls = pm:GetControls()
@@ -4873,6 +4903,7 @@ end
             if bg then bg:Destroy() bg = nil end
             local hum = getParts()
             if hum then hum.PlatformStand = false end
+            resetState()
         end
 
         local function startFly()
@@ -4880,45 +4911,118 @@ end
             local hum, hrp = getParts()
             if not hum or not hrp then return end
 
+            local huge = Vector3.new(9e9, 9e9, 9e9)
+
             bv = Instance.new("BodyVelocity")
-            bv.MaxForce = Vector3.new(1e9, 1e9, 1e9)
-            bv.Velocity = Vector3.new(0, 0, 0)
+            bv.MaxForce = Vector3.zero
+            bv.Velocity = Vector3.zero
             bv.Parent = hrp
 
             bg = Instance.new("BodyGyro")
-            bg.MaxTorque = Vector3.new(1e9, 1e9, 1e9)
+            bg.MaxTorque = huge
             bg.P = 9e4
             bg.CFrame = hrp.CFrame
             bg.Parent = hrp
 
-            hum.PlatformStand = true
-
-            flyConn = FRun.RenderStepped:Connect(function()
+            flyConn = FRun.RenderStepped:Connect(function(deltaTime)
                 local h, root = getParts()
                 if not h or not root or not bv or not bv.Parent or not bg or not bg.Parent then
                     return
                 end
 
-                local cam   = workspace.CurrentCamera
+                local cam = workspace.CurrentCamera
+                if not cam then return end
+
+                local dt = math.clamp(tonumber(deltaTime) or 0.016, 0, 0.05)
                 local look  = cam.CFrame.LookVector
                 local right = cam.CFrame.RightVector
                 local mv    = getMoveVector(h, look, right)
+                local speed = tonumber(flySpeed) or 50
 
-                -- forward follows the camera, so looking up/down flies up/down
-                local vel = look * (-mv.Z) + right * mv.X
+                bv.MaxForce = huge
+                bg.MaxTorque = huge
+                h.PlatformStand = true
 
-                if FUIS:IsKeyDown(Enum.KeyCode.Space) then
-                    vel = vel + Vector3.new(0, 1, 0)
-                end
-                if FUIS:IsKeyDown(Enum.KeyCode.LeftShift) or FUIS:IsKeyDown(Enum.KeyCode.LeftControl) then
-                    vel = vel - Vector3.new(0, 1, 0)
-                end
+                if flySmooth then
+                    local flatLook  = Vector3.new(look.X, 0, look.Z)
+                    local flatRight = Vector3.new(right.X, 0, right.Z)
 
-                bv.Velocity = vel * flySpeed
+                    -- forward / side input (-1..1)
+                    local f, s = 0, 0
+                    if flatLook.Magnitude >= 0.05 then
+                        local mag = math.clamp(Vector3.new(mv.X, 0, mv.Z).Magnitude, 0, 1)
+                        if mag > 0.05 then
+                            local dir = Vector3.new(mv.X, 0, -mv.Z).Unit
+                            f = dir.Z * mag
+                            s = dir.X * mag
+                        end
+                    end
 
-                local flatLook = Vector3.new(look.X, 0, look.Z)
-                if flatLook.Magnitude > 0 then
-                    bg.CFrame = CFrame.new(root.Position, root.Position + flatLook)
+                    st.ctrlF = math.max(f, 0)
+                    st.ctrlB = math.min(f, 0)
+                    st.ctrlL = math.min(s, 0)
+                    st.ctrlR = math.max(s, 0)
+
+                    local a = alphaOf(12, dt)
+                    st.smoothF = lerpN(st.smoothF, st.ctrlF, a)
+                    st.smoothB = lerpN(st.smoothB, st.ctrlB, a)
+                    st.smoothL = lerpN(st.smoothL, st.ctrlL, a)
+                    st.smoothR = lerpN(st.smoothR, st.ctrlR, a)
+
+                    local sf = st.smoothF + st.smoothB
+                    local sr = st.smoothL + st.smoothR
+                    local strength = math.clamp(math.sqrt(sf * sf + sr * sr), 0, 1)
+
+                    local dirV = look * sf + right * sr
+                    local unit = dirV.Magnitude > 0.0001 and dirV.Unit or Vector3.zero
+                    local target = unit * speed * strength
+
+                    local vert = getVertical()
+                    if vert ~= 0 then
+                        target = target + Vector3.new(0, vert * speed, 0)
+                    end
+                    if target.Magnitude < 0.05 then
+                        target = Vector3.new(0, 0.05, 0)
+                    end
+
+                    st.currentVel = st.currentVel:Lerp(target, alphaOf(8, dt))
+                    bv.Velocity = st.currentVel
+
+                    -- face the movement direction, lean forward like superman
+                    local face = flatLook
+                    if face.Magnitude < 0.05 then
+                        face = Vector3.new(cam.CFrame.UpVector.X, 0, cam.CFrame.UpVector.Z)
+                    end
+                    face = face.Magnitude < 0.05 and Vector3.new(0, 0, 1) or face.Unit
+
+                    local flatVel = Vector3.new(st.currentVel.X, 0, st.currentVel.Z)
+                    local faceDir = flatVel.Magnitude > 2 and flatVel.Unit or face
+
+                    local lie = 0
+                    if sf > 0.05 then
+                        lie = math.clamp(sf, 0, 1)
+                    elseif strength > 0.05 then
+                        lie = 0.75 * strength
+                    end
+                    st.currentLie = lerpN(st.currentLie, lie, alphaOf(9, dt))
+
+                    bg.CFrame = bg.CFrame:Lerp(
+                        CFrame.lookAt(root.Position, root.Position + faceDir)
+                            * CFrame.Angles(-math.pi / 2 * st.currentLie, 0, 0),
+                        alphaOf(10, dt)
+                    )
+                else
+                    bg.CFrame = cam.CFrame
+
+                    local vel = look * (-mv.Z) + right * mv.X
+                    vel = vel * speed
+
+                    local vert = getVertical()
+                    if vert ~= 0 then
+                        vel = vel + Vector3.new(0, vert * speed, 0)
+                    end
+
+                    bv.Velocity = vel
                 end
             end)
         end
@@ -4949,10 +5053,24 @@ end
         v304._right:Slider({
             Flag     = "fly_speed",
             Title    = "Fly Speed",
-            Value    = { Min = 10, Max = 300, Default = 60 },
+            Value    = { Min = 50, Max = 500, Default = 50 },
             Rounding = 0,
             Callback = function(val)
-                flySpeed = tonumber(val) or 60
+                flySpeed = tonumber(val) or 50
+            end,
+        })
+
+        v304._right:Toggle({
+            Flag    = "fly_smooth",
+            Title   = "Smooth Fly",
+            Default = false,
+            Callback = function(state)
+                flySmooth = state
+                resetState()
+                if flyOn and bg then
+                    local _, root = getParts()
+                    if root then bg.CFrame = root.CFrame end
+                end
             end,
         })
     end
