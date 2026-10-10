@@ -1,3 +1,4 @@
+--717171
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -4649,125 +4650,6 @@ end
     end
 
     do
-        local FPlayers = game:GetService("Players")
-        local FRun     = game:GetService("RunService")
-        local FUIS     = game:GetService("UserInputService")
-        local FLocal   = FPlayers.LocalPlayer
-
-        local flyOn    = false
-        local flySpeed = 60
-        local flyConn  = nil
-        local bv, bg   = nil, nil
-
-        local function getParts()
-            local char = FLocal.Character
-            local hum  = char and char:FindFirstChildOfClass("Humanoid")
-            local hrp  = char and char:FindFirstChild("HumanoidRootPart")
-            return hum, hrp
-        end
-
-        local function stopFly()
-            if flyConn then flyConn:Disconnect() flyConn = nil end
-            if bv then bv:Destroy() bv = nil end
-            if bg then bg:Destroy() bg = nil end
-            local hum = getParts()
-            if hum then hum.PlatformStand = false end
-        end
-
-        local function startFly()
-            stopFly()
-            local hum, hrp = getParts()
-            if not hum or not hrp then return end
-
-            bv = Instance.new("BodyVelocity")
-            bv.MaxForce = Vector3.new(1e9, 1e9, 1e9)
-            bv.Velocity = Vector3.new(0, 0, 0)
-            bv.Parent = hrp
-
-            bg = Instance.new("BodyGyro")
-            bg.MaxTorque = Vector3.new(1e9, 1e9, 1e9)
-            bg.P = 9e4
-            bg.CFrame = hrp.CFrame
-            bg.Parent = hrp
-
-            hum.PlatformStand = true
-
-            flyConn = FRun.RenderStepped:Connect(function()
-                local h, root = getParts()
-                if not h or not root or not bv or not bv.Parent or not bg or not bg.Parent then
-                    return
-                end
-
-                local cam   = workspace.CurrentCamera
-                local look  = cam.CFrame.LookVector
-                local right = cam.CFrame.RightVector
-                local flatLook  = Vector3.new(look.X, 0, look.Z)
-                local flatRight = Vector3.new(right.X, 0, right.Z)
-                local md = h.MoveDirection
-                local vel = Vector3.new(0, 0, 0)
-
-                if md.Magnitude > 0 and flatLook.Magnitude > 0 and flatRight.Magnitude > 0 then
-                    local f = md:Dot(flatLook.Unit)
-                    local r = md:Dot(flatRight.Unit)
-                    vel = look * f + right * r
-                end
-                if FUIS:IsKeyDown(Enum.KeyCode.Space) then
-                    vel = vel + Vector3.new(0, 1, 0)
-                end
-                if FUIS:IsKeyDown(Enum.KeyCode.LeftShift) or FUIS:IsKeyDown(Enum.KeyCode.LeftControl) then
-                    vel = vel - Vector3.new(0, 1, 0)
-                end
-
-                bv.Velocity = vel * flySpeed
-                if flatLook.Magnitude > 0 then
-                    bg.CFrame = CFrame.new(root.Position, root.Position + flatLook)
-                end
-            end)
-        end
-
-        FLocal.CharacterAdded:Connect(function()
-            if flyOn then
-                task.wait(1)
-                if flyOn then startFly() end
-            end
-        end)
-
-        local flySection = v304._tab:AddSection({
-            Name     = "FLY",
-            Position = "right",
-        })
-
-        flySection:AddLabel("Fly"):AddToggle({
-            Default  = false,
-            Flag     = "fly_enabled",
-            Save     = true,
-            Callback = function(state)
-                flyOn = state
-                if state then startFly() else stopFly() end
-                v18:Notify({
-                    Title    = "Lunar",
-                    Content  = state and "Fly ON" or "Fly OFF",
-                    Duration = 3,
-                    Icon     = "bell",
-                })
-            end,
-        })
-
-        flySection:AddLabel("Fly Speed"):AddSlider({
-            Flag     = "fly_speed",
-            Save     = true,
-            Min      = 10,
-            Max      = 300,
-            Default  = 60,
-            Rounding = 0,
-            Type     = "",
-            Callback = function(val)
-                flySpeed = tonumber(val) or 60
-            end,
-        })
-    end
-
-    do
         local PRunService = game:GetService("RunService")
         local PPlayers = game:GetService("Players")
         local PLocal = PPlayers.LocalPlayer
@@ -4938,6 +4820,138 @@ end
                     end
                     noclipParts = {}
                 end
+            end,
+        })
+    end
+
+    do
+        local FPlayers = game:GetService("Players")
+        local FRun     = game:GetService("RunService")
+        local FUIS     = game:GetService("UserInputService")
+        local FLocal   = FPlayers.LocalPlayer
+
+        local flyOn    = false
+        local flySpeed = 60
+        local flyConn  = nil
+        local bv, bg   = nil, nil
+        local controls = nil
+
+        local function getParts()
+            local char = FLocal.Character
+            local hum  = char and char:FindFirstChildOfClass("Humanoid")
+            local hrp  = char and char:FindFirstChild("HumanoidRootPart")
+            return hum, hrp
+        end
+
+        -- stick / WASD input relative to the camera: x = right, z = back
+        local function getMoveVector(hum, look, right)
+            if not controls then
+                pcall(function()
+                    local pm = require(FLocal.PlayerScripts:WaitForChild("PlayerModule", 2))
+                    controls = pm:GetControls()
+                end)
+            end
+            if controls then
+                local ok, mv = pcall(function() return controls:GetMoveVector() end)
+                if ok and typeof(mv) == "Vector3" then
+                    return mv
+                end
+            end
+            local md = hum.MoveDirection
+            local fl = Vector3.new(look.X, 0, look.Z)
+            local fr = Vector3.new(right.X, 0, right.Z)
+            if md.Magnitude > 0 and fl.Magnitude > 0 and fr.Magnitude > 0 then
+                return Vector3.new(md:Dot(fr.Unit), 0, -md:Dot(fl.Unit))
+            end
+            return Vector3.new(0, 0, 0)
+        end
+
+        local function stopFly()
+            if flyConn then flyConn:Disconnect() flyConn = nil end
+            if bv then bv:Destroy() bv = nil end
+            if bg then bg:Destroy() bg = nil end
+            local hum = getParts()
+            if hum then hum.PlatformStand = false end
+        end
+
+        local function startFly()
+            stopFly()
+            local hum, hrp = getParts()
+            if not hum or not hrp then return end
+
+            bv = Instance.new("BodyVelocity")
+            bv.MaxForce = Vector3.new(1e9, 1e9, 1e9)
+            bv.Velocity = Vector3.new(0, 0, 0)
+            bv.Parent = hrp
+
+            bg = Instance.new("BodyGyro")
+            bg.MaxTorque = Vector3.new(1e9, 1e9, 1e9)
+            bg.P = 9e4
+            bg.CFrame = hrp.CFrame
+            bg.Parent = hrp
+
+            hum.PlatformStand = true
+
+            flyConn = FRun.RenderStepped:Connect(function()
+                local h, root = getParts()
+                if not h or not root or not bv or not bv.Parent or not bg or not bg.Parent then
+                    return
+                end
+
+                local cam   = workspace.CurrentCamera
+                local look  = cam.CFrame.LookVector
+                local right = cam.CFrame.RightVector
+                local mv    = getMoveVector(h, look, right)
+
+                -- forward follows the camera, so looking up/down flies up/down
+                local vel = look * (-mv.Z) + right * mv.X
+
+                if FUIS:IsKeyDown(Enum.KeyCode.Space) then
+                    vel = vel + Vector3.new(0, 1, 0)
+                end
+                if FUIS:IsKeyDown(Enum.KeyCode.LeftShift) or FUIS:IsKeyDown(Enum.KeyCode.LeftControl) then
+                    vel = vel - Vector3.new(0, 1, 0)
+                end
+
+                bv.Velocity = vel * flySpeed
+
+                local flatLook = Vector3.new(look.X, 0, look.Z)
+                if flatLook.Magnitude > 0 then
+                    bg.CFrame = CFrame.new(root.Position, root.Position + flatLook)
+                end
+            end)
+        end
+
+        FLocal.CharacterAdded:Connect(function()
+            if flyOn then
+                task.wait(1)
+                if flyOn then startFly() end
+            end
+        end)
+
+        v304._right:Toggle({
+            Flag    = "fly_enabled",
+            Title   = "Fly",
+            Default = false,
+            Callback = function(state)
+                flyOn = state
+                if state then startFly() else stopFly() end
+                v18:Notify({
+                    Title    = "Lunar",
+                    Content  = state and "Fly ON" or "Fly OFF",
+                    Duration = 3,
+                    Icon     = "bell",
+                })
+            end,
+        })
+
+        v304._right:Slider({
+            Flag     = "fly_speed",
+            Title    = "Fly Speed",
+            Value    = { Min = 10, Max = 300, Default = 60 },
+            Rounding = 0,
+            Callback = function(val)
+                flySpeed = tonumber(val) or 60
             end,
         })
     end
