@@ -1,3 +1,4 @@
+--7181818
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -3243,6 +3244,86 @@ end
                 u258.Speed.btn:Destroy()
 
                 u258.Speed = nil
+            end
+        end
+
+        do
+            local TRun = game:GetService("RunService")
+            local TPlayers = game:GetService("Players")
+            local TLocal = TPlayers.LocalPlayer
+            local TNotify = v18
+
+            getgenv().LUNAR_TIMER_PCT = getgenv().LUNAR_TIMER_PCT or 200
+
+            local timerOn = false
+            local timerBtn = nil
+            local base = { speed = 16, jump = 50, gravity = 196.2 }
+
+            local function getHum()
+                local char = TLocal.Character
+                return char and char:FindFirstChildOfClass("Humanoid")
+            end
+
+            local function setTimer(on)
+                if on == timerOn then return end
+                local h = getHum()
+                if on then
+                    base.speed   = h and h.WalkSpeed or 16
+                    base.jump    = h and h.JumpPower or 50
+                    base.gravity = workspace.Gravity
+                else
+                    if h then
+                        h.WalkSpeed = base.speed
+                        h.JumpPower = base.jump
+                    end
+                    workspace.Gravity = base.gravity
+                end
+                timerOn = on
+            end
+
+            -- time warp: speed x k, gravity x k^2, jump power x k (keeps jump height)
+            TRun.Heartbeat:Connect(function()
+                if not timerOn then return end
+                local k = (getgenv().LUNAR_TIMER_PCT or 200) / 100
+                local h = getHum()
+                if h then
+                    h.WalkSpeed = base.speed * k
+                    h.UseJumpPower = true
+                    h.JumpPower = base.jump * k
+                end
+                workspace.Gravity = base.gravity * k * k
+            end)
+
+            getgenv().LUNAR_LoadTimer = function(show)
+                if show then
+                    local entry = v220('Timer', UDim2.new(0.5, -342, 0.78, 16), uDim2, Color3.fromRGB(150, 90, 255), 'TIMER')
+                    timerBtn = entry
+                    entry.btn.MouseButton1Click:Connect(function()
+                        setTimer(not timerOn)
+                        TNotify:Notify({
+                            Title = 'Lunar',
+                            Content = timerOn and string.format('Timer ON (%.2fx)', (getgenv().LUNAR_TIMER_PCT or 200) / 100) or 'Timer OFF',
+                            Duration = 3,
+                            Icon = 'bell',
+                        })
+                    end)
+                    task.spawn(function()
+                        while entry.btn and entry.btn.Parent do
+                            local col = timerOn and Color3.fromRGB(190, 140, 255) or Color3.fromRGB(150, 90, 255)
+                            entry.lbl.Text = timerOn and string.format('TIMER\n%.1fx', (getgenv().LUNAR_TIMER_PCT or 200) / 100) or 'TIMER'
+                            entry.lbl.TextColor3 = col
+                            entry.stroke.Color = col
+                            task.wait(0.1)
+                        end
+                    end)
+                    return
+                end
+                if timerBtn then
+                    timerBtn.btn:Destroy()
+                    timerBtn = nil
+                    t25.Timer = nil
+                end
+                setTimer(false)
             end
         end
 
@@ -8784,6 +8865,13 @@ v301._right:Toggle({
     Callback = function(p62) u263(p62) end,
 })
 v301._right:Toggle({
+    Flag = "load_timer", Title = 'Load Timer',
+    Default = false,
+    Callback = function(pT)
+        if getgenv().LUNAR_LoadTimer then getgenv().LUNAR_LoadTimer(pT) end
+    end,
+})
+v301._right:Toggle({
     Flag = "load_stretch", Title = 'Load Stretch',
     Default = false,
     Callback = function(p63) u270(p63) end,
@@ -9097,6 +9185,17 @@ function t39.Callback()
 end
 
 v301._right:Button(t39)
+v301._right:Button({
+    Title = 'Timer Slider',
+    Callback = function()
+        v25('Timer', 100, 500, getgenv().LUNAR_TIMER_PCT or 200, 25, function(pT)
+            getgenv().LUNAR_TIMER_PCT = pT
+        end, function()
+            getgenv().LUNAR_TIMER_PCT = 200
+            v18:Notify({ Title = 'Lunar', Content = 'Timer reset to 2.0x', Duration = 3, Icon = 'bell' })
+        end)
+    end,
+})
 v301._right:Dropdown({
     Flag = "velocity_cap_anti_fling", Title = 'Velocity Cap (Anti-Fling)',
     Options = { '50', '100', '150', '200', '300', '500' },
