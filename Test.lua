@@ -1,4 +1,3 @@
---щфдцды
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -4837,6 +4836,70 @@ end
         local bv, bg    = nil, nil
         local controls  = nil
 
+        local flyAnimOn  = false
+        local flyAnimCur = nil
+
+        -- ===== Fly animation (R15) =====
+        local FlyAnim = { track = nil }
+        local ANIMS = {
+            Hover    = { id = "10714347256", time = 4.0  },
+            FlyFwd   = { id = "10714177846", time = 4.65 },
+            FlyBack  = { id = "10147823318", time = 4.11 },
+            FlyLeft  = { id = "10147823318", time = 3.55 },
+            FlyRight = { id = "10147823318", time = 4.81 },
+        }
+
+        function FlyAnim.stop()
+            pcall(function()
+                if FlyAnim.track then
+                    FlyAnim.track:Stop(0.15)
+                    FlyAnim.track:Destroy()
+                end
+                FlyAnim.track = nil
+                local char = FLocal.Character
+                local an = char and char:FindFirstChild("Animate")
+                if an then an.Disabled = false end
+            end)
+        end
+
+        function FlyAnim.play(name)
+            FlyAnim.stop()
+            local preset = ANIMS[name]
+            if not preset then return end
+            pcall(function()
+                local char = FLocal.Character
+                local hum  = char and char:FindFirstChildOfClass("Humanoid")
+                if not hum then return end
+
+                local an = char:FindFirstChild("Animate")
+                if an then an.Disabled = true end
+                for _, t in pairs(hum:GetPlayingAnimationTracks()) do
+                    t:Stop(0.15)
+                end
+
+                local a = Instance.new("Animation")
+                a.AnimationId = "rbxassetid://" .. preset.id
+                local track = hum:LoadAnimation(a)
+                track.Looped   = true
+                track.Priority = Enum.AnimationPriority.Action4
+                track:Play(0.15, 1, 0)
+                if typeof(track.Length) == "number" and track.Length > 0.05 then
+                    track.TimePosition = math.clamp(preset.time, 0, track.Length - 0.05)
+                end
+                track:AdjustSpeed(0) -- frozen pose
+                FlyAnim.track = track
+            end)
+        end
+
+        -- pick the pose from stick / WASD input (x = right, z = back)
+        local function pickPose(mv)
+            if Vector3.new(mv.X, 0, mv.Z).Magnitude < 0.1 then return "Hover" end
+            if math.abs(mv.Z) >= math.abs(mv.X) then
+                return mv.Z < 0 and "FlyFwd" or "FlyBack"
+            end
+            return mv.X < 0 and "FlyLeft" or "FlyRight"
+        end
+
         local st = {
             ctrlF = 0, ctrlB = 0, ctrlL = 0, ctrlR = 0,
             smoothF = 0, smoothB = 0, smoothL = 0, smoothR = 0,
@@ -4901,6 +4964,8 @@ end
             if flyConn then flyConn:Disconnect() flyConn = nil end
             if bv then bv:Destroy() bv = nil end
             if bg then bg:Destroy() bg = nil end
+            FlyAnim.stop()
+            flyAnimCur = nil
             local hum = getParts()
             if hum then hum.PlatformStand = false end
             resetState()
@@ -4942,6 +5007,14 @@ end
                 bv.MaxForce = huge
                 bg.MaxTorque = huge
                 h.PlatformStand = true
+
+                if flyAnimOn then
+                    local pose = pickPose(mv)
+                    if pose ~= flyAnimCur then
+                        flyAnimCur = pose
+                        FlyAnim.play(pose)
+                    end
+                end
 
                 if flySmooth then
                     local flatLook  = Vector3.new(look.X, 0, look.Z)
@@ -5028,6 +5101,8 @@ end
         end
 
         FLocal.CharacterAdded:Connect(function()
+            FlyAnim.track = nil
+            flyAnimCur = nil
             if flyOn then
                 task.wait(1)
                 if flyOn then startFly() end
@@ -5071,6 +5146,17 @@ end
                     local _, root = getParts()
                     if root then bg.CFrame = root.CFrame end
                 end
+            end,
+        })
+
+        v304._right:Toggle({
+            Flag    = "fly_animation",
+            Title   = "Fly Animation",
+            Default = false,
+            Callback = function(state)
+                flyAnimOn = state
+                flyAnimCur = nil
+                if not state then FlyAnim.stop() end
             end,
         })
     end
