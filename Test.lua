@@ -1,12 +1,10 @@
-if _G.EmotesGUIRunning then
-    getgenv().Notify({
-        Title = 'Lunar | Emote',
-        Content = '⚠️ It works It actually works',
-        Duration = 5
-    })
+
+
+
+if _G.LunarGUIRunning then
     return
 end
-_G.EmotesGUIRunning = true
+_G.LunarGUIRunning = true
 local offsaleAnimationJson = true
 
 local HttpService = game:GetService("HttpService")
@@ -103,6 +101,7 @@ local State = {
 }
 
 Config = {
+    NotifyEnabled = true,
     SearchVisible = true,
     FavVisible = true,
     ModeVisible = true,
@@ -123,6 +122,7 @@ Config = {
     CustomFrames = {},
     AutoReloadEnabled = false,
     LastPlayedAnimationData = nil,
+    DiscordVisible = true
 }
 
 HUD = {
@@ -688,6 +688,7 @@ function SafeLoad(url, name)
     return res
 end
 
+getgenv().Notify = function() end
 
 local function getAssetCustom(filePath)
     if not filePath or filePath == "" then return nil end
@@ -955,7 +956,6 @@ ToggleBtn.Position = UDim2.new(0, 10, 1, -52)
 ToggleBtn.Size = UDim2.fromOffset(42, 42)
 ToggleBtn.Image = "rbxassetid://79568054778195"
 
-
 local ToggleCorner = Instance.new("UICorner")
 ToggleCorner.CornerRadius = UDim.new(0, 10)
 ToggleCorner.Parent = ToggleBtn
@@ -990,8 +990,6 @@ function syncToggleVisibility()
     end
 end
 
-
-
 ToggleBtn.MouseButton1Click:Connect(function()
     local main = getSettingsMainFrame()
     if main then
@@ -1014,7 +1012,6 @@ end
 
 local TogglesUI = {}
 local GeneralTab = SettingsLib.CreateTab("General", 1)
-
 TogglesUI.AuthenticFirstPage = SettingsLib.AddToggle(GeneralTab, "Authentic Emotes Page", "Show owned emotes on page 1", Config.AuthenticFirstPage, function(v)
     Config.AuthenticFirstPage = v
     State.totalPages = calculateTotalPages()
@@ -1326,7 +1323,6 @@ TogglesUI.NavVisible = SettingsLib.AddToggle(ButtonsTab, "Page Controls", "Show/
     SaveConfig()
 end)
 
-
 local cachedOverlay = nil
 local hudEditorItem = SettingsLib.AddItem(ButtonsTab, "HUD Editor", "Reposition buttons & UI elements")
 hudEditorItem.LayoutOrder = -10
@@ -1527,7 +1523,6 @@ end
 -- end)
 
 local ThemeTab = SettingsLib.CreateTab("Theme", 3)
-
 
 local ThemeConfigPath = "Lunar/EmoteThemes.json"
 
@@ -3620,12 +3615,6 @@ BtnImportAll.MouseButton1Click:Connect(function() HandleImportPrompt("All") end)
 BtnImportThemes.MouseButton1Click:Connect(function() HandleImportPrompt("Themes") end)
 BtnImportSettings.MouseButton1Click:Connect(function() HandleImportPrompt("Settings") end)
 BtnImportFavorites.MouseButton1Click:Connect(function() HandleImportPrompt("Favorites") end)
-
-getgenv().Notify({
-    Title = 'Lunar | Emote',
-    Content = '⚠️ Script loading...',
-    Duration = 5
-})
 
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
@@ -5854,7 +5843,7 @@ function fetchAllEmotes()
             local emoteData, total = fetchFromUrl()
             if emoteData then
                 applyData(emoteData, total)
-                getgenv().Notify({Title = 'Lunar | Emote', Content = "📦 Emotes loaded", Duration = 3})
+                getgenv().Notify({Title = 'Lunar', Content = "📦 Emotes loaded", Duration = 3})
                 return
             end
             task.wait(3)
@@ -6000,7 +5989,7 @@ end
 function searchEmotes(searchTerm)
     if State.isLoading then
         getgenv().Notify({
-            Title = 'Lunar | Emote',
+            Title = 'Lunar',
             Content = '⚠️ Loading please wait...',
             Duration = 5
         })
@@ -6855,7 +6844,7 @@ function connectEvents()
                     end
                     
                     getgenv().Notify({
-                        Title = 'Lunar | Emote', 
+                        Title = 'Lunar', 
                         Content = '📄 Changed to Animation > Emote Mode',
                         Duration = 3
                     })
