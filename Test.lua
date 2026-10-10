@@ -1,4 +1,3 @@
---8888
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -4671,6 +4670,69 @@ end
             Value     = { Min = 0, Max = 400, Default = 196 },
             Callback  = function(val)
                 mods.gravity.value = tonumber(val) or 196.2
+            end,
+        })
+    end
+
+    do
+        local XUserInputService = game:GetService("UserInputService")
+        local XRunService = game:GetService("RunService")
+        local XPlayers = game:GetService("Players")
+        local XLocal = XPlayers.LocalPlayer
+
+        local infJump = false
+        local noclip = false
+        local noclipParts = {}
+
+        local function getHum()
+            local char = XLocal.Character
+            return char and char:FindFirstChildOfClass("Humanoid")
+        end
+
+        XUserInputService.JumpRequest:Connect(function()
+            if infJump then
+                local hum = getHum()
+                if hum then
+                    hum:ChangeState(Enum.HumanoidStateType.Jumping)
+                end
+            end
+        end)
+
+        XRunService.Stepped:Connect(function()
+            if not noclip then return end
+            local char = XLocal.Character
+            if not char then return end
+            for _, part in ipairs(char:GetDescendants()) do
+                if part:IsA("BasePart") and part.CanCollide then
+                    noclipParts[part] = true
+                    part.CanCollide = false
+                end
+            end
+        end)
+
+        v304._right:Toggle({
+            Flag    = "player_infinite_jump",
+            Title   = "Infinite Jump",
+            Default = false,
+            Callback = function(val)
+                infJump = val
+            end,
+        })
+
+        v304._right:Toggle({
+            Flag    = "player_noclip",
+            Title   = "Noclip",
+            Default = false,
+            Callback = function(val)
+                noclip = val
+                if not val then
+                    for part in pairs(noclipParts) do
+                        if part and part.Parent then
+                            part.CanCollide = true
+                        end
+                    end
+                    noclipParts = {}
+                end
             end,
         })
     end
