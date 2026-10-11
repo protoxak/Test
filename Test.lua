@@ -1,3 +1,4 @@
+--kakwma
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
@@ -855,7 +856,7 @@ local titleLabel = Instance.new("TextLabel")
 titleLabel.Size = UDim2.new(1, -80, 0, 30)
 titleLabel.Position = UDim2.new(0, 10, 0, 0)
 titleLabel.BackgroundTransparency = 1
-titleLabel.Text = "Meowls Mm2 Visual"
+titleLabel.Text = "Lunar Visuals"
 titleLabel.Font = Enum.Font.FredokaOne
 titleLabel.TextSize = 14
 titleLabel.TextColor3 = Color3.fromRGB(240, 240, 255)
@@ -863,36 +864,47 @@ titleLabel.ZIndex = 11
 titleLabel.TextXAlignment = Enum.TextXAlignment.Left
 titleLabel.Parent = dragHandle
 
--- DRAG LOGIC
+-- DRAG LOGIC (мышь + тач)
 local dragging = false
 local dragStart = nil
 local startPos = nil
+local dragInput = nil
 
 dragHandle.InputBegan:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseButton1 then
-		-- Don't drag if clicking on buttons
-		if input.Target and (input.Target == hideBtn or input.Target == closeBtn) then
-			return
-		end
+	if input.UserInputType == Enum.UserInputType.MouseButton1
+		or input.UserInputType == Enum.UserInputType.Touch then
 		dragging = true
 		dragStart = input.Position
 		startPos = mainFrame.Position
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
 	end
 end)
 
-dragHandle.InputEnded:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseButton1 then
-		dragging = false
+dragHandle.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement
+		or input.UserInputType == Enum.UserInputType.Touch then
+		dragInput = input
 	end
 end)
 
 UserInputService.InputChanged:Connect(function(input)
-	if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+	if dragging and input == dragInput then
 		local delta = input.Position - dragStart
 		mainFrame.Position = UDim2.new(
 			startPos.X.Scale, startPos.X.Offset + delta.X,
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y
 		)
+	end
+end)
+
+UserInputService.InputEnded:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1
+		or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = false
 	end
 end)
 
@@ -1802,6 +1814,17 @@ local function _isSpawnerAllowed(entryName)
 	return SpawnerAllowSet[stripped] == true
 end
 
+
+-- Vampire's Axe: оставляем только обычный (Ancient), цветные (Unique/Chroma) не спавним
+local function _isBlockedVariant(name, rarity, isChroma)
+	local n = _itemsTabNormalize(name)
+	n = string.gsub(n, "^chroma ", "")
+	if n == "vampires axe" and (isChroma or rarity ~= "Ancient") then
+		return true
+	end
+	return false
+end
+
 local EvoPrefixes = {
 	Blue = true, Bronze = true, Silver = true, Gold = true, Golden = true,
 	Platinum = true, Diamond = true, Emerald = true, Ruby = true,
@@ -1901,10 +1924,12 @@ local spawnHighTierBtn = CreateButton(spawnerFrame, "Spawn All (Tradable)", func
 		   and _isSpawnerAllowed(data.ItemName or key) then
 			local rarity = data.Rarity or "Common"
 			if data.Chroma == true then rarity = "Chroma" end
-			local amt = _randomAmount(rarity, false)
-			SpawnItem(key, amt, "Weapons")
-			count = count + 1
-			total = total + amt
+			if not _isBlockedVariant(data.ItemName or key, data.Rarity or "Common", data.Chroma == true) then
+				local amt = _randomAmount(rarity, false)
+				SpawnItem(key, amt, "Weapons")
+				count = count + 1
+				total = total + amt
+			end
 		end
 	end
 	spawnerStatusLabel.Text = ("Spawned %d weapons (%d items total)"):format(count, total)
@@ -1950,6 +1975,7 @@ for _, entry in ipairs(WeaponCatalog) do
 	local wKey = entry.key
 	local wData = Sync.Weapons[wKey]
 	if not _isSpawnerAllowed(entry.name) then continue end
+	if _isBlockedVariant(entry.name, entry.rarity, entry.chroma) then continue end
 	local baseColor = RarityTint[entry.rarity] or RarityTint.Common
 	local tradable = _isTradable(wData)
 	local label = entry.name .. (entry.chroma and " [Chroma]" or "")
@@ -2505,6 +2531,197 @@ game.Players.ChildRemoved:Connect(function()
 end)
 
 
+
+-- ==================== VALUES (Ancient / Chroma / Godly) ====================
+-- Источник: supremevalues.com (обновление 09/10/2026)
+local SupremeValues = {
+	{ name = "Nik's Scythe", rarity = "Ancient", value = "Priceless" },
+	{ name = "Gingerscope", rarity = "Ancient", value = 15250 },
+	{ name = "Traveler's Axe", rarity = "Ancient", value = 7500 },
+	{ name = "Celestial", rarity = "Ancient", value = 2200 },
+	{ name = "Vampire's Axe", rarity = "Ancient", value = 1575 },
+	{ name = "Harvester", rarity = "Ancient", value = 250 },
+	{ name = "Icepiercer", rarity = "Ancient", value = 160 },
+	{ name = "Icebreaker", rarity = "Ancient", value = 65 },
+	{ name = "Batwing", rarity = "Ancient", value = 42 },
+	{ name = "Elderwood Scythe", rarity = "Ancient", value = 38 },
+	{ name = "Swirly Axe", rarity = "Ancient", value = 38 },
+	{ name = "Hallowscythe", rarity = "Ancient", value = 30 },
+	{ name = "Logchopper", rarity = "Ancient", value = 18 },
+	{ name = "Icewing", rarity = "Ancient", value = 13 },
+	{ name = "C. Traveler's Gun", rarity = "Chroma", value = 140000 },
+	{ name = "Chroma Evergun", rarity = "Chroma", value = 55000 },
+	{ name = "Chroma Evergreen", rarity = "Chroma", value = 41000 },
+	{ name = "Chroma Bauble", rarity = "Chroma", value = 29000 },
+	{ name = "C. Constellation", rarity = "Chroma", value = 27000 },
+	{ name = "C. Vampire's Gun", rarity = "Chroma", value = 25000 },
+	{ name = "Chroma Alienbeam", rarity = "Chroma", value = 24000 },
+	{ name = "Chroma Raygun", rarity = "Chroma", value = 15000 },
+	{ name = "Chroma Sunrise", rarity = "Chroma", value = 10750 },
+	{ name = "Chroma Snowcannon", rarity = "Chroma", value = 7750 },
+	{ name = "Chroma Sunset", rarity = "Chroma", value = 7000 },
+	{ name = "Chroma Blizzard", rarity = "Chroma", value = 5500 },
+	{ name = "Chroma Snowstorm", rarity = "Chroma", value = 4250 },
+	{ name = "Chroma Heart Wand", rarity = "Chroma", value = 3500 },
+	{ name = "Chroma Snow Dagger", rarity = "Chroma", value = 2350 },
+	{ name = "Chroma Watergun", rarity = "Chroma", value = 2300 },
+	{ name = "Chroma Icecream", rarity = "Chroma", value = 1850 },
+	{ name = "Chroma Ornament", rarity = "Chroma", value = 1825 },
+	{ name = "Chroma Treat", rarity = "Chroma", value = 1775 },
+	{ name = "Chroma Sweet", rarity = "Chroma", value = 1725 },
+	{ name = "Chroma Sands", rarity = "Chroma", value = 1200 },
+	{ name = "Chroma Beachy", rarity = "Chroma", value = 1150 },
+	{ name = "Chroma Darkbringer", rarity = "Chroma", value = 65 },
+	{ name = "Chroma Lightbringer", rarity = "Chroma", value = 60 },
+	{ name = "Chroma Luger", rarity = "Chroma", value = 50 },
+	{ name = "Chroma Candleflame", rarity = "Chroma", value = 40 },
+	{ name = "Chroma Laser", rarity = "Chroma", value = 40 },
+	{ name = "C. Elderwood Blade", rarity = "Chroma", value = 37 },
+	{ name = "Chroma Deathshard", rarity = "Chroma", value = 35 },
+	{ name = "Chroma Swirly Gun", rarity = "Chroma", value = 35 },
+	{ name = "Chroma Cookiecane", rarity = "Chroma", value = 32 },
+	{ name = "Chroma Fang", rarity = "Chroma", value = 32 },
+	{ name = "Chroma Gemstone", rarity = "Chroma", value = 32 },
+	{ name = "Chroma Shark", rarity = "Chroma", value = 32 },
+	{ name = "Chroma Slasher", rarity = "Chroma", value = 32 },
+	{ name = "Chroma Heat", rarity = "Chroma", value = 28 },
+	{ name = "Chroma Seer", rarity = "Chroma", value = 28 },
+	{ name = "Chroma Gingerblade", rarity = "Chroma", value = 27 },
+	{ name = "Chroma Tides", rarity = "Chroma", value = 27 },
+	{ name = "Chroma Saw", rarity = "Chroma", value = 23 },
+	{ name = "Chroma Boneblade", rarity = "Chroma", value = 22 },
+	{ name = "Chroma Fire Bat", rarity = "Chroma", value = 3 },
+	{ name = "Chroma Fire Bear", rarity = "Chroma", value = 3 },
+	{ name = "Chroma Fire Bunny", rarity = "Chroma", value = 3 },
+	{ name = "Chroma Fire Cat", rarity = "Chroma", value = 3 },
+	{ name = "Chroma Fire Dog", rarity = "Chroma", value = 3 },
+	{ name = "Chroma Fire Fox", rarity = "Chroma", value = 3 },
+	{ name = "Chroma Fire Pig", rarity = "Chroma", value = 3 },
+	{ name = "Traveler's Gun", rarity = "Godly", value = 5200 },
+	{ name = "Evergun", rarity = "Godly", value = 3450 },
+	{ name = "Evergreen", rarity = "Godly", value = 2700 },
+	{ name = "Constellation", rarity = "Godly", value = 2600 },
+	{ name = "Vampire's Gun", rarity = "Godly", value = 1900 },
+	{ name = "Alienbeam", rarity = "Godly", value = 1875 },
+	{ name = "Raygun", rarity = "Godly", value = 1850 },
+	{ name = "Turkey", rarity = "Godly", value = 1850 },
+	{ name = "Darkshot", rarity = "Godly", value = 1800 },
+	{ name = "Darksword", rarity = "Godly", value = 1775 },
+	{ name = "Blossom", rarity = "Godly", value = 1300 },
+	{ name = "Sakura", rarity = "Godly", value = 1290 },
+	{ name = "Sunrise", rarity = "Godly", value = 950 },
+	{ name = "Soul", rarity = "Godly", value = 680 },
+	{ name = "Bauble", rarity = "Godly", value = 675 },
+	{ name = "Snowcannon", rarity = "Godly", value = 675 },
+	{ name = "Spirit", rarity = "Godly", value = 670 },
+	{ name = "Sunset", rarity = "Godly", value = 650 },
+	{ name = "Rainbow Gun", rarity = "Godly", value = 405 },
+	{ name = "Xenoknife", rarity = "Godly", value = 405 },
+	{ name = "Xenoshot", rarity = "Godly", value = 405 },
+	{ name = "Flora", rarity = "Godly", value = 400 },
+	{ name = "Rainbow", rarity = "Godly", value = 400 },
+	{ name = "Bloom", rarity = "Godly", value = 395 },
+	{ name = "Heart Wand", rarity = "Godly", value = 340 },
+	{ name = "Blizzard", rarity = "Godly", value = 290 },
+	{ name = "Snowstorm", rarity = "Godly", value = 290 },
+	{ name = "Ocean", rarity = "Godly", value = 245 },
+	{ name = "Flowerwood Gun", rarity = "Godly", value = 240 },
+	{ name = "Waves", rarity = "Godly", value = 240 },
+	{ name = "Flowerwood", rarity = "Godly", value = 235 },
+	{ name = "Snow Dagger", rarity = "Godly", value = 175 },
+	{ name = "Icecream", rarity = "Godly", value = 155 },
+	{ name = "Treat", rarity = "Godly", value = 155 },
+	{ name = "Watergun", rarity = "Godly", value = 155 },
+	{ name = "Sweet", rarity = "Godly", value = 150 },
+	{ name = "Borealis", rarity = "Godly", value = 145 },
+	{ name = "Australis", rarity = "Godly", value = 140 },
+	{ name = "Bat", rarity = "Godly", value = 125 },
+	{ name = "Beachy", rarity = "Godly", value = 85 },
+	{ name = "Sands", rarity = "Godly", value = 85 },
+	{ name = "Pearlshine", rarity = "Godly", value = 80 },
+	{ name = "Candy", rarity = "Godly", value = 80 },
+	{ name = "Pearl", rarity = "Godly", value = 75 },
+	{ name = "Heartblade", rarity = "Godly", value = 65 },
+	{ name = "Ornament", rarity = "Godly", value = 65 },
+	{ name = "Phantom", rarity = "Godly", value = 35 },
+	{ name = "Red Luger", rarity = "Godly", value = 35 },
+	{ name = "Spectre", rarity = "Godly", value = 35 },
+	{ name = "Candleflame", rarity = "Godly", value = 33 },
+	{ name = "Darkbringer", rarity = "Godly", value = 33 },
+	{ name = "Elderwood Blade", rarity = "Godly", value = 33 },
+	{ name = "Elderwood Revolver", rarity = "Godly", value = 33 },
+	{ name = "Iceblaster", rarity = "Godly", value = 33 },
+	{ name = "Makeshift", rarity = "Godly", value = 33 },
+	{ name = "Lightbringer", rarity = "Godly", value = 32 },
+	{ name = "Sugar", rarity = "Godly", value = 32 },
+	{ name = "Green Luger", rarity = "Godly", value = 23 },
+	{ name = "Amerilaser", rarity = "Godly", value = 22 },
+	{ name = "Laser", rarity = "Godly", value = 22 },
+	{ name = "Hallowgun", rarity = "Godly", value = 20 },
+	{ name = "Nightblade", rarity = "Godly", value = 20 },
+	{ name = "Shark", rarity = "Godly", value = 20 },
+	{ name = "Icebeam", rarity = "Godly", value = 18 },
+	{ name = "Luger", rarity = "Godly", value = 18 },
+	{ name = "Plasmabeam", rarity = "Godly", value = 18 },
+	{ name = "Swirly Gun", rarity = "Godly", value = 18 },
+	{ name = "Battleaxe II", rarity = "Godly", value = 17 },
+	{ name = "Blaster", rarity = "Godly", value = 17 },
+	{ name = "Ginger Luger", rarity = "Godly", value = 17 },
+	{ name = "Pixel", rarity = "Godly", value = 17 },
+	{ name = "Gemstone", rarity = "Godly", value = 15 },
+	{ name = "Iceflake", rarity = "Godly", value = 15 },
+	{ name = "Old Glory", rarity = "Godly", value = 15 },
+	{ name = "Plasmablade", rarity = "Godly", value = 15 },
+	{ name = "Slasher", rarity = "Godly", value = 15 },
+	{ name = "Vampire's Edge", rarity = "Godly", value = 15 },
+	{ name = "Cookiecane", rarity = "Godly", value = 13 },
+	{ name = "Deathshard", rarity = "Godly", value = 13 },
+	{ name = "Eternalcane", rarity = "Godly", value = 13 },
+	{ name = "Gingerblade", rarity = "Godly", value = 13 },
+	{ name = "Jinglegun", rarity = "Godly", value = 13 },
+	{ name = "Lugercane", rarity = "Godly", value = 13 },
+	{ name = "Minty", rarity = "Godly", value = 13 },
+	{ name = "Nebula", rarity = "Godly", value = 13 },
+	{ name = "Virtual", rarity = "Godly", value = 13 },
+	{ name = "Battleaxe", rarity = "Godly", value = 12 },
+	{ name = "Gingermint", rarity = "Godly", value = 12 },
+	{ name = "Swirly Blade", rarity = "Godly", value = 12 },
+	{ name = "Chill", rarity = "Godly", value = 10 },
+	{ name = "Clockwork", rarity = "Godly", value = 10 },
+	{ name = "Fang", rarity = "Godly", value = 10 },
+	{ name = "Frostsaber", rarity = "Godly", value = 10 },
+	{ name = "Heat", rarity = "Godly", value = 10 },
+	{ name = "Spider", rarity = "Godly", value = 10 },
+	{ name = "Tides", rarity = "Godly", value = 10 },
+	{ name = "Bioblade", rarity = "Godly", value = 8 },
+	{ name = "Eternal III", rarity = "Godly", value = 8 },
+	{ name = "Eternal IV", rarity = "Godly", value = 8 },
+	{ name = "Hallow's Blade", rarity = "Godly", value = 8 },
+	{ name = "Hallow's Edge", rarity = "Godly", value = 8 },
+	{ name = "Handsaw", rarity = "Godly", value = 8 },
+	{ name = "Boneblade", rarity = "Godly", value = 7 },
+	{ name = "Eternal", rarity = "Godly", value = 7 },
+	{ name = "Eternal II", rarity = "Godly", value = 7 },
+	{ name = "Frostbite", rarity = "Godly", value = 7 },
+	{ name = "Ghostblade", rarity = "Godly", value = 7 },
+	{ name = "Ice Dragon", rarity = "Godly", value = 7 },
+	{ name = "Ice Shard", rarity = "Godly", value = 7 },
+	{ name = "Prismatic", rarity = "Godly", value = 7 },
+	{ name = "Pumpking", rarity = "Godly", value = 7 },
+	{ name = "Saw", rarity = "Godly", value = 7 },
+	{ name = "Xmas", rarity = "Godly", value = 7 },
+	{ name = "Eggblade", rarity = "Godly", value = 5 },
+	{ name = "Flames", rarity = "Godly", value = 5 },
+	{ name = "Snowflake", rarity = "Godly", value = 5 },
+	{ name = "Winter's Edge", rarity = "Godly", value = 5 },
+	{ name = "Peppermint", rarity = "Godly", value = 4 },
+	{ name = "Cookieblade", rarity = "Godly", value = 3 },
+	{ name = "Blue Seer", rarity = "Godly", value = 3 },
+	{ name = "Purple Seer", rarity = "Godly", value = 3 },
+	{ name = "Red Seer", rarity = "Godly", value = 3 },
+	{ name = "Seer", rarity = "Godly", value = 3 },
+}
+
 local Values = {
 	cache = nil,
 	byName = nil,
@@ -2512,117 +2729,26 @@ local Values = {
 	fetching = false,
 }
 
-local HttpService = game:GetService("HttpService")
-
-local function urlEncode(s)
-	return (tostring(s):gsub("([^%w%-_%.~])", function(c)
-		return string.format("%%%02X", string.byte(c))
-	end))
-end
-
-local httpRequest = (syn and syn.request)
-	or (http and http.request)
-	or (fluxus and fluxus.request)
-	or http_request
-	or request
-
-local function withTimeout(fn, timeoutSeconds)
-	local done, status, value = false, nil, nil
-	task.spawn(function()
-		local ok, res = pcall(fn)
-		done = true
-		if ok then status, value = "ok", res
-		else        status, value = "err", res end
-	end)
-	local t0 = tick()
-	while not done and (tick() - t0) < timeoutSeconds do
-		task.wait(0.05)
-	end
-	if not done then return "timeout", nil end
-	return status, value
-end
-
-local function HttpGetJSON(url)
-	if httpRequest then
-		local status, res = withTimeout(function()
-			return httpRequest({
-				Url = url,
-				Method = "GET",
-				Headers = {
-					["Accept"] = "*/*",
-					["Referer"] = "",
-					["User-Agent"] = "Mozilla/5.0",
-				},
-			})
-		end, 8)
-		if status == "ok" and res and res.Body then
-			local okD, decoded = pcall(HttpService.JSONDecode, HttpService, res.Body)
-			if okD then return decoded end
-			warn("[mm2run/http] JSON decode failed for " .. url)
-		elseif status == "timeout" then
-			warn("[mm2run/http] httpRequest TIMED OUT after 8s for " .. url)
-		elseif status == "err" then
-			warn("[mm2run/http] httpRequest errored: " .. tostring(res))
-		end
-	end
-	local status, txt = withTimeout(function() return game:HttpGet(url) end, 8)
-	if status == "ok" and txt then
-		local okD, decoded = pcall(HttpService.JSONDecode, HttpService, txt)
-		if okD then return decoded end
-		warn("[mm2run/http] JSON decode failed on HttpGet fallback for " .. url)
-	elseif status == "timeout" then
-		warn("[mm2run/http] HttpGet TIMED OUT after 8s for " .. url)
-	elseif status == "err" then
-		warn("[mm2run/http] HttpGet errored: " .. tostring(txt))
-	end
-	return nil
-end
-
-local function FetchValuesPage(page, limit, query)
-	page = page or 1
-	limit = limit or 100
-	local url = ""
-		.. tostring(limit) .. "&page=" .. tostring(page)
-	if query and query ~= "" then
-		url = url .. "&search=" .. urlEncode(query)
-	end
-	return HttpGetJSON(url)
-end
-
-local function FetchAllValues(onProgress)
-	local all = {}
-	local page = 1
-	while true do
-		print(("[mm2run/catalog] fetching page %d (have %d items)"):format(page, #all))
-		local data = FetchValuesPage(page, 100, nil)
-		if not data or not data.items then
-			print(("[mm2run/catalog] page %d failed, retrying once"):format(page))
-			task.wait(0.5)
-			data = FetchValuesPage(page, 100, nil)
-			if not data or not data.items then
-				print(("[mm2run/catalog] page %d failed twice, returning partial (%d items)"):format(page, #all))
-				return all, false
-			end
-		end
-		for _, item in ipairs(data.items) do
-			item._numericValue = tonumber(item.value) or 0
-			table.insert(all, item)
-		end
-		local hasMore = data.pagination and data.pagination.hasMore
-		if onProgress then onProgress(#all, hasMore) end
-		if not hasMore then break end
-		page = page + 1
-		if page > 100 then break end
-	end
-	return all, true
-end
-
 local function RebuildValuesIndex()
 	Values.byName = {}
 	if not Values.cache then return end
 	for _, item in ipairs(Values.cache) do
 		Values.byName[string.lower(tostring(item.name or ""))] = item
 	end
+end
+
+local function BuildValuesCache()
+	local out = {}
+	for _, e in ipairs(SupremeValues) do
+		table.insert(out, {
+			name = e.name,
+			rarity = e.rarity,
+			value = e.value,
+			trend = "Supreme",
+			_numericValue = tonumber(e.value) or math.huge,
+		})
+	end
+	return out
 end
 
 local valueSearchBox = createSettingRow("Search weapon:", "", valuesFrame)
@@ -2774,34 +2900,10 @@ local function UpdateValuesStatus(query)
 end
 
 local function LoadFullCatalog(force)
-	if Values.fetching then
-		valueStatusLabel.Text = "already fetching... (be patient)"
-		valueStatusLabel.TextColor3 = Color3.fromRGB(255, 220, 100)
-		return
-	end
-	if (not force) and Values.cache and (tick() - Values.fetchedAt) < 600 then
-		UpdateValuesStatus(valueSearchBox.Text)
-		return
-	end
-	Values.fetching = true
-	task.spawn(function()
-		valueStatusLabel.Text = "Fetching catalog..."
-		valueStatusLabel.TextColor3 = Color3.fromRGB(255, 220, 100)
-		local items, ok = FetchAllValues(function(loaded, hasMore)
-			valueStatusLabel.Text = ("Loaded %d items%s"):format(loaded, hasMore and "... (more pages)" or " -- finalizing")
-		end)
-		Values.fetching = false
-		if items and #items > 0 then
-			Values.cache = items
-			Values.fetchedAt = tick()
-			RebuildValuesIndex()
-			UpdateValuesStatus(valueSearchBox.Text)
-		else
-			valueStatusLabel.Text = "API request failed -- executor blocked http? (see console)"
-			valueStatusLabel.TextColor3 = Color3.fromRGB(255, 100, 100)
-			warn("[mm2run] cosmic values API returned nothing. httpRequest=" .. tostring(httpRequest ~= nil))
-		end
-	end)
+	Values.cache = BuildValuesCache()
+	Values.fetchedAt = tick()
+	RebuildValuesIndex()
+	UpdateValuesStatus(valueSearchBox.Text)
 end
 
 CreateButton(valuesFrame, "Refresh catalog", function()
