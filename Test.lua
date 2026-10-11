@@ -1,3 +1,4 @@
+--818182
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -2690,8 +2691,7 @@ end
 
             t25 = {}
 
-            -- Button positions are stored separately for EACH config.
-            -- Example: Lunar/Default.btnpos, Lunar/MyConfig.btnpos.
+            -- Button positions live inside each config file (see embed key below).
             -- Dragging only changes memory; config Save/Load controls disk persistence.
             local _BTN_POS_SUFFIX = ".btnpos"
 
@@ -2837,14 +2837,31 @@ end
                 return default
             end
 
-            -- The config library writes Lunar/<configName>. We attach the
-            -- button layout to that exact config instead of using one global file.
+            -- Button positions are embedded INTO the config file itself
+            -- (key "__LunarButtonPositions"), so one config = one file.
+            -- Old sidecar files (.btnpos) are still read as a fallback.
+            local _HttpService = game:GetService("HttpService")
+            local _EMBED_KEY = "__LunarButtonPositions"
+
             local _originalWriteFile = _writefile
             if _originalWriteFile and typeof(writefile) == "function" then
                 local _wrappedWriteFile = function(path, content)
-                    local result = _originalWriteFile(path, content)
                     local configName = _configNameFromPath(path)
-                    if configName then
+                    local embedded = false
+                    if configName and type(content) == "string" then
+                        local ok, decoded = pcall(_HttpService.JSONDecode, _HttpService, content)
+                        if ok and type(decoded) == "table" then
+                            decoded[_EMBED_KEY] = _collectBtnPositions()
+                            local ok2, encoded = pcall(_HttpService.JSONEncode, _HttpService, decoded)
+                            if ok2 and type(encoded) == "string" then
+                                content = encoded
+                                embedded = true
+                            end
+                        end
+                    end
+                    local result = _originalWriteFile(path, content)
+                    if configName and not embedded then
+                        -- Config isn't JSON: fall back to the sidecar file.
                         task.defer(function()
                             _saveBtnPositions(configName)
                         end)
@@ -2857,15 +2874,32 @@ end
                 end
             end
 
-            -- When the config library reads Lunar/<configName>, load the
-            -- matching button-position sidecar before the config finishes loading.
+            -- On read: pull the embedded positions out of the config, apply
+            -- them, and hand the config library its data without our extra key.
             local _originalReadFile = _readfile
             if _originalReadFile and typeof(readfile) == "function" then
                 local _wrappedReadFile = function(path)
                     local result = _originalReadFile(path)
                     local configName = _configNameFromPath(path)
                     if configName then
-                        _loadBtnPositions(configName)
+                        local embeddedData
+                        if type(result) == "string" then
+                            local ok, decoded = pcall(_HttpService.JSONDecode, _HttpService, result)
+                            if ok and type(decoded) == "table" and type(decoded[_EMBED_KEY]) == "table" then
+                                embeddedData = decoded[_EMBED_KEY]
+                                decoded[_EMBED_KEY] = nil
+                                local ok2, encoded = pcall(_HttpService.JSONEncode, _HttpService, decoded)
+                                if ok2 and type(encoded) == "string" then
+                                    result = encoded
+                                end
+                            end
+                        end
+                        if embeddedData then
+                            _activeButtonConfig = configName
+                            _applyBtnPositions(embeddedData)
+                        else
+                            _loadBtnPositions(configName) -- legacy .btnpos fallback
+                        end
                         task.defer(function()
                             task.wait(0.25)
                             local applyWorld = getgenv().LunarApplyWorldConfig
@@ -9522,4 +9556,4 @@ v18:Notify({
     Duration = 3,
     Icon = 'bell',
 })
-print('matb ebal ruzhabq')
+print('Lunar make detka')
