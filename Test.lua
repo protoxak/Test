@@ -9522,4 +9522,4 @@ v18:Notify({
     Duration = 3,
     Icon = 'bell',
 })
-print('Lunar make detka')
+print('matb ebal ruzhabq')
