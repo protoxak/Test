@@ -1,3 +1,4 @@
+--71717
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -150,7 +151,7 @@ function v18:CreateWindow(cfg)
         Logo = NeverLose.GlobalLogo,
         Name = cfg.Title or "Lunar",
         Content = cfg.Author or "Mmv And Mm2",
-        Size = cfg.Size or UDim2.fromOffset(700, 450),
+        Size = cfg.Size or UDim2.fromOffset(560, 360),
         ConfigFolder = cfg.Folder or "Lunar",
         Enable3DRenderer = false,
         Keybind = "Insert",
@@ -3644,7 +3645,7 @@ end
         Title = 'Lunar',
         Author = 'Mmv And Mm2',
         Folder = 'Lunar',
-        Size = UDim2.fromOffset(700, 450),
+        Size = UDim2.fromOffset(560, 360),
     }):Section({
         Title = 'Lunar',
         Opened = true,
@@ -3681,7 +3682,7 @@ end
 
         local overlay = Instance.new("TextButton")
         overlay.Name = "LunarOverlay"
-        overlay.Size = UDim2.new(0, 530, 0, 42)
+        overlay.Size = UDim2.new(0, 390, 0, 42)
         overlay.Position = UDim2.new(1, -10, 0, 7)
         overlay.AnchorPoint = Vector2.new(1, 0)
         overlay.BackgroundColor3 = Color3.fromRGB(10, 10, 14)
@@ -3739,9 +3740,7 @@ end
 
         local fpsLabel = makeLabel("FPS", "-- FPS", 2, 50, true)
         local pingLabel = makeLabel("Ping", "-- MS", 3, 52, true)
-        local memoryLabel = makeLabel("Memory", "-- MB", 4, 60, false)
         local playerLabel = makeLabel("Player", LocalPlayer and LocalPlayer.Name or "Player", 5, 85, true)
-        local profileLabel = makeLabel("Profile", "● Default", 6, 70, false)
         local infoLabel = makeLabel("Info", "Lunar", 7, 70, true)
         local timeLabel = makeLabel("Time", "--:--", 8, 45, false)
         local menuLabel = makeLabel("Menu", "≡", 9, 24, true)
@@ -3798,12 +3797,6 @@ end
                 else
                     pingLabel.Text = "-- MS"
                 end
-
-                local memory = 0
-                pcall(function()
-                    memory = Stats:GetTotalMemoryUsageMb()
-                end)
-                memoryLabel.Text = string.format("%d MB", math.floor(memory + 0.5))
 
                 timeLabel.Text = os.date("%H:%M")
             end
