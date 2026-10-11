@@ -1,3 +1,4 @@
+--8181
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -149,8 +150,8 @@ function v18:CreateWindow(cfg)
     local window = NeverLose:CreateWindow({
         Logo = NeverLose.GlobalLogo,
         Name = cfg.Title or "Lunar",
-        Content = cfg.Author or "murder mystery 2",
-        Size = cfg.Size or UDim2.fromOffset(860, 360),
+        Content = cfg.Author or "Murder Mystery 2",
+        Size = cfg.Size or UDim2.fromOffset(640, 360),
         ConfigFolder = cfg.Folder or "Lunar",
         Enable3DRenderer = false,
         Keybind = "Insert",
@@ -3673,7 +3674,7 @@ end
         end
     end)
     v18:Notify({
-        Title = 'Lunar Mmv And Mm2',
+        Title = 'Lunar Murder Mystery 2',
         Content = 'v7.3 loaded!\\nBombs and Shoot auto-loaded.\\nOpen menu to configure everything.',
         Duration = 5,
     })
@@ -3681,9 +3682,9 @@ end
 
     local v300 = v18:CreateWindow({
         Title = 'Lunar',
-        Author = 'Mmv And Mm2',
+        Author = 'Murder Mystery 2',
         Folder = 'Lunar',
-        Size = UDim2.fromOffset(860, 360),
+        Size = UDim2.fromOffset(640, 360),
     }):Section({
         Title = 'Lunar',
         Opened = true,
@@ -4434,7 +4435,7 @@ end
         })
 
         AutoFarmTab:Slider({
-            Flag = "tween_speed",Title = "Tween Speed",
+            Flag = "tween_speed",Title = "Tween S",
             Step = 1,
             IsTooltip = true,
             IsTextbox = true,
@@ -4673,7 +4674,7 @@ end
 
         v304:Slider({
             Flag     = "spin_speed",
-            Title    = "Spin Speed",
+            Title    = "Spin S",
             IsTooltip = true,
             IsTextbox = true,
             Value    = { Min = 1, Max = 100, Default = 50 },
@@ -4733,7 +4734,7 @@ end
 
         v304._right:Slider({
             Flag      = "player_speed_value",
-            Title     = "Speed Value",
+            Title     = "Speed V",
             IsTooltip = true,
             IsTextbox = true,
             Value     = { Min = 0, Max = 200, Default = 16 },
@@ -4760,7 +4761,7 @@ end
 
         v304._right:Slider({
             Flag      = "player_jump_value",
-            Title     = "Jump Power",
+            Title     = "Jump P",
             IsTooltip = true,
             IsTextbox = true,
             Value     = { Min = 0, Max = 300, Default = 50 },
@@ -4785,7 +4786,7 @@ end
 
         v304._right:Slider({
             Flag      = "player_gravity_value",
-            Title     = "Gravity Value",
+            Title     = "Gravity V",
             IsTooltip = true,
             IsTextbox = true,
             Value     = { Min = 0, Max = 400, Default = 196 },
@@ -5162,7 +5163,7 @@ end
 
         v304._right:Slider({
             Flag     = "fly_speed",
-            Title    = "Fly Speed",
+            Title    = "Fly S",
             Value    = { Min = 50, Max = 500, Default = 50 },
             Rounding = 0,
             Callback = function(val)
@@ -6188,21 +6189,21 @@ do
     })
 
     VisualsTab._right:Slider({
-        Flag = "tracer_width", Title = "Tracer Width",
+        Flag = "tracer_width", Title = "Tracer W",
         Value    = { Min = 1, Max = 20, Default = 12 },
         Rounding = 0,
         Callback = function(val) BT.Size = val * 0.01 end,
     })
 
     VisualsTab._right:Slider({
-        Flag = "tracer_duration_0_1s", Title = "Tracer Duration (×0.1s)",
+        Flag = "tracer_duration_0_1s", Title = "Tracer D (×0.1s)",
         Value    = { Min = 1, Max = 30, Default = 6 },
         Rounding = 0,
         Callback = function(val) BT.TimeAlive = val * 0.1 end,
     })
 
     VisualsTab._right:Slider({
-        Flag = "tracer_transparency", Title = "Tracer Transparency",
+        Flag = "tracer_transparency", Title = "Tracer T",
         Value    = { Min = 0, Max = 9, Default = 0 },
         Rounding = 0,
         Callback = function(val) BT.Transparency = val * 0.1 end,
@@ -6284,7 +6285,7 @@ do
     VisualsTab._left:Paragraph({ Title = "China Hat" })
 
     VisualsTab._left:Toggle({
-        Flag = "enable_china_hat",Title   = "Enable China Hat",
+        Flag = "enable_china_hat",Title   = "China H",
         Default = false,
         Callback = function(val)
             _ChinaHat.enabled = val
@@ -6327,7 +6328,7 @@ do
     })
 
     VisualsTab._left:Slider({
-        Flag = "light_brightness",Title    = "Light Brightness",
+        Flag = "light_brightness",Title    = "Light B",
         Value    = { Min = 0, Max = 10, Default = 0 },
         Rounding = 0,
         Callback = function(val)
@@ -6340,7 +6341,7 @@ do
     })
 
     VisualsTab._left:Slider({
-        Flag = "light_range",Title    = "Light Range",
+        Flag = "light_range",Title    = "Light R",
         Value    = { Min = 0, Max = 60, Default = 12 },
         Rounding = 0,
         Callback = function(val)
@@ -6932,7 +6933,7 @@ do
     _world_controls.fog_start = VisualsTab._left:Slider({
         Flag = "world_fog_start",
         Save = true,
-        Title = "Fog Start",
+        Title = "Fog S",
         Value = { Min = 0, Max = 1000, Default = 0 },
         Rounding = 0,
         Callback = function(value)
@@ -6946,7 +6947,7 @@ do
     _world_controls.fog_end = VisualsTab._left:Slider({
         Flag = "world_fog_end",
         Save = true,
-        Title = "Fog End",
+        Title = "Fog E",
         Value = { Min = 0, Max = 1000, Default = 1000 },
         Rounding = 0,
         Callback = function(value)
@@ -7026,7 +7027,7 @@ do
     _world_controls.exposure_value = VisualsTab._left:Slider({
         Flag = "world_exposure_value",
         Save = true,
-        Title = "Exposure Value",
+        Title = "Exposure V",
         Value = { Min = -3, Max = 3, Default = 0 },
         Rounding = 2,
         Callback = function(value)
