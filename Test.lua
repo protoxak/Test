@@ -149,7 +149,7 @@ function v18:CreateWindow(cfg)
     local window = NeverLose:CreateWindow({
         Logo = NeverLose.GlobalLogo,
         Name = cfg.Title or "Lunar",
-        Content = cfg.Author or "Mmv And Mm2",
+        Content = cfg.Author or "murder mystery 2",
         Size = cfg.Size or UDim2.fromOffset(860, 360),
         ConfigFolder = cfg.Folder or "Lunar",
         Enable3DRenderer = false,
