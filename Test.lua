@@ -1,3 +1,4 @@
+--8812892
 local UserInputService, CurrentCamera, n1, n2, u13, n3, u15, u16, u17, v18, v25, u29, u31, u32, u61, u62, t3, t4, v68, v78, u120, n17, u126, u127, u128, v145, u147, u148, u149, u150, u151, u156, u172, u173, u174, u175, u176, u177, u178, v183, u184, u185, u186, u187, u188, u189, u198, u199, id, u201, u202, u205, u206, u207, u208, u209, u210, u211, u212, v232, v239, v244, u252, u257, u263, u270, u276, u281, u287, u293, v301, v302
 local _BT = nil
 local _bullettracerlol = nil
@@ -9626,40 +9627,6 @@ end
 getgenv().FAKE_POS_ENABLE = fake_position_enable
 end
 
--- ===== Кнопка Invis (Main -> правая колонка) =====
-do
-    local invis_on = false
-    v301._right:Button({
-        Flag = "invis_button",
-        Title = 'Invis',
-        Description = 'Вкл/выкл невидимость (fake position)',
-        Callback = function()
-            local ok, err = pcall(function()
-                getgenv().LUNAR_InvisInit()
-                invis_on = not invis_on
-                getgenv().FAKE_POS_ENABLE(invis_on)
-            end)
-            if not ok then
-                invis_on = false
-                v18:Notify({
-                    Title = 'Lunar',
-                    Content = 'Invis error: ' .. tostring(err),
-                    Duration = 4,
-                    Icon = 'bell',
-                })
-                return
-            end
-            v18:Notify({
-                Title = 'Lunar',
-                Content = invis_on and 'Invis ON' or 'Invis OFF',
-                Duration = 3,
-                Icon = 'bell',
-            })
-        end,
-    })
-end
-
-
 v301._right:Paragraph({ Title = 'Optional Buttons' })
 v301._right:Toggle({
     Flag = "load_esp_toggle", Title = 'Load ESP Toggle',
@@ -9675,6 +9642,32 @@ v301._right:Toggle({
     Flag = "load_speed_glitch", Title = 'Load Speed Glitch',
     Default = false,
     Callback = function(p62) u263(p62) end,
+})
+-- ===== Invis toggle (Main -> правая колонка) =====
+v301._right:Toggle({
+    Flag = "load_invis", Title = 'Load Invis',
+    Default = false,
+    Callback = function(state)
+        local ok, err = pcall(function()
+            getgenv().LUNAR_InvisInit()
+            getgenv().FAKE_POS_ENABLE(state)
+        end)
+        if not ok then
+            v18:Notify({
+                Title = 'Lunar',
+                Content = 'Invis error: ' .. tostring(err),
+                Duration = 4,
+                Icon = 'bell',
+            })
+            return
+        end
+        v18:Notify({
+            Title = 'Lunar',
+            Content = state and 'Invis ON' or 'Invis OFF',
+            Duration = 3,
+            Icon = 'bell',
+        })
+    end,
 })
 v301._right:Toggle({
     Flag = "load_timer", Title = 'Load Timer',
